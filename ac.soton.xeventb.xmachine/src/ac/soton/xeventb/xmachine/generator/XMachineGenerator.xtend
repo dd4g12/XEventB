@@ -33,6 +33,8 @@ import org.eventb.emf.persistence.EMFRodinDB
 import org.eventb.emf.persistence.SaveResourcesCommand
 import org.rodinp.core.RodinCore
 import org.eclipse.core.resources.IFile
+import ac.soton.eventb.emf.inclusion.MachineInclusion
+import ac.soton.eventb.emf.core.^extension.coreextension.EventCases
 
 /**
 * Generates code from your model files on save.
@@ -52,7 +54,7 @@ extends AbstractGenerator {
 	override void doGenerate(Resource resource, IFileSystemAccess2 fsa, IGeneratorContext context) {
 		
 	var mch = resource.contents.get(0) as Machine
-	if(mch.extensions.empty){
+	if(mch.extensions.empty || mch.extensions.filter(MachineInclusion).empty){
 		var emfRodinDB = new EMFRodinDB
 	    var uriString = resource.URI.toString
 	    uriString = uriString.substring(0, uriString.lastIndexOf('bumx'))
@@ -60,11 +62,10 @@ extends AbstractGenerator {
 	    var uri = URI.createURI(uriString)
 	    emfRodinDB.saveResource(uri, mch)
 	}
-	
+
     // Dana: If machine contains inclusion, call the inclusion translator to generate
     // the event-b machine
-    else{
-    	
+    else {
 			   var commandId = 'ac.soton.eventb.emf.inclusion.commands.include' 
 			   var factory = TranslatorFactory.getFactory() as TranslatorFactory
 				if (factory !== null && factory.canTranslate(commandId, mch.eClass())){
@@ -155,4 +156,6 @@ extends AbstractGenerator {
 		val file = WorkspaceSynchronizer.getFile(resource);
 		return file?.getProject()?:null;
 	}
+	
+	
 }

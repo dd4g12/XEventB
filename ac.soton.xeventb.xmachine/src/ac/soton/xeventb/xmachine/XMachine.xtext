@@ -18,6 +18,7 @@ import "http://soton.ac.uk/models/eventb/inclusion/2017" as einclusion
 import "platform:/resource/org.eventb.emf.core/model/eventbcore.ecore" as eventbcore
 import "platform:/resource/org.eventb.emf.core/model/eventbcore.ecore#//machine"as emachine
 import "platform:/resource/org.eventb.emf.core/model/eventbcore.ecore#//context"as econtext
+import "http://soton.ac.uk/models/eventb/coreextension/2014" as eventbcoreextension
 
 /*
  * For XEvent-B 0.0.8 comments are allowed everywhere
@@ -34,7 +35,8 @@ Machine returns emachine::Machine:
     ('variables' variables+=XVariable+)?
 	('invariants' invariants+=XInvariant+)?
 	('variant' variant=XVariant)?
-	('events' events+=XEvent (events+=XEvent)*)?
+	('events' events+=XEvent (events+=XEvent)*)? 	
+	(extensions+= XGroup*)
 	('end')
 ;
 
@@ -68,6 +70,33 @@ XVariant returns emachine::Variant:
 	expression= XPredicate
 ;
 
+XGroup returns eventbcoreextension::EventCases:
+	{eventbcoreextension::EventCases}
+	'Group' name = ID
+	('(' formalParameters += XFormalParameter (',' formalParameters += XFormalParameter)* ')')?
+	'begin'
+	(events +=[emachine::Event](',' events +=[emachine::Event])*)?
+	'end'
+;
+XGroupSync returns eventbcoreextension::EventCases:
+	{eventbcoreextension::EventCases}
+	name = ID
+	('(' formalParameters += XFormalArgument(',' formalParameters += XFormalArgument)* ')')?
+;
+XFormalParameter returns eventbcoreextension::FormalParameter:
+	{eventbcoreextension::FormalParameter}
+	direction = XDirection name = ID
+;
+
+XFormalArgument returns eventbcoreextension::FormalParameter:
+	{eventbcoreextension::FormalParameter}
+	name = ID
+;
+
+enum XDirection returns eventbcoreextension::INOUT:
+	in = 'in' | out = 'out'
+;
+
 XEvent returns emachine::Event:
 	{emachine::Event}
 	name=ID
@@ -75,7 +104,9 @@ XEvent returns emachine::Event:
 		(extended?='extended')? &
 		(convergence=XConvergence)?
 	)
-	( extensions+= EventSync*)
+//	( extensions+= EventSync*)
+//	( extensions+= GroupSync*) //new
+    ( extensions+= groupOrEvent*)//new
 	('refines' refines+=[emachine::Event]+)?
 	
 	(
@@ -100,11 +131,22 @@ XEvent returns emachine::Event:
 	'end'
 ;
 
+//EventSync returns einclusion::EventSynchronisation:
+//	{einclusion::EventSynchronisation}
+//	('synchronises' (prefix=ID'.')?(synchronisedEvent = [emachine::Event])| synchronisedCases = [eventbcoreextension::EventCases])
+//;
 EventSync returns einclusion::EventSynchronisation:
 	{einclusion::EventSynchronisation}
-	('synchronises' (prefix=ID'.')?synchronisedEvent = [emachine::Event])
+	('synchronises' (prefix=ID'.')?(synchronisedEvent = [emachine::Event]))
 ;
-
+GroupSync returns einclusion::EventSynchronisation:
+	{einclusion::EventSynchronisation}
+	('synchronisesGroup' (prefix=ID'.')?(synchronisedCases = [eventbcoreextension::EventCases])) //XGroupSync
+	//('synchronisesGroup' (prefix=ID'.')?(synchronisedCases = XGroupSync))
+;
+groupOrEvent returns einclusion::EventSynchronisation:
+ GroupSync | EventSync
+;
 enum XConvergence returns emachine::Convergence:
 				ordinary = 'ordinary' | convergent = 'convergent' | anticipated = 'anticipated'
 ;

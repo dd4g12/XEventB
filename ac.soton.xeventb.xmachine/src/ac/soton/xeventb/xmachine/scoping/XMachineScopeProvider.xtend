@@ -31,6 +31,7 @@ import org.eventb.emf.core.machine.MachinePackage
 import org.eventb.emf.persistence.EMFRodinDB
 import ac.soton.xeventb.common.EventBQualifiedNameProvider
 import ac.soton.xeventb.common.EventBContainerManager
+import ac.soton.eventb.emf.core.^extension.coreextension.EventCases
 
 /**
  * <p>
@@ -39,8 +40,8 @@ import ac.soton.xeventb.common.EventBContainerManager
  * </p>
  *
  * @author htson
- * @author Dana - updated to include event synchronisation
- * @version 0.2
+ * @author dd4g12 - updated to include event synchronisation, event cases or event groups
+ * @version 0.3
  * @see EMFRodinDB
  * @since 0.0.1
  */
@@ -126,14 +127,46 @@ class XMachineScopeProvider extends AbstractDeclarativeScopeProvider {
 		}
 		
 		// Scope for machine inclusion clause
-		if (context instanceof MachineInclusion &&
-			reference == InclusionPackage.Literals.MACHINE_INCLUSION__ABSTRACT_MACHINE) {
+		if (context instanceof MachineInclusion && reference == InclusionPackage.Literals.MACHINE_INCLUSION__ABSTRACT_MACHINE) {
 			return scopeForMachineInclusion(context, reference)
 		}
 		
 		
+		// Scoping for event group  
+	    // dd4g12
+	    if (context instanceof EventSynchronisation && reference == InclusionPackage.Literals.EVENT_SYNCHRONISATION__SYNCHRONISED_CASES) {
+			val mch = EcoreUtil2.getRootContainer(context, true) as Machine
+			val mchExt = mch.extensions.filter(MachineInclusion)
+			var evtGroups = new ArrayList()
+			//var mchEvts = new ArrayList()
+			for(mchInclusion : mchExt){
+				var abstractMch= mchInclusion.abstractMachine
+	
+			    var evtSync = context as EventSynchronisation
+			    if (!evtSync.prefix.empty){
+					 if(mchInclusion.prefixes.contains(evtSync.prefix))	{
+					 //	mchEvts.addAll(abstractMch.events)
+					 	evtGroups.addAll(abstractMch.extensions.filter(EventCases))
+					 }
+					 		
+				}
+				else{
+					//mchEvts.addAll(abstractMch.events)
+					evtGroups.addAll(abstractMch.extensions.filter(EventCases))	
+				}
+					
+			}
+			
+			// var union = new ArrayList()
+			// union.addAll(mchEvts)
+			// union.addAll(evtGroups)
+			return Scopes.scopeFor(evtGroups);		
+		}
+		
        return super.getScope(context, reference);
 	}
+	
+	
 	
 	/**
 	 * The scope for machine inclusion is the set of all (Rodin) machines 
@@ -162,7 +195,6 @@ class XMachineScopeProvider extends AbstractDeclarativeScopeProvider {
 			}
 			return Scopes.scopeFor(mchs, superScope);		
 	}
-	
 	
 	
 }	

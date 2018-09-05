@@ -15,6 +15,7 @@ public abstract class AbstractXMachineValidator extends AbstractDeclarativeValid
 		List<EPackage> result = new ArrayList<EPackage>();
 		result.add(EPackage.Registry.INSTANCE.getEPackage("http://emf.eventb.org/models/core/machine/2014"));
 		result.add(EPackage.Registry.INSTANCE.getEPackage("http://soton.ac.uk/models/eventb/inclusion/2017"));
+		result.add(EPackage.Registry.INSTANCE.getEPackage("http://soton.ac.uk/models/eventb/coreextension/2014"));
 		return result;
 	}
 	

@@ -3,6 +3,9 @@
  */
 package ac.soton.xeventb.xmachine.serializer;
 
+import ac.soton.eventb.emf.core.extension.coreextension.CoreextensionPackage;
+import ac.soton.eventb.emf.core.extension.coreextension.EventCases;
+import ac.soton.eventb.emf.core.extension.coreextension.FormalParameter;
 import ac.soton.eventb.emf.inclusion.EventSynchronisation;
 import ac.soton.eventb.emf.inclusion.InclusionPackage;
 import ac.soton.eventb.emf.inclusion.MachineInclusion;
@@ -40,11 +43,45 @@ public class XMachineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 		ParserRule rule = context.getParserRule();
 		Action action = context.getAssignedAction();
 		Set<Parameter> parameters = context.getEnabledBooleanParameters();
-		if (epackage == InclusionPackage.eINSTANCE)
+		if (epackage == CoreextensionPackage.eINSTANCE)
+			switch (semanticObject.eClass().getClassifierID()) {
+			case CoreextensionPackage.EVENT_CASES:
+				if (rule == grammarAccess.getXGroupSyncRule()) {
+					sequence_XGroupSync(context, (EventCases) semanticObject); 
+					return; 
+				}
+				else if (rule == grammarAccess.getXGroupRule()) {
+					sequence_XGroup(context, (EventCases) semanticObject); 
+					return; 
+				}
+				else break;
+			case CoreextensionPackage.FORMAL_PARAMETER:
+				if (rule == grammarAccess.getXFormalArgumentRule()) {
+					sequence_XFormalArgument(context, (FormalParameter) semanticObject); 
+					return; 
+				}
+				else if (rule == grammarAccess.getXFormalParameterRule()) {
+					sequence_XFormalParameter(context, (FormalParameter) semanticObject); 
+					return; 
+				}
+				else break;
+			}
+		else if (epackage == InclusionPackage.eINSTANCE)
 			switch (semanticObject.eClass().getClassifierID()) {
 			case InclusionPackage.EVENT_SYNCHRONISATION:
-				sequence_EventSync(context, (EventSynchronisation) semanticObject); 
-				return; 
+				if (rule == grammarAccess.getEventSyncRule()) {
+					sequence_EventSync(context, (EventSynchronisation) semanticObject); 
+					return; 
+				}
+				else if (rule == grammarAccess.getGroupOrEventRule()) {
+					sequence_EventSync_GroupSync(context, (EventSynchronisation) semanticObject); 
+					return; 
+				}
+				else if (rule == grammarAccess.getGroupSyncRule()) {
+					sequence_GroupSync(context, (EventSynchronisation) semanticObject); 
+					return; 
+				}
+				else break;
 			case InclusionPackage.MACHINE_INCLUSION:
 				sequence_MIncludes(context, (MachineInclusion) semanticObject); 
 				return; 
@@ -97,6 +134,30 @@ public class XMachineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	
 	/**
 	 * Contexts:
+	 *     groupOrEvent returns EventSynchronisation
+	 *
+	 * Constraint:
+	 *     ((prefix=ID? synchronisedEvent=[Event|ID]) | (prefix=ID? synchronisedCases=[EventCases|ID]))
+	 */
+	protected void sequence_EventSync_GroupSync(ISerializationContext context, EventSynchronisation semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Contexts:
+	 *     GroupSync returns EventSynchronisation
+	 *
+	 * Constraint:
+	 *     (prefix=ID? synchronisedCases=[EventCases|ID])
+	 */
+	protected void sequence_GroupSync(ISerializationContext context, EventSynchronisation semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Contexts:
 	 *     MIncludes returns MachineInclusion
 	 *
 	 * Constraint:
@@ -121,7 +182,8 @@ public class XMachineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	 *         variables+=XVariable* 
 	 *         invariants+=XInvariant* 
 	 *         variant=XVariant? 
-	 *         (events+=XEvent events+=XEvent*)?
+	 *         (events+=XEvent events+=XEvent*)? 
+	 *         extensions+=XGroup*
 	 *     )
 	 */
 	protected void sequence_Machine(ISerializationContext context, Machine semanticObject) {
@@ -158,7 +220,7 @@ public class XMachineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	 *     (
 	 *         name=ID 
 	 *         (extended?='extended' | convergence=XConvergence)* 
-	 *         extensions+=EventSync* 
+	 *         extensions+=groupOrEvent* 
 	 *         refines+=[Event|ID]* 
 	 *         (
 	 *             (witnesses+=XWitness* actions+=XAction+) | 
@@ -168,6 +230,69 @@ public class XMachineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	 *     )
 	 */
 	protected void sequence_XEvent(ISerializationContext context, Event semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Contexts:
+	 *     XFormalArgument returns FormalParameter
+	 *
+	 * Constraint:
+	 *     name=ID
+	 */
+	protected void sequence_XFormalArgument(ISerializationContext context, FormalParameter semanticObject) {
+		if (errorAcceptor != null) {
+			if (transientValues.isValueTransient(semanticObject, CorePackage.Literals.EVENT_BNAMED__NAME) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, CorePackage.Literals.EVENT_BNAMED__NAME));
+		}
+		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
+		feeder.accept(grammarAccess.getXFormalArgumentAccess().getNameIDTerminalRuleCall_1_0(), semanticObject.getName());
+		feeder.finish();
+	}
+	
+	
+	/**
+	 * Contexts:
+	 *     XFormalParameter returns FormalParameter
+	 *
+	 * Constraint:
+	 *     (direction=XDirection name=ID)
+	 */
+	protected void sequence_XFormalParameter(ISerializationContext context, FormalParameter semanticObject) {
+		if (errorAcceptor != null) {
+			if (transientValues.isValueTransient(semanticObject, CoreextensionPackage.Literals.FORMAL_PARAMETER__DIRECTION) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, CoreextensionPackage.Literals.FORMAL_PARAMETER__DIRECTION));
+			if (transientValues.isValueTransient(semanticObject, CorePackage.Literals.EVENT_BNAMED__NAME) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, CorePackage.Literals.EVENT_BNAMED__NAME));
+		}
+		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
+		feeder.accept(grammarAccess.getXFormalParameterAccess().getDirectionXDirectionEnumRuleCall_1_0(), semanticObject.getDirection());
+		feeder.accept(grammarAccess.getXFormalParameterAccess().getNameIDTerminalRuleCall_2_0(), semanticObject.getName());
+		feeder.finish();
+	}
+	
+	
+	/**
+	 * Contexts:
+	 *     XGroupSync returns EventCases
+	 *
+	 * Constraint:
+	 *     (name=ID (formalParameters+=XFormalArgument formalParameters+=XFormalArgument*)?)
+	 */
+	protected void sequence_XGroupSync(ISerializationContext context, EventCases semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Contexts:
+	 *     XGroup returns EventCases
+	 *
+	 * Constraint:
+	 *     (name=ID (formalParameters+=XFormalParameter formalParameters+=XFormalParameter*)? (events+=[Event|ID] events+=[Event|ID]*)?)
+	 */
+	protected void sequence_XGroup(ISerializationContext context, EventCases semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
