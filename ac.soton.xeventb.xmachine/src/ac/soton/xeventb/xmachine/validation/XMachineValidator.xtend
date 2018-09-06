@@ -60,8 +60,9 @@ class XMachineValidator extends AbstractXMachineValidator {
 			
 			for(ext: mchContainer.extensions){
 				if(ext instanceof MachineInclusion ){
-					if((ext as MachineInclusion).abstractMachine.events.contains(evt.synchronisedEvent)){//used abstract machine as scoping
-						if((ext as MachineInclusion).prefixes.contains(prefix)){
+					val mchInc = ext as MachineInclusion
+					if(mchInc.abstractMachine.events.contains(evt.synchronisedEvent)|| mchInc.abstractMachine.extensions.contains(evt.synchronisedCases)){//used abstract machine as scoping
+						if(mchInc.prefixes.contains(prefix)){
 							return
 						}
 							
