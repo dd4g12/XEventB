@@ -32,52 +32,49 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ac.soton.xeventb.xmachine.XMachine.Machine");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cMachineAction_0 = (Action)cGroup.eContents().get(0);
-		private final Assignment cCommentAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final Alternatives cCommentAlternatives_1_0 = (Alternatives)cCommentAssignment_1.eContents().get(0);
-		private final RuleCall cCommentML_COMMENTTerminalRuleCall_1_0_0 = (RuleCall)cCommentAlternatives_1_0.eContents().get(0);
-		private final RuleCall cCommentSL_COMMENTTerminalRuleCall_1_0_1 = (RuleCall)cCommentAlternatives_1_0.eContents().get(1);
-		private final Keyword cMachineKeyword_2 = (Keyword)cGroup.eContents().get(2);
-		private final Assignment cNameAssignment_3 = (Assignment)cGroup.eContents().get(3);
-		private final RuleCall cNameIDTerminalRuleCall_3_0 = (RuleCall)cNameAssignment_3.eContents().get(0);
-		private final Assignment cExtensionsAssignment_4 = (Assignment)cGroup.eContents().get(4);
-		private final RuleCall cExtensionsMIncludesParserRuleCall_4_0 = (RuleCall)cExtensionsAssignment_4.eContents().get(0);
+		private final Keyword cMachineKeyword_1 = (Keyword)cGroup.eContents().get(1);
+		private final Assignment cNameAssignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final RuleCall cNameIDTerminalRuleCall_2_0 = (RuleCall)cNameAssignment_2.eContents().get(0);
+		private final Assignment cExtensionsAssignment_3 = (Assignment)cGroup.eContents().get(3);
+		private final RuleCall cExtensionsMIncludesParserRuleCall_3_0 = (RuleCall)cExtensionsAssignment_3.eContents().get(0);
+		private final Group cGroup_4 = (Group)cGroup.eContents().get(4);
+		private final Keyword cRefinesKeyword_4_0 = (Keyword)cGroup_4.eContents().get(0);
+		private final Assignment cRefinesAssignment_4_1 = (Assignment)cGroup_4.eContents().get(1);
+		private final CrossReference cRefinesMachineCrossReference_4_1_0 = (CrossReference)cRefinesAssignment_4_1.eContents().get(0);
+		private final RuleCall cRefinesMachineIDTerminalRuleCall_4_1_0_1 = (RuleCall)cRefinesMachineCrossReference_4_1_0.eContents().get(1);
 		private final Group cGroup_5 = (Group)cGroup.eContents().get(5);
-		private final Keyword cRefinesKeyword_5_0 = (Keyword)cGroup_5.eContents().get(0);
-		private final Assignment cRefinesAssignment_5_1 = (Assignment)cGroup_5.eContents().get(1);
-		private final CrossReference cRefinesMachineCrossReference_5_1_0 = (CrossReference)cRefinesAssignment_5_1.eContents().get(0);
-		private final RuleCall cRefinesMachineIDTerminalRuleCall_5_1_0_1 = (RuleCall)cRefinesMachineCrossReference_5_1_0.eContents().get(1);
+		private final Keyword cSeesKeyword_5_0 = (Keyword)cGroup_5.eContents().get(0);
+		private final Assignment cSeesAssignment_5_1 = (Assignment)cGroup_5.eContents().get(1);
+		private final CrossReference cSeesContextCrossReference_5_1_0 = (CrossReference)cSeesAssignment_5_1.eContents().get(0);
+		private final RuleCall cSeesContextIDTerminalRuleCall_5_1_0_1 = (RuleCall)cSeesContextCrossReference_5_1_0.eContents().get(1);
 		private final Group cGroup_6 = (Group)cGroup.eContents().get(6);
-		private final Keyword cSeesKeyword_6_0 = (Keyword)cGroup_6.eContents().get(0);
-		private final Assignment cSeesAssignment_6_1 = (Assignment)cGroup_6.eContents().get(1);
-		private final CrossReference cSeesContextCrossReference_6_1_0 = (CrossReference)cSeesAssignment_6_1.eContents().get(0);
-		private final RuleCall cSeesContextIDTerminalRuleCall_6_1_0_1 = (RuleCall)cSeesContextCrossReference_6_1_0.eContents().get(1);
+		private final Keyword cVariablesKeyword_6_0 = (Keyword)cGroup_6.eContents().get(0);
+		private final Assignment cVariablesAssignment_6_1 = (Assignment)cGroup_6.eContents().get(1);
+		private final RuleCall cVariablesXVariableParserRuleCall_6_1_0 = (RuleCall)cVariablesAssignment_6_1.eContents().get(0);
 		private final Group cGroup_7 = (Group)cGroup.eContents().get(7);
-		private final Keyword cVariablesKeyword_7_0 = (Keyword)cGroup_7.eContents().get(0);
-		private final Assignment cVariablesAssignment_7_1 = (Assignment)cGroup_7.eContents().get(1);
-		private final RuleCall cVariablesXVariableParserRuleCall_7_1_0 = (RuleCall)cVariablesAssignment_7_1.eContents().get(0);
+		private final Keyword cInvariantsKeyword_7_0 = (Keyword)cGroup_7.eContents().get(0);
+		private final Assignment cInvariantsAssignment_7_1 = (Assignment)cGroup_7.eContents().get(1);
+		private final RuleCall cInvariantsXInvariantParserRuleCall_7_1_0 = (RuleCall)cInvariantsAssignment_7_1.eContents().get(0);
 		private final Group cGroup_8 = (Group)cGroup.eContents().get(8);
-		private final Keyword cInvariantsKeyword_8_0 = (Keyword)cGroup_8.eContents().get(0);
-		private final Assignment cInvariantsAssignment_8_1 = (Assignment)cGroup_8.eContents().get(1);
-		private final RuleCall cInvariantsXInvariantParserRuleCall_8_1_0 = (RuleCall)cInvariantsAssignment_8_1.eContents().get(0);
+		private final Keyword cVariantKeyword_8_0 = (Keyword)cGroup_8.eContents().get(0);
+		private final Assignment cVariantAssignment_8_1 = (Assignment)cGroup_8.eContents().get(1);
+		private final RuleCall cVariantXVariantParserRuleCall_8_1_0 = (RuleCall)cVariantAssignment_8_1.eContents().get(0);
 		private final Group cGroup_9 = (Group)cGroup.eContents().get(9);
-		private final Keyword cVariantKeyword_9_0 = (Keyword)cGroup_9.eContents().get(0);
-		private final Assignment cVariantAssignment_9_1 = (Assignment)cGroup_9.eContents().get(1);
-		private final RuleCall cVariantXVariantParserRuleCall_9_1_0 = (RuleCall)cVariantAssignment_9_1.eContents().get(0);
-		private final Group cGroup_10 = (Group)cGroup.eContents().get(10);
-		private final Keyword cEventsKeyword_10_0 = (Keyword)cGroup_10.eContents().get(0);
-		private final Assignment cEventsAssignment_10_1 = (Assignment)cGroup_10.eContents().get(1);
-		private final RuleCall cEventsXEventParserRuleCall_10_1_0 = (RuleCall)cEventsAssignment_10_1.eContents().get(0);
-		private final Assignment cEventsAssignment_10_2 = (Assignment)cGroup_10.eContents().get(2);
-		private final RuleCall cEventsXEventParserRuleCall_10_2_0 = (RuleCall)cEventsAssignment_10_2.eContents().get(0);
-		private final Assignment cExtensionsAssignment_11 = (Assignment)cGroup.eContents().get(11);
-		private final RuleCall cExtensionsXGroupParserRuleCall_11_0 = (RuleCall)cExtensionsAssignment_11.eContents().get(0);
-		private final Keyword cEndKeyword_12 = (Keyword)cGroup.eContents().get(12);
+		private final Keyword cEventsKeyword_9_0 = (Keyword)cGroup_9.eContents().get(0);
+		private final Assignment cEventsAssignment_9_1 = (Assignment)cGroup_9.eContents().get(1);
+		private final RuleCall cEventsXEventParserRuleCall_9_1_0 = (RuleCall)cEventsAssignment_9_1.eContents().get(0);
+		private final Assignment cEventsAssignment_9_2 = (Assignment)cGroup_9.eContents().get(2);
+		private final RuleCall cEventsXEventParserRuleCall_9_2_0 = (RuleCall)cEventsAssignment_9_2.eContents().get(0);
+		private final Assignment cExtensionsAssignment_10 = (Assignment)cGroup.eContents().get(10);
+		private final RuleCall cExtensionsXGroupParserRuleCall_10_0 = (RuleCall)cExtensionsAssignment_10.eContents().get(0);
+		private final Keyword cEndKeyword_11 = (Keyword)cGroup.eContents().get(11);
 		
-		///*
+		///* DD4G12
 		// * For XEvent-B 0.0.8 comments are allowed everywhere
 		// * ML_COMMENT and SL_COMMEN are defined as hidden
+		// * Introducing event groups/cases and their synchronisation
 		// */ Machine emachine::Machine:
-		//	{emachine::Machine} comment=(ML_COMMENT | SL_COMMENT)?
+		//	{emachine::Machine}
 		//	'machine' name=ID
 		//	extensions+=MIncludes* ('refines' refines+=[emachine::Machine])? ('sees' sees+=[econtext::Context]+)? ('variables'
 		//	variables+=XVariable+)? ('invariants' invariants+=XInvariant+)? ('variant' variant=XVariant)? ('events' events+=XEvent
@@ -85,134 +82,121 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 		//	extensions+=XGroup* 'end';
 		@Override public ParserRule getRule() { return rule; }
 		
-		//{emachine::Machine} comment=(ML_COMMENT | SL_COMMENT)? 'machine' name=ID extensions+=MIncludes* ('refines'
-		//refines+=[emachine::Machine])? ('sees' sees+=[econtext::Context]+)? ('variables' variables+=XVariable+)? ('invariants'
-		//invariants+=XInvariant+)? ('variant' variant=XVariant)? ('events' events+=XEvent events+=XEvent*)? extensions+=XGroup*
-		//'end'
+		//{emachine::Machine} 'machine' name=ID extensions+=MIncludes* ('refines' refines+=[emachine::Machine])? ('sees'
+		//sees+=[econtext::Context]+)? ('variables' variables+=XVariable+)? ('invariants' invariants+=XInvariant+)? ('variant'
+		//variant=XVariant)? ('events' events+=XEvent events+=XEvent*)? extensions+=XGroup* 'end'
 		public Group getGroup() { return cGroup; }
 		
 		//{emachine::Machine}
 		public Action getMachineAction_0() { return cMachineAction_0; }
 		
-		//comment=(ML_COMMENT | SL_COMMENT)?
-		public Assignment getCommentAssignment_1() { return cCommentAssignment_1; }
-		
-		//(ML_COMMENT | SL_COMMENT)
-		public Alternatives getCommentAlternatives_1_0() { return cCommentAlternatives_1_0; }
-		
-		//ML_COMMENT
-		public RuleCall getCommentML_COMMENTTerminalRuleCall_1_0_0() { return cCommentML_COMMENTTerminalRuleCall_1_0_0; }
-		
-		//SL_COMMENT
-		public RuleCall getCommentSL_COMMENTTerminalRuleCall_1_0_1() { return cCommentSL_COMMENTTerminalRuleCall_1_0_1; }
-		
 		//'machine'
-		public Keyword getMachineKeyword_2() { return cMachineKeyword_2; }
+		public Keyword getMachineKeyword_1() { return cMachineKeyword_1; }
 		
 		//name=ID
-		public Assignment getNameAssignment_3() { return cNameAssignment_3; }
+		public Assignment getNameAssignment_2() { return cNameAssignment_2; }
 		
 		//ID
-		public RuleCall getNameIDTerminalRuleCall_3_0() { return cNameIDTerminalRuleCall_3_0; }
+		public RuleCall getNameIDTerminalRuleCall_2_0() { return cNameIDTerminalRuleCall_2_0; }
 		
 		//extensions+=MIncludes*
-		public Assignment getExtensionsAssignment_4() { return cExtensionsAssignment_4; }
+		public Assignment getExtensionsAssignment_3() { return cExtensionsAssignment_3; }
 		
 		//MIncludes
-		public RuleCall getExtensionsMIncludesParserRuleCall_4_0() { return cExtensionsMIncludesParserRuleCall_4_0; }
+		public RuleCall getExtensionsMIncludesParserRuleCall_3_0() { return cExtensionsMIncludesParserRuleCall_3_0; }
 		
 		//('refines' refines+=[emachine::Machine])?
-		public Group getGroup_5() { return cGroup_5; }
+		public Group getGroup_4() { return cGroup_4; }
 		
 		//'refines'
-		public Keyword getRefinesKeyword_5_0() { return cRefinesKeyword_5_0; }
+		public Keyword getRefinesKeyword_4_0() { return cRefinesKeyword_4_0; }
 		
 		//refines+=[emachine::Machine]
-		public Assignment getRefinesAssignment_5_1() { return cRefinesAssignment_5_1; }
+		public Assignment getRefinesAssignment_4_1() { return cRefinesAssignment_4_1; }
 		
 		//[emachine::Machine]
-		public CrossReference getRefinesMachineCrossReference_5_1_0() { return cRefinesMachineCrossReference_5_1_0; }
+		public CrossReference getRefinesMachineCrossReference_4_1_0() { return cRefinesMachineCrossReference_4_1_0; }
 		
 		//ID
-		public RuleCall getRefinesMachineIDTerminalRuleCall_5_1_0_1() { return cRefinesMachineIDTerminalRuleCall_5_1_0_1; }
+		public RuleCall getRefinesMachineIDTerminalRuleCall_4_1_0_1() { return cRefinesMachineIDTerminalRuleCall_4_1_0_1; }
 		
 		//('sees' sees+=[econtext::Context]+)?
-		public Group getGroup_6() { return cGroup_6; }
+		public Group getGroup_5() { return cGroup_5; }
 		
 		//'sees'
-		public Keyword getSeesKeyword_6_0() { return cSeesKeyword_6_0; }
+		public Keyword getSeesKeyword_5_0() { return cSeesKeyword_5_0; }
 		
 		//sees+=[econtext::Context]+
-		public Assignment getSeesAssignment_6_1() { return cSeesAssignment_6_1; }
+		public Assignment getSeesAssignment_5_1() { return cSeesAssignment_5_1; }
 		
 		//[econtext::Context]
-		public CrossReference getSeesContextCrossReference_6_1_0() { return cSeesContextCrossReference_6_1_0; }
+		public CrossReference getSeesContextCrossReference_5_1_0() { return cSeesContextCrossReference_5_1_0; }
 		
 		//ID
-		public RuleCall getSeesContextIDTerminalRuleCall_6_1_0_1() { return cSeesContextIDTerminalRuleCall_6_1_0_1; }
+		public RuleCall getSeesContextIDTerminalRuleCall_5_1_0_1() { return cSeesContextIDTerminalRuleCall_5_1_0_1; }
 		
 		//('variables' variables+=XVariable+)?
-		public Group getGroup_7() { return cGroup_7; }
+		public Group getGroup_6() { return cGroup_6; }
 		
 		//'variables'
-		public Keyword getVariablesKeyword_7_0() { return cVariablesKeyword_7_0; }
+		public Keyword getVariablesKeyword_6_0() { return cVariablesKeyword_6_0; }
 		
 		//variables+=XVariable+
-		public Assignment getVariablesAssignment_7_1() { return cVariablesAssignment_7_1; }
+		public Assignment getVariablesAssignment_6_1() { return cVariablesAssignment_6_1; }
 		
 		//XVariable
-		public RuleCall getVariablesXVariableParserRuleCall_7_1_0() { return cVariablesXVariableParserRuleCall_7_1_0; }
+		public RuleCall getVariablesXVariableParserRuleCall_6_1_0() { return cVariablesXVariableParserRuleCall_6_1_0; }
 		
 		//('invariants' invariants+=XInvariant+)?
-		public Group getGroup_8() { return cGroup_8; }
+		public Group getGroup_7() { return cGroup_7; }
 		
 		//'invariants'
-		public Keyword getInvariantsKeyword_8_0() { return cInvariantsKeyword_8_0; }
+		public Keyword getInvariantsKeyword_7_0() { return cInvariantsKeyword_7_0; }
 		
 		//invariants+=XInvariant+
-		public Assignment getInvariantsAssignment_8_1() { return cInvariantsAssignment_8_1; }
+		public Assignment getInvariantsAssignment_7_1() { return cInvariantsAssignment_7_1; }
 		
 		//XInvariant
-		public RuleCall getInvariantsXInvariantParserRuleCall_8_1_0() { return cInvariantsXInvariantParserRuleCall_8_1_0; }
+		public RuleCall getInvariantsXInvariantParserRuleCall_7_1_0() { return cInvariantsXInvariantParserRuleCall_7_1_0; }
 		
 		//('variant' variant=XVariant)?
-		public Group getGroup_9() { return cGroup_9; }
+		public Group getGroup_8() { return cGroup_8; }
 		
 		//'variant'
-		public Keyword getVariantKeyword_9_0() { return cVariantKeyword_9_0; }
+		public Keyword getVariantKeyword_8_0() { return cVariantKeyword_8_0; }
 		
 		//variant=XVariant
-		public Assignment getVariantAssignment_9_1() { return cVariantAssignment_9_1; }
+		public Assignment getVariantAssignment_8_1() { return cVariantAssignment_8_1; }
 		
 		//XVariant
-		public RuleCall getVariantXVariantParserRuleCall_9_1_0() { return cVariantXVariantParserRuleCall_9_1_0; }
+		public RuleCall getVariantXVariantParserRuleCall_8_1_0() { return cVariantXVariantParserRuleCall_8_1_0; }
 		
 		//('events' events+=XEvent events+=XEvent*)?
-		public Group getGroup_10() { return cGroup_10; }
+		public Group getGroup_9() { return cGroup_9; }
 		
 		//'events'
-		public Keyword getEventsKeyword_10_0() { return cEventsKeyword_10_0; }
+		public Keyword getEventsKeyword_9_0() { return cEventsKeyword_9_0; }
 		
 		//events+=XEvent
-		public Assignment getEventsAssignment_10_1() { return cEventsAssignment_10_1; }
+		public Assignment getEventsAssignment_9_1() { return cEventsAssignment_9_1; }
 		
 		//XEvent
-		public RuleCall getEventsXEventParserRuleCall_10_1_0() { return cEventsXEventParserRuleCall_10_1_0; }
+		public RuleCall getEventsXEventParserRuleCall_9_1_0() { return cEventsXEventParserRuleCall_9_1_0; }
 		
 		//events+=XEvent*
-		public Assignment getEventsAssignment_10_2() { return cEventsAssignment_10_2; }
+		public Assignment getEventsAssignment_9_2() { return cEventsAssignment_9_2; }
 		
 		//XEvent
-		public RuleCall getEventsXEventParserRuleCall_10_2_0() { return cEventsXEventParserRuleCall_10_2_0; }
+		public RuleCall getEventsXEventParserRuleCall_9_2_0() { return cEventsXEventParserRuleCall_9_2_0; }
 		
 		//extensions+=XGroup*
-		public Assignment getExtensionsAssignment_11() { return cExtensionsAssignment_11; }
+		public Assignment getExtensionsAssignment_10() { return cExtensionsAssignment_10; }
 		
 		//XGroup
-		public RuleCall getExtensionsXGroupParserRuleCall_11_0() { return cExtensionsXGroupParserRuleCall_11_0; }
+		public RuleCall getExtensionsXGroupParserRuleCall_10_0() { return cExtensionsXGroupParserRuleCall_10_0; }
 		
 		//'end'
-		public Keyword getEndKeyword_12() { return cEndKeyword_12; }
+		public Keyword getEndKeyword_11() { return cEndKeyword_11; }
 	}
 	public class MIncludesElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ac.soton.xeventb.xmachine.XMachine.MIncludes");
@@ -518,67 +502,6 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 		//'end'
 		public Keyword getEndKeyword_6() { return cEndKeyword_6; }
 	}
-	public class XGroupSyncElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ac.soton.xeventb.xmachine.XMachine.XGroupSync");
-		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Action cEventCasesAction_0 = (Action)cGroup.eContents().get(0);
-		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final RuleCall cNameIDTerminalRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
-		private final Group cGroup_2 = (Group)cGroup.eContents().get(2);
-		private final Keyword cLeftParenthesisKeyword_2_0 = (Keyword)cGroup_2.eContents().get(0);
-		private final Assignment cFormalParametersAssignment_2_1 = (Assignment)cGroup_2.eContents().get(1);
-		private final RuleCall cFormalParametersXFormalArgumentParserRuleCall_2_1_0 = (RuleCall)cFormalParametersAssignment_2_1.eContents().get(0);
-		private final Group cGroup_2_2 = (Group)cGroup_2.eContents().get(2);
-		private final Keyword cCommaKeyword_2_2_0 = (Keyword)cGroup_2_2.eContents().get(0);
-		private final Assignment cFormalParametersAssignment_2_2_1 = (Assignment)cGroup_2_2.eContents().get(1);
-		private final RuleCall cFormalParametersXFormalArgumentParserRuleCall_2_2_1_0 = (RuleCall)cFormalParametersAssignment_2_2_1.eContents().get(0);
-		private final Keyword cRightParenthesisKeyword_2_3 = (Keyword)cGroup_2.eContents().get(3);
-		
-		//XGroupSync eventbcoreextension::EventCases:
-		//	{eventbcoreextension::EventCases} name=ID ('(' formalParameters+=XFormalArgument (','
-		//	formalParameters+=XFormalArgument)* ')')?;
-		@Override public ParserRule getRule() { return rule; }
-		
-		//{eventbcoreextension::EventCases} name=ID ('(' formalParameters+=XFormalArgument (','
-		//formalParameters+=XFormalArgument)* ')')?
-		public Group getGroup() { return cGroup; }
-		
-		//{eventbcoreextension::EventCases}
-		public Action getEventCasesAction_0() { return cEventCasesAction_0; }
-		
-		//name=ID
-		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
-		
-		//ID
-		public RuleCall getNameIDTerminalRuleCall_1_0() { return cNameIDTerminalRuleCall_1_0; }
-		
-		//('(' formalParameters+=XFormalArgument (',' formalParameters+=XFormalArgument)* ')')?
-		public Group getGroup_2() { return cGroup_2; }
-		
-		//'('
-		public Keyword getLeftParenthesisKeyword_2_0() { return cLeftParenthesisKeyword_2_0; }
-		
-		//formalParameters+=XFormalArgument
-		public Assignment getFormalParametersAssignment_2_1() { return cFormalParametersAssignment_2_1; }
-		
-		//XFormalArgument
-		public RuleCall getFormalParametersXFormalArgumentParserRuleCall_2_1_0() { return cFormalParametersXFormalArgumentParserRuleCall_2_1_0; }
-		
-		//(',' formalParameters+=XFormalArgument)*
-		public Group getGroup_2_2() { return cGroup_2_2; }
-		
-		//','
-		public Keyword getCommaKeyword_2_2_0() { return cCommaKeyword_2_2_0; }
-		
-		//formalParameters+=XFormalArgument
-		public Assignment getFormalParametersAssignment_2_2_1() { return cFormalParametersAssignment_2_2_1; }
-		
-		//XFormalArgument
-		public RuleCall getFormalParametersXFormalArgumentParserRuleCall_2_2_1_0() { return cFormalParametersXFormalArgumentParserRuleCall_2_2_1_0; }
-		
-		//')'
-		public Keyword getRightParenthesisKeyword_2_3() { return cRightParenthesisKeyword_2_3; }
-	}
 	public class XFormalParameterElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ac.soton.xeventb.xmachine.XMachine.XFormalParameter");
 		private final Group cGroup = (Group)rule.eContents().get(1);
@@ -610,29 +533,6 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 		//ID
 		public RuleCall getNameIDTerminalRuleCall_2_0() { return cNameIDTerminalRuleCall_2_0; }
 	}
-	public class XFormalArgumentElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ac.soton.xeventb.xmachine.XMachine.XFormalArgument");
-		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Action cFormalParameterAction_0 = (Action)cGroup.eContents().get(0);
-		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final RuleCall cNameIDTerminalRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
-		
-		//XFormalArgument eventbcoreextension::FormalParameter:
-		//	{eventbcoreextension::FormalParameter} name=ID;
-		@Override public ParserRule getRule() { return rule; }
-		
-		//{eventbcoreextension::FormalParameter} name=ID
-		public Group getGroup() { return cGroup; }
-		
-		//{eventbcoreextension::FormalParameter}
-		public Action getFormalParameterAction_0() { return cFormalParameterAction_0; }
-		
-		//name=ID
-		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
-		
-		//ID
-		public RuleCall getNameIDTerminalRuleCall_1_0() { return cNameIDTerminalRuleCall_1_0; }
-	}
 	public class XEventElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ac.soton.xeventb.xmachine.XMachine.XEvent");
 		private final Group cGroup = (Group)rule.eContents().get(1);
@@ -645,7 +545,7 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cConvergenceAssignment_2_1 = (Assignment)cUnorderedGroup_2.eContents().get(1);
 		private final RuleCall cConvergenceXConvergenceEnumRuleCall_2_1_0 = (RuleCall)cConvergenceAssignment_2_1.eContents().get(0);
 		private final Assignment cExtensionsAssignment_3 = (Assignment)cGroup.eContents().get(3);
-		private final RuleCall cExtensionsGroupOrEventParserRuleCall_3_0 = (RuleCall)cExtensionsAssignment_3.eContents().get(0);
+		private final RuleCall cExtensionsXGroupOrEventParserRuleCall_3_0 = (RuleCall)cExtensionsAssignment_3.eContents().get(0);
 		private final Group cGroup_4 = (Group)cGroup.eContents().get(4);
 		private final Keyword cRefinesKeyword_4_0 = (Keyword)cGroup_4.eContents().get(0);
 		private final Assignment cRefinesAssignment_4_1 = (Assignment)cGroup_4.eContents().get(1);
@@ -690,7 +590,7 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cEndKeyword_6 = (Keyword)cGroup.eContents().get(6);
 		
 		//XEvent emachine::Event:
-		//	{emachine::Event} name=ID (extended?='extended'? & convergence=XConvergence?) extensions+=groupOrEvent* ('refines'
+		//	{emachine::Event} name=ID (extended?='extended'? & convergence=XConvergence?) extensions+=XGroupOrEvent* ('refines'
 		//	refines+=[emachine::Event]+)? (('with' witnesses+=XWitness+)?
 		//	'begin'
 		//	actions+=XAction+
@@ -707,7 +607,7 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 		//	'end';
 		@Override public ParserRule getRule() { return rule; }
 		
-		//{emachine::Event} name=ID (extended?='extended'? & convergence=XConvergence?) extensions+=groupOrEvent* ('refines'
+		//{emachine::Event} name=ID (extended?='extended'? & convergence=XConvergence?) extensions+=XGroupOrEvent* ('refines'
 		//refines+=[emachine::Event]+)? (('with' witnesses+=XWitness+)? 'begin' actions+=XAction+ | 'when' guards+=XGuard+
 		//('with' witnesses+=XWitness+)? ('then' actions+=XAction+)? | 'any' parameters+=XParameter+ 'where' guards+=XGuard+
 		//('with' witnesses+=XWitness+)? ('then' actions+=XAction+)?)? 'end'
@@ -738,12 +638,11 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 		public RuleCall getConvergenceXConvergenceEnumRuleCall_2_1_0() { return cConvergenceXConvergenceEnumRuleCall_2_1_0; }
 		
 		////	( extensions+= EventSync*)
-		////	( extensions+= GroupSync*) //new
-		//extensions+=groupOrEvent*
+		//extensions+=XGroupOrEvent*
 		public Assignment getExtensionsAssignment_3() { return cExtensionsAssignment_3; }
 		
-		//groupOrEvent
-		public RuleCall getExtensionsGroupOrEventParserRuleCall_3_0() { return cExtensionsGroupOrEventParserRuleCall_3_0; }
+		//XGroupOrEvent
+		public RuleCall getExtensionsXGroupOrEventParserRuleCall_3_0() { return cExtensionsXGroupOrEventParserRuleCall_3_0; }
 		
 		//('refines' refines+=[emachine::Event]+)?
 		public Group getGroup_4() { return cGroup_4; }
@@ -887,10 +786,6 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 		private final CrossReference cSynchronisedEventEventCrossReference_1_2_0 = (CrossReference)cSynchronisedEventAssignment_1_2.eContents().get(0);
 		private final RuleCall cSynchronisedEventEventIDTerminalRuleCall_1_2_0_1 = (RuleCall)cSynchronisedEventEventCrossReference_1_2_0.eContents().get(1);
 		
-		////EventSync returns einclusion::EventSynchronisation:
-		////	{einclusion::EventSynchronisation}
-		////	('synchronises' (prefix=ID'.')?(synchronisedEvent = [emachine::Event])| synchronisedCases = [eventbcoreextension::EventCases])
-		////;
 		//EventSync einclusion::EventSynchronisation:
 		//	{einclusion::EventSynchronisation} ('synchronises' (prefix=ID '.')? synchronisedEvent=[emachine::Event]);
 		@Override public ParserRule getRule() { return rule; }
@@ -941,14 +836,23 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cSynchronisedCasesAssignment_1_2 = (Assignment)cGroup_1.eContents().get(2);
 		private final CrossReference cSynchronisedCasesEventCasesCrossReference_1_2_0 = (CrossReference)cSynchronisedCasesAssignment_1_2.eContents().get(0);
 		private final RuleCall cSynchronisedCasesEventCasesIDTerminalRuleCall_1_2_0_1 = (RuleCall)cSynchronisedCasesEventCasesCrossReference_1_2_0.eContents().get(1);
+		private final Group cGroup_2 = (Group)cGroup.eContents().get(2);
+		private final Keyword cLeftParenthesisKeyword_2_0 = (Keyword)cGroup_2.eContents().get(0);
+		private final Assignment cActualParametersAssignment_2_1 = (Assignment)cGroup_2.eContents().get(1);
+		private final RuleCall cActualParametersIDTerminalRuleCall_2_1_0 = (RuleCall)cActualParametersAssignment_2_1.eContents().get(0);
+		private final Group cGroup_2_2 = (Group)cGroup_2.eContents().get(2);
+		private final Keyword cCommaKeyword_2_2_0 = (Keyword)cGroup_2_2.eContents().get(0);
+		private final Assignment cActualParametersAssignment_2_2_1 = (Assignment)cGroup_2_2.eContents().get(1);
+		private final RuleCall cActualParametersIDTerminalRuleCall_2_2_1_0 = (RuleCall)cActualParametersAssignment_2_2_1.eContents().get(0);
+		private final Keyword cRightParenthesisKeyword_2_3 = (Keyword)cGroup_2.eContents().get(3);
 		
 		//GroupSync einclusion::EventSynchronisation:
 		//	{einclusion::EventSynchronisation} ('synchronisesGroup' (prefix=ID '.')?
-		//	synchronisedCases=[eventbcoreextension::EventCases]);
+		//	synchronisedCases=[eventbcoreextension::EventCases]) ('(' actualParameters+=ID (',' actualParameters+=ID)* ')')?;
 		@Override public ParserRule getRule() { return rule; }
 		
 		//{einclusion::EventSynchronisation} ('synchronisesGroup' (prefix=ID '.')?
-		//synchronisedCases=[eventbcoreextension::EventCases])
+		//synchronisedCases=[eventbcoreextension::EventCases]) ('(' actualParameters+=ID (',' actualParameters+=ID)* ')')?
 		public Group getGroup() { return cGroup; }
 		
 		//{einclusion::EventSynchronisation}
@@ -980,14 +884,41 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 		
 		//ID
 		public RuleCall getSynchronisedCasesEventCasesIDTerminalRuleCall_1_2_0_1() { return cSynchronisedCasesEventCasesIDTerminalRuleCall_1_2_0_1; }
+		
+		//('(' actualParameters+=ID (',' actualParameters+=ID)* ')')?
+		public Group getGroup_2() { return cGroup_2; }
+		
+		//'('
+		public Keyword getLeftParenthesisKeyword_2_0() { return cLeftParenthesisKeyword_2_0; }
+		
+		//actualParameters+=ID
+		public Assignment getActualParametersAssignment_2_1() { return cActualParametersAssignment_2_1; }
+		
+		//ID
+		public RuleCall getActualParametersIDTerminalRuleCall_2_1_0() { return cActualParametersIDTerminalRuleCall_2_1_0; }
+		
+		//(',' actualParameters+=ID)*
+		public Group getGroup_2_2() { return cGroup_2_2; }
+		
+		//','
+		public Keyword getCommaKeyword_2_2_0() { return cCommaKeyword_2_2_0; }
+		
+		//actualParameters+=ID
+		public Assignment getActualParametersAssignment_2_2_1() { return cActualParametersAssignment_2_2_1; }
+		
+		//ID
+		public RuleCall getActualParametersIDTerminalRuleCall_2_2_1_0() { return cActualParametersIDTerminalRuleCall_2_2_1_0; }
+		
+		//')'
+		public Keyword getRightParenthesisKeyword_2_3() { return cRightParenthesisKeyword_2_3; }
 	}
-	public class GroupOrEventElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ac.soton.xeventb.xmachine.XMachine.groupOrEvent");
+	public class XGroupOrEventElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ac.soton.xeventb.xmachine.XMachine.XGroupOrEvent");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cGroupSyncParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final RuleCall cEventSyncParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
 		
-		//groupOrEvent einclusion::EventSynchronisation:
+		//XGroupOrEvent einclusion::EventSynchronisation:
 		//	GroupSync | EventSync;
 		@Override public ParserRule getRule() { return rule; }
 		
@@ -1207,14 +1138,12 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 	private final TerminalRule tXLABEL;
 	private final XVariantElements pXVariant;
 	private final XGroupElements pXGroup;
-	private final XGroupSyncElements pXGroupSync;
 	private final XFormalParameterElements pXFormalParameter;
-	private final XFormalArgumentElements pXFormalArgument;
 	private final XDirectionElements eXDirection;
 	private final XEventElements pXEvent;
 	private final EventSyncElements pEventSync;
 	private final GroupSyncElements pGroupSync;
-	private final GroupOrEventElements pGroupOrEvent;
+	private final XGroupOrEventElements pXGroupOrEvent;
 	private final XConvergenceElements eXConvergence;
 	private final XParameterElements pXParameter;
 	private final XGuardElements pXGuard;
@@ -1240,14 +1169,12 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 		this.tXLABEL = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "ac.soton.xeventb.xmachine.XMachine.XLABEL");
 		this.pXVariant = new XVariantElements();
 		this.pXGroup = new XGroupElements();
-		this.pXGroupSync = new XGroupSyncElements();
 		this.pXFormalParameter = new XFormalParameterElements();
-		this.pXFormalArgument = new XFormalArgumentElements();
 		this.eXDirection = new XDirectionElements();
 		this.pXEvent = new XEventElements();
 		this.pEventSync = new EventSyncElements();
 		this.pGroupSync = new GroupSyncElements();
-		this.pGroupOrEvent = new GroupOrEventElements();
+		this.pXGroupOrEvent = new XGroupOrEventElements();
 		this.eXConvergence = new XConvergenceElements();
 		this.pXParameter = new XParameterElements();
 		this.pXGuard = new XGuardElements();
@@ -1284,11 +1211,12 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	
-	///*
+	///* DD4G12
 	// * For XEvent-B 0.0.8 comments are allowed everywhere
 	// * ML_COMMENT and SL_COMMEN are defined as hidden
+	// * Introducing event groups/cases and their synchronisation
 	// */ Machine emachine::Machine:
-	//	{emachine::Machine} comment=(ML_COMMENT | SL_COMMENT)?
+	//	{emachine::Machine}
 	//	'machine' name=ID
 	//	extensions+=MIncludes* ('refines' refines+=[emachine::Machine])? ('sees' sees+=[econtext::Context]+)? ('variables'
 	//	variables+=XVariable+)? ('invariants' invariants+=XInvariant+)? ('variant' variant=XVariant)? ('events' events+=XEvent
@@ -1372,17 +1300,6 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 		return getXGroupAccess().getRule();
 	}
 	
-	//XGroupSync eventbcoreextension::EventCases:
-	//	{eventbcoreextension::EventCases} name=ID ('(' formalParameters+=XFormalArgument (','
-	//	formalParameters+=XFormalArgument)* ')')?;
-	public XGroupSyncElements getXGroupSyncAccess() {
-		return pXGroupSync;
-	}
-	
-	public ParserRule getXGroupSyncRule() {
-		return getXGroupSyncAccess().getRule();
-	}
-	
 	//XFormalParameter eventbcoreextension::FormalParameter:
 	//	{eventbcoreextension::FormalParameter} direction=XDirection name=ID;
 	public XFormalParameterElements getXFormalParameterAccess() {
@@ -1391,16 +1308,6 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 	
 	public ParserRule getXFormalParameterRule() {
 		return getXFormalParameterAccess().getRule();
-	}
-	
-	//XFormalArgument eventbcoreextension::FormalParameter:
-	//	{eventbcoreextension::FormalParameter} name=ID;
-	public XFormalArgumentElements getXFormalArgumentAccess() {
-		return pXFormalArgument;
-	}
-	
-	public ParserRule getXFormalArgumentRule() {
-		return getXFormalArgumentAccess().getRule();
 	}
 	
 	//enum XDirection returns eventbcoreextension::INOUT:
@@ -1414,7 +1321,7 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//XEvent emachine::Event:
-	//	{emachine::Event} name=ID (extended?='extended'? & convergence=XConvergence?) extensions+=groupOrEvent* ('refines'
+	//	{emachine::Event} name=ID (extended?='extended'? & convergence=XConvergence?) extensions+=XGroupOrEvent* ('refines'
 	//	refines+=[emachine::Event]+)? (('with' witnesses+=XWitness+)?
 	//	'begin'
 	//	actions+=XAction+
@@ -1437,10 +1344,6 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 		return getXEventAccess().getRule();
 	}
 	
-	////EventSync returns einclusion::EventSynchronisation:
-	////	{einclusion::EventSynchronisation}
-	////	('synchronises' (prefix=ID'.')?(synchronisedEvent = [emachine::Event])| synchronisedCases = [eventbcoreextension::EventCases])
-	////;
 	//EventSync einclusion::EventSynchronisation:
 	//	{einclusion::EventSynchronisation} ('synchronises' (prefix=ID '.')? synchronisedEvent=[emachine::Event]);
 	public EventSyncElements getEventSyncAccess() {
@@ -1453,7 +1356,7 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 	
 	//GroupSync einclusion::EventSynchronisation:
 	//	{einclusion::EventSynchronisation} ('synchronisesGroup' (prefix=ID '.')?
-	//	synchronisedCases=[eventbcoreextension::EventCases]);
+	//	synchronisedCases=[eventbcoreextension::EventCases]) ('(' actualParameters+=ID (',' actualParameters+=ID)* ')')?;
 	public GroupSyncElements getGroupSyncAccess() {
 		return pGroupSync;
 	}
@@ -1462,14 +1365,14 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 		return getGroupSyncAccess().getRule();
 	}
 	
-	//groupOrEvent einclusion::EventSynchronisation:
+	//XGroupOrEvent einclusion::EventSynchronisation:
 	//	GroupSync | EventSync;
-	public GroupOrEventElements getGroupOrEventAccess() {
-		return pGroupOrEvent;
+	public XGroupOrEventElements getXGroupOrEventAccess() {
+		return pXGroupOrEvent;
 	}
 	
-	public ParserRule getGroupOrEventRule() {
-		return getGroupOrEventAccess().getRule();
+	public ParserRule getXGroupOrEventRule() {
+		return getXGroupOrEventAccess().getRule();
 	}
 	
 	//enum XConvergence returns emachine::Convergence:

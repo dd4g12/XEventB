@@ -20,14 +20,14 @@ import "platform:/resource/org.eventb.emf.core/model/eventbcore.ecore#//machine"
 import "platform:/resource/org.eventb.emf.core/model/eventbcore.ecore#//context"as econtext
 import "http://soton.ac.uk/models/eventb/coreextension/2014" as eventbcoreextension
 
-/*
+/* DD4G12
  * For XEvent-B 0.0.8 comments are allowed everywhere
  * ML_COMMENT and SL_COMMEN are defined as hidden
+ * Introducing event groups/cases and their synchronisation
  */
 
 Machine returns emachine::Machine:
 	{emachine::Machine}
-   (comment=(ML_COMMENT|SL_COMMENT))?
 	'machine' name=ID
 	( extensions+= MIncludes*)
     ('refines' refines+=[emachine::Machine])?
@@ -78,19 +78,10 @@ XGroup returns eventbcoreextension::EventCases:
 	(events +=[emachine::Event](',' events +=[emachine::Event])*)?
 	'end'
 ;
-XGroupSync returns eventbcoreextension::EventCases:
-	{eventbcoreextension::EventCases}
-	name = ID
-	('(' formalParameters += XFormalArgument(',' formalParameters += XFormalArgument)* ')')?
-;
+
 XFormalParameter returns eventbcoreextension::FormalParameter:
 	{eventbcoreextension::FormalParameter}
 	direction = XDirection name = ID
-;
-
-XFormalArgument returns eventbcoreextension::FormalParameter:
-	{eventbcoreextension::FormalParameter}
-	name = ID
 ;
 
 enum XDirection returns eventbcoreextension::INOUT:
@@ -105,8 +96,7 @@ XEvent returns emachine::Event:
 		(convergence=XConvergence)?
 	)
 //	( extensions+= EventSync*)
-//	( extensions+= GroupSync*) //new
-    ( extensions+= groupOrEvent*)//new
+    ( extensions+= XGroupOrEvent*)//new
 	('refines' refines+=[emachine::Event]+)?
 	
 	(
@@ -131,20 +121,15 @@ XEvent returns emachine::Event:
 	'end'
 ;
 
-//EventSync returns einclusion::EventSynchronisation:
-//	{einclusion::EventSynchronisation}
-//	('synchronises' (prefix=ID'.')?(synchronisedEvent = [emachine::Event])| synchronisedCases = [eventbcoreextension::EventCases])
-//;
 EventSync returns einclusion::EventSynchronisation:
 	{einclusion::EventSynchronisation}
 	('synchronises' (prefix=ID'.')?(synchronisedEvent = [emachine::Event]))
 ;
 GroupSync returns einclusion::EventSynchronisation:
 	{einclusion::EventSynchronisation}
-	('synchronisesGroup' (prefix=ID'.')?(synchronisedCases = [eventbcoreextension::EventCases])) //XGroupSync
-	//('synchronisesGroup' (prefix=ID'.')?(synchronisedCases = XGroupSync))
+	('synchronisesGroup' (prefix=ID'.')?(synchronisedCases = [eventbcoreextension::EventCases]))('(' actualParameters += ID (',' actualParameters += ID)* ')')?
 ;
-groupOrEvent returns einclusion::EventSynchronisation:
+XGroupOrEvent returns einclusion::EventSynchronisation:
  GroupSync | EventSync
 ;
 enum XConvergence returns emachine::Convergence:
