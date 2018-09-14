@@ -54,8 +54,7 @@ public class XMachineParser extends AbstractContentAssistParser {
 					put(grammarAccess.getXGroupAccess().getGroup(), "rule__XGroup__Group__0");
 					put(grammarAccess.getXGroupAccess().getGroup_3(), "rule__XGroup__Group_3__0");
 					put(grammarAccess.getXGroupAccess().getGroup_3_2(), "rule__XGroup__Group_3_2__0");
-					put(grammarAccess.getXGroupAccess().getGroup_5(), "rule__XGroup__Group_5__0");
-					put(grammarAccess.getXGroupAccess().getGroup_5_1(), "rule__XGroup__Group_5_1__0");
+					put(grammarAccess.getXGroupAccess().getGroup_4(), "rule__XGroup__Group_4__0");
 					put(grammarAccess.getXFormalParameterAccess().getGroup(), "rule__XFormalParameter__Group__0");
 					put(grammarAccess.getXEventAccess().getGroup(), "rule__XEvent__Group__0");
 					put(grammarAccess.getXEventAccess().getGroup_5(), "rule__XEvent__Group_5__0");
@@ -101,8 +100,8 @@ public class XMachineParser extends AbstractContentAssistParser {
 					put(grammarAccess.getXGroupAccess().getNameAssignment_2(), "rule__XGroup__NameAssignment_2");
 					put(grammarAccess.getXGroupAccess().getFormalParametersAssignment_3_1(), "rule__XGroup__FormalParametersAssignment_3_1");
 					put(grammarAccess.getXGroupAccess().getFormalParametersAssignment_3_2_1(), "rule__XGroup__FormalParametersAssignment_3_2_1");
-					put(grammarAccess.getXGroupAccess().getEventsAssignment_5_0(), "rule__XGroup__EventsAssignment_5_0");
-					put(grammarAccess.getXGroupAccess().getEventsAssignment_5_1_1(), "rule__XGroup__EventsAssignment_5_1_1");
+					put(grammarAccess.getXGroupAccess().getEventsAssignment_4_1(), "rule__XGroup__EventsAssignment_4_1");
+					put(grammarAccess.getXGroupAccess().getEventsAssignment_4_2(), "rule__XGroup__EventsAssignment_4_2");
 					put(grammarAccess.getXFormalParameterAccess().getDirectionAssignment_1(), "rule__XFormalParameter__DirectionAssignment_1");
 					put(grammarAccess.getXFormalParameterAccess().getNameAssignment_2(), "rule__XFormalParameter__NameAssignment_2");
 					put(grammarAccess.getXEventAccess().getNameAssignment_2(), "rule__XEvent__NameAssignment_2");

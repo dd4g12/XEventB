@@ -722,11 +722,11 @@ ruleXGroup returns [EObject current=null]
 				newLeafNode(otherlv_7, grammarAccess.getXGroupAccess().getRightParenthesisKeyword_3_3());
 			}
 		)?
-		otherlv_8='begin'
-		{
-			newLeafNode(otherlv_8, grammarAccess.getXGroupAccess().getBeginKeyword_4());
-		}
 		(
+			otherlv_8='begin'
+			{
+				newLeafNode(otherlv_8, grammarAccess.getXGroupAccess().getBeginKeyword_4_0());
+			}
 			(
 				(
 					{
@@ -736,33 +736,27 @@ ruleXGroup returns [EObject current=null]
 					}
 					otherlv_9=RULE_ID
 					{
-						newLeafNode(otherlv_9, grammarAccess.getXGroupAccess().getEventsEventCrossReference_5_0_0());
+						newLeafNode(otherlv_9, grammarAccess.getXGroupAccess().getEventsEventCrossReference_4_1_0());
 					}
 				)
 			)
 			(
-				otherlv_10=','
-				{
-					newLeafNode(otherlv_10, grammarAccess.getXGroupAccess().getCommaKeyword_5_1_0());
-				}
 				(
-					(
-						{
-							if ($current==null) {
-								$current = createModelElement(grammarAccess.getXGroupRule());
-							}
+					{
+						if ($current==null) {
+							$current = createModelElement(grammarAccess.getXGroupRule());
 						}
-						otherlv_11=RULE_ID
-						{
-							newLeafNode(otherlv_11, grammarAccess.getXGroupAccess().getEventsEventCrossReference_5_1_1_0());
-						}
-					)
+					}
+					otherlv_10=RULE_ID
+					{
+						newLeafNode(otherlv_10, grammarAccess.getXGroupAccess().getEventsEventCrossReference_4_2_0());
+					}
 				)
 			)*
 		)?
-		otherlv_12='end'
+		otherlv_11='end'
 		{
-			newLeafNode(otherlv_12, grammarAccess.getXGroupAccess().getEndKeyword_6());
+			newLeafNode(otherlv_11, grammarAccess.getXGroupAccess().getEndKeyword_5());
 		}
 	)
 ;

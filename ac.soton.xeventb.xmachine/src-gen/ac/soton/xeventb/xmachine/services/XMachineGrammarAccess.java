@@ -406,27 +406,26 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cFormalParametersAssignment_3_2_1 = (Assignment)cGroup_3_2.eContents().get(1);
 		private final RuleCall cFormalParametersXFormalParameterParserRuleCall_3_2_1_0 = (RuleCall)cFormalParametersAssignment_3_2_1.eContents().get(0);
 		private final Keyword cRightParenthesisKeyword_3_3 = (Keyword)cGroup_3.eContents().get(3);
-		private final Keyword cBeginKeyword_4 = (Keyword)cGroup.eContents().get(4);
-		private final Group cGroup_5 = (Group)cGroup.eContents().get(5);
-		private final Assignment cEventsAssignment_5_0 = (Assignment)cGroup_5.eContents().get(0);
-		private final CrossReference cEventsEventCrossReference_5_0_0 = (CrossReference)cEventsAssignment_5_0.eContents().get(0);
-		private final RuleCall cEventsEventIDTerminalRuleCall_5_0_0_1 = (RuleCall)cEventsEventCrossReference_5_0_0.eContents().get(1);
-		private final Group cGroup_5_1 = (Group)cGroup_5.eContents().get(1);
-		private final Keyword cCommaKeyword_5_1_0 = (Keyword)cGroup_5_1.eContents().get(0);
-		private final Assignment cEventsAssignment_5_1_1 = (Assignment)cGroup_5_1.eContents().get(1);
-		private final CrossReference cEventsEventCrossReference_5_1_1_0 = (CrossReference)cEventsAssignment_5_1_1.eContents().get(0);
-		private final RuleCall cEventsEventIDTerminalRuleCall_5_1_1_0_1 = (RuleCall)cEventsEventCrossReference_5_1_1_0.eContents().get(1);
-		private final Keyword cEndKeyword_6 = (Keyword)cGroup.eContents().get(6);
+		private final Group cGroup_4 = (Group)cGroup.eContents().get(4);
+		private final Keyword cBeginKeyword_4_0 = (Keyword)cGroup_4.eContents().get(0);
+		private final Assignment cEventsAssignment_4_1 = (Assignment)cGroup_4.eContents().get(1);
+		private final CrossReference cEventsEventCrossReference_4_1_0 = (CrossReference)cEventsAssignment_4_1.eContents().get(0);
+		private final RuleCall cEventsEventIDTerminalRuleCall_4_1_0_1 = (RuleCall)cEventsEventCrossReference_4_1_0.eContents().get(1);
+		private final Assignment cEventsAssignment_4_2 = (Assignment)cGroup_4.eContents().get(2);
+		private final CrossReference cEventsEventCrossReference_4_2_0 = (CrossReference)cEventsAssignment_4_2.eContents().get(0);
+		private final RuleCall cEventsEventIDTerminalRuleCall_4_2_0_1 = (RuleCall)cEventsEventCrossReference_4_2_0.eContents().get(1);
+		private final Keyword cEndKeyword_5 = (Keyword)cGroup.eContents().get(5);
 		
 		//XGroup eventbcoreextension::EventCases:
 		//	{eventbcoreextension::EventCases}
-		//	'group' name=ID ('(' formalParameters+=XFormalParameter (',' formalParameters+=XFormalParameter)* ')')?
-		//	'begin' (events+=[emachine::Event] (',' events+=[emachine::Event])*)?
+		//	'group' name=ID ('(' formalParameters+=XFormalParameter (',' formalParameters+=XFormalParameter)* ')')? ('begin'
+		//	events+=[emachine::Event] events+=[emachine::Event]*)? //removed comma unordered list
 		//	'end';
 		@Override public ParserRule getRule() { return rule; }
 		
 		//{eventbcoreextension::EventCases} 'group' name=ID ('(' formalParameters+=XFormalParameter (','
-		//formalParameters+=XFormalParameter)* ')')? 'begin' (events+=[emachine::Event] (',' events+=[emachine::Event])*)? 'end'
+		//formalParameters+=XFormalParameter)* ')')? ('begin' events+=[emachine::Event] events+=[emachine::Event]*)? //removed comma unordered list
+		//'end'
 		public Group getGroup() { return cGroup; }
 		
 		//{eventbcoreextension::EventCases}
@@ -468,38 +467,33 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 		//')'
 		public Keyword getRightParenthesisKeyword_3_3() { return cRightParenthesisKeyword_3_3; }
 		
+		//('begin' events+=[emachine::Event] events+=[emachine::Event]*)?
+		public Group getGroup_4() { return cGroup_4; }
+		
 		//'begin'
-		public Keyword getBeginKeyword_4() { return cBeginKeyword_4; }
-		
-		//(events+=[emachine::Event] (',' events+=[emachine::Event])*)?
-		public Group getGroup_5() { return cGroup_5; }
+		public Keyword getBeginKeyword_4_0() { return cBeginKeyword_4_0; }
 		
 		//events+=[emachine::Event]
-		public Assignment getEventsAssignment_5_0() { return cEventsAssignment_5_0; }
+		public Assignment getEventsAssignment_4_1() { return cEventsAssignment_4_1; }
 		
 		//[emachine::Event]
-		public CrossReference getEventsEventCrossReference_5_0_0() { return cEventsEventCrossReference_5_0_0; }
+		public CrossReference getEventsEventCrossReference_4_1_0() { return cEventsEventCrossReference_4_1_0; }
 		
 		//ID
-		public RuleCall getEventsEventIDTerminalRuleCall_5_0_0_1() { return cEventsEventIDTerminalRuleCall_5_0_0_1; }
+		public RuleCall getEventsEventIDTerminalRuleCall_4_1_0_1() { return cEventsEventIDTerminalRuleCall_4_1_0_1; }
 		
-		//(',' events+=[emachine::Event])*
-		public Group getGroup_5_1() { return cGroup_5_1; }
-		
-		//','
-		public Keyword getCommaKeyword_5_1_0() { return cCommaKeyword_5_1_0; }
-		
-		//events+=[emachine::Event]
-		public Assignment getEventsAssignment_5_1_1() { return cEventsAssignment_5_1_1; }
+		//events+=[emachine::Event]*
+		public Assignment getEventsAssignment_4_2() { return cEventsAssignment_4_2; }
 		
 		//[emachine::Event]
-		public CrossReference getEventsEventCrossReference_5_1_1_0() { return cEventsEventCrossReference_5_1_1_0; }
+		public CrossReference getEventsEventCrossReference_4_2_0() { return cEventsEventCrossReference_4_2_0; }
 		
 		//ID
-		public RuleCall getEventsEventIDTerminalRuleCall_5_1_1_0_1() { return cEventsEventIDTerminalRuleCall_5_1_1_0_1; }
+		public RuleCall getEventsEventIDTerminalRuleCall_4_2_0_1() { return cEventsEventIDTerminalRuleCall_4_2_0_1; }
 		
+		////removed comma unordered list
 		//'end'
-		public Keyword getEndKeyword_6() { return cEndKeyword_6; }
+		public Keyword getEndKeyword_5() { return cEndKeyword_5; }
 	}
 	public class XFormalParameterElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ac.soton.xeventb.xmachine.XMachine.XFormalParameter");
@@ -1292,8 +1286,8 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 	
 	//XGroup eventbcoreextension::EventCases:
 	//	{eventbcoreextension::EventCases}
-	//	'group' name=ID ('(' formalParameters+=XFormalParameter (',' formalParameters+=XFormalParameter)* ')')?
-	//	'begin' (events+=[emachine::Event] (',' events+=[emachine::Event])*)?
+	//	'group' name=ID ('(' formalParameters+=XFormalParameter (',' formalParameters+=XFormalParameter)* ')')? ('begin'
+	//	events+=[emachine::Event] events+=[emachine::Event]*)? //removed comma unordered list
 	//	'end';
 	public XGroupElements getXGroupAccess() {
 		return pXGroup;

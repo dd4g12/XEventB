@@ -74,8 +74,7 @@ XGroup returns eventbcoreextension::EventCases:
 	{eventbcoreextension::EventCases}
 	'group' name = ID
 	('(' formalParameters += XFormalParameter (',' formalParameters += XFormalParameter)* ')')?
-	'begin'
-	(events +=[emachine::Event](',' events +=[emachine::Event])*)?
+	('begin' events +=[emachine::Event]( events +=[emachine::Event])*)? //removed comma unordered list
 	'end'
 ;
 
