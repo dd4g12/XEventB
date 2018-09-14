@@ -22,33 +22,18 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalXMachineParser extends AbstractInternalAntlrParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_XLABEL", "RULE_STRING", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'machine'", "'refines'", "'sees'", "'variables'", "'invariants'", "'variant'", "'events'", "'end'", "'includes'", "'to'", "'as'", "'.'", "'theorem'", "'Group'", "'('", "','", "')'", "'begin'", "'extended'", "'with'", "'when'", "'then'", "'any'", "'where'", "'synchronises'", "'synchronisesGroup'", "'in'", "'out'", "'ordinary'", "'convergent'", "'anticipated'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_XLABEL", "RULE_STRING", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'machine'", "'refines'", "'sees'", "'variables'", "'invariants'", "'variant'", "'events'", "'end'", "'includes'", "'to'", "'as'", "'.'", "'theorem'", "'group'", "'('", "','", "')'", "'begin'", "'event'", "'extended'", "'with'", "'when'", "'then'", "'any'", "'where'", "'synchronises'", "'synchronisesGroup'", "'in'", "'out'", "'ordinary'", "'convergent'", "'anticipated'"
     };
-    public static final int RULE_STRING=6;
-    public static final int RULE_SL_COMMENT=9;
     public static final int T__19=19;
     public static final int RULE_XLABEL=5;
     public static final int T__15=15;
-    public static final int T__37=37;
     public static final int T__16=16;
-    public static final int T__38=38;
     public static final int T__17=17;
-    public static final int T__39=39;
     public static final int T__18=18;
-    public static final int T__33=33;
     public static final int T__12=12;
-    public static final int T__34=34;
     public static final int T__13=13;
-    public static final int T__35=35;
     public static final int T__14=14;
-    public static final int T__36=36;
-    public static final int EOF=-1;
-    public static final int T__30=30;
-    public static final int T__31=31;
-    public static final int T__32=32;
     public static final int RULE_ID=4;
-    public static final int RULE_WS=10;
-    public static final int RULE_ANY_OTHER=11;
     public static final int T__26=26;
     public static final int T__27=27;
     public static final int T__28=28;
@@ -59,11 +44,27 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
     public static final int T__23=23;
     public static final int T__24=24;
     public static final int T__25=25;
+    public static final int T__20=20;
+    public static final int T__21=21;
+    public static final int RULE_STRING=6;
+    public static final int RULE_SL_COMMENT=9;
+    public static final int T__37=37;
+    public static final int T__38=38;
+    public static final int T__39=39;
+    public static final int T__33=33;
+    public static final int T__34=34;
+    public static final int T__35=35;
+    public static final int T__36=36;
+    public static final int EOF=-1;
+    public static final int T__30=30;
+    public static final int T__31=31;
+    public static final int T__32=32;
+    public static final int RULE_WS=10;
+    public static final int RULE_ANY_OTHER=11;
     public static final int T__40=40;
     public static final int T__41=41;
-    public static final int T__20=20;
     public static final int T__42=42;
-    public static final int T__21=21;
+    public static final int T__43=43;
 
     // delegates
     // delegators
@@ -141,22 +142,22 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleMachine"
-    // InternalXMachine.g:72:1: ruleMachine returns [EObject current=null] : ( () otherlv_1= 'machine' ( (lv_name_2_0= RULE_ID ) ) ( (lv_extensions_3_0= ruleMIncludes ) )* (otherlv_4= 'refines' ( (otherlv_5= RULE_ID ) ) )? (otherlv_6= 'sees' ( (otherlv_7= RULE_ID ) )+ )? (otherlv_8= 'variables' ( (lv_variables_9_0= ruleXVariable ) )+ )? (otherlv_10= 'invariants' ( (lv_invariants_11_0= ruleXInvariant ) )+ )? (otherlv_12= 'variant' ( (lv_variant_13_0= ruleXVariant ) ) )? (otherlv_14= 'events' ( (lv_events_15_0= ruleXEvent ) ) ( (lv_events_16_0= ruleXEvent ) )* )? ( (lv_extensions_17_0= ruleXGroup ) )* otherlv_18= 'end' ) ;
+    // InternalXMachine.g:72:1: ruleMachine returns [EObject current=null] : ( () otherlv_1= 'machine' ( (lv_name_2_0= RULE_ID ) ) (otherlv_3= 'refines' ( (otherlv_4= RULE_ID ) ) )? (otherlv_5= 'sees' ( (otherlv_6= RULE_ID ) )+ )? ( (lv_extensions_7_0= ruleMIncludes ) )* (otherlv_8= 'variables' ( (lv_variables_9_0= ruleXVariable ) )+ )? (otherlv_10= 'invariants' ( (lv_invariants_11_0= ruleXInvariant ) )+ )? (otherlv_12= 'variant' ( (lv_variant_13_0= ruleXVariant ) ) )? (otherlv_14= 'events' ( (lv_events_15_0= ruleXEvent ) ) ( (lv_events_16_0= ruleXEvent ) )* )? ( (lv_extensions_17_0= ruleXGroup ) )* otherlv_18= 'end' ) ;
     public final EObject ruleMachine() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_1=null;
         Token lv_name_2_0=null;
+        Token otherlv_3=null;
         Token otherlv_4=null;
         Token otherlv_5=null;
         Token otherlv_6=null;
-        Token otherlv_7=null;
         Token otherlv_8=null;
         Token otherlv_10=null;
         Token otherlv_12=null;
         Token otherlv_14=null;
         Token otherlv_18=null;
-        EObject lv_extensions_3_0 = null;
+        EObject lv_extensions_7_0 = null;
 
         EObject lv_variables_9_0 = null;
 
@@ -175,11 +176,11 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalXMachine.g:78:2: ( ( () otherlv_1= 'machine' ( (lv_name_2_0= RULE_ID ) ) ( (lv_extensions_3_0= ruleMIncludes ) )* (otherlv_4= 'refines' ( (otherlv_5= RULE_ID ) ) )? (otherlv_6= 'sees' ( (otherlv_7= RULE_ID ) )+ )? (otherlv_8= 'variables' ( (lv_variables_9_0= ruleXVariable ) )+ )? (otherlv_10= 'invariants' ( (lv_invariants_11_0= ruleXInvariant ) )+ )? (otherlv_12= 'variant' ( (lv_variant_13_0= ruleXVariant ) ) )? (otherlv_14= 'events' ( (lv_events_15_0= ruleXEvent ) ) ( (lv_events_16_0= ruleXEvent ) )* )? ( (lv_extensions_17_0= ruleXGroup ) )* otherlv_18= 'end' ) )
-            // InternalXMachine.g:79:2: ( () otherlv_1= 'machine' ( (lv_name_2_0= RULE_ID ) ) ( (lv_extensions_3_0= ruleMIncludes ) )* (otherlv_4= 'refines' ( (otherlv_5= RULE_ID ) ) )? (otherlv_6= 'sees' ( (otherlv_7= RULE_ID ) )+ )? (otherlv_8= 'variables' ( (lv_variables_9_0= ruleXVariable ) )+ )? (otherlv_10= 'invariants' ( (lv_invariants_11_0= ruleXInvariant ) )+ )? (otherlv_12= 'variant' ( (lv_variant_13_0= ruleXVariant ) ) )? (otherlv_14= 'events' ( (lv_events_15_0= ruleXEvent ) ) ( (lv_events_16_0= ruleXEvent ) )* )? ( (lv_extensions_17_0= ruleXGroup ) )* otherlv_18= 'end' )
+            // InternalXMachine.g:78:2: ( ( () otherlv_1= 'machine' ( (lv_name_2_0= RULE_ID ) ) (otherlv_3= 'refines' ( (otherlv_4= RULE_ID ) ) )? (otherlv_5= 'sees' ( (otherlv_6= RULE_ID ) )+ )? ( (lv_extensions_7_0= ruleMIncludes ) )* (otherlv_8= 'variables' ( (lv_variables_9_0= ruleXVariable ) )+ )? (otherlv_10= 'invariants' ( (lv_invariants_11_0= ruleXInvariant ) )+ )? (otherlv_12= 'variant' ( (lv_variant_13_0= ruleXVariant ) ) )? (otherlv_14= 'events' ( (lv_events_15_0= ruleXEvent ) ) ( (lv_events_16_0= ruleXEvent ) )* )? ( (lv_extensions_17_0= ruleXGroup ) )* otherlv_18= 'end' ) )
+            // InternalXMachine.g:79:2: ( () otherlv_1= 'machine' ( (lv_name_2_0= RULE_ID ) ) (otherlv_3= 'refines' ( (otherlv_4= RULE_ID ) ) )? (otherlv_5= 'sees' ( (otherlv_6= RULE_ID ) )+ )? ( (lv_extensions_7_0= ruleMIncludes ) )* (otherlv_8= 'variables' ( (lv_variables_9_0= ruleXVariable ) )+ )? (otherlv_10= 'invariants' ( (lv_invariants_11_0= ruleXInvariant ) )+ )? (otherlv_12= 'variant' ( (lv_variant_13_0= ruleXVariant ) ) )? (otherlv_14= 'events' ( (lv_events_15_0= ruleXEvent ) ) ( (lv_events_16_0= ruleXEvent ) )* )? ( (lv_extensions_17_0= ruleXGroup ) )* otherlv_18= 'end' )
             {
-            // InternalXMachine.g:79:2: ( () otherlv_1= 'machine' ( (lv_name_2_0= RULE_ID ) ) ( (lv_extensions_3_0= ruleMIncludes ) )* (otherlv_4= 'refines' ( (otherlv_5= RULE_ID ) ) )? (otherlv_6= 'sees' ( (otherlv_7= RULE_ID ) )+ )? (otherlv_8= 'variables' ( (lv_variables_9_0= ruleXVariable ) )+ )? (otherlv_10= 'invariants' ( (lv_invariants_11_0= ruleXInvariant ) )+ )? (otherlv_12= 'variant' ( (lv_variant_13_0= ruleXVariant ) ) )? (otherlv_14= 'events' ( (lv_events_15_0= ruleXEvent ) ) ( (lv_events_16_0= ruleXEvent ) )* )? ( (lv_extensions_17_0= ruleXGroup ) )* otherlv_18= 'end' )
-            // InternalXMachine.g:80:3: () otherlv_1= 'machine' ( (lv_name_2_0= RULE_ID ) ) ( (lv_extensions_3_0= ruleMIncludes ) )* (otherlv_4= 'refines' ( (otherlv_5= RULE_ID ) ) )? (otherlv_6= 'sees' ( (otherlv_7= RULE_ID ) )+ )? (otherlv_8= 'variables' ( (lv_variables_9_0= ruleXVariable ) )+ )? (otherlv_10= 'invariants' ( (lv_invariants_11_0= ruleXInvariant ) )+ )? (otherlv_12= 'variant' ( (lv_variant_13_0= ruleXVariant ) ) )? (otherlv_14= 'events' ( (lv_events_15_0= ruleXEvent ) ) ( (lv_events_16_0= ruleXEvent ) )* )? ( (lv_extensions_17_0= ruleXGroup ) )* otherlv_18= 'end'
+            // InternalXMachine.g:79:2: ( () otherlv_1= 'machine' ( (lv_name_2_0= RULE_ID ) ) (otherlv_3= 'refines' ( (otherlv_4= RULE_ID ) ) )? (otherlv_5= 'sees' ( (otherlv_6= RULE_ID ) )+ )? ( (lv_extensions_7_0= ruleMIncludes ) )* (otherlv_8= 'variables' ( (lv_variables_9_0= ruleXVariable ) )+ )? (otherlv_10= 'invariants' ( (lv_invariants_11_0= ruleXInvariant ) )+ )? (otherlv_12= 'variant' ( (lv_variant_13_0= ruleXVariant ) ) )? (otherlv_14= 'events' ( (lv_events_15_0= ruleXEvent ) ) ( (lv_events_16_0= ruleXEvent ) )* )? ( (lv_extensions_17_0= ruleXGroup ) )* otherlv_18= 'end' )
+            // InternalXMachine.g:80:3: () otherlv_1= 'machine' ( (lv_name_2_0= RULE_ID ) ) (otherlv_3= 'refines' ( (otherlv_4= RULE_ID ) ) )? (otherlv_5= 'sees' ( (otherlv_6= RULE_ID ) )+ )? ( (lv_extensions_7_0= ruleMIncludes ) )* (otherlv_8= 'variables' ( (lv_variables_9_0= ruleXVariable ) )+ )? (otherlv_10= 'invariants' ( (lv_invariants_11_0= ruleXInvariant ) )+ )? (otherlv_12= 'variant' ( (lv_variant_13_0= ruleXVariant ) ) )? (otherlv_14= 'events' ( (lv_events_15_0= ruleXEvent ) ) ( (lv_events_16_0= ruleXEvent ) )* )? ( (lv_extensions_17_0= ruleXGroup ) )* otherlv_18= 'end'
             {
             // InternalXMachine.g:80:3: ()
             // InternalXMachine.g:81:4: 
@@ -222,29 +223,136 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalXMachine.g:109:3: ( (lv_extensions_3_0= ruleMIncludes ) )*
-            loop1:
-            do {
-                int alt1=2;
-                int LA1_0 = input.LA(1);
+            // InternalXMachine.g:109:3: (otherlv_3= 'refines' ( (otherlv_4= RULE_ID ) ) )?
+            int alt1=2;
+            int LA1_0 = input.LA(1);
 
-                if ( (LA1_0==20) ) {
-                    alt1=1;
+            if ( (LA1_0==13) ) {
+                alt1=1;
+            }
+            switch (alt1) {
+                case 1 :
+                    // InternalXMachine.g:110:4: otherlv_3= 'refines' ( (otherlv_4= RULE_ID ) )
+                    {
+                    otherlv_3=(Token)match(input,13,FOLLOW_3); 
+
+                    				newLeafNode(otherlv_3, grammarAccess.getMachineAccess().getRefinesKeyword_3_0());
+                    			
+                    // InternalXMachine.g:114:4: ( (otherlv_4= RULE_ID ) )
+                    // InternalXMachine.g:115:5: (otherlv_4= RULE_ID )
+                    {
+                    // InternalXMachine.g:115:5: (otherlv_4= RULE_ID )
+                    // InternalXMachine.g:116:6: otherlv_4= RULE_ID
+                    {
+
+                    						if (current==null) {
+                    							current = createModelElement(grammarAccess.getMachineRule());
+                    						}
+                    					
+                    otherlv_4=(Token)match(input,RULE_ID,FOLLOW_5); 
+
+                    						newLeafNode(otherlv_4, grammarAccess.getMachineAccess().getRefinesMachineCrossReference_3_1_0());
+                    					
+
+                    }
+
+
+                    }
+
+
+                    }
+                    break;
+
+            }
+
+            // InternalXMachine.g:128:3: (otherlv_5= 'sees' ( (otherlv_6= RULE_ID ) )+ )?
+            int alt3=2;
+            int LA3_0 = input.LA(1);
+
+            if ( (LA3_0==14) ) {
+                alt3=1;
+            }
+            switch (alt3) {
+                case 1 :
+                    // InternalXMachine.g:129:4: otherlv_5= 'sees' ( (otherlv_6= RULE_ID ) )+
+                    {
+                    otherlv_5=(Token)match(input,14,FOLLOW_3); 
+
+                    				newLeafNode(otherlv_5, grammarAccess.getMachineAccess().getSeesKeyword_4_0());
+                    			
+                    // InternalXMachine.g:133:4: ( (otherlv_6= RULE_ID ) )+
+                    int cnt2=0;
+                    loop2:
+                    do {
+                        int alt2=2;
+                        int LA2_0 = input.LA(1);
+
+                        if ( (LA2_0==RULE_ID) ) {
+                            alt2=1;
+                        }
+
+
+                        switch (alt2) {
+                    	case 1 :
+                    	    // InternalXMachine.g:134:5: (otherlv_6= RULE_ID )
+                    	    {
+                    	    // InternalXMachine.g:134:5: (otherlv_6= RULE_ID )
+                    	    // InternalXMachine.g:135:6: otherlv_6= RULE_ID
+                    	    {
+
+                    	    						if (current==null) {
+                    	    							current = createModelElement(grammarAccess.getMachineRule());
+                    	    						}
+                    	    					
+                    	    otherlv_6=(Token)match(input,RULE_ID,FOLLOW_6); 
+
+                    	    						newLeafNode(otherlv_6, grammarAccess.getMachineAccess().getSeesContextCrossReference_4_1_0());
+                    	    					
+
+                    	    }
+
+
+                    	    }
+                    	    break;
+
+                    	default :
+                    	    if ( cnt2 >= 1 ) break loop2;
+                                EarlyExitException eee =
+                                    new EarlyExitException(2, input);
+                                throw eee;
+                        }
+                        cnt2++;
+                    } while (true);
+
+
+                    }
+                    break;
+
+            }
+
+            // InternalXMachine.g:147:3: ( (lv_extensions_7_0= ruleMIncludes ) )*
+            loop4:
+            do {
+                int alt4=2;
+                int LA4_0 = input.LA(1);
+
+                if ( (LA4_0==20) ) {
+                    alt4=1;
                 }
 
 
-                switch (alt1) {
+                switch (alt4) {
             	case 1 :
-            	    // InternalXMachine.g:110:4: (lv_extensions_3_0= ruleMIncludes )
+            	    // InternalXMachine.g:148:4: (lv_extensions_7_0= ruleMIncludes )
             	    {
-            	    // InternalXMachine.g:110:4: (lv_extensions_3_0= ruleMIncludes )
-            	    // InternalXMachine.g:111:5: lv_extensions_3_0= ruleMIncludes
+            	    // InternalXMachine.g:148:4: (lv_extensions_7_0= ruleMIncludes )
+            	    // InternalXMachine.g:149:5: lv_extensions_7_0= ruleMIncludes
             	    {
 
-            	    					newCompositeNode(grammarAccess.getMachineAccess().getExtensionsMIncludesParserRuleCall_3_0());
+            	    					newCompositeNode(grammarAccess.getMachineAccess().getExtensionsMIncludesParserRuleCall_5_0());
             	    				
-            	    pushFollow(FOLLOW_4);
-            	    lv_extensions_3_0=ruleMIncludes();
+            	    pushFollow(FOLLOW_7);
+            	    lv_extensions_7_0=ruleMIncludes();
 
             	    state._fsp--;
 
@@ -255,7 +363,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
             	    					add(
             	    						current,
             	    						"extensions",
-            	    						lv_extensions_3_0,
+            	    						lv_extensions_7_0,
             	    						"ac.soton.xeventb.xmachine.XMachine.MIncludes");
             	    					afterParserOrEnumRuleCall();
             	    				
@@ -267,116 +375,9 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop1;
+            	    break loop4;
                 }
             } while (true);
-
-            // InternalXMachine.g:128:3: (otherlv_4= 'refines' ( (otherlv_5= RULE_ID ) ) )?
-            int alt2=2;
-            int LA2_0 = input.LA(1);
-
-            if ( (LA2_0==13) ) {
-                alt2=1;
-            }
-            switch (alt2) {
-                case 1 :
-                    // InternalXMachine.g:129:4: otherlv_4= 'refines' ( (otherlv_5= RULE_ID ) )
-                    {
-                    otherlv_4=(Token)match(input,13,FOLLOW_3); 
-
-                    				newLeafNode(otherlv_4, grammarAccess.getMachineAccess().getRefinesKeyword_4_0());
-                    			
-                    // InternalXMachine.g:133:4: ( (otherlv_5= RULE_ID ) )
-                    // InternalXMachine.g:134:5: (otherlv_5= RULE_ID )
-                    {
-                    // InternalXMachine.g:134:5: (otherlv_5= RULE_ID )
-                    // InternalXMachine.g:135:6: otherlv_5= RULE_ID
-                    {
-
-                    						if (current==null) {
-                    							current = createModelElement(grammarAccess.getMachineRule());
-                    						}
-                    					
-                    otherlv_5=(Token)match(input,RULE_ID,FOLLOW_5); 
-
-                    						newLeafNode(otherlv_5, grammarAccess.getMachineAccess().getRefinesMachineCrossReference_4_1_0());
-                    					
-
-                    }
-
-
-                    }
-
-
-                    }
-                    break;
-
-            }
-
-            // InternalXMachine.g:147:3: (otherlv_6= 'sees' ( (otherlv_7= RULE_ID ) )+ )?
-            int alt4=2;
-            int LA4_0 = input.LA(1);
-
-            if ( (LA4_0==14) ) {
-                alt4=1;
-            }
-            switch (alt4) {
-                case 1 :
-                    // InternalXMachine.g:148:4: otherlv_6= 'sees' ( (otherlv_7= RULE_ID ) )+
-                    {
-                    otherlv_6=(Token)match(input,14,FOLLOW_3); 
-
-                    				newLeafNode(otherlv_6, grammarAccess.getMachineAccess().getSeesKeyword_5_0());
-                    			
-                    // InternalXMachine.g:152:4: ( (otherlv_7= RULE_ID ) )+
-                    int cnt3=0;
-                    loop3:
-                    do {
-                        int alt3=2;
-                        int LA3_0 = input.LA(1);
-
-                        if ( (LA3_0==RULE_ID) ) {
-                            alt3=1;
-                        }
-
-
-                        switch (alt3) {
-                    	case 1 :
-                    	    // InternalXMachine.g:153:5: (otherlv_7= RULE_ID )
-                    	    {
-                    	    // InternalXMachine.g:153:5: (otherlv_7= RULE_ID )
-                    	    // InternalXMachine.g:154:6: otherlv_7= RULE_ID
-                    	    {
-
-                    	    						if (current==null) {
-                    	    							current = createModelElement(grammarAccess.getMachineRule());
-                    	    						}
-                    	    					
-                    	    otherlv_7=(Token)match(input,RULE_ID,FOLLOW_6); 
-
-                    	    						newLeafNode(otherlv_7, grammarAccess.getMachineAccess().getSeesContextCrossReference_5_1_0());
-                    	    					
-
-                    	    }
-
-
-                    	    }
-                    	    break;
-
-                    	default :
-                    	    if ( cnt3 >= 1 ) break loop3;
-                                EarlyExitException eee =
-                                    new EarlyExitException(3, input);
-                                throw eee;
-                        }
-                        cnt3++;
-                    } while (true);
-
-
-                    }
-                    break;
-
-            }
 
             // InternalXMachine.g:166:3: (otherlv_8= 'variables' ( (lv_variables_9_0= ruleXVariable ) )+ )?
             int alt6=2;
@@ -415,7 +416,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
                     	    						newCompositeNode(grammarAccess.getMachineAccess().getVariablesXVariableParserRuleCall_6_1_0());
                     	    					
-                    	    pushFollow(FOLLOW_7);
+                    	    pushFollow(FOLLOW_8);
                     	    lv_variables_9_0=ruleXVariable();
 
                     	    state._fsp--;
@@ -464,7 +465,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
                 case 1 :
                     // InternalXMachine.g:192:4: otherlv_10= 'invariants' ( (lv_invariants_11_0= ruleXInvariant ) )+
                     {
-                    otherlv_10=(Token)match(input,16,FOLLOW_8); 
+                    otherlv_10=(Token)match(input,16,FOLLOW_9); 
 
                     				newLeafNode(otherlv_10, grammarAccess.getMachineAccess().getInvariantsKeyword_7_0());
                     			
@@ -490,7 +491,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
                     	    						newCompositeNode(grammarAccess.getMachineAccess().getInvariantsXInvariantParserRuleCall_7_1_0());
                     	    					
-                    	    pushFollow(FOLLOW_9);
+                    	    pushFollow(FOLLOW_10);
                     	    lv_invariants_11_0=ruleXInvariant();
 
                     	    state._fsp--;
@@ -539,7 +540,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
                 case 1 :
                     // InternalXMachine.g:217:4: otherlv_12= 'variant' ( (lv_variant_13_0= ruleXVariant ) )
                     {
-                    otherlv_12=(Token)match(input,17,FOLLOW_10); 
+                    otherlv_12=(Token)match(input,17,FOLLOW_11); 
 
                     				newLeafNode(otherlv_12, grammarAccess.getMachineAccess().getVariantKeyword_8_0());
                     			
@@ -552,7 +553,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
                     						newCompositeNode(grammarAccess.getMachineAccess().getVariantXVariantParserRuleCall_8_1_0());
                     					
-                    pushFollow(FOLLOW_11);
+                    pushFollow(FOLLOW_12);
                     lv_variant_13_0=ruleXVariant();
 
                     state._fsp--;
@@ -591,7 +592,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
                 case 1 :
                     // InternalXMachine.g:242:4: otherlv_14= 'events' ( (lv_events_15_0= ruleXEvent ) ) ( (lv_events_16_0= ruleXEvent ) )*
                     {
-                    otherlv_14=(Token)match(input,18,FOLLOW_3); 
+                    otherlv_14=(Token)match(input,18,FOLLOW_13); 
 
                     				newLeafNode(otherlv_14, grammarAccess.getMachineAccess().getEventsKeyword_9_0());
                     			
@@ -604,7 +605,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
                     						newCompositeNode(grammarAccess.getMachineAccess().getEventsXEventParserRuleCall_9_1_0());
                     					
-                    pushFollow(FOLLOW_12);
+                    pushFollow(FOLLOW_14);
                     lv_events_15_0=ruleXEvent();
 
                     state._fsp--;
@@ -632,7 +633,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
                         int alt10=2;
                         int LA10_0 = input.LA(1);
 
-                        if ( (LA10_0==RULE_ID) ) {
+                        if ( (LA10_0==30) ) {
                             alt10=1;
                         }
 
@@ -647,7 +648,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
                     	    						newCompositeNode(grammarAccess.getMachineAccess().getEventsXEventParserRuleCall_9_2_0());
                     	    					
-                    	    pushFollow(FOLLOW_12);
+                    	    pushFollow(FOLLOW_14);
                     	    lv_events_16_0=ruleXEvent();
 
                     	    state._fsp--;
@@ -702,7 +703,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
             	    					newCompositeNode(grammarAccess.getMachineAccess().getExtensionsXGroupParserRuleCall_10_0());
             	    				
-            	    pushFollow(FOLLOW_13);
+            	    pushFollow(FOLLOW_15);
             	    lv_extensions_17_0=ruleXGroup();
 
             	    state._fsp--;
@@ -846,7 +847,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
             						newCompositeNode(grammarAccess.getMIncludesAccess().getAbstractMachineMachineCrossReference_1_1_0());
             					
-            pushFollow(FOLLOW_14);
+            pushFollow(FOLLOW_16);
             ruleQualifiedName();
 
             state._fsp--;
@@ -889,7 +890,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
                     							current = createModelElement(grammarAccess.getMIncludesRule());
                     						}
                     					
-                    otherlv_4=(Token)match(input,RULE_ID,FOLLOW_15); 
+                    otherlv_4=(Token)match(input,RULE_ID,FOLLOW_17); 
 
                     						newLeafNode(otherlv_4, grammarAccess.getMIncludesAccess().getConcreteMachineMachineCrossReference_2_1_0());
                     					
@@ -926,7 +927,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
                     // InternalXMachine.g:381:5: (lv_prefixes_6_0= RULE_ID )
                     // InternalXMachine.g:382:6: lv_prefixes_6_0= RULE_ID
                     {
-                    lv_prefixes_6_0=(Token)match(input,RULE_ID,FOLLOW_16); 
+                    lv_prefixes_6_0=(Token)match(input,RULE_ID,FOLLOW_18); 
 
                     						newLeafNode(lv_prefixes_6_0, grammarAccess.getMIncludesAccess().getPrefixesIDTerminalRuleCall_3_1_0());
                     					
@@ -964,7 +965,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
                     	    // InternalXMachine.g:399:5: (lv_prefixes_7_0= RULE_ID )
                     	    // InternalXMachine.g:400:6: lv_prefixes_7_0= RULE_ID
                     	    {
-                    	    lv_prefixes_7_0=(Token)match(input,RULE_ID,FOLLOW_16); 
+                    	    lv_prefixes_7_0=(Token)match(input,RULE_ID,FOLLOW_18); 
 
                     	    						newLeafNode(lv_prefixes_7_0, grammarAccess.getMIncludesAccess().getPrefixesIDTerminalRuleCall_3_2_0());
                     	    					
@@ -1073,7 +1074,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
             // InternalXMachine.g:435:2: (this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )? )
             // InternalXMachine.g:436:3: this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )?
             {
-            this_ID_0=(Token)match(input,RULE_ID,FOLLOW_17); 
+            this_ID_0=(Token)match(input,RULE_ID,FOLLOW_19); 
 
             			current.merge(this_ID_0);
             		
@@ -1316,7 +1317,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
             // InternalXMachine.g:528:4: (lv_name_1_0= RULE_XLABEL )
             // InternalXMachine.g:529:5: lv_name_1_0= RULE_XLABEL
             {
-            lv_name_1_0=(Token)match(input,RULE_XLABEL,FOLLOW_10); 
+            lv_name_1_0=(Token)match(input,RULE_XLABEL,FOLLOW_11); 
 
             					newLeafNode(lv_name_1_0, grammarAccess.getXInvariantAccess().getNameXLABELTerminalRuleCall_1_0());
             				
@@ -1345,7 +1346,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
             					newCompositeNode(grammarAccess.getXInvariantAccess().getPredicateXPredicateParserRuleCall_2_0());
             				
-            pushFollow(FOLLOW_18);
+            pushFollow(FOLLOW_20);
             lv_predicate_2_0=ruleXPredicate();
 
             state._fsp--;
@@ -1577,7 +1578,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleXGroup"
-    // InternalXMachine.g:634:1: ruleXGroup returns [EObject current=null] : ( () otherlv_1= 'Group' ( (lv_name_2_0= RULE_ID ) ) (otherlv_3= '(' ( (lv_formalParameters_4_0= ruleXFormalParameter ) ) (otherlv_5= ',' ( (lv_formalParameters_6_0= ruleXFormalParameter ) ) )* otherlv_7= ')' )? otherlv_8= 'begin' ( ( (otherlv_9= RULE_ID ) ) (otherlv_10= ',' ( (otherlv_11= RULE_ID ) ) )* )? otherlv_12= 'end' ) ;
+    // InternalXMachine.g:634:1: ruleXGroup returns [EObject current=null] : ( () otherlv_1= 'group' ( (lv_name_2_0= RULE_ID ) ) (otherlv_3= '(' ( (lv_formalParameters_4_0= ruleXFormalParameter ) ) (otherlv_5= ',' ( (lv_formalParameters_6_0= ruleXFormalParameter ) ) )* otherlv_7= ')' )? otherlv_8= 'begin' ( ( (otherlv_9= RULE_ID ) ) (otherlv_10= ',' ( (otherlv_11= RULE_ID ) ) )* )? otherlv_12= 'end' ) ;
     public final EObject ruleXGroup() throws RecognitionException {
         EObject current = null;
 
@@ -1600,11 +1601,11 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalXMachine.g:640:2: ( ( () otherlv_1= 'Group' ( (lv_name_2_0= RULE_ID ) ) (otherlv_3= '(' ( (lv_formalParameters_4_0= ruleXFormalParameter ) ) (otherlv_5= ',' ( (lv_formalParameters_6_0= ruleXFormalParameter ) ) )* otherlv_7= ')' )? otherlv_8= 'begin' ( ( (otherlv_9= RULE_ID ) ) (otherlv_10= ',' ( (otherlv_11= RULE_ID ) ) )* )? otherlv_12= 'end' ) )
-            // InternalXMachine.g:641:2: ( () otherlv_1= 'Group' ( (lv_name_2_0= RULE_ID ) ) (otherlv_3= '(' ( (lv_formalParameters_4_0= ruleXFormalParameter ) ) (otherlv_5= ',' ( (lv_formalParameters_6_0= ruleXFormalParameter ) ) )* otherlv_7= ')' )? otherlv_8= 'begin' ( ( (otherlv_9= RULE_ID ) ) (otherlv_10= ',' ( (otherlv_11= RULE_ID ) ) )* )? otherlv_12= 'end' )
+            // InternalXMachine.g:640:2: ( ( () otherlv_1= 'group' ( (lv_name_2_0= RULE_ID ) ) (otherlv_3= '(' ( (lv_formalParameters_4_0= ruleXFormalParameter ) ) (otherlv_5= ',' ( (lv_formalParameters_6_0= ruleXFormalParameter ) ) )* otherlv_7= ')' )? otherlv_8= 'begin' ( ( (otherlv_9= RULE_ID ) ) (otherlv_10= ',' ( (otherlv_11= RULE_ID ) ) )* )? otherlv_12= 'end' ) )
+            // InternalXMachine.g:641:2: ( () otherlv_1= 'group' ( (lv_name_2_0= RULE_ID ) ) (otherlv_3= '(' ( (lv_formalParameters_4_0= ruleXFormalParameter ) ) (otherlv_5= ',' ( (lv_formalParameters_6_0= ruleXFormalParameter ) ) )* otherlv_7= ')' )? otherlv_8= 'begin' ( ( (otherlv_9= RULE_ID ) ) (otherlv_10= ',' ( (otherlv_11= RULE_ID ) ) )* )? otherlv_12= 'end' )
             {
-            // InternalXMachine.g:641:2: ( () otherlv_1= 'Group' ( (lv_name_2_0= RULE_ID ) ) (otherlv_3= '(' ( (lv_formalParameters_4_0= ruleXFormalParameter ) ) (otherlv_5= ',' ( (lv_formalParameters_6_0= ruleXFormalParameter ) ) )* otherlv_7= ')' )? otherlv_8= 'begin' ( ( (otherlv_9= RULE_ID ) ) (otherlv_10= ',' ( (otherlv_11= RULE_ID ) ) )* )? otherlv_12= 'end' )
-            // InternalXMachine.g:642:3: () otherlv_1= 'Group' ( (lv_name_2_0= RULE_ID ) ) (otherlv_3= '(' ( (lv_formalParameters_4_0= ruleXFormalParameter ) ) (otherlv_5= ',' ( (lv_formalParameters_6_0= ruleXFormalParameter ) ) )* otherlv_7= ')' )? otherlv_8= 'begin' ( ( (otherlv_9= RULE_ID ) ) (otherlv_10= ',' ( (otherlv_11= RULE_ID ) ) )* )? otherlv_12= 'end'
+            // InternalXMachine.g:641:2: ( () otherlv_1= 'group' ( (lv_name_2_0= RULE_ID ) ) (otherlv_3= '(' ( (lv_formalParameters_4_0= ruleXFormalParameter ) ) (otherlv_5= ',' ( (lv_formalParameters_6_0= ruleXFormalParameter ) ) )* otherlv_7= ')' )? otherlv_8= 'begin' ( ( (otherlv_9= RULE_ID ) ) (otherlv_10= ',' ( (otherlv_11= RULE_ID ) ) )* )? otherlv_12= 'end' )
+            // InternalXMachine.g:642:3: () otherlv_1= 'group' ( (lv_name_2_0= RULE_ID ) ) (otherlv_3= '(' ( (lv_formalParameters_4_0= ruleXFormalParameter ) ) (otherlv_5= ',' ( (lv_formalParameters_6_0= ruleXFormalParameter ) ) )* otherlv_7= ')' )? otherlv_8= 'begin' ( ( (otherlv_9= RULE_ID ) ) (otherlv_10= ',' ( (otherlv_11= RULE_ID ) ) )* )? otherlv_12= 'end'
             {
             // InternalXMachine.g:642:3: ()
             // InternalXMachine.g:643:4: 
@@ -1627,7 +1628,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
             // InternalXMachine.g:654:4: (lv_name_2_0= RULE_ID )
             // InternalXMachine.g:655:5: lv_name_2_0= RULE_ID
             {
-            lv_name_2_0=(Token)match(input,RULE_ID,FOLLOW_19); 
+            lv_name_2_0=(Token)match(input,RULE_ID,FOLLOW_21); 
 
             					newLeafNode(lv_name_2_0, grammarAccess.getXGroupAccess().getNameIDTerminalRuleCall_2_0());
             				
@@ -1658,7 +1659,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
                 case 1 :
                     // InternalXMachine.g:672:4: otherlv_3= '(' ( (lv_formalParameters_4_0= ruleXFormalParameter ) ) (otherlv_5= ',' ( (lv_formalParameters_6_0= ruleXFormalParameter ) ) )* otherlv_7= ')'
                     {
-                    otherlv_3=(Token)match(input,26,FOLLOW_20); 
+                    otherlv_3=(Token)match(input,26,FOLLOW_22); 
 
                     				newLeafNode(otherlv_3, grammarAccess.getXGroupAccess().getLeftParenthesisKeyword_3_0());
                     			
@@ -1671,7 +1672,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
                     						newCompositeNode(grammarAccess.getXGroupAccess().getFormalParametersXFormalParameterParserRuleCall_3_1_0());
                     					
-                    pushFollow(FOLLOW_21);
+                    pushFollow(FOLLOW_23);
                     lv_formalParameters_4_0=ruleXFormalParameter();
 
                     state._fsp--;
@@ -1708,7 +1709,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
                     	case 1 :
                     	    // InternalXMachine.g:696:5: otherlv_5= ',' ( (lv_formalParameters_6_0= ruleXFormalParameter ) )
                     	    {
-                    	    otherlv_5=(Token)match(input,27,FOLLOW_20); 
+                    	    otherlv_5=(Token)match(input,27,FOLLOW_22); 
 
                     	    					newLeafNode(otherlv_5, grammarAccess.getXGroupAccess().getCommaKeyword_3_2_0());
                     	    				
@@ -1721,7 +1722,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
                     	    							newCompositeNode(grammarAccess.getXGroupAccess().getFormalParametersXFormalParameterParserRuleCall_3_2_1_0());
                     	    						
-                    	    pushFollow(FOLLOW_21);
+                    	    pushFollow(FOLLOW_23);
                     	    lv_formalParameters_6_0=ruleXFormalParameter();
 
                     	    state._fsp--;
@@ -1752,7 +1753,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
                         }
                     } while (true);
 
-                    otherlv_7=(Token)match(input,28,FOLLOW_22); 
+                    otherlv_7=(Token)match(input,28,FOLLOW_24); 
 
                     				newLeafNode(otherlv_7, grammarAccess.getXGroupAccess().getRightParenthesisKeyword_3_3());
                     			
@@ -1762,7 +1763,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_8=(Token)match(input,29,FOLLOW_23); 
+            otherlv_8=(Token)match(input,29,FOLLOW_25); 
 
             			newLeafNode(otherlv_8, grammarAccess.getXGroupAccess().getBeginKeyword_4());
             		
@@ -1788,7 +1789,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
                     							current = createModelElement(grammarAccess.getXGroupRule());
                     						}
                     					
-                    otherlv_9=(Token)match(input,RULE_ID,FOLLOW_24); 
+                    otherlv_9=(Token)match(input,RULE_ID,FOLLOW_26); 
 
                     						newLeafNode(otherlv_9, grammarAccess.getXGroupAccess().getEventsEventCrossReference_5_0_0());
                     					
@@ -1828,7 +1829,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
                     	    								current = createModelElement(grammarAccess.getXGroupRule());
                     	    							}
                     	    						
-                    	    otherlv_11=(Token)match(input,RULE_ID,FOLLOW_24); 
+                    	    otherlv_11=(Token)match(input,RULE_ID,FOLLOW_26); 
 
                     	    							newLeafNode(otherlv_11, grammarAccess.getXGroupAccess().getEventsEventCrossReference_5_1_1_0());
                     	    						
@@ -2061,56 +2062,57 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleXEvent"
-    // InternalXMachine.g:841:1: ruleXEvent returns [EObject current=null] : ( () ( (lv_name_1_0= RULE_ID ) ) ( ( ( ( ({...}? => ( ({...}? => ( (lv_extended_3_0= 'extended' ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_convergence_4_0= ruleXConvergence ) ) ) ) ) )* ) ) ) ( (lv_extensions_5_0= ruleXGroupOrEvent ) )* (otherlv_6= 'refines' ( (otherlv_7= RULE_ID ) )+ )? ( ( (otherlv_8= 'with' ( (lv_witnesses_9_0= ruleXWitness ) )+ )? otherlv_10= 'begin' ( (lv_actions_11_0= ruleXAction ) )+ ) | (otherlv_12= 'when' ( (lv_guards_13_0= ruleXGuard ) )+ (otherlv_14= 'with' ( (lv_witnesses_15_0= ruleXWitness ) )+ )? (otherlv_16= 'then' ( (lv_actions_17_0= ruleXAction ) )+ )? ) | (otherlv_18= 'any' ( (lv_parameters_19_0= ruleXParameter ) )+ otherlv_20= 'where' ( (lv_guards_21_0= ruleXGuard ) )+ (otherlv_22= 'with' ( (lv_witnesses_23_0= ruleXWitness ) )+ )? (otherlv_24= 'then' ( (lv_actions_25_0= ruleXAction ) )+ )? ) )? otherlv_26= 'end' ) ;
+    // InternalXMachine.g:841:1: ruleXEvent returns [EObject current=null] : ( () otherlv_1= 'event' ( (lv_name_2_0= RULE_ID ) ) ( ( ( ( ({...}? => ( ({...}? => ( (lv_extended_4_0= 'extended' ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_convergence_5_0= ruleXConvergence ) ) ) ) ) )* ) ) ) ( (lv_extensions_6_0= ruleXGroupOrEvent ) )* (otherlv_7= 'refines' ( (otherlv_8= RULE_ID ) )+ )? ( ( (otherlv_9= 'with' ( (lv_witnesses_10_0= ruleXWitness ) )+ )? otherlv_11= 'begin' ( (lv_actions_12_0= ruleXAction ) )+ ) | (otherlv_13= 'when' ( (lv_guards_14_0= ruleXGuard ) )+ (otherlv_15= 'with' ( (lv_witnesses_16_0= ruleXWitness ) )+ )? (otherlv_17= 'then' ( (lv_actions_18_0= ruleXAction ) )+ )? ) | (otherlv_19= 'any' ( (lv_parameters_20_0= ruleXParameter ) )+ otherlv_21= 'where' ( (lv_guards_22_0= ruleXGuard ) )+ (otherlv_23= 'with' ( (lv_witnesses_24_0= ruleXWitness ) )+ )? (otherlv_25= 'then' ( (lv_actions_26_0= ruleXAction ) )+ )? ) )? otherlv_27= 'end' ) ;
     public final EObject ruleXEvent() throws RecognitionException {
         EObject current = null;
 
-        Token lv_name_1_0=null;
-        Token lv_extended_3_0=null;
-        Token otherlv_6=null;
+        Token otherlv_1=null;
+        Token lv_name_2_0=null;
+        Token lv_extended_4_0=null;
         Token otherlv_7=null;
         Token otherlv_8=null;
-        Token otherlv_10=null;
-        Token otherlv_12=null;
-        Token otherlv_14=null;
-        Token otherlv_16=null;
-        Token otherlv_18=null;
-        Token otherlv_20=null;
-        Token otherlv_22=null;
-        Token otherlv_24=null;
-        Token otherlv_26=null;
-        Enumerator lv_convergence_4_0 = null;
+        Token otherlv_9=null;
+        Token otherlv_11=null;
+        Token otherlv_13=null;
+        Token otherlv_15=null;
+        Token otherlv_17=null;
+        Token otherlv_19=null;
+        Token otherlv_21=null;
+        Token otherlv_23=null;
+        Token otherlv_25=null;
+        Token otherlv_27=null;
+        Enumerator lv_convergence_5_0 = null;
 
-        EObject lv_extensions_5_0 = null;
+        EObject lv_extensions_6_0 = null;
 
-        EObject lv_witnesses_9_0 = null;
+        EObject lv_witnesses_10_0 = null;
 
-        EObject lv_actions_11_0 = null;
+        EObject lv_actions_12_0 = null;
 
-        EObject lv_guards_13_0 = null;
+        EObject lv_guards_14_0 = null;
 
-        EObject lv_witnesses_15_0 = null;
+        EObject lv_witnesses_16_0 = null;
 
-        EObject lv_actions_17_0 = null;
+        EObject lv_actions_18_0 = null;
 
-        EObject lv_parameters_19_0 = null;
+        EObject lv_parameters_20_0 = null;
 
-        EObject lv_guards_21_0 = null;
+        EObject lv_guards_22_0 = null;
 
-        EObject lv_witnesses_23_0 = null;
+        EObject lv_witnesses_24_0 = null;
 
-        EObject lv_actions_25_0 = null;
+        EObject lv_actions_26_0 = null;
 
 
 
         	enterRule();
 
         try {
-            // InternalXMachine.g:847:2: ( ( () ( (lv_name_1_0= RULE_ID ) ) ( ( ( ( ({...}? => ( ({...}? => ( (lv_extended_3_0= 'extended' ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_convergence_4_0= ruleXConvergence ) ) ) ) ) )* ) ) ) ( (lv_extensions_5_0= ruleXGroupOrEvent ) )* (otherlv_6= 'refines' ( (otherlv_7= RULE_ID ) )+ )? ( ( (otherlv_8= 'with' ( (lv_witnesses_9_0= ruleXWitness ) )+ )? otherlv_10= 'begin' ( (lv_actions_11_0= ruleXAction ) )+ ) | (otherlv_12= 'when' ( (lv_guards_13_0= ruleXGuard ) )+ (otherlv_14= 'with' ( (lv_witnesses_15_0= ruleXWitness ) )+ )? (otherlv_16= 'then' ( (lv_actions_17_0= ruleXAction ) )+ )? ) | (otherlv_18= 'any' ( (lv_parameters_19_0= ruleXParameter ) )+ otherlv_20= 'where' ( (lv_guards_21_0= ruleXGuard ) )+ (otherlv_22= 'with' ( (lv_witnesses_23_0= ruleXWitness ) )+ )? (otherlv_24= 'then' ( (lv_actions_25_0= ruleXAction ) )+ )? ) )? otherlv_26= 'end' ) )
-            // InternalXMachine.g:848:2: ( () ( (lv_name_1_0= RULE_ID ) ) ( ( ( ( ({...}? => ( ({...}? => ( (lv_extended_3_0= 'extended' ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_convergence_4_0= ruleXConvergence ) ) ) ) ) )* ) ) ) ( (lv_extensions_5_0= ruleXGroupOrEvent ) )* (otherlv_6= 'refines' ( (otherlv_7= RULE_ID ) )+ )? ( ( (otherlv_8= 'with' ( (lv_witnesses_9_0= ruleXWitness ) )+ )? otherlv_10= 'begin' ( (lv_actions_11_0= ruleXAction ) )+ ) | (otherlv_12= 'when' ( (lv_guards_13_0= ruleXGuard ) )+ (otherlv_14= 'with' ( (lv_witnesses_15_0= ruleXWitness ) )+ )? (otherlv_16= 'then' ( (lv_actions_17_0= ruleXAction ) )+ )? ) | (otherlv_18= 'any' ( (lv_parameters_19_0= ruleXParameter ) )+ otherlv_20= 'where' ( (lv_guards_21_0= ruleXGuard ) )+ (otherlv_22= 'with' ( (lv_witnesses_23_0= ruleXWitness ) )+ )? (otherlv_24= 'then' ( (lv_actions_25_0= ruleXAction ) )+ )? ) )? otherlv_26= 'end' )
+            // InternalXMachine.g:847:2: ( ( () otherlv_1= 'event' ( (lv_name_2_0= RULE_ID ) ) ( ( ( ( ({...}? => ( ({...}? => ( (lv_extended_4_0= 'extended' ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_convergence_5_0= ruleXConvergence ) ) ) ) ) )* ) ) ) ( (lv_extensions_6_0= ruleXGroupOrEvent ) )* (otherlv_7= 'refines' ( (otherlv_8= RULE_ID ) )+ )? ( ( (otherlv_9= 'with' ( (lv_witnesses_10_0= ruleXWitness ) )+ )? otherlv_11= 'begin' ( (lv_actions_12_0= ruleXAction ) )+ ) | (otherlv_13= 'when' ( (lv_guards_14_0= ruleXGuard ) )+ (otherlv_15= 'with' ( (lv_witnesses_16_0= ruleXWitness ) )+ )? (otherlv_17= 'then' ( (lv_actions_18_0= ruleXAction ) )+ )? ) | (otherlv_19= 'any' ( (lv_parameters_20_0= ruleXParameter ) )+ otherlv_21= 'where' ( (lv_guards_22_0= ruleXGuard ) )+ (otherlv_23= 'with' ( (lv_witnesses_24_0= ruleXWitness ) )+ )? (otherlv_25= 'then' ( (lv_actions_26_0= ruleXAction ) )+ )? ) )? otherlv_27= 'end' ) )
+            // InternalXMachine.g:848:2: ( () otherlv_1= 'event' ( (lv_name_2_0= RULE_ID ) ) ( ( ( ( ({...}? => ( ({...}? => ( (lv_extended_4_0= 'extended' ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_convergence_5_0= ruleXConvergence ) ) ) ) ) )* ) ) ) ( (lv_extensions_6_0= ruleXGroupOrEvent ) )* (otherlv_7= 'refines' ( (otherlv_8= RULE_ID ) )+ )? ( ( (otherlv_9= 'with' ( (lv_witnesses_10_0= ruleXWitness ) )+ )? otherlv_11= 'begin' ( (lv_actions_12_0= ruleXAction ) )+ ) | (otherlv_13= 'when' ( (lv_guards_14_0= ruleXGuard ) )+ (otherlv_15= 'with' ( (lv_witnesses_16_0= ruleXWitness ) )+ )? (otherlv_17= 'then' ( (lv_actions_18_0= ruleXAction ) )+ )? ) | (otherlv_19= 'any' ( (lv_parameters_20_0= ruleXParameter ) )+ otherlv_21= 'where' ( (lv_guards_22_0= ruleXGuard ) )+ (otherlv_23= 'with' ( (lv_witnesses_24_0= ruleXWitness ) )+ )? (otherlv_25= 'then' ( (lv_actions_26_0= ruleXAction ) )+ )? ) )? otherlv_27= 'end' )
             {
-            // InternalXMachine.g:848:2: ( () ( (lv_name_1_0= RULE_ID ) ) ( ( ( ( ({...}? => ( ({...}? => ( (lv_extended_3_0= 'extended' ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_convergence_4_0= ruleXConvergence ) ) ) ) ) )* ) ) ) ( (lv_extensions_5_0= ruleXGroupOrEvent ) )* (otherlv_6= 'refines' ( (otherlv_7= RULE_ID ) )+ )? ( ( (otherlv_8= 'with' ( (lv_witnesses_9_0= ruleXWitness ) )+ )? otherlv_10= 'begin' ( (lv_actions_11_0= ruleXAction ) )+ ) | (otherlv_12= 'when' ( (lv_guards_13_0= ruleXGuard ) )+ (otherlv_14= 'with' ( (lv_witnesses_15_0= ruleXWitness ) )+ )? (otherlv_16= 'then' ( (lv_actions_17_0= ruleXAction ) )+ )? ) | (otherlv_18= 'any' ( (lv_parameters_19_0= ruleXParameter ) )+ otherlv_20= 'where' ( (lv_guards_21_0= ruleXGuard ) )+ (otherlv_22= 'with' ( (lv_witnesses_23_0= ruleXWitness ) )+ )? (otherlv_24= 'then' ( (lv_actions_25_0= ruleXAction ) )+ )? ) )? otherlv_26= 'end' )
-            // InternalXMachine.g:849:3: () ( (lv_name_1_0= RULE_ID ) ) ( ( ( ( ({...}? => ( ({...}? => ( (lv_extended_3_0= 'extended' ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_convergence_4_0= ruleXConvergence ) ) ) ) ) )* ) ) ) ( (lv_extensions_5_0= ruleXGroupOrEvent ) )* (otherlv_6= 'refines' ( (otherlv_7= RULE_ID ) )+ )? ( ( (otherlv_8= 'with' ( (lv_witnesses_9_0= ruleXWitness ) )+ )? otherlv_10= 'begin' ( (lv_actions_11_0= ruleXAction ) )+ ) | (otherlv_12= 'when' ( (lv_guards_13_0= ruleXGuard ) )+ (otherlv_14= 'with' ( (lv_witnesses_15_0= ruleXWitness ) )+ )? (otherlv_16= 'then' ( (lv_actions_17_0= ruleXAction ) )+ )? ) | (otherlv_18= 'any' ( (lv_parameters_19_0= ruleXParameter ) )+ otherlv_20= 'where' ( (lv_guards_21_0= ruleXGuard ) )+ (otherlv_22= 'with' ( (lv_witnesses_23_0= ruleXWitness ) )+ )? (otherlv_24= 'then' ( (lv_actions_25_0= ruleXAction ) )+ )? ) )? otherlv_26= 'end'
+            // InternalXMachine.g:848:2: ( () otherlv_1= 'event' ( (lv_name_2_0= RULE_ID ) ) ( ( ( ( ({...}? => ( ({...}? => ( (lv_extended_4_0= 'extended' ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_convergence_5_0= ruleXConvergence ) ) ) ) ) )* ) ) ) ( (lv_extensions_6_0= ruleXGroupOrEvent ) )* (otherlv_7= 'refines' ( (otherlv_8= RULE_ID ) )+ )? ( ( (otherlv_9= 'with' ( (lv_witnesses_10_0= ruleXWitness ) )+ )? otherlv_11= 'begin' ( (lv_actions_12_0= ruleXAction ) )+ ) | (otherlv_13= 'when' ( (lv_guards_14_0= ruleXGuard ) )+ (otherlv_15= 'with' ( (lv_witnesses_16_0= ruleXWitness ) )+ )? (otherlv_17= 'then' ( (lv_actions_18_0= ruleXAction ) )+ )? ) | (otherlv_19= 'any' ( (lv_parameters_20_0= ruleXParameter ) )+ otherlv_21= 'where' ( (lv_guards_22_0= ruleXGuard ) )+ (otherlv_23= 'with' ( (lv_witnesses_24_0= ruleXWitness ) )+ )? (otherlv_25= 'then' ( (lv_actions_26_0= ruleXAction ) )+ )? ) )? otherlv_27= 'end' )
+            // InternalXMachine.g:849:3: () otherlv_1= 'event' ( (lv_name_2_0= RULE_ID ) ) ( ( ( ( ({...}? => ( ({...}? => ( (lv_extended_4_0= 'extended' ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_convergence_5_0= ruleXConvergence ) ) ) ) ) )* ) ) ) ( (lv_extensions_6_0= ruleXGroupOrEvent ) )* (otherlv_7= 'refines' ( (otherlv_8= RULE_ID ) )+ )? ( ( (otherlv_9= 'with' ( (lv_witnesses_10_0= ruleXWitness ) )+ )? otherlv_11= 'begin' ( (lv_actions_12_0= ruleXAction ) )+ ) | (otherlv_13= 'when' ( (lv_guards_14_0= ruleXGuard ) )+ (otherlv_15= 'with' ( (lv_witnesses_16_0= ruleXWitness ) )+ )? (otherlv_17= 'then' ( (lv_actions_18_0= ruleXAction ) )+ )? ) | (otherlv_19= 'any' ( (lv_parameters_20_0= ruleXParameter ) )+ otherlv_21= 'where' ( (lv_guards_22_0= ruleXGuard ) )+ (otherlv_23= 'with' ( (lv_witnesses_24_0= ruleXWitness ) )+ )? (otherlv_25= 'then' ( (lv_actions_26_0= ruleXAction ) )+ )? ) )? otherlv_27= 'end'
             {
             // InternalXMachine.g:849:3: ()
             // InternalXMachine.g:850:4: 
@@ -2123,15 +2125,19 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalXMachine.g:856:3: ( (lv_name_1_0= RULE_ID ) )
-            // InternalXMachine.g:857:4: (lv_name_1_0= RULE_ID )
-            {
-            // InternalXMachine.g:857:4: (lv_name_1_0= RULE_ID )
-            // InternalXMachine.g:858:5: lv_name_1_0= RULE_ID
-            {
-            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_25); 
+            otherlv_1=(Token)match(input,30,FOLLOW_3); 
 
-            					newLeafNode(lv_name_1_0, grammarAccess.getXEventAccess().getNameIDTerminalRuleCall_1_0());
+            			newLeafNode(otherlv_1, grammarAccess.getXEventAccess().getEventKeyword_1());
+            		
+            // InternalXMachine.g:860:3: ( (lv_name_2_0= RULE_ID ) )
+            // InternalXMachine.g:861:4: (lv_name_2_0= RULE_ID )
+            {
+            // InternalXMachine.g:861:4: (lv_name_2_0= RULE_ID )
+            // InternalXMachine.g:862:5: lv_name_2_0= RULE_ID
+            {
+            lv_name_2_0=(Token)match(input,RULE_ID,FOLLOW_27); 
+
+            					newLeafNode(lv_name_2_0, grammarAccess.getXEventAccess().getNameIDTerminalRuleCall_2_0());
             				
 
             					if (current==null) {
@@ -2140,7 +2146,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
             					setWithLastConsumed(
             						current,
             						"name",
-            						lv_name_1_0,
+            						lv_name_2_0,
             						"ac.soton.xeventb.xmachine.XMachine.ID");
             				
 
@@ -2149,63 +2155,63 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalXMachine.g:874:3: ( ( ( ( ({...}? => ( ({...}? => ( (lv_extended_3_0= 'extended' ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_convergence_4_0= ruleXConvergence ) ) ) ) ) )* ) ) )
-            // InternalXMachine.g:875:4: ( ( ( ({...}? => ( ({...}? => ( (lv_extended_3_0= 'extended' ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_convergence_4_0= ruleXConvergence ) ) ) ) ) )* ) )
+            // InternalXMachine.g:878:3: ( ( ( ( ({...}? => ( ({...}? => ( (lv_extended_4_0= 'extended' ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_convergence_5_0= ruleXConvergence ) ) ) ) ) )* ) ) )
+            // InternalXMachine.g:879:4: ( ( ( ({...}? => ( ({...}? => ( (lv_extended_4_0= 'extended' ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_convergence_5_0= ruleXConvergence ) ) ) ) ) )* ) )
             {
-            // InternalXMachine.g:875:4: ( ( ( ({...}? => ( ({...}? => ( (lv_extended_3_0= 'extended' ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_convergence_4_0= ruleXConvergence ) ) ) ) ) )* ) )
-            // InternalXMachine.g:876:5: ( ( ({...}? => ( ({...}? => ( (lv_extended_3_0= 'extended' ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_convergence_4_0= ruleXConvergence ) ) ) ) ) )* )
+            // InternalXMachine.g:879:4: ( ( ( ({...}? => ( ({...}? => ( (lv_extended_4_0= 'extended' ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_convergence_5_0= ruleXConvergence ) ) ) ) ) )* ) )
+            // InternalXMachine.g:880:5: ( ( ({...}? => ( ({...}? => ( (lv_extended_4_0= 'extended' ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_convergence_5_0= ruleXConvergence ) ) ) ) ) )* )
             {
              
-            				  getUnorderedGroupHelper().enter(grammarAccess.getXEventAccess().getUnorderedGroup_2());
+            				  getUnorderedGroupHelper().enter(grammarAccess.getXEventAccess().getUnorderedGroup_3());
             				
-            // InternalXMachine.g:879:5: ( ( ({...}? => ( ({...}? => ( (lv_extended_3_0= 'extended' ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_convergence_4_0= ruleXConvergence ) ) ) ) ) )* )
-            // InternalXMachine.g:880:6: ( ({...}? => ( ({...}? => ( (lv_extended_3_0= 'extended' ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_convergence_4_0= ruleXConvergence ) ) ) ) ) )*
+            // InternalXMachine.g:883:5: ( ( ({...}? => ( ({...}? => ( (lv_extended_4_0= 'extended' ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_convergence_5_0= ruleXConvergence ) ) ) ) ) )* )
+            // InternalXMachine.g:884:6: ( ({...}? => ( ({...}? => ( (lv_extended_4_0= 'extended' ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_convergence_5_0= ruleXConvergence ) ) ) ) ) )*
             {
-            // InternalXMachine.g:880:6: ( ({...}? => ( ({...}? => ( (lv_extended_3_0= 'extended' ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_convergence_4_0= ruleXConvergence ) ) ) ) ) )*
+            // InternalXMachine.g:884:6: ( ({...}? => ( ({...}? => ( (lv_extended_4_0= 'extended' ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_convergence_5_0= ruleXConvergence ) ) ) ) ) )*
             loop22:
             do {
                 int alt22=3;
                 int LA22_0 = input.LA(1);
 
-                if ( LA22_0 == 30 && getUnorderedGroupHelper().canSelect(grammarAccess.getXEventAccess().getUnorderedGroup_2(), 0) ) {
+                if ( LA22_0 == 31 && getUnorderedGroupHelper().canSelect(grammarAccess.getXEventAccess().getUnorderedGroup_3(), 0) ) {
                     alt22=1;
                 }
-                else if ( LA22_0 >= 40 && LA22_0 <= 42 && getUnorderedGroupHelper().canSelect(grammarAccess.getXEventAccess().getUnorderedGroup_2(), 1) ) {
+                else if ( LA22_0 >= 41 && LA22_0 <= 43 && getUnorderedGroupHelper().canSelect(grammarAccess.getXEventAccess().getUnorderedGroup_3(), 1) ) {
                     alt22=2;
                 }
 
 
                 switch (alt22) {
             	case 1 :
-            	    // InternalXMachine.g:881:4: ({...}? => ( ({...}? => ( (lv_extended_3_0= 'extended' ) ) ) ) )
+            	    // InternalXMachine.g:885:4: ({...}? => ( ({...}? => ( (lv_extended_4_0= 'extended' ) ) ) ) )
             	    {
-            	    // InternalXMachine.g:881:4: ({...}? => ( ({...}? => ( (lv_extended_3_0= 'extended' ) ) ) ) )
-            	    // InternalXMachine.g:882:5: {...}? => ( ({...}? => ( (lv_extended_3_0= 'extended' ) ) ) )
+            	    // InternalXMachine.g:885:4: ({...}? => ( ({...}? => ( (lv_extended_4_0= 'extended' ) ) ) ) )
+            	    // InternalXMachine.g:886:5: {...}? => ( ({...}? => ( (lv_extended_4_0= 'extended' ) ) ) )
             	    {
-            	    if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getXEventAccess().getUnorderedGroup_2(), 0) ) {
-            	        throw new FailedPredicateException(input, "ruleXEvent", "getUnorderedGroupHelper().canSelect(grammarAccess.getXEventAccess().getUnorderedGroup_2(), 0)");
+            	    if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getXEventAccess().getUnorderedGroup_3(), 0) ) {
+            	        throw new FailedPredicateException(input, "ruleXEvent", "getUnorderedGroupHelper().canSelect(grammarAccess.getXEventAccess().getUnorderedGroup_3(), 0)");
             	    }
-            	    // InternalXMachine.g:882:103: ( ({...}? => ( (lv_extended_3_0= 'extended' ) ) ) )
-            	    // InternalXMachine.g:883:6: ({...}? => ( (lv_extended_3_0= 'extended' ) ) )
+            	    // InternalXMachine.g:886:103: ( ({...}? => ( (lv_extended_4_0= 'extended' ) ) ) )
+            	    // InternalXMachine.g:887:6: ({...}? => ( (lv_extended_4_0= 'extended' ) ) )
             	    {
 
-            	    						getUnorderedGroupHelper().select(grammarAccess.getXEventAccess().getUnorderedGroup_2(), 0);
+            	    						getUnorderedGroupHelper().select(grammarAccess.getXEventAccess().getUnorderedGroup_3(), 0);
             	    					
-            	    // InternalXMachine.g:886:9: ({...}? => ( (lv_extended_3_0= 'extended' ) ) )
-            	    // InternalXMachine.g:886:10: {...}? => ( (lv_extended_3_0= 'extended' ) )
+            	    // InternalXMachine.g:890:9: ({...}? => ( (lv_extended_4_0= 'extended' ) ) )
+            	    // InternalXMachine.g:890:10: {...}? => ( (lv_extended_4_0= 'extended' ) )
             	    {
             	    if ( !((true)) ) {
             	        throw new FailedPredicateException(input, "ruleXEvent", "true");
             	    }
-            	    // InternalXMachine.g:886:19: ( (lv_extended_3_0= 'extended' ) )
-            	    // InternalXMachine.g:886:20: (lv_extended_3_0= 'extended' )
+            	    // InternalXMachine.g:890:19: ( (lv_extended_4_0= 'extended' ) )
+            	    // InternalXMachine.g:890:20: (lv_extended_4_0= 'extended' )
             	    {
-            	    // InternalXMachine.g:886:20: (lv_extended_3_0= 'extended' )
-            	    // InternalXMachine.g:887:10: lv_extended_3_0= 'extended'
+            	    // InternalXMachine.g:890:20: (lv_extended_4_0= 'extended' )
+            	    // InternalXMachine.g:891:10: lv_extended_4_0= 'extended'
             	    {
-            	    lv_extended_3_0=(Token)match(input,30,FOLLOW_25); 
+            	    lv_extended_4_0=(Token)match(input,31,FOLLOW_27); 
 
-            	    										newLeafNode(lv_extended_3_0, grammarAccess.getXEventAccess().getExtendedExtendedKeyword_2_0_0());
+            	    										newLeafNode(lv_extended_4_0, grammarAccess.getXEventAccess().getExtendedExtendedKeyword_3_0_0());
             	    									
 
             	    										if (current==null) {
@@ -2223,7 +2229,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
             	    }
 
             	     
-            	    						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getXEventAccess().getUnorderedGroup_2());
+            	    						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getXEventAccess().getUnorderedGroup_3());
             	    					
 
             	    }
@@ -2235,37 +2241,37 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
             	    }
             	    break;
             	case 2 :
-            	    // InternalXMachine.g:904:4: ({...}? => ( ({...}? => ( (lv_convergence_4_0= ruleXConvergence ) ) ) ) )
+            	    // InternalXMachine.g:908:4: ({...}? => ( ({...}? => ( (lv_convergence_5_0= ruleXConvergence ) ) ) ) )
             	    {
-            	    // InternalXMachine.g:904:4: ({...}? => ( ({...}? => ( (lv_convergence_4_0= ruleXConvergence ) ) ) ) )
-            	    // InternalXMachine.g:905:5: {...}? => ( ({...}? => ( (lv_convergence_4_0= ruleXConvergence ) ) ) )
+            	    // InternalXMachine.g:908:4: ({...}? => ( ({...}? => ( (lv_convergence_5_0= ruleXConvergence ) ) ) ) )
+            	    // InternalXMachine.g:909:5: {...}? => ( ({...}? => ( (lv_convergence_5_0= ruleXConvergence ) ) ) )
             	    {
-            	    if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getXEventAccess().getUnorderedGroup_2(), 1) ) {
-            	        throw new FailedPredicateException(input, "ruleXEvent", "getUnorderedGroupHelper().canSelect(grammarAccess.getXEventAccess().getUnorderedGroup_2(), 1)");
+            	    if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getXEventAccess().getUnorderedGroup_3(), 1) ) {
+            	        throw new FailedPredicateException(input, "ruleXEvent", "getUnorderedGroupHelper().canSelect(grammarAccess.getXEventAccess().getUnorderedGroup_3(), 1)");
             	    }
-            	    // InternalXMachine.g:905:103: ( ({...}? => ( (lv_convergence_4_0= ruleXConvergence ) ) ) )
-            	    // InternalXMachine.g:906:6: ({...}? => ( (lv_convergence_4_0= ruleXConvergence ) ) )
+            	    // InternalXMachine.g:909:103: ( ({...}? => ( (lv_convergence_5_0= ruleXConvergence ) ) ) )
+            	    // InternalXMachine.g:910:6: ({...}? => ( (lv_convergence_5_0= ruleXConvergence ) ) )
             	    {
 
-            	    						getUnorderedGroupHelper().select(grammarAccess.getXEventAccess().getUnorderedGroup_2(), 1);
+            	    						getUnorderedGroupHelper().select(grammarAccess.getXEventAccess().getUnorderedGroup_3(), 1);
             	    					
-            	    // InternalXMachine.g:909:9: ({...}? => ( (lv_convergence_4_0= ruleXConvergence ) ) )
-            	    // InternalXMachine.g:909:10: {...}? => ( (lv_convergence_4_0= ruleXConvergence ) )
+            	    // InternalXMachine.g:913:9: ({...}? => ( (lv_convergence_5_0= ruleXConvergence ) ) )
+            	    // InternalXMachine.g:913:10: {...}? => ( (lv_convergence_5_0= ruleXConvergence ) )
             	    {
             	    if ( !((true)) ) {
             	        throw new FailedPredicateException(input, "ruleXEvent", "true");
             	    }
-            	    // InternalXMachine.g:909:19: ( (lv_convergence_4_0= ruleXConvergence ) )
-            	    // InternalXMachine.g:909:20: (lv_convergence_4_0= ruleXConvergence )
+            	    // InternalXMachine.g:913:19: ( (lv_convergence_5_0= ruleXConvergence ) )
+            	    // InternalXMachine.g:913:20: (lv_convergence_5_0= ruleXConvergence )
             	    {
-            	    // InternalXMachine.g:909:20: (lv_convergence_4_0= ruleXConvergence )
-            	    // InternalXMachine.g:910:10: lv_convergence_4_0= ruleXConvergence
+            	    // InternalXMachine.g:913:20: (lv_convergence_5_0= ruleXConvergence )
+            	    // InternalXMachine.g:914:10: lv_convergence_5_0= ruleXConvergence
             	    {
 
-            	    										newCompositeNode(grammarAccess.getXEventAccess().getConvergenceXConvergenceEnumRuleCall_2_1_0());
+            	    										newCompositeNode(grammarAccess.getXEventAccess().getConvergenceXConvergenceEnumRuleCall_3_1_0());
             	    									
-            	    pushFollow(FOLLOW_25);
-            	    lv_convergence_4_0=ruleXConvergence();
+            	    pushFollow(FOLLOW_27);
+            	    lv_convergence_5_0=ruleXConvergence();
 
             	    state._fsp--;
 
@@ -2276,7 +2282,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
             	    										set(
             	    											current,
             	    											"convergence",
-            	    											lv_convergence_4_0,
+            	    											lv_convergence_5_0,
             	    											"ac.soton.xeventb.xmachine.XMachine.XConvergence");
             	    										afterParserOrEnumRuleCall();
             	    									
@@ -2290,7 +2296,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
             	    }
 
             	     
-            	    						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getXEventAccess().getUnorderedGroup_2());
+            	    						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getXEventAccess().getUnorderedGroup_3());
             	    					
 
             	    }
@@ -2314,34 +2320,34 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
             }
 
              
-            				  getUnorderedGroupHelper().leave(grammarAccess.getXEventAccess().getUnorderedGroup_2());
+            				  getUnorderedGroupHelper().leave(grammarAccess.getXEventAccess().getUnorderedGroup_3());
             				
 
             }
 
-            // InternalXMachine.g:939:3: ( (lv_extensions_5_0= ruleXGroupOrEvent ) )*
+            // InternalXMachine.g:943:3: ( (lv_extensions_6_0= ruleXGroupOrEvent ) )*
             loop23:
             do {
                 int alt23=2;
                 int LA23_0 = input.LA(1);
 
-                if ( ((LA23_0>=36 && LA23_0<=37)) ) {
+                if ( ((LA23_0>=37 && LA23_0<=38)) ) {
                     alt23=1;
                 }
 
 
                 switch (alt23) {
             	case 1 :
-            	    // InternalXMachine.g:940:4: (lv_extensions_5_0= ruleXGroupOrEvent )
+            	    // InternalXMachine.g:944:4: (lv_extensions_6_0= ruleXGroupOrEvent )
             	    {
-            	    // InternalXMachine.g:940:4: (lv_extensions_5_0= ruleXGroupOrEvent )
-            	    // InternalXMachine.g:941:5: lv_extensions_5_0= ruleXGroupOrEvent
+            	    // InternalXMachine.g:944:4: (lv_extensions_6_0= ruleXGroupOrEvent )
+            	    // InternalXMachine.g:945:5: lv_extensions_6_0= ruleXGroupOrEvent
             	    {
 
-            	    					newCompositeNode(grammarAccess.getXEventAccess().getExtensionsXGroupOrEventParserRuleCall_3_0());
+            	    					newCompositeNode(grammarAccess.getXEventAccess().getExtensionsXGroupOrEventParserRuleCall_4_0());
             	    				
-            	    pushFollow(FOLLOW_26);
-            	    lv_extensions_5_0=ruleXGroupOrEvent();
+            	    pushFollow(FOLLOW_28);
+            	    lv_extensions_6_0=ruleXGroupOrEvent();
 
             	    state._fsp--;
 
@@ -2352,7 +2358,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
             	    					add(
             	    						current,
             	    						"extensions",
-            	    						lv_extensions_5_0,
+            	    						lv_extensions_6_0,
             	    						"ac.soton.xeventb.xmachine.XMachine.XGroupOrEvent");
             	    					afterParserOrEnumRuleCall();
             	    				
@@ -2368,7 +2374,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
                 }
             } while (true);
 
-            // InternalXMachine.g:958:3: (otherlv_6= 'refines' ( (otherlv_7= RULE_ID ) )+ )?
+            // InternalXMachine.g:962:3: (otherlv_7= 'refines' ( (otherlv_8= RULE_ID ) )+ )?
             int alt25=2;
             int LA25_0 = input.LA(1);
 
@@ -2377,13 +2383,13 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
             }
             switch (alt25) {
                 case 1 :
-                    // InternalXMachine.g:959:4: otherlv_6= 'refines' ( (otherlv_7= RULE_ID ) )+
+                    // InternalXMachine.g:963:4: otherlv_7= 'refines' ( (otherlv_8= RULE_ID ) )+
                     {
-                    otherlv_6=(Token)match(input,13,FOLLOW_3); 
+                    otherlv_7=(Token)match(input,13,FOLLOW_3); 
 
-                    				newLeafNode(otherlv_6, grammarAccess.getXEventAccess().getRefinesKeyword_4_0());
+                    				newLeafNode(otherlv_7, grammarAccess.getXEventAccess().getRefinesKeyword_5_0());
                     			
-                    // InternalXMachine.g:963:4: ( (otherlv_7= RULE_ID ) )+
+                    // InternalXMachine.g:967:4: ( (otherlv_8= RULE_ID ) )+
                     int cnt24=0;
                     loop24:
                     do {
@@ -2397,19 +2403,19 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
                         switch (alt24) {
                     	case 1 :
-                    	    // InternalXMachine.g:964:5: (otherlv_7= RULE_ID )
+                    	    // InternalXMachine.g:968:5: (otherlv_8= RULE_ID )
                     	    {
-                    	    // InternalXMachine.g:964:5: (otherlv_7= RULE_ID )
-                    	    // InternalXMachine.g:965:6: otherlv_7= RULE_ID
+                    	    // InternalXMachine.g:968:5: (otherlv_8= RULE_ID )
+                    	    // InternalXMachine.g:969:6: otherlv_8= RULE_ID
                     	    {
 
                     	    						if (current==null) {
                     	    							current = createModelElement(grammarAccess.getXEventRule());
                     	    						}
                     	    					
-                    	    otherlv_7=(Token)match(input,RULE_ID,FOLLOW_27); 
+                    	    otherlv_8=(Token)match(input,RULE_ID,FOLLOW_29); 
 
-                    	    						newLeafNode(otherlv_7, grammarAccess.getXEventAccess().getRefinesEventCrossReference_4_1_0());
+                    	    						newLeafNode(otherlv_8, grammarAccess.getXEventAccess().getRefinesEventCrossReference_5_1_0());
                     	    					
 
                     	    }
@@ -2433,21 +2439,21 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalXMachine.g:977:3: ( ( (otherlv_8= 'with' ( (lv_witnesses_9_0= ruleXWitness ) )+ )? otherlv_10= 'begin' ( (lv_actions_11_0= ruleXAction ) )+ ) | (otherlv_12= 'when' ( (lv_guards_13_0= ruleXGuard ) )+ (otherlv_14= 'with' ( (lv_witnesses_15_0= ruleXWitness ) )+ )? (otherlv_16= 'then' ( (lv_actions_17_0= ruleXAction ) )+ )? ) | (otherlv_18= 'any' ( (lv_parameters_19_0= ruleXParameter ) )+ otherlv_20= 'where' ( (lv_guards_21_0= ruleXGuard ) )+ (otherlv_22= 'with' ( (lv_witnesses_23_0= ruleXWitness ) )+ )? (otherlv_24= 'then' ( (lv_actions_25_0= ruleXAction ) )+ )? ) )?
+            // InternalXMachine.g:981:3: ( ( (otherlv_9= 'with' ( (lv_witnesses_10_0= ruleXWitness ) )+ )? otherlv_11= 'begin' ( (lv_actions_12_0= ruleXAction ) )+ ) | (otherlv_13= 'when' ( (lv_guards_14_0= ruleXGuard ) )+ (otherlv_15= 'with' ( (lv_witnesses_16_0= ruleXWitness ) )+ )? (otherlv_17= 'then' ( (lv_actions_18_0= ruleXAction ) )+ )? ) | (otherlv_19= 'any' ( (lv_parameters_20_0= ruleXParameter ) )+ otherlv_21= 'where' ( (lv_guards_22_0= ruleXGuard ) )+ (otherlv_23= 'with' ( (lv_witnesses_24_0= ruleXWitness ) )+ )? (otherlv_25= 'then' ( (lv_actions_26_0= ruleXAction ) )+ )? ) )?
             int alt40=4;
             switch ( input.LA(1) ) {
                 case 29:
-                case 31:
+                case 32:
                     {
                     alt40=1;
                     }
                     break;
-                case 32:
+                case 33:
                     {
                     alt40=2;
                     }
                     break;
-                case 34:
+                case 35:
                     {
                     alt40=3;
                     }
@@ -2456,27 +2462,27 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
             switch (alt40) {
                 case 1 :
-                    // InternalXMachine.g:978:4: ( (otherlv_8= 'with' ( (lv_witnesses_9_0= ruleXWitness ) )+ )? otherlv_10= 'begin' ( (lv_actions_11_0= ruleXAction ) )+ )
+                    // InternalXMachine.g:982:4: ( (otherlv_9= 'with' ( (lv_witnesses_10_0= ruleXWitness ) )+ )? otherlv_11= 'begin' ( (lv_actions_12_0= ruleXAction ) )+ )
                     {
-                    // InternalXMachine.g:978:4: ( (otherlv_8= 'with' ( (lv_witnesses_9_0= ruleXWitness ) )+ )? otherlv_10= 'begin' ( (lv_actions_11_0= ruleXAction ) )+ )
-                    // InternalXMachine.g:979:5: (otherlv_8= 'with' ( (lv_witnesses_9_0= ruleXWitness ) )+ )? otherlv_10= 'begin' ( (lv_actions_11_0= ruleXAction ) )+
+                    // InternalXMachine.g:982:4: ( (otherlv_9= 'with' ( (lv_witnesses_10_0= ruleXWitness ) )+ )? otherlv_11= 'begin' ( (lv_actions_12_0= ruleXAction ) )+ )
+                    // InternalXMachine.g:983:5: (otherlv_9= 'with' ( (lv_witnesses_10_0= ruleXWitness ) )+ )? otherlv_11= 'begin' ( (lv_actions_12_0= ruleXAction ) )+
                     {
-                    // InternalXMachine.g:979:5: (otherlv_8= 'with' ( (lv_witnesses_9_0= ruleXWitness ) )+ )?
+                    // InternalXMachine.g:983:5: (otherlv_9= 'with' ( (lv_witnesses_10_0= ruleXWitness ) )+ )?
                     int alt27=2;
                     int LA27_0 = input.LA(1);
 
-                    if ( (LA27_0==31) ) {
+                    if ( (LA27_0==32) ) {
                         alt27=1;
                     }
                     switch (alt27) {
                         case 1 :
-                            // InternalXMachine.g:980:6: otherlv_8= 'with' ( (lv_witnesses_9_0= ruleXWitness ) )+
+                            // InternalXMachine.g:984:6: otherlv_9= 'with' ( (lv_witnesses_10_0= ruleXWitness ) )+
                             {
-                            otherlv_8=(Token)match(input,31,FOLLOW_8); 
+                            otherlv_9=(Token)match(input,32,FOLLOW_9); 
 
-                            						newLeafNode(otherlv_8, grammarAccess.getXEventAccess().getWithKeyword_5_0_0_0());
+                            						newLeafNode(otherlv_9, grammarAccess.getXEventAccess().getWithKeyword_6_0_0_0());
                             					
-                            // InternalXMachine.g:984:6: ( (lv_witnesses_9_0= ruleXWitness ) )+
+                            // InternalXMachine.g:988:6: ( (lv_witnesses_10_0= ruleXWitness ) )+
                             int cnt26=0;
                             loop26:
                             do {
@@ -2490,16 +2496,16 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
                                 switch (alt26) {
                             	case 1 :
-                            	    // InternalXMachine.g:985:7: (lv_witnesses_9_0= ruleXWitness )
+                            	    // InternalXMachine.g:989:7: (lv_witnesses_10_0= ruleXWitness )
                             	    {
-                            	    // InternalXMachine.g:985:7: (lv_witnesses_9_0= ruleXWitness )
-                            	    // InternalXMachine.g:986:8: lv_witnesses_9_0= ruleXWitness
+                            	    // InternalXMachine.g:989:7: (lv_witnesses_10_0= ruleXWitness )
+                            	    // InternalXMachine.g:990:8: lv_witnesses_10_0= ruleXWitness
                             	    {
 
-                            	    								newCompositeNode(grammarAccess.getXEventAccess().getWitnessesXWitnessParserRuleCall_5_0_0_1_0());
+                            	    								newCompositeNode(grammarAccess.getXEventAccess().getWitnessesXWitnessParserRuleCall_6_0_0_1_0());
                             	    							
-                            	    pushFollow(FOLLOW_28);
-                            	    lv_witnesses_9_0=ruleXWitness();
+                            	    pushFollow(FOLLOW_30);
+                            	    lv_witnesses_10_0=ruleXWitness();
 
                             	    state._fsp--;
 
@@ -2510,7 +2516,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
                             	    								add(
                             	    									current,
                             	    									"witnesses",
-                            	    									lv_witnesses_9_0,
+                            	    									lv_witnesses_10_0,
                             	    									"ac.soton.xeventb.xmachine.XMachine.XWitness");
                             	    								afterParserOrEnumRuleCall();
                             	    							
@@ -2536,11 +2542,11 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    otherlv_10=(Token)match(input,29,FOLLOW_8); 
+                    otherlv_11=(Token)match(input,29,FOLLOW_9); 
 
-                    					newLeafNode(otherlv_10, grammarAccess.getXEventAccess().getBeginKeyword_5_0_1());
+                    					newLeafNode(otherlv_11, grammarAccess.getXEventAccess().getBeginKeyword_6_0_1());
                     				
-                    // InternalXMachine.g:1008:5: ( (lv_actions_11_0= ruleXAction ) )+
+                    // InternalXMachine.g:1012:5: ( (lv_actions_12_0= ruleXAction ) )+
                     int cnt28=0;
                     loop28:
                     do {
@@ -2554,16 +2560,16 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
                         switch (alt28) {
                     	case 1 :
-                    	    // InternalXMachine.g:1009:6: (lv_actions_11_0= ruleXAction )
+                    	    // InternalXMachine.g:1013:6: (lv_actions_12_0= ruleXAction )
                     	    {
-                    	    // InternalXMachine.g:1009:6: (lv_actions_11_0= ruleXAction )
-                    	    // InternalXMachine.g:1010:7: lv_actions_11_0= ruleXAction
+                    	    // InternalXMachine.g:1013:6: (lv_actions_12_0= ruleXAction )
+                    	    // InternalXMachine.g:1014:7: lv_actions_12_0= ruleXAction
                     	    {
 
-                    	    							newCompositeNode(grammarAccess.getXEventAccess().getActionsXActionParserRuleCall_5_0_2_0());
+                    	    							newCompositeNode(grammarAccess.getXEventAccess().getActionsXActionParserRuleCall_6_0_2_0());
                     	    						
-                    	    pushFollow(FOLLOW_29);
-                    	    lv_actions_11_0=ruleXAction();
+                    	    pushFollow(FOLLOW_31);
+                    	    lv_actions_12_0=ruleXAction();
 
                     	    state._fsp--;
 
@@ -2574,7 +2580,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
                     	    							add(
                     	    								current,
                     	    								"actions",
-                    	    								lv_actions_11_0,
+                    	    								lv_actions_12_0,
                     	    								"ac.soton.xeventb.xmachine.XMachine.XAction");
                     	    							afterParserOrEnumRuleCall();
                     	    						
@@ -2601,16 +2607,16 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // InternalXMachine.g:1029:4: (otherlv_12= 'when' ( (lv_guards_13_0= ruleXGuard ) )+ (otherlv_14= 'with' ( (lv_witnesses_15_0= ruleXWitness ) )+ )? (otherlv_16= 'then' ( (lv_actions_17_0= ruleXAction ) )+ )? )
+                    // InternalXMachine.g:1033:4: (otherlv_13= 'when' ( (lv_guards_14_0= ruleXGuard ) )+ (otherlv_15= 'with' ( (lv_witnesses_16_0= ruleXWitness ) )+ )? (otherlv_17= 'then' ( (lv_actions_18_0= ruleXAction ) )+ )? )
                     {
-                    // InternalXMachine.g:1029:4: (otherlv_12= 'when' ( (lv_guards_13_0= ruleXGuard ) )+ (otherlv_14= 'with' ( (lv_witnesses_15_0= ruleXWitness ) )+ )? (otherlv_16= 'then' ( (lv_actions_17_0= ruleXAction ) )+ )? )
-                    // InternalXMachine.g:1030:5: otherlv_12= 'when' ( (lv_guards_13_0= ruleXGuard ) )+ (otherlv_14= 'with' ( (lv_witnesses_15_0= ruleXWitness ) )+ )? (otherlv_16= 'then' ( (lv_actions_17_0= ruleXAction ) )+ )?
+                    // InternalXMachine.g:1033:4: (otherlv_13= 'when' ( (lv_guards_14_0= ruleXGuard ) )+ (otherlv_15= 'with' ( (lv_witnesses_16_0= ruleXWitness ) )+ )? (otherlv_17= 'then' ( (lv_actions_18_0= ruleXAction ) )+ )? )
+                    // InternalXMachine.g:1034:5: otherlv_13= 'when' ( (lv_guards_14_0= ruleXGuard ) )+ (otherlv_15= 'with' ( (lv_witnesses_16_0= ruleXWitness ) )+ )? (otherlv_17= 'then' ( (lv_actions_18_0= ruleXAction ) )+ )?
                     {
-                    otherlv_12=(Token)match(input,32,FOLLOW_8); 
+                    otherlv_13=(Token)match(input,33,FOLLOW_9); 
 
-                    					newLeafNode(otherlv_12, grammarAccess.getXEventAccess().getWhenKeyword_5_1_0());
+                    					newLeafNode(otherlv_13, grammarAccess.getXEventAccess().getWhenKeyword_6_1_0());
                     				
-                    // InternalXMachine.g:1034:5: ( (lv_guards_13_0= ruleXGuard ) )+
+                    // InternalXMachine.g:1038:5: ( (lv_guards_14_0= ruleXGuard ) )+
                     int cnt29=0;
                     loop29:
                     do {
@@ -2624,16 +2630,16 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
                         switch (alt29) {
                     	case 1 :
-                    	    // InternalXMachine.g:1035:6: (lv_guards_13_0= ruleXGuard )
+                    	    // InternalXMachine.g:1039:6: (lv_guards_14_0= ruleXGuard )
                     	    {
-                    	    // InternalXMachine.g:1035:6: (lv_guards_13_0= ruleXGuard )
-                    	    // InternalXMachine.g:1036:7: lv_guards_13_0= ruleXGuard
+                    	    // InternalXMachine.g:1039:6: (lv_guards_14_0= ruleXGuard )
+                    	    // InternalXMachine.g:1040:7: lv_guards_14_0= ruleXGuard
                     	    {
 
-                    	    							newCompositeNode(grammarAccess.getXEventAccess().getGuardsXGuardParserRuleCall_5_1_1_0());
+                    	    							newCompositeNode(grammarAccess.getXEventAccess().getGuardsXGuardParserRuleCall_6_1_1_0());
                     	    						
-                    	    pushFollow(FOLLOW_30);
-                    	    lv_guards_13_0=ruleXGuard();
+                    	    pushFollow(FOLLOW_32);
+                    	    lv_guards_14_0=ruleXGuard();
 
                     	    state._fsp--;
 
@@ -2644,7 +2650,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
                     	    							add(
                     	    								current,
                     	    								"guards",
-                    	    								lv_guards_13_0,
+                    	    								lv_guards_14_0,
                     	    								"ac.soton.xeventb.xmachine.XMachine.XGuard");
                     	    							afterParserOrEnumRuleCall();
                     	    						
@@ -2664,22 +2670,22 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
                         cnt29++;
                     } while (true);
 
-                    // InternalXMachine.g:1053:5: (otherlv_14= 'with' ( (lv_witnesses_15_0= ruleXWitness ) )+ )?
+                    // InternalXMachine.g:1057:5: (otherlv_15= 'with' ( (lv_witnesses_16_0= ruleXWitness ) )+ )?
                     int alt31=2;
                     int LA31_0 = input.LA(1);
 
-                    if ( (LA31_0==31) ) {
+                    if ( (LA31_0==32) ) {
                         alt31=1;
                     }
                     switch (alt31) {
                         case 1 :
-                            // InternalXMachine.g:1054:6: otherlv_14= 'with' ( (lv_witnesses_15_0= ruleXWitness ) )+
+                            // InternalXMachine.g:1058:6: otherlv_15= 'with' ( (lv_witnesses_16_0= ruleXWitness ) )+
                             {
-                            otherlv_14=(Token)match(input,31,FOLLOW_8); 
+                            otherlv_15=(Token)match(input,32,FOLLOW_9); 
 
-                            						newLeafNode(otherlv_14, grammarAccess.getXEventAccess().getWithKeyword_5_1_2_0());
+                            						newLeafNode(otherlv_15, grammarAccess.getXEventAccess().getWithKeyword_6_1_2_0());
                             					
-                            // InternalXMachine.g:1058:6: ( (lv_witnesses_15_0= ruleXWitness ) )+
+                            // InternalXMachine.g:1062:6: ( (lv_witnesses_16_0= ruleXWitness ) )+
                             int cnt30=0;
                             loop30:
                             do {
@@ -2693,16 +2699,16 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
                                 switch (alt30) {
                             	case 1 :
-                            	    // InternalXMachine.g:1059:7: (lv_witnesses_15_0= ruleXWitness )
+                            	    // InternalXMachine.g:1063:7: (lv_witnesses_16_0= ruleXWitness )
                             	    {
-                            	    // InternalXMachine.g:1059:7: (lv_witnesses_15_0= ruleXWitness )
-                            	    // InternalXMachine.g:1060:8: lv_witnesses_15_0= ruleXWitness
+                            	    // InternalXMachine.g:1063:7: (lv_witnesses_16_0= ruleXWitness )
+                            	    // InternalXMachine.g:1064:8: lv_witnesses_16_0= ruleXWitness
                             	    {
 
-                            	    								newCompositeNode(grammarAccess.getXEventAccess().getWitnessesXWitnessParserRuleCall_5_1_2_1_0());
+                            	    								newCompositeNode(grammarAccess.getXEventAccess().getWitnessesXWitnessParserRuleCall_6_1_2_1_0());
                             	    							
-                            	    pushFollow(FOLLOW_31);
-                            	    lv_witnesses_15_0=ruleXWitness();
+                            	    pushFollow(FOLLOW_33);
+                            	    lv_witnesses_16_0=ruleXWitness();
 
                             	    state._fsp--;
 
@@ -2713,7 +2719,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
                             	    								add(
                             	    									current,
                             	    									"witnesses",
-                            	    									lv_witnesses_15_0,
+                            	    									lv_witnesses_16_0,
                             	    									"ac.soton.xeventb.xmachine.XMachine.XWitness");
                             	    								afterParserOrEnumRuleCall();
                             	    							
@@ -2739,22 +2745,22 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // InternalXMachine.g:1078:5: (otherlv_16= 'then' ( (lv_actions_17_0= ruleXAction ) )+ )?
+                    // InternalXMachine.g:1082:5: (otherlv_17= 'then' ( (lv_actions_18_0= ruleXAction ) )+ )?
                     int alt33=2;
                     int LA33_0 = input.LA(1);
 
-                    if ( (LA33_0==33) ) {
+                    if ( (LA33_0==34) ) {
                         alt33=1;
                     }
                     switch (alt33) {
                         case 1 :
-                            // InternalXMachine.g:1079:6: otherlv_16= 'then' ( (lv_actions_17_0= ruleXAction ) )+
+                            // InternalXMachine.g:1083:6: otherlv_17= 'then' ( (lv_actions_18_0= ruleXAction ) )+
                             {
-                            otherlv_16=(Token)match(input,33,FOLLOW_8); 
+                            otherlv_17=(Token)match(input,34,FOLLOW_9); 
 
-                            						newLeafNode(otherlv_16, grammarAccess.getXEventAccess().getThenKeyword_5_1_3_0());
+                            						newLeafNode(otherlv_17, grammarAccess.getXEventAccess().getThenKeyword_6_1_3_0());
                             					
-                            // InternalXMachine.g:1083:6: ( (lv_actions_17_0= ruleXAction ) )+
+                            // InternalXMachine.g:1087:6: ( (lv_actions_18_0= ruleXAction ) )+
                             int cnt32=0;
                             loop32:
                             do {
@@ -2768,16 +2774,16 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
                                 switch (alt32) {
                             	case 1 :
-                            	    // InternalXMachine.g:1084:7: (lv_actions_17_0= ruleXAction )
+                            	    // InternalXMachine.g:1088:7: (lv_actions_18_0= ruleXAction )
                             	    {
-                            	    // InternalXMachine.g:1084:7: (lv_actions_17_0= ruleXAction )
-                            	    // InternalXMachine.g:1085:8: lv_actions_17_0= ruleXAction
+                            	    // InternalXMachine.g:1088:7: (lv_actions_18_0= ruleXAction )
+                            	    // InternalXMachine.g:1089:8: lv_actions_18_0= ruleXAction
                             	    {
 
-                            	    								newCompositeNode(grammarAccess.getXEventAccess().getActionsXActionParserRuleCall_5_1_3_1_0());
+                            	    								newCompositeNode(grammarAccess.getXEventAccess().getActionsXActionParserRuleCall_6_1_3_1_0());
                             	    							
-                            	    pushFollow(FOLLOW_29);
-                            	    lv_actions_17_0=ruleXAction();
+                            	    pushFollow(FOLLOW_31);
+                            	    lv_actions_18_0=ruleXAction();
 
                             	    state._fsp--;
 
@@ -2788,7 +2794,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
                             	    								add(
                             	    									current,
                             	    									"actions",
-                            	    									lv_actions_17_0,
+                            	    									lv_actions_18_0,
                             	    									"ac.soton.xeventb.xmachine.XMachine.XAction");
                             	    								afterParserOrEnumRuleCall();
                             	    							
@@ -2821,16 +2827,16 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // InternalXMachine.g:1105:4: (otherlv_18= 'any' ( (lv_parameters_19_0= ruleXParameter ) )+ otherlv_20= 'where' ( (lv_guards_21_0= ruleXGuard ) )+ (otherlv_22= 'with' ( (lv_witnesses_23_0= ruleXWitness ) )+ )? (otherlv_24= 'then' ( (lv_actions_25_0= ruleXAction ) )+ )? )
+                    // InternalXMachine.g:1109:4: (otherlv_19= 'any' ( (lv_parameters_20_0= ruleXParameter ) )+ otherlv_21= 'where' ( (lv_guards_22_0= ruleXGuard ) )+ (otherlv_23= 'with' ( (lv_witnesses_24_0= ruleXWitness ) )+ )? (otherlv_25= 'then' ( (lv_actions_26_0= ruleXAction ) )+ )? )
                     {
-                    // InternalXMachine.g:1105:4: (otherlv_18= 'any' ( (lv_parameters_19_0= ruleXParameter ) )+ otherlv_20= 'where' ( (lv_guards_21_0= ruleXGuard ) )+ (otherlv_22= 'with' ( (lv_witnesses_23_0= ruleXWitness ) )+ )? (otherlv_24= 'then' ( (lv_actions_25_0= ruleXAction ) )+ )? )
-                    // InternalXMachine.g:1106:5: otherlv_18= 'any' ( (lv_parameters_19_0= ruleXParameter ) )+ otherlv_20= 'where' ( (lv_guards_21_0= ruleXGuard ) )+ (otherlv_22= 'with' ( (lv_witnesses_23_0= ruleXWitness ) )+ )? (otherlv_24= 'then' ( (lv_actions_25_0= ruleXAction ) )+ )?
+                    // InternalXMachine.g:1109:4: (otherlv_19= 'any' ( (lv_parameters_20_0= ruleXParameter ) )+ otherlv_21= 'where' ( (lv_guards_22_0= ruleXGuard ) )+ (otherlv_23= 'with' ( (lv_witnesses_24_0= ruleXWitness ) )+ )? (otherlv_25= 'then' ( (lv_actions_26_0= ruleXAction ) )+ )? )
+                    // InternalXMachine.g:1110:5: otherlv_19= 'any' ( (lv_parameters_20_0= ruleXParameter ) )+ otherlv_21= 'where' ( (lv_guards_22_0= ruleXGuard ) )+ (otherlv_23= 'with' ( (lv_witnesses_24_0= ruleXWitness ) )+ )? (otherlv_25= 'then' ( (lv_actions_26_0= ruleXAction ) )+ )?
                     {
-                    otherlv_18=(Token)match(input,34,FOLLOW_3); 
+                    otherlv_19=(Token)match(input,35,FOLLOW_3); 
 
-                    					newLeafNode(otherlv_18, grammarAccess.getXEventAccess().getAnyKeyword_5_2_0());
+                    					newLeafNode(otherlv_19, grammarAccess.getXEventAccess().getAnyKeyword_6_2_0());
                     				
-                    // InternalXMachine.g:1110:5: ( (lv_parameters_19_0= ruleXParameter ) )+
+                    // InternalXMachine.g:1114:5: ( (lv_parameters_20_0= ruleXParameter ) )+
                     int cnt34=0;
                     loop34:
                     do {
@@ -2844,16 +2850,16 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
                         switch (alt34) {
                     	case 1 :
-                    	    // InternalXMachine.g:1111:6: (lv_parameters_19_0= ruleXParameter )
+                    	    // InternalXMachine.g:1115:6: (lv_parameters_20_0= ruleXParameter )
                     	    {
-                    	    // InternalXMachine.g:1111:6: (lv_parameters_19_0= ruleXParameter )
-                    	    // InternalXMachine.g:1112:7: lv_parameters_19_0= ruleXParameter
+                    	    // InternalXMachine.g:1115:6: (lv_parameters_20_0= ruleXParameter )
+                    	    // InternalXMachine.g:1116:7: lv_parameters_20_0= ruleXParameter
                     	    {
 
-                    	    							newCompositeNode(grammarAccess.getXEventAccess().getParametersXParameterParserRuleCall_5_2_1_0());
+                    	    							newCompositeNode(grammarAccess.getXEventAccess().getParametersXParameterParserRuleCall_6_2_1_0());
                     	    						
-                    	    pushFollow(FOLLOW_32);
-                    	    lv_parameters_19_0=ruleXParameter();
+                    	    pushFollow(FOLLOW_34);
+                    	    lv_parameters_20_0=ruleXParameter();
 
                     	    state._fsp--;
 
@@ -2864,7 +2870,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
                     	    							add(
                     	    								current,
                     	    								"parameters",
-                    	    								lv_parameters_19_0,
+                    	    								lv_parameters_20_0,
                     	    								"ac.soton.xeventb.xmachine.XMachine.XParameter");
                     	    							afterParserOrEnumRuleCall();
                     	    						
@@ -2884,11 +2890,11 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
                         cnt34++;
                     } while (true);
 
-                    otherlv_20=(Token)match(input,35,FOLLOW_8); 
+                    otherlv_21=(Token)match(input,36,FOLLOW_9); 
 
-                    					newLeafNode(otherlv_20, grammarAccess.getXEventAccess().getWhereKeyword_5_2_2());
+                    					newLeafNode(otherlv_21, grammarAccess.getXEventAccess().getWhereKeyword_6_2_2());
                     				
-                    // InternalXMachine.g:1133:5: ( (lv_guards_21_0= ruleXGuard ) )+
+                    // InternalXMachine.g:1137:5: ( (lv_guards_22_0= ruleXGuard ) )+
                     int cnt35=0;
                     loop35:
                     do {
@@ -2902,16 +2908,16 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
                         switch (alt35) {
                     	case 1 :
-                    	    // InternalXMachine.g:1134:6: (lv_guards_21_0= ruleXGuard )
+                    	    // InternalXMachine.g:1138:6: (lv_guards_22_0= ruleXGuard )
                     	    {
-                    	    // InternalXMachine.g:1134:6: (lv_guards_21_0= ruleXGuard )
-                    	    // InternalXMachine.g:1135:7: lv_guards_21_0= ruleXGuard
+                    	    // InternalXMachine.g:1138:6: (lv_guards_22_0= ruleXGuard )
+                    	    // InternalXMachine.g:1139:7: lv_guards_22_0= ruleXGuard
                     	    {
 
-                    	    							newCompositeNode(grammarAccess.getXEventAccess().getGuardsXGuardParserRuleCall_5_2_3_0());
+                    	    							newCompositeNode(grammarAccess.getXEventAccess().getGuardsXGuardParserRuleCall_6_2_3_0());
                     	    						
-                    	    pushFollow(FOLLOW_30);
-                    	    lv_guards_21_0=ruleXGuard();
+                    	    pushFollow(FOLLOW_32);
+                    	    lv_guards_22_0=ruleXGuard();
 
                     	    state._fsp--;
 
@@ -2922,7 +2928,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
                     	    							add(
                     	    								current,
                     	    								"guards",
-                    	    								lv_guards_21_0,
+                    	    								lv_guards_22_0,
                     	    								"ac.soton.xeventb.xmachine.XMachine.XGuard");
                     	    							afterParserOrEnumRuleCall();
                     	    						
@@ -2942,22 +2948,22 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
                         cnt35++;
                     } while (true);
 
-                    // InternalXMachine.g:1152:5: (otherlv_22= 'with' ( (lv_witnesses_23_0= ruleXWitness ) )+ )?
+                    // InternalXMachine.g:1156:5: (otherlv_23= 'with' ( (lv_witnesses_24_0= ruleXWitness ) )+ )?
                     int alt37=2;
                     int LA37_0 = input.LA(1);
 
-                    if ( (LA37_0==31) ) {
+                    if ( (LA37_0==32) ) {
                         alt37=1;
                     }
                     switch (alt37) {
                         case 1 :
-                            // InternalXMachine.g:1153:6: otherlv_22= 'with' ( (lv_witnesses_23_0= ruleXWitness ) )+
+                            // InternalXMachine.g:1157:6: otherlv_23= 'with' ( (lv_witnesses_24_0= ruleXWitness ) )+
                             {
-                            otherlv_22=(Token)match(input,31,FOLLOW_8); 
+                            otherlv_23=(Token)match(input,32,FOLLOW_9); 
 
-                            						newLeafNode(otherlv_22, grammarAccess.getXEventAccess().getWithKeyword_5_2_4_0());
+                            						newLeafNode(otherlv_23, grammarAccess.getXEventAccess().getWithKeyword_6_2_4_0());
                             					
-                            // InternalXMachine.g:1157:6: ( (lv_witnesses_23_0= ruleXWitness ) )+
+                            // InternalXMachine.g:1161:6: ( (lv_witnesses_24_0= ruleXWitness ) )+
                             int cnt36=0;
                             loop36:
                             do {
@@ -2971,16 +2977,16 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
                                 switch (alt36) {
                             	case 1 :
-                            	    // InternalXMachine.g:1158:7: (lv_witnesses_23_0= ruleXWitness )
+                            	    // InternalXMachine.g:1162:7: (lv_witnesses_24_0= ruleXWitness )
                             	    {
-                            	    // InternalXMachine.g:1158:7: (lv_witnesses_23_0= ruleXWitness )
-                            	    // InternalXMachine.g:1159:8: lv_witnesses_23_0= ruleXWitness
+                            	    // InternalXMachine.g:1162:7: (lv_witnesses_24_0= ruleXWitness )
+                            	    // InternalXMachine.g:1163:8: lv_witnesses_24_0= ruleXWitness
                             	    {
 
-                            	    								newCompositeNode(grammarAccess.getXEventAccess().getWitnessesXWitnessParserRuleCall_5_2_4_1_0());
+                            	    								newCompositeNode(grammarAccess.getXEventAccess().getWitnessesXWitnessParserRuleCall_6_2_4_1_0());
                             	    							
-                            	    pushFollow(FOLLOW_31);
-                            	    lv_witnesses_23_0=ruleXWitness();
+                            	    pushFollow(FOLLOW_33);
+                            	    lv_witnesses_24_0=ruleXWitness();
 
                             	    state._fsp--;
 
@@ -2991,7 +2997,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
                             	    								add(
                             	    									current,
                             	    									"witnesses",
-                            	    									lv_witnesses_23_0,
+                            	    									lv_witnesses_24_0,
                             	    									"ac.soton.xeventb.xmachine.XMachine.XWitness");
                             	    								afterParserOrEnumRuleCall();
                             	    							
@@ -3017,22 +3023,22 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // InternalXMachine.g:1177:5: (otherlv_24= 'then' ( (lv_actions_25_0= ruleXAction ) )+ )?
+                    // InternalXMachine.g:1181:5: (otherlv_25= 'then' ( (lv_actions_26_0= ruleXAction ) )+ )?
                     int alt39=2;
                     int LA39_0 = input.LA(1);
 
-                    if ( (LA39_0==33) ) {
+                    if ( (LA39_0==34) ) {
                         alt39=1;
                     }
                     switch (alt39) {
                         case 1 :
-                            // InternalXMachine.g:1178:6: otherlv_24= 'then' ( (lv_actions_25_0= ruleXAction ) )+
+                            // InternalXMachine.g:1182:6: otherlv_25= 'then' ( (lv_actions_26_0= ruleXAction ) )+
                             {
-                            otherlv_24=(Token)match(input,33,FOLLOW_8); 
+                            otherlv_25=(Token)match(input,34,FOLLOW_9); 
 
-                            						newLeafNode(otherlv_24, grammarAccess.getXEventAccess().getThenKeyword_5_2_5_0());
+                            						newLeafNode(otherlv_25, grammarAccess.getXEventAccess().getThenKeyword_6_2_5_0());
                             					
-                            // InternalXMachine.g:1182:6: ( (lv_actions_25_0= ruleXAction ) )+
+                            // InternalXMachine.g:1186:6: ( (lv_actions_26_0= ruleXAction ) )+
                             int cnt38=0;
                             loop38:
                             do {
@@ -3046,16 +3052,16 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
                                 switch (alt38) {
                             	case 1 :
-                            	    // InternalXMachine.g:1183:7: (lv_actions_25_0= ruleXAction )
+                            	    // InternalXMachine.g:1187:7: (lv_actions_26_0= ruleXAction )
                             	    {
-                            	    // InternalXMachine.g:1183:7: (lv_actions_25_0= ruleXAction )
-                            	    // InternalXMachine.g:1184:8: lv_actions_25_0= ruleXAction
+                            	    // InternalXMachine.g:1187:7: (lv_actions_26_0= ruleXAction )
+                            	    // InternalXMachine.g:1188:8: lv_actions_26_0= ruleXAction
                             	    {
 
-                            	    								newCompositeNode(grammarAccess.getXEventAccess().getActionsXActionParserRuleCall_5_2_5_1_0());
+                            	    								newCompositeNode(grammarAccess.getXEventAccess().getActionsXActionParserRuleCall_6_2_5_1_0());
                             	    							
-                            	    pushFollow(FOLLOW_29);
-                            	    lv_actions_25_0=ruleXAction();
+                            	    pushFollow(FOLLOW_31);
+                            	    lv_actions_26_0=ruleXAction();
 
                             	    state._fsp--;
 
@@ -3066,7 +3072,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
                             	    								add(
                             	    									current,
                             	    									"actions",
-                            	    									lv_actions_25_0,
+                            	    									lv_actions_26_0,
                             	    									"ac.soton.xeventb.xmachine.XMachine.XAction");
                             	    								afterParserOrEnumRuleCall();
                             	    							
@@ -3101,9 +3107,9 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_26=(Token)match(input,19,FOLLOW_2); 
+            otherlv_27=(Token)match(input,19,FOLLOW_2); 
 
-            			newLeafNode(otherlv_26, grammarAccess.getXEventAccess().getEndKeyword_6());
+            			newLeafNode(otherlv_27, grammarAccess.getXEventAccess().getEndKeyword_7());
             		
 
             }
@@ -3128,7 +3134,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleEventSync"
-    // InternalXMachine.g:1212:1: entryRuleEventSync returns [EObject current=null] : iv_ruleEventSync= ruleEventSync EOF ;
+    // InternalXMachine.g:1216:1: entryRuleEventSync returns [EObject current=null] : iv_ruleEventSync= ruleEventSync EOF ;
     public final EObject entryRuleEventSync() throws RecognitionException {
         EObject current = null;
 
@@ -3136,8 +3142,8 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalXMachine.g:1212:50: (iv_ruleEventSync= ruleEventSync EOF )
-            // InternalXMachine.g:1213:2: iv_ruleEventSync= ruleEventSync EOF
+            // InternalXMachine.g:1216:50: (iv_ruleEventSync= ruleEventSync EOF )
+            // InternalXMachine.g:1217:2: iv_ruleEventSync= ruleEventSync EOF
             {
              newCompositeNode(grammarAccess.getEventSyncRule()); 
             pushFollow(FOLLOW_1);
@@ -3164,7 +3170,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleEventSync"
-    // InternalXMachine.g:1219:1: ruleEventSync returns [EObject current=null] : ( () (otherlv_1= 'synchronises' ( ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.' )? ( (otherlv_4= RULE_ID ) ) ) ) ;
+    // InternalXMachine.g:1223:1: ruleEventSync returns [EObject current=null] : ( () (otherlv_1= 'synchronises' ( ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.' )? ( (otherlv_4= RULE_ID ) ) ) ) ;
     public final EObject ruleEventSync() throws RecognitionException {
         EObject current = null;
 
@@ -3177,14 +3183,14 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalXMachine.g:1225:2: ( ( () (otherlv_1= 'synchronises' ( ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.' )? ( (otherlv_4= RULE_ID ) ) ) ) )
-            // InternalXMachine.g:1226:2: ( () (otherlv_1= 'synchronises' ( ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.' )? ( (otherlv_4= RULE_ID ) ) ) )
+            // InternalXMachine.g:1229:2: ( ( () (otherlv_1= 'synchronises' ( ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.' )? ( (otherlv_4= RULE_ID ) ) ) ) )
+            // InternalXMachine.g:1230:2: ( () (otherlv_1= 'synchronises' ( ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.' )? ( (otherlv_4= RULE_ID ) ) ) )
             {
-            // InternalXMachine.g:1226:2: ( () (otherlv_1= 'synchronises' ( ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.' )? ( (otherlv_4= RULE_ID ) ) ) )
-            // InternalXMachine.g:1227:3: () (otherlv_1= 'synchronises' ( ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.' )? ( (otherlv_4= RULE_ID ) ) )
+            // InternalXMachine.g:1230:2: ( () (otherlv_1= 'synchronises' ( ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.' )? ( (otherlv_4= RULE_ID ) ) ) )
+            // InternalXMachine.g:1231:3: () (otherlv_1= 'synchronises' ( ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.' )? ( (otherlv_4= RULE_ID ) ) )
             {
-            // InternalXMachine.g:1227:3: ()
-            // InternalXMachine.g:1228:4: 
+            // InternalXMachine.g:1231:3: ()
+            // InternalXMachine.g:1232:4: 
             {
 
             				current = forceCreateModelElement(
@@ -3194,14 +3200,14 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalXMachine.g:1234:3: (otherlv_1= 'synchronises' ( ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.' )? ( (otherlv_4= RULE_ID ) ) )
-            // InternalXMachine.g:1235:4: otherlv_1= 'synchronises' ( ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.' )? ( (otherlv_4= RULE_ID ) )
+            // InternalXMachine.g:1238:3: (otherlv_1= 'synchronises' ( ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.' )? ( (otherlv_4= RULE_ID ) ) )
+            // InternalXMachine.g:1239:4: otherlv_1= 'synchronises' ( ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.' )? ( (otherlv_4= RULE_ID ) )
             {
-            otherlv_1=(Token)match(input,36,FOLLOW_3); 
+            otherlv_1=(Token)match(input,37,FOLLOW_3); 
 
             				newLeafNode(otherlv_1, grammarAccess.getEventSyncAccess().getSynchronisesKeyword_1_0());
             			
-            // InternalXMachine.g:1239:4: ( ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.' )?
+            // InternalXMachine.g:1243:4: ( ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.' )?
             int alt41=2;
             int LA41_0 = input.LA(1);
 
@@ -3214,15 +3220,15 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
             }
             switch (alt41) {
                 case 1 :
-                    // InternalXMachine.g:1240:5: ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.'
+                    // InternalXMachine.g:1244:5: ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.'
                     {
-                    // InternalXMachine.g:1240:5: ( (lv_prefix_2_0= RULE_ID ) )
-                    // InternalXMachine.g:1241:6: (lv_prefix_2_0= RULE_ID )
+                    // InternalXMachine.g:1244:5: ( (lv_prefix_2_0= RULE_ID ) )
+                    // InternalXMachine.g:1245:6: (lv_prefix_2_0= RULE_ID )
                     {
-                    // InternalXMachine.g:1241:6: (lv_prefix_2_0= RULE_ID )
-                    // InternalXMachine.g:1242:7: lv_prefix_2_0= RULE_ID
+                    // InternalXMachine.g:1245:6: (lv_prefix_2_0= RULE_ID )
+                    // InternalXMachine.g:1246:7: lv_prefix_2_0= RULE_ID
                     {
-                    lv_prefix_2_0=(Token)match(input,RULE_ID,FOLLOW_33); 
+                    lv_prefix_2_0=(Token)match(input,RULE_ID,FOLLOW_35); 
 
                     							newLeafNode(lv_prefix_2_0, grammarAccess.getEventSyncAccess().getPrefixIDTerminalRuleCall_1_1_0_0());
                     						
@@ -3252,11 +3258,11 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalXMachine.g:1263:4: ( (otherlv_4= RULE_ID ) )
-            // InternalXMachine.g:1264:5: (otherlv_4= RULE_ID )
+            // InternalXMachine.g:1267:4: ( (otherlv_4= RULE_ID ) )
+            // InternalXMachine.g:1268:5: (otherlv_4= RULE_ID )
             {
-            // InternalXMachine.g:1264:5: (otherlv_4= RULE_ID )
-            // InternalXMachine.g:1265:6: otherlv_4= RULE_ID
+            // InternalXMachine.g:1268:5: (otherlv_4= RULE_ID )
+            // InternalXMachine.g:1269:6: otherlv_4= RULE_ID
             {
 
             						if (current==null) {
@@ -3299,7 +3305,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleGroupSync"
-    // InternalXMachine.g:1281:1: entryRuleGroupSync returns [EObject current=null] : iv_ruleGroupSync= ruleGroupSync EOF ;
+    // InternalXMachine.g:1285:1: entryRuleGroupSync returns [EObject current=null] : iv_ruleGroupSync= ruleGroupSync EOF ;
     public final EObject entryRuleGroupSync() throws RecognitionException {
         EObject current = null;
 
@@ -3307,8 +3313,8 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalXMachine.g:1281:50: (iv_ruleGroupSync= ruleGroupSync EOF )
-            // InternalXMachine.g:1282:2: iv_ruleGroupSync= ruleGroupSync EOF
+            // InternalXMachine.g:1285:50: (iv_ruleGroupSync= ruleGroupSync EOF )
+            // InternalXMachine.g:1286:2: iv_ruleGroupSync= ruleGroupSync EOF
             {
              newCompositeNode(grammarAccess.getGroupSyncRule()); 
             pushFollow(FOLLOW_1);
@@ -3335,7 +3341,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleGroupSync"
-    // InternalXMachine.g:1288:1: ruleGroupSync returns [EObject current=null] : ( () (otherlv_1= 'synchronisesGroup' ( ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.' )? ( (otherlv_4= RULE_ID ) ) ) (otherlv_5= '(' ( (lv_actualParameters_6_0= RULE_ID ) ) (otherlv_7= ',' ( (lv_actualParameters_8_0= RULE_ID ) ) )* otherlv_9= ')' )? ) ;
+    // InternalXMachine.g:1292:1: ruleGroupSync returns [EObject current=null] : ( () (otherlv_1= 'synchronisesGroup' ( ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.' )? ( (otherlv_4= RULE_ID ) ) ) (otherlv_5= '(' ( (lv_actualParameters_6_0= RULE_ID ) ) (otherlv_7= ',' ( (lv_actualParameters_8_0= RULE_ID ) ) )* otherlv_9= ')' )? ) ;
     public final EObject ruleGroupSync() throws RecognitionException {
         EObject current = null;
 
@@ -3353,14 +3359,14 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalXMachine.g:1294:2: ( ( () (otherlv_1= 'synchronisesGroup' ( ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.' )? ( (otherlv_4= RULE_ID ) ) ) (otherlv_5= '(' ( (lv_actualParameters_6_0= RULE_ID ) ) (otherlv_7= ',' ( (lv_actualParameters_8_0= RULE_ID ) ) )* otherlv_9= ')' )? ) )
-            // InternalXMachine.g:1295:2: ( () (otherlv_1= 'synchronisesGroup' ( ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.' )? ( (otherlv_4= RULE_ID ) ) ) (otherlv_5= '(' ( (lv_actualParameters_6_0= RULE_ID ) ) (otherlv_7= ',' ( (lv_actualParameters_8_0= RULE_ID ) ) )* otherlv_9= ')' )? )
+            // InternalXMachine.g:1298:2: ( ( () (otherlv_1= 'synchronisesGroup' ( ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.' )? ( (otherlv_4= RULE_ID ) ) ) (otherlv_5= '(' ( (lv_actualParameters_6_0= RULE_ID ) ) (otherlv_7= ',' ( (lv_actualParameters_8_0= RULE_ID ) ) )* otherlv_9= ')' )? ) )
+            // InternalXMachine.g:1299:2: ( () (otherlv_1= 'synchronisesGroup' ( ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.' )? ( (otherlv_4= RULE_ID ) ) ) (otherlv_5= '(' ( (lv_actualParameters_6_0= RULE_ID ) ) (otherlv_7= ',' ( (lv_actualParameters_8_0= RULE_ID ) ) )* otherlv_9= ')' )? )
             {
-            // InternalXMachine.g:1295:2: ( () (otherlv_1= 'synchronisesGroup' ( ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.' )? ( (otherlv_4= RULE_ID ) ) ) (otherlv_5= '(' ( (lv_actualParameters_6_0= RULE_ID ) ) (otherlv_7= ',' ( (lv_actualParameters_8_0= RULE_ID ) ) )* otherlv_9= ')' )? )
-            // InternalXMachine.g:1296:3: () (otherlv_1= 'synchronisesGroup' ( ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.' )? ( (otherlv_4= RULE_ID ) ) ) (otherlv_5= '(' ( (lv_actualParameters_6_0= RULE_ID ) ) (otherlv_7= ',' ( (lv_actualParameters_8_0= RULE_ID ) ) )* otherlv_9= ')' )?
+            // InternalXMachine.g:1299:2: ( () (otherlv_1= 'synchronisesGroup' ( ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.' )? ( (otherlv_4= RULE_ID ) ) ) (otherlv_5= '(' ( (lv_actualParameters_6_0= RULE_ID ) ) (otherlv_7= ',' ( (lv_actualParameters_8_0= RULE_ID ) ) )* otherlv_9= ')' )? )
+            // InternalXMachine.g:1300:3: () (otherlv_1= 'synchronisesGroup' ( ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.' )? ( (otherlv_4= RULE_ID ) ) ) (otherlv_5= '(' ( (lv_actualParameters_6_0= RULE_ID ) ) (otherlv_7= ',' ( (lv_actualParameters_8_0= RULE_ID ) ) )* otherlv_9= ')' )?
             {
-            // InternalXMachine.g:1296:3: ()
-            // InternalXMachine.g:1297:4: 
+            // InternalXMachine.g:1300:3: ()
+            // InternalXMachine.g:1301:4: 
             {
 
             				current = forceCreateModelElement(
@@ -3370,14 +3376,14 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalXMachine.g:1303:3: (otherlv_1= 'synchronisesGroup' ( ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.' )? ( (otherlv_4= RULE_ID ) ) )
-            // InternalXMachine.g:1304:4: otherlv_1= 'synchronisesGroup' ( ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.' )? ( (otherlv_4= RULE_ID ) )
+            // InternalXMachine.g:1307:3: (otherlv_1= 'synchronisesGroup' ( ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.' )? ( (otherlv_4= RULE_ID ) ) )
+            // InternalXMachine.g:1308:4: otherlv_1= 'synchronisesGroup' ( ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.' )? ( (otherlv_4= RULE_ID ) )
             {
-            otherlv_1=(Token)match(input,37,FOLLOW_3); 
+            otherlv_1=(Token)match(input,38,FOLLOW_3); 
 
             				newLeafNode(otherlv_1, grammarAccess.getGroupSyncAccess().getSynchronisesGroupKeyword_1_0());
             			
-            // InternalXMachine.g:1308:4: ( ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.' )?
+            // InternalXMachine.g:1312:4: ( ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.' )?
             int alt42=2;
             int LA42_0 = input.LA(1);
 
@@ -3390,15 +3396,15 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
             }
             switch (alt42) {
                 case 1 :
-                    // InternalXMachine.g:1309:5: ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.'
+                    // InternalXMachine.g:1313:5: ( (lv_prefix_2_0= RULE_ID ) ) otherlv_3= '.'
                     {
-                    // InternalXMachine.g:1309:5: ( (lv_prefix_2_0= RULE_ID ) )
-                    // InternalXMachine.g:1310:6: (lv_prefix_2_0= RULE_ID )
+                    // InternalXMachine.g:1313:5: ( (lv_prefix_2_0= RULE_ID ) )
+                    // InternalXMachine.g:1314:6: (lv_prefix_2_0= RULE_ID )
                     {
-                    // InternalXMachine.g:1310:6: (lv_prefix_2_0= RULE_ID )
-                    // InternalXMachine.g:1311:7: lv_prefix_2_0= RULE_ID
+                    // InternalXMachine.g:1314:6: (lv_prefix_2_0= RULE_ID )
+                    // InternalXMachine.g:1315:7: lv_prefix_2_0= RULE_ID
                     {
-                    lv_prefix_2_0=(Token)match(input,RULE_ID,FOLLOW_33); 
+                    lv_prefix_2_0=(Token)match(input,RULE_ID,FOLLOW_35); 
 
                     							newLeafNode(lv_prefix_2_0, grammarAccess.getGroupSyncAccess().getPrefixIDTerminalRuleCall_1_1_0_0());
                     						
@@ -3428,18 +3434,18 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalXMachine.g:1332:4: ( (otherlv_4= RULE_ID ) )
-            // InternalXMachine.g:1333:5: (otherlv_4= RULE_ID )
+            // InternalXMachine.g:1336:4: ( (otherlv_4= RULE_ID ) )
+            // InternalXMachine.g:1337:5: (otherlv_4= RULE_ID )
             {
-            // InternalXMachine.g:1333:5: (otherlv_4= RULE_ID )
-            // InternalXMachine.g:1334:6: otherlv_4= RULE_ID
+            // InternalXMachine.g:1337:5: (otherlv_4= RULE_ID )
+            // InternalXMachine.g:1338:6: otherlv_4= RULE_ID
             {
 
             						if (current==null) {
             							current = createModelElement(grammarAccess.getGroupSyncRule());
             						}
             					
-            otherlv_4=(Token)match(input,RULE_ID,FOLLOW_34); 
+            otherlv_4=(Token)match(input,RULE_ID,FOLLOW_36); 
 
             						newLeafNode(otherlv_4, grammarAccess.getGroupSyncAccess().getSynchronisedCasesEventCasesCrossReference_1_2_0());
             					
@@ -3452,7 +3458,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalXMachine.g:1346:3: (otherlv_5= '(' ( (lv_actualParameters_6_0= RULE_ID ) ) (otherlv_7= ',' ( (lv_actualParameters_8_0= RULE_ID ) ) )* otherlv_9= ')' )?
+            // InternalXMachine.g:1350:3: (otherlv_5= '(' ( (lv_actualParameters_6_0= RULE_ID ) ) (otherlv_7= ',' ( (lv_actualParameters_8_0= RULE_ID ) ) )* otherlv_9= ')' )?
             int alt44=2;
             int LA44_0 = input.LA(1);
 
@@ -3461,19 +3467,19 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
             }
             switch (alt44) {
                 case 1 :
-                    // InternalXMachine.g:1347:4: otherlv_5= '(' ( (lv_actualParameters_6_0= RULE_ID ) ) (otherlv_7= ',' ( (lv_actualParameters_8_0= RULE_ID ) ) )* otherlv_9= ')'
+                    // InternalXMachine.g:1351:4: otherlv_5= '(' ( (lv_actualParameters_6_0= RULE_ID ) ) (otherlv_7= ',' ( (lv_actualParameters_8_0= RULE_ID ) ) )* otherlv_9= ')'
                     {
                     otherlv_5=(Token)match(input,26,FOLLOW_3); 
 
                     				newLeafNode(otherlv_5, grammarAccess.getGroupSyncAccess().getLeftParenthesisKeyword_2_0());
                     			
-                    // InternalXMachine.g:1351:4: ( (lv_actualParameters_6_0= RULE_ID ) )
-                    // InternalXMachine.g:1352:5: (lv_actualParameters_6_0= RULE_ID )
+                    // InternalXMachine.g:1355:4: ( (lv_actualParameters_6_0= RULE_ID ) )
+                    // InternalXMachine.g:1356:5: (lv_actualParameters_6_0= RULE_ID )
                     {
-                    // InternalXMachine.g:1352:5: (lv_actualParameters_6_0= RULE_ID )
-                    // InternalXMachine.g:1353:6: lv_actualParameters_6_0= RULE_ID
+                    // InternalXMachine.g:1356:5: (lv_actualParameters_6_0= RULE_ID )
+                    // InternalXMachine.g:1357:6: lv_actualParameters_6_0= RULE_ID
                     {
-                    lv_actualParameters_6_0=(Token)match(input,RULE_ID,FOLLOW_21); 
+                    lv_actualParameters_6_0=(Token)match(input,RULE_ID,FOLLOW_23); 
 
                     						newLeafNode(lv_actualParameters_6_0, grammarAccess.getGroupSyncAccess().getActualParametersIDTerminalRuleCall_2_1_0());
                     					
@@ -3493,7 +3499,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // InternalXMachine.g:1369:4: (otherlv_7= ',' ( (lv_actualParameters_8_0= RULE_ID ) ) )*
+                    // InternalXMachine.g:1373:4: (otherlv_7= ',' ( (lv_actualParameters_8_0= RULE_ID ) ) )*
                     loop43:
                     do {
                         int alt43=2;
@@ -3506,19 +3512,19 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
                         switch (alt43) {
                     	case 1 :
-                    	    // InternalXMachine.g:1370:5: otherlv_7= ',' ( (lv_actualParameters_8_0= RULE_ID ) )
+                    	    // InternalXMachine.g:1374:5: otherlv_7= ',' ( (lv_actualParameters_8_0= RULE_ID ) )
                     	    {
                     	    otherlv_7=(Token)match(input,27,FOLLOW_3); 
 
                     	    					newLeafNode(otherlv_7, grammarAccess.getGroupSyncAccess().getCommaKeyword_2_2_0());
                     	    				
-                    	    // InternalXMachine.g:1374:5: ( (lv_actualParameters_8_0= RULE_ID ) )
-                    	    // InternalXMachine.g:1375:6: (lv_actualParameters_8_0= RULE_ID )
+                    	    // InternalXMachine.g:1378:5: ( (lv_actualParameters_8_0= RULE_ID ) )
+                    	    // InternalXMachine.g:1379:6: (lv_actualParameters_8_0= RULE_ID )
                     	    {
-                    	    // InternalXMachine.g:1375:6: (lv_actualParameters_8_0= RULE_ID )
-                    	    // InternalXMachine.g:1376:7: lv_actualParameters_8_0= RULE_ID
+                    	    // InternalXMachine.g:1379:6: (lv_actualParameters_8_0= RULE_ID )
+                    	    // InternalXMachine.g:1380:7: lv_actualParameters_8_0= RULE_ID
                     	    {
-                    	    lv_actualParameters_8_0=(Token)match(input,RULE_ID,FOLLOW_21); 
+                    	    lv_actualParameters_8_0=(Token)match(input,RULE_ID,FOLLOW_23); 
 
                     	    							newLeafNode(lv_actualParameters_8_0, grammarAccess.getGroupSyncAccess().getActualParametersIDTerminalRuleCall_2_2_1_0());
                     	    						
@@ -3580,7 +3586,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleXGroupOrEvent"
-    // InternalXMachine.g:1402:1: entryRuleXGroupOrEvent returns [EObject current=null] : iv_ruleXGroupOrEvent= ruleXGroupOrEvent EOF ;
+    // InternalXMachine.g:1406:1: entryRuleXGroupOrEvent returns [EObject current=null] : iv_ruleXGroupOrEvent= ruleXGroupOrEvent EOF ;
     public final EObject entryRuleXGroupOrEvent() throws RecognitionException {
         EObject current = null;
 
@@ -3588,8 +3594,8 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalXMachine.g:1402:54: (iv_ruleXGroupOrEvent= ruleXGroupOrEvent EOF )
-            // InternalXMachine.g:1403:2: iv_ruleXGroupOrEvent= ruleXGroupOrEvent EOF
+            // InternalXMachine.g:1406:54: (iv_ruleXGroupOrEvent= ruleXGroupOrEvent EOF )
+            // InternalXMachine.g:1407:2: iv_ruleXGroupOrEvent= ruleXGroupOrEvent EOF
             {
              newCompositeNode(grammarAccess.getXGroupOrEventRule()); 
             pushFollow(FOLLOW_1);
@@ -3616,7 +3622,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleXGroupOrEvent"
-    // InternalXMachine.g:1409:1: ruleXGroupOrEvent returns [EObject current=null] : (this_GroupSync_0= ruleGroupSync | this_EventSync_1= ruleEventSync ) ;
+    // InternalXMachine.g:1413:1: ruleXGroupOrEvent returns [EObject current=null] : (this_GroupSync_0= ruleGroupSync | this_EventSync_1= ruleEventSync ) ;
     public final EObject ruleXGroupOrEvent() throws RecognitionException {
         EObject current = null;
 
@@ -3629,17 +3635,17 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalXMachine.g:1415:2: ( (this_GroupSync_0= ruleGroupSync | this_EventSync_1= ruleEventSync ) )
-            // InternalXMachine.g:1416:2: (this_GroupSync_0= ruleGroupSync | this_EventSync_1= ruleEventSync )
+            // InternalXMachine.g:1419:2: ( (this_GroupSync_0= ruleGroupSync | this_EventSync_1= ruleEventSync ) )
+            // InternalXMachine.g:1420:2: (this_GroupSync_0= ruleGroupSync | this_EventSync_1= ruleEventSync )
             {
-            // InternalXMachine.g:1416:2: (this_GroupSync_0= ruleGroupSync | this_EventSync_1= ruleEventSync )
+            // InternalXMachine.g:1420:2: (this_GroupSync_0= ruleGroupSync | this_EventSync_1= ruleEventSync )
             int alt45=2;
             int LA45_0 = input.LA(1);
 
-            if ( (LA45_0==37) ) {
+            if ( (LA45_0==38) ) {
                 alt45=1;
             }
-            else if ( (LA45_0==36) ) {
+            else if ( (LA45_0==37) ) {
                 alt45=2;
             }
             else {
@@ -3650,7 +3656,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
             }
             switch (alt45) {
                 case 1 :
-                    // InternalXMachine.g:1417:3: this_GroupSync_0= ruleGroupSync
+                    // InternalXMachine.g:1421:3: this_GroupSync_0= ruleGroupSync
                     {
 
                     			newCompositeNode(grammarAccess.getXGroupOrEventAccess().getGroupSyncParserRuleCall_0());
@@ -3668,7 +3674,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // InternalXMachine.g:1426:3: this_EventSync_1= ruleEventSync
+                    // InternalXMachine.g:1430:3: this_EventSync_1= ruleEventSync
                     {
 
                     			newCompositeNode(grammarAccess.getXGroupOrEventAccess().getEventSyncParserRuleCall_1());
@@ -3708,7 +3714,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleXParameter"
-    // InternalXMachine.g:1438:1: entryRuleXParameter returns [EObject current=null] : iv_ruleXParameter= ruleXParameter EOF ;
+    // InternalXMachine.g:1442:1: entryRuleXParameter returns [EObject current=null] : iv_ruleXParameter= ruleXParameter EOF ;
     public final EObject entryRuleXParameter() throws RecognitionException {
         EObject current = null;
 
@@ -3716,8 +3722,8 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalXMachine.g:1438:51: (iv_ruleXParameter= ruleXParameter EOF )
-            // InternalXMachine.g:1439:2: iv_ruleXParameter= ruleXParameter EOF
+            // InternalXMachine.g:1442:51: (iv_ruleXParameter= ruleXParameter EOF )
+            // InternalXMachine.g:1443:2: iv_ruleXParameter= ruleXParameter EOF
             {
              newCompositeNode(grammarAccess.getXParameterRule()); 
             pushFollow(FOLLOW_1);
@@ -3744,7 +3750,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleXParameter"
-    // InternalXMachine.g:1445:1: ruleXParameter returns [EObject current=null] : ( () ( (lv_name_1_0= RULE_ID ) ) ) ;
+    // InternalXMachine.g:1449:1: ruleXParameter returns [EObject current=null] : ( () ( (lv_name_1_0= RULE_ID ) ) ) ;
     public final EObject ruleXParameter() throws RecognitionException {
         EObject current = null;
 
@@ -3754,14 +3760,14 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalXMachine.g:1451:2: ( ( () ( (lv_name_1_0= RULE_ID ) ) ) )
-            // InternalXMachine.g:1452:2: ( () ( (lv_name_1_0= RULE_ID ) ) )
+            // InternalXMachine.g:1455:2: ( ( () ( (lv_name_1_0= RULE_ID ) ) ) )
+            // InternalXMachine.g:1456:2: ( () ( (lv_name_1_0= RULE_ID ) ) )
             {
-            // InternalXMachine.g:1452:2: ( () ( (lv_name_1_0= RULE_ID ) ) )
-            // InternalXMachine.g:1453:3: () ( (lv_name_1_0= RULE_ID ) )
+            // InternalXMachine.g:1456:2: ( () ( (lv_name_1_0= RULE_ID ) ) )
+            // InternalXMachine.g:1457:3: () ( (lv_name_1_0= RULE_ID ) )
             {
-            // InternalXMachine.g:1453:3: ()
-            // InternalXMachine.g:1454:4: 
+            // InternalXMachine.g:1457:3: ()
+            // InternalXMachine.g:1458:4: 
             {
 
             				current = forceCreateModelElement(
@@ -3771,11 +3777,11 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalXMachine.g:1460:3: ( (lv_name_1_0= RULE_ID ) )
-            // InternalXMachine.g:1461:4: (lv_name_1_0= RULE_ID )
+            // InternalXMachine.g:1464:3: ( (lv_name_1_0= RULE_ID ) )
+            // InternalXMachine.g:1465:4: (lv_name_1_0= RULE_ID )
             {
-            // InternalXMachine.g:1461:4: (lv_name_1_0= RULE_ID )
-            // InternalXMachine.g:1462:5: lv_name_1_0= RULE_ID
+            // InternalXMachine.g:1465:4: (lv_name_1_0= RULE_ID )
+            // InternalXMachine.g:1466:5: lv_name_1_0= RULE_ID
             {
             lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_2); 
 
@@ -3820,7 +3826,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleXGuard"
-    // InternalXMachine.g:1482:1: entryRuleXGuard returns [EObject current=null] : iv_ruleXGuard= ruleXGuard EOF ;
+    // InternalXMachine.g:1486:1: entryRuleXGuard returns [EObject current=null] : iv_ruleXGuard= ruleXGuard EOF ;
     public final EObject entryRuleXGuard() throws RecognitionException {
         EObject current = null;
 
@@ -3828,8 +3834,8 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalXMachine.g:1482:47: (iv_ruleXGuard= ruleXGuard EOF )
-            // InternalXMachine.g:1483:2: iv_ruleXGuard= ruleXGuard EOF
+            // InternalXMachine.g:1486:47: (iv_ruleXGuard= ruleXGuard EOF )
+            // InternalXMachine.g:1487:2: iv_ruleXGuard= ruleXGuard EOF
             {
              newCompositeNode(grammarAccess.getXGuardRule()); 
             pushFollow(FOLLOW_1);
@@ -3856,7 +3862,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleXGuard"
-    // InternalXMachine.g:1489:1: ruleXGuard returns [EObject current=null] : ( () ( (lv_name_1_0= RULE_XLABEL ) ) ( (lv_predicate_2_0= ruleXPredicate ) ) ( (lv_theorem_3_0= 'theorem' ) )? ) ;
+    // InternalXMachine.g:1493:1: ruleXGuard returns [EObject current=null] : ( () ( (lv_name_1_0= RULE_XLABEL ) ) ( (lv_predicate_2_0= ruleXPredicate ) ) ( (lv_theorem_3_0= 'theorem' ) )? ) ;
     public final EObject ruleXGuard() throws RecognitionException {
         EObject current = null;
 
@@ -3869,14 +3875,14 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalXMachine.g:1495:2: ( ( () ( (lv_name_1_0= RULE_XLABEL ) ) ( (lv_predicate_2_0= ruleXPredicate ) ) ( (lv_theorem_3_0= 'theorem' ) )? ) )
-            // InternalXMachine.g:1496:2: ( () ( (lv_name_1_0= RULE_XLABEL ) ) ( (lv_predicate_2_0= ruleXPredicate ) ) ( (lv_theorem_3_0= 'theorem' ) )? )
+            // InternalXMachine.g:1499:2: ( ( () ( (lv_name_1_0= RULE_XLABEL ) ) ( (lv_predicate_2_0= ruleXPredicate ) ) ( (lv_theorem_3_0= 'theorem' ) )? ) )
+            // InternalXMachine.g:1500:2: ( () ( (lv_name_1_0= RULE_XLABEL ) ) ( (lv_predicate_2_0= ruleXPredicate ) ) ( (lv_theorem_3_0= 'theorem' ) )? )
             {
-            // InternalXMachine.g:1496:2: ( () ( (lv_name_1_0= RULE_XLABEL ) ) ( (lv_predicate_2_0= ruleXPredicate ) ) ( (lv_theorem_3_0= 'theorem' ) )? )
-            // InternalXMachine.g:1497:3: () ( (lv_name_1_0= RULE_XLABEL ) ) ( (lv_predicate_2_0= ruleXPredicate ) ) ( (lv_theorem_3_0= 'theorem' ) )?
+            // InternalXMachine.g:1500:2: ( () ( (lv_name_1_0= RULE_XLABEL ) ) ( (lv_predicate_2_0= ruleXPredicate ) ) ( (lv_theorem_3_0= 'theorem' ) )? )
+            // InternalXMachine.g:1501:3: () ( (lv_name_1_0= RULE_XLABEL ) ) ( (lv_predicate_2_0= ruleXPredicate ) ) ( (lv_theorem_3_0= 'theorem' ) )?
             {
-            // InternalXMachine.g:1497:3: ()
-            // InternalXMachine.g:1498:4: 
+            // InternalXMachine.g:1501:3: ()
+            // InternalXMachine.g:1502:4: 
             {
 
             				current = forceCreateModelElement(
@@ -3886,13 +3892,13 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalXMachine.g:1504:3: ( (lv_name_1_0= RULE_XLABEL ) )
-            // InternalXMachine.g:1505:4: (lv_name_1_0= RULE_XLABEL )
+            // InternalXMachine.g:1508:3: ( (lv_name_1_0= RULE_XLABEL ) )
+            // InternalXMachine.g:1509:4: (lv_name_1_0= RULE_XLABEL )
             {
-            // InternalXMachine.g:1505:4: (lv_name_1_0= RULE_XLABEL )
-            // InternalXMachine.g:1506:5: lv_name_1_0= RULE_XLABEL
+            // InternalXMachine.g:1509:4: (lv_name_1_0= RULE_XLABEL )
+            // InternalXMachine.g:1510:5: lv_name_1_0= RULE_XLABEL
             {
-            lv_name_1_0=(Token)match(input,RULE_XLABEL,FOLLOW_10); 
+            lv_name_1_0=(Token)match(input,RULE_XLABEL,FOLLOW_11); 
 
             					newLeafNode(lv_name_1_0, grammarAccess.getXGuardAccess().getNameXLABELTerminalRuleCall_1_0());
             				
@@ -3912,16 +3918,16 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalXMachine.g:1522:3: ( (lv_predicate_2_0= ruleXPredicate ) )
-            // InternalXMachine.g:1523:4: (lv_predicate_2_0= ruleXPredicate )
+            // InternalXMachine.g:1526:3: ( (lv_predicate_2_0= ruleXPredicate ) )
+            // InternalXMachine.g:1527:4: (lv_predicate_2_0= ruleXPredicate )
             {
-            // InternalXMachine.g:1523:4: (lv_predicate_2_0= ruleXPredicate )
-            // InternalXMachine.g:1524:5: lv_predicate_2_0= ruleXPredicate
+            // InternalXMachine.g:1527:4: (lv_predicate_2_0= ruleXPredicate )
+            // InternalXMachine.g:1528:5: lv_predicate_2_0= ruleXPredicate
             {
 
             					newCompositeNode(grammarAccess.getXGuardAccess().getPredicateXPredicateParserRuleCall_2_0());
             				
-            pushFollow(FOLLOW_18);
+            pushFollow(FOLLOW_20);
             lv_predicate_2_0=ruleXPredicate();
 
             state._fsp--;
@@ -3943,7 +3949,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalXMachine.g:1541:3: ( (lv_theorem_3_0= 'theorem' ) )?
+            // InternalXMachine.g:1545:3: ( (lv_theorem_3_0= 'theorem' ) )?
             int alt46=2;
             int LA46_0 = input.LA(1);
 
@@ -3952,10 +3958,10 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
             }
             switch (alt46) {
                 case 1 :
-                    // InternalXMachine.g:1542:4: (lv_theorem_3_0= 'theorem' )
+                    // InternalXMachine.g:1546:4: (lv_theorem_3_0= 'theorem' )
                     {
-                    // InternalXMachine.g:1542:4: (lv_theorem_3_0= 'theorem' )
-                    // InternalXMachine.g:1543:5: lv_theorem_3_0= 'theorem'
+                    // InternalXMachine.g:1546:4: (lv_theorem_3_0= 'theorem' )
+                    // InternalXMachine.g:1547:5: lv_theorem_3_0= 'theorem'
                     {
                     lv_theorem_3_0=(Token)match(input,24,FOLLOW_2); 
 
@@ -3999,7 +4005,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleXWitness"
-    // InternalXMachine.g:1559:1: entryRuleXWitness returns [EObject current=null] : iv_ruleXWitness= ruleXWitness EOF ;
+    // InternalXMachine.g:1563:1: entryRuleXWitness returns [EObject current=null] : iv_ruleXWitness= ruleXWitness EOF ;
     public final EObject entryRuleXWitness() throws RecognitionException {
         EObject current = null;
 
@@ -4007,8 +4013,8 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalXMachine.g:1559:49: (iv_ruleXWitness= ruleXWitness EOF )
-            // InternalXMachine.g:1560:2: iv_ruleXWitness= ruleXWitness EOF
+            // InternalXMachine.g:1563:49: (iv_ruleXWitness= ruleXWitness EOF )
+            // InternalXMachine.g:1564:2: iv_ruleXWitness= ruleXWitness EOF
             {
              newCompositeNode(grammarAccess.getXWitnessRule()); 
             pushFollow(FOLLOW_1);
@@ -4035,7 +4041,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleXWitness"
-    // InternalXMachine.g:1566:1: ruleXWitness returns [EObject current=null] : ( () ( (lv_name_1_0= RULE_XLABEL ) ) ( (lv_predicate_2_0= ruleXPredicate ) ) ) ;
+    // InternalXMachine.g:1570:1: ruleXWitness returns [EObject current=null] : ( () ( (lv_name_1_0= RULE_XLABEL ) ) ( (lv_predicate_2_0= ruleXPredicate ) ) ) ;
     public final EObject ruleXWitness() throws RecognitionException {
         EObject current = null;
 
@@ -4047,14 +4053,14 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalXMachine.g:1572:2: ( ( () ( (lv_name_1_0= RULE_XLABEL ) ) ( (lv_predicate_2_0= ruleXPredicate ) ) ) )
-            // InternalXMachine.g:1573:2: ( () ( (lv_name_1_0= RULE_XLABEL ) ) ( (lv_predicate_2_0= ruleXPredicate ) ) )
+            // InternalXMachine.g:1576:2: ( ( () ( (lv_name_1_0= RULE_XLABEL ) ) ( (lv_predicate_2_0= ruleXPredicate ) ) ) )
+            // InternalXMachine.g:1577:2: ( () ( (lv_name_1_0= RULE_XLABEL ) ) ( (lv_predicate_2_0= ruleXPredicate ) ) )
             {
-            // InternalXMachine.g:1573:2: ( () ( (lv_name_1_0= RULE_XLABEL ) ) ( (lv_predicate_2_0= ruleXPredicate ) ) )
-            // InternalXMachine.g:1574:3: () ( (lv_name_1_0= RULE_XLABEL ) ) ( (lv_predicate_2_0= ruleXPredicate ) )
+            // InternalXMachine.g:1577:2: ( () ( (lv_name_1_0= RULE_XLABEL ) ) ( (lv_predicate_2_0= ruleXPredicate ) ) )
+            // InternalXMachine.g:1578:3: () ( (lv_name_1_0= RULE_XLABEL ) ) ( (lv_predicate_2_0= ruleXPredicate ) )
             {
-            // InternalXMachine.g:1574:3: ()
-            // InternalXMachine.g:1575:4: 
+            // InternalXMachine.g:1578:3: ()
+            // InternalXMachine.g:1579:4: 
             {
 
             				current = forceCreateModelElement(
@@ -4064,13 +4070,13 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalXMachine.g:1581:3: ( (lv_name_1_0= RULE_XLABEL ) )
-            // InternalXMachine.g:1582:4: (lv_name_1_0= RULE_XLABEL )
+            // InternalXMachine.g:1585:3: ( (lv_name_1_0= RULE_XLABEL ) )
+            // InternalXMachine.g:1586:4: (lv_name_1_0= RULE_XLABEL )
             {
-            // InternalXMachine.g:1582:4: (lv_name_1_0= RULE_XLABEL )
-            // InternalXMachine.g:1583:5: lv_name_1_0= RULE_XLABEL
+            // InternalXMachine.g:1586:4: (lv_name_1_0= RULE_XLABEL )
+            // InternalXMachine.g:1587:5: lv_name_1_0= RULE_XLABEL
             {
-            lv_name_1_0=(Token)match(input,RULE_XLABEL,FOLLOW_10); 
+            lv_name_1_0=(Token)match(input,RULE_XLABEL,FOLLOW_11); 
 
             					newLeafNode(lv_name_1_0, grammarAccess.getXWitnessAccess().getNameXLABELTerminalRuleCall_1_0());
             				
@@ -4090,11 +4096,11 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalXMachine.g:1599:3: ( (lv_predicate_2_0= ruleXPredicate ) )
-            // InternalXMachine.g:1600:4: (lv_predicate_2_0= ruleXPredicate )
+            // InternalXMachine.g:1603:3: ( (lv_predicate_2_0= ruleXPredicate ) )
+            // InternalXMachine.g:1604:4: (lv_predicate_2_0= ruleXPredicate )
             {
-            // InternalXMachine.g:1600:4: (lv_predicate_2_0= ruleXPredicate )
-            // InternalXMachine.g:1601:5: lv_predicate_2_0= ruleXPredicate
+            // InternalXMachine.g:1604:4: (lv_predicate_2_0= ruleXPredicate )
+            // InternalXMachine.g:1605:5: lv_predicate_2_0= ruleXPredicate
             {
 
             					newCompositeNode(grammarAccess.getXWitnessAccess().getPredicateXPredicateParserRuleCall_2_0());
@@ -4144,7 +4150,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleXAction"
-    // InternalXMachine.g:1622:1: entryRuleXAction returns [EObject current=null] : iv_ruleXAction= ruleXAction EOF ;
+    // InternalXMachine.g:1626:1: entryRuleXAction returns [EObject current=null] : iv_ruleXAction= ruleXAction EOF ;
     public final EObject entryRuleXAction() throws RecognitionException {
         EObject current = null;
 
@@ -4152,8 +4158,8 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalXMachine.g:1622:48: (iv_ruleXAction= ruleXAction EOF )
-            // InternalXMachine.g:1623:2: iv_ruleXAction= ruleXAction EOF
+            // InternalXMachine.g:1626:48: (iv_ruleXAction= ruleXAction EOF )
+            // InternalXMachine.g:1627:2: iv_ruleXAction= ruleXAction EOF
             {
              newCompositeNode(grammarAccess.getXActionRule()); 
             pushFollow(FOLLOW_1);
@@ -4180,7 +4186,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleXAction"
-    // InternalXMachine.g:1629:1: ruleXAction returns [EObject current=null] : ( () ( (lv_name_1_0= RULE_XLABEL ) ) ( (lv_action_2_0= ruleXPredicate ) ) ) ;
+    // InternalXMachine.g:1633:1: ruleXAction returns [EObject current=null] : ( () ( (lv_name_1_0= RULE_XLABEL ) ) ( (lv_action_2_0= ruleXPredicate ) ) ) ;
     public final EObject ruleXAction() throws RecognitionException {
         EObject current = null;
 
@@ -4192,14 +4198,14 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalXMachine.g:1635:2: ( ( () ( (lv_name_1_0= RULE_XLABEL ) ) ( (lv_action_2_0= ruleXPredicate ) ) ) )
-            // InternalXMachine.g:1636:2: ( () ( (lv_name_1_0= RULE_XLABEL ) ) ( (lv_action_2_0= ruleXPredicate ) ) )
+            // InternalXMachine.g:1639:2: ( ( () ( (lv_name_1_0= RULE_XLABEL ) ) ( (lv_action_2_0= ruleXPredicate ) ) ) )
+            // InternalXMachine.g:1640:2: ( () ( (lv_name_1_0= RULE_XLABEL ) ) ( (lv_action_2_0= ruleXPredicate ) ) )
             {
-            // InternalXMachine.g:1636:2: ( () ( (lv_name_1_0= RULE_XLABEL ) ) ( (lv_action_2_0= ruleXPredicate ) ) )
-            // InternalXMachine.g:1637:3: () ( (lv_name_1_0= RULE_XLABEL ) ) ( (lv_action_2_0= ruleXPredicate ) )
+            // InternalXMachine.g:1640:2: ( () ( (lv_name_1_0= RULE_XLABEL ) ) ( (lv_action_2_0= ruleXPredicate ) ) )
+            // InternalXMachine.g:1641:3: () ( (lv_name_1_0= RULE_XLABEL ) ) ( (lv_action_2_0= ruleXPredicate ) )
             {
-            // InternalXMachine.g:1637:3: ()
-            // InternalXMachine.g:1638:4: 
+            // InternalXMachine.g:1641:3: ()
+            // InternalXMachine.g:1642:4: 
             {
 
             				current = forceCreateModelElement(
@@ -4209,13 +4215,13 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalXMachine.g:1644:3: ( (lv_name_1_0= RULE_XLABEL ) )
-            // InternalXMachine.g:1645:4: (lv_name_1_0= RULE_XLABEL )
+            // InternalXMachine.g:1648:3: ( (lv_name_1_0= RULE_XLABEL ) )
+            // InternalXMachine.g:1649:4: (lv_name_1_0= RULE_XLABEL )
             {
-            // InternalXMachine.g:1645:4: (lv_name_1_0= RULE_XLABEL )
-            // InternalXMachine.g:1646:5: lv_name_1_0= RULE_XLABEL
+            // InternalXMachine.g:1649:4: (lv_name_1_0= RULE_XLABEL )
+            // InternalXMachine.g:1650:5: lv_name_1_0= RULE_XLABEL
             {
-            lv_name_1_0=(Token)match(input,RULE_XLABEL,FOLLOW_10); 
+            lv_name_1_0=(Token)match(input,RULE_XLABEL,FOLLOW_11); 
 
             					newLeafNode(lv_name_1_0, grammarAccess.getXActionAccess().getNameXLABELTerminalRuleCall_1_0());
             				
@@ -4235,11 +4241,11 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalXMachine.g:1662:3: ( (lv_action_2_0= ruleXPredicate ) )
-            // InternalXMachine.g:1663:4: (lv_action_2_0= ruleXPredicate )
+            // InternalXMachine.g:1666:3: ( (lv_action_2_0= ruleXPredicate ) )
+            // InternalXMachine.g:1667:4: (lv_action_2_0= ruleXPredicate )
             {
-            // InternalXMachine.g:1663:4: (lv_action_2_0= ruleXPredicate )
-            // InternalXMachine.g:1664:5: lv_action_2_0= ruleXPredicate
+            // InternalXMachine.g:1667:4: (lv_action_2_0= ruleXPredicate )
+            // InternalXMachine.g:1668:5: lv_action_2_0= ruleXPredicate
             {
 
             					newCompositeNode(grammarAccess.getXActionAccess().getActionXPredicateParserRuleCall_2_0());
@@ -4289,7 +4295,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleXPredicate"
-    // InternalXMachine.g:1685:1: entryRuleXPredicate returns [String current=null] : iv_ruleXPredicate= ruleXPredicate EOF ;
+    // InternalXMachine.g:1689:1: entryRuleXPredicate returns [String current=null] : iv_ruleXPredicate= ruleXPredicate EOF ;
     public final String entryRuleXPredicate() throws RecognitionException {
         String current = null;
 
@@ -4297,8 +4303,8 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalXMachine.g:1685:50: (iv_ruleXPredicate= ruleXPredicate EOF )
-            // InternalXMachine.g:1686:2: iv_ruleXPredicate= ruleXPredicate EOF
+            // InternalXMachine.g:1689:50: (iv_ruleXPredicate= ruleXPredicate EOF )
+            // InternalXMachine.g:1690:2: iv_ruleXPredicate= ruleXPredicate EOF
             {
              newCompositeNode(grammarAccess.getXPredicateRule()); 
             pushFollow(FOLLOW_1);
@@ -4325,7 +4331,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleXPredicate"
-    // InternalXMachine.g:1692:1: ruleXPredicate returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : this_STRING_0= RULE_STRING ;
+    // InternalXMachine.g:1696:1: ruleXPredicate returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : this_STRING_0= RULE_STRING ;
     public final AntlrDatatypeRuleToken ruleXPredicate() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -4335,8 +4341,8 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalXMachine.g:1698:2: (this_STRING_0= RULE_STRING )
-            // InternalXMachine.g:1699:2: this_STRING_0= RULE_STRING
+            // InternalXMachine.g:1702:2: (this_STRING_0= RULE_STRING )
+            // InternalXMachine.g:1703:2: this_STRING_0= RULE_STRING
             {
             this_STRING_0=(Token)match(input,RULE_STRING,FOLLOW_2); 
 
@@ -4365,7 +4371,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleXDirection"
-    // InternalXMachine.g:1709:1: ruleXDirection returns [Enumerator current=null] : ( (enumLiteral_0= 'in' ) | (enumLiteral_1= 'out' ) ) ;
+    // InternalXMachine.g:1713:1: ruleXDirection returns [Enumerator current=null] : ( (enumLiteral_0= 'in' ) | (enumLiteral_1= 'out' ) ) ;
     public final Enumerator ruleXDirection() throws RecognitionException {
         Enumerator current = null;
 
@@ -4376,17 +4382,17 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalXMachine.g:1715:2: ( ( (enumLiteral_0= 'in' ) | (enumLiteral_1= 'out' ) ) )
-            // InternalXMachine.g:1716:2: ( (enumLiteral_0= 'in' ) | (enumLiteral_1= 'out' ) )
+            // InternalXMachine.g:1719:2: ( ( (enumLiteral_0= 'in' ) | (enumLiteral_1= 'out' ) ) )
+            // InternalXMachine.g:1720:2: ( (enumLiteral_0= 'in' ) | (enumLiteral_1= 'out' ) )
             {
-            // InternalXMachine.g:1716:2: ( (enumLiteral_0= 'in' ) | (enumLiteral_1= 'out' ) )
+            // InternalXMachine.g:1720:2: ( (enumLiteral_0= 'in' ) | (enumLiteral_1= 'out' ) )
             int alt47=2;
             int LA47_0 = input.LA(1);
 
-            if ( (LA47_0==38) ) {
+            if ( (LA47_0==39) ) {
                 alt47=1;
             }
-            else if ( (LA47_0==39) ) {
+            else if ( (LA47_0==40) ) {
                 alt47=2;
             }
             else {
@@ -4397,12 +4403,12 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
             }
             switch (alt47) {
                 case 1 :
-                    // InternalXMachine.g:1717:3: (enumLiteral_0= 'in' )
+                    // InternalXMachine.g:1721:3: (enumLiteral_0= 'in' )
                     {
-                    // InternalXMachine.g:1717:3: (enumLiteral_0= 'in' )
-                    // InternalXMachine.g:1718:4: enumLiteral_0= 'in'
+                    // InternalXMachine.g:1721:3: (enumLiteral_0= 'in' )
+                    // InternalXMachine.g:1722:4: enumLiteral_0= 'in'
                     {
-                    enumLiteral_0=(Token)match(input,38,FOLLOW_2); 
+                    enumLiteral_0=(Token)match(input,39,FOLLOW_2); 
 
                     				current = grammarAccess.getXDirectionAccess().getInEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_0, grammarAccess.getXDirectionAccess().getInEnumLiteralDeclaration_0());
@@ -4414,12 +4420,12 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // InternalXMachine.g:1725:3: (enumLiteral_1= 'out' )
+                    // InternalXMachine.g:1729:3: (enumLiteral_1= 'out' )
                     {
-                    // InternalXMachine.g:1725:3: (enumLiteral_1= 'out' )
-                    // InternalXMachine.g:1726:4: enumLiteral_1= 'out'
+                    // InternalXMachine.g:1729:3: (enumLiteral_1= 'out' )
+                    // InternalXMachine.g:1730:4: enumLiteral_1= 'out'
                     {
-                    enumLiteral_1=(Token)match(input,39,FOLLOW_2); 
+                    enumLiteral_1=(Token)match(input,40,FOLLOW_2); 
 
                     				current = grammarAccess.getXDirectionAccess().getOutEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_1, grammarAccess.getXDirectionAccess().getOutEnumLiteralDeclaration_1());
@@ -4453,7 +4459,7 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleXConvergence"
-    // InternalXMachine.g:1736:1: ruleXConvergence returns [Enumerator current=null] : ( (enumLiteral_0= 'ordinary' ) | (enumLiteral_1= 'convergent' ) | (enumLiteral_2= 'anticipated' ) ) ;
+    // InternalXMachine.g:1740:1: ruleXConvergence returns [Enumerator current=null] : ( (enumLiteral_0= 'ordinary' ) | (enumLiteral_1= 'convergent' ) | (enumLiteral_2= 'anticipated' ) ) ;
     public final Enumerator ruleXConvergence() throws RecognitionException {
         Enumerator current = null;
 
@@ -4465,23 +4471,23 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalXMachine.g:1742:2: ( ( (enumLiteral_0= 'ordinary' ) | (enumLiteral_1= 'convergent' ) | (enumLiteral_2= 'anticipated' ) ) )
-            // InternalXMachine.g:1743:2: ( (enumLiteral_0= 'ordinary' ) | (enumLiteral_1= 'convergent' ) | (enumLiteral_2= 'anticipated' ) )
+            // InternalXMachine.g:1746:2: ( ( (enumLiteral_0= 'ordinary' ) | (enumLiteral_1= 'convergent' ) | (enumLiteral_2= 'anticipated' ) ) )
+            // InternalXMachine.g:1747:2: ( (enumLiteral_0= 'ordinary' ) | (enumLiteral_1= 'convergent' ) | (enumLiteral_2= 'anticipated' ) )
             {
-            // InternalXMachine.g:1743:2: ( (enumLiteral_0= 'ordinary' ) | (enumLiteral_1= 'convergent' ) | (enumLiteral_2= 'anticipated' ) )
+            // InternalXMachine.g:1747:2: ( (enumLiteral_0= 'ordinary' ) | (enumLiteral_1= 'convergent' ) | (enumLiteral_2= 'anticipated' ) )
             int alt48=3;
             switch ( input.LA(1) ) {
-            case 40:
+            case 41:
                 {
                 alt48=1;
                 }
                 break;
-            case 41:
+            case 42:
                 {
                 alt48=2;
                 }
                 break;
-            case 42:
+            case 43:
                 {
                 alt48=3;
                 }
@@ -4495,12 +4501,12 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
 
             switch (alt48) {
                 case 1 :
-                    // InternalXMachine.g:1744:3: (enumLiteral_0= 'ordinary' )
+                    // InternalXMachine.g:1748:3: (enumLiteral_0= 'ordinary' )
                     {
-                    // InternalXMachine.g:1744:3: (enumLiteral_0= 'ordinary' )
-                    // InternalXMachine.g:1745:4: enumLiteral_0= 'ordinary'
+                    // InternalXMachine.g:1748:3: (enumLiteral_0= 'ordinary' )
+                    // InternalXMachine.g:1749:4: enumLiteral_0= 'ordinary'
                     {
-                    enumLiteral_0=(Token)match(input,40,FOLLOW_2); 
+                    enumLiteral_0=(Token)match(input,41,FOLLOW_2); 
 
                     				current = grammarAccess.getXConvergenceAccess().getOrdinaryEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_0, grammarAccess.getXConvergenceAccess().getOrdinaryEnumLiteralDeclaration_0());
@@ -4512,12 +4518,12 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // InternalXMachine.g:1752:3: (enumLiteral_1= 'convergent' )
+                    // InternalXMachine.g:1756:3: (enumLiteral_1= 'convergent' )
                     {
-                    // InternalXMachine.g:1752:3: (enumLiteral_1= 'convergent' )
-                    // InternalXMachine.g:1753:4: enumLiteral_1= 'convergent'
+                    // InternalXMachine.g:1756:3: (enumLiteral_1= 'convergent' )
+                    // InternalXMachine.g:1757:4: enumLiteral_1= 'convergent'
                     {
-                    enumLiteral_1=(Token)match(input,41,FOLLOW_2); 
+                    enumLiteral_1=(Token)match(input,42,FOLLOW_2); 
 
                     				current = grammarAccess.getXConvergenceAccess().getConvergentEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_1, grammarAccess.getXConvergenceAccess().getConvergentEnumLiteralDeclaration_1());
@@ -4529,12 +4535,12 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // InternalXMachine.g:1760:3: (enumLiteral_2= 'anticipated' )
+                    // InternalXMachine.g:1764:3: (enumLiteral_2= 'anticipated' )
                     {
-                    // InternalXMachine.g:1760:3: (enumLiteral_2= 'anticipated' )
-                    // InternalXMachine.g:1761:4: enumLiteral_2= 'anticipated'
+                    // InternalXMachine.g:1764:3: (enumLiteral_2= 'anticipated' )
+                    // InternalXMachine.g:1765:4: enumLiteral_2= 'anticipated'
                     {
-                    enumLiteral_2=(Token)match(input,42,FOLLOW_2); 
+                    enumLiteral_2=(Token)match(input,43,FOLLOW_2); 
 
                     				current = grammarAccess.getXConvergenceAccess().getAnticipatedEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_2, grammarAccess.getXConvergenceAccess().getAnticipatedEnumLiteralDeclaration_2());
@@ -4575,35 +4581,37 @@ public class InternalXMachineParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_2 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_3 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_4 = new BitSet(new long[]{0x00000000021FE000L});
-    public static final BitSet FOLLOW_5 = new BitSet(new long[]{0x00000000020FC000L});
-    public static final BitSet FOLLOW_6 = new BitSet(new long[]{0x00000000020F8010L});
-    public static final BitSet FOLLOW_7 = new BitSet(new long[]{0x00000000020F0010L});
-    public static final BitSet FOLLOW_8 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_9 = new BitSet(new long[]{0x00000000020E0020L});
-    public static final BitSet FOLLOW_10 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_11 = new BitSet(new long[]{0x00000000020C0000L});
-    public static final BitSet FOLLOW_12 = new BitSet(new long[]{0x0000000002080010L});
-    public static final BitSet FOLLOW_13 = new BitSet(new long[]{0x0000000002080000L});
-    public static final BitSet FOLLOW_14 = new BitSet(new long[]{0x0000000000600002L});
-    public static final BitSet FOLLOW_15 = new BitSet(new long[]{0x0000000000400002L});
-    public static final BitSet FOLLOW_16 = new BitSet(new long[]{0x0000000000000012L});
-    public static final BitSet FOLLOW_17 = new BitSet(new long[]{0x0000000000800002L});
-    public static final BitSet FOLLOW_18 = new BitSet(new long[]{0x0000000001000002L});
-    public static final BitSet FOLLOW_19 = new BitSet(new long[]{0x0000000024000000L});
-    public static final BitSet FOLLOW_20 = new BitSet(new long[]{0x000000C000000000L});
-    public static final BitSet FOLLOW_21 = new BitSet(new long[]{0x0000000018000000L});
-    public static final BitSet FOLLOW_22 = new BitSet(new long[]{0x0000000020000000L});
-    public static final BitSet FOLLOW_23 = new BitSet(new long[]{0x0000000000080010L});
-    public static final BitSet FOLLOW_24 = new BitSet(new long[]{0x0000000008080000L});
-    public static final BitSet FOLLOW_25 = new BitSet(new long[]{0x00000735E0082000L});
-    public static final BitSet FOLLOW_26 = new BitSet(new long[]{0x00000035A0082000L});
-    public static final BitSet FOLLOW_27 = new BitSet(new long[]{0x00000005A0080010L});
-    public static final BitSet FOLLOW_28 = new BitSet(new long[]{0x0000000020000020L});
-    public static final BitSet FOLLOW_29 = new BitSet(new long[]{0x0000000000080020L});
-    public static final BitSet FOLLOW_30 = new BitSet(new long[]{0x0000000280080020L});
-    public static final BitSet FOLLOW_31 = new BitSet(new long[]{0x0000000200080020L});
-    public static final BitSet FOLLOW_32 = new BitSet(new long[]{0x0000000800000010L});
-    public static final BitSet FOLLOW_33 = new BitSet(new long[]{0x0000000000800000L});
-    public static final BitSet FOLLOW_34 = new BitSet(new long[]{0x0000000004000002L});
+    public static final BitSet FOLLOW_5 = new BitSet(new long[]{0x00000000021FC000L});
+    public static final BitSet FOLLOW_6 = new BitSet(new long[]{0x00000000021F8010L});
+    public static final BitSet FOLLOW_7 = new BitSet(new long[]{0x00000000021F8000L});
+    public static final BitSet FOLLOW_8 = new BitSet(new long[]{0x00000000020F0010L});
+    public static final BitSet FOLLOW_9 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_10 = new BitSet(new long[]{0x00000000020E0020L});
+    public static final BitSet FOLLOW_11 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_12 = new BitSet(new long[]{0x00000000020C0000L});
+    public static final BitSet FOLLOW_13 = new BitSet(new long[]{0x0000000040000000L});
+    public static final BitSet FOLLOW_14 = new BitSet(new long[]{0x0000000042080000L});
+    public static final BitSet FOLLOW_15 = new BitSet(new long[]{0x0000000002080000L});
+    public static final BitSet FOLLOW_16 = new BitSet(new long[]{0x0000000000600002L});
+    public static final BitSet FOLLOW_17 = new BitSet(new long[]{0x0000000000400002L});
+    public static final BitSet FOLLOW_18 = new BitSet(new long[]{0x0000000000000012L});
+    public static final BitSet FOLLOW_19 = new BitSet(new long[]{0x0000000000800002L});
+    public static final BitSet FOLLOW_20 = new BitSet(new long[]{0x0000000001000002L});
+    public static final BitSet FOLLOW_21 = new BitSet(new long[]{0x0000000024000000L});
+    public static final BitSet FOLLOW_22 = new BitSet(new long[]{0x0000018000000000L});
+    public static final BitSet FOLLOW_23 = new BitSet(new long[]{0x0000000018000000L});
+    public static final BitSet FOLLOW_24 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_25 = new BitSet(new long[]{0x0000000000080010L});
+    public static final BitSet FOLLOW_26 = new BitSet(new long[]{0x0000000008080000L});
+    public static final BitSet FOLLOW_27 = new BitSet(new long[]{0x00000E6BA0082000L});
+    public static final BitSet FOLLOW_28 = new BitSet(new long[]{0x0000006B20082000L});
+    public static final BitSet FOLLOW_29 = new BitSet(new long[]{0x0000000B20080010L});
+    public static final BitSet FOLLOW_30 = new BitSet(new long[]{0x0000000020000020L});
+    public static final BitSet FOLLOW_31 = new BitSet(new long[]{0x0000000000080020L});
+    public static final BitSet FOLLOW_32 = new BitSet(new long[]{0x0000000500080020L});
+    public static final BitSet FOLLOW_33 = new BitSet(new long[]{0x0000000400080020L});
+    public static final BitSet FOLLOW_34 = new BitSet(new long[]{0x0000001000000010L});
+    public static final BitSet FOLLOW_35 = new BitSet(new long[]{0x0000000000800000L});
+    public static final BitSet FOLLOW_36 = new BitSet(new long[]{0x0000000004000002L});
 
 }

@@ -29,9 +29,9 @@ import "http://soton.ac.uk/models/eventb/coreextension/2014" as eventbcoreextens
 Machine returns emachine::Machine:
 	{emachine::Machine}
 	'machine' name=ID
-	( extensions+= MIncludes*)
     ('refines' refines+=[emachine::Machine])?
 	('sees' sees+=[econtext::Context]+)?
+	( extensions+= MIncludes*)
     ('variables' variables+=XVariable+)?
 	('invariants' invariants+=XInvariant+)?
 	('variant' variant=XVariant)?
@@ -72,7 +72,7 @@ XVariant returns emachine::Variant:
 
 XGroup returns eventbcoreextension::EventCases:
 	{eventbcoreextension::EventCases}
-	'Group' name = ID
+	'group' name = ID
 	('(' formalParameters += XFormalParameter (',' formalParameters += XFormalParameter)* ')')?
 	'begin'
 	(events +=[emachine::Event](',' events +=[emachine::Event])*)?
@@ -90,7 +90,7 @@ enum XDirection returns eventbcoreextension::INOUT:
 
 XEvent returns emachine::Event:
 	{emachine::Event}
-	name=ID
+	'event' name=ID
 	(
 		(extended?='extended')? &
 		(convergence=XConvergence)?
@@ -99,7 +99,7 @@ XEvent returns emachine::Event:
     ( extensions+= XGroupOrEvent*)//new
 	('refines' refines+=[emachine::Event]+)?
 	
-	(
+	(   
 		('with' witnesses+=XWitness+)?
 		'begin'
 			actions+=XAction+

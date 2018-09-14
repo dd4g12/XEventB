@@ -161,9 +161,9 @@ public class XMachineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	 * Constraint:
 	 *     (
 	 *         name=ID 
-	 *         extensions+=MIncludes* 
 	 *         refines+=[Machine|ID]? 
 	 *         sees+=[Context|ID]* 
+	 *         extensions+=MIncludes* 
 	 *         variables+=XVariable* 
 	 *         invariants+=XInvariant* 
 	 *         variant=XVariant? 
