@@ -21,7 +21,6 @@ import org.eclipse.xtext.Constants;
 import org.eclipse.xtext.IGrammarAccess;
 import org.eclipse.xtext.common.services.Ecore2XtextTerminalConverters;
 import org.eclipse.xtext.conversion.IValueConverterService;
-import org.eclipse.xtext.formatting.IFormatter;
 import org.eclipse.xtext.formatting2.FormatterPreferenceValuesProvider;
 import org.eclipse.xtext.formatting2.FormatterPreferences;
 import org.eclipse.xtext.formatting2.IFormatter2;
@@ -213,5 +212,5 @@ public abstract class AbstractXContextRuntimeModule extends DefaultRuntimeModule
 	public Class<? extends IValueConverterService> bindIValueConverterService() {
 		return Ecore2XtextTerminalConverters.class;
 	}
-		
+	
 }

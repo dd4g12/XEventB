@@ -10,17 +10,19 @@
  *******************************************************************************/
 package ac.soton.xeventb.xmachine.scoping
 
+import ac.soton.eventb.emf.core.^extension.coreextension.EventCases
 import ac.soton.eventb.emf.inclusion.EventSynchronisation
 import ac.soton.eventb.emf.inclusion.InclusionPackage
 import ac.soton.eventb.emf.inclusion.MachineInclusion
+import ac.soton.xeventb.common.EventBContainerManager
+import ac.soton.xeventb.common.EventBQualifiedNameProvider
 import ch.ethz.eventb.utils.EventBUtils
-import com.google.inject.Inject
+//import com.google.inject.Inject
 import java.util.ArrayList
 import org.eclipse.emf.ecore.EObject
 import org.eclipse.emf.ecore.EReference
 import org.eclipse.xtext.EcoreUtil2
-import org.eclipse.xtext.resource.IContainer
-import org.eclipse.xtext.resource.impl.ResourceDescriptionsProvider
+//import org.eclipse.xtext.resource.impl.ResourceDescriptionsProvider
 import org.eclipse.xtext.scoping.Scopes
 import org.eclipse.xtext.scoping.impl.AbstractDeclarativeScopeProvider
 import org.eventb.core.basis.ContextRoot
@@ -29,9 +31,6 @@ import org.eventb.emf.core.machine.Event
 import org.eventb.emf.core.machine.Machine
 import org.eventb.emf.core.machine.MachinePackage
 import org.eventb.emf.persistence.EMFRodinDB
-import ac.soton.xeventb.common.EventBQualifiedNameProvider
-import ac.soton.xeventb.common.EventBContainerManager
-import ac.soton.eventb.emf.core.^extension.coreextension.EventCases
 
 /**
  * <p>
@@ -46,7 +45,7 @@ import ac.soton.eventb.emf.core.^extension.coreextension.EventCases
  * @since 0.0.1
  */
 class XMachineScopeProvider extends AbstractDeclarativeScopeProvider {
-	@Inject ResourceDescriptionsProvider rdp
+	//@Inject ResourceDescriptionsProvider rdp
 
 //	@Inject IContainer.Manager cm
 
@@ -134,32 +133,28 @@ class XMachineScopeProvider extends AbstractDeclarativeScopeProvider {
 		
 		// Scoping for event group  
 	    // dd4g12
-	    if (context instanceof EventSynchronisation && reference == InclusionPackage.Literals.EVENT_SYNCHRONISATION__SYNCHRONISED_CASES) {
+	    if (context instanceof EventSynchronisation && reference ==  InclusionPackage.Literals.EVENT_SYNCHRONISATION__SYNCHRONISED_CASES) {
 			val mch = EcoreUtil2.getRootContainer(context, true) as Machine
 			val mchExt = mch.extensions.filter(MachineInclusion)
-			var evtGroups = new ArrayList()
-			//var mchEvts = new ArrayList()
+			var evtGroups = new ArrayList() //var List <EventBNamedCommentedElement>
 			for(mchInclusion : mchExt){
 				var abstractMch= mchInclusion.abstractMachine
 	
 			    var evtSync = context as EventSynchronisation
 			    if (!evtSync.prefix.empty){
 					 if(mchInclusion.prefixes.contains(evtSync.prefix))	{
-					 //	mchEvts.addAll(abstractMch.events)
 					 	evtGroups.addAll(abstractMch.extensions.filter(EventCases))
+					 	
 					 }
 					 		
 				}
 				else{
-					//mchEvts.addAll(abstractMch.events)
 					evtGroups.addAll(abstractMch.extensions.filter(EventCases))	
+					
 				}
 					
 			}
 			
-			// var union = new ArrayList()
-			// union.addAll(mchEvts)
-			// union.addAll(evtGroups)
 			return Scopes.scopeFor(evtGroups);		
 		}
 		

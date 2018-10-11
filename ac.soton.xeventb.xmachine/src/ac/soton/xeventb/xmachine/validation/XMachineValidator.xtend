@@ -16,6 +16,11 @@ import org.eventb.emf.core.machine.MachinePackage
 import ac.soton.eventb.emf.inclusion.EventSynchronisation;
 import ac.soton.eventb.emf.inclusion.MachineInclusion;
 import org.eventb.emf.core.machine.Event
+import ac.soton.eventb.emf.core.^extension.coreextension.FormalParameter
+import ac.soton.eventb.emf.core.^extension.coreextension.EventCases
+import org.eventb.emf.core.machine.Parameter
+import java.util.ArrayList
+
 /**
  * <p>
  * XMachine validator, provides custom validation rules for the xtext machine file.
@@ -111,6 +116,31 @@ class XMachineValidator extends AbstractXMachineValidator {
 			}
 		}
 		 
+	}
+	
+	
+	//check the group formal parameters must be parameters in all the events group
+	@Check
+	def checkGroupParameter(EventCases evtGroup){	   
+		if(!evtGroup.formalParameters.empty){
+			if(evtGroup.events.empty)
+				error('Cannot define group parameters without events in the group',null)
+			 else{		 		
+			 	for(par:evtGroup.formalParameters){
+			 		for(evt:evtGroup.events){
+			 		
+                    var parNames = evt.parameters.iterator.toIterable.filter[it.name == par.name]
+                    if(parNames.empty){
+                    	error('Event ' + evt.name + ' does not contain parameter ' + par.name, null);
+                    	return;
+                    }
+                    	
+			 		
+			 		}
+
+			 	}
+			 }
+		}
 	}
 
 }

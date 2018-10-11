@@ -29,13 +29,13 @@ import "http://soton.ac.uk/models/eventb/coreextension/2014" as eventbcoreextens
 Machine returns emachine::Machine:
 	{emachine::Machine}
 	'machine' name=ID
-    ('refines' refines+=[emachine::Machine])?
-	('sees' sees+=[econtext::Context]+)?
-	( extensions+= MIncludes*)
+   ( ('refines' refines+=[emachine::Machine])?&('sees' sees+=[econtext::Context]+)?&( extensions+= MIncludes*)) // allow different order
+//	('sees' sees+=[econtext::Context]+)?
+//	( extensions+= MIncludes*)
     ('variables' variables+=XVariable+)?
 	('invariants' invariants+=XInvariant+)?
 	('variant' variant=XVariant)?
-	('events' events+=XEvent (events+=XEvent)*)? 	
+	('events' events+=XEvent (events+=XEvent)*)? 
 	(extensions+= XGroup*)
 	('end')
 ;
@@ -123,13 +123,16 @@ XEvent returns emachine::Event:
 EventSync returns einclusion::EventSynchronisation:
 	{einclusion::EventSynchronisation}
 	('synchronises' (prefix=ID'.')?(synchronisedEvent = [emachine::Event]))
+//	( (prefix=ID'.')?(synchronisedEvent = [emachine::Event]))
 ;
 GroupSync returns einclusion::EventSynchronisation:
 	{einclusion::EventSynchronisation}
-	('synchronisesGroup' (prefix=ID'.')?(synchronisedCases = [eventbcoreextension::EventCases]))('(' actualParameters += ID (',' actualParameters += ID)* ')')?
+  //  ( (prefix=ID'.')?(synchronisedCases = [eventbcoreextension::EventCases]))('(' actualParameters += ID (',' actualParameters += ID)* ')')? 
+	('synchronises' 'group' (prefix=ID'.')?(synchronisedCases = [eventbcoreextension::EventCases]))('(' actualParameters += ID (',' actualParameters += ID)* ')')? 
 ;
 XGroupOrEvent returns einclusion::EventSynchronisation:
  GroupSync | EventSync
+//'synchronises' GroupSync | EventSync
 ;
 enum XConvergence returns emachine::Convergence:
 				ordinary = 'ordinary' | convergent = 'convergent' | anticipated = 'anticipated'

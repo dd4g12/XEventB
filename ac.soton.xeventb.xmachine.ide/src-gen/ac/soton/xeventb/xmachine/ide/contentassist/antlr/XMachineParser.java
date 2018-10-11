@@ -36,12 +36,12 @@ public class XMachineParser extends AbstractContentAssistParser {
 					put(grammarAccess.getXDirectionAccess().getAlternatives(), "rule__XDirection__Alternatives");
 					put(grammarAccess.getXConvergenceAccess().getAlternatives(), "rule__XConvergence__Alternatives");
 					put(grammarAccess.getMachineAccess().getGroup(), "rule__Machine__Group__0");
-					put(grammarAccess.getMachineAccess().getGroup_3(), "rule__Machine__Group_3__0");
+					put(grammarAccess.getMachineAccess().getGroup_3_0(), "rule__Machine__Group_3_0__0");
+					put(grammarAccess.getMachineAccess().getGroup_3_1(), "rule__Machine__Group_3_1__0");
 					put(grammarAccess.getMachineAccess().getGroup_4(), "rule__Machine__Group_4__0");
+					put(grammarAccess.getMachineAccess().getGroup_5(), "rule__Machine__Group_5__0");
 					put(grammarAccess.getMachineAccess().getGroup_6(), "rule__Machine__Group_6__0");
 					put(grammarAccess.getMachineAccess().getGroup_7(), "rule__Machine__Group_7__0");
-					put(grammarAccess.getMachineAccess().getGroup_8(), "rule__Machine__Group_8__0");
-					put(grammarAccess.getMachineAccess().getGroup_9(), "rule__Machine__Group_9__0");
 					put(grammarAccess.getMIncludesAccess().getGroup(), "rule__MIncludes__Group__0");
 					put(grammarAccess.getMIncludesAccess().getGroup_1(), "rule__MIncludes__Group_1__0");
 					put(grammarAccess.getMIncludesAccess().getGroup_2(), "rule__MIncludes__Group_2__0");
@@ -71,7 +71,7 @@ public class XMachineParser extends AbstractContentAssistParser {
 					put(grammarAccess.getEventSyncAccess().getGroup_1_1(), "rule__EventSync__Group_1_1__0");
 					put(grammarAccess.getGroupSyncAccess().getGroup(), "rule__GroupSync__Group__0");
 					put(grammarAccess.getGroupSyncAccess().getGroup_1(), "rule__GroupSync__Group_1__0");
-					put(grammarAccess.getGroupSyncAccess().getGroup_1_1(), "rule__GroupSync__Group_1_1__0");
+					put(grammarAccess.getGroupSyncAccess().getGroup_1_2(), "rule__GroupSync__Group_1_2__0");
 					put(grammarAccess.getGroupSyncAccess().getGroup_2(), "rule__GroupSync__Group_2__0");
 					put(grammarAccess.getGroupSyncAccess().getGroup_2_2(), "rule__GroupSync__Group_2_2__0");
 					put(grammarAccess.getXParameterAccess().getGroup(), "rule__XParameter__Group__0");
@@ -79,15 +79,15 @@ public class XMachineParser extends AbstractContentAssistParser {
 					put(grammarAccess.getXWitnessAccess().getGroup(), "rule__XWitness__Group__0");
 					put(grammarAccess.getXActionAccess().getGroup(), "rule__XAction__Group__0");
 					put(grammarAccess.getMachineAccess().getNameAssignment_2(), "rule__Machine__NameAssignment_2");
-					put(grammarAccess.getMachineAccess().getRefinesAssignment_3_1(), "rule__Machine__RefinesAssignment_3_1");
-					put(grammarAccess.getMachineAccess().getSeesAssignment_4_1(), "rule__Machine__SeesAssignment_4_1");
-					put(grammarAccess.getMachineAccess().getExtensionsAssignment_5(), "rule__Machine__ExtensionsAssignment_5");
-					put(grammarAccess.getMachineAccess().getVariablesAssignment_6_1(), "rule__Machine__VariablesAssignment_6_1");
-					put(grammarAccess.getMachineAccess().getInvariantsAssignment_7_1(), "rule__Machine__InvariantsAssignment_7_1");
-					put(grammarAccess.getMachineAccess().getVariantAssignment_8_1(), "rule__Machine__VariantAssignment_8_1");
-					put(grammarAccess.getMachineAccess().getEventsAssignment_9_1(), "rule__Machine__EventsAssignment_9_1");
-					put(grammarAccess.getMachineAccess().getEventsAssignment_9_2(), "rule__Machine__EventsAssignment_9_2");
-					put(grammarAccess.getMachineAccess().getExtensionsAssignment_10(), "rule__Machine__ExtensionsAssignment_10");
+					put(grammarAccess.getMachineAccess().getRefinesAssignment_3_0_1(), "rule__Machine__RefinesAssignment_3_0_1");
+					put(grammarAccess.getMachineAccess().getSeesAssignment_3_1_1(), "rule__Machine__SeesAssignment_3_1_1");
+					put(grammarAccess.getMachineAccess().getExtensionsAssignment_3_2(), "rule__Machine__ExtensionsAssignment_3_2");
+					put(grammarAccess.getMachineAccess().getVariablesAssignment_4_1(), "rule__Machine__VariablesAssignment_4_1");
+					put(grammarAccess.getMachineAccess().getInvariantsAssignment_5_1(), "rule__Machine__InvariantsAssignment_5_1");
+					put(grammarAccess.getMachineAccess().getVariantAssignment_6_1(), "rule__Machine__VariantAssignment_6_1");
+					put(grammarAccess.getMachineAccess().getEventsAssignment_7_1(), "rule__Machine__EventsAssignment_7_1");
+					put(grammarAccess.getMachineAccess().getEventsAssignment_7_2(), "rule__Machine__EventsAssignment_7_2");
+					put(grammarAccess.getMachineAccess().getExtensionsAssignment_8(), "rule__Machine__ExtensionsAssignment_8");
 					put(grammarAccess.getMIncludesAccess().getAbstractMachineAssignment_1_1(), "rule__MIncludes__AbstractMachineAssignment_1_1");
 					put(grammarAccess.getMIncludesAccess().getConcreteMachineAssignment_2_1(), "rule__MIncludes__ConcreteMachineAssignment_2_1");
 					put(grammarAccess.getMIncludesAccess().getPrefixesAssignment_3_1(), "rule__MIncludes__PrefixesAssignment_3_1");
@@ -120,8 +120,8 @@ public class XMachineParser extends AbstractContentAssistParser {
 					put(grammarAccess.getXEventAccess().getActionsAssignment_6_2_5_1(), "rule__XEvent__ActionsAssignment_6_2_5_1");
 					put(grammarAccess.getEventSyncAccess().getPrefixAssignment_1_1_0(), "rule__EventSync__PrefixAssignment_1_1_0");
 					put(grammarAccess.getEventSyncAccess().getSynchronisedEventAssignment_1_2(), "rule__EventSync__SynchronisedEventAssignment_1_2");
-					put(grammarAccess.getGroupSyncAccess().getPrefixAssignment_1_1_0(), "rule__GroupSync__PrefixAssignment_1_1_0");
-					put(grammarAccess.getGroupSyncAccess().getSynchronisedCasesAssignment_1_2(), "rule__GroupSync__SynchronisedCasesAssignment_1_2");
+					put(grammarAccess.getGroupSyncAccess().getPrefixAssignment_1_2_0(), "rule__GroupSync__PrefixAssignment_1_2_0");
+					put(grammarAccess.getGroupSyncAccess().getSynchronisedCasesAssignment_1_3(), "rule__GroupSync__SynchronisedCasesAssignment_1_3");
 					put(grammarAccess.getGroupSyncAccess().getActualParametersAssignment_2_1(), "rule__GroupSync__ActualParametersAssignment_2_1");
 					put(grammarAccess.getGroupSyncAccess().getActualParametersAssignment_2_2_1(), "rule__GroupSync__ActualParametersAssignment_2_2_1");
 					put(grammarAccess.getXParameterAccess().getNameAssignment_1(), "rule__XParameter__NameAssignment_1");
@@ -132,6 +132,7 @@ public class XMachineParser extends AbstractContentAssistParser {
 					put(grammarAccess.getXWitnessAccess().getPredicateAssignment_2(), "rule__XWitness__PredicateAssignment_2");
 					put(grammarAccess.getXActionAccess().getNameAssignment_1(), "rule__XAction__NameAssignment_1");
 					put(grammarAccess.getXActionAccess().getActionAssignment_2(), "rule__XAction__ActionAssignment_2");
+					put(grammarAccess.getMachineAccess().getUnorderedGroup_3(), "rule__Machine__UnorderedGroup_3");
 					put(grammarAccess.getXEventAccess().getUnorderedGroup_3(), "rule__XEvent__UnorderedGroup_3");
 				}
 			};
