@@ -20,19 +20,32 @@ import org.eclipse.xtext.serializer.sequencer.AbstractSyntacticSequencer;
 public class XMachineSyntacticSequencer extends AbstractSyntacticSequencer {
 
 	protected XMachineGrammarAccess grammarAccess;
+	protected AbstractElementAlias match_EventSync_XSyncParametersParserRuleCall_2_q;
 	protected AbstractElementAlias match_Machine_SeesKeyword_3_1_0_q;
 	
 	@Inject
 	protected void init(IGrammarAccess access) {
 		grammarAccess = (XMachineGrammarAccess) access;
+		match_EventSync_XSyncParametersParserRuleCall_2_q = new TokenAlias(false, true, grammarAccess.getEventSyncAccess().getXSyncParametersParserRuleCall_2());
 		match_Machine_SeesKeyword_3_1_0_q = new TokenAlias(false, true, grammarAccess.getMachineAccess().getSeesKeyword_3_1_0());
 	}
 	
 	@Override
 	protected String getUnassignedRuleCallToken(EObject semanticObject, RuleCall ruleCall, INode node) {
+		if (ruleCall.getRule() == grammarAccess.getXSyncParametersRule())
+			return getXSyncParametersToken(semanticObject, ruleCall, node);
 		return "";
 	}
 	
+	/**
+	 * XSyncParameters returns ecore::EString:
+	 * 	('[' ID+ ']');
+	 */
+	protected String getXSyncParametersToken(EObject semanticObject, RuleCall ruleCall, INode node) {
+		if (node != null)
+			return getTokenText(node);
+		return "[]";
+	}
 	
 	@Override
 	protected void emitUnassignedTokens(EObject semanticObject, ISynTransition transition, INode fromNode, INode toNode) {
@@ -40,12 +53,25 @@ public class XMachineSyntacticSequencer extends AbstractSyntacticSequencer {
 		List<INode> transitionNodes = collectNodes(fromNode, toNode);
 		for (AbstractElementAlias syntax : transition.getAmbiguousSyntaxes()) {
 			List<INode> syntaxNodes = getNodesFor(transitionNodes, syntax);
-			if (match_Machine_SeesKeyword_3_1_0_q.equals(syntax))
+			if (match_EventSync_XSyncParametersParserRuleCall_2_q.equals(syntax))
+				emit_EventSync_XSyncParametersParserRuleCall_2_q(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_Machine_SeesKeyword_3_1_0_q.equals(syntax))
 				emit_Machine_SeesKeyword_3_1_0_q(semanticObject, getLastNavigableState(), syntaxNodes);
 			else acceptNodes(getLastNavigableState(), syntaxNodes);
 		}
 	}
 
+	/**
+	 * Ambiguous syntax:
+	 *     XSyncParameters?
+	 *
+	 * This ambiguous syntax occurs at:
+	 *     synchronisedEvent=[Event|ID] (ambiguity) (rule end)
+	 */
+	protected void emit_EventSync_XSyncParametersParserRuleCall_2_q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
 	/**
 	 * Ambiguous syntax:
 	 *     'sees'?

@@ -142,5 +142,16 @@ class XMachineValidator extends AbstractXMachineValidator {
 			 }
 		}
 	}
+	
+	
+    //check the group actual parameters are the same length as the group formal parameters
+	@Check
+	def checkGroupActualParameters(EventSynchronisation evt){	   
+    	//if(evt.synchronisedCases.)
+    	if(!evt.actualParameters.empty){
+    		if(evt.actualParameters.length != evt.synchronisedCases.formalParameters.length)
+    			error('Actual Parameters are not the same length as Formal Parameters ', null);
+    	}
+	}
 
 }

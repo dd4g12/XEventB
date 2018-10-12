@@ -2,6 +2,8 @@
 ')'=31
 ','=32
 '.'=28
+'['=41
+']'=42
 'anticipated'=16
 'any'=38
 'as'=27
@@ -10,7 +12,7 @@
 'end'=18
 'event'=34
 'events'=24
-'extended'=42
+'extended'=44
 'group'=29
 'in'=12
 'includes'=25
@@ -22,7 +24,7 @@
 'sees'=20
 'synchronises'=40
 'then'=37
-'theorem'=41
+'theorem'=43
 'to'=26
 'variables'=21
 'variant'=23
@@ -68,3 +70,5 @@ T__39=39
 T__40=40
 T__41=41
 T__42=42
+T__43=43
+T__44=44

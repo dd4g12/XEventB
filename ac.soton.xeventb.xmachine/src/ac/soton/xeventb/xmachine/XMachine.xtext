@@ -122,8 +122,12 @@ XEvent returns emachine::Event:
 
 EventSync returns einclusion::EventSynchronisation:
 	{einclusion::EventSynchronisation}
-	('synchronises' (prefix=ID'.')?(synchronisedEvent = [emachine::Event]))
+	('synchronises' (prefix=ID'.')?(synchronisedEvent = [emachine::Event]))(XSyncParameters)?
 //	( (prefix=ID'.')?(synchronisedEvent = [emachine::Event]))
+;
+
+XSyncParameters returns ecore::EString:
+	('[' ID+ ']')//STRING
 ;
 GroupSync returns einclusion::EventSynchronisation:
 	{einclusion::EventSynchronisation}

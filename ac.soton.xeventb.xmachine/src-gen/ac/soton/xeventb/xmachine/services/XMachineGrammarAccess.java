@@ -787,12 +787,17 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cSynchronisedEventAssignment_1_2 = (Assignment)cGroup_1.eContents().get(2);
 		private final CrossReference cSynchronisedEventEventCrossReference_1_2_0 = (CrossReference)cSynchronisedEventAssignment_1_2.eContents().get(0);
 		private final RuleCall cSynchronisedEventEventIDTerminalRuleCall_1_2_0_1 = (RuleCall)cSynchronisedEventEventCrossReference_1_2_0.eContents().get(1);
+		private final RuleCall cXSyncParametersParserRuleCall_2 = (RuleCall)cGroup.eContents().get(2);
 		
 		//EventSync einclusion::EventSynchronisation:
-		//	{einclusion::EventSynchronisation} ('synchronises' (prefix=ID '.')? synchronisedEvent=[emachine::Event]);
+		//	{einclusion::EventSynchronisation} ('synchronises' (prefix=ID '.')? synchronisedEvent=[emachine::Event])
+		//	XSyncParameters?
+		//	//	( (prefix=ID'.')?(synchronisedEvent = [emachine::Event]))
+		//;
 		@Override public ParserRule getRule() { return rule; }
 		
 		//{einclusion::EventSynchronisation} ('synchronises' (prefix=ID '.')? synchronisedEvent=[emachine::Event])
+		//XSyncParameters?
 		public Group getGroup() { return cGroup; }
 		
 		//{einclusion::EventSynchronisation}
@@ -824,6 +829,32 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 		
 		//ID
 		public RuleCall getSynchronisedEventEventIDTerminalRuleCall_1_2_0_1() { return cSynchronisedEventEventIDTerminalRuleCall_1_2_0_1; }
+		
+		//XSyncParameters?
+		public RuleCall getXSyncParametersParserRuleCall_2() { return cXSyncParametersParserRuleCall_2; }
+	}
+	public class XSyncParametersElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ac.soton.xeventb.xmachine.XMachine.XSyncParameters");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cLeftSquareBracketKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final RuleCall cIDTerminalRuleCall_1 = (RuleCall)cGroup.eContents().get(1);
+		private final Keyword cRightSquareBracketKeyword_2 = (Keyword)cGroup.eContents().get(2);
+		
+		//XSyncParameters:
+		//	'[' ID+ ']';
+		@Override public ParserRule getRule() { return rule; }
+		
+		//'[' ID+ ']'
+		public Group getGroup() { return cGroup; }
+		
+		//'['
+		public Keyword getLeftSquareBracketKeyword_0() { return cLeftSquareBracketKeyword_0; }
+		
+		//ID+
+		public RuleCall getIDTerminalRuleCall_1() { return cIDTerminalRuleCall_1; }
+		
+		//']'
+		public Keyword getRightSquareBracketKeyword_2() { return cRightSquareBracketKeyword_2; }
 	}
 	public class GroupSyncElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ac.soton.xeventb.xmachine.XMachine.GroupSync");
@@ -1151,6 +1182,7 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 	private final XDirectionElements eXDirection;
 	private final XEventElements pXEvent;
 	private final EventSyncElements pEventSync;
+	private final XSyncParametersElements pXSyncParameters;
 	private final GroupSyncElements pGroupSync;
 	private final XGroupOrEventElements pXGroupOrEvent;
 	private final XConvergenceElements eXConvergence;
@@ -1182,6 +1214,7 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 		this.eXDirection = new XDirectionElements();
 		this.pXEvent = new XEventElements();
 		this.pEventSync = new EventSyncElements();
+		this.pXSyncParameters = new XSyncParametersElements();
 		this.pGroupSync = new GroupSyncElements();
 		this.pXGroupOrEvent = new XGroupOrEventElements();
 		this.eXConvergence = new XConvergenceElements();
@@ -1354,13 +1387,26 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//EventSync einclusion::EventSynchronisation:
-	//	{einclusion::EventSynchronisation} ('synchronises' (prefix=ID '.')? synchronisedEvent=[emachine::Event]);
+	//	{einclusion::EventSynchronisation} ('synchronises' (prefix=ID '.')? synchronisedEvent=[emachine::Event])
+	//	XSyncParameters?
+	//	//	( (prefix=ID'.')?(synchronisedEvent = [emachine::Event]))
+	//;
 	public EventSyncElements getEventSyncAccess() {
 		return pEventSync;
 	}
 	
 	public ParserRule getEventSyncRule() {
 		return getEventSyncAccess().getRule();
+	}
+	
+	//XSyncParameters:
+	//	'[' ID+ ']';
+	public XSyncParametersElements getXSyncParametersAccess() {
+		return pXSyncParameters;
+	}
+	
+	public ParserRule getXSyncParametersRule() {
+		return getXSyncParametersAccess().getRule();
 	}
 	
 	//GroupSync einclusion::EventSynchronisation:

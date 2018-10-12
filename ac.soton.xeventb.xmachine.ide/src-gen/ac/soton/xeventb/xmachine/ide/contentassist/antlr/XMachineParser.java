@@ -69,6 +69,7 @@ public class XMachineParser extends AbstractContentAssistParser {
 					put(grammarAccess.getEventSyncAccess().getGroup(), "rule__EventSync__Group__0");
 					put(grammarAccess.getEventSyncAccess().getGroup_1(), "rule__EventSync__Group_1__0");
 					put(grammarAccess.getEventSyncAccess().getGroup_1_1(), "rule__EventSync__Group_1_1__0");
+					put(grammarAccess.getXSyncParametersAccess().getGroup(), "rule__XSyncParameters__Group__0");
 					put(grammarAccess.getGroupSyncAccess().getGroup(), "rule__GroupSync__Group__0");
 					put(grammarAccess.getGroupSyncAccess().getGroup_1(), "rule__GroupSync__Group_1__0");
 					put(grammarAccess.getGroupSyncAccess().getGroup_1_2(), "rule__GroupSync__Group_1_2__0");

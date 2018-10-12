@@ -1313,6 +1313,53 @@ ruleEventSync returns [EObject current=null]
 				)
 			)
 		)
+		(
+			{
+				newCompositeNode(grammarAccess.getEventSyncAccess().getXSyncParametersParserRuleCall_2());
+			}
+			ruleXSyncParameters
+			{
+				afterParserOrEnumRuleCall();
+			}
+		)?
+	)
+;
+
+// Entry rule entryRuleXSyncParameters
+entryRuleXSyncParameters returns [String current=null]:
+	{ newCompositeNode(grammarAccess.getXSyncParametersRule()); }
+	iv_ruleXSyncParameters=ruleXSyncParameters
+	{ $current=$iv_ruleXSyncParameters.current.getText(); }
+	EOF;
+
+// Rule XSyncParameters
+ruleXSyncParameters returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
+@init {
+	enterRule();
+}
+@after {
+	leaveRule();
+}:
+	(
+		kw='['
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getXSyncParametersAccess().getLeftSquareBracketKeyword_0());
+		}
+		(
+			this_ID_1=RULE_ID
+			{
+				$current.merge(this_ID_1);
+			}
+			{
+				newLeafNode(this_ID_1, grammarAccess.getXSyncParametersAccess().getIDTerminalRuleCall_1());
+			}
+		)+
+		kw=']'
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getXSyncParametersAccess().getRightSquareBracketKeyword_2());
+		}
 	)
 ;
 
