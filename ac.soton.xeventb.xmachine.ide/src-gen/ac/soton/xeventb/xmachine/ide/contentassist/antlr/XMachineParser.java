@@ -33,6 +33,10 @@ public class XMachineParser extends AbstractContentAssistParser {
 				{
 					put(grammarAccess.getXEventAccess().getAlternatives_6(), "rule__XEvent__Alternatives_6");
 					put(grammarAccess.getXGroupOrEventAccess().getAlternatives(), "rule__XGroupOrEvent__Alternatives");
+					put(grammarAccess.getXPredicateAccess().getAlternatives(), "rule__XPredicate__Alternatives");
+					put(grammarAccess.getEVENTB_IDENTIFIER_KEYWORDAccess().getAlternatives(), "rule__EVENTB_IDENTIFIER_KEYWORD__Alternatives");
+					put(grammarAccess.getEVENTB_PREDICATE_SYMBOLSAccess().getAlternatives(), "rule__EVENTB_PREDICATE_SYMBOLS__Alternatives");
+					put(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getAlternatives(), "rule__EVENTB_EXPRESSION_SYMBOLS__Alternatives");
 					put(grammarAccess.getXDirectionAccess().getAlternatives(), "rule__XDirection__Alternatives");
 					put(grammarAccess.getXConvergenceAccess().getAlternatives(), "rule__XConvergence__Alternatives");
 					put(grammarAccess.getMachineAccess().getGroup(), "rule__Machine__Group__0");
@@ -79,6 +83,7 @@ public class XMachineParser extends AbstractContentAssistParser {
 					put(grammarAccess.getXGuardAccess().getGroup(), "rule__XGuard__Group__0");
 					put(grammarAccess.getXWitnessAccess().getGroup(), "rule__XWitness__Group__0");
 					put(grammarAccess.getXActionAccess().getGroup(), "rule__XAction__Group__0");
+					put(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getGroup_32(), "rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0");
 					put(grammarAccess.getMachineAccess().getNameAssignment_2(), "rule__Machine__NameAssignment_2");
 					put(grammarAccess.getMachineAccess().getRefinesAssignment_3_0_1(), "rule__Machine__RefinesAssignment_3_0_1");
 					put(grammarAccess.getMachineAccess().getSeesAssignment_3_1_1(), "rule__Machine__SeesAssignment_3_1_1");
