@@ -32,6 +32,10 @@ public class XContextParser extends AbstractContentAssistParser {
 				private static final long serialVersionUID = 1L;
 				{
 					put(grammarAccess.getXContextAccess().getCommentAlternatives_1_0(), "rule__XContext__CommentAlternatives_1_0");
+					put(grammarAccess.getXPredicateAccess().getAlternatives(), "rule__XPredicate__Alternatives");
+					put(grammarAccess.getEVENTB_IDENTIFIER_KEYWORDAccess().getAlternatives(), "rule__EVENTB_IDENTIFIER_KEYWORD__Alternatives");
+					put(grammarAccess.getEVENTB_PREDICATE_SYMBOLSAccess().getAlternatives(), "rule__EVENTB_PREDICATE_SYMBOLS__Alternatives");
+					put(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getAlternatives(), "rule__EVENTB_EXPRESSION_SYMBOLS__Alternatives");
 					put(grammarAccess.getXContextAccess().getGroup(), "rule__XContext__Group__0");
 					put(grammarAccess.getXContextAccess().getGroup_4(), "rule__XContext__Group_4__0");
 					put(grammarAccess.getXContextAccess().getGroup_5(), "rule__XContext__Group_5__0");
@@ -42,6 +46,7 @@ public class XContextParser extends AbstractContentAssistParser {
 					put(grammarAccess.getXCarrierSetAccess().getGroup(), "rule__XCarrierSet__Group__0");
 					put(grammarAccess.getXConstantAccess().getGroup(), "rule__XConstant__Group__0");
 					put(grammarAccess.getXAxiomAccess().getGroup(), "rule__XAxiom__Group__0");
+					put(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getGroup_32(), "rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0");
 					put(grammarAccess.getXContextAccess().getCommentAssignment_1(), "rule__XContext__CommentAssignment_1");
 					put(grammarAccess.getXContextAccess().getNameAssignment_3(), "rule__XContext__NameAssignment_3");
 					put(grammarAccess.getXContextAccess().getExtendsAssignment_4_1(), "rule__XContext__ExtendsAssignment_4_1");

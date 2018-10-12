@@ -52,4 +52,5 @@ class XMachineProposalProvider extends AbstractXMachineProposalProvider {
 		RodinSymbolsProposalProvider.completeRodinSymbol(this, context, acceptor)
 	}
 
+
 }

@@ -6,6 +6,7 @@
 package ac.soton.xeventb.xmachine.ui
 
 //import org.eclipse.xtend.lib.annotations.FinalFieldsConstructor
+
 import com.google.inject.Binder
 import com.google.inject.name.Names
 import org.eclipse.ui.plugin.AbstractUIPlugin
@@ -21,10 +22,12 @@ class XMachineUiModule extends AbstractXMachineUiModule {
 		super(plugin)
 	}
 	
+
 		override configure(Binder binder) {
 		super.configure(binder);
 		binder.bind(typeof(String)).annotatedWith(
 			Names.named((XtextContentAssistProcessor.COMPLETION_AUTO_ACTIVATION_CHARS))).toInstance("!#%&*-:|~/\\NIP");
 		// @TODO We should be able to query the Rodin Keyboard for these letters
 	}
+
 }
