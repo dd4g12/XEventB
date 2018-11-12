@@ -1441,9 +1441,9 @@ ruleGroupSync returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getGroupSyncAccess().getActualParametersXPredicateParserRuleCall_2_1_0());
+						newCompositeNode(grammarAccess.getGroupSyncAccess().getActualParametersXParParserRuleCall_2_1_0());
 					}
-					lv_actualParameters_7_0=ruleXPredicate
+					lv_actualParameters_7_0=ruleXPar
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getGroupSyncRule());
@@ -1452,7 +1452,7 @@ ruleGroupSync returns [EObject current=null]
 							$current,
 							"actualParameters",
 							lv_actualParameters_7_0,
-							"ac.soton.xeventb.xmachine.XMachine.XPredicate");
+							"ac.soton.xeventb.xmachine.XMachine.XPar");
 						afterParserOrEnumRuleCall();
 					}
 				)
@@ -1465,9 +1465,9 @@ ruleGroupSync returns [EObject current=null]
 				(
 					(
 						{
-							newCompositeNode(grammarAccess.getGroupSyncAccess().getActualParametersXPredicateParserRuleCall_2_2_1_0());
+							newCompositeNode(grammarAccess.getGroupSyncAccess().getActualParametersXParParserRuleCall_2_2_1_0());
 						}
-						lv_actualParameters_9_0=ruleXPredicate
+						lv_actualParameters_9_0=ruleXPar
 						{
 							if ($current==null) {
 								$current = createModelElementForParent(grammarAccess.getGroupSyncRule());
@@ -1476,7 +1476,7 @@ ruleGroupSync returns [EObject current=null]
 								$current,
 								"actualParameters",
 								lv_actualParameters_9_0,
-								"ac.soton.xeventb.xmachine.XMachine.XPredicate");
+								"ac.soton.xeventb.xmachine.XMachine.XPar");
 							afterParserOrEnumRuleCall();
 						}
 					)
@@ -1771,6 +1771,30 @@ ruleXAction returns [EObject current=null]
 			)
 		)
 	)
+;
+
+// Entry rule entryRuleXPar
+entryRuleXPar returns [String current=null]:
+	{ newCompositeNode(grammarAccess.getXParRule()); }
+	iv_ruleXPar=ruleXPar
+	{ $current=$iv_ruleXPar.current.getText(); }
+	EOF;
+
+// Rule XPar
+ruleXPar returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
+@init {
+	enterRule();
+}
+@after {
+	leaveRule();
+}:
+	this_STRING_0=RULE_STRING
+	{
+		$current.merge(this_STRING_0);
+	}
+	{
+		newLeafNode(this_STRING_0, grammarAccess.getXParAccess().getSTRINGTerminalRuleCall());
+	}
 ;
 
 // Entry rule entryRuleXPredicate

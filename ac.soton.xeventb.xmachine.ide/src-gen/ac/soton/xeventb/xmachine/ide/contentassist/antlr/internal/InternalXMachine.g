@@ -474,6 +474,31 @@ finally {
 	restoreStackSize(stackSize);
 }
 
+// Entry rule entryRuleXPar
+entryRuleXPar
+:
+{ before(grammarAccess.getXParRule()); }
+	 ruleXPar
+{ after(grammarAccess.getXParRule()); } 
+	 EOF 
+;
+
+// Rule XPar
+ruleXPar 
+	@init {
+		int stackSize = keepStackSize();
+	}
+	:
+	(
+		{ before(grammarAccess.getXParAccess().getSTRINGTerminalRuleCall()); }
+		RULE_STRING
+		{ after(grammarAccess.getXParAccess().getSTRINGTerminalRuleCall()); }
+	)
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
 // Entry rule entryRuleXPredicate
 entryRuleXPredicate
 :
@@ -6076,9 +6101,9 @@ rule__GroupSync__ActualParametersAssignment_2_1
 	}
 :
 	(
-		{ before(grammarAccess.getGroupSyncAccess().getActualParametersXPredicateParserRuleCall_2_1_0()); }
-		ruleXPredicate
-		{ after(grammarAccess.getGroupSyncAccess().getActualParametersXPredicateParserRuleCall_2_1_0()); }
+		{ before(grammarAccess.getGroupSyncAccess().getActualParametersXParParserRuleCall_2_1_0()); }
+		ruleXPar
+		{ after(grammarAccess.getGroupSyncAccess().getActualParametersXParParserRuleCall_2_1_0()); }
 	)
 ;
 finally {
@@ -6091,9 +6116,9 @@ rule__GroupSync__ActualParametersAssignment_2_2_1
 	}
 :
 	(
-		{ before(grammarAccess.getGroupSyncAccess().getActualParametersXPredicateParserRuleCall_2_2_1_0()); }
-		ruleXPredicate
-		{ after(grammarAccess.getGroupSyncAccess().getActualParametersXPredicateParserRuleCall_2_2_1_0()); }
+		{ before(grammarAccess.getGroupSyncAccess().getActualParametersXParParserRuleCall_2_2_1_0()); }
+		ruleXPar
+		{ after(grammarAccess.getGroupSyncAccess().getActualParametersXParParserRuleCall_2_2_1_0()); }
 	)
 ;
 finally {

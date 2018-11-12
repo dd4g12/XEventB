@@ -873,22 +873,20 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 		private final Group cGroup_2 = (Group)cGroup.eContents().get(2);
 		private final Keyword cLeftParenthesisKeyword_2_0 = (Keyword)cGroup_2.eContents().get(0);
 		private final Assignment cActualParametersAssignment_2_1 = (Assignment)cGroup_2.eContents().get(1);
-		private final RuleCall cActualParametersXPredicateParserRuleCall_2_1_0 = (RuleCall)cActualParametersAssignment_2_1.eContents().get(0);
+		private final RuleCall cActualParametersXParParserRuleCall_2_1_0 = (RuleCall)cActualParametersAssignment_2_1.eContents().get(0);
 		private final Group cGroup_2_2 = (Group)cGroup_2.eContents().get(2);
 		private final Keyword cCommaKeyword_2_2_0 = (Keyword)cGroup_2_2.eContents().get(0);
 		private final Assignment cActualParametersAssignment_2_2_1 = (Assignment)cGroup_2_2.eContents().get(1);
-		private final RuleCall cActualParametersXPredicateParserRuleCall_2_2_1_0 = (RuleCall)cActualParametersAssignment_2_2_1.eContents().get(0);
+		private final RuleCall cActualParametersXParParserRuleCall_2_2_1_0 = (RuleCall)cActualParametersAssignment_2_2_1.eContents().get(0);
 		private final Keyword cRightParenthesisKeyword_2_3 = (Keyword)cGroup_2.eContents().get(3);
 		
 		//GroupSync einclusion::EventSynchronisation:
 		//	{einclusion::EventSynchronisation} ('synchronises' 'group' (prefix=ID '.')?
-		//	synchronisedCases=[eventbcoreextension::EventCases]) ('(' actualParameters+=XPredicate (','
-		//	actualParameters+=XPredicate)* ')')?;
+		//	synchronisedCases=[eventbcoreextension::EventCases]) ('(' actualParameters+=XPar (',' actualParameters+=XPar)* ')')?;
 		@Override public ParserRule getRule() { return rule; }
 		
 		//{einclusion::EventSynchronisation} ('synchronises' 'group' (prefix=ID '.')?
-		//synchronisedCases=[eventbcoreextension::EventCases]) ('(' actualParameters+=XPredicate (','
-		//actualParameters+=XPredicate)* ')')?
+		//synchronisedCases=[eventbcoreextension::EventCases]) ('(' actualParameters+=XPar (',' actualParameters+=XPar)* ')')?
 		public Group getGroup() { return cGroup; }
 		
 		//{einclusion::EventSynchronisation}
@@ -925,29 +923,29 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 		//ID
 		public RuleCall getSynchronisedCasesEventCasesIDTerminalRuleCall_1_3_0_1() { return cSynchronisedCasesEventCasesIDTerminalRuleCall_1_3_0_1; }
 		
-		//('(' actualParameters+=XPredicate (',' actualParameters+=XPredicate)* ')')?
+		//('(' actualParameters+=XPar (',' actualParameters+=XPar)* ')')?
 		public Group getGroup_2() { return cGroup_2; }
 		
 		//'('
 		public Keyword getLeftParenthesisKeyword_2_0() { return cLeftParenthesisKeyword_2_0; }
 		
-		//actualParameters+=XPredicate
+		//actualParameters+=XPar
 		public Assignment getActualParametersAssignment_2_1() { return cActualParametersAssignment_2_1; }
 		
-		//XPredicate
-		public RuleCall getActualParametersXPredicateParserRuleCall_2_1_0() { return cActualParametersXPredicateParserRuleCall_2_1_0; }
+		//XPar
+		public RuleCall getActualParametersXParParserRuleCall_2_1_0() { return cActualParametersXParParserRuleCall_2_1_0; }
 		
-		//(',' actualParameters+=XPredicate)*
+		//(',' actualParameters+=XPar)*
 		public Group getGroup_2_2() { return cGroup_2_2; }
 		
 		//','
 		public Keyword getCommaKeyword_2_2_0() { return cCommaKeyword_2_2_0; }
 		
-		//actualParameters+=XPredicate
+		//actualParameters+=XPar
 		public Assignment getActualParametersAssignment_2_2_1() { return cActualParametersAssignment_2_2_1; }
 		
-		//XPredicate
-		public RuleCall getActualParametersXPredicateParserRuleCall_2_2_1_0() { return cActualParametersXPredicateParserRuleCall_2_2_1_0; }
+		//XPar
+		public RuleCall getActualParametersXParParserRuleCall_2_2_1_0() { return cActualParametersXParParserRuleCall_2_2_1_0; }
 		
 		//')'
 		public Keyword getRightParenthesisKeyword_2_3() { return cRightParenthesisKeyword_2_3; }
@@ -1097,6 +1095,17 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 		//XPredicate
 		public RuleCall getActionXPredicateParserRuleCall_2_0() { return cActionXPredicateParserRuleCall_2_0; }
 	}
+	public class XParElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ac.soton.xeventb.xmachine.XMachine.XPar");
+		private final RuleCall cSTRINGTerminalRuleCall = (RuleCall)rule.eContents().get(1);
+		
+		//XPar:
+		//	STRING;
+		@Override public ParserRule getRule() { return rule; }
+		
+		//STRING
+		public RuleCall getSTRINGTerminalRuleCall() { return cSTRINGTerminalRuleCall; }
+	}
 	public class XPredicateElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ac.soton.xeventb.xmachine.XMachine.XPredicate");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
@@ -1106,9 +1115,6 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cIDTerminalRuleCall_3 = (RuleCall)cAlternatives.eContents().get(3);
 		private final RuleCall cINTTerminalRuleCall_4 = (RuleCall)cAlternatives.eContents().get(4);
 		
-		////XPredicate returns ecore::EString:
-		////	STRING
-		////;
 		//XPredicate:
 		//	(EVENTB_IDENTIFIER_KEYWORD | EVENTB_PREDICATE_SYMBOLS | EVENTB_EXPRESSION_SYMBOLS | ID | INT)+;
 		@Override public ParserRule getRule() { return rule; }
@@ -1760,6 +1766,7 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 	private final XGuardElements pXGuard;
 	private final XWitnessElements pXWitness;
 	private final XActionElements pXAction;
+	private final XParElements pXPar;
 	private final XPredicateElements pXPredicate;
 	private final EVENTB_IDENTIFIER_KEYWORDElements pEVENTB_IDENTIFIER_KEYWORD;
 	private final EVENTB_PREDICATE_SYMBOLSElements pEVENTB_PREDICATE_SYMBOLS;
@@ -1795,6 +1802,7 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 		this.pXGuard = new XGuardElements();
 		this.pXWitness = new XWitnessElements();
 		this.pXAction = new XActionElements();
+		this.pXPar = new XParElements();
 		this.pXPredicate = new XPredicateElements();
 		this.pEVENTB_IDENTIFIER_KEYWORD = new EVENTB_IDENTIFIER_KEYWORDElements();
 		this.pEVENTB_PREDICATE_SYMBOLS = new EVENTB_PREDICATE_SYMBOLSElements();
@@ -1987,8 +1995,7 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 	
 	//GroupSync einclusion::EventSynchronisation:
 	//	{einclusion::EventSynchronisation} ('synchronises' 'group' (prefix=ID '.')?
-	//	synchronisedCases=[eventbcoreextension::EventCases]) ('(' actualParameters+=XPredicate (','
-	//	actualParameters+=XPredicate)* ')')?;
+	//	synchronisedCases=[eventbcoreextension::EventCases]) ('(' actualParameters+=XPar (',' actualParameters+=XPar)* ')')?;
 	public GroupSyncElements getGroupSyncAccess() {
 		return pGroupSync;
 	}
@@ -2059,9 +2066,16 @@ public class XMachineGrammarAccess extends AbstractGrammarElementFinder {
 		return getXActionAccess().getRule();
 	}
 	
-	////XPredicate returns ecore::EString:
-	////	STRING
-	////;
+	//XPar:
+	//	STRING;
+	public XParElements getXParAccess() {
+		return pXPar;
+	}
+	
+	public ParserRule getXParRule() {
+		return getXParAccess().getRule();
+	}
+	
 	//XPredicate:
 	//	(EVENTB_IDENTIFIER_KEYWORD | EVENTB_PREDICATE_SYMBOLS | EVENTB_EXPRESSION_SYMBOLS | ID | INT)+;
 	public XPredicateElements getXPredicateAccess() {

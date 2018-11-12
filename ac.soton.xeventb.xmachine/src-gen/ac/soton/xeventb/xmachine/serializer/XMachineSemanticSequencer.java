@@ -123,10 +123,7 @@ public class XMachineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	 *     XGroupOrEvent returns EventSynchronisation
 	 *
 	 * Constraint:
-	 *     (
-	 *         (prefix=ID? synchronisedEvent=[Event|ID]) | 
-	 *         (prefix=ID? synchronisedCases=[EventCases|ID] (actualParameters+=XPredicate actualParameters+=XPredicate*)?)
-	 *     )
+	 *     ((prefix=ID? synchronisedEvent=[Event|ID]) | (prefix=ID? synchronisedCases=[EventCases|ID] (actualParameters+=XPar actualParameters+=XPar*)?))
 	 */
 	protected void sequence_EventSync_GroupSync(ISerializationContext context, EventSynchronisation semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -138,7 +135,7 @@ public class XMachineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	 *     GroupSync returns EventSynchronisation
 	 *
 	 * Constraint:
-	 *     (prefix=ID? synchronisedCases=[EventCases|ID] (actualParameters+=XPredicate actualParameters+=XPredicate*)?)
+	 *     (prefix=ID? synchronisedCases=[EventCases|ID] (actualParameters+=XPar actualParameters+=XPar*)?)
 	 */
 	protected void sequence_GroupSync(ISerializationContext context, EventSynchronisation semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

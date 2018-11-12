@@ -10,16 +10,6 @@
  */
 package ac.soton.xeventb.tests.common;
 
-import org.eclipse.emf.common.util.EList;
-import org.eclipse.emf.ecore.EClass;
-import org.eclipse.xtext.xbase.lib.Conversions;
-import org.eventb.emf.core.context.Axiom;
-import org.eventb.emf.core.context.CarrierSet;
-import org.eventb.emf.core.context.Constant;
-import org.eventb.emf.core.context.Context;
-import org.eventb.emf.core.context.ContextPackage;
-import org.junit.Assert;
-
 /**
  * <p>
  * This class contains utility methods for testing EMF {@link Context}'s details.
@@ -39,8 +29,11 @@ public class AssertContextExtensions {
    * Utility method to register the Context EPackage. This is done by simply
    * access the eClass of the ContextPackage's {@link ContextPackage.eINSTANCE}.
    */
-  public EClass registerContextEPackage() {
-    return ContextPackage.eINSTANCE.eClass();
+  public Object registerContextEPackage() {
+    throw new Error("Unresolved compilation problems:"
+      + "\nThe method or field ContextPackage is undefined"
+      + "\neINSTANCE cannot be resolved"
+      + "\neClass cannot be resolved");
   }
   
   /**
@@ -59,10 +52,10 @@ public class AssertContextExtensions {
    * 		to have any comment.
    * @precondition The input context must not be <code>null</code>
    */
-  public void assertContext(final Context ctx, final String expectedName, final String expectedComments) {
-    Assert.assertNotNull("Input context must not be null", ctx);
-    Assert.assertEquals("Incorrect context\'s name", expectedName, ctx.getName());
-    Assert.assertEquals("Incorrect context\'s comments", expectedComments, ctx.getComment());
+  public void assertContext(final /* Context */Object ctx, final String expectedName, final String expectedComments) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nname cannot be resolved"
+      + "\ncomment cannot be resolved");
   }
   
   /**
@@ -78,15 +71,11 @@ public class AssertContextExtensions {
    * 		The array of expected EXTENDS names.
    * @precondition The input context must not be <code>null</code>
    */
-  public void assertContextExtendsNames(final Context ctx, final String... expectedExtendsNames) {
-    Assert.assertNotNull("Input context must not be null", ctx);
-    final EList<String> actualExtendsNames = ctx.getExtendsNames();
-    Assert.assertEquals("Incorrect number of EXTENDS names", 
-      expectedExtendsNames.length, ((Object[])Conversions.unwrapArray(actualExtendsNames, Object.class)).length);
-    for (int i = 0; (i < expectedExtendsNames.length); i++) {
-      Assert.assertEquals("Incorrect EXTENDS name", 
-        expectedExtendsNames[i], actualExtendsNames.get(i));
-    }
+  public void assertContextExtendsNames(final /* Context */Object ctx, final String... expectedExtendsNames) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nextendsNames cannot be resolved"
+      + "\nlength cannot be resolved"
+      + "\nget cannot be resolved");
   }
   
   /**
@@ -104,15 +93,12 @@ public class AssertContextExtensions {
    * 		The array of expected (pretty-printed) sets.
    * @precondition The input context must not be <code>null</code>
    */
-  public void assertContextSets(final Context ctx, final String... expectedSets) {
-    Assert.assertNotNull("Input context must not be null", ctx);
-    final EList<CarrierSet> actualSets = ctx.getSets();
-    Assert.assertEquals("Incorrect number of carrier sets", 
-      expectedSets.length, ((Object[])Conversions.unwrapArray(actualSets, Object.class)).length);
-    for (int i = 0; (i < expectedSets.length); i++) {
-      Assert.assertEquals("Incorrect carrier set name", 
-        expectedSets[i], this.prettyPrint(actualSets.get(i)));
-    }
+  public void assertContextSets(final /* Context */Object ctx, final String... expectedSets) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nsets cannot be resolved"
+      + "\nlength cannot be resolved"
+      + "\nget cannot be resolved"
+      + "\nprettyPrint cannot be resolved");
   }
   
   /**
@@ -126,17 +112,13 @@ public class AssertContextExtensions {
    * @return the pretty-print string of the input carrier set.
    * @precondition the input carrier set must not be <code>null</code>
    */
-  private String prettyPrint(final CarrierSet set) {
-    String _name = set.getName();
-    String _plus = (_name + ":");
-    String _elvis = null;
-    String _comment = set.getComment();
-    if (_comment != null) {
-      _elvis = _comment;
-    } else {
-      _elvis = "";
-    }
-    return (_plus + _elvis);
+  private Object prettyPrint(final /* CarrierSet */Object set) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nname cannot be resolved"
+      + "\n+ cannot be resolved"
+      + "\n+ cannot be resolved"
+      + "\ncomment cannot be resolved"
+      + "\n?: cannot be resolved");
   }
   
   /**
@@ -155,15 +137,12 @@ public class AssertContextExtensions {
    * 		The array of expected (pretty-printed) constants.
    * @precondition The input context must not be <code>null</code>
    */
-  public void assertContextConstants(final Context ctx, final String... expectedConstants) {
-    Assert.assertNotNull("Input context must not be null", ctx);
-    final EList<Constant> actualConstants = ctx.getConstants();
-    Assert.assertEquals("Incorrect number of constants", 
-      expectedConstants.length, ((Object[])Conversions.unwrapArray(actualConstants, Object.class)).length);
-    for (int i = 0; (i < expectedConstants.length); i++) {
-      Assert.assertEquals("Incorrect constant name", 
-        expectedConstants[i], this.prettyPrint(actualConstants.get(i)));
-    }
+  public void assertContextConstants(final /* Context */Object ctx, final String... expectedConstants) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nconstants cannot be resolved"
+      + "\nlength cannot be resolved"
+      + "\nget cannot be resolved"
+      + "\nprettyPrint cannot be resolved");
   }
   
   /**
@@ -177,17 +156,13 @@ public class AssertContextExtensions {
    * @return the pretty-print string of the input constant.
    * @precondition the input constant must not be <code>null</code>
    */
-  private String prettyPrint(final Constant cst) {
-    String _name = cst.getName();
-    String _plus = (_name + ":");
-    String _elvis = null;
-    String _comment = cst.getComment();
-    if (_comment != null) {
-      _elvis = _comment;
-    } else {
-      _elvis = "";
-    }
-    return (_plus + _elvis);
+  private Object prettyPrint(final /* Constant */Object cst) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nname cannot be resolved"
+      + "\n+ cannot be resolved"
+      + "\n+ cannot be resolved"
+      + "\ncomment cannot be resolved"
+      + "\n?: cannot be resolved");
   }
   
   /**
@@ -206,15 +181,12 @@ public class AssertContextExtensions {
    * 		The array of expected (pretty-printed) axioms.
    * @precondition The input context must not be <code>null</code>
    */
-  public void assertContextAxioms(final Context ctx, final String... expectedAxioms) {
-    Assert.assertNotNull("Input context must not be null", ctx);
-    final EList<Axiom> actualAxioms = ctx.getAxioms();
-    Assert.assertEquals("Incorrect number of constants", 
-      expectedAxioms.length, ((Object[])Conversions.unwrapArray(actualAxioms, Object.class)).length);
-    for (int i = 0; (i < expectedAxioms.length); i++) {
-      Assert.assertEquals("Incorrect constant name", 
-        expectedAxioms[i], this.prettyPrint(actualAxioms.get(i)));
-    }
+  public void assertContextAxioms(final /* Context */Object ctx, final String... expectedAxioms) {
+    throw new Error("Unresolved compilation problems:"
+      + "\naxioms cannot be resolved"
+      + "\nlength cannot be resolved"
+      + "\nget cannot be resolved"
+      + "\nprettyPrint cannot be resolved");
   }
   
   /**
@@ -230,28 +202,19 @@ public class AssertContextExtensions {
    * @return the pretty-print string of the input axiom.
    * @precondition the input axiom must not be <code>null</code>
    */
-  private String prettyPrint(final Axiom axm) {
-    String _name = axm.getName();
-    String _plus = (_name + ":");
-    String _elvis = null;
-    String _predicate = axm.getPredicate();
-    if (_predicate != null) {
-      _elvis = _predicate;
-    } else {
-      _elvis = "";
-    }
-    String _plus_1 = (_plus + _elvis);
-    String _plus_2 = (_plus_1 + ":");
-    boolean _isTheorem = axm.isTheorem();
-    String _plus_3 = (_plus_2 + Boolean.valueOf(_isTheorem));
-    String _plus_4 = (_plus_3 + ":");
-    String _elvis_1 = null;
-    String _comment = axm.getComment();
-    if (_comment != null) {
-      _elvis_1 = _comment;
-    } else {
-      _elvis_1 = "";
-    }
-    return (_plus_4 + _elvis_1);
+  private Object prettyPrint(final /* Axiom */Object axm) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nname cannot be resolved"
+      + "\n+ cannot be resolved"
+      + "\n+ cannot be resolved"
+      + "\npredicate cannot be resolved"
+      + "\n?: cannot be resolved"
+      + "\n+ cannot be resolved"
+      + "\n+ cannot be resolved"
+      + "\ntheorem cannot be resolved"
+      + "\n+ cannot be resolved"
+      + "\n+ cannot be resolved"
+      + "\ncomment cannot be resolved"
+      + "\n?: cannot be resolved");
   }
 }

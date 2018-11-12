@@ -132,7 +132,7 @@ XSyncParameters returns ecore::EString:
 GroupSync returns einclusion::EventSynchronisation:
 	{einclusion::EventSynchronisation}
   //  ( (prefix=ID'.')?(synchronisedCases = [eventbcoreextension::EventCases]))('(' actualParameters += ID (',' actualParameters += ID)* ')')? 
-	('synchronises' 'group' (prefix=ID'.')?(synchronisedCases = [eventbcoreextension::EventCases]))('(' actualParameters += XPredicate (',' actualParameters += XPredicate)* ')')? 
+	('synchronises' 'group' (prefix=ID'.')?(synchronisedCases = [eventbcoreextension::EventCases]))('(' actualParameters += XPar (',' actualParameters += XPar)* ')')? 
 ;
 XGroupOrEvent returns einclusion::EventSynchronisation:
  GroupSync | EventSync
@@ -162,9 +162,9 @@ XAction returns emachine::Action:
 	name=XLABEL action= XPredicate
 ;
 
-//XPredicate returns ecore::EString:
-//	STRING
-//;
+XPar returns ecore::EString:
+	STRING
+;
 XPredicate returns ecore::EString:
 	(
 		EVENTB_IDENTIFIER_KEYWORD |

@@ -209,6 +209,41 @@ public class EventBValueConverter extends Ecore2XtextTerminalConverters {
 	}
 	
 	/**
+	 * Returns the value converter for XPar.
+	 * 
+	 * @return the value converter for XPar.
+	 */
+	@ValueConverter(rule = "XPar")
+    public IValueConverter<String> XPar() {
+		return new IValueConverter<String>() {
+
+
+			/**
+			 * Convert string to XLabel.
+			 * 
+			 * @param value
+			 *            the actual parameter
+			 * @return the predicate value by removing the double qoutes
+			 * @see IValueConverter#toString(Object)
+			 */
+	
+
+			@Override
+			public String toValue(String string, INode node) throws ValueConverterException {
+				// TODO Auto-generated method stub
+				return RodinKeyboardCore.translate(string.substring(1, string.length()-1));
+				
+			}
+			//not sure about this 
+			@Override
+			public String toString(String value) throws ValueConverterException {
+				return "\"" + value + "\"";
+				
+			}
+			
+		};
+	}
+	/**
 	 * Returns the value converter for XPredicate.
 	 * 
 	 * @return the value converter for XPredicate.
