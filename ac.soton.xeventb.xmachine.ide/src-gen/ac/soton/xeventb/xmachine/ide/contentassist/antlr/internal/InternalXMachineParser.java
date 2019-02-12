@@ -23,7 +23,7 @@ import java.util.HashMap;
 @SuppressWarnings("all")
 public class InternalXMachineParser extends AbstractInternalContentAssistParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_XLABEL", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'BOOL'", "'FALSE'", "'TRUE'", "'bool'", "'card'", "'dom'", "'finite'", "'id'", "'inter'", "'max'", "'min'", "'mod'", "'pred'", "'prj1'", "'prj2'", "'ran'", "'succ'", "'union'", "'\\u21151'", "'\\u2115'", "'\\u21191'", "'\\u2119'", "'\\u2124'", "'('", "')'", "'\\u21D4'", "'\\u21D2'", "'\\u2227'", "'&'", "'\\u2228'", "'\\u00AC'", "'\\u22A4'", "'\\u22A5'", "'\\u2200'", "'!'", "'\\u2203'", "'#'", "','", "'\\u00B7'", "'.'", "'='", "'\\u2260'", "'\\u2264'", "'<'", "'\\u2265'", "'>'", "'\\u2208'", "':'", "'\\u2209'", "'\\u2282'", "'\\u2284'", "'\\u2286'", "'\\u2288'", "'partition'", "'\\u2194'", "'\\uE100'", "'\\uE101'", "'\\uE102'", "'\\u21F8'", "'\\u2192'", "'\\u2914'", "'\\u21A3'", "'\\u2900'", "'\\u21A0'", "'\\u2916'", "'{'", "'}'", "'\\u21A6'", "'\\u2205'", "'\\u2229'", "'\\u222A'", "'\\u2216'", "'\\u00D7'", "'['", "']'", "'\\uE103'", "'\\u2218'", "';'", "'\\u2297'", "'\\u2225'", "'\\u223C'", "'\\u25C1'", "'\\u2A64'", "'\\u25B7'", "'\\u2A65'", "'\\u03BB'", "'\\u22C3'", "'\\u2223'", "'\\u2025'", "'+'", "'\\u2212'", "'-'", "'\\u2217'", "'*'", "'\\u00F7'", "'/'", "'^'", "'\\\\'", "'in'", "'out'", "'ordinary'", "'convergent'", "'anticipated'", "'machine'", "'end'", "'refines'", "'sees'", "'variables'", "'invariants'", "'variant'", "'events'", "'includes'", "'to'", "'as'", "'group'", "'begin'", "'event'", "'with'", "'when'", "'then'", "'any'", "'where'", "'synchronises'", "'%'", "'\\u22C2'", "'theorem'", "'extended'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_XLABEL", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'BOOL'", "'FALSE'", "'TRUE'", "'bool'", "'card'", "'dom'", "'finite'", "'id'", "'inter'", "'max'", "'min'", "'mod'", "'pred'", "'prj1'", "'prj2'", "'ran'", "'succ'", "'union'", "'\\u21151'", "'\\u2115'", "'\\u21191'", "'\\u2119'", "'\\u2124'", "'('", "')'", "'\\u21D4'", "'\\u21D2'", "'\\u2227'", "'&'", "'\\u2228'", "'\\u00AC'", "'\\u22A4'", "'\\u22A5'", "'\\u2200'", "'!'", "'\\u2203'", "'#'", "','", "'\\u00B7'", "'.'", "'='", "'\\u2260'", "'\\u2264'", "'<'", "'\\u2265'", "'>'", "'\\u2208'", "':'", "'\\u2209'", "'\\u2282'", "'\\u2284'", "'\\u2286'", "'\\u2288'", "'partition'", "'\\u2194'", "'\\uE100'", "'\\uE101'", "'\\uE102'", "'\\u21F8'", "'\\u2192'", "'\\u2914'", "'\\u21A3'", "'\\u2900'", "'\\u21A0'", "'\\u2916'", "'{'", "'}'", "'\\u21A6'", "'\\u2205'", "'\\u2229'", "'\\u222A'", "'\\u2216'", "'\\u00D7'", "'['", "']'", "'\\uE103'", "'\\u2218'", "';'", "'\\u2297'", "'\\u2225'", "'\\u223C'", "'\\u25C1'", "'\\u2A64'", "'\\u25B7'", "'\\u2A65'", "'\\u03BB'", "'\\u22C3'", "'\\u2223'", "'\\u2025'", "'+'", "'\\u2212'", "'-'", "'\\u2217'", "'*'", "'\\u00F7'", "'/'", "'^'", "'\\\\'", "'in'", "'out'", "'ordinary'", "'convergent'", "'anticipated'", "'machine'", "'end'", "'refines'", "'sees'", "'variables'", "'invariants'", "'variants'", "'events'", "'includes'", "'to'", "'as'", "'group'", "'begin'", "'event'", "'any'", "'where'", "'then'", "'with'", "'synchronises'", "'%'", "'\\u22C2'", "'theorem'", "'extends'"
     };
     public static final int T__50=50;
     public static final int T__59=59;
@@ -37,7 +37,6 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
     public static final int T__136=136;
     public static final int T__53=53;
     public static final int T__54=54;
-    public static final int T__138=138;
     public static final int T__133=133;
     public static final int T__132=132;
     public static final int T__60=60;
@@ -1717,23 +1716,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
     // $ANTLR end "ruleXPar"
 
 
-    // $ANTLR start "entryRuleXPredicate"
-    // InternalXMachine.g:503:1: entryRuleXPredicate : ruleXPredicate EOF ;
-    public final void entryRuleXPredicate() throws RecognitionException {
+    // $ANTLR start "entryRuleXFormula"
+    // InternalXMachine.g:503:1: entryRuleXFormula : ruleXFormula EOF ;
+    public final void entryRuleXFormula() throws RecognitionException {
         try {
-            // InternalXMachine.g:504:1: ( ruleXPredicate EOF )
-            // InternalXMachine.g:505:1: ruleXPredicate EOF
+            // InternalXMachine.g:504:1: ( ruleXFormula EOF )
+            // InternalXMachine.g:505:1: ruleXFormula EOF
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXPredicateRule()); 
+               before(grammarAccess.getXFormulaRule()); 
             }
             pushFollow(FOLLOW_1);
-            ruleXPredicate();
+            ruleXFormula();
 
             state._fsp--;
             if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXPredicateRule()); 
+               after(grammarAccess.getXFormulaRule()); 
             }
             match(input,EOF,FOLLOW_2); if (state.failed) return ;
 
@@ -1748,33 +1747,33 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "entryRuleXPredicate"
+    // $ANTLR end "entryRuleXFormula"
 
 
-    // $ANTLR start "ruleXPredicate"
-    // InternalXMachine.g:512:1: ruleXPredicate : ( ( ( rule__XPredicate__Alternatives ) ) ( ( rule__XPredicate__Alternatives )* ) ) ;
-    public final void ruleXPredicate() throws RecognitionException {
+    // $ANTLR start "ruleXFormula"
+    // InternalXMachine.g:512:1: ruleXFormula : ( ( ( rule__XFormula__Alternatives ) ) ( ( rule__XFormula__Alternatives )* ) ) ;
+    public final void ruleXFormula() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:516:2: ( ( ( ( rule__XPredicate__Alternatives ) ) ( ( rule__XPredicate__Alternatives )* ) ) )
-            // InternalXMachine.g:517:2: ( ( ( rule__XPredicate__Alternatives ) ) ( ( rule__XPredicate__Alternatives )* ) )
+            // InternalXMachine.g:516:2: ( ( ( ( rule__XFormula__Alternatives ) ) ( ( rule__XFormula__Alternatives )* ) ) )
+            // InternalXMachine.g:517:2: ( ( ( rule__XFormula__Alternatives ) ) ( ( rule__XFormula__Alternatives )* ) )
             {
-            // InternalXMachine.g:517:2: ( ( ( rule__XPredicate__Alternatives ) ) ( ( rule__XPredicate__Alternatives )* ) )
-            // InternalXMachine.g:518:3: ( ( rule__XPredicate__Alternatives ) ) ( ( rule__XPredicate__Alternatives )* )
+            // InternalXMachine.g:517:2: ( ( ( rule__XFormula__Alternatives ) ) ( ( rule__XFormula__Alternatives )* ) )
+            // InternalXMachine.g:518:3: ( ( rule__XFormula__Alternatives ) ) ( ( rule__XFormula__Alternatives )* )
             {
-            // InternalXMachine.g:518:3: ( ( rule__XPredicate__Alternatives ) )
-            // InternalXMachine.g:519:4: ( rule__XPredicate__Alternatives )
+            // InternalXMachine.g:518:3: ( ( rule__XFormula__Alternatives ) )
+            // InternalXMachine.g:519:4: ( rule__XFormula__Alternatives )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXPredicateAccess().getAlternatives()); 
+               before(grammarAccess.getXFormulaAccess().getAlternatives()); 
             }
-            // InternalXMachine.g:520:4: ( rule__XPredicate__Alternatives )
-            // InternalXMachine.g:520:5: rule__XPredicate__Alternatives
+            // InternalXMachine.g:520:4: ( rule__XFormula__Alternatives )
+            // InternalXMachine.g:520:5: rule__XFormula__Alternatives
             {
             pushFollow(FOLLOW_3);
-            rule__XPredicate__Alternatives();
+            rule__XFormula__Alternatives();
 
             state._fsp--;
             if (state.failed) return ;
@@ -1782,34 +1781,34 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             }
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXPredicateAccess().getAlternatives()); 
+               after(grammarAccess.getXFormulaAccess().getAlternatives()); 
             }
 
             }
 
-            // InternalXMachine.g:523:3: ( ( rule__XPredicate__Alternatives )* )
-            // InternalXMachine.g:524:4: ( rule__XPredicate__Alternatives )*
+            // InternalXMachine.g:523:3: ( ( rule__XFormula__Alternatives )* )
+            // InternalXMachine.g:524:4: ( rule__XFormula__Alternatives )*
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXPredicateAccess().getAlternatives()); 
+               before(grammarAccess.getXFormulaAccess().getAlternatives()); 
             }
-            // InternalXMachine.g:525:4: ( rule__XPredicate__Alternatives )*
+            // InternalXMachine.g:525:4: ( rule__XFormula__Alternatives )*
             loop1:
             do {
                 int alt1=2;
                 int LA1_0 = input.LA(1);
 
-                if ( ((LA1_0>=RULE_ID && LA1_0<=RULE_INT)||(LA1_0>=12 && LA1_0<=109)||LA1_0==135) ) {
+                if ( ((LA1_0>=RULE_ID && LA1_0<=RULE_INT)||(LA1_0>=12 && LA1_0<=109)||LA1_0==134) ) {
                     alt1=1;
                 }
 
 
                 switch (alt1) {
             	case 1 :
-            	    // InternalXMachine.g:525:5: rule__XPredicate__Alternatives
+            	    // InternalXMachine.g:525:5: rule__XFormula__Alternatives
             	    {
             	    pushFollow(FOLLOW_3);
-            	    rule__XPredicate__Alternatives();
+            	    rule__XFormula__Alternatives();
 
             	    state._fsp--;
             	    if (state.failed) return ;
@@ -1823,7 +1822,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             } while (true);
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXPredicateAccess().getAlternatives()); 
+               after(grammarAccess.getXFormulaAccess().getAlternatives()); 
             }
 
             }
@@ -1846,7 +1845,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "ruleXPredicate"
+    // $ANTLR end "ruleXFormula"
 
 
     // $ANTLR start "entryRuleEVENTB_IDENTIFIER_KEYWORD"
@@ -2206,55 +2205,45 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
     // $ANTLR end "ruleXConvergence"
 
 
-    // $ANTLR start "rule__XEvent__Alternatives_6"
-    // InternalXMachine.g:641:1: rule__XEvent__Alternatives_6 : ( ( ( rule__XEvent__Group_6_0__0 ) ) | ( ( rule__XEvent__Group_6_1__0 ) ) | ( ( rule__XEvent__Group_6_2__0 ) ) );
-    public final void rule__XEvent__Alternatives_6() throws RecognitionException {
+    // $ANTLR start "rule__XEvent__Alternatives_4"
+    // InternalXMachine.g:641:1: rule__XEvent__Alternatives_4 : ( ( ( rule__XEvent__Group_4_0__0 ) ) | ( ( rule__XEvent__Group_4_1__0 ) ) );
+    public final void rule__XEvent__Alternatives_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:645:1: ( ( ( rule__XEvent__Group_6_0__0 ) ) | ( ( rule__XEvent__Group_6_1__0 ) ) | ( ( rule__XEvent__Group_6_2__0 ) ) )
-            int alt2=3;
-            switch ( input.LA(1) ) {
-            case 127:
-            case 129:
-                {
+            // InternalXMachine.g:645:1: ( ( ( rule__XEvent__Group_4_0__0 ) ) | ( ( rule__XEvent__Group_4_1__0 ) ) )
+            int alt2=2;
+            int LA2_0 = input.LA(1);
+
+            if ( (LA2_0==117) ) {
                 alt2=1;
-                }
-                break;
-            case 130:
-                {
+            }
+            else if ( (LA2_0==137) ) {
                 alt2=2;
-                }
-                break;
-            case 132:
-                {
-                alt2=3;
-                }
-                break;
-            default:
+            }
+            else {
                 if (state.backtracking>0) {state.failed=true; return ;}
                 NoViableAltException nvae =
                     new NoViableAltException("", 2, 0, input);
 
                 throw nvae;
             }
-
             switch (alt2) {
                 case 1 :
-                    // InternalXMachine.g:646:2: ( ( rule__XEvent__Group_6_0__0 ) )
+                    // InternalXMachine.g:646:2: ( ( rule__XEvent__Group_4_0__0 ) )
                     {
-                    // InternalXMachine.g:646:2: ( ( rule__XEvent__Group_6_0__0 ) )
-                    // InternalXMachine.g:647:3: ( rule__XEvent__Group_6_0__0 )
+                    // InternalXMachine.g:646:2: ( ( rule__XEvent__Group_4_0__0 ) )
+                    // InternalXMachine.g:647:3: ( rule__XEvent__Group_4_0__0 )
                     {
                     if ( state.backtracking==0 ) {
-                       before(grammarAccess.getXEventAccess().getGroup_6_0()); 
+                       before(grammarAccess.getXEventAccess().getGroup_4_0()); 
                     }
-                    // InternalXMachine.g:648:3: ( rule__XEvent__Group_6_0__0 )
-                    // InternalXMachine.g:648:4: rule__XEvent__Group_6_0__0
+                    // InternalXMachine.g:648:3: ( rule__XEvent__Group_4_0__0 )
+                    // InternalXMachine.g:648:4: rule__XEvent__Group_4_0__0
                     {
                     pushFollow(FOLLOW_2);
-                    rule__XEvent__Group_6_0__0();
+                    rule__XEvent__Group_4_0__0();
 
                     state._fsp--;
                     if (state.failed) return ;
@@ -2262,7 +2251,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
 
                     if ( state.backtracking==0 ) {
-                       after(grammarAccess.getXEventAccess().getGroup_6_0()); 
+                       after(grammarAccess.getXEventAccess().getGroup_4_0()); 
                     }
 
                     }
@@ -2271,19 +2260,19 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 2 :
-                    // InternalXMachine.g:652:2: ( ( rule__XEvent__Group_6_1__0 ) )
+                    // InternalXMachine.g:652:2: ( ( rule__XEvent__Group_4_1__0 ) )
                     {
-                    // InternalXMachine.g:652:2: ( ( rule__XEvent__Group_6_1__0 ) )
-                    // InternalXMachine.g:653:3: ( rule__XEvent__Group_6_1__0 )
+                    // InternalXMachine.g:652:2: ( ( rule__XEvent__Group_4_1__0 ) )
+                    // InternalXMachine.g:653:3: ( rule__XEvent__Group_4_1__0 )
                     {
                     if ( state.backtracking==0 ) {
-                       before(grammarAccess.getXEventAccess().getGroup_6_1()); 
+                       before(grammarAccess.getXEventAccess().getGroup_4_1()); 
                     }
-                    // InternalXMachine.g:654:3: ( rule__XEvent__Group_6_1__0 )
-                    // InternalXMachine.g:654:4: rule__XEvent__Group_6_1__0
+                    // InternalXMachine.g:654:3: ( rule__XEvent__Group_4_1__0 )
+                    // InternalXMachine.g:654:4: rule__XEvent__Group_4_1__0
                     {
                     pushFollow(FOLLOW_2);
-                    rule__XEvent__Group_6_1__0();
+                    rule__XEvent__Group_4_1__0();
 
                     state._fsp--;
                     if (state.failed) return ;
@@ -2291,36 +2280,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
 
                     if ( state.backtracking==0 ) {
-                       after(grammarAccess.getXEventAccess().getGroup_6_1()); 
-                    }
-
-                    }
-
-
-                    }
-                    break;
-                case 3 :
-                    // InternalXMachine.g:658:2: ( ( rule__XEvent__Group_6_2__0 ) )
-                    {
-                    // InternalXMachine.g:658:2: ( ( rule__XEvent__Group_6_2__0 ) )
-                    // InternalXMachine.g:659:3: ( rule__XEvent__Group_6_2__0 )
-                    {
-                    if ( state.backtracking==0 ) {
-                       before(grammarAccess.getXEventAccess().getGroup_6_2()); 
-                    }
-                    // InternalXMachine.g:660:3: ( rule__XEvent__Group_6_2__0 )
-                    // InternalXMachine.g:660:4: rule__XEvent__Group_6_2__0
-                    {
-                    pushFollow(FOLLOW_2);
-                    rule__XEvent__Group_6_2__0();
-
-                    state._fsp--;
-                    if (state.failed) return ;
-
-                    }
-
-                    if ( state.backtracking==0 ) {
-                       after(grammarAccess.getXEventAccess().getGroup_6_2()); 
+                       after(grammarAccess.getXEventAccess().getGroup_4_1()); 
                     }
 
                     }
@@ -2342,27 +2302,27 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__XEvent__Alternatives_6"
+    // $ANTLR end "rule__XEvent__Alternatives_4"
 
 
     // $ANTLR start "rule__XGroupOrEvent__Alternatives"
-    // InternalXMachine.g:668:1: rule__XGroupOrEvent__Alternatives : ( ( ruleGroupSync ) | ( ruleEventSync ) );
+    // InternalXMachine.g:662:1: rule__XGroupOrEvent__Alternatives : ( ( ruleGroupSync ) | ( ruleEventSync ) );
     public final void rule__XGroupOrEvent__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:672:1: ( ( ruleGroupSync ) | ( ruleEventSync ) )
+            // InternalXMachine.g:666:1: ( ( ruleGroupSync ) | ( ruleEventSync ) )
             int alt3=2;
             int LA3_0 = input.LA(1);
 
-            if ( (LA3_0==134) ) {
+            if ( (LA3_0==133) ) {
                 int LA3_1 = input.LA(2);
 
-                if ( (LA3_1==126) ) {
+                if ( (LA3_1==RULE_ID) ) {
                     alt3=1;
                 }
-                else if ( (LA3_1==RULE_ID) ) {
+                else if ( (LA3_1==128) ) {
                     alt3=2;
                 }
                 else {
@@ -2382,10 +2342,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             }
             switch (alt3) {
                 case 1 :
-                    // InternalXMachine.g:673:2: ( ruleGroupSync )
+                    // InternalXMachine.g:667:2: ( ruleGroupSync )
                     {
-                    // InternalXMachine.g:673:2: ( ruleGroupSync )
-                    // InternalXMachine.g:674:3: ruleGroupSync
+                    // InternalXMachine.g:667:2: ( ruleGroupSync )
+                    // InternalXMachine.g:668:3: ruleGroupSync
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getXGroupOrEventAccess().getGroupSyncParserRuleCall_0()); 
@@ -2405,10 +2365,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 2 :
-                    // InternalXMachine.g:679:2: ( ruleEventSync )
+                    // InternalXMachine.g:673:2: ( ruleEventSync )
                     {
-                    // InternalXMachine.g:679:2: ( ruleEventSync )
-                    // InternalXMachine.g:680:3: ruleEventSync
+                    // InternalXMachine.g:673:2: ( ruleEventSync )
+                    // InternalXMachine.g:674:3: ruleEventSync
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getXGroupOrEventAccess().getEventSyncParserRuleCall_1()); 
@@ -2444,14 +2404,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
     // $ANTLR end "rule__XGroupOrEvent__Alternatives"
 
 
-    // $ANTLR start "rule__XPredicate__Alternatives"
-    // InternalXMachine.g:689:1: rule__XPredicate__Alternatives : ( ( ruleEVENTB_IDENTIFIER_KEYWORD ) | ( ruleEVENTB_PREDICATE_SYMBOLS ) | ( ruleEVENTB_EXPRESSION_SYMBOLS ) | ( RULE_ID ) | ( RULE_INT ) );
-    public final void rule__XPredicate__Alternatives() throws RecognitionException {
+    // $ANTLR start "rule__XFormula__Alternatives"
+    // InternalXMachine.g:683:1: rule__XFormula__Alternatives : ( ( ruleEVENTB_IDENTIFIER_KEYWORD ) | ( ruleEVENTB_PREDICATE_SYMBOLS ) | ( ruleEVENTB_EXPRESSION_SYMBOLS ) | ( RULE_ID ) | ( RULE_INT ) );
+    public final void rule__XFormula__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:693:1: ( ( ruleEVENTB_IDENTIFIER_KEYWORD ) | ( ruleEVENTB_PREDICATE_SYMBOLS ) | ( ruleEVENTB_EXPRESSION_SYMBOLS ) | ( RULE_ID ) | ( RULE_INT ) )
+            // InternalXMachine.g:687:1: ( ( ruleEVENTB_IDENTIFIER_KEYWORD ) | ( ruleEVENTB_PREDICATE_SYMBOLS ) | ( ruleEVENTB_EXPRESSION_SYMBOLS ) | ( RULE_ID ) | ( RULE_INT ) )
             int alt4=5;
             switch ( input.LA(1) ) {
             case 12:
@@ -2560,7 +2520,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             case 107:
             case 108:
             case 109:
-            case 135:
+            case 134:
                 {
                 alt4=3;
                 }
@@ -2585,13 +2545,13 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
             switch (alt4) {
                 case 1 :
-                    // InternalXMachine.g:694:2: ( ruleEVENTB_IDENTIFIER_KEYWORD )
+                    // InternalXMachine.g:688:2: ( ruleEVENTB_IDENTIFIER_KEYWORD )
                     {
-                    // InternalXMachine.g:694:2: ( ruleEVENTB_IDENTIFIER_KEYWORD )
-                    // InternalXMachine.g:695:3: ruleEVENTB_IDENTIFIER_KEYWORD
+                    // InternalXMachine.g:688:2: ( ruleEVENTB_IDENTIFIER_KEYWORD )
+                    // InternalXMachine.g:689:3: ruleEVENTB_IDENTIFIER_KEYWORD
                     {
                     if ( state.backtracking==0 ) {
-                       before(grammarAccess.getXPredicateAccess().getEVENTB_IDENTIFIER_KEYWORDParserRuleCall_0()); 
+                       before(grammarAccess.getXFormulaAccess().getEVENTB_IDENTIFIER_KEYWORDParserRuleCall_0()); 
                     }
                     pushFollow(FOLLOW_2);
                     ruleEVENTB_IDENTIFIER_KEYWORD();
@@ -2599,7 +2559,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     state._fsp--;
                     if (state.failed) return ;
                     if ( state.backtracking==0 ) {
-                       after(grammarAccess.getXPredicateAccess().getEVENTB_IDENTIFIER_KEYWORDParserRuleCall_0()); 
+                       after(grammarAccess.getXFormulaAccess().getEVENTB_IDENTIFIER_KEYWORDParserRuleCall_0()); 
                     }
 
                     }
@@ -2608,13 +2568,13 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 2 :
-                    // InternalXMachine.g:700:2: ( ruleEVENTB_PREDICATE_SYMBOLS )
+                    // InternalXMachine.g:694:2: ( ruleEVENTB_PREDICATE_SYMBOLS )
                     {
-                    // InternalXMachine.g:700:2: ( ruleEVENTB_PREDICATE_SYMBOLS )
-                    // InternalXMachine.g:701:3: ruleEVENTB_PREDICATE_SYMBOLS
+                    // InternalXMachine.g:694:2: ( ruleEVENTB_PREDICATE_SYMBOLS )
+                    // InternalXMachine.g:695:3: ruleEVENTB_PREDICATE_SYMBOLS
                     {
                     if ( state.backtracking==0 ) {
-                       before(grammarAccess.getXPredicateAccess().getEVENTB_PREDICATE_SYMBOLSParserRuleCall_1()); 
+                       before(grammarAccess.getXFormulaAccess().getEVENTB_PREDICATE_SYMBOLSParserRuleCall_1()); 
                     }
                     pushFollow(FOLLOW_2);
                     ruleEVENTB_PREDICATE_SYMBOLS();
@@ -2622,7 +2582,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     state._fsp--;
                     if (state.failed) return ;
                     if ( state.backtracking==0 ) {
-                       after(grammarAccess.getXPredicateAccess().getEVENTB_PREDICATE_SYMBOLSParserRuleCall_1()); 
+                       after(grammarAccess.getXFormulaAccess().getEVENTB_PREDICATE_SYMBOLSParserRuleCall_1()); 
                     }
 
                     }
@@ -2631,13 +2591,13 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 3 :
-                    // InternalXMachine.g:706:2: ( ruleEVENTB_EXPRESSION_SYMBOLS )
+                    // InternalXMachine.g:700:2: ( ruleEVENTB_EXPRESSION_SYMBOLS )
                     {
-                    // InternalXMachine.g:706:2: ( ruleEVENTB_EXPRESSION_SYMBOLS )
-                    // InternalXMachine.g:707:3: ruleEVENTB_EXPRESSION_SYMBOLS
+                    // InternalXMachine.g:700:2: ( ruleEVENTB_EXPRESSION_SYMBOLS )
+                    // InternalXMachine.g:701:3: ruleEVENTB_EXPRESSION_SYMBOLS
                     {
                     if ( state.backtracking==0 ) {
-                       before(grammarAccess.getXPredicateAccess().getEVENTB_EXPRESSION_SYMBOLSParserRuleCall_2()); 
+                       before(grammarAccess.getXFormulaAccess().getEVENTB_EXPRESSION_SYMBOLSParserRuleCall_2()); 
                     }
                     pushFollow(FOLLOW_2);
                     ruleEVENTB_EXPRESSION_SYMBOLS();
@@ -2645,7 +2605,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     state._fsp--;
                     if (state.failed) return ;
                     if ( state.backtracking==0 ) {
-                       after(grammarAccess.getXPredicateAccess().getEVENTB_EXPRESSION_SYMBOLSParserRuleCall_2()); 
+                       after(grammarAccess.getXFormulaAccess().getEVENTB_EXPRESSION_SYMBOLSParserRuleCall_2()); 
                     }
 
                     }
@@ -2654,17 +2614,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 4 :
-                    // InternalXMachine.g:712:2: ( RULE_ID )
+                    // InternalXMachine.g:706:2: ( RULE_ID )
                     {
-                    // InternalXMachine.g:712:2: ( RULE_ID )
-                    // InternalXMachine.g:713:3: RULE_ID
+                    // InternalXMachine.g:706:2: ( RULE_ID )
+                    // InternalXMachine.g:707:3: RULE_ID
                     {
                     if ( state.backtracking==0 ) {
-                       before(grammarAccess.getXPredicateAccess().getIDTerminalRuleCall_3()); 
+                       before(grammarAccess.getXFormulaAccess().getIDTerminalRuleCall_3()); 
                     }
                     match(input,RULE_ID,FOLLOW_2); if (state.failed) return ;
                     if ( state.backtracking==0 ) {
-                       after(grammarAccess.getXPredicateAccess().getIDTerminalRuleCall_3()); 
+                       after(grammarAccess.getXFormulaAccess().getIDTerminalRuleCall_3()); 
                     }
 
                     }
@@ -2673,17 +2633,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 5 :
-                    // InternalXMachine.g:718:2: ( RULE_INT )
+                    // InternalXMachine.g:712:2: ( RULE_INT )
                     {
-                    // InternalXMachine.g:718:2: ( RULE_INT )
-                    // InternalXMachine.g:719:3: RULE_INT
+                    // InternalXMachine.g:712:2: ( RULE_INT )
+                    // InternalXMachine.g:713:3: RULE_INT
                     {
                     if ( state.backtracking==0 ) {
-                       before(grammarAccess.getXPredicateAccess().getINTTerminalRuleCall_4()); 
+                       before(grammarAccess.getXFormulaAccess().getINTTerminalRuleCall_4()); 
                     }
                     match(input,RULE_INT,FOLLOW_2); if (state.failed) return ;
                     if ( state.backtracking==0 ) {
-                       after(grammarAccess.getXPredicateAccess().getINTTerminalRuleCall_4()); 
+                       after(grammarAccess.getXFormulaAccess().getINTTerminalRuleCall_4()); 
                     }
 
                     }
@@ -2705,17 +2665,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__XPredicate__Alternatives"
+    // $ANTLR end "rule__XFormula__Alternatives"
 
 
     // $ANTLR start "rule__EVENTB_IDENTIFIER_KEYWORD__Alternatives"
-    // InternalXMachine.g:728:1: rule__EVENTB_IDENTIFIER_KEYWORD__Alternatives : ( ( 'BOOL' ) | ( 'FALSE' ) | ( 'TRUE' ) | ( 'bool' ) | ( 'card' ) | ( 'dom' ) | ( 'finite' ) | ( 'id' ) | ( 'inter' ) | ( 'max' ) | ( 'min' ) | ( 'mod' ) | ( 'pred' ) | ( 'prj1' ) | ( 'prj2' ) | ( 'ran' ) | ( 'succ' ) | ( 'union' ) | ( '\\u21151' ) | ( '\\u2115' ) | ( '\\u21191' ) | ( '\\u2119' ) | ( '\\u2124' ) );
+    // InternalXMachine.g:722:1: rule__EVENTB_IDENTIFIER_KEYWORD__Alternatives : ( ( 'BOOL' ) | ( 'FALSE' ) | ( 'TRUE' ) | ( 'bool' ) | ( 'card' ) | ( 'dom' ) | ( 'finite' ) | ( 'id' ) | ( 'inter' ) | ( 'max' ) | ( 'min' ) | ( 'mod' ) | ( 'pred' ) | ( 'prj1' ) | ( 'prj2' ) | ( 'ran' ) | ( 'succ' ) | ( 'union' ) | ( '\\u21151' ) | ( '\\u2115' ) | ( '\\u21191' ) | ( '\\u2119' ) | ( '\\u2124' ) );
     public final void rule__EVENTB_IDENTIFIER_KEYWORD__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:732:1: ( ( 'BOOL' ) | ( 'FALSE' ) | ( 'TRUE' ) | ( 'bool' ) | ( 'card' ) | ( 'dom' ) | ( 'finite' ) | ( 'id' ) | ( 'inter' ) | ( 'max' ) | ( 'min' ) | ( 'mod' ) | ( 'pred' ) | ( 'prj1' ) | ( 'prj2' ) | ( 'ran' ) | ( 'succ' ) | ( 'union' ) | ( '\\u21151' ) | ( '\\u2115' ) | ( '\\u21191' ) | ( '\\u2119' ) | ( '\\u2124' ) )
+            // InternalXMachine.g:726:1: ( ( 'BOOL' ) | ( 'FALSE' ) | ( 'TRUE' ) | ( 'bool' ) | ( 'card' ) | ( 'dom' ) | ( 'finite' ) | ( 'id' ) | ( 'inter' ) | ( 'max' ) | ( 'min' ) | ( 'mod' ) | ( 'pred' ) | ( 'prj1' ) | ( 'prj2' ) | ( 'ran' ) | ( 'succ' ) | ( 'union' ) | ( '\\u21151' ) | ( '\\u2115' ) | ( '\\u21191' ) | ( '\\u2119' ) | ( '\\u2124' ) )
             int alt5=23;
             switch ( input.LA(1) ) {
             case 12:
@@ -2843,10 +2803,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
             switch (alt5) {
                 case 1 :
-                    // InternalXMachine.g:733:2: ( 'BOOL' )
+                    // InternalXMachine.g:727:2: ( 'BOOL' )
                     {
-                    // InternalXMachine.g:733:2: ( 'BOOL' )
-                    // InternalXMachine.g:734:3: 'BOOL'
+                    // InternalXMachine.g:727:2: ( 'BOOL' )
+                    // InternalXMachine.g:728:3: 'BOOL'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_IDENTIFIER_KEYWORDAccess().getBOOLKeyword_0()); 
@@ -2862,10 +2822,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 2 :
-                    // InternalXMachine.g:739:2: ( 'FALSE' )
+                    // InternalXMachine.g:733:2: ( 'FALSE' )
                     {
-                    // InternalXMachine.g:739:2: ( 'FALSE' )
-                    // InternalXMachine.g:740:3: 'FALSE'
+                    // InternalXMachine.g:733:2: ( 'FALSE' )
+                    // InternalXMachine.g:734:3: 'FALSE'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_IDENTIFIER_KEYWORDAccess().getFALSEKeyword_1()); 
@@ -2881,10 +2841,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 3 :
-                    // InternalXMachine.g:745:2: ( 'TRUE' )
+                    // InternalXMachine.g:739:2: ( 'TRUE' )
                     {
-                    // InternalXMachine.g:745:2: ( 'TRUE' )
-                    // InternalXMachine.g:746:3: 'TRUE'
+                    // InternalXMachine.g:739:2: ( 'TRUE' )
+                    // InternalXMachine.g:740:3: 'TRUE'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_IDENTIFIER_KEYWORDAccess().getTRUEKeyword_2()); 
@@ -2900,10 +2860,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 4 :
-                    // InternalXMachine.g:751:2: ( 'bool' )
+                    // InternalXMachine.g:745:2: ( 'bool' )
                     {
-                    // InternalXMachine.g:751:2: ( 'bool' )
-                    // InternalXMachine.g:752:3: 'bool'
+                    // InternalXMachine.g:745:2: ( 'bool' )
+                    // InternalXMachine.g:746:3: 'bool'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_IDENTIFIER_KEYWORDAccess().getBoolKeyword_3()); 
@@ -2919,10 +2879,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 5 :
-                    // InternalXMachine.g:757:2: ( 'card' )
+                    // InternalXMachine.g:751:2: ( 'card' )
                     {
-                    // InternalXMachine.g:757:2: ( 'card' )
-                    // InternalXMachine.g:758:3: 'card'
+                    // InternalXMachine.g:751:2: ( 'card' )
+                    // InternalXMachine.g:752:3: 'card'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_IDENTIFIER_KEYWORDAccess().getCardKeyword_4()); 
@@ -2938,10 +2898,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 6 :
-                    // InternalXMachine.g:763:2: ( 'dom' )
+                    // InternalXMachine.g:757:2: ( 'dom' )
                     {
-                    // InternalXMachine.g:763:2: ( 'dom' )
-                    // InternalXMachine.g:764:3: 'dom'
+                    // InternalXMachine.g:757:2: ( 'dom' )
+                    // InternalXMachine.g:758:3: 'dom'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_IDENTIFIER_KEYWORDAccess().getDomKeyword_5()); 
@@ -2957,10 +2917,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 7 :
-                    // InternalXMachine.g:769:2: ( 'finite' )
+                    // InternalXMachine.g:763:2: ( 'finite' )
                     {
-                    // InternalXMachine.g:769:2: ( 'finite' )
-                    // InternalXMachine.g:770:3: 'finite'
+                    // InternalXMachine.g:763:2: ( 'finite' )
+                    // InternalXMachine.g:764:3: 'finite'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_IDENTIFIER_KEYWORDAccess().getFiniteKeyword_6()); 
@@ -2976,10 +2936,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 8 :
-                    // InternalXMachine.g:775:2: ( 'id' )
+                    // InternalXMachine.g:769:2: ( 'id' )
                     {
-                    // InternalXMachine.g:775:2: ( 'id' )
-                    // InternalXMachine.g:776:3: 'id'
+                    // InternalXMachine.g:769:2: ( 'id' )
+                    // InternalXMachine.g:770:3: 'id'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_IDENTIFIER_KEYWORDAccess().getIdKeyword_7()); 
@@ -2995,10 +2955,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 9 :
-                    // InternalXMachine.g:781:2: ( 'inter' )
+                    // InternalXMachine.g:775:2: ( 'inter' )
                     {
-                    // InternalXMachine.g:781:2: ( 'inter' )
-                    // InternalXMachine.g:782:3: 'inter'
+                    // InternalXMachine.g:775:2: ( 'inter' )
+                    // InternalXMachine.g:776:3: 'inter'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_IDENTIFIER_KEYWORDAccess().getInterKeyword_8()); 
@@ -3014,10 +2974,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 10 :
-                    // InternalXMachine.g:787:2: ( 'max' )
+                    // InternalXMachine.g:781:2: ( 'max' )
                     {
-                    // InternalXMachine.g:787:2: ( 'max' )
-                    // InternalXMachine.g:788:3: 'max'
+                    // InternalXMachine.g:781:2: ( 'max' )
+                    // InternalXMachine.g:782:3: 'max'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_IDENTIFIER_KEYWORDAccess().getMaxKeyword_9()); 
@@ -3033,10 +2993,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 11 :
-                    // InternalXMachine.g:793:2: ( 'min' )
+                    // InternalXMachine.g:787:2: ( 'min' )
                     {
-                    // InternalXMachine.g:793:2: ( 'min' )
-                    // InternalXMachine.g:794:3: 'min'
+                    // InternalXMachine.g:787:2: ( 'min' )
+                    // InternalXMachine.g:788:3: 'min'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_IDENTIFIER_KEYWORDAccess().getMinKeyword_10()); 
@@ -3052,10 +3012,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 12 :
-                    // InternalXMachine.g:799:2: ( 'mod' )
+                    // InternalXMachine.g:793:2: ( 'mod' )
                     {
-                    // InternalXMachine.g:799:2: ( 'mod' )
-                    // InternalXMachine.g:800:3: 'mod'
+                    // InternalXMachine.g:793:2: ( 'mod' )
+                    // InternalXMachine.g:794:3: 'mod'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_IDENTIFIER_KEYWORDAccess().getModKeyword_11()); 
@@ -3071,10 +3031,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 13 :
-                    // InternalXMachine.g:805:2: ( 'pred' )
+                    // InternalXMachine.g:799:2: ( 'pred' )
                     {
-                    // InternalXMachine.g:805:2: ( 'pred' )
-                    // InternalXMachine.g:806:3: 'pred'
+                    // InternalXMachine.g:799:2: ( 'pred' )
+                    // InternalXMachine.g:800:3: 'pred'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_IDENTIFIER_KEYWORDAccess().getPredKeyword_12()); 
@@ -3090,10 +3050,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 14 :
-                    // InternalXMachine.g:811:2: ( 'prj1' )
+                    // InternalXMachine.g:805:2: ( 'prj1' )
                     {
-                    // InternalXMachine.g:811:2: ( 'prj1' )
-                    // InternalXMachine.g:812:3: 'prj1'
+                    // InternalXMachine.g:805:2: ( 'prj1' )
+                    // InternalXMachine.g:806:3: 'prj1'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_IDENTIFIER_KEYWORDAccess().getPrj1Keyword_13()); 
@@ -3109,10 +3069,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 15 :
-                    // InternalXMachine.g:817:2: ( 'prj2' )
+                    // InternalXMachine.g:811:2: ( 'prj2' )
                     {
-                    // InternalXMachine.g:817:2: ( 'prj2' )
-                    // InternalXMachine.g:818:3: 'prj2'
+                    // InternalXMachine.g:811:2: ( 'prj2' )
+                    // InternalXMachine.g:812:3: 'prj2'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_IDENTIFIER_KEYWORDAccess().getPrj2Keyword_14()); 
@@ -3128,10 +3088,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 16 :
-                    // InternalXMachine.g:823:2: ( 'ran' )
+                    // InternalXMachine.g:817:2: ( 'ran' )
                     {
-                    // InternalXMachine.g:823:2: ( 'ran' )
-                    // InternalXMachine.g:824:3: 'ran'
+                    // InternalXMachine.g:817:2: ( 'ran' )
+                    // InternalXMachine.g:818:3: 'ran'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_IDENTIFIER_KEYWORDAccess().getRanKeyword_15()); 
@@ -3147,10 +3107,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 17 :
-                    // InternalXMachine.g:829:2: ( 'succ' )
+                    // InternalXMachine.g:823:2: ( 'succ' )
                     {
-                    // InternalXMachine.g:829:2: ( 'succ' )
-                    // InternalXMachine.g:830:3: 'succ'
+                    // InternalXMachine.g:823:2: ( 'succ' )
+                    // InternalXMachine.g:824:3: 'succ'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_IDENTIFIER_KEYWORDAccess().getSuccKeyword_16()); 
@@ -3166,10 +3126,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 18 :
-                    // InternalXMachine.g:835:2: ( 'union' )
+                    // InternalXMachine.g:829:2: ( 'union' )
                     {
-                    // InternalXMachine.g:835:2: ( 'union' )
-                    // InternalXMachine.g:836:3: 'union'
+                    // InternalXMachine.g:829:2: ( 'union' )
+                    // InternalXMachine.g:830:3: 'union'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_IDENTIFIER_KEYWORDAccess().getUnionKeyword_17()); 
@@ -3185,10 +3145,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 19 :
-                    // InternalXMachine.g:841:2: ( '\\u21151' )
+                    // InternalXMachine.g:835:2: ( '\\u21151' )
                     {
-                    // InternalXMachine.g:841:2: ( '\\u21151' )
-                    // InternalXMachine.g:842:3: '\\u21151'
+                    // InternalXMachine.g:835:2: ( '\\u21151' )
+                    // InternalXMachine.g:836:3: '\\u21151'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_IDENTIFIER_KEYWORDAccess().getDoubleStruckCapitalNDigitOneKeyword_18()); 
@@ -3204,10 +3164,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 20 :
-                    // InternalXMachine.g:847:2: ( '\\u2115' )
+                    // InternalXMachine.g:841:2: ( '\\u2115' )
                     {
-                    // InternalXMachine.g:847:2: ( '\\u2115' )
-                    // InternalXMachine.g:848:3: '\\u2115'
+                    // InternalXMachine.g:841:2: ( '\\u2115' )
+                    // InternalXMachine.g:842:3: '\\u2115'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_IDENTIFIER_KEYWORDAccess().getDoubleStruckCapitalNKeyword_19()); 
@@ -3223,10 +3183,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 21 :
-                    // InternalXMachine.g:853:2: ( '\\u21191' )
+                    // InternalXMachine.g:847:2: ( '\\u21191' )
                     {
-                    // InternalXMachine.g:853:2: ( '\\u21191' )
-                    // InternalXMachine.g:854:3: '\\u21191'
+                    // InternalXMachine.g:847:2: ( '\\u21191' )
+                    // InternalXMachine.g:848:3: '\\u21191'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_IDENTIFIER_KEYWORDAccess().getDoubleStruckCapitalPDigitOneKeyword_20()); 
@@ -3242,10 +3202,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 22 :
-                    // InternalXMachine.g:859:2: ( '\\u2119' )
+                    // InternalXMachine.g:853:2: ( '\\u2119' )
                     {
-                    // InternalXMachine.g:859:2: ( '\\u2119' )
-                    // InternalXMachine.g:860:3: '\\u2119'
+                    // InternalXMachine.g:853:2: ( '\\u2119' )
+                    // InternalXMachine.g:854:3: '\\u2119'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_IDENTIFIER_KEYWORDAccess().getDoubleStruckCapitalPKeyword_21()); 
@@ -3261,10 +3221,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 23 :
-                    // InternalXMachine.g:865:2: ( '\\u2124' )
+                    // InternalXMachine.g:859:2: ( '\\u2124' )
                     {
-                    // InternalXMachine.g:865:2: ( '\\u2124' )
-                    // InternalXMachine.g:866:3: '\\u2124'
+                    // InternalXMachine.g:859:2: ( '\\u2124' )
+                    // InternalXMachine.g:860:3: '\\u2124'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_IDENTIFIER_KEYWORDAccess().getDoubleStruckCapitalZKeyword_22()); 
@@ -3297,13 +3257,13 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__EVENTB_PREDICATE_SYMBOLS__Alternatives"
-    // InternalXMachine.g:875:1: rule__EVENTB_PREDICATE_SYMBOLS__Alternatives : ( ( '(' ) | ( ')' ) | ( '\\u21D4' ) | ( '\\u21D2' ) | ( '\\u2227' ) | ( '&' ) | ( '\\u2228' ) | ( '\\u00AC' ) | ( '\\u22A4' ) | ( '\\u22A5' ) | ( '\\u2200' ) | ( '!' ) | ( '\\u2203' ) | ( '#' ) | ( ',' ) | ( '\\u00B7' ) | ( '.' ) | ( '=' ) | ( '\\u2260' ) | ( '\\u2264' ) | ( '<' ) | ( '\\u2265' ) | ( '>' ) | ( '\\u2208' ) | ( ':' ) | ( '\\u2209' ) | ( '\\u2282' ) | ( '\\u2284' ) | ( '\\u2286' ) | ( '\\u2288' ) | ( 'partition' ) );
+    // InternalXMachine.g:869:1: rule__EVENTB_PREDICATE_SYMBOLS__Alternatives : ( ( '(' ) | ( ')' ) | ( '\\u21D4' ) | ( '\\u21D2' ) | ( '\\u2227' ) | ( '&' ) | ( '\\u2228' ) | ( '\\u00AC' ) | ( '\\u22A4' ) | ( '\\u22A5' ) | ( '\\u2200' ) | ( '!' ) | ( '\\u2203' ) | ( '#' ) | ( ',' ) | ( '\\u00B7' ) | ( '.' ) | ( '=' ) | ( '\\u2260' ) | ( '\\u2264' ) | ( '<' ) | ( '\\u2265' ) | ( '>' ) | ( '\\u2208' ) | ( ':' ) | ( '\\u2209' ) | ( '\\u2282' ) | ( '\\u2284' ) | ( '\\u2286' ) | ( '\\u2288' ) | ( 'partition' ) );
     public final void rule__EVENTB_PREDICATE_SYMBOLS__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:879:1: ( ( '(' ) | ( ')' ) | ( '\\u21D4' ) | ( '\\u21D2' ) | ( '\\u2227' ) | ( '&' ) | ( '\\u2228' ) | ( '\\u00AC' ) | ( '\\u22A4' ) | ( '\\u22A5' ) | ( '\\u2200' ) | ( '!' ) | ( '\\u2203' ) | ( '#' ) | ( ',' ) | ( '\\u00B7' ) | ( '.' ) | ( '=' ) | ( '\\u2260' ) | ( '\\u2264' ) | ( '<' ) | ( '\\u2265' ) | ( '>' ) | ( '\\u2208' ) | ( ':' ) | ( '\\u2209' ) | ( '\\u2282' ) | ( '\\u2284' ) | ( '\\u2286' ) | ( '\\u2288' ) | ( 'partition' ) )
+            // InternalXMachine.g:873:1: ( ( '(' ) | ( ')' ) | ( '\\u21D4' ) | ( '\\u21D2' ) | ( '\\u2227' ) | ( '&' ) | ( '\\u2228' ) | ( '\\u00AC' ) | ( '\\u22A4' ) | ( '\\u22A5' ) | ( '\\u2200' ) | ( '!' ) | ( '\\u2203' ) | ( '#' ) | ( ',' ) | ( '\\u00B7' ) | ( '.' ) | ( '=' ) | ( '\\u2260' ) | ( '\\u2264' ) | ( '<' ) | ( '\\u2265' ) | ( '>' ) | ( '\\u2208' ) | ( ':' ) | ( '\\u2209' ) | ( '\\u2282' ) | ( '\\u2284' ) | ( '\\u2286' ) | ( '\\u2288' ) | ( 'partition' ) )
             int alt6=31;
             switch ( input.LA(1) ) {
             case 35:
@@ -3471,10 +3431,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
             switch (alt6) {
                 case 1 :
-                    // InternalXMachine.g:880:2: ( '(' )
+                    // InternalXMachine.g:874:2: ( '(' )
                     {
-                    // InternalXMachine.g:880:2: ( '(' )
-                    // InternalXMachine.g:881:3: '('
+                    // InternalXMachine.g:874:2: ( '(' )
+                    // InternalXMachine.g:875:3: '('
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_PREDICATE_SYMBOLSAccess().getLeftParenthesisKeyword_0()); 
@@ -3490,10 +3450,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 2 :
-                    // InternalXMachine.g:886:2: ( ')' )
+                    // InternalXMachine.g:880:2: ( ')' )
                     {
-                    // InternalXMachine.g:886:2: ( ')' )
-                    // InternalXMachine.g:887:3: ')'
+                    // InternalXMachine.g:880:2: ( ')' )
+                    // InternalXMachine.g:881:3: ')'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_PREDICATE_SYMBOLSAccess().getRightParenthesisKeyword_1()); 
@@ -3509,10 +3469,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 3 :
-                    // InternalXMachine.g:892:2: ( '\\u21D4' )
+                    // InternalXMachine.g:886:2: ( '\\u21D4' )
                     {
-                    // InternalXMachine.g:892:2: ( '\\u21D4' )
-                    // InternalXMachine.g:893:3: '\\u21D4'
+                    // InternalXMachine.g:886:2: ( '\\u21D4' )
+                    // InternalXMachine.g:887:3: '\\u21D4'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_PREDICATE_SYMBOLSAccess().getLeftRightDoubleArrowKeyword_2()); 
@@ -3528,10 +3488,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 4 :
-                    // InternalXMachine.g:898:2: ( '\\u21D2' )
+                    // InternalXMachine.g:892:2: ( '\\u21D2' )
                     {
-                    // InternalXMachine.g:898:2: ( '\\u21D2' )
-                    // InternalXMachine.g:899:3: '\\u21D2'
+                    // InternalXMachine.g:892:2: ( '\\u21D2' )
+                    // InternalXMachine.g:893:3: '\\u21D2'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_PREDICATE_SYMBOLSAccess().getRightwardsDoubleArrowKeyword_3()); 
@@ -3547,10 +3507,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 5 :
-                    // InternalXMachine.g:904:2: ( '\\u2227' )
+                    // InternalXMachine.g:898:2: ( '\\u2227' )
                     {
-                    // InternalXMachine.g:904:2: ( '\\u2227' )
-                    // InternalXMachine.g:905:3: '\\u2227'
+                    // InternalXMachine.g:898:2: ( '\\u2227' )
+                    // InternalXMachine.g:899:3: '\\u2227'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_PREDICATE_SYMBOLSAccess().getLogicalAndKeyword_4()); 
@@ -3566,10 +3526,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 6 :
-                    // InternalXMachine.g:910:2: ( '&' )
+                    // InternalXMachine.g:904:2: ( '&' )
                     {
-                    // InternalXMachine.g:910:2: ( '&' )
-                    // InternalXMachine.g:911:3: '&'
+                    // InternalXMachine.g:904:2: ( '&' )
+                    // InternalXMachine.g:905:3: '&'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_PREDICATE_SYMBOLSAccess().getAmpersandKeyword_5()); 
@@ -3585,10 +3545,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 7 :
-                    // InternalXMachine.g:916:2: ( '\\u2228' )
+                    // InternalXMachine.g:910:2: ( '\\u2228' )
                     {
-                    // InternalXMachine.g:916:2: ( '\\u2228' )
-                    // InternalXMachine.g:917:3: '\\u2228'
+                    // InternalXMachine.g:910:2: ( '\\u2228' )
+                    // InternalXMachine.g:911:3: '\\u2228'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_PREDICATE_SYMBOLSAccess().getLogicalOrKeyword_6()); 
@@ -3604,10 +3564,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 8 :
-                    // InternalXMachine.g:922:2: ( '\\u00AC' )
+                    // InternalXMachine.g:916:2: ( '\\u00AC' )
                     {
-                    // InternalXMachine.g:922:2: ( '\\u00AC' )
-                    // InternalXMachine.g:923:3: '\\u00AC'
+                    // InternalXMachine.g:916:2: ( '\\u00AC' )
+                    // InternalXMachine.g:917:3: '\\u00AC'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_PREDICATE_SYMBOLSAccess().getNotSignKeyword_7()); 
@@ -3623,10 +3583,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 9 :
-                    // InternalXMachine.g:928:2: ( '\\u22A4' )
+                    // InternalXMachine.g:922:2: ( '\\u22A4' )
                     {
-                    // InternalXMachine.g:928:2: ( '\\u22A4' )
-                    // InternalXMachine.g:929:3: '\\u22A4'
+                    // InternalXMachine.g:922:2: ( '\\u22A4' )
+                    // InternalXMachine.g:923:3: '\\u22A4'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_PREDICATE_SYMBOLSAccess().getDownTackKeyword_8()); 
@@ -3642,10 +3602,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 10 :
-                    // InternalXMachine.g:934:2: ( '\\u22A5' )
+                    // InternalXMachine.g:928:2: ( '\\u22A5' )
                     {
-                    // InternalXMachine.g:934:2: ( '\\u22A5' )
-                    // InternalXMachine.g:935:3: '\\u22A5'
+                    // InternalXMachine.g:928:2: ( '\\u22A5' )
+                    // InternalXMachine.g:929:3: '\\u22A5'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_PREDICATE_SYMBOLSAccess().getUpTackKeyword_9()); 
@@ -3661,10 +3621,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 11 :
-                    // InternalXMachine.g:940:2: ( '\\u2200' )
+                    // InternalXMachine.g:934:2: ( '\\u2200' )
                     {
-                    // InternalXMachine.g:940:2: ( '\\u2200' )
-                    // InternalXMachine.g:941:3: '\\u2200'
+                    // InternalXMachine.g:934:2: ( '\\u2200' )
+                    // InternalXMachine.g:935:3: '\\u2200'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_PREDICATE_SYMBOLSAccess().getForAllKeyword_10()); 
@@ -3680,10 +3640,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 12 :
-                    // InternalXMachine.g:946:2: ( '!' )
+                    // InternalXMachine.g:940:2: ( '!' )
                     {
-                    // InternalXMachine.g:946:2: ( '!' )
-                    // InternalXMachine.g:947:3: '!'
+                    // InternalXMachine.g:940:2: ( '!' )
+                    // InternalXMachine.g:941:3: '!'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_PREDICATE_SYMBOLSAccess().getExclamationMarkKeyword_11()); 
@@ -3699,10 +3659,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 13 :
-                    // InternalXMachine.g:952:2: ( '\\u2203' )
+                    // InternalXMachine.g:946:2: ( '\\u2203' )
                     {
-                    // InternalXMachine.g:952:2: ( '\\u2203' )
-                    // InternalXMachine.g:953:3: '\\u2203'
+                    // InternalXMachine.g:946:2: ( '\\u2203' )
+                    // InternalXMachine.g:947:3: '\\u2203'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_PREDICATE_SYMBOLSAccess().getThereExistsKeyword_12()); 
@@ -3718,10 +3678,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 14 :
-                    // InternalXMachine.g:958:2: ( '#' )
+                    // InternalXMachine.g:952:2: ( '#' )
                     {
-                    // InternalXMachine.g:958:2: ( '#' )
-                    // InternalXMachine.g:959:3: '#'
+                    // InternalXMachine.g:952:2: ( '#' )
+                    // InternalXMachine.g:953:3: '#'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_PREDICATE_SYMBOLSAccess().getNumberSignKeyword_13()); 
@@ -3737,10 +3697,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 15 :
-                    // InternalXMachine.g:964:2: ( ',' )
+                    // InternalXMachine.g:958:2: ( ',' )
                     {
-                    // InternalXMachine.g:964:2: ( ',' )
-                    // InternalXMachine.g:965:3: ','
+                    // InternalXMachine.g:958:2: ( ',' )
+                    // InternalXMachine.g:959:3: ','
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_PREDICATE_SYMBOLSAccess().getCommaKeyword_14()); 
@@ -3756,10 +3716,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 16 :
-                    // InternalXMachine.g:970:2: ( '\\u00B7' )
+                    // InternalXMachine.g:964:2: ( '\\u00B7' )
                     {
-                    // InternalXMachine.g:970:2: ( '\\u00B7' )
-                    // InternalXMachine.g:971:3: '\\u00B7'
+                    // InternalXMachine.g:964:2: ( '\\u00B7' )
+                    // InternalXMachine.g:965:3: '\\u00B7'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_PREDICATE_SYMBOLSAccess().getMiddleDotKeyword_15()); 
@@ -3775,10 +3735,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 17 :
-                    // InternalXMachine.g:976:2: ( '.' )
+                    // InternalXMachine.g:970:2: ( '.' )
                     {
-                    // InternalXMachine.g:976:2: ( '.' )
-                    // InternalXMachine.g:977:3: '.'
+                    // InternalXMachine.g:970:2: ( '.' )
+                    // InternalXMachine.g:971:3: '.'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_PREDICATE_SYMBOLSAccess().getFullStopKeyword_16()); 
@@ -3794,10 +3754,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 18 :
-                    // InternalXMachine.g:982:2: ( '=' )
+                    // InternalXMachine.g:976:2: ( '=' )
                     {
-                    // InternalXMachine.g:982:2: ( '=' )
-                    // InternalXMachine.g:983:3: '='
+                    // InternalXMachine.g:976:2: ( '=' )
+                    // InternalXMachine.g:977:3: '='
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_PREDICATE_SYMBOLSAccess().getEqualsSignKeyword_17()); 
@@ -3813,10 +3773,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 19 :
-                    // InternalXMachine.g:988:2: ( '\\u2260' )
+                    // InternalXMachine.g:982:2: ( '\\u2260' )
                     {
-                    // InternalXMachine.g:988:2: ( '\\u2260' )
-                    // InternalXMachine.g:989:3: '\\u2260'
+                    // InternalXMachine.g:982:2: ( '\\u2260' )
+                    // InternalXMachine.g:983:3: '\\u2260'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_PREDICATE_SYMBOLSAccess().getNotEqualToKeyword_18()); 
@@ -3832,10 +3792,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 20 :
-                    // InternalXMachine.g:994:2: ( '\\u2264' )
+                    // InternalXMachine.g:988:2: ( '\\u2264' )
                     {
-                    // InternalXMachine.g:994:2: ( '\\u2264' )
-                    // InternalXMachine.g:995:3: '\\u2264'
+                    // InternalXMachine.g:988:2: ( '\\u2264' )
+                    // InternalXMachine.g:989:3: '\\u2264'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_PREDICATE_SYMBOLSAccess().getLessThanOrEqualToKeyword_19()); 
@@ -3851,10 +3811,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 21 :
-                    // InternalXMachine.g:1000:2: ( '<' )
+                    // InternalXMachine.g:994:2: ( '<' )
                     {
-                    // InternalXMachine.g:1000:2: ( '<' )
-                    // InternalXMachine.g:1001:3: '<'
+                    // InternalXMachine.g:994:2: ( '<' )
+                    // InternalXMachine.g:995:3: '<'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_PREDICATE_SYMBOLSAccess().getLessThanSignKeyword_20()); 
@@ -3870,10 +3830,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 22 :
-                    // InternalXMachine.g:1006:2: ( '\\u2265' )
+                    // InternalXMachine.g:1000:2: ( '\\u2265' )
                     {
-                    // InternalXMachine.g:1006:2: ( '\\u2265' )
-                    // InternalXMachine.g:1007:3: '\\u2265'
+                    // InternalXMachine.g:1000:2: ( '\\u2265' )
+                    // InternalXMachine.g:1001:3: '\\u2265'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_PREDICATE_SYMBOLSAccess().getGreaterThanOrEqualToKeyword_21()); 
@@ -3889,10 +3849,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 23 :
-                    // InternalXMachine.g:1012:2: ( '>' )
+                    // InternalXMachine.g:1006:2: ( '>' )
                     {
-                    // InternalXMachine.g:1012:2: ( '>' )
-                    // InternalXMachine.g:1013:3: '>'
+                    // InternalXMachine.g:1006:2: ( '>' )
+                    // InternalXMachine.g:1007:3: '>'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_PREDICATE_SYMBOLSAccess().getGreaterThanSignKeyword_22()); 
@@ -3908,10 +3868,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 24 :
-                    // InternalXMachine.g:1018:2: ( '\\u2208' )
+                    // InternalXMachine.g:1012:2: ( '\\u2208' )
                     {
-                    // InternalXMachine.g:1018:2: ( '\\u2208' )
-                    // InternalXMachine.g:1019:3: '\\u2208'
+                    // InternalXMachine.g:1012:2: ( '\\u2208' )
+                    // InternalXMachine.g:1013:3: '\\u2208'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_PREDICATE_SYMBOLSAccess().getElementOfKeyword_23()); 
@@ -3927,10 +3887,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 25 :
-                    // InternalXMachine.g:1024:2: ( ':' )
+                    // InternalXMachine.g:1018:2: ( ':' )
                     {
-                    // InternalXMachine.g:1024:2: ( ':' )
-                    // InternalXMachine.g:1025:3: ':'
+                    // InternalXMachine.g:1018:2: ( ':' )
+                    // InternalXMachine.g:1019:3: ':'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_PREDICATE_SYMBOLSAccess().getColonKeyword_24()); 
@@ -3946,10 +3906,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 26 :
-                    // InternalXMachine.g:1030:2: ( '\\u2209' )
+                    // InternalXMachine.g:1024:2: ( '\\u2209' )
                     {
-                    // InternalXMachine.g:1030:2: ( '\\u2209' )
-                    // InternalXMachine.g:1031:3: '\\u2209'
+                    // InternalXMachine.g:1024:2: ( '\\u2209' )
+                    // InternalXMachine.g:1025:3: '\\u2209'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_PREDICATE_SYMBOLSAccess().getNotAnElementOfKeyword_25()); 
@@ -3965,10 +3925,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 27 :
-                    // InternalXMachine.g:1036:2: ( '\\u2282' )
+                    // InternalXMachine.g:1030:2: ( '\\u2282' )
                     {
-                    // InternalXMachine.g:1036:2: ( '\\u2282' )
-                    // InternalXMachine.g:1037:3: '\\u2282'
+                    // InternalXMachine.g:1030:2: ( '\\u2282' )
+                    // InternalXMachine.g:1031:3: '\\u2282'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_PREDICATE_SYMBOLSAccess().getSubsetOfKeyword_26()); 
@@ -3984,10 +3944,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 28 :
-                    // InternalXMachine.g:1042:2: ( '\\u2284' )
+                    // InternalXMachine.g:1036:2: ( '\\u2284' )
                     {
-                    // InternalXMachine.g:1042:2: ( '\\u2284' )
-                    // InternalXMachine.g:1043:3: '\\u2284'
+                    // InternalXMachine.g:1036:2: ( '\\u2284' )
+                    // InternalXMachine.g:1037:3: '\\u2284'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_PREDICATE_SYMBOLSAccess().getNotASubsetOfKeyword_27()); 
@@ -4003,10 +3963,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 29 :
-                    // InternalXMachine.g:1048:2: ( '\\u2286' )
+                    // InternalXMachine.g:1042:2: ( '\\u2286' )
                     {
-                    // InternalXMachine.g:1048:2: ( '\\u2286' )
-                    // InternalXMachine.g:1049:3: '\\u2286'
+                    // InternalXMachine.g:1042:2: ( '\\u2286' )
+                    // InternalXMachine.g:1043:3: '\\u2286'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_PREDICATE_SYMBOLSAccess().getSubsetOfOrEqualToKeyword_28()); 
@@ -4022,10 +3982,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 30 :
-                    // InternalXMachine.g:1054:2: ( '\\u2288' )
+                    // InternalXMachine.g:1048:2: ( '\\u2288' )
                     {
-                    // InternalXMachine.g:1054:2: ( '\\u2288' )
-                    // InternalXMachine.g:1055:3: '\\u2288'
+                    // InternalXMachine.g:1048:2: ( '\\u2288' )
+                    // InternalXMachine.g:1049:3: '\\u2288'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_PREDICATE_SYMBOLSAccess().getNeitherASubsetOfNorEqualToKeyword_29()); 
@@ -4041,10 +4001,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 31 :
-                    // InternalXMachine.g:1060:2: ( 'partition' )
+                    // InternalXMachine.g:1054:2: ( 'partition' )
                     {
-                    // InternalXMachine.g:1060:2: ( 'partition' )
-                    // InternalXMachine.g:1061:3: 'partition'
+                    // InternalXMachine.g:1054:2: ( 'partition' )
+                    // InternalXMachine.g:1055:3: 'partition'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_PREDICATE_SYMBOLSAccess().getPartitionKeyword_30()); 
@@ -4077,13 +4037,13 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__EVENTB_EXPRESSION_SYMBOLS__Alternatives"
-    // InternalXMachine.g:1070:1: rule__EVENTB_EXPRESSION_SYMBOLS__Alternatives : ( ( '\\u2194' ) | ( '\\uE100' ) | ( '\\uE101' ) | ( '\\uE102' ) | ( '\\u21F8' ) | ( '\\u2192' ) | ( '\\u2914' ) | ( '\\u21A3' ) | ( '\\u2900' ) | ( '\\u21A0' ) | ( '\\u2916' ) | ( '{' ) | ( '}' ) | ( '\\u21A6' ) | ( '\\u2205' ) | ( '\\u2229' ) | ( '\\u222A' ) | ( '\\u2216' ) | ( '\\u00D7' ) | ( '[' ) | ( ']' ) | ( '\\uE103' ) | ( '\\u2218' ) | ( ';' ) | ( '\\u2297' ) | ( '\\u2225' ) | ( '\\u223C' ) | ( '\\u25C1' ) | ( '\\u2A64' ) | ( '\\u25B7' ) | ( '\\u2A65' ) | ( '\\u03BB' ) | ( ( rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0 ) ) | ( '\\u22C3' ) | ( '\\u2223' ) | ( '\\u2025' ) | ( '+' ) | ( '\\u2212' ) | ( '-' ) | ( '\\u2217' ) | ( '*' ) | ( '\\u00F7' ) | ( '/' ) | ( '^' ) | ( '\\\\' ) );
+    // InternalXMachine.g:1064:1: rule__EVENTB_EXPRESSION_SYMBOLS__Alternatives : ( ( '\\u2194' ) | ( '\\uE100' ) | ( '\\uE101' ) | ( '\\uE102' ) | ( '\\u21F8' ) | ( '\\u2192' ) | ( '\\u2914' ) | ( '\\u21A3' ) | ( '\\u2900' ) | ( '\\u21A0' ) | ( '\\u2916' ) | ( '{' ) | ( '}' ) | ( '\\u21A6' ) | ( '\\u2205' ) | ( '\\u2229' ) | ( '\\u222A' ) | ( '\\u2216' ) | ( '\\u00D7' ) | ( '[' ) | ( ']' ) | ( '\\uE103' ) | ( '\\u2218' ) | ( ';' ) | ( '\\u2297' ) | ( '\\u2225' ) | ( '\\u223C' ) | ( '\\u25C1' ) | ( '\\u2A64' ) | ( '\\u25B7' ) | ( '\\u2A65' ) | ( '\\u03BB' ) | ( ( rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0 ) ) | ( '\\u22C3' ) | ( '\\u2223' ) | ( '\\u2025' ) | ( '+' ) | ( '\\u2212' ) | ( '-' ) | ( '\\u2217' ) | ( '*' ) | ( '\\u00F7' ) | ( '/' ) | ( '^' ) | ( '\\\\' ) );
     public final void rule__EVENTB_EXPRESSION_SYMBOLS__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1074:1: ( ( '\\u2194' ) | ( '\\uE100' ) | ( '\\uE101' ) | ( '\\uE102' ) | ( '\\u21F8' ) | ( '\\u2192' ) | ( '\\u2914' ) | ( '\\u21A3' ) | ( '\\u2900' ) | ( '\\u21A0' ) | ( '\\u2916' ) | ( '{' ) | ( '}' ) | ( '\\u21A6' ) | ( '\\u2205' ) | ( '\\u2229' ) | ( '\\u222A' ) | ( '\\u2216' ) | ( '\\u00D7' ) | ( '[' ) | ( ']' ) | ( '\\uE103' ) | ( '\\u2218' ) | ( ';' ) | ( '\\u2297' ) | ( '\\u2225' ) | ( '\\u223C' ) | ( '\\u25C1' ) | ( '\\u2A64' ) | ( '\\u25B7' ) | ( '\\u2A65' ) | ( '\\u03BB' ) | ( ( rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0 ) ) | ( '\\u22C3' ) | ( '\\u2223' ) | ( '\\u2025' ) | ( '+' ) | ( '\\u2212' ) | ( '-' ) | ( '\\u2217' ) | ( '*' ) | ( '\\u00F7' ) | ( '/' ) | ( '^' ) | ( '\\\\' ) )
+            // InternalXMachine.g:1068:1: ( ( '\\u2194' ) | ( '\\uE100' ) | ( '\\uE101' ) | ( '\\uE102' ) | ( '\\u21F8' ) | ( '\\u2192' ) | ( '\\u2914' ) | ( '\\u21A3' ) | ( '\\u2900' ) | ( '\\u21A0' ) | ( '\\u2916' ) | ( '{' ) | ( '}' ) | ( '\\u21A6' ) | ( '\\u2205' ) | ( '\\u2229' ) | ( '\\u222A' ) | ( '\\u2216' ) | ( '\\u00D7' ) | ( '[' ) | ( ']' ) | ( '\\uE103' ) | ( '\\u2218' ) | ( ';' ) | ( '\\u2297' ) | ( '\\u2225' ) | ( '\\u223C' ) | ( '\\u25C1' ) | ( '\\u2A64' ) | ( '\\u25B7' ) | ( '\\u2A65' ) | ( '\\u03BB' ) | ( ( rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0 ) ) | ( '\\u22C3' ) | ( '\\u2223' ) | ( '\\u2025' ) | ( '+' ) | ( '\\u2212' ) | ( '-' ) | ( '\\u2217' ) | ( '*' ) | ( '\\u00F7' ) | ( '/' ) | ( '^' ) | ( '\\\\' ) )
             int alt7=45;
             switch ( input.LA(1) ) {
             case 66:
@@ -4246,7 +4206,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                 alt7=32;
                 }
                 break;
-            case 135:
+            case 134:
                 {
                 alt7=33;
                 }
@@ -4321,10 +4281,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
             switch (alt7) {
                 case 1 :
-                    // InternalXMachine.g:1075:2: ( '\\u2194' )
+                    // InternalXMachine.g:1069:2: ( '\\u2194' )
                     {
-                    // InternalXMachine.g:1075:2: ( '\\u2194' )
-                    // InternalXMachine.g:1076:3: '\\u2194'
+                    // InternalXMachine.g:1069:2: ( '\\u2194' )
+                    // InternalXMachine.g:1070:3: '\\u2194'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getLeftRightArrowKeyword_0()); 
@@ -4340,10 +4300,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 2 :
-                    // InternalXMachine.g:1081:2: ( '\\uE100' )
+                    // InternalXMachine.g:1075:2: ( '\\uE100' )
                     {
-                    // InternalXMachine.g:1081:2: ( '\\uE100' )
-                    // InternalXMachine.g:1082:3: '\\uE100'
+                    // InternalXMachine.g:1075:2: ( '\\uE100' )
+                    // InternalXMachine.g:1076:3: '\\uE100'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getPrivateUseAreaE100Keyword_1()); 
@@ -4359,10 +4319,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 3 :
-                    // InternalXMachine.g:1087:2: ( '\\uE101' )
+                    // InternalXMachine.g:1081:2: ( '\\uE101' )
                     {
-                    // InternalXMachine.g:1087:2: ( '\\uE101' )
-                    // InternalXMachine.g:1088:3: '\\uE101'
+                    // InternalXMachine.g:1081:2: ( '\\uE101' )
+                    // InternalXMachine.g:1082:3: '\\uE101'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getPrivateUseAreaE101Keyword_2()); 
@@ -4378,10 +4338,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 4 :
-                    // InternalXMachine.g:1093:2: ( '\\uE102' )
+                    // InternalXMachine.g:1087:2: ( '\\uE102' )
                     {
-                    // InternalXMachine.g:1093:2: ( '\\uE102' )
-                    // InternalXMachine.g:1094:3: '\\uE102'
+                    // InternalXMachine.g:1087:2: ( '\\uE102' )
+                    // InternalXMachine.g:1088:3: '\\uE102'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getPrivateUseAreaE102Keyword_3()); 
@@ -4397,10 +4357,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 5 :
-                    // InternalXMachine.g:1099:2: ( '\\u21F8' )
+                    // InternalXMachine.g:1093:2: ( '\\u21F8' )
                     {
-                    // InternalXMachine.g:1099:2: ( '\\u21F8' )
-                    // InternalXMachine.g:1100:3: '\\u21F8'
+                    // InternalXMachine.g:1093:2: ( '\\u21F8' )
+                    // InternalXMachine.g:1094:3: '\\u21F8'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getRightwardsArrowWithVerticalStrokeKeyword_4()); 
@@ -4416,10 +4376,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 6 :
-                    // InternalXMachine.g:1105:2: ( '\\u2192' )
+                    // InternalXMachine.g:1099:2: ( '\\u2192' )
                     {
-                    // InternalXMachine.g:1105:2: ( '\\u2192' )
-                    // InternalXMachine.g:1106:3: '\\u2192'
+                    // InternalXMachine.g:1099:2: ( '\\u2192' )
+                    // InternalXMachine.g:1100:3: '\\u2192'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getRightwardsArrowKeyword_5()); 
@@ -4435,10 +4395,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 7 :
-                    // InternalXMachine.g:1111:2: ( '\\u2914' )
+                    // InternalXMachine.g:1105:2: ( '\\u2914' )
                     {
-                    // InternalXMachine.g:1111:2: ( '\\u2914' )
-                    // InternalXMachine.g:1112:3: '\\u2914'
+                    // InternalXMachine.g:1105:2: ( '\\u2914' )
+                    // InternalXMachine.g:1106:3: '\\u2914'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getRightwardsArrowWithTailWithVerticalStrokeKeyword_6()); 
@@ -4454,10 +4414,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 8 :
-                    // InternalXMachine.g:1117:2: ( '\\u21A3' )
+                    // InternalXMachine.g:1111:2: ( '\\u21A3' )
                     {
-                    // InternalXMachine.g:1117:2: ( '\\u21A3' )
-                    // InternalXMachine.g:1118:3: '\\u21A3'
+                    // InternalXMachine.g:1111:2: ( '\\u21A3' )
+                    // InternalXMachine.g:1112:3: '\\u21A3'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getRightwardsArrowWithTailKeyword_7()); 
@@ -4473,10 +4433,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 9 :
-                    // InternalXMachine.g:1123:2: ( '\\u2900' )
+                    // InternalXMachine.g:1117:2: ( '\\u2900' )
                     {
-                    // InternalXMachine.g:1123:2: ( '\\u2900' )
-                    // InternalXMachine.g:1124:3: '\\u2900'
+                    // InternalXMachine.g:1117:2: ( '\\u2900' )
+                    // InternalXMachine.g:1118:3: '\\u2900'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getRightwardsTwoHeadedArrowWithVerticalStrokeKeyword_8()); 
@@ -4492,10 +4452,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 10 :
-                    // InternalXMachine.g:1129:2: ( '\\u21A0' )
+                    // InternalXMachine.g:1123:2: ( '\\u21A0' )
                     {
-                    // InternalXMachine.g:1129:2: ( '\\u21A0' )
-                    // InternalXMachine.g:1130:3: '\\u21A0'
+                    // InternalXMachine.g:1123:2: ( '\\u21A0' )
+                    // InternalXMachine.g:1124:3: '\\u21A0'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getRightwardsTwoHeadedArrowKeyword_9()); 
@@ -4511,10 +4471,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 11 :
-                    // InternalXMachine.g:1135:2: ( '\\u2916' )
+                    // InternalXMachine.g:1129:2: ( '\\u2916' )
                     {
-                    // InternalXMachine.g:1135:2: ( '\\u2916' )
-                    // InternalXMachine.g:1136:3: '\\u2916'
+                    // InternalXMachine.g:1129:2: ( '\\u2916' )
+                    // InternalXMachine.g:1130:3: '\\u2916'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getRightwardsTwoHeadedArrowWithTailKeyword_10()); 
@@ -4530,10 +4490,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 12 :
-                    // InternalXMachine.g:1141:2: ( '{' )
+                    // InternalXMachine.g:1135:2: ( '{' )
                     {
-                    // InternalXMachine.g:1141:2: ( '{' )
-                    // InternalXMachine.g:1142:3: '{'
+                    // InternalXMachine.g:1135:2: ( '{' )
+                    // InternalXMachine.g:1136:3: '{'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getLeftCurlyBracketKeyword_11()); 
@@ -4549,10 +4509,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 13 :
-                    // InternalXMachine.g:1147:2: ( '}' )
+                    // InternalXMachine.g:1141:2: ( '}' )
                     {
-                    // InternalXMachine.g:1147:2: ( '}' )
-                    // InternalXMachine.g:1148:3: '}'
+                    // InternalXMachine.g:1141:2: ( '}' )
+                    // InternalXMachine.g:1142:3: '}'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getRightCurlyBracketKeyword_12()); 
@@ -4568,10 +4528,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 14 :
-                    // InternalXMachine.g:1153:2: ( '\\u21A6' )
+                    // InternalXMachine.g:1147:2: ( '\\u21A6' )
                     {
-                    // InternalXMachine.g:1153:2: ( '\\u21A6' )
-                    // InternalXMachine.g:1154:3: '\\u21A6'
+                    // InternalXMachine.g:1147:2: ( '\\u21A6' )
+                    // InternalXMachine.g:1148:3: '\\u21A6'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getRightwardsArrowFromBarKeyword_13()); 
@@ -4587,10 +4547,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 15 :
-                    // InternalXMachine.g:1159:2: ( '\\u2205' )
+                    // InternalXMachine.g:1153:2: ( '\\u2205' )
                     {
-                    // InternalXMachine.g:1159:2: ( '\\u2205' )
-                    // InternalXMachine.g:1160:3: '\\u2205'
+                    // InternalXMachine.g:1153:2: ( '\\u2205' )
+                    // InternalXMachine.g:1154:3: '\\u2205'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getEmptySetKeyword_14()); 
@@ -4606,10 +4566,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 16 :
-                    // InternalXMachine.g:1165:2: ( '\\u2229' )
+                    // InternalXMachine.g:1159:2: ( '\\u2229' )
                     {
-                    // InternalXMachine.g:1165:2: ( '\\u2229' )
-                    // InternalXMachine.g:1166:3: '\\u2229'
+                    // InternalXMachine.g:1159:2: ( '\\u2229' )
+                    // InternalXMachine.g:1160:3: '\\u2229'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getIntersectionKeyword_15()); 
@@ -4625,10 +4585,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 17 :
-                    // InternalXMachine.g:1171:2: ( '\\u222A' )
+                    // InternalXMachine.g:1165:2: ( '\\u222A' )
                     {
-                    // InternalXMachine.g:1171:2: ( '\\u222A' )
-                    // InternalXMachine.g:1172:3: '\\u222A'
+                    // InternalXMachine.g:1165:2: ( '\\u222A' )
+                    // InternalXMachine.g:1166:3: '\\u222A'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getUnionKeyword_16()); 
@@ -4644,10 +4604,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 18 :
-                    // InternalXMachine.g:1177:2: ( '\\u2216' )
+                    // InternalXMachine.g:1171:2: ( '\\u2216' )
                     {
-                    // InternalXMachine.g:1177:2: ( '\\u2216' )
-                    // InternalXMachine.g:1178:3: '\\u2216'
+                    // InternalXMachine.g:1171:2: ( '\\u2216' )
+                    // InternalXMachine.g:1172:3: '\\u2216'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getSetMinusKeyword_17()); 
@@ -4663,10 +4623,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 19 :
-                    // InternalXMachine.g:1183:2: ( '\\u00D7' )
+                    // InternalXMachine.g:1177:2: ( '\\u00D7' )
                     {
-                    // InternalXMachine.g:1183:2: ( '\\u00D7' )
-                    // InternalXMachine.g:1184:3: '\\u00D7'
+                    // InternalXMachine.g:1177:2: ( '\\u00D7' )
+                    // InternalXMachine.g:1178:3: '\\u00D7'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getMultiplicationSignKeyword_18()); 
@@ -4682,10 +4642,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 20 :
-                    // InternalXMachine.g:1189:2: ( '[' )
+                    // InternalXMachine.g:1183:2: ( '[' )
                     {
-                    // InternalXMachine.g:1189:2: ( '[' )
-                    // InternalXMachine.g:1190:3: '['
+                    // InternalXMachine.g:1183:2: ( '[' )
+                    // InternalXMachine.g:1184:3: '['
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getLeftSquareBracketKeyword_19()); 
@@ -4701,10 +4661,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 21 :
-                    // InternalXMachine.g:1195:2: ( ']' )
+                    // InternalXMachine.g:1189:2: ( ']' )
                     {
-                    // InternalXMachine.g:1195:2: ( ']' )
-                    // InternalXMachine.g:1196:3: ']'
+                    // InternalXMachine.g:1189:2: ( ']' )
+                    // InternalXMachine.g:1190:3: ']'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getRightSquareBracketKeyword_20()); 
@@ -4720,10 +4680,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 22 :
-                    // InternalXMachine.g:1201:2: ( '\\uE103' )
+                    // InternalXMachine.g:1195:2: ( '\\uE103' )
                     {
-                    // InternalXMachine.g:1201:2: ( '\\uE103' )
-                    // InternalXMachine.g:1202:3: '\\uE103'
+                    // InternalXMachine.g:1195:2: ( '\\uE103' )
+                    // InternalXMachine.g:1196:3: '\\uE103'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getPrivateUseAreaE103Keyword_21()); 
@@ -4739,10 +4699,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 23 :
-                    // InternalXMachine.g:1207:2: ( '\\u2218' )
+                    // InternalXMachine.g:1201:2: ( '\\u2218' )
                     {
-                    // InternalXMachine.g:1207:2: ( '\\u2218' )
-                    // InternalXMachine.g:1208:3: '\\u2218'
+                    // InternalXMachine.g:1201:2: ( '\\u2218' )
+                    // InternalXMachine.g:1202:3: '\\u2218'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getRingOperatorKeyword_22()); 
@@ -4758,10 +4718,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 24 :
-                    // InternalXMachine.g:1213:2: ( ';' )
+                    // InternalXMachine.g:1207:2: ( ';' )
                     {
-                    // InternalXMachine.g:1213:2: ( ';' )
-                    // InternalXMachine.g:1214:3: ';'
+                    // InternalXMachine.g:1207:2: ( ';' )
+                    // InternalXMachine.g:1208:3: ';'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getSemicolonKeyword_23()); 
@@ -4777,10 +4737,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 25 :
-                    // InternalXMachine.g:1219:2: ( '\\u2297' )
+                    // InternalXMachine.g:1213:2: ( '\\u2297' )
                     {
-                    // InternalXMachine.g:1219:2: ( '\\u2297' )
-                    // InternalXMachine.g:1220:3: '\\u2297'
+                    // InternalXMachine.g:1213:2: ( '\\u2297' )
+                    // InternalXMachine.g:1214:3: '\\u2297'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getCircledTimesKeyword_24()); 
@@ -4796,10 +4756,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 26 :
-                    // InternalXMachine.g:1225:2: ( '\\u2225' )
+                    // InternalXMachine.g:1219:2: ( '\\u2225' )
                     {
-                    // InternalXMachine.g:1225:2: ( '\\u2225' )
-                    // InternalXMachine.g:1226:3: '\\u2225'
+                    // InternalXMachine.g:1219:2: ( '\\u2225' )
+                    // InternalXMachine.g:1220:3: '\\u2225'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getParallelToKeyword_25()); 
@@ -4815,10 +4775,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 27 :
-                    // InternalXMachine.g:1231:2: ( '\\u223C' )
+                    // InternalXMachine.g:1225:2: ( '\\u223C' )
                     {
-                    // InternalXMachine.g:1231:2: ( '\\u223C' )
-                    // InternalXMachine.g:1232:3: '\\u223C'
+                    // InternalXMachine.g:1225:2: ( '\\u223C' )
+                    // InternalXMachine.g:1226:3: '\\u223C'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getTildeOperatorKeyword_26()); 
@@ -4834,10 +4794,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 28 :
-                    // InternalXMachine.g:1237:2: ( '\\u25C1' )
+                    // InternalXMachine.g:1231:2: ( '\\u25C1' )
                     {
-                    // InternalXMachine.g:1237:2: ( '\\u25C1' )
-                    // InternalXMachine.g:1238:3: '\\u25C1'
+                    // InternalXMachine.g:1231:2: ( '\\u25C1' )
+                    // InternalXMachine.g:1232:3: '\\u25C1'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getWhiteLeftPointingTriangleKeyword_27()); 
@@ -4853,10 +4813,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 29 :
-                    // InternalXMachine.g:1243:2: ( '\\u2A64' )
+                    // InternalXMachine.g:1237:2: ( '\\u2A64' )
                     {
-                    // InternalXMachine.g:1243:2: ( '\\u2A64' )
-                    // InternalXMachine.g:1244:3: '\\u2A64'
+                    // InternalXMachine.g:1237:2: ( '\\u2A64' )
+                    // InternalXMachine.g:1238:3: '\\u2A64'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getZNotationDomainAntirestrictionKeyword_28()); 
@@ -4872,10 +4832,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 30 :
-                    // InternalXMachine.g:1249:2: ( '\\u25B7' )
+                    // InternalXMachine.g:1243:2: ( '\\u25B7' )
                     {
-                    // InternalXMachine.g:1249:2: ( '\\u25B7' )
-                    // InternalXMachine.g:1250:3: '\\u25B7'
+                    // InternalXMachine.g:1243:2: ( '\\u25B7' )
+                    // InternalXMachine.g:1244:3: '\\u25B7'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getWhiteRightPointingTriangleKeyword_29()); 
@@ -4891,10 +4851,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 31 :
-                    // InternalXMachine.g:1255:2: ( '\\u2A65' )
+                    // InternalXMachine.g:1249:2: ( '\\u2A65' )
                     {
-                    // InternalXMachine.g:1255:2: ( '\\u2A65' )
-                    // InternalXMachine.g:1256:3: '\\u2A65'
+                    // InternalXMachine.g:1249:2: ( '\\u2A65' )
+                    // InternalXMachine.g:1250:3: '\\u2A65'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getZNotationRangeAntirestrictionKeyword_30()); 
@@ -4910,10 +4870,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 32 :
-                    // InternalXMachine.g:1261:2: ( '\\u03BB' )
+                    // InternalXMachine.g:1255:2: ( '\\u03BB' )
                     {
-                    // InternalXMachine.g:1261:2: ( '\\u03BB' )
-                    // InternalXMachine.g:1262:3: '\\u03BB'
+                    // InternalXMachine.g:1255:2: ( '\\u03BB' )
+                    // InternalXMachine.g:1256:3: '\\u03BB'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getGreekSmallLetterLamdaKeyword_31()); 
@@ -4929,16 +4889,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 33 :
-                    // InternalXMachine.g:1267:2: ( ( rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0 ) )
+                    // InternalXMachine.g:1261:2: ( ( rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0 ) )
                     {
-                    // InternalXMachine.g:1267:2: ( ( rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0 ) )
-                    // InternalXMachine.g:1268:3: ( rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0 )
+                    // InternalXMachine.g:1261:2: ( ( rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0 ) )
+                    // InternalXMachine.g:1262:3: ( rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0 )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getGroup_32()); 
                     }
-                    // InternalXMachine.g:1269:3: ( rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0 )
-                    // InternalXMachine.g:1269:4: rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0
+                    // InternalXMachine.g:1263:3: ( rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0 )
+                    // InternalXMachine.g:1263:4: rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0();
@@ -4958,10 +4918,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 34 :
-                    // InternalXMachine.g:1273:2: ( '\\u22C3' )
+                    // InternalXMachine.g:1267:2: ( '\\u22C3' )
                     {
-                    // InternalXMachine.g:1273:2: ( '\\u22C3' )
-                    // InternalXMachine.g:1274:3: '\\u22C3'
+                    // InternalXMachine.g:1267:2: ( '\\u22C3' )
+                    // InternalXMachine.g:1268:3: '\\u22C3'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getNAryUnionKeyword_33()); 
@@ -4977,10 +4937,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 35 :
-                    // InternalXMachine.g:1279:2: ( '\\u2223' )
+                    // InternalXMachine.g:1273:2: ( '\\u2223' )
                     {
-                    // InternalXMachine.g:1279:2: ( '\\u2223' )
-                    // InternalXMachine.g:1280:3: '\\u2223'
+                    // InternalXMachine.g:1273:2: ( '\\u2223' )
+                    // InternalXMachine.g:1274:3: '\\u2223'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getDividesKeyword_34()); 
@@ -4996,10 +4956,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 36 :
-                    // InternalXMachine.g:1285:2: ( '\\u2025' )
+                    // InternalXMachine.g:1279:2: ( '\\u2025' )
                     {
-                    // InternalXMachine.g:1285:2: ( '\\u2025' )
-                    // InternalXMachine.g:1286:3: '\\u2025'
+                    // InternalXMachine.g:1279:2: ( '\\u2025' )
+                    // InternalXMachine.g:1280:3: '\\u2025'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getTwoDotLeaderKeyword_35()); 
@@ -5015,10 +4975,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 37 :
-                    // InternalXMachine.g:1291:2: ( '+' )
+                    // InternalXMachine.g:1285:2: ( '+' )
                     {
-                    // InternalXMachine.g:1291:2: ( '+' )
-                    // InternalXMachine.g:1292:3: '+'
+                    // InternalXMachine.g:1285:2: ( '+' )
+                    // InternalXMachine.g:1286:3: '+'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getPlusSignKeyword_36()); 
@@ -5034,10 +4994,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 38 :
-                    // InternalXMachine.g:1297:2: ( '\\u2212' )
+                    // InternalXMachine.g:1291:2: ( '\\u2212' )
                     {
-                    // InternalXMachine.g:1297:2: ( '\\u2212' )
-                    // InternalXMachine.g:1298:3: '\\u2212'
+                    // InternalXMachine.g:1291:2: ( '\\u2212' )
+                    // InternalXMachine.g:1292:3: '\\u2212'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getMinusSignKeyword_37()); 
@@ -5053,10 +5013,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 39 :
-                    // InternalXMachine.g:1303:2: ( '-' )
+                    // InternalXMachine.g:1297:2: ( '-' )
                     {
-                    // InternalXMachine.g:1303:2: ( '-' )
-                    // InternalXMachine.g:1304:3: '-'
+                    // InternalXMachine.g:1297:2: ( '-' )
+                    // InternalXMachine.g:1298:3: '-'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getHyphenMinusKeyword_38()); 
@@ -5072,10 +5032,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 40 :
-                    // InternalXMachine.g:1309:2: ( '\\u2217' )
+                    // InternalXMachine.g:1303:2: ( '\\u2217' )
                     {
-                    // InternalXMachine.g:1309:2: ( '\\u2217' )
-                    // InternalXMachine.g:1310:3: '\\u2217'
+                    // InternalXMachine.g:1303:2: ( '\\u2217' )
+                    // InternalXMachine.g:1304:3: '\\u2217'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getAsteriskOperatorKeyword_39()); 
@@ -5091,10 +5051,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 41 :
-                    // InternalXMachine.g:1315:2: ( '*' )
+                    // InternalXMachine.g:1309:2: ( '*' )
                     {
-                    // InternalXMachine.g:1315:2: ( '*' )
-                    // InternalXMachine.g:1316:3: '*'
+                    // InternalXMachine.g:1309:2: ( '*' )
+                    // InternalXMachine.g:1310:3: '*'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getAsteriskKeyword_40()); 
@@ -5110,10 +5070,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 42 :
-                    // InternalXMachine.g:1321:2: ( '\\u00F7' )
+                    // InternalXMachine.g:1315:2: ( '\\u00F7' )
                     {
-                    // InternalXMachine.g:1321:2: ( '\\u00F7' )
-                    // InternalXMachine.g:1322:3: '\\u00F7'
+                    // InternalXMachine.g:1315:2: ( '\\u00F7' )
+                    // InternalXMachine.g:1316:3: '\\u00F7'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getDivisionSignKeyword_41()); 
@@ -5129,10 +5089,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 43 :
-                    // InternalXMachine.g:1327:2: ( '/' )
+                    // InternalXMachine.g:1321:2: ( '/' )
                     {
-                    // InternalXMachine.g:1327:2: ( '/' )
-                    // InternalXMachine.g:1328:3: '/'
+                    // InternalXMachine.g:1321:2: ( '/' )
+                    // InternalXMachine.g:1322:3: '/'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getSolidusKeyword_42()); 
@@ -5148,10 +5108,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 44 :
-                    // InternalXMachine.g:1333:2: ( '^' )
+                    // InternalXMachine.g:1327:2: ( '^' )
                     {
-                    // InternalXMachine.g:1333:2: ( '^' )
-                    // InternalXMachine.g:1334:3: '^'
+                    // InternalXMachine.g:1327:2: ( '^' )
+                    // InternalXMachine.g:1328:3: '^'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getCircumflexAccentKeyword_43()); 
@@ -5167,10 +5127,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 45 :
-                    // InternalXMachine.g:1339:2: ( '\\\\' )
+                    // InternalXMachine.g:1333:2: ( '\\\\' )
                     {
-                    // InternalXMachine.g:1339:2: ( '\\\\' )
-                    // InternalXMachine.g:1340:3: '\\\\'
+                    // InternalXMachine.g:1333:2: ( '\\\\' )
+                    // InternalXMachine.g:1334:3: '\\\\'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getBackslashKeyword_44()); 
@@ -5203,13 +5163,13 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XDirection__Alternatives"
-    // InternalXMachine.g:1349:1: rule__XDirection__Alternatives : ( ( ( 'in' ) ) | ( ( 'out' ) ) );
+    // InternalXMachine.g:1343:1: rule__XDirection__Alternatives : ( ( ( 'in' ) ) | ( ( 'out' ) ) );
     public final void rule__XDirection__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1353:1: ( ( ( 'in' ) ) | ( ( 'out' ) ) )
+            // InternalXMachine.g:1347:1: ( ( ( 'in' ) ) | ( ( 'out' ) ) )
             int alt8=2;
             int LA8_0 = input.LA(1);
 
@@ -5228,16 +5188,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             }
             switch (alt8) {
                 case 1 :
-                    // InternalXMachine.g:1354:2: ( ( 'in' ) )
+                    // InternalXMachine.g:1348:2: ( ( 'in' ) )
                     {
-                    // InternalXMachine.g:1354:2: ( ( 'in' ) )
-                    // InternalXMachine.g:1355:3: ( 'in' )
+                    // InternalXMachine.g:1348:2: ( ( 'in' ) )
+                    // InternalXMachine.g:1349:3: ( 'in' )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getXDirectionAccess().getInEnumLiteralDeclaration_0()); 
                     }
-                    // InternalXMachine.g:1356:3: ( 'in' )
-                    // InternalXMachine.g:1356:4: 'in'
+                    // InternalXMachine.g:1350:3: ( 'in' )
+                    // InternalXMachine.g:1350:4: 'in'
                     {
                     match(input,110,FOLLOW_2); if (state.failed) return ;
 
@@ -5253,16 +5213,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 2 :
-                    // InternalXMachine.g:1360:2: ( ( 'out' ) )
+                    // InternalXMachine.g:1354:2: ( ( 'out' ) )
                     {
-                    // InternalXMachine.g:1360:2: ( ( 'out' ) )
-                    // InternalXMachine.g:1361:3: ( 'out' )
+                    // InternalXMachine.g:1354:2: ( ( 'out' ) )
+                    // InternalXMachine.g:1355:3: ( 'out' )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getXDirectionAccess().getOutEnumLiteralDeclaration_1()); 
                     }
-                    // InternalXMachine.g:1362:3: ( 'out' )
-                    // InternalXMachine.g:1362:4: 'out'
+                    // InternalXMachine.g:1356:3: ( 'out' )
+                    // InternalXMachine.g:1356:4: 'out'
                     {
                     match(input,111,FOLLOW_2); if (state.failed) return ;
 
@@ -5295,13 +5255,13 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XConvergence__Alternatives"
-    // InternalXMachine.g:1370:1: rule__XConvergence__Alternatives : ( ( ( 'ordinary' ) ) | ( ( 'convergent' ) ) | ( ( 'anticipated' ) ) );
+    // InternalXMachine.g:1364:1: rule__XConvergence__Alternatives : ( ( ( 'ordinary' ) ) | ( ( 'convergent' ) ) | ( ( 'anticipated' ) ) );
     public final void rule__XConvergence__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1374:1: ( ( ( 'ordinary' ) ) | ( ( 'convergent' ) ) | ( ( 'anticipated' ) ) )
+            // InternalXMachine.g:1368:1: ( ( ( 'ordinary' ) ) | ( ( 'convergent' ) ) | ( ( 'anticipated' ) ) )
             int alt9=3;
             switch ( input.LA(1) ) {
             case 112:
@@ -5329,16 +5289,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
             switch (alt9) {
                 case 1 :
-                    // InternalXMachine.g:1375:2: ( ( 'ordinary' ) )
+                    // InternalXMachine.g:1369:2: ( ( 'ordinary' ) )
                     {
-                    // InternalXMachine.g:1375:2: ( ( 'ordinary' ) )
-                    // InternalXMachine.g:1376:3: ( 'ordinary' )
+                    // InternalXMachine.g:1369:2: ( ( 'ordinary' ) )
+                    // InternalXMachine.g:1370:3: ( 'ordinary' )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getXConvergenceAccess().getOrdinaryEnumLiteralDeclaration_0()); 
                     }
-                    // InternalXMachine.g:1377:3: ( 'ordinary' )
-                    // InternalXMachine.g:1377:4: 'ordinary'
+                    // InternalXMachine.g:1371:3: ( 'ordinary' )
+                    // InternalXMachine.g:1371:4: 'ordinary'
                     {
                     match(input,112,FOLLOW_2); if (state.failed) return ;
 
@@ -5354,16 +5314,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 2 :
-                    // InternalXMachine.g:1381:2: ( ( 'convergent' ) )
+                    // InternalXMachine.g:1375:2: ( ( 'convergent' ) )
                     {
-                    // InternalXMachine.g:1381:2: ( ( 'convergent' ) )
-                    // InternalXMachine.g:1382:3: ( 'convergent' )
+                    // InternalXMachine.g:1375:2: ( ( 'convergent' ) )
+                    // InternalXMachine.g:1376:3: ( 'convergent' )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getXConvergenceAccess().getConvergentEnumLiteralDeclaration_1()); 
                     }
-                    // InternalXMachine.g:1383:3: ( 'convergent' )
-                    // InternalXMachine.g:1383:4: 'convergent'
+                    // InternalXMachine.g:1377:3: ( 'convergent' )
+                    // InternalXMachine.g:1377:4: 'convergent'
                     {
                     match(input,113,FOLLOW_2); if (state.failed) return ;
 
@@ -5379,16 +5339,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 3 :
-                    // InternalXMachine.g:1387:2: ( ( 'anticipated' ) )
+                    // InternalXMachine.g:1381:2: ( ( 'anticipated' ) )
                     {
-                    // InternalXMachine.g:1387:2: ( ( 'anticipated' ) )
-                    // InternalXMachine.g:1388:3: ( 'anticipated' )
+                    // InternalXMachine.g:1381:2: ( ( 'anticipated' ) )
+                    // InternalXMachine.g:1382:3: ( 'anticipated' )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getXConvergenceAccess().getAnticipatedEnumLiteralDeclaration_2()); 
                     }
-                    // InternalXMachine.g:1389:3: ( 'anticipated' )
-                    // InternalXMachine.g:1389:4: 'anticipated'
+                    // InternalXMachine.g:1383:3: ( 'anticipated' )
+                    // InternalXMachine.g:1383:4: 'anticipated'
                     {
                     match(input,114,FOLLOW_2); if (state.failed) return ;
 
@@ -5421,14 +5381,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group__0"
-    // InternalXMachine.g:1397:1: rule__Machine__Group__0 : rule__Machine__Group__0__Impl rule__Machine__Group__1 ;
+    // InternalXMachine.g:1391:1: rule__Machine__Group__0 : rule__Machine__Group__0__Impl rule__Machine__Group__1 ;
     public final void rule__Machine__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1401:1: ( rule__Machine__Group__0__Impl rule__Machine__Group__1 )
-            // InternalXMachine.g:1402:2: rule__Machine__Group__0__Impl rule__Machine__Group__1
+            // InternalXMachine.g:1395:1: ( rule__Machine__Group__0__Impl rule__Machine__Group__1 )
+            // InternalXMachine.g:1396:2: rule__Machine__Group__0__Impl rule__Machine__Group__1
             {
             pushFollow(FOLLOW_4);
             rule__Machine__Group__0__Impl();
@@ -5459,23 +5419,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group__0__Impl"
-    // InternalXMachine.g:1409:1: rule__Machine__Group__0__Impl : ( () ) ;
+    // InternalXMachine.g:1403:1: rule__Machine__Group__0__Impl : ( () ) ;
     public final void rule__Machine__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1413:1: ( ( () ) )
-            // InternalXMachine.g:1414:1: ( () )
+            // InternalXMachine.g:1407:1: ( ( () ) )
+            // InternalXMachine.g:1408:1: ( () )
             {
-            // InternalXMachine.g:1414:1: ( () )
-            // InternalXMachine.g:1415:2: ()
+            // InternalXMachine.g:1408:1: ( () )
+            // InternalXMachine.g:1409:2: ()
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getMachineAction_0()); 
             }
-            // InternalXMachine.g:1416:2: ()
-            // InternalXMachine.g:1416:3: 
+            // InternalXMachine.g:1410:2: ()
+            // InternalXMachine.g:1410:3: 
             {
             }
 
@@ -5500,14 +5460,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group__1"
-    // InternalXMachine.g:1424:1: rule__Machine__Group__1 : rule__Machine__Group__1__Impl rule__Machine__Group__2 ;
+    // InternalXMachine.g:1418:1: rule__Machine__Group__1 : rule__Machine__Group__1__Impl rule__Machine__Group__2 ;
     public final void rule__Machine__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1428:1: ( rule__Machine__Group__1__Impl rule__Machine__Group__2 )
-            // InternalXMachine.g:1429:2: rule__Machine__Group__1__Impl rule__Machine__Group__2
+            // InternalXMachine.g:1422:1: ( rule__Machine__Group__1__Impl rule__Machine__Group__2 )
+            // InternalXMachine.g:1423:2: rule__Machine__Group__1__Impl rule__Machine__Group__2
             {
             pushFollow(FOLLOW_5);
             rule__Machine__Group__1__Impl();
@@ -5538,17 +5498,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group__1__Impl"
-    // InternalXMachine.g:1436:1: rule__Machine__Group__1__Impl : ( 'machine' ) ;
+    // InternalXMachine.g:1430:1: rule__Machine__Group__1__Impl : ( 'machine' ) ;
     public final void rule__Machine__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1440:1: ( ( 'machine' ) )
-            // InternalXMachine.g:1441:1: ( 'machine' )
+            // InternalXMachine.g:1434:1: ( ( 'machine' ) )
+            // InternalXMachine.g:1435:1: ( 'machine' )
             {
-            // InternalXMachine.g:1441:1: ( 'machine' )
-            // InternalXMachine.g:1442:2: 'machine'
+            // InternalXMachine.g:1435:1: ( 'machine' )
+            // InternalXMachine.g:1436:2: 'machine'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getMachineKeyword_1()); 
@@ -5579,14 +5539,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group__2"
-    // InternalXMachine.g:1451:1: rule__Machine__Group__2 : rule__Machine__Group__2__Impl rule__Machine__Group__3 ;
+    // InternalXMachine.g:1445:1: rule__Machine__Group__2 : rule__Machine__Group__2__Impl rule__Machine__Group__3 ;
     public final void rule__Machine__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1455:1: ( rule__Machine__Group__2__Impl rule__Machine__Group__3 )
-            // InternalXMachine.g:1456:2: rule__Machine__Group__2__Impl rule__Machine__Group__3
+            // InternalXMachine.g:1449:1: ( rule__Machine__Group__2__Impl rule__Machine__Group__3 )
+            // InternalXMachine.g:1450:2: rule__Machine__Group__2__Impl rule__Machine__Group__3
             {
             pushFollow(FOLLOW_6);
             rule__Machine__Group__2__Impl();
@@ -5617,23 +5577,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group__2__Impl"
-    // InternalXMachine.g:1463:1: rule__Machine__Group__2__Impl : ( ( rule__Machine__NameAssignment_2 ) ) ;
+    // InternalXMachine.g:1457:1: rule__Machine__Group__2__Impl : ( ( rule__Machine__NameAssignment_2 ) ) ;
     public final void rule__Machine__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1467:1: ( ( ( rule__Machine__NameAssignment_2 ) ) )
-            // InternalXMachine.g:1468:1: ( ( rule__Machine__NameAssignment_2 ) )
+            // InternalXMachine.g:1461:1: ( ( ( rule__Machine__NameAssignment_2 ) ) )
+            // InternalXMachine.g:1462:1: ( ( rule__Machine__NameAssignment_2 ) )
             {
-            // InternalXMachine.g:1468:1: ( ( rule__Machine__NameAssignment_2 ) )
-            // InternalXMachine.g:1469:2: ( rule__Machine__NameAssignment_2 )
+            // InternalXMachine.g:1462:1: ( ( rule__Machine__NameAssignment_2 ) )
+            // InternalXMachine.g:1463:2: ( rule__Machine__NameAssignment_2 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getNameAssignment_2()); 
             }
-            // InternalXMachine.g:1470:2: ( rule__Machine__NameAssignment_2 )
-            // InternalXMachine.g:1470:3: rule__Machine__NameAssignment_2
+            // InternalXMachine.g:1464:2: ( rule__Machine__NameAssignment_2 )
+            // InternalXMachine.g:1464:3: rule__Machine__NameAssignment_2
             {
             pushFollow(FOLLOW_2);
             rule__Machine__NameAssignment_2();
@@ -5668,14 +5628,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group__3"
-    // InternalXMachine.g:1478:1: rule__Machine__Group__3 : rule__Machine__Group__3__Impl rule__Machine__Group__4 ;
+    // InternalXMachine.g:1472:1: rule__Machine__Group__3 : rule__Machine__Group__3__Impl rule__Machine__Group__4 ;
     public final void rule__Machine__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1482:1: ( rule__Machine__Group__3__Impl rule__Machine__Group__4 )
-            // InternalXMachine.g:1483:2: rule__Machine__Group__3__Impl rule__Machine__Group__4
+            // InternalXMachine.g:1476:1: ( rule__Machine__Group__3__Impl rule__Machine__Group__4 )
+            // InternalXMachine.g:1477:2: rule__Machine__Group__3__Impl rule__Machine__Group__4
             {
             pushFollow(FOLLOW_7);
             rule__Machine__Group__3__Impl();
@@ -5706,23 +5666,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group__3__Impl"
-    // InternalXMachine.g:1490:1: rule__Machine__Group__3__Impl : ( ( rule__Machine__UnorderedGroup_3 ) ) ;
+    // InternalXMachine.g:1484:1: rule__Machine__Group__3__Impl : ( ( rule__Machine__UnorderedGroup_3 ) ) ;
     public final void rule__Machine__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1494:1: ( ( ( rule__Machine__UnorderedGroup_3 ) ) )
-            // InternalXMachine.g:1495:1: ( ( rule__Machine__UnorderedGroup_3 ) )
+            // InternalXMachine.g:1488:1: ( ( ( rule__Machine__UnorderedGroup_3 ) ) )
+            // InternalXMachine.g:1489:1: ( ( rule__Machine__UnorderedGroup_3 ) )
             {
-            // InternalXMachine.g:1495:1: ( ( rule__Machine__UnorderedGroup_3 ) )
-            // InternalXMachine.g:1496:2: ( rule__Machine__UnorderedGroup_3 )
+            // InternalXMachine.g:1489:1: ( ( rule__Machine__UnorderedGroup_3 ) )
+            // InternalXMachine.g:1490:2: ( rule__Machine__UnorderedGroup_3 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getUnorderedGroup_3()); 
             }
-            // InternalXMachine.g:1497:2: ( rule__Machine__UnorderedGroup_3 )
-            // InternalXMachine.g:1497:3: rule__Machine__UnorderedGroup_3
+            // InternalXMachine.g:1491:2: ( rule__Machine__UnorderedGroup_3 )
+            // InternalXMachine.g:1491:3: rule__Machine__UnorderedGroup_3
             {
             pushFollow(FOLLOW_2);
             rule__Machine__UnorderedGroup_3();
@@ -5757,14 +5717,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group__4"
-    // InternalXMachine.g:1505:1: rule__Machine__Group__4 : rule__Machine__Group__4__Impl rule__Machine__Group__5 ;
+    // InternalXMachine.g:1499:1: rule__Machine__Group__4 : rule__Machine__Group__4__Impl rule__Machine__Group__5 ;
     public final void rule__Machine__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1509:1: ( rule__Machine__Group__4__Impl rule__Machine__Group__5 )
-            // InternalXMachine.g:1510:2: rule__Machine__Group__4__Impl rule__Machine__Group__5
+            // InternalXMachine.g:1503:1: ( rule__Machine__Group__4__Impl rule__Machine__Group__5 )
+            // InternalXMachine.g:1504:2: rule__Machine__Group__4__Impl rule__Machine__Group__5
             {
             pushFollow(FOLLOW_7);
             rule__Machine__Group__4__Impl();
@@ -5795,22 +5755,22 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group__4__Impl"
-    // InternalXMachine.g:1517:1: rule__Machine__Group__4__Impl : ( ( rule__Machine__Group_4__0 )? ) ;
+    // InternalXMachine.g:1511:1: rule__Machine__Group__4__Impl : ( ( rule__Machine__Group_4__0 )? ) ;
     public final void rule__Machine__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1521:1: ( ( ( rule__Machine__Group_4__0 )? ) )
-            // InternalXMachine.g:1522:1: ( ( rule__Machine__Group_4__0 )? )
+            // InternalXMachine.g:1515:1: ( ( ( rule__Machine__Group_4__0 )? ) )
+            // InternalXMachine.g:1516:1: ( ( rule__Machine__Group_4__0 )? )
             {
-            // InternalXMachine.g:1522:1: ( ( rule__Machine__Group_4__0 )? )
-            // InternalXMachine.g:1523:2: ( rule__Machine__Group_4__0 )?
+            // InternalXMachine.g:1516:1: ( ( rule__Machine__Group_4__0 )? )
+            // InternalXMachine.g:1517:2: ( rule__Machine__Group_4__0 )?
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getGroup_4()); 
             }
-            // InternalXMachine.g:1524:2: ( rule__Machine__Group_4__0 )?
+            // InternalXMachine.g:1518:2: ( rule__Machine__Group_4__0 )?
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -5819,7 +5779,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             }
             switch (alt10) {
                 case 1 :
-                    // InternalXMachine.g:1524:3: rule__Machine__Group_4__0
+                    // InternalXMachine.g:1518:3: rule__Machine__Group_4__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Machine__Group_4__0();
@@ -5857,14 +5817,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group__5"
-    // InternalXMachine.g:1532:1: rule__Machine__Group__5 : rule__Machine__Group__5__Impl rule__Machine__Group__6 ;
+    // InternalXMachine.g:1526:1: rule__Machine__Group__5 : rule__Machine__Group__5__Impl rule__Machine__Group__6 ;
     public final void rule__Machine__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1536:1: ( rule__Machine__Group__5__Impl rule__Machine__Group__6 )
-            // InternalXMachine.g:1537:2: rule__Machine__Group__5__Impl rule__Machine__Group__6
+            // InternalXMachine.g:1530:1: ( rule__Machine__Group__5__Impl rule__Machine__Group__6 )
+            // InternalXMachine.g:1531:2: rule__Machine__Group__5__Impl rule__Machine__Group__6
             {
             pushFollow(FOLLOW_7);
             rule__Machine__Group__5__Impl();
@@ -5895,22 +5855,22 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group__5__Impl"
-    // InternalXMachine.g:1544:1: rule__Machine__Group__5__Impl : ( ( rule__Machine__Group_5__0 )? ) ;
+    // InternalXMachine.g:1538:1: rule__Machine__Group__5__Impl : ( ( rule__Machine__Group_5__0 )? ) ;
     public final void rule__Machine__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1548:1: ( ( ( rule__Machine__Group_5__0 )? ) )
-            // InternalXMachine.g:1549:1: ( ( rule__Machine__Group_5__0 )? )
+            // InternalXMachine.g:1542:1: ( ( ( rule__Machine__Group_5__0 )? ) )
+            // InternalXMachine.g:1543:1: ( ( rule__Machine__Group_5__0 )? )
             {
-            // InternalXMachine.g:1549:1: ( ( rule__Machine__Group_5__0 )? )
-            // InternalXMachine.g:1550:2: ( rule__Machine__Group_5__0 )?
+            // InternalXMachine.g:1543:1: ( ( rule__Machine__Group_5__0 )? )
+            // InternalXMachine.g:1544:2: ( rule__Machine__Group_5__0 )?
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getGroup_5()); 
             }
-            // InternalXMachine.g:1551:2: ( rule__Machine__Group_5__0 )?
+            // InternalXMachine.g:1545:2: ( rule__Machine__Group_5__0 )?
             int alt11=2;
             int LA11_0 = input.LA(1);
 
@@ -5919,7 +5879,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             }
             switch (alt11) {
                 case 1 :
-                    // InternalXMachine.g:1551:3: rule__Machine__Group_5__0
+                    // InternalXMachine.g:1545:3: rule__Machine__Group_5__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Machine__Group_5__0();
@@ -5957,14 +5917,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group__6"
-    // InternalXMachine.g:1559:1: rule__Machine__Group__6 : rule__Machine__Group__6__Impl rule__Machine__Group__7 ;
+    // InternalXMachine.g:1553:1: rule__Machine__Group__6 : rule__Machine__Group__6__Impl rule__Machine__Group__7 ;
     public final void rule__Machine__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1563:1: ( rule__Machine__Group__6__Impl rule__Machine__Group__7 )
-            // InternalXMachine.g:1564:2: rule__Machine__Group__6__Impl rule__Machine__Group__7
+            // InternalXMachine.g:1557:1: ( rule__Machine__Group__6__Impl rule__Machine__Group__7 )
+            // InternalXMachine.g:1558:2: rule__Machine__Group__6__Impl rule__Machine__Group__7
             {
             pushFollow(FOLLOW_7);
             rule__Machine__Group__6__Impl();
@@ -5995,22 +5955,22 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group__6__Impl"
-    // InternalXMachine.g:1571:1: rule__Machine__Group__6__Impl : ( ( rule__Machine__Group_6__0 )? ) ;
+    // InternalXMachine.g:1565:1: rule__Machine__Group__6__Impl : ( ( rule__Machine__Group_6__0 )? ) ;
     public final void rule__Machine__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1575:1: ( ( ( rule__Machine__Group_6__0 )? ) )
-            // InternalXMachine.g:1576:1: ( ( rule__Machine__Group_6__0 )? )
+            // InternalXMachine.g:1569:1: ( ( ( rule__Machine__Group_6__0 )? ) )
+            // InternalXMachine.g:1570:1: ( ( rule__Machine__Group_6__0 )? )
             {
-            // InternalXMachine.g:1576:1: ( ( rule__Machine__Group_6__0 )? )
-            // InternalXMachine.g:1577:2: ( rule__Machine__Group_6__0 )?
+            // InternalXMachine.g:1570:1: ( ( rule__Machine__Group_6__0 )? )
+            // InternalXMachine.g:1571:2: ( rule__Machine__Group_6__0 )?
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getGroup_6()); 
             }
-            // InternalXMachine.g:1578:2: ( rule__Machine__Group_6__0 )?
+            // InternalXMachine.g:1572:2: ( rule__Machine__Group_6__0 )?
             int alt12=2;
             int LA12_0 = input.LA(1);
 
@@ -6019,7 +5979,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             }
             switch (alt12) {
                 case 1 :
-                    // InternalXMachine.g:1578:3: rule__Machine__Group_6__0
+                    // InternalXMachine.g:1572:3: rule__Machine__Group_6__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Machine__Group_6__0();
@@ -6057,14 +6017,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group__7"
-    // InternalXMachine.g:1586:1: rule__Machine__Group__7 : rule__Machine__Group__7__Impl rule__Machine__Group__8 ;
+    // InternalXMachine.g:1580:1: rule__Machine__Group__7 : rule__Machine__Group__7__Impl rule__Machine__Group__8 ;
     public final void rule__Machine__Group__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1590:1: ( rule__Machine__Group__7__Impl rule__Machine__Group__8 )
-            // InternalXMachine.g:1591:2: rule__Machine__Group__7__Impl rule__Machine__Group__8
+            // InternalXMachine.g:1584:1: ( rule__Machine__Group__7__Impl rule__Machine__Group__8 )
+            // InternalXMachine.g:1585:2: rule__Machine__Group__7__Impl rule__Machine__Group__8
             {
             pushFollow(FOLLOW_7);
             rule__Machine__Group__7__Impl();
@@ -6095,22 +6055,22 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group__7__Impl"
-    // InternalXMachine.g:1598:1: rule__Machine__Group__7__Impl : ( ( rule__Machine__Group_7__0 )? ) ;
+    // InternalXMachine.g:1592:1: rule__Machine__Group__7__Impl : ( ( rule__Machine__Group_7__0 )? ) ;
     public final void rule__Machine__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1602:1: ( ( ( rule__Machine__Group_7__0 )? ) )
-            // InternalXMachine.g:1603:1: ( ( rule__Machine__Group_7__0 )? )
+            // InternalXMachine.g:1596:1: ( ( ( rule__Machine__Group_7__0 )? ) )
+            // InternalXMachine.g:1597:1: ( ( rule__Machine__Group_7__0 )? )
             {
-            // InternalXMachine.g:1603:1: ( ( rule__Machine__Group_7__0 )? )
-            // InternalXMachine.g:1604:2: ( rule__Machine__Group_7__0 )?
+            // InternalXMachine.g:1597:1: ( ( rule__Machine__Group_7__0 )? )
+            // InternalXMachine.g:1598:2: ( rule__Machine__Group_7__0 )?
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getGroup_7()); 
             }
-            // InternalXMachine.g:1605:2: ( rule__Machine__Group_7__0 )?
+            // InternalXMachine.g:1599:2: ( rule__Machine__Group_7__0 )?
             int alt13=2;
             int LA13_0 = input.LA(1);
 
@@ -6119,7 +6079,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             }
             switch (alt13) {
                 case 1 :
-                    // InternalXMachine.g:1605:3: rule__Machine__Group_7__0
+                    // InternalXMachine.g:1599:3: rule__Machine__Group_7__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Machine__Group_7__0();
@@ -6157,14 +6117,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group__8"
-    // InternalXMachine.g:1613:1: rule__Machine__Group__8 : rule__Machine__Group__8__Impl rule__Machine__Group__9 ;
+    // InternalXMachine.g:1607:1: rule__Machine__Group__8 : rule__Machine__Group__8__Impl rule__Machine__Group__9 ;
     public final void rule__Machine__Group__8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1617:1: ( rule__Machine__Group__8__Impl rule__Machine__Group__9 )
-            // InternalXMachine.g:1618:2: rule__Machine__Group__8__Impl rule__Machine__Group__9
+            // InternalXMachine.g:1611:1: ( rule__Machine__Group__8__Impl rule__Machine__Group__9 )
+            // InternalXMachine.g:1612:2: rule__Machine__Group__8__Impl rule__Machine__Group__9
             {
             pushFollow(FOLLOW_7);
             rule__Machine__Group__8__Impl();
@@ -6195,22 +6155,22 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group__8__Impl"
-    // InternalXMachine.g:1625:1: rule__Machine__Group__8__Impl : ( ( rule__Machine__ExtensionsAssignment_8 )* ) ;
+    // InternalXMachine.g:1619:1: rule__Machine__Group__8__Impl : ( ( rule__Machine__ExtensionsAssignment_8 )* ) ;
     public final void rule__Machine__Group__8__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1629:1: ( ( ( rule__Machine__ExtensionsAssignment_8 )* ) )
-            // InternalXMachine.g:1630:1: ( ( rule__Machine__ExtensionsAssignment_8 )* )
+            // InternalXMachine.g:1623:1: ( ( ( rule__Machine__ExtensionsAssignment_8 )* ) )
+            // InternalXMachine.g:1624:1: ( ( rule__Machine__ExtensionsAssignment_8 )* )
             {
-            // InternalXMachine.g:1630:1: ( ( rule__Machine__ExtensionsAssignment_8 )* )
-            // InternalXMachine.g:1631:2: ( rule__Machine__ExtensionsAssignment_8 )*
+            // InternalXMachine.g:1624:1: ( ( rule__Machine__ExtensionsAssignment_8 )* )
+            // InternalXMachine.g:1625:2: ( rule__Machine__ExtensionsAssignment_8 )*
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getExtensionsAssignment_8()); 
             }
-            // InternalXMachine.g:1632:2: ( rule__Machine__ExtensionsAssignment_8 )*
+            // InternalXMachine.g:1626:2: ( rule__Machine__ExtensionsAssignment_8 )*
             loop14:
             do {
                 int alt14=2;
@@ -6223,7 +6183,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
                 switch (alt14) {
             	case 1 :
-            	    // InternalXMachine.g:1632:3: rule__Machine__ExtensionsAssignment_8
+            	    // InternalXMachine.g:1626:3: rule__Machine__ExtensionsAssignment_8
             	    {
             	    pushFollow(FOLLOW_8);
             	    rule__Machine__ExtensionsAssignment_8();
@@ -6264,14 +6224,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group__9"
-    // InternalXMachine.g:1640:1: rule__Machine__Group__9 : rule__Machine__Group__9__Impl ;
+    // InternalXMachine.g:1634:1: rule__Machine__Group__9 : rule__Machine__Group__9__Impl ;
     public final void rule__Machine__Group__9() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1644:1: ( rule__Machine__Group__9__Impl )
-            // InternalXMachine.g:1645:2: rule__Machine__Group__9__Impl
+            // InternalXMachine.g:1638:1: ( rule__Machine__Group__9__Impl )
+            // InternalXMachine.g:1639:2: rule__Machine__Group__9__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Machine__Group__9__Impl();
@@ -6297,17 +6257,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group__9__Impl"
-    // InternalXMachine.g:1651:1: rule__Machine__Group__9__Impl : ( 'end' ) ;
+    // InternalXMachine.g:1645:1: rule__Machine__Group__9__Impl : ( 'end' ) ;
     public final void rule__Machine__Group__9__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1655:1: ( ( 'end' ) )
-            // InternalXMachine.g:1656:1: ( 'end' )
+            // InternalXMachine.g:1649:1: ( ( 'end' ) )
+            // InternalXMachine.g:1650:1: ( 'end' )
             {
-            // InternalXMachine.g:1656:1: ( 'end' )
-            // InternalXMachine.g:1657:2: 'end'
+            // InternalXMachine.g:1650:1: ( 'end' )
+            // InternalXMachine.g:1651:2: 'end'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getEndKeyword_9()); 
@@ -6338,14 +6298,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group_3_0__0"
-    // InternalXMachine.g:1667:1: rule__Machine__Group_3_0__0 : rule__Machine__Group_3_0__0__Impl rule__Machine__Group_3_0__1 ;
+    // InternalXMachine.g:1661:1: rule__Machine__Group_3_0__0 : rule__Machine__Group_3_0__0__Impl rule__Machine__Group_3_0__1 ;
     public final void rule__Machine__Group_3_0__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1671:1: ( rule__Machine__Group_3_0__0__Impl rule__Machine__Group_3_0__1 )
-            // InternalXMachine.g:1672:2: rule__Machine__Group_3_0__0__Impl rule__Machine__Group_3_0__1
+            // InternalXMachine.g:1665:1: ( rule__Machine__Group_3_0__0__Impl rule__Machine__Group_3_0__1 )
+            // InternalXMachine.g:1666:2: rule__Machine__Group_3_0__0__Impl rule__Machine__Group_3_0__1
             {
             pushFollow(FOLLOW_5);
             rule__Machine__Group_3_0__0__Impl();
@@ -6376,17 +6336,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group_3_0__0__Impl"
-    // InternalXMachine.g:1679:1: rule__Machine__Group_3_0__0__Impl : ( 'refines' ) ;
+    // InternalXMachine.g:1673:1: rule__Machine__Group_3_0__0__Impl : ( 'refines' ) ;
     public final void rule__Machine__Group_3_0__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1683:1: ( ( 'refines' ) )
-            // InternalXMachine.g:1684:1: ( 'refines' )
+            // InternalXMachine.g:1677:1: ( ( 'refines' ) )
+            // InternalXMachine.g:1678:1: ( 'refines' )
             {
-            // InternalXMachine.g:1684:1: ( 'refines' )
-            // InternalXMachine.g:1685:2: 'refines'
+            // InternalXMachine.g:1678:1: ( 'refines' )
+            // InternalXMachine.g:1679:2: 'refines'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getRefinesKeyword_3_0_0()); 
@@ -6417,14 +6377,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group_3_0__1"
-    // InternalXMachine.g:1694:1: rule__Machine__Group_3_0__1 : rule__Machine__Group_3_0__1__Impl ;
+    // InternalXMachine.g:1688:1: rule__Machine__Group_3_0__1 : rule__Machine__Group_3_0__1__Impl ;
     public final void rule__Machine__Group_3_0__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1698:1: ( rule__Machine__Group_3_0__1__Impl )
-            // InternalXMachine.g:1699:2: rule__Machine__Group_3_0__1__Impl
+            // InternalXMachine.g:1692:1: ( rule__Machine__Group_3_0__1__Impl )
+            // InternalXMachine.g:1693:2: rule__Machine__Group_3_0__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Machine__Group_3_0__1__Impl();
@@ -6450,23 +6410,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group_3_0__1__Impl"
-    // InternalXMachine.g:1705:1: rule__Machine__Group_3_0__1__Impl : ( ( rule__Machine__RefinesAssignment_3_0_1 ) ) ;
+    // InternalXMachine.g:1699:1: rule__Machine__Group_3_0__1__Impl : ( ( rule__Machine__RefinesAssignment_3_0_1 ) ) ;
     public final void rule__Machine__Group_3_0__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1709:1: ( ( ( rule__Machine__RefinesAssignment_3_0_1 ) ) )
-            // InternalXMachine.g:1710:1: ( ( rule__Machine__RefinesAssignment_3_0_1 ) )
+            // InternalXMachine.g:1703:1: ( ( ( rule__Machine__RefinesAssignment_3_0_1 ) ) )
+            // InternalXMachine.g:1704:1: ( ( rule__Machine__RefinesAssignment_3_0_1 ) )
             {
-            // InternalXMachine.g:1710:1: ( ( rule__Machine__RefinesAssignment_3_0_1 ) )
-            // InternalXMachine.g:1711:2: ( rule__Machine__RefinesAssignment_3_0_1 )
+            // InternalXMachine.g:1704:1: ( ( rule__Machine__RefinesAssignment_3_0_1 ) )
+            // InternalXMachine.g:1705:2: ( rule__Machine__RefinesAssignment_3_0_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getRefinesAssignment_3_0_1()); 
             }
-            // InternalXMachine.g:1712:2: ( rule__Machine__RefinesAssignment_3_0_1 )
-            // InternalXMachine.g:1712:3: rule__Machine__RefinesAssignment_3_0_1
+            // InternalXMachine.g:1706:2: ( rule__Machine__RefinesAssignment_3_0_1 )
+            // InternalXMachine.g:1706:3: rule__Machine__RefinesAssignment_3_0_1
             {
             pushFollow(FOLLOW_2);
             rule__Machine__RefinesAssignment_3_0_1();
@@ -6501,14 +6461,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group_3_1__0"
-    // InternalXMachine.g:1721:1: rule__Machine__Group_3_1__0 : rule__Machine__Group_3_1__0__Impl rule__Machine__Group_3_1__1 ;
+    // InternalXMachine.g:1715:1: rule__Machine__Group_3_1__0 : rule__Machine__Group_3_1__0__Impl rule__Machine__Group_3_1__1 ;
     public final void rule__Machine__Group_3_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1725:1: ( rule__Machine__Group_3_1__0__Impl rule__Machine__Group_3_1__1 )
-            // InternalXMachine.g:1726:2: rule__Machine__Group_3_1__0__Impl rule__Machine__Group_3_1__1
+            // InternalXMachine.g:1719:1: ( rule__Machine__Group_3_1__0__Impl rule__Machine__Group_3_1__1 )
+            // InternalXMachine.g:1720:2: rule__Machine__Group_3_1__0__Impl rule__Machine__Group_3_1__1
             {
             pushFollow(FOLLOW_5);
             rule__Machine__Group_3_1__0__Impl();
@@ -6539,17 +6499,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group_3_1__0__Impl"
-    // InternalXMachine.g:1733:1: rule__Machine__Group_3_1__0__Impl : ( 'sees' ) ;
+    // InternalXMachine.g:1727:1: rule__Machine__Group_3_1__0__Impl : ( 'sees' ) ;
     public final void rule__Machine__Group_3_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1737:1: ( ( 'sees' ) )
-            // InternalXMachine.g:1738:1: ( 'sees' )
+            // InternalXMachine.g:1731:1: ( ( 'sees' ) )
+            // InternalXMachine.g:1732:1: ( 'sees' )
             {
-            // InternalXMachine.g:1738:1: ( 'sees' )
-            // InternalXMachine.g:1739:2: 'sees'
+            // InternalXMachine.g:1732:1: ( 'sees' )
+            // InternalXMachine.g:1733:2: 'sees'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getSeesKeyword_3_1_0()); 
@@ -6580,14 +6540,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group_3_1__1"
-    // InternalXMachine.g:1748:1: rule__Machine__Group_3_1__1 : rule__Machine__Group_3_1__1__Impl ;
+    // InternalXMachine.g:1742:1: rule__Machine__Group_3_1__1 : rule__Machine__Group_3_1__1__Impl ;
     public final void rule__Machine__Group_3_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1752:1: ( rule__Machine__Group_3_1__1__Impl )
-            // InternalXMachine.g:1753:2: rule__Machine__Group_3_1__1__Impl
+            // InternalXMachine.g:1746:1: ( rule__Machine__Group_3_1__1__Impl )
+            // InternalXMachine.g:1747:2: rule__Machine__Group_3_1__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Machine__Group_3_1__1__Impl();
@@ -6613,26 +6573,26 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group_3_1__1__Impl"
-    // InternalXMachine.g:1759:1: rule__Machine__Group_3_1__1__Impl : ( ( ( rule__Machine__SeesAssignment_3_1_1 ) ) ( ( rule__Machine__SeesAssignment_3_1_1 )* ) ) ;
+    // InternalXMachine.g:1753:1: rule__Machine__Group_3_1__1__Impl : ( ( ( rule__Machine__SeesAssignment_3_1_1 ) ) ( ( rule__Machine__SeesAssignment_3_1_1 )* ) ) ;
     public final void rule__Machine__Group_3_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1763:1: ( ( ( ( rule__Machine__SeesAssignment_3_1_1 ) ) ( ( rule__Machine__SeesAssignment_3_1_1 )* ) ) )
-            // InternalXMachine.g:1764:1: ( ( ( rule__Machine__SeesAssignment_3_1_1 ) ) ( ( rule__Machine__SeesAssignment_3_1_1 )* ) )
+            // InternalXMachine.g:1757:1: ( ( ( ( rule__Machine__SeesAssignment_3_1_1 ) ) ( ( rule__Machine__SeesAssignment_3_1_1 )* ) ) )
+            // InternalXMachine.g:1758:1: ( ( ( rule__Machine__SeesAssignment_3_1_1 ) ) ( ( rule__Machine__SeesAssignment_3_1_1 )* ) )
             {
-            // InternalXMachine.g:1764:1: ( ( ( rule__Machine__SeesAssignment_3_1_1 ) ) ( ( rule__Machine__SeesAssignment_3_1_1 )* ) )
-            // InternalXMachine.g:1765:2: ( ( rule__Machine__SeesAssignment_3_1_1 ) ) ( ( rule__Machine__SeesAssignment_3_1_1 )* )
+            // InternalXMachine.g:1758:1: ( ( ( rule__Machine__SeesAssignment_3_1_1 ) ) ( ( rule__Machine__SeesAssignment_3_1_1 )* ) )
+            // InternalXMachine.g:1759:2: ( ( rule__Machine__SeesAssignment_3_1_1 ) ) ( ( rule__Machine__SeesAssignment_3_1_1 )* )
             {
-            // InternalXMachine.g:1765:2: ( ( rule__Machine__SeesAssignment_3_1_1 ) )
-            // InternalXMachine.g:1766:3: ( rule__Machine__SeesAssignment_3_1_1 )
+            // InternalXMachine.g:1759:2: ( ( rule__Machine__SeesAssignment_3_1_1 ) )
+            // InternalXMachine.g:1760:3: ( rule__Machine__SeesAssignment_3_1_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getSeesAssignment_3_1_1()); 
             }
-            // InternalXMachine.g:1767:3: ( rule__Machine__SeesAssignment_3_1_1 )
-            // InternalXMachine.g:1767:4: rule__Machine__SeesAssignment_3_1_1
+            // InternalXMachine.g:1761:3: ( rule__Machine__SeesAssignment_3_1_1 )
+            // InternalXMachine.g:1761:4: rule__Machine__SeesAssignment_3_1_1
             {
             pushFollow(FOLLOW_9);
             rule__Machine__SeesAssignment_3_1_1();
@@ -6648,13 +6608,13 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
             }
 
-            // InternalXMachine.g:1770:2: ( ( rule__Machine__SeesAssignment_3_1_1 )* )
-            // InternalXMachine.g:1771:3: ( rule__Machine__SeesAssignment_3_1_1 )*
+            // InternalXMachine.g:1764:2: ( ( rule__Machine__SeesAssignment_3_1_1 )* )
+            // InternalXMachine.g:1765:3: ( rule__Machine__SeesAssignment_3_1_1 )*
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getSeesAssignment_3_1_1()); 
             }
-            // InternalXMachine.g:1772:3: ( rule__Machine__SeesAssignment_3_1_1 )*
+            // InternalXMachine.g:1766:3: ( rule__Machine__SeesAssignment_3_1_1 )*
             loop15:
             do {
                 int alt15=2;
@@ -6667,7 +6627,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
                 switch (alt15) {
             	case 1 :
-            	    // InternalXMachine.g:1772:4: rule__Machine__SeesAssignment_3_1_1
+            	    // InternalXMachine.g:1766:4: rule__Machine__SeesAssignment_3_1_1
             	    {
             	    pushFollow(FOLLOW_9);
             	    rule__Machine__SeesAssignment_3_1_1();
@@ -6711,14 +6671,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group_4__0"
-    // InternalXMachine.g:1782:1: rule__Machine__Group_4__0 : rule__Machine__Group_4__0__Impl rule__Machine__Group_4__1 ;
+    // InternalXMachine.g:1776:1: rule__Machine__Group_4__0 : rule__Machine__Group_4__0__Impl rule__Machine__Group_4__1 ;
     public final void rule__Machine__Group_4__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1786:1: ( rule__Machine__Group_4__0__Impl rule__Machine__Group_4__1 )
-            // InternalXMachine.g:1787:2: rule__Machine__Group_4__0__Impl rule__Machine__Group_4__1
+            // InternalXMachine.g:1780:1: ( rule__Machine__Group_4__0__Impl rule__Machine__Group_4__1 )
+            // InternalXMachine.g:1781:2: rule__Machine__Group_4__0__Impl rule__Machine__Group_4__1
             {
             pushFollow(FOLLOW_5);
             rule__Machine__Group_4__0__Impl();
@@ -6749,17 +6709,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group_4__0__Impl"
-    // InternalXMachine.g:1794:1: rule__Machine__Group_4__0__Impl : ( 'variables' ) ;
+    // InternalXMachine.g:1788:1: rule__Machine__Group_4__0__Impl : ( 'variables' ) ;
     public final void rule__Machine__Group_4__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1798:1: ( ( 'variables' ) )
-            // InternalXMachine.g:1799:1: ( 'variables' )
+            // InternalXMachine.g:1792:1: ( ( 'variables' ) )
+            // InternalXMachine.g:1793:1: ( 'variables' )
             {
-            // InternalXMachine.g:1799:1: ( 'variables' )
-            // InternalXMachine.g:1800:2: 'variables'
+            // InternalXMachine.g:1793:1: ( 'variables' )
+            // InternalXMachine.g:1794:2: 'variables'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getVariablesKeyword_4_0()); 
@@ -6790,14 +6750,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group_4__1"
-    // InternalXMachine.g:1809:1: rule__Machine__Group_4__1 : rule__Machine__Group_4__1__Impl ;
+    // InternalXMachine.g:1803:1: rule__Machine__Group_4__1 : rule__Machine__Group_4__1__Impl ;
     public final void rule__Machine__Group_4__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1813:1: ( rule__Machine__Group_4__1__Impl )
-            // InternalXMachine.g:1814:2: rule__Machine__Group_4__1__Impl
+            // InternalXMachine.g:1807:1: ( rule__Machine__Group_4__1__Impl )
+            // InternalXMachine.g:1808:2: rule__Machine__Group_4__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Machine__Group_4__1__Impl();
@@ -6823,26 +6783,26 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group_4__1__Impl"
-    // InternalXMachine.g:1820:1: rule__Machine__Group_4__1__Impl : ( ( ( rule__Machine__VariablesAssignment_4_1 ) ) ( ( rule__Machine__VariablesAssignment_4_1 )* ) ) ;
+    // InternalXMachine.g:1814:1: rule__Machine__Group_4__1__Impl : ( ( ( rule__Machine__VariablesAssignment_4_1 ) ) ( ( rule__Machine__VariablesAssignment_4_1 )* ) ) ;
     public final void rule__Machine__Group_4__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1824:1: ( ( ( ( rule__Machine__VariablesAssignment_4_1 ) ) ( ( rule__Machine__VariablesAssignment_4_1 )* ) ) )
-            // InternalXMachine.g:1825:1: ( ( ( rule__Machine__VariablesAssignment_4_1 ) ) ( ( rule__Machine__VariablesAssignment_4_1 )* ) )
+            // InternalXMachine.g:1818:1: ( ( ( ( rule__Machine__VariablesAssignment_4_1 ) ) ( ( rule__Machine__VariablesAssignment_4_1 )* ) ) )
+            // InternalXMachine.g:1819:1: ( ( ( rule__Machine__VariablesAssignment_4_1 ) ) ( ( rule__Machine__VariablesAssignment_4_1 )* ) )
             {
-            // InternalXMachine.g:1825:1: ( ( ( rule__Machine__VariablesAssignment_4_1 ) ) ( ( rule__Machine__VariablesAssignment_4_1 )* ) )
-            // InternalXMachine.g:1826:2: ( ( rule__Machine__VariablesAssignment_4_1 ) ) ( ( rule__Machine__VariablesAssignment_4_1 )* )
+            // InternalXMachine.g:1819:1: ( ( ( rule__Machine__VariablesAssignment_4_1 ) ) ( ( rule__Machine__VariablesAssignment_4_1 )* ) )
+            // InternalXMachine.g:1820:2: ( ( rule__Machine__VariablesAssignment_4_1 ) ) ( ( rule__Machine__VariablesAssignment_4_1 )* )
             {
-            // InternalXMachine.g:1826:2: ( ( rule__Machine__VariablesAssignment_4_1 ) )
-            // InternalXMachine.g:1827:3: ( rule__Machine__VariablesAssignment_4_1 )
+            // InternalXMachine.g:1820:2: ( ( rule__Machine__VariablesAssignment_4_1 ) )
+            // InternalXMachine.g:1821:3: ( rule__Machine__VariablesAssignment_4_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getVariablesAssignment_4_1()); 
             }
-            // InternalXMachine.g:1828:3: ( rule__Machine__VariablesAssignment_4_1 )
-            // InternalXMachine.g:1828:4: rule__Machine__VariablesAssignment_4_1
+            // InternalXMachine.g:1822:3: ( rule__Machine__VariablesAssignment_4_1 )
+            // InternalXMachine.g:1822:4: rule__Machine__VariablesAssignment_4_1
             {
             pushFollow(FOLLOW_9);
             rule__Machine__VariablesAssignment_4_1();
@@ -6858,13 +6818,13 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
             }
 
-            // InternalXMachine.g:1831:2: ( ( rule__Machine__VariablesAssignment_4_1 )* )
-            // InternalXMachine.g:1832:3: ( rule__Machine__VariablesAssignment_4_1 )*
+            // InternalXMachine.g:1825:2: ( ( rule__Machine__VariablesAssignment_4_1 )* )
+            // InternalXMachine.g:1826:3: ( rule__Machine__VariablesAssignment_4_1 )*
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getVariablesAssignment_4_1()); 
             }
-            // InternalXMachine.g:1833:3: ( rule__Machine__VariablesAssignment_4_1 )*
+            // InternalXMachine.g:1827:3: ( rule__Machine__VariablesAssignment_4_1 )*
             loop16:
             do {
                 int alt16=2;
@@ -6877,7 +6837,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
                 switch (alt16) {
             	case 1 :
-            	    // InternalXMachine.g:1833:4: rule__Machine__VariablesAssignment_4_1
+            	    // InternalXMachine.g:1827:4: rule__Machine__VariablesAssignment_4_1
             	    {
             	    pushFollow(FOLLOW_9);
             	    rule__Machine__VariablesAssignment_4_1();
@@ -6921,14 +6881,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group_5__0"
-    // InternalXMachine.g:1843:1: rule__Machine__Group_5__0 : rule__Machine__Group_5__0__Impl rule__Machine__Group_5__1 ;
+    // InternalXMachine.g:1837:1: rule__Machine__Group_5__0 : rule__Machine__Group_5__0__Impl rule__Machine__Group_5__1 ;
     public final void rule__Machine__Group_5__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1847:1: ( rule__Machine__Group_5__0__Impl rule__Machine__Group_5__1 )
-            // InternalXMachine.g:1848:2: rule__Machine__Group_5__0__Impl rule__Machine__Group_5__1
+            // InternalXMachine.g:1841:1: ( rule__Machine__Group_5__0__Impl rule__Machine__Group_5__1 )
+            // InternalXMachine.g:1842:2: rule__Machine__Group_5__0__Impl rule__Machine__Group_5__1
             {
             pushFollow(FOLLOW_10);
             rule__Machine__Group_5__0__Impl();
@@ -6959,17 +6919,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group_5__0__Impl"
-    // InternalXMachine.g:1855:1: rule__Machine__Group_5__0__Impl : ( 'invariants' ) ;
+    // InternalXMachine.g:1849:1: rule__Machine__Group_5__0__Impl : ( 'invariants' ) ;
     public final void rule__Machine__Group_5__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1859:1: ( ( 'invariants' ) )
-            // InternalXMachine.g:1860:1: ( 'invariants' )
+            // InternalXMachine.g:1853:1: ( ( 'invariants' ) )
+            // InternalXMachine.g:1854:1: ( 'invariants' )
             {
-            // InternalXMachine.g:1860:1: ( 'invariants' )
-            // InternalXMachine.g:1861:2: 'invariants'
+            // InternalXMachine.g:1854:1: ( 'invariants' )
+            // InternalXMachine.g:1855:2: 'invariants'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getInvariantsKeyword_5_0()); 
@@ -7000,14 +6960,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group_5__1"
-    // InternalXMachine.g:1870:1: rule__Machine__Group_5__1 : rule__Machine__Group_5__1__Impl ;
+    // InternalXMachine.g:1864:1: rule__Machine__Group_5__1 : rule__Machine__Group_5__1__Impl ;
     public final void rule__Machine__Group_5__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1874:1: ( rule__Machine__Group_5__1__Impl )
-            // InternalXMachine.g:1875:2: rule__Machine__Group_5__1__Impl
+            // InternalXMachine.g:1868:1: ( rule__Machine__Group_5__1__Impl )
+            // InternalXMachine.g:1869:2: rule__Machine__Group_5__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Machine__Group_5__1__Impl();
@@ -7033,26 +6993,26 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group_5__1__Impl"
-    // InternalXMachine.g:1881:1: rule__Machine__Group_5__1__Impl : ( ( ( rule__Machine__InvariantsAssignment_5_1 ) ) ( ( rule__Machine__InvariantsAssignment_5_1 )* ) ) ;
+    // InternalXMachine.g:1875:1: rule__Machine__Group_5__1__Impl : ( ( ( rule__Machine__InvariantsAssignment_5_1 ) ) ( ( rule__Machine__InvariantsAssignment_5_1 )* ) ) ;
     public final void rule__Machine__Group_5__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1885:1: ( ( ( ( rule__Machine__InvariantsAssignment_5_1 ) ) ( ( rule__Machine__InvariantsAssignment_5_1 )* ) ) )
-            // InternalXMachine.g:1886:1: ( ( ( rule__Machine__InvariantsAssignment_5_1 ) ) ( ( rule__Machine__InvariantsAssignment_5_1 )* ) )
+            // InternalXMachine.g:1879:1: ( ( ( ( rule__Machine__InvariantsAssignment_5_1 ) ) ( ( rule__Machine__InvariantsAssignment_5_1 )* ) ) )
+            // InternalXMachine.g:1880:1: ( ( ( rule__Machine__InvariantsAssignment_5_1 ) ) ( ( rule__Machine__InvariantsAssignment_5_1 )* ) )
             {
-            // InternalXMachine.g:1886:1: ( ( ( rule__Machine__InvariantsAssignment_5_1 ) ) ( ( rule__Machine__InvariantsAssignment_5_1 )* ) )
-            // InternalXMachine.g:1887:2: ( ( rule__Machine__InvariantsAssignment_5_1 ) ) ( ( rule__Machine__InvariantsAssignment_5_1 )* )
+            // InternalXMachine.g:1880:1: ( ( ( rule__Machine__InvariantsAssignment_5_1 ) ) ( ( rule__Machine__InvariantsAssignment_5_1 )* ) )
+            // InternalXMachine.g:1881:2: ( ( rule__Machine__InvariantsAssignment_5_1 ) ) ( ( rule__Machine__InvariantsAssignment_5_1 )* )
             {
-            // InternalXMachine.g:1887:2: ( ( rule__Machine__InvariantsAssignment_5_1 ) )
-            // InternalXMachine.g:1888:3: ( rule__Machine__InvariantsAssignment_5_1 )
+            // InternalXMachine.g:1881:2: ( ( rule__Machine__InvariantsAssignment_5_1 ) )
+            // InternalXMachine.g:1882:3: ( rule__Machine__InvariantsAssignment_5_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getInvariantsAssignment_5_1()); 
             }
-            // InternalXMachine.g:1889:3: ( rule__Machine__InvariantsAssignment_5_1 )
-            // InternalXMachine.g:1889:4: rule__Machine__InvariantsAssignment_5_1
+            // InternalXMachine.g:1883:3: ( rule__Machine__InvariantsAssignment_5_1 )
+            // InternalXMachine.g:1883:4: rule__Machine__InvariantsAssignment_5_1
             {
             pushFollow(FOLLOW_11);
             rule__Machine__InvariantsAssignment_5_1();
@@ -7068,26 +7028,26 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
             }
 
-            // InternalXMachine.g:1892:2: ( ( rule__Machine__InvariantsAssignment_5_1 )* )
-            // InternalXMachine.g:1893:3: ( rule__Machine__InvariantsAssignment_5_1 )*
+            // InternalXMachine.g:1886:2: ( ( rule__Machine__InvariantsAssignment_5_1 )* )
+            // InternalXMachine.g:1887:3: ( rule__Machine__InvariantsAssignment_5_1 )*
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getInvariantsAssignment_5_1()); 
             }
-            // InternalXMachine.g:1894:3: ( rule__Machine__InvariantsAssignment_5_1 )*
+            // InternalXMachine.g:1888:3: ( rule__Machine__InvariantsAssignment_5_1 )*
             loop17:
             do {
                 int alt17=2;
                 int LA17_0 = input.LA(1);
 
-                if ( (LA17_0==RULE_XLABEL) ) {
+                if ( (LA17_0==RULE_XLABEL||LA17_0==136) ) {
                     alt17=1;
                 }
 
 
                 switch (alt17) {
             	case 1 :
-            	    // InternalXMachine.g:1894:4: rule__Machine__InvariantsAssignment_5_1
+            	    // InternalXMachine.g:1888:4: rule__Machine__InvariantsAssignment_5_1
             	    {
             	    pushFollow(FOLLOW_11);
             	    rule__Machine__InvariantsAssignment_5_1();
@@ -7131,14 +7091,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group_6__0"
-    // InternalXMachine.g:1904:1: rule__Machine__Group_6__0 : rule__Machine__Group_6__0__Impl rule__Machine__Group_6__1 ;
+    // InternalXMachine.g:1898:1: rule__Machine__Group_6__0 : rule__Machine__Group_6__0__Impl rule__Machine__Group_6__1 ;
     public final void rule__Machine__Group_6__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1908:1: ( rule__Machine__Group_6__0__Impl rule__Machine__Group_6__1 )
-            // InternalXMachine.g:1909:2: rule__Machine__Group_6__0__Impl rule__Machine__Group_6__1
+            // InternalXMachine.g:1902:1: ( rule__Machine__Group_6__0__Impl rule__Machine__Group_6__1 )
+            // InternalXMachine.g:1903:2: rule__Machine__Group_6__0__Impl rule__Machine__Group_6__1
             {
             pushFollow(FOLLOW_12);
             rule__Machine__Group_6__0__Impl();
@@ -7169,24 +7129,24 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group_6__0__Impl"
-    // InternalXMachine.g:1916:1: rule__Machine__Group_6__0__Impl : ( 'variant' ) ;
+    // InternalXMachine.g:1910:1: rule__Machine__Group_6__0__Impl : ( 'variants' ) ;
     public final void rule__Machine__Group_6__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1920:1: ( ( 'variant' ) )
-            // InternalXMachine.g:1921:1: ( 'variant' )
+            // InternalXMachine.g:1914:1: ( ( 'variants' ) )
+            // InternalXMachine.g:1915:1: ( 'variants' )
             {
-            // InternalXMachine.g:1921:1: ( 'variant' )
-            // InternalXMachine.g:1922:2: 'variant'
+            // InternalXMachine.g:1915:1: ( 'variants' )
+            // InternalXMachine.g:1916:2: 'variants'
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getMachineAccess().getVariantKeyword_6_0()); 
+               before(grammarAccess.getMachineAccess().getVariantsKeyword_6_0()); 
             }
             match(input,121,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getMachineAccess().getVariantKeyword_6_0()); 
+               after(grammarAccess.getMachineAccess().getVariantsKeyword_6_0()); 
             }
 
             }
@@ -7210,14 +7170,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group_6__1"
-    // InternalXMachine.g:1931:1: rule__Machine__Group_6__1 : rule__Machine__Group_6__1__Impl ;
+    // InternalXMachine.g:1925:1: rule__Machine__Group_6__1 : rule__Machine__Group_6__1__Impl ;
     public final void rule__Machine__Group_6__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1935:1: ( rule__Machine__Group_6__1__Impl )
-            // InternalXMachine.g:1936:2: rule__Machine__Group_6__1__Impl
+            // InternalXMachine.g:1929:1: ( rule__Machine__Group_6__1__Impl )
+            // InternalXMachine.g:1930:2: rule__Machine__Group_6__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Machine__Group_6__1__Impl();
@@ -7243,26 +7203,29 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group_6__1__Impl"
-    // InternalXMachine.g:1942:1: rule__Machine__Group_6__1__Impl : ( ( rule__Machine__VariantAssignment_6_1 ) ) ;
+    // InternalXMachine.g:1936:1: rule__Machine__Group_6__1__Impl : ( ( ( rule__Machine__VariantsAssignment_6_1 ) ) ( ( rule__Machine__VariantsAssignment_6_1 )* ) ) ;
     public final void rule__Machine__Group_6__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1946:1: ( ( ( rule__Machine__VariantAssignment_6_1 ) ) )
-            // InternalXMachine.g:1947:1: ( ( rule__Machine__VariantAssignment_6_1 ) )
+            // InternalXMachine.g:1940:1: ( ( ( ( rule__Machine__VariantsAssignment_6_1 ) ) ( ( rule__Machine__VariantsAssignment_6_1 )* ) ) )
+            // InternalXMachine.g:1941:1: ( ( ( rule__Machine__VariantsAssignment_6_1 ) ) ( ( rule__Machine__VariantsAssignment_6_1 )* ) )
             {
-            // InternalXMachine.g:1947:1: ( ( rule__Machine__VariantAssignment_6_1 ) )
-            // InternalXMachine.g:1948:2: ( rule__Machine__VariantAssignment_6_1 )
+            // InternalXMachine.g:1941:1: ( ( ( rule__Machine__VariantsAssignment_6_1 ) ) ( ( rule__Machine__VariantsAssignment_6_1 )* ) )
+            // InternalXMachine.g:1942:2: ( ( rule__Machine__VariantsAssignment_6_1 ) ) ( ( rule__Machine__VariantsAssignment_6_1 )* )
+            {
+            // InternalXMachine.g:1942:2: ( ( rule__Machine__VariantsAssignment_6_1 ) )
+            // InternalXMachine.g:1943:3: ( rule__Machine__VariantsAssignment_6_1 )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getMachineAccess().getVariantAssignment_6_1()); 
+               before(grammarAccess.getMachineAccess().getVariantsAssignment_6_1()); 
             }
-            // InternalXMachine.g:1949:2: ( rule__Machine__VariantAssignment_6_1 )
-            // InternalXMachine.g:1949:3: rule__Machine__VariantAssignment_6_1
+            // InternalXMachine.g:1944:3: ( rule__Machine__VariantsAssignment_6_1 )
+            // InternalXMachine.g:1944:4: rule__Machine__VariantsAssignment_6_1
             {
-            pushFollow(FOLLOW_2);
-            rule__Machine__VariantAssignment_6_1();
+            pushFollow(FOLLOW_13);
+            rule__Machine__VariantsAssignment_6_1();
 
             state._fsp--;
             if (state.failed) return ;
@@ -7270,8 +7233,52 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             }
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getMachineAccess().getVariantAssignment_6_1()); 
+               after(grammarAccess.getMachineAccess().getVariantsAssignment_6_1()); 
             }
+
+            }
+
+            // InternalXMachine.g:1947:2: ( ( rule__Machine__VariantsAssignment_6_1 )* )
+            // InternalXMachine.g:1948:3: ( rule__Machine__VariantsAssignment_6_1 )*
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getMachineAccess().getVariantsAssignment_6_1()); 
+            }
+            // InternalXMachine.g:1949:3: ( rule__Machine__VariantsAssignment_6_1 )*
+            loop18:
+            do {
+                int alt18=2;
+                int LA18_0 = input.LA(1);
+
+                if ( (LA18_0==RULE_XLABEL) ) {
+                    alt18=1;
+                }
+
+
+                switch (alt18) {
+            	case 1 :
+            	    // InternalXMachine.g:1949:4: rule__Machine__VariantsAssignment_6_1
+            	    {
+            	    pushFollow(FOLLOW_13);
+            	    rule__Machine__VariantsAssignment_6_1();
+
+            	    state._fsp--;
+            	    if (state.failed) return ;
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop18;
+                }
+            } while (true);
+
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getMachineAccess().getVariantsAssignment_6_1()); 
+            }
+
+            }
+
 
             }
 
@@ -7294,16 +7301,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group_7__0"
-    // InternalXMachine.g:1958:1: rule__Machine__Group_7__0 : rule__Machine__Group_7__0__Impl rule__Machine__Group_7__1 ;
+    // InternalXMachine.g:1959:1: rule__Machine__Group_7__0 : rule__Machine__Group_7__0__Impl rule__Machine__Group_7__1 ;
     public final void rule__Machine__Group_7__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1962:1: ( rule__Machine__Group_7__0__Impl rule__Machine__Group_7__1 )
-            // InternalXMachine.g:1963:2: rule__Machine__Group_7__0__Impl rule__Machine__Group_7__1
+            // InternalXMachine.g:1963:1: ( rule__Machine__Group_7__0__Impl rule__Machine__Group_7__1 )
+            // InternalXMachine.g:1964:2: rule__Machine__Group_7__0__Impl rule__Machine__Group_7__1
             {
-            pushFollow(FOLLOW_13);
+            pushFollow(FOLLOW_14);
             rule__Machine__Group_7__0__Impl();
 
             state._fsp--;
@@ -7332,17 +7339,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group_7__0__Impl"
-    // InternalXMachine.g:1970:1: rule__Machine__Group_7__0__Impl : ( 'events' ) ;
+    // InternalXMachine.g:1971:1: rule__Machine__Group_7__0__Impl : ( 'events' ) ;
     public final void rule__Machine__Group_7__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1974:1: ( ( 'events' ) )
-            // InternalXMachine.g:1975:1: ( 'events' )
+            // InternalXMachine.g:1975:1: ( ( 'events' ) )
+            // InternalXMachine.g:1976:1: ( 'events' )
             {
-            // InternalXMachine.g:1975:1: ( 'events' )
-            // InternalXMachine.g:1976:2: 'events'
+            // InternalXMachine.g:1976:1: ( 'events' )
+            // InternalXMachine.g:1977:2: 'events'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getEventsKeyword_7_0()); 
@@ -7373,16 +7380,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group_7__1"
-    // InternalXMachine.g:1985:1: rule__Machine__Group_7__1 : rule__Machine__Group_7__1__Impl rule__Machine__Group_7__2 ;
+    // InternalXMachine.g:1986:1: rule__Machine__Group_7__1 : rule__Machine__Group_7__1__Impl rule__Machine__Group_7__2 ;
     public final void rule__Machine__Group_7__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:1989:1: ( rule__Machine__Group_7__1__Impl rule__Machine__Group_7__2 )
-            // InternalXMachine.g:1990:2: rule__Machine__Group_7__1__Impl rule__Machine__Group_7__2
+            // InternalXMachine.g:1990:1: ( rule__Machine__Group_7__1__Impl rule__Machine__Group_7__2 )
+            // InternalXMachine.g:1991:2: rule__Machine__Group_7__1__Impl rule__Machine__Group_7__2
             {
-            pushFollow(FOLLOW_13);
+            pushFollow(FOLLOW_14);
             rule__Machine__Group_7__1__Impl();
 
             state._fsp--;
@@ -7411,23 +7418,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group_7__1__Impl"
-    // InternalXMachine.g:1997:1: rule__Machine__Group_7__1__Impl : ( ( rule__Machine__EventsAssignment_7_1 ) ) ;
+    // InternalXMachine.g:1998:1: rule__Machine__Group_7__1__Impl : ( ( rule__Machine__EventsAssignment_7_1 ) ) ;
     public final void rule__Machine__Group_7__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2001:1: ( ( ( rule__Machine__EventsAssignment_7_1 ) ) )
-            // InternalXMachine.g:2002:1: ( ( rule__Machine__EventsAssignment_7_1 ) )
+            // InternalXMachine.g:2002:1: ( ( ( rule__Machine__EventsAssignment_7_1 ) ) )
+            // InternalXMachine.g:2003:1: ( ( rule__Machine__EventsAssignment_7_1 ) )
             {
-            // InternalXMachine.g:2002:1: ( ( rule__Machine__EventsAssignment_7_1 ) )
-            // InternalXMachine.g:2003:2: ( rule__Machine__EventsAssignment_7_1 )
+            // InternalXMachine.g:2003:1: ( ( rule__Machine__EventsAssignment_7_1 ) )
+            // InternalXMachine.g:2004:2: ( rule__Machine__EventsAssignment_7_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getEventsAssignment_7_1()); 
             }
-            // InternalXMachine.g:2004:2: ( rule__Machine__EventsAssignment_7_1 )
-            // InternalXMachine.g:2004:3: rule__Machine__EventsAssignment_7_1
+            // InternalXMachine.g:2005:2: ( rule__Machine__EventsAssignment_7_1 )
+            // InternalXMachine.g:2005:3: rule__Machine__EventsAssignment_7_1
             {
             pushFollow(FOLLOW_2);
             rule__Machine__EventsAssignment_7_1();
@@ -7462,14 +7469,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group_7__2"
-    // InternalXMachine.g:2012:1: rule__Machine__Group_7__2 : rule__Machine__Group_7__2__Impl ;
+    // InternalXMachine.g:2013:1: rule__Machine__Group_7__2 : rule__Machine__Group_7__2__Impl ;
     public final void rule__Machine__Group_7__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2016:1: ( rule__Machine__Group_7__2__Impl )
-            // InternalXMachine.g:2017:2: rule__Machine__Group_7__2__Impl
+            // InternalXMachine.g:2017:1: ( rule__Machine__Group_7__2__Impl )
+            // InternalXMachine.g:2018:2: rule__Machine__Group_7__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Machine__Group_7__2__Impl();
@@ -7495,37 +7502,37 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__Group_7__2__Impl"
-    // InternalXMachine.g:2023:1: rule__Machine__Group_7__2__Impl : ( ( rule__Machine__EventsAssignment_7_2 )* ) ;
+    // InternalXMachine.g:2024:1: rule__Machine__Group_7__2__Impl : ( ( rule__Machine__EventsAssignment_7_2 )* ) ;
     public final void rule__Machine__Group_7__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2027:1: ( ( ( rule__Machine__EventsAssignment_7_2 )* ) )
-            // InternalXMachine.g:2028:1: ( ( rule__Machine__EventsAssignment_7_2 )* )
+            // InternalXMachine.g:2028:1: ( ( ( rule__Machine__EventsAssignment_7_2 )* ) )
+            // InternalXMachine.g:2029:1: ( ( rule__Machine__EventsAssignment_7_2 )* )
             {
-            // InternalXMachine.g:2028:1: ( ( rule__Machine__EventsAssignment_7_2 )* )
-            // InternalXMachine.g:2029:2: ( rule__Machine__EventsAssignment_7_2 )*
+            // InternalXMachine.g:2029:1: ( ( rule__Machine__EventsAssignment_7_2 )* )
+            // InternalXMachine.g:2030:2: ( rule__Machine__EventsAssignment_7_2 )*
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getEventsAssignment_7_2()); 
             }
-            // InternalXMachine.g:2030:2: ( rule__Machine__EventsAssignment_7_2 )*
-            loop18:
+            // InternalXMachine.g:2031:2: ( rule__Machine__EventsAssignment_7_2 )*
+            loop19:
             do {
-                int alt18=2;
-                int LA18_0 = input.LA(1);
+                int alt19=2;
+                int LA19_0 = input.LA(1);
 
-                if ( (LA18_0==128) ) {
-                    alt18=1;
+                if ( ((LA19_0>=112 && LA19_0<=114)||LA19_0==128) ) {
+                    alt19=1;
                 }
 
 
-                switch (alt18) {
+                switch (alt19) {
             	case 1 :
-            	    // InternalXMachine.g:2030:3: rule__Machine__EventsAssignment_7_2
+            	    // InternalXMachine.g:2031:3: rule__Machine__EventsAssignment_7_2
             	    {
-            	    pushFollow(FOLLOW_14);
+            	    pushFollow(FOLLOW_15);
             	    rule__Machine__EventsAssignment_7_2();
 
             	    state._fsp--;
@@ -7535,7 +7542,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             	    break;
 
             	default :
-            	    break loop18;
+            	    break loop19;
                 }
             } while (true);
 
@@ -7564,14 +7571,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__MIncludes__Group__0"
-    // InternalXMachine.g:2039:1: rule__MIncludes__Group__0 : rule__MIncludes__Group__0__Impl rule__MIncludes__Group__1 ;
+    // InternalXMachine.g:2040:1: rule__MIncludes__Group__0 : rule__MIncludes__Group__0__Impl rule__MIncludes__Group__1 ;
     public final void rule__MIncludes__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2043:1: ( rule__MIncludes__Group__0__Impl rule__MIncludes__Group__1 )
-            // InternalXMachine.g:2044:2: rule__MIncludes__Group__0__Impl rule__MIncludes__Group__1
+            // InternalXMachine.g:2044:1: ( rule__MIncludes__Group__0__Impl rule__MIncludes__Group__1 )
+            // InternalXMachine.g:2045:2: rule__MIncludes__Group__0__Impl rule__MIncludes__Group__1
             {
             pushFollow(FOLLOW_6);
             rule__MIncludes__Group__0__Impl();
@@ -7602,23 +7609,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__MIncludes__Group__0__Impl"
-    // InternalXMachine.g:2051:1: rule__MIncludes__Group__0__Impl : ( () ) ;
+    // InternalXMachine.g:2052:1: rule__MIncludes__Group__0__Impl : ( () ) ;
     public final void rule__MIncludes__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2055:1: ( ( () ) )
-            // InternalXMachine.g:2056:1: ( () )
+            // InternalXMachine.g:2056:1: ( ( () ) )
+            // InternalXMachine.g:2057:1: ( () )
             {
-            // InternalXMachine.g:2056:1: ( () )
-            // InternalXMachine.g:2057:2: ()
+            // InternalXMachine.g:2057:1: ( () )
+            // InternalXMachine.g:2058:2: ()
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMIncludesAccess().getMachineInclusionAction_0()); 
             }
-            // InternalXMachine.g:2058:2: ()
-            // InternalXMachine.g:2058:3: 
+            // InternalXMachine.g:2059:2: ()
+            // InternalXMachine.g:2059:3: 
             {
             }
 
@@ -7643,16 +7650,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__MIncludes__Group__1"
-    // InternalXMachine.g:2066:1: rule__MIncludes__Group__1 : rule__MIncludes__Group__1__Impl rule__MIncludes__Group__2 ;
+    // InternalXMachine.g:2067:1: rule__MIncludes__Group__1 : rule__MIncludes__Group__1__Impl rule__MIncludes__Group__2 ;
     public final void rule__MIncludes__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2070:1: ( rule__MIncludes__Group__1__Impl rule__MIncludes__Group__2 )
-            // InternalXMachine.g:2071:2: rule__MIncludes__Group__1__Impl rule__MIncludes__Group__2
+            // InternalXMachine.g:2071:1: ( rule__MIncludes__Group__1__Impl rule__MIncludes__Group__2 )
+            // InternalXMachine.g:2072:2: rule__MIncludes__Group__1__Impl rule__MIncludes__Group__2
             {
-            pushFollow(FOLLOW_15);
+            pushFollow(FOLLOW_16);
             rule__MIncludes__Group__1__Impl();
 
             state._fsp--;
@@ -7681,23 +7688,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__MIncludes__Group__1__Impl"
-    // InternalXMachine.g:2078:1: rule__MIncludes__Group__1__Impl : ( ( rule__MIncludes__Group_1__0 ) ) ;
+    // InternalXMachine.g:2079:1: rule__MIncludes__Group__1__Impl : ( ( rule__MIncludes__Group_1__0 ) ) ;
     public final void rule__MIncludes__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2082:1: ( ( ( rule__MIncludes__Group_1__0 ) ) )
-            // InternalXMachine.g:2083:1: ( ( rule__MIncludes__Group_1__0 ) )
+            // InternalXMachine.g:2083:1: ( ( ( rule__MIncludes__Group_1__0 ) ) )
+            // InternalXMachine.g:2084:1: ( ( rule__MIncludes__Group_1__0 ) )
             {
-            // InternalXMachine.g:2083:1: ( ( rule__MIncludes__Group_1__0 ) )
-            // InternalXMachine.g:2084:2: ( rule__MIncludes__Group_1__0 )
+            // InternalXMachine.g:2084:1: ( ( rule__MIncludes__Group_1__0 ) )
+            // InternalXMachine.g:2085:2: ( rule__MIncludes__Group_1__0 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMIncludesAccess().getGroup_1()); 
             }
-            // InternalXMachine.g:2085:2: ( rule__MIncludes__Group_1__0 )
-            // InternalXMachine.g:2085:3: rule__MIncludes__Group_1__0
+            // InternalXMachine.g:2086:2: ( rule__MIncludes__Group_1__0 )
+            // InternalXMachine.g:2086:3: rule__MIncludes__Group_1__0
             {
             pushFollow(FOLLOW_2);
             rule__MIncludes__Group_1__0();
@@ -7732,16 +7739,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__MIncludes__Group__2"
-    // InternalXMachine.g:2093:1: rule__MIncludes__Group__2 : rule__MIncludes__Group__2__Impl rule__MIncludes__Group__3 ;
+    // InternalXMachine.g:2094:1: rule__MIncludes__Group__2 : rule__MIncludes__Group__2__Impl rule__MIncludes__Group__3 ;
     public final void rule__MIncludes__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2097:1: ( rule__MIncludes__Group__2__Impl rule__MIncludes__Group__3 )
-            // InternalXMachine.g:2098:2: rule__MIncludes__Group__2__Impl rule__MIncludes__Group__3
+            // InternalXMachine.g:2098:1: ( rule__MIncludes__Group__2__Impl rule__MIncludes__Group__3 )
+            // InternalXMachine.g:2099:2: rule__MIncludes__Group__2__Impl rule__MIncludes__Group__3
             {
-            pushFollow(FOLLOW_15);
+            pushFollow(FOLLOW_16);
             rule__MIncludes__Group__2__Impl();
 
             state._fsp--;
@@ -7770,31 +7777,31 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__MIncludes__Group__2__Impl"
-    // InternalXMachine.g:2105:1: rule__MIncludes__Group__2__Impl : ( ( rule__MIncludes__Group_2__0 )? ) ;
+    // InternalXMachine.g:2106:1: rule__MIncludes__Group__2__Impl : ( ( rule__MIncludes__Group_2__0 )? ) ;
     public final void rule__MIncludes__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2109:1: ( ( ( rule__MIncludes__Group_2__0 )? ) )
-            // InternalXMachine.g:2110:1: ( ( rule__MIncludes__Group_2__0 )? )
+            // InternalXMachine.g:2110:1: ( ( ( rule__MIncludes__Group_2__0 )? ) )
+            // InternalXMachine.g:2111:1: ( ( rule__MIncludes__Group_2__0 )? )
             {
-            // InternalXMachine.g:2110:1: ( ( rule__MIncludes__Group_2__0 )? )
-            // InternalXMachine.g:2111:2: ( rule__MIncludes__Group_2__0 )?
+            // InternalXMachine.g:2111:1: ( ( rule__MIncludes__Group_2__0 )? )
+            // InternalXMachine.g:2112:2: ( rule__MIncludes__Group_2__0 )?
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMIncludesAccess().getGroup_2()); 
             }
-            // InternalXMachine.g:2112:2: ( rule__MIncludes__Group_2__0 )?
-            int alt19=2;
-            int LA19_0 = input.LA(1);
+            // InternalXMachine.g:2113:2: ( rule__MIncludes__Group_2__0 )?
+            int alt20=2;
+            int LA20_0 = input.LA(1);
 
-            if ( (LA19_0==124) ) {
-                alt19=1;
+            if ( (LA20_0==124) ) {
+                alt20=1;
             }
-            switch (alt19) {
+            switch (alt20) {
                 case 1 :
-                    // InternalXMachine.g:2112:3: rule__MIncludes__Group_2__0
+                    // InternalXMachine.g:2113:3: rule__MIncludes__Group_2__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__MIncludes__Group_2__0();
@@ -7832,14 +7839,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__MIncludes__Group__3"
-    // InternalXMachine.g:2120:1: rule__MIncludes__Group__3 : rule__MIncludes__Group__3__Impl ;
+    // InternalXMachine.g:2121:1: rule__MIncludes__Group__3 : rule__MIncludes__Group__3__Impl ;
     public final void rule__MIncludes__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2124:1: ( rule__MIncludes__Group__3__Impl )
-            // InternalXMachine.g:2125:2: rule__MIncludes__Group__3__Impl
+            // InternalXMachine.g:2125:1: ( rule__MIncludes__Group__3__Impl )
+            // InternalXMachine.g:2126:2: rule__MIncludes__Group__3__Impl
             {
             pushFollow(FOLLOW_2);
             rule__MIncludes__Group__3__Impl();
@@ -7865,31 +7872,31 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__MIncludes__Group__3__Impl"
-    // InternalXMachine.g:2131:1: rule__MIncludes__Group__3__Impl : ( ( rule__MIncludes__Group_3__0 )? ) ;
+    // InternalXMachine.g:2132:1: rule__MIncludes__Group__3__Impl : ( ( rule__MIncludes__Group_3__0 )? ) ;
     public final void rule__MIncludes__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2135:1: ( ( ( rule__MIncludes__Group_3__0 )? ) )
-            // InternalXMachine.g:2136:1: ( ( rule__MIncludes__Group_3__0 )? )
+            // InternalXMachine.g:2136:1: ( ( ( rule__MIncludes__Group_3__0 )? ) )
+            // InternalXMachine.g:2137:1: ( ( rule__MIncludes__Group_3__0 )? )
             {
-            // InternalXMachine.g:2136:1: ( ( rule__MIncludes__Group_3__0 )? )
-            // InternalXMachine.g:2137:2: ( rule__MIncludes__Group_3__0 )?
+            // InternalXMachine.g:2137:1: ( ( rule__MIncludes__Group_3__0 )? )
+            // InternalXMachine.g:2138:2: ( rule__MIncludes__Group_3__0 )?
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMIncludesAccess().getGroup_3()); 
             }
-            // InternalXMachine.g:2138:2: ( rule__MIncludes__Group_3__0 )?
-            int alt20=2;
-            int LA20_0 = input.LA(1);
+            // InternalXMachine.g:2139:2: ( rule__MIncludes__Group_3__0 )?
+            int alt21=2;
+            int LA21_0 = input.LA(1);
 
-            if ( (LA20_0==125) ) {
-                alt20=1;
+            if ( (LA21_0==125) ) {
+                alt21=1;
             }
-            switch (alt20) {
+            switch (alt21) {
                 case 1 :
-                    // InternalXMachine.g:2138:3: rule__MIncludes__Group_3__0
+                    // InternalXMachine.g:2139:3: rule__MIncludes__Group_3__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__MIncludes__Group_3__0();
@@ -7927,14 +7934,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__MIncludes__Group_1__0"
-    // InternalXMachine.g:2147:1: rule__MIncludes__Group_1__0 : rule__MIncludes__Group_1__0__Impl rule__MIncludes__Group_1__1 ;
+    // InternalXMachine.g:2148:1: rule__MIncludes__Group_1__0 : rule__MIncludes__Group_1__0__Impl rule__MIncludes__Group_1__1 ;
     public final void rule__MIncludes__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2151:1: ( rule__MIncludes__Group_1__0__Impl rule__MIncludes__Group_1__1 )
-            // InternalXMachine.g:2152:2: rule__MIncludes__Group_1__0__Impl rule__MIncludes__Group_1__1
+            // InternalXMachine.g:2152:1: ( rule__MIncludes__Group_1__0__Impl rule__MIncludes__Group_1__1 )
+            // InternalXMachine.g:2153:2: rule__MIncludes__Group_1__0__Impl rule__MIncludes__Group_1__1
             {
             pushFollow(FOLLOW_5);
             rule__MIncludes__Group_1__0__Impl();
@@ -7965,17 +7972,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__MIncludes__Group_1__0__Impl"
-    // InternalXMachine.g:2159:1: rule__MIncludes__Group_1__0__Impl : ( 'includes' ) ;
+    // InternalXMachine.g:2160:1: rule__MIncludes__Group_1__0__Impl : ( 'includes' ) ;
     public final void rule__MIncludes__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2163:1: ( ( 'includes' ) )
-            // InternalXMachine.g:2164:1: ( 'includes' )
+            // InternalXMachine.g:2164:1: ( ( 'includes' ) )
+            // InternalXMachine.g:2165:1: ( 'includes' )
             {
-            // InternalXMachine.g:2164:1: ( 'includes' )
-            // InternalXMachine.g:2165:2: 'includes'
+            // InternalXMachine.g:2165:1: ( 'includes' )
+            // InternalXMachine.g:2166:2: 'includes'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMIncludesAccess().getIncludesKeyword_1_0()); 
@@ -8006,14 +8013,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__MIncludes__Group_1__1"
-    // InternalXMachine.g:2174:1: rule__MIncludes__Group_1__1 : rule__MIncludes__Group_1__1__Impl ;
+    // InternalXMachine.g:2175:1: rule__MIncludes__Group_1__1 : rule__MIncludes__Group_1__1__Impl ;
     public final void rule__MIncludes__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2178:1: ( rule__MIncludes__Group_1__1__Impl )
-            // InternalXMachine.g:2179:2: rule__MIncludes__Group_1__1__Impl
+            // InternalXMachine.g:2179:1: ( rule__MIncludes__Group_1__1__Impl )
+            // InternalXMachine.g:2180:2: rule__MIncludes__Group_1__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__MIncludes__Group_1__1__Impl();
@@ -8039,23 +8046,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__MIncludes__Group_1__1__Impl"
-    // InternalXMachine.g:2185:1: rule__MIncludes__Group_1__1__Impl : ( ( rule__MIncludes__AbstractMachineAssignment_1_1 ) ) ;
+    // InternalXMachine.g:2186:1: rule__MIncludes__Group_1__1__Impl : ( ( rule__MIncludes__AbstractMachineAssignment_1_1 ) ) ;
     public final void rule__MIncludes__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2189:1: ( ( ( rule__MIncludes__AbstractMachineAssignment_1_1 ) ) )
-            // InternalXMachine.g:2190:1: ( ( rule__MIncludes__AbstractMachineAssignment_1_1 ) )
+            // InternalXMachine.g:2190:1: ( ( ( rule__MIncludes__AbstractMachineAssignment_1_1 ) ) )
+            // InternalXMachine.g:2191:1: ( ( rule__MIncludes__AbstractMachineAssignment_1_1 ) )
             {
-            // InternalXMachine.g:2190:1: ( ( rule__MIncludes__AbstractMachineAssignment_1_1 ) )
-            // InternalXMachine.g:2191:2: ( rule__MIncludes__AbstractMachineAssignment_1_1 )
+            // InternalXMachine.g:2191:1: ( ( rule__MIncludes__AbstractMachineAssignment_1_1 ) )
+            // InternalXMachine.g:2192:2: ( rule__MIncludes__AbstractMachineAssignment_1_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMIncludesAccess().getAbstractMachineAssignment_1_1()); 
             }
-            // InternalXMachine.g:2192:2: ( rule__MIncludes__AbstractMachineAssignment_1_1 )
-            // InternalXMachine.g:2192:3: rule__MIncludes__AbstractMachineAssignment_1_1
+            // InternalXMachine.g:2193:2: ( rule__MIncludes__AbstractMachineAssignment_1_1 )
+            // InternalXMachine.g:2193:3: rule__MIncludes__AbstractMachineAssignment_1_1
             {
             pushFollow(FOLLOW_2);
             rule__MIncludes__AbstractMachineAssignment_1_1();
@@ -8090,14 +8097,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__MIncludes__Group_2__0"
-    // InternalXMachine.g:2201:1: rule__MIncludes__Group_2__0 : rule__MIncludes__Group_2__0__Impl rule__MIncludes__Group_2__1 ;
+    // InternalXMachine.g:2202:1: rule__MIncludes__Group_2__0 : rule__MIncludes__Group_2__0__Impl rule__MIncludes__Group_2__1 ;
     public final void rule__MIncludes__Group_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2205:1: ( rule__MIncludes__Group_2__0__Impl rule__MIncludes__Group_2__1 )
-            // InternalXMachine.g:2206:2: rule__MIncludes__Group_2__0__Impl rule__MIncludes__Group_2__1
+            // InternalXMachine.g:2206:1: ( rule__MIncludes__Group_2__0__Impl rule__MIncludes__Group_2__1 )
+            // InternalXMachine.g:2207:2: rule__MIncludes__Group_2__0__Impl rule__MIncludes__Group_2__1
             {
             pushFollow(FOLLOW_5);
             rule__MIncludes__Group_2__0__Impl();
@@ -8128,17 +8135,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__MIncludes__Group_2__0__Impl"
-    // InternalXMachine.g:2213:1: rule__MIncludes__Group_2__0__Impl : ( 'to' ) ;
+    // InternalXMachine.g:2214:1: rule__MIncludes__Group_2__0__Impl : ( 'to' ) ;
     public final void rule__MIncludes__Group_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2217:1: ( ( 'to' ) )
-            // InternalXMachine.g:2218:1: ( 'to' )
+            // InternalXMachine.g:2218:1: ( ( 'to' ) )
+            // InternalXMachine.g:2219:1: ( 'to' )
             {
-            // InternalXMachine.g:2218:1: ( 'to' )
-            // InternalXMachine.g:2219:2: 'to'
+            // InternalXMachine.g:2219:1: ( 'to' )
+            // InternalXMachine.g:2220:2: 'to'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMIncludesAccess().getToKeyword_2_0()); 
@@ -8169,14 +8176,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__MIncludes__Group_2__1"
-    // InternalXMachine.g:2228:1: rule__MIncludes__Group_2__1 : rule__MIncludes__Group_2__1__Impl ;
+    // InternalXMachine.g:2229:1: rule__MIncludes__Group_2__1 : rule__MIncludes__Group_2__1__Impl ;
     public final void rule__MIncludes__Group_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2232:1: ( rule__MIncludes__Group_2__1__Impl )
-            // InternalXMachine.g:2233:2: rule__MIncludes__Group_2__1__Impl
+            // InternalXMachine.g:2233:1: ( rule__MIncludes__Group_2__1__Impl )
+            // InternalXMachine.g:2234:2: rule__MIncludes__Group_2__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__MIncludes__Group_2__1__Impl();
@@ -8202,23 +8209,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__MIncludes__Group_2__1__Impl"
-    // InternalXMachine.g:2239:1: rule__MIncludes__Group_2__1__Impl : ( ( rule__MIncludes__ConcreteMachineAssignment_2_1 ) ) ;
+    // InternalXMachine.g:2240:1: rule__MIncludes__Group_2__1__Impl : ( ( rule__MIncludes__ConcreteMachineAssignment_2_1 ) ) ;
     public final void rule__MIncludes__Group_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2243:1: ( ( ( rule__MIncludes__ConcreteMachineAssignment_2_1 ) ) )
-            // InternalXMachine.g:2244:1: ( ( rule__MIncludes__ConcreteMachineAssignment_2_1 ) )
+            // InternalXMachine.g:2244:1: ( ( ( rule__MIncludes__ConcreteMachineAssignment_2_1 ) ) )
+            // InternalXMachine.g:2245:1: ( ( rule__MIncludes__ConcreteMachineAssignment_2_1 ) )
             {
-            // InternalXMachine.g:2244:1: ( ( rule__MIncludes__ConcreteMachineAssignment_2_1 ) )
-            // InternalXMachine.g:2245:2: ( rule__MIncludes__ConcreteMachineAssignment_2_1 )
+            // InternalXMachine.g:2245:1: ( ( rule__MIncludes__ConcreteMachineAssignment_2_1 ) )
+            // InternalXMachine.g:2246:2: ( rule__MIncludes__ConcreteMachineAssignment_2_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMIncludesAccess().getConcreteMachineAssignment_2_1()); 
             }
-            // InternalXMachine.g:2246:2: ( rule__MIncludes__ConcreteMachineAssignment_2_1 )
-            // InternalXMachine.g:2246:3: rule__MIncludes__ConcreteMachineAssignment_2_1
+            // InternalXMachine.g:2247:2: ( rule__MIncludes__ConcreteMachineAssignment_2_1 )
+            // InternalXMachine.g:2247:3: rule__MIncludes__ConcreteMachineAssignment_2_1
             {
             pushFollow(FOLLOW_2);
             rule__MIncludes__ConcreteMachineAssignment_2_1();
@@ -8253,14 +8260,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__MIncludes__Group_3__0"
-    // InternalXMachine.g:2255:1: rule__MIncludes__Group_3__0 : rule__MIncludes__Group_3__0__Impl rule__MIncludes__Group_3__1 ;
+    // InternalXMachine.g:2256:1: rule__MIncludes__Group_3__0 : rule__MIncludes__Group_3__0__Impl rule__MIncludes__Group_3__1 ;
     public final void rule__MIncludes__Group_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2259:1: ( rule__MIncludes__Group_3__0__Impl rule__MIncludes__Group_3__1 )
-            // InternalXMachine.g:2260:2: rule__MIncludes__Group_3__0__Impl rule__MIncludes__Group_3__1
+            // InternalXMachine.g:2260:1: ( rule__MIncludes__Group_3__0__Impl rule__MIncludes__Group_3__1 )
+            // InternalXMachine.g:2261:2: rule__MIncludes__Group_3__0__Impl rule__MIncludes__Group_3__1
             {
             pushFollow(FOLLOW_5);
             rule__MIncludes__Group_3__0__Impl();
@@ -8291,17 +8298,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__MIncludes__Group_3__0__Impl"
-    // InternalXMachine.g:2267:1: rule__MIncludes__Group_3__0__Impl : ( 'as' ) ;
+    // InternalXMachine.g:2268:1: rule__MIncludes__Group_3__0__Impl : ( 'as' ) ;
     public final void rule__MIncludes__Group_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2271:1: ( ( 'as' ) )
-            // InternalXMachine.g:2272:1: ( 'as' )
+            // InternalXMachine.g:2272:1: ( ( 'as' ) )
+            // InternalXMachine.g:2273:1: ( 'as' )
             {
-            // InternalXMachine.g:2272:1: ( 'as' )
-            // InternalXMachine.g:2273:2: 'as'
+            // InternalXMachine.g:2273:1: ( 'as' )
+            // InternalXMachine.g:2274:2: 'as'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMIncludesAccess().getAsKeyword_3_0()); 
@@ -8332,14 +8339,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__MIncludes__Group_3__1"
-    // InternalXMachine.g:2282:1: rule__MIncludes__Group_3__1 : rule__MIncludes__Group_3__1__Impl rule__MIncludes__Group_3__2 ;
+    // InternalXMachine.g:2283:1: rule__MIncludes__Group_3__1 : rule__MIncludes__Group_3__1__Impl rule__MIncludes__Group_3__2 ;
     public final void rule__MIncludes__Group_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2286:1: ( rule__MIncludes__Group_3__1__Impl rule__MIncludes__Group_3__2 )
-            // InternalXMachine.g:2287:2: rule__MIncludes__Group_3__1__Impl rule__MIncludes__Group_3__2
+            // InternalXMachine.g:2287:1: ( rule__MIncludes__Group_3__1__Impl rule__MIncludes__Group_3__2 )
+            // InternalXMachine.g:2288:2: rule__MIncludes__Group_3__1__Impl rule__MIncludes__Group_3__2
             {
             pushFollow(FOLLOW_5);
             rule__MIncludes__Group_3__1__Impl();
@@ -8370,23 +8377,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__MIncludes__Group_3__1__Impl"
-    // InternalXMachine.g:2294:1: rule__MIncludes__Group_3__1__Impl : ( ( rule__MIncludes__PrefixesAssignment_3_1 ) ) ;
+    // InternalXMachine.g:2295:1: rule__MIncludes__Group_3__1__Impl : ( ( rule__MIncludes__PrefixesAssignment_3_1 ) ) ;
     public final void rule__MIncludes__Group_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2298:1: ( ( ( rule__MIncludes__PrefixesAssignment_3_1 ) ) )
-            // InternalXMachine.g:2299:1: ( ( rule__MIncludes__PrefixesAssignment_3_1 ) )
+            // InternalXMachine.g:2299:1: ( ( ( rule__MIncludes__PrefixesAssignment_3_1 ) ) )
+            // InternalXMachine.g:2300:1: ( ( rule__MIncludes__PrefixesAssignment_3_1 ) )
             {
-            // InternalXMachine.g:2299:1: ( ( rule__MIncludes__PrefixesAssignment_3_1 ) )
-            // InternalXMachine.g:2300:2: ( rule__MIncludes__PrefixesAssignment_3_1 )
+            // InternalXMachine.g:2300:1: ( ( rule__MIncludes__PrefixesAssignment_3_1 ) )
+            // InternalXMachine.g:2301:2: ( rule__MIncludes__PrefixesAssignment_3_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMIncludesAccess().getPrefixesAssignment_3_1()); 
             }
-            // InternalXMachine.g:2301:2: ( rule__MIncludes__PrefixesAssignment_3_1 )
-            // InternalXMachine.g:2301:3: rule__MIncludes__PrefixesAssignment_3_1
+            // InternalXMachine.g:2302:2: ( rule__MIncludes__PrefixesAssignment_3_1 )
+            // InternalXMachine.g:2302:3: rule__MIncludes__PrefixesAssignment_3_1
             {
             pushFollow(FOLLOW_2);
             rule__MIncludes__PrefixesAssignment_3_1();
@@ -8421,14 +8428,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__MIncludes__Group_3__2"
-    // InternalXMachine.g:2309:1: rule__MIncludes__Group_3__2 : rule__MIncludes__Group_3__2__Impl ;
+    // InternalXMachine.g:2310:1: rule__MIncludes__Group_3__2 : rule__MIncludes__Group_3__2__Impl ;
     public final void rule__MIncludes__Group_3__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2313:1: ( rule__MIncludes__Group_3__2__Impl )
-            // InternalXMachine.g:2314:2: rule__MIncludes__Group_3__2__Impl
+            // InternalXMachine.g:2314:1: ( rule__MIncludes__Group_3__2__Impl )
+            // InternalXMachine.g:2315:2: rule__MIncludes__Group_3__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__MIncludes__Group_3__2__Impl();
@@ -8454,35 +8461,35 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__MIncludes__Group_3__2__Impl"
-    // InternalXMachine.g:2320:1: rule__MIncludes__Group_3__2__Impl : ( ( rule__MIncludes__PrefixesAssignment_3_2 )* ) ;
+    // InternalXMachine.g:2321:1: rule__MIncludes__Group_3__2__Impl : ( ( rule__MIncludes__PrefixesAssignment_3_2 )* ) ;
     public final void rule__MIncludes__Group_3__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2324:1: ( ( ( rule__MIncludes__PrefixesAssignment_3_2 )* ) )
-            // InternalXMachine.g:2325:1: ( ( rule__MIncludes__PrefixesAssignment_3_2 )* )
+            // InternalXMachine.g:2325:1: ( ( ( rule__MIncludes__PrefixesAssignment_3_2 )* ) )
+            // InternalXMachine.g:2326:1: ( ( rule__MIncludes__PrefixesAssignment_3_2 )* )
             {
-            // InternalXMachine.g:2325:1: ( ( rule__MIncludes__PrefixesAssignment_3_2 )* )
-            // InternalXMachine.g:2326:2: ( rule__MIncludes__PrefixesAssignment_3_2 )*
+            // InternalXMachine.g:2326:1: ( ( rule__MIncludes__PrefixesAssignment_3_2 )* )
+            // InternalXMachine.g:2327:2: ( rule__MIncludes__PrefixesAssignment_3_2 )*
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMIncludesAccess().getPrefixesAssignment_3_2()); 
             }
-            // InternalXMachine.g:2327:2: ( rule__MIncludes__PrefixesAssignment_3_2 )*
-            loop21:
+            // InternalXMachine.g:2328:2: ( rule__MIncludes__PrefixesAssignment_3_2 )*
+            loop22:
             do {
-                int alt21=2;
-                int LA21_0 = input.LA(1);
+                int alt22=2;
+                int LA22_0 = input.LA(1);
 
-                if ( (LA21_0==RULE_ID) ) {
-                    alt21=1;
+                if ( (LA22_0==RULE_ID) ) {
+                    alt22=1;
                 }
 
 
-                switch (alt21) {
+                switch (alt22) {
             	case 1 :
-            	    // InternalXMachine.g:2327:3: rule__MIncludes__PrefixesAssignment_3_2
+            	    // InternalXMachine.g:2328:3: rule__MIncludes__PrefixesAssignment_3_2
             	    {
             	    pushFollow(FOLLOW_9);
             	    rule__MIncludes__PrefixesAssignment_3_2();
@@ -8494,7 +8501,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             	    break;
 
             	default :
-            	    break loop21;
+            	    break loop22;
                 }
             } while (true);
 
@@ -8523,16 +8530,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__QualifiedName__Group__0"
-    // InternalXMachine.g:2336:1: rule__QualifiedName__Group__0 : rule__QualifiedName__Group__0__Impl rule__QualifiedName__Group__1 ;
+    // InternalXMachine.g:2337:1: rule__QualifiedName__Group__0 : rule__QualifiedName__Group__0__Impl rule__QualifiedName__Group__1 ;
     public final void rule__QualifiedName__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2340:1: ( rule__QualifiedName__Group__0__Impl rule__QualifiedName__Group__1 )
-            // InternalXMachine.g:2341:2: rule__QualifiedName__Group__0__Impl rule__QualifiedName__Group__1
+            // InternalXMachine.g:2341:1: ( rule__QualifiedName__Group__0__Impl rule__QualifiedName__Group__1 )
+            // InternalXMachine.g:2342:2: rule__QualifiedName__Group__0__Impl rule__QualifiedName__Group__1
             {
-            pushFollow(FOLLOW_16);
+            pushFollow(FOLLOW_17);
             rule__QualifiedName__Group__0__Impl();
 
             state._fsp--;
@@ -8561,17 +8568,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__QualifiedName__Group__0__Impl"
-    // InternalXMachine.g:2348:1: rule__QualifiedName__Group__0__Impl : ( RULE_ID ) ;
+    // InternalXMachine.g:2349:1: rule__QualifiedName__Group__0__Impl : ( RULE_ID ) ;
     public final void rule__QualifiedName__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2352:1: ( ( RULE_ID ) )
-            // InternalXMachine.g:2353:1: ( RULE_ID )
+            // InternalXMachine.g:2353:1: ( ( RULE_ID ) )
+            // InternalXMachine.g:2354:1: ( RULE_ID )
             {
-            // InternalXMachine.g:2353:1: ( RULE_ID )
-            // InternalXMachine.g:2354:2: RULE_ID
+            // InternalXMachine.g:2354:1: ( RULE_ID )
+            // InternalXMachine.g:2355:2: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getQualifiedNameAccess().getIDTerminalRuleCall_0()); 
@@ -8602,14 +8609,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__QualifiedName__Group__1"
-    // InternalXMachine.g:2363:1: rule__QualifiedName__Group__1 : rule__QualifiedName__Group__1__Impl ;
+    // InternalXMachine.g:2364:1: rule__QualifiedName__Group__1 : rule__QualifiedName__Group__1__Impl ;
     public final void rule__QualifiedName__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2367:1: ( rule__QualifiedName__Group__1__Impl )
-            // InternalXMachine.g:2368:2: rule__QualifiedName__Group__1__Impl
+            // InternalXMachine.g:2368:1: ( rule__QualifiedName__Group__1__Impl )
+            // InternalXMachine.g:2369:2: rule__QualifiedName__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__QualifiedName__Group__1__Impl();
@@ -8635,31 +8642,31 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__QualifiedName__Group__1__Impl"
-    // InternalXMachine.g:2374:1: rule__QualifiedName__Group__1__Impl : ( ( rule__QualifiedName__Group_1__0 )? ) ;
+    // InternalXMachine.g:2375:1: rule__QualifiedName__Group__1__Impl : ( ( rule__QualifiedName__Group_1__0 )? ) ;
     public final void rule__QualifiedName__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2378:1: ( ( ( rule__QualifiedName__Group_1__0 )? ) )
-            // InternalXMachine.g:2379:1: ( ( rule__QualifiedName__Group_1__0 )? )
+            // InternalXMachine.g:2379:1: ( ( ( rule__QualifiedName__Group_1__0 )? ) )
+            // InternalXMachine.g:2380:1: ( ( rule__QualifiedName__Group_1__0 )? )
             {
-            // InternalXMachine.g:2379:1: ( ( rule__QualifiedName__Group_1__0 )? )
-            // InternalXMachine.g:2380:2: ( rule__QualifiedName__Group_1__0 )?
+            // InternalXMachine.g:2380:1: ( ( rule__QualifiedName__Group_1__0 )? )
+            // InternalXMachine.g:2381:2: ( rule__QualifiedName__Group_1__0 )?
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getQualifiedNameAccess().getGroup_1()); 
             }
-            // InternalXMachine.g:2381:2: ( rule__QualifiedName__Group_1__0 )?
-            int alt22=2;
-            int LA22_0 = input.LA(1);
+            // InternalXMachine.g:2382:2: ( rule__QualifiedName__Group_1__0 )?
+            int alt23=2;
+            int LA23_0 = input.LA(1);
 
-            if ( (LA22_0==51) ) {
-                alt22=1;
+            if ( (LA23_0==51) ) {
+                alt23=1;
             }
-            switch (alt22) {
+            switch (alt23) {
                 case 1 :
-                    // InternalXMachine.g:2381:3: rule__QualifiedName__Group_1__0
+                    // InternalXMachine.g:2382:3: rule__QualifiedName__Group_1__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__QualifiedName__Group_1__0();
@@ -8697,14 +8704,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__QualifiedName__Group_1__0"
-    // InternalXMachine.g:2390:1: rule__QualifiedName__Group_1__0 : rule__QualifiedName__Group_1__0__Impl rule__QualifiedName__Group_1__1 ;
+    // InternalXMachine.g:2391:1: rule__QualifiedName__Group_1__0 : rule__QualifiedName__Group_1__0__Impl rule__QualifiedName__Group_1__1 ;
     public final void rule__QualifiedName__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2394:1: ( rule__QualifiedName__Group_1__0__Impl rule__QualifiedName__Group_1__1 )
-            // InternalXMachine.g:2395:2: rule__QualifiedName__Group_1__0__Impl rule__QualifiedName__Group_1__1
+            // InternalXMachine.g:2395:1: ( rule__QualifiedName__Group_1__0__Impl rule__QualifiedName__Group_1__1 )
+            // InternalXMachine.g:2396:2: rule__QualifiedName__Group_1__0__Impl rule__QualifiedName__Group_1__1
             {
             pushFollow(FOLLOW_5);
             rule__QualifiedName__Group_1__0__Impl();
@@ -8735,17 +8742,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__QualifiedName__Group_1__0__Impl"
-    // InternalXMachine.g:2402:1: rule__QualifiedName__Group_1__0__Impl : ( '.' ) ;
+    // InternalXMachine.g:2403:1: rule__QualifiedName__Group_1__0__Impl : ( '.' ) ;
     public final void rule__QualifiedName__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2406:1: ( ( '.' ) )
-            // InternalXMachine.g:2407:1: ( '.' )
+            // InternalXMachine.g:2407:1: ( ( '.' ) )
+            // InternalXMachine.g:2408:1: ( '.' )
             {
-            // InternalXMachine.g:2407:1: ( '.' )
-            // InternalXMachine.g:2408:2: '.'
+            // InternalXMachine.g:2408:1: ( '.' )
+            // InternalXMachine.g:2409:2: '.'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getQualifiedNameAccess().getFullStopKeyword_1_0()); 
@@ -8776,14 +8783,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__QualifiedName__Group_1__1"
-    // InternalXMachine.g:2417:1: rule__QualifiedName__Group_1__1 : rule__QualifiedName__Group_1__1__Impl ;
+    // InternalXMachine.g:2418:1: rule__QualifiedName__Group_1__1 : rule__QualifiedName__Group_1__1__Impl ;
     public final void rule__QualifiedName__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2421:1: ( rule__QualifiedName__Group_1__1__Impl )
-            // InternalXMachine.g:2422:2: rule__QualifiedName__Group_1__1__Impl
+            // InternalXMachine.g:2422:1: ( rule__QualifiedName__Group_1__1__Impl )
+            // InternalXMachine.g:2423:2: rule__QualifiedName__Group_1__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__QualifiedName__Group_1__1__Impl();
@@ -8809,17 +8816,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__QualifiedName__Group_1__1__Impl"
-    // InternalXMachine.g:2428:1: rule__QualifiedName__Group_1__1__Impl : ( RULE_ID ) ;
+    // InternalXMachine.g:2429:1: rule__QualifiedName__Group_1__1__Impl : ( RULE_ID ) ;
     public final void rule__QualifiedName__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2432:1: ( ( RULE_ID ) )
-            // InternalXMachine.g:2433:1: ( RULE_ID )
+            // InternalXMachine.g:2433:1: ( ( RULE_ID ) )
+            // InternalXMachine.g:2434:1: ( RULE_ID )
             {
-            // InternalXMachine.g:2433:1: ( RULE_ID )
-            // InternalXMachine.g:2434:2: RULE_ID
+            // InternalXMachine.g:2434:1: ( RULE_ID )
+            // InternalXMachine.g:2435:2: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getQualifiedNameAccess().getIDTerminalRuleCall_1_1()); 
@@ -8850,14 +8857,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XVariable__Group__0"
-    // InternalXMachine.g:2444:1: rule__XVariable__Group__0 : rule__XVariable__Group__0__Impl rule__XVariable__Group__1 ;
+    // InternalXMachine.g:2445:1: rule__XVariable__Group__0 : rule__XVariable__Group__0__Impl rule__XVariable__Group__1 ;
     public final void rule__XVariable__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2448:1: ( rule__XVariable__Group__0__Impl rule__XVariable__Group__1 )
-            // InternalXMachine.g:2449:2: rule__XVariable__Group__0__Impl rule__XVariable__Group__1
+            // InternalXMachine.g:2449:1: ( rule__XVariable__Group__0__Impl rule__XVariable__Group__1 )
+            // InternalXMachine.g:2450:2: rule__XVariable__Group__0__Impl rule__XVariable__Group__1
             {
             pushFollow(FOLLOW_5);
             rule__XVariable__Group__0__Impl();
@@ -8888,23 +8895,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XVariable__Group__0__Impl"
-    // InternalXMachine.g:2456:1: rule__XVariable__Group__0__Impl : ( () ) ;
+    // InternalXMachine.g:2457:1: rule__XVariable__Group__0__Impl : ( () ) ;
     public final void rule__XVariable__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2460:1: ( ( () ) )
-            // InternalXMachine.g:2461:1: ( () )
+            // InternalXMachine.g:2461:1: ( ( () ) )
+            // InternalXMachine.g:2462:1: ( () )
             {
-            // InternalXMachine.g:2461:1: ( () )
-            // InternalXMachine.g:2462:2: ()
+            // InternalXMachine.g:2462:1: ( () )
+            // InternalXMachine.g:2463:2: ()
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXVariableAccess().getVariableAction_0()); 
             }
-            // InternalXMachine.g:2463:2: ()
-            // InternalXMachine.g:2463:3: 
+            // InternalXMachine.g:2464:2: ()
+            // InternalXMachine.g:2464:3: 
             {
             }
 
@@ -8929,14 +8936,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XVariable__Group__1"
-    // InternalXMachine.g:2471:1: rule__XVariable__Group__1 : rule__XVariable__Group__1__Impl ;
+    // InternalXMachine.g:2472:1: rule__XVariable__Group__1 : rule__XVariable__Group__1__Impl ;
     public final void rule__XVariable__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2475:1: ( rule__XVariable__Group__1__Impl )
-            // InternalXMachine.g:2476:2: rule__XVariable__Group__1__Impl
+            // InternalXMachine.g:2476:1: ( rule__XVariable__Group__1__Impl )
+            // InternalXMachine.g:2477:2: rule__XVariable__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__XVariable__Group__1__Impl();
@@ -8962,23 +8969,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XVariable__Group__1__Impl"
-    // InternalXMachine.g:2482:1: rule__XVariable__Group__1__Impl : ( ( rule__XVariable__NameAssignment_1 ) ) ;
+    // InternalXMachine.g:2483:1: rule__XVariable__Group__1__Impl : ( ( rule__XVariable__NameAssignment_1 ) ) ;
     public final void rule__XVariable__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2486:1: ( ( ( rule__XVariable__NameAssignment_1 ) ) )
-            // InternalXMachine.g:2487:1: ( ( rule__XVariable__NameAssignment_1 ) )
+            // InternalXMachine.g:2487:1: ( ( ( rule__XVariable__NameAssignment_1 ) ) )
+            // InternalXMachine.g:2488:1: ( ( rule__XVariable__NameAssignment_1 ) )
             {
-            // InternalXMachine.g:2487:1: ( ( rule__XVariable__NameAssignment_1 ) )
-            // InternalXMachine.g:2488:2: ( rule__XVariable__NameAssignment_1 )
+            // InternalXMachine.g:2488:1: ( ( rule__XVariable__NameAssignment_1 ) )
+            // InternalXMachine.g:2489:2: ( rule__XVariable__NameAssignment_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXVariableAccess().getNameAssignment_1()); 
             }
-            // InternalXMachine.g:2489:2: ( rule__XVariable__NameAssignment_1 )
-            // InternalXMachine.g:2489:3: rule__XVariable__NameAssignment_1
+            // InternalXMachine.g:2490:2: ( rule__XVariable__NameAssignment_1 )
+            // InternalXMachine.g:2490:3: rule__XVariable__NameAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__XVariable__NameAssignment_1();
@@ -9013,14 +9020,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XInvariant__Group__0"
-    // InternalXMachine.g:2498:1: rule__XInvariant__Group__0 : rule__XInvariant__Group__0__Impl rule__XInvariant__Group__1 ;
+    // InternalXMachine.g:2499:1: rule__XInvariant__Group__0 : rule__XInvariant__Group__0__Impl rule__XInvariant__Group__1 ;
     public final void rule__XInvariant__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2502:1: ( rule__XInvariant__Group__0__Impl rule__XInvariant__Group__1 )
-            // InternalXMachine.g:2503:2: rule__XInvariant__Group__0__Impl rule__XInvariant__Group__1
+            // InternalXMachine.g:2503:1: ( rule__XInvariant__Group__0__Impl rule__XInvariant__Group__1 )
+            // InternalXMachine.g:2504:2: rule__XInvariant__Group__0__Impl rule__XInvariant__Group__1
             {
             pushFollow(FOLLOW_10);
             rule__XInvariant__Group__0__Impl();
@@ -9051,23 +9058,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XInvariant__Group__0__Impl"
-    // InternalXMachine.g:2510:1: rule__XInvariant__Group__0__Impl : ( () ) ;
+    // InternalXMachine.g:2511:1: rule__XInvariant__Group__0__Impl : ( () ) ;
     public final void rule__XInvariant__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2514:1: ( ( () ) )
-            // InternalXMachine.g:2515:1: ( () )
+            // InternalXMachine.g:2515:1: ( ( () ) )
+            // InternalXMachine.g:2516:1: ( () )
             {
-            // InternalXMachine.g:2515:1: ( () )
-            // InternalXMachine.g:2516:2: ()
+            // InternalXMachine.g:2516:1: ( () )
+            // InternalXMachine.g:2517:2: ()
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXInvariantAccess().getInvariantAction_0()); 
             }
-            // InternalXMachine.g:2517:2: ()
-            // InternalXMachine.g:2517:3: 
+            // InternalXMachine.g:2518:2: ()
+            // InternalXMachine.g:2518:3: 
             {
             }
 
@@ -9092,16 +9099,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XInvariant__Group__1"
-    // InternalXMachine.g:2525:1: rule__XInvariant__Group__1 : rule__XInvariant__Group__1__Impl rule__XInvariant__Group__2 ;
+    // InternalXMachine.g:2526:1: rule__XInvariant__Group__1 : rule__XInvariant__Group__1__Impl rule__XInvariant__Group__2 ;
     public final void rule__XInvariant__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2529:1: ( rule__XInvariant__Group__1__Impl rule__XInvariant__Group__2 )
-            // InternalXMachine.g:2530:2: rule__XInvariant__Group__1__Impl rule__XInvariant__Group__2
+            // InternalXMachine.g:2530:1: ( rule__XInvariant__Group__1__Impl rule__XInvariant__Group__2 )
+            // InternalXMachine.g:2531:2: rule__XInvariant__Group__1__Impl rule__XInvariant__Group__2
             {
-            pushFollow(FOLLOW_12);
+            pushFollow(FOLLOW_10);
             rule__XInvariant__Group__1__Impl();
 
             state._fsp--;
@@ -9130,34 +9137,45 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XInvariant__Group__1__Impl"
-    // InternalXMachine.g:2537:1: rule__XInvariant__Group__1__Impl : ( ( rule__XInvariant__NameAssignment_1 ) ) ;
+    // InternalXMachine.g:2538:1: rule__XInvariant__Group__1__Impl : ( ( rule__XInvariant__TheoremAssignment_1 )? ) ;
     public final void rule__XInvariant__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2541:1: ( ( ( rule__XInvariant__NameAssignment_1 ) ) )
-            // InternalXMachine.g:2542:1: ( ( rule__XInvariant__NameAssignment_1 ) )
+            // InternalXMachine.g:2542:1: ( ( ( rule__XInvariant__TheoremAssignment_1 )? ) )
+            // InternalXMachine.g:2543:1: ( ( rule__XInvariant__TheoremAssignment_1 )? )
             {
-            // InternalXMachine.g:2542:1: ( ( rule__XInvariant__NameAssignment_1 ) )
-            // InternalXMachine.g:2543:2: ( rule__XInvariant__NameAssignment_1 )
+            // InternalXMachine.g:2543:1: ( ( rule__XInvariant__TheoremAssignment_1 )? )
+            // InternalXMachine.g:2544:2: ( rule__XInvariant__TheoremAssignment_1 )?
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXInvariantAccess().getNameAssignment_1()); 
+               before(grammarAccess.getXInvariantAccess().getTheoremAssignment_1()); 
             }
-            // InternalXMachine.g:2544:2: ( rule__XInvariant__NameAssignment_1 )
-            // InternalXMachine.g:2544:3: rule__XInvariant__NameAssignment_1
-            {
-            pushFollow(FOLLOW_2);
-            rule__XInvariant__NameAssignment_1();
+            // InternalXMachine.g:2545:2: ( rule__XInvariant__TheoremAssignment_1 )?
+            int alt24=2;
+            int LA24_0 = input.LA(1);
 
-            state._fsp--;
-            if (state.failed) return ;
+            if ( (LA24_0==136) ) {
+                alt24=1;
+            }
+            switch (alt24) {
+                case 1 :
+                    // InternalXMachine.g:2545:3: rule__XInvariant__TheoremAssignment_1
+                    {
+                    pushFollow(FOLLOW_2);
+                    rule__XInvariant__TheoremAssignment_1();
+
+                    state._fsp--;
+                    if (state.failed) return ;
+
+                    }
+                    break;
 
             }
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXInvariantAccess().getNameAssignment_1()); 
+               after(grammarAccess.getXInvariantAccess().getTheoremAssignment_1()); 
             }
 
             }
@@ -9181,16 +9199,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XInvariant__Group__2"
-    // InternalXMachine.g:2552:1: rule__XInvariant__Group__2 : rule__XInvariant__Group__2__Impl rule__XInvariant__Group__3 ;
+    // InternalXMachine.g:2553:1: rule__XInvariant__Group__2 : rule__XInvariant__Group__2__Impl rule__XInvariant__Group__3 ;
     public final void rule__XInvariant__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2556:1: ( rule__XInvariant__Group__2__Impl rule__XInvariant__Group__3 )
-            // InternalXMachine.g:2557:2: rule__XInvariant__Group__2__Impl rule__XInvariant__Group__3
+            // InternalXMachine.g:2557:1: ( rule__XInvariant__Group__2__Impl rule__XInvariant__Group__3 )
+            // InternalXMachine.g:2558:2: rule__XInvariant__Group__2__Impl rule__XInvariant__Group__3
             {
-            pushFollow(FOLLOW_17);
+            pushFollow(FOLLOW_18);
             rule__XInvariant__Group__2__Impl();
 
             state._fsp--;
@@ -9219,26 +9237,26 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XInvariant__Group__2__Impl"
-    // InternalXMachine.g:2564:1: rule__XInvariant__Group__2__Impl : ( ( rule__XInvariant__PredicateAssignment_2 ) ) ;
+    // InternalXMachine.g:2565:1: rule__XInvariant__Group__2__Impl : ( ( rule__XInvariant__NameAssignment_2 ) ) ;
     public final void rule__XInvariant__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2568:1: ( ( ( rule__XInvariant__PredicateAssignment_2 ) ) )
-            // InternalXMachine.g:2569:1: ( ( rule__XInvariant__PredicateAssignment_2 ) )
+            // InternalXMachine.g:2569:1: ( ( ( rule__XInvariant__NameAssignment_2 ) ) )
+            // InternalXMachine.g:2570:1: ( ( rule__XInvariant__NameAssignment_2 ) )
             {
-            // InternalXMachine.g:2569:1: ( ( rule__XInvariant__PredicateAssignment_2 ) )
-            // InternalXMachine.g:2570:2: ( rule__XInvariant__PredicateAssignment_2 )
+            // InternalXMachine.g:2570:1: ( ( rule__XInvariant__NameAssignment_2 ) )
+            // InternalXMachine.g:2571:2: ( rule__XInvariant__NameAssignment_2 )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXInvariantAccess().getPredicateAssignment_2()); 
+               before(grammarAccess.getXInvariantAccess().getNameAssignment_2()); 
             }
-            // InternalXMachine.g:2571:2: ( rule__XInvariant__PredicateAssignment_2 )
-            // InternalXMachine.g:2571:3: rule__XInvariant__PredicateAssignment_2
+            // InternalXMachine.g:2572:2: ( rule__XInvariant__NameAssignment_2 )
+            // InternalXMachine.g:2572:3: rule__XInvariant__NameAssignment_2
             {
             pushFollow(FOLLOW_2);
-            rule__XInvariant__PredicateAssignment_2();
+            rule__XInvariant__NameAssignment_2();
 
             state._fsp--;
             if (state.failed) return ;
@@ -9246,7 +9264,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             }
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXInvariantAccess().getPredicateAssignment_2()); 
+               after(grammarAccess.getXInvariantAccess().getNameAssignment_2()); 
             }
 
             }
@@ -9270,14 +9288,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XInvariant__Group__3"
-    // InternalXMachine.g:2579:1: rule__XInvariant__Group__3 : rule__XInvariant__Group__3__Impl ;
+    // InternalXMachine.g:2580:1: rule__XInvariant__Group__3 : rule__XInvariant__Group__3__Impl ;
     public final void rule__XInvariant__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2583:1: ( rule__XInvariant__Group__3__Impl )
-            // InternalXMachine.g:2584:2: rule__XInvariant__Group__3__Impl
+            // InternalXMachine.g:2584:1: ( rule__XInvariant__Group__3__Impl )
+            // InternalXMachine.g:2585:2: rule__XInvariant__Group__3__Impl
             {
             pushFollow(FOLLOW_2);
             rule__XInvariant__Group__3__Impl();
@@ -9303,45 +9321,34 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XInvariant__Group__3__Impl"
-    // InternalXMachine.g:2590:1: rule__XInvariant__Group__3__Impl : ( ( rule__XInvariant__TheoremAssignment_3 )? ) ;
+    // InternalXMachine.g:2591:1: rule__XInvariant__Group__3__Impl : ( ( rule__XInvariant__PredicateAssignment_3 ) ) ;
     public final void rule__XInvariant__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2594:1: ( ( ( rule__XInvariant__TheoremAssignment_3 )? ) )
-            // InternalXMachine.g:2595:1: ( ( rule__XInvariant__TheoremAssignment_3 )? )
+            // InternalXMachine.g:2595:1: ( ( ( rule__XInvariant__PredicateAssignment_3 ) ) )
+            // InternalXMachine.g:2596:1: ( ( rule__XInvariant__PredicateAssignment_3 ) )
             {
-            // InternalXMachine.g:2595:1: ( ( rule__XInvariant__TheoremAssignment_3 )? )
-            // InternalXMachine.g:2596:2: ( rule__XInvariant__TheoremAssignment_3 )?
+            // InternalXMachine.g:2596:1: ( ( rule__XInvariant__PredicateAssignment_3 ) )
+            // InternalXMachine.g:2597:2: ( rule__XInvariant__PredicateAssignment_3 )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXInvariantAccess().getTheoremAssignment_3()); 
+               before(grammarAccess.getXInvariantAccess().getPredicateAssignment_3()); 
             }
-            // InternalXMachine.g:2597:2: ( rule__XInvariant__TheoremAssignment_3 )?
-            int alt23=2;
-            int LA23_0 = input.LA(1);
+            // InternalXMachine.g:2598:2: ( rule__XInvariant__PredicateAssignment_3 )
+            // InternalXMachine.g:2598:3: rule__XInvariant__PredicateAssignment_3
+            {
+            pushFollow(FOLLOW_2);
+            rule__XInvariant__PredicateAssignment_3();
 
-            if ( (LA23_0==137) ) {
-                alt23=1;
-            }
-            switch (alt23) {
-                case 1 :
-                    // InternalXMachine.g:2597:3: rule__XInvariant__TheoremAssignment_3
-                    {
-                    pushFollow(FOLLOW_2);
-                    rule__XInvariant__TheoremAssignment_3();
-
-                    state._fsp--;
-                    if (state.failed) return ;
-
-                    }
-                    break;
+            state._fsp--;
+            if (state.failed) return ;
 
             }
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXInvariantAccess().getTheoremAssignment_3()); 
+               after(grammarAccess.getXInvariantAccess().getPredicateAssignment_3()); 
             }
 
             }
@@ -9365,14 +9372,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XVariant__Group__0"
-    // InternalXMachine.g:2606:1: rule__XVariant__Group__0 : rule__XVariant__Group__0__Impl rule__XVariant__Group__1 ;
+    // InternalXMachine.g:2607:1: rule__XVariant__Group__0 : rule__XVariant__Group__0__Impl rule__XVariant__Group__1 ;
     public final void rule__XVariant__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2610:1: ( rule__XVariant__Group__0__Impl rule__XVariant__Group__1 )
-            // InternalXMachine.g:2611:2: rule__XVariant__Group__0__Impl rule__XVariant__Group__1
+            // InternalXMachine.g:2611:1: ( rule__XVariant__Group__0__Impl rule__XVariant__Group__1 )
+            // InternalXMachine.g:2612:2: rule__XVariant__Group__0__Impl rule__XVariant__Group__1
             {
             pushFollow(FOLLOW_12);
             rule__XVariant__Group__0__Impl();
@@ -9403,23 +9410,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XVariant__Group__0__Impl"
-    // InternalXMachine.g:2618:1: rule__XVariant__Group__0__Impl : ( () ) ;
+    // InternalXMachine.g:2619:1: rule__XVariant__Group__0__Impl : ( () ) ;
     public final void rule__XVariant__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2622:1: ( ( () ) )
-            // InternalXMachine.g:2623:1: ( () )
+            // InternalXMachine.g:2623:1: ( ( () ) )
+            // InternalXMachine.g:2624:1: ( () )
             {
-            // InternalXMachine.g:2623:1: ( () )
-            // InternalXMachine.g:2624:2: ()
+            // InternalXMachine.g:2624:1: ( () )
+            // InternalXMachine.g:2625:2: ()
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXVariantAccess().getVariantAction_0()); 
             }
-            // InternalXMachine.g:2625:2: ()
-            // InternalXMachine.g:2625:3: 
+            // InternalXMachine.g:2626:2: ()
+            // InternalXMachine.g:2626:3: 
             {
             }
 
@@ -9444,17 +9451,22 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XVariant__Group__1"
-    // InternalXMachine.g:2633:1: rule__XVariant__Group__1 : rule__XVariant__Group__1__Impl ;
+    // InternalXMachine.g:2634:1: rule__XVariant__Group__1 : rule__XVariant__Group__1__Impl rule__XVariant__Group__2 ;
     public final void rule__XVariant__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2637:1: ( rule__XVariant__Group__1__Impl )
-            // InternalXMachine.g:2638:2: rule__XVariant__Group__1__Impl
+            // InternalXMachine.g:2638:1: ( rule__XVariant__Group__1__Impl rule__XVariant__Group__2 )
+            // InternalXMachine.g:2639:2: rule__XVariant__Group__1__Impl rule__XVariant__Group__2
             {
-            pushFollow(FOLLOW_2);
+            pushFollow(FOLLOW_18);
             rule__XVariant__Group__1__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
+            pushFollow(FOLLOW_2);
+            rule__XVariant__Group__2();
 
             state._fsp--;
             if (state.failed) return ;
@@ -9477,26 +9489,26 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XVariant__Group__1__Impl"
-    // InternalXMachine.g:2644:1: rule__XVariant__Group__1__Impl : ( ( rule__XVariant__ExpressionAssignment_1 ) ) ;
+    // InternalXMachine.g:2646:1: rule__XVariant__Group__1__Impl : ( ( rule__XVariant__NameAssignment_1 ) ) ;
     public final void rule__XVariant__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2648:1: ( ( ( rule__XVariant__ExpressionAssignment_1 ) ) )
-            // InternalXMachine.g:2649:1: ( ( rule__XVariant__ExpressionAssignment_1 ) )
+            // InternalXMachine.g:2650:1: ( ( ( rule__XVariant__NameAssignment_1 ) ) )
+            // InternalXMachine.g:2651:1: ( ( rule__XVariant__NameAssignment_1 ) )
             {
-            // InternalXMachine.g:2649:1: ( ( rule__XVariant__ExpressionAssignment_1 ) )
-            // InternalXMachine.g:2650:2: ( rule__XVariant__ExpressionAssignment_1 )
+            // InternalXMachine.g:2651:1: ( ( rule__XVariant__NameAssignment_1 ) )
+            // InternalXMachine.g:2652:2: ( rule__XVariant__NameAssignment_1 )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXVariantAccess().getExpressionAssignment_1()); 
+               before(grammarAccess.getXVariantAccess().getNameAssignment_1()); 
             }
-            // InternalXMachine.g:2651:2: ( rule__XVariant__ExpressionAssignment_1 )
-            // InternalXMachine.g:2651:3: rule__XVariant__ExpressionAssignment_1
+            // InternalXMachine.g:2653:2: ( rule__XVariant__NameAssignment_1 )
+            // InternalXMachine.g:2653:3: rule__XVariant__NameAssignment_1
             {
             pushFollow(FOLLOW_2);
-            rule__XVariant__ExpressionAssignment_1();
+            rule__XVariant__NameAssignment_1();
 
             state._fsp--;
             if (state.failed) return ;
@@ -9504,7 +9516,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             }
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXVariantAccess().getExpressionAssignment_1()); 
+               after(grammarAccess.getXVariantAccess().getNameAssignment_1()); 
             }
 
             }
@@ -9527,17 +9539,101 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
     // $ANTLR end "rule__XVariant__Group__1__Impl"
 
 
+    // $ANTLR start "rule__XVariant__Group__2"
+    // InternalXMachine.g:2661:1: rule__XVariant__Group__2 : rule__XVariant__Group__2__Impl ;
+    public final void rule__XVariant__Group__2() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalXMachine.g:2665:1: ( rule__XVariant__Group__2__Impl )
+            // InternalXMachine.g:2666:2: rule__XVariant__Group__2__Impl
+            {
+            pushFollow(FOLLOW_2);
+            rule__XVariant__Group__2__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__XVariant__Group__2"
+
+
+    // $ANTLR start "rule__XVariant__Group__2__Impl"
+    // InternalXMachine.g:2672:1: rule__XVariant__Group__2__Impl : ( ( rule__XVariant__ExpressionAssignment_2 ) ) ;
+    public final void rule__XVariant__Group__2__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalXMachine.g:2676:1: ( ( ( rule__XVariant__ExpressionAssignment_2 ) ) )
+            // InternalXMachine.g:2677:1: ( ( rule__XVariant__ExpressionAssignment_2 ) )
+            {
+            // InternalXMachine.g:2677:1: ( ( rule__XVariant__ExpressionAssignment_2 ) )
+            // InternalXMachine.g:2678:2: ( rule__XVariant__ExpressionAssignment_2 )
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXVariantAccess().getExpressionAssignment_2()); 
+            }
+            // InternalXMachine.g:2679:2: ( rule__XVariant__ExpressionAssignment_2 )
+            // InternalXMachine.g:2679:3: rule__XVariant__ExpressionAssignment_2
+            {
+            pushFollow(FOLLOW_2);
+            rule__XVariant__ExpressionAssignment_2();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getXVariantAccess().getExpressionAssignment_2()); 
+            }
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__XVariant__Group__2__Impl"
+
+
     // $ANTLR start "rule__XGroup__Group__0"
-    // InternalXMachine.g:2660:1: rule__XGroup__Group__0 : rule__XGroup__Group__0__Impl rule__XGroup__Group__1 ;
+    // InternalXMachine.g:2688:1: rule__XGroup__Group__0 : rule__XGroup__Group__0__Impl rule__XGroup__Group__1 ;
     public final void rule__XGroup__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2664:1: ( rule__XGroup__Group__0__Impl rule__XGroup__Group__1 )
-            // InternalXMachine.g:2665:2: rule__XGroup__Group__0__Impl rule__XGroup__Group__1
+            // InternalXMachine.g:2692:1: ( rule__XGroup__Group__0__Impl rule__XGroup__Group__1 )
+            // InternalXMachine.g:2693:2: rule__XGroup__Group__0__Impl rule__XGroup__Group__1
             {
-            pushFollow(FOLLOW_18);
+            pushFollow(FOLLOW_19);
             rule__XGroup__Group__0__Impl();
 
             state._fsp--;
@@ -9566,23 +9662,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGroup__Group__0__Impl"
-    // InternalXMachine.g:2672:1: rule__XGroup__Group__0__Impl : ( () ) ;
+    // InternalXMachine.g:2700:1: rule__XGroup__Group__0__Impl : ( () ) ;
     public final void rule__XGroup__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2676:1: ( ( () ) )
-            // InternalXMachine.g:2677:1: ( () )
+            // InternalXMachine.g:2704:1: ( ( () ) )
+            // InternalXMachine.g:2705:1: ( () )
             {
-            // InternalXMachine.g:2677:1: ( () )
-            // InternalXMachine.g:2678:2: ()
+            // InternalXMachine.g:2705:1: ( () )
+            // InternalXMachine.g:2706:2: ()
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXGroupAccess().getEventCasesAction_0()); 
             }
-            // InternalXMachine.g:2679:2: ()
-            // InternalXMachine.g:2679:3: 
+            // InternalXMachine.g:2707:2: ()
+            // InternalXMachine.g:2707:3: 
             {
             }
 
@@ -9607,14 +9703,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGroup__Group__1"
-    // InternalXMachine.g:2687:1: rule__XGroup__Group__1 : rule__XGroup__Group__1__Impl rule__XGroup__Group__2 ;
+    // InternalXMachine.g:2715:1: rule__XGroup__Group__1 : rule__XGroup__Group__1__Impl rule__XGroup__Group__2 ;
     public final void rule__XGroup__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2691:1: ( rule__XGroup__Group__1__Impl rule__XGroup__Group__2 )
-            // InternalXMachine.g:2692:2: rule__XGroup__Group__1__Impl rule__XGroup__Group__2
+            // InternalXMachine.g:2719:1: ( rule__XGroup__Group__1__Impl rule__XGroup__Group__2 )
+            // InternalXMachine.g:2720:2: rule__XGroup__Group__1__Impl rule__XGroup__Group__2
             {
             pushFollow(FOLLOW_5);
             rule__XGroup__Group__1__Impl();
@@ -9645,17 +9741,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGroup__Group__1__Impl"
-    // InternalXMachine.g:2699:1: rule__XGroup__Group__1__Impl : ( 'group' ) ;
+    // InternalXMachine.g:2727:1: rule__XGroup__Group__1__Impl : ( 'group' ) ;
     public final void rule__XGroup__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2703:1: ( ( 'group' ) )
-            // InternalXMachine.g:2704:1: ( 'group' )
+            // InternalXMachine.g:2731:1: ( ( 'group' ) )
+            // InternalXMachine.g:2732:1: ( 'group' )
             {
-            // InternalXMachine.g:2704:1: ( 'group' )
-            // InternalXMachine.g:2705:2: 'group'
+            // InternalXMachine.g:2732:1: ( 'group' )
+            // InternalXMachine.g:2733:2: 'group'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXGroupAccess().getGroupKeyword_1()); 
@@ -9686,16 +9782,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGroup__Group__2"
-    // InternalXMachine.g:2714:1: rule__XGroup__Group__2 : rule__XGroup__Group__2__Impl rule__XGroup__Group__3 ;
+    // InternalXMachine.g:2742:1: rule__XGroup__Group__2 : rule__XGroup__Group__2__Impl rule__XGroup__Group__3 ;
     public final void rule__XGroup__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2718:1: ( rule__XGroup__Group__2__Impl rule__XGroup__Group__3 )
-            // InternalXMachine.g:2719:2: rule__XGroup__Group__2__Impl rule__XGroup__Group__3
+            // InternalXMachine.g:2746:1: ( rule__XGroup__Group__2__Impl rule__XGroup__Group__3 )
+            // InternalXMachine.g:2747:2: rule__XGroup__Group__2__Impl rule__XGroup__Group__3
             {
-            pushFollow(FOLLOW_19);
+            pushFollow(FOLLOW_20);
             rule__XGroup__Group__2__Impl();
 
             state._fsp--;
@@ -9724,23 +9820,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGroup__Group__2__Impl"
-    // InternalXMachine.g:2726:1: rule__XGroup__Group__2__Impl : ( ( rule__XGroup__NameAssignment_2 ) ) ;
+    // InternalXMachine.g:2754:1: rule__XGroup__Group__2__Impl : ( ( rule__XGroup__NameAssignment_2 ) ) ;
     public final void rule__XGroup__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2730:1: ( ( ( rule__XGroup__NameAssignment_2 ) ) )
-            // InternalXMachine.g:2731:1: ( ( rule__XGroup__NameAssignment_2 ) )
+            // InternalXMachine.g:2758:1: ( ( ( rule__XGroup__NameAssignment_2 ) ) )
+            // InternalXMachine.g:2759:1: ( ( rule__XGroup__NameAssignment_2 ) )
             {
-            // InternalXMachine.g:2731:1: ( ( rule__XGroup__NameAssignment_2 ) )
-            // InternalXMachine.g:2732:2: ( rule__XGroup__NameAssignment_2 )
+            // InternalXMachine.g:2759:1: ( ( rule__XGroup__NameAssignment_2 ) )
+            // InternalXMachine.g:2760:2: ( rule__XGroup__NameAssignment_2 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXGroupAccess().getNameAssignment_2()); 
             }
-            // InternalXMachine.g:2733:2: ( rule__XGroup__NameAssignment_2 )
-            // InternalXMachine.g:2733:3: rule__XGroup__NameAssignment_2
+            // InternalXMachine.g:2761:2: ( rule__XGroup__NameAssignment_2 )
+            // InternalXMachine.g:2761:3: rule__XGroup__NameAssignment_2
             {
             pushFollow(FOLLOW_2);
             rule__XGroup__NameAssignment_2();
@@ -9775,16 +9871,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGroup__Group__3"
-    // InternalXMachine.g:2741:1: rule__XGroup__Group__3 : rule__XGroup__Group__3__Impl rule__XGroup__Group__4 ;
+    // InternalXMachine.g:2769:1: rule__XGroup__Group__3 : rule__XGroup__Group__3__Impl rule__XGroup__Group__4 ;
     public final void rule__XGroup__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2745:1: ( rule__XGroup__Group__3__Impl rule__XGroup__Group__4 )
-            // InternalXMachine.g:2746:2: rule__XGroup__Group__3__Impl rule__XGroup__Group__4
+            // InternalXMachine.g:2773:1: ( rule__XGroup__Group__3__Impl rule__XGroup__Group__4 )
+            // InternalXMachine.g:2774:2: rule__XGroup__Group__3__Impl rule__XGroup__Group__4
             {
-            pushFollow(FOLLOW_19);
+            pushFollow(FOLLOW_20);
             rule__XGroup__Group__3__Impl();
 
             state._fsp--;
@@ -9813,31 +9909,31 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGroup__Group__3__Impl"
-    // InternalXMachine.g:2753:1: rule__XGroup__Group__3__Impl : ( ( rule__XGroup__Group_3__0 )? ) ;
+    // InternalXMachine.g:2781:1: rule__XGroup__Group__3__Impl : ( ( rule__XGroup__Group_3__0 )? ) ;
     public final void rule__XGroup__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2757:1: ( ( ( rule__XGroup__Group_3__0 )? ) )
-            // InternalXMachine.g:2758:1: ( ( rule__XGroup__Group_3__0 )? )
+            // InternalXMachine.g:2785:1: ( ( ( rule__XGroup__Group_3__0 )? ) )
+            // InternalXMachine.g:2786:1: ( ( rule__XGroup__Group_3__0 )? )
             {
-            // InternalXMachine.g:2758:1: ( ( rule__XGroup__Group_3__0 )? )
-            // InternalXMachine.g:2759:2: ( rule__XGroup__Group_3__0 )?
+            // InternalXMachine.g:2786:1: ( ( rule__XGroup__Group_3__0 )? )
+            // InternalXMachine.g:2787:2: ( rule__XGroup__Group_3__0 )?
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXGroupAccess().getGroup_3()); 
             }
-            // InternalXMachine.g:2760:2: ( rule__XGroup__Group_3__0 )?
-            int alt24=2;
-            int LA24_0 = input.LA(1);
+            // InternalXMachine.g:2788:2: ( rule__XGroup__Group_3__0 )?
+            int alt25=2;
+            int LA25_0 = input.LA(1);
 
-            if ( (LA24_0==35) ) {
-                alt24=1;
+            if ( (LA25_0==35) ) {
+                alt25=1;
             }
-            switch (alt24) {
+            switch (alt25) {
                 case 1 :
-                    // InternalXMachine.g:2760:3: rule__XGroup__Group_3__0
+                    // InternalXMachine.g:2788:3: rule__XGroup__Group_3__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__XGroup__Group_3__0();
@@ -9875,16 +9971,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGroup__Group__4"
-    // InternalXMachine.g:2768:1: rule__XGroup__Group__4 : rule__XGroup__Group__4__Impl rule__XGroup__Group__5 ;
+    // InternalXMachine.g:2796:1: rule__XGroup__Group__4 : rule__XGroup__Group__4__Impl rule__XGroup__Group__5 ;
     public final void rule__XGroup__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2772:1: ( rule__XGroup__Group__4__Impl rule__XGroup__Group__5 )
-            // InternalXMachine.g:2773:2: rule__XGroup__Group__4__Impl rule__XGroup__Group__5
+            // InternalXMachine.g:2800:1: ( rule__XGroup__Group__4__Impl rule__XGroup__Group__5 )
+            // InternalXMachine.g:2801:2: rule__XGroup__Group__4__Impl rule__XGroup__Group__5
             {
-            pushFollow(FOLLOW_19);
+            pushFollow(FOLLOW_20);
             rule__XGroup__Group__4__Impl();
 
             state._fsp--;
@@ -9913,31 +10009,31 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGroup__Group__4__Impl"
-    // InternalXMachine.g:2780:1: rule__XGroup__Group__4__Impl : ( ( rule__XGroup__Group_4__0 )? ) ;
+    // InternalXMachine.g:2808:1: rule__XGroup__Group__4__Impl : ( ( rule__XGroup__Group_4__0 )? ) ;
     public final void rule__XGroup__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2784:1: ( ( ( rule__XGroup__Group_4__0 )? ) )
-            // InternalXMachine.g:2785:1: ( ( rule__XGroup__Group_4__0 )? )
+            // InternalXMachine.g:2812:1: ( ( ( rule__XGroup__Group_4__0 )? ) )
+            // InternalXMachine.g:2813:1: ( ( rule__XGroup__Group_4__0 )? )
             {
-            // InternalXMachine.g:2785:1: ( ( rule__XGroup__Group_4__0 )? )
-            // InternalXMachine.g:2786:2: ( rule__XGroup__Group_4__0 )?
+            // InternalXMachine.g:2813:1: ( ( rule__XGroup__Group_4__0 )? )
+            // InternalXMachine.g:2814:2: ( rule__XGroup__Group_4__0 )?
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXGroupAccess().getGroup_4()); 
             }
-            // InternalXMachine.g:2787:2: ( rule__XGroup__Group_4__0 )?
-            int alt25=2;
-            int LA25_0 = input.LA(1);
+            // InternalXMachine.g:2815:2: ( rule__XGroup__Group_4__0 )?
+            int alt26=2;
+            int LA26_0 = input.LA(1);
 
-            if ( (LA25_0==127) ) {
-                alt25=1;
+            if ( (LA26_0==127) ) {
+                alt26=1;
             }
-            switch (alt25) {
+            switch (alt26) {
                 case 1 :
-                    // InternalXMachine.g:2787:3: rule__XGroup__Group_4__0
+                    // InternalXMachine.g:2815:3: rule__XGroup__Group_4__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__XGroup__Group_4__0();
@@ -9975,14 +10071,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGroup__Group__5"
-    // InternalXMachine.g:2795:1: rule__XGroup__Group__5 : rule__XGroup__Group__5__Impl ;
+    // InternalXMachine.g:2823:1: rule__XGroup__Group__5 : rule__XGroup__Group__5__Impl ;
     public final void rule__XGroup__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2799:1: ( rule__XGroup__Group__5__Impl )
-            // InternalXMachine.g:2800:2: rule__XGroup__Group__5__Impl
+            // InternalXMachine.g:2827:1: ( rule__XGroup__Group__5__Impl )
+            // InternalXMachine.g:2828:2: rule__XGroup__Group__5__Impl
             {
             pushFollow(FOLLOW_2);
             rule__XGroup__Group__5__Impl();
@@ -10008,17 +10104,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGroup__Group__5__Impl"
-    // InternalXMachine.g:2806:1: rule__XGroup__Group__5__Impl : ( 'end' ) ;
+    // InternalXMachine.g:2834:1: rule__XGroup__Group__5__Impl : ( 'end' ) ;
     public final void rule__XGroup__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2810:1: ( ( 'end' ) )
-            // InternalXMachine.g:2811:1: ( 'end' )
+            // InternalXMachine.g:2838:1: ( ( 'end' ) )
+            // InternalXMachine.g:2839:1: ( 'end' )
             {
-            // InternalXMachine.g:2811:1: ( 'end' )
-            // InternalXMachine.g:2812:2: 'end'
+            // InternalXMachine.g:2839:1: ( 'end' )
+            // InternalXMachine.g:2840:2: 'end'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXGroupAccess().getEndKeyword_5()); 
@@ -10049,16 +10145,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGroup__Group_3__0"
-    // InternalXMachine.g:2822:1: rule__XGroup__Group_3__0 : rule__XGroup__Group_3__0__Impl rule__XGroup__Group_3__1 ;
+    // InternalXMachine.g:2850:1: rule__XGroup__Group_3__0 : rule__XGroup__Group_3__0__Impl rule__XGroup__Group_3__1 ;
     public final void rule__XGroup__Group_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2826:1: ( rule__XGroup__Group_3__0__Impl rule__XGroup__Group_3__1 )
-            // InternalXMachine.g:2827:2: rule__XGroup__Group_3__0__Impl rule__XGroup__Group_3__1
+            // InternalXMachine.g:2854:1: ( rule__XGroup__Group_3__0__Impl rule__XGroup__Group_3__1 )
+            // InternalXMachine.g:2855:2: rule__XGroup__Group_3__0__Impl rule__XGroup__Group_3__1
             {
-            pushFollow(FOLLOW_20);
+            pushFollow(FOLLOW_21);
             rule__XGroup__Group_3__0__Impl();
 
             state._fsp--;
@@ -10087,17 +10183,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGroup__Group_3__0__Impl"
-    // InternalXMachine.g:2834:1: rule__XGroup__Group_3__0__Impl : ( '(' ) ;
+    // InternalXMachine.g:2862:1: rule__XGroup__Group_3__0__Impl : ( '(' ) ;
     public final void rule__XGroup__Group_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2838:1: ( ( '(' ) )
-            // InternalXMachine.g:2839:1: ( '(' )
+            // InternalXMachine.g:2866:1: ( ( '(' ) )
+            // InternalXMachine.g:2867:1: ( '(' )
             {
-            // InternalXMachine.g:2839:1: ( '(' )
-            // InternalXMachine.g:2840:2: '('
+            // InternalXMachine.g:2867:1: ( '(' )
+            // InternalXMachine.g:2868:2: '('
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXGroupAccess().getLeftParenthesisKeyword_3_0()); 
@@ -10128,16 +10224,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGroup__Group_3__1"
-    // InternalXMachine.g:2849:1: rule__XGroup__Group_3__1 : rule__XGroup__Group_3__1__Impl rule__XGroup__Group_3__2 ;
+    // InternalXMachine.g:2877:1: rule__XGroup__Group_3__1 : rule__XGroup__Group_3__1__Impl rule__XGroup__Group_3__2 ;
     public final void rule__XGroup__Group_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2853:1: ( rule__XGroup__Group_3__1__Impl rule__XGroup__Group_3__2 )
-            // InternalXMachine.g:2854:2: rule__XGroup__Group_3__1__Impl rule__XGroup__Group_3__2
+            // InternalXMachine.g:2881:1: ( rule__XGroup__Group_3__1__Impl rule__XGroup__Group_3__2 )
+            // InternalXMachine.g:2882:2: rule__XGroup__Group_3__1__Impl rule__XGroup__Group_3__2
             {
-            pushFollow(FOLLOW_21);
+            pushFollow(FOLLOW_22);
             rule__XGroup__Group_3__1__Impl();
 
             state._fsp--;
@@ -10166,23 +10262,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGroup__Group_3__1__Impl"
-    // InternalXMachine.g:2861:1: rule__XGroup__Group_3__1__Impl : ( ( rule__XGroup__FormalParametersAssignment_3_1 ) ) ;
+    // InternalXMachine.g:2889:1: rule__XGroup__Group_3__1__Impl : ( ( rule__XGroup__FormalParametersAssignment_3_1 ) ) ;
     public final void rule__XGroup__Group_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2865:1: ( ( ( rule__XGroup__FormalParametersAssignment_3_1 ) ) )
-            // InternalXMachine.g:2866:1: ( ( rule__XGroup__FormalParametersAssignment_3_1 ) )
+            // InternalXMachine.g:2893:1: ( ( ( rule__XGroup__FormalParametersAssignment_3_1 ) ) )
+            // InternalXMachine.g:2894:1: ( ( rule__XGroup__FormalParametersAssignment_3_1 ) )
             {
-            // InternalXMachine.g:2866:1: ( ( rule__XGroup__FormalParametersAssignment_3_1 ) )
-            // InternalXMachine.g:2867:2: ( rule__XGroup__FormalParametersAssignment_3_1 )
+            // InternalXMachine.g:2894:1: ( ( rule__XGroup__FormalParametersAssignment_3_1 ) )
+            // InternalXMachine.g:2895:2: ( rule__XGroup__FormalParametersAssignment_3_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXGroupAccess().getFormalParametersAssignment_3_1()); 
             }
-            // InternalXMachine.g:2868:2: ( rule__XGroup__FormalParametersAssignment_3_1 )
-            // InternalXMachine.g:2868:3: rule__XGroup__FormalParametersAssignment_3_1
+            // InternalXMachine.g:2896:2: ( rule__XGroup__FormalParametersAssignment_3_1 )
+            // InternalXMachine.g:2896:3: rule__XGroup__FormalParametersAssignment_3_1
             {
             pushFollow(FOLLOW_2);
             rule__XGroup__FormalParametersAssignment_3_1();
@@ -10217,16 +10313,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGroup__Group_3__2"
-    // InternalXMachine.g:2876:1: rule__XGroup__Group_3__2 : rule__XGroup__Group_3__2__Impl rule__XGroup__Group_3__3 ;
+    // InternalXMachine.g:2904:1: rule__XGroup__Group_3__2 : rule__XGroup__Group_3__2__Impl rule__XGroup__Group_3__3 ;
     public final void rule__XGroup__Group_3__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2880:1: ( rule__XGroup__Group_3__2__Impl rule__XGroup__Group_3__3 )
-            // InternalXMachine.g:2881:2: rule__XGroup__Group_3__2__Impl rule__XGroup__Group_3__3
+            // InternalXMachine.g:2908:1: ( rule__XGroup__Group_3__2__Impl rule__XGroup__Group_3__3 )
+            // InternalXMachine.g:2909:2: rule__XGroup__Group_3__2__Impl rule__XGroup__Group_3__3
             {
-            pushFollow(FOLLOW_21);
+            pushFollow(FOLLOW_22);
             rule__XGroup__Group_3__2__Impl();
 
             state._fsp--;
@@ -10255,37 +10351,37 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGroup__Group_3__2__Impl"
-    // InternalXMachine.g:2888:1: rule__XGroup__Group_3__2__Impl : ( ( rule__XGroup__Group_3_2__0 )* ) ;
+    // InternalXMachine.g:2916:1: rule__XGroup__Group_3__2__Impl : ( ( rule__XGroup__Group_3_2__0 )* ) ;
     public final void rule__XGroup__Group_3__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2892:1: ( ( ( rule__XGroup__Group_3_2__0 )* ) )
-            // InternalXMachine.g:2893:1: ( ( rule__XGroup__Group_3_2__0 )* )
+            // InternalXMachine.g:2920:1: ( ( ( rule__XGroup__Group_3_2__0 )* ) )
+            // InternalXMachine.g:2921:1: ( ( rule__XGroup__Group_3_2__0 )* )
             {
-            // InternalXMachine.g:2893:1: ( ( rule__XGroup__Group_3_2__0 )* )
-            // InternalXMachine.g:2894:2: ( rule__XGroup__Group_3_2__0 )*
+            // InternalXMachine.g:2921:1: ( ( rule__XGroup__Group_3_2__0 )* )
+            // InternalXMachine.g:2922:2: ( rule__XGroup__Group_3_2__0 )*
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXGroupAccess().getGroup_3_2()); 
             }
-            // InternalXMachine.g:2895:2: ( rule__XGroup__Group_3_2__0 )*
-            loop26:
+            // InternalXMachine.g:2923:2: ( rule__XGroup__Group_3_2__0 )*
+            loop27:
             do {
-                int alt26=2;
-                int LA26_0 = input.LA(1);
+                int alt27=2;
+                int LA27_0 = input.LA(1);
 
-                if ( (LA26_0==49) ) {
-                    alt26=1;
+                if ( (LA27_0==49) ) {
+                    alt27=1;
                 }
 
 
-                switch (alt26) {
+                switch (alt27) {
             	case 1 :
-            	    // InternalXMachine.g:2895:3: rule__XGroup__Group_3_2__0
+            	    // InternalXMachine.g:2923:3: rule__XGroup__Group_3_2__0
             	    {
-            	    pushFollow(FOLLOW_22);
+            	    pushFollow(FOLLOW_23);
             	    rule__XGroup__Group_3_2__0();
 
             	    state._fsp--;
@@ -10295,7 +10391,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             	    break;
 
             	default :
-            	    break loop26;
+            	    break loop27;
                 }
             } while (true);
 
@@ -10324,14 +10420,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGroup__Group_3__3"
-    // InternalXMachine.g:2903:1: rule__XGroup__Group_3__3 : rule__XGroup__Group_3__3__Impl ;
+    // InternalXMachine.g:2931:1: rule__XGroup__Group_3__3 : rule__XGroup__Group_3__3__Impl ;
     public final void rule__XGroup__Group_3__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2907:1: ( rule__XGroup__Group_3__3__Impl )
-            // InternalXMachine.g:2908:2: rule__XGroup__Group_3__3__Impl
+            // InternalXMachine.g:2935:1: ( rule__XGroup__Group_3__3__Impl )
+            // InternalXMachine.g:2936:2: rule__XGroup__Group_3__3__Impl
             {
             pushFollow(FOLLOW_2);
             rule__XGroup__Group_3__3__Impl();
@@ -10357,17 +10453,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGroup__Group_3__3__Impl"
-    // InternalXMachine.g:2914:1: rule__XGroup__Group_3__3__Impl : ( ')' ) ;
+    // InternalXMachine.g:2942:1: rule__XGroup__Group_3__3__Impl : ( ')' ) ;
     public final void rule__XGroup__Group_3__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2918:1: ( ( ')' ) )
-            // InternalXMachine.g:2919:1: ( ')' )
+            // InternalXMachine.g:2946:1: ( ( ')' ) )
+            // InternalXMachine.g:2947:1: ( ')' )
             {
-            // InternalXMachine.g:2919:1: ( ')' )
-            // InternalXMachine.g:2920:2: ')'
+            // InternalXMachine.g:2947:1: ( ')' )
+            // InternalXMachine.g:2948:2: ')'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXGroupAccess().getRightParenthesisKeyword_3_3()); 
@@ -10398,16 +10494,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGroup__Group_3_2__0"
-    // InternalXMachine.g:2930:1: rule__XGroup__Group_3_2__0 : rule__XGroup__Group_3_2__0__Impl rule__XGroup__Group_3_2__1 ;
+    // InternalXMachine.g:2958:1: rule__XGroup__Group_3_2__0 : rule__XGroup__Group_3_2__0__Impl rule__XGroup__Group_3_2__1 ;
     public final void rule__XGroup__Group_3_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2934:1: ( rule__XGroup__Group_3_2__0__Impl rule__XGroup__Group_3_2__1 )
-            // InternalXMachine.g:2935:2: rule__XGroup__Group_3_2__0__Impl rule__XGroup__Group_3_2__1
+            // InternalXMachine.g:2962:1: ( rule__XGroup__Group_3_2__0__Impl rule__XGroup__Group_3_2__1 )
+            // InternalXMachine.g:2963:2: rule__XGroup__Group_3_2__0__Impl rule__XGroup__Group_3_2__1
             {
-            pushFollow(FOLLOW_20);
+            pushFollow(FOLLOW_21);
             rule__XGroup__Group_3_2__0__Impl();
 
             state._fsp--;
@@ -10436,17 +10532,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGroup__Group_3_2__0__Impl"
-    // InternalXMachine.g:2942:1: rule__XGroup__Group_3_2__0__Impl : ( ',' ) ;
+    // InternalXMachine.g:2970:1: rule__XGroup__Group_3_2__0__Impl : ( ',' ) ;
     public final void rule__XGroup__Group_3_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2946:1: ( ( ',' ) )
-            // InternalXMachine.g:2947:1: ( ',' )
+            // InternalXMachine.g:2974:1: ( ( ',' ) )
+            // InternalXMachine.g:2975:1: ( ',' )
             {
-            // InternalXMachine.g:2947:1: ( ',' )
-            // InternalXMachine.g:2948:2: ','
+            // InternalXMachine.g:2975:1: ( ',' )
+            // InternalXMachine.g:2976:2: ','
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXGroupAccess().getCommaKeyword_3_2_0()); 
@@ -10477,14 +10573,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGroup__Group_3_2__1"
-    // InternalXMachine.g:2957:1: rule__XGroup__Group_3_2__1 : rule__XGroup__Group_3_2__1__Impl ;
+    // InternalXMachine.g:2985:1: rule__XGroup__Group_3_2__1 : rule__XGroup__Group_3_2__1__Impl ;
     public final void rule__XGroup__Group_3_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2961:1: ( rule__XGroup__Group_3_2__1__Impl )
-            // InternalXMachine.g:2962:2: rule__XGroup__Group_3_2__1__Impl
+            // InternalXMachine.g:2989:1: ( rule__XGroup__Group_3_2__1__Impl )
+            // InternalXMachine.g:2990:2: rule__XGroup__Group_3_2__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__XGroup__Group_3_2__1__Impl();
@@ -10510,23 +10606,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGroup__Group_3_2__1__Impl"
-    // InternalXMachine.g:2968:1: rule__XGroup__Group_3_2__1__Impl : ( ( rule__XGroup__FormalParametersAssignment_3_2_1 ) ) ;
+    // InternalXMachine.g:2996:1: rule__XGroup__Group_3_2__1__Impl : ( ( rule__XGroup__FormalParametersAssignment_3_2_1 ) ) ;
     public final void rule__XGroup__Group_3_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2972:1: ( ( ( rule__XGroup__FormalParametersAssignment_3_2_1 ) ) )
-            // InternalXMachine.g:2973:1: ( ( rule__XGroup__FormalParametersAssignment_3_2_1 ) )
+            // InternalXMachine.g:3000:1: ( ( ( rule__XGroup__FormalParametersAssignment_3_2_1 ) ) )
+            // InternalXMachine.g:3001:1: ( ( rule__XGroup__FormalParametersAssignment_3_2_1 ) )
             {
-            // InternalXMachine.g:2973:1: ( ( rule__XGroup__FormalParametersAssignment_3_2_1 ) )
-            // InternalXMachine.g:2974:2: ( rule__XGroup__FormalParametersAssignment_3_2_1 )
+            // InternalXMachine.g:3001:1: ( ( rule__XGroup__FormalParametersAssignment_3_2_1 ) )
+            // InternalXMachine.g:3002:2: ( rule__XGroup__FormalParametersAssignment_3_2_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXGroupAccess().getFormalParametersAssignment_3_2_1()); 
             }
-            // InternalXMachine.g:2975:2: ( rule__XGroup__FormalParametersAssignment_3_2_1 )
-            // InternalXMachine.g:2975:3: rule__XGroup__FormalParametersAssignment_3_2_1
+            // InternalXMachine.g:3003:2: ( rule__XGroup__FormalParametersAssignment_3_2_1 )
+            // InternalXMachine.g:3003:3: rule__XGroup__FormalParametersAssignment_3_2_1
             {
             pushFollow(FOLLOW_2);
             rule__XGroup__FormalParametersAssignment_3_2_1();
@@ -10561,14 +10657,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGroup__Group_4__0"
-    // InternalXMachine.g:2984:1: rule__XGroup__Group_4__0 : rule__XGroup__Group_4__0__Impl rule__XGroup__Group_4__1 ;
+    // InternalXMachine.g:3012:1: rule__XGroup__Group_4__0 : rule__XGroup__Group_4__0__Impl rule__XGroup__Group_4__1 ;
     public final void rule__XGroup__Group_4__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:2988:1: ( rule__XGroup__Group_4__0__Impl rule__XGroup__Group_4__1 )
-            // InternalXMachine.g:2989:2: rule__XGroup__Group_4__0__Impl rule__XGroup__Group_4__1
+            // InternalXMachine.g:3016:1: ( rule__XGroup__Group_4__0__Impl rule__XGroup__Group_4__1 )
+            // InternalXMachine.g:3017:2: rule__XGroup__Group_4__0__Impl rule__XGroup__Group_4__1
             {
             pushFollow(FOLLOW_5);
             rule__XGroup__Group_4__0__Impl();
@@ -10599,17 +10695,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGroup__Group_4__0__Impl"
-    // InternalXMachine.g:2996:1: rule__XGroup__Group_4__0__Impl : ( 'begin' ) ;
+    // InternalXMachine.g:3024:1: rule__XGroup__Group_4__0__Impl : ( 'begin' ) ;
     public final void rule__XGroup__Group_4__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3000:1: ( ( 'begin' ) )
-            // InternalXMachine.g:3001:1: ( 'begin' )
+            // InternalXMachine.g:3028:1: ( ( 'begin' ) )
+            // InternalXMachine.g:3029:1: ( 'begin' )
             {
-            // InternalXMachine.g:3001:1: ( 'begin' )
-            // InternalXMachine.g:3002:2: 'begin'
+            // InternalXMachine.g:3029:1: ( 'begin' )
+            // InternalXMachine.g:3030:2: 'begin'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXGroupAccess().getBeginKeyword_4_0()); 
@@ -10640,14 +10736,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGroup__Group_4__1"
-    // InternalXMachine.g:3011:1: rule__XGroup__Group_4__1 : rule__XGroup__Group_4__1__Impl rule__XGroup__Group_4__2 ;
+    // InternalXMachine.g:3039:1: rule__XGroup__Group_4__1 : rule__XGroup__Group_4__1__Impl rule__XGroup__Group_4__2 ;
     public final void rule__XGroup__Group_4__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3015:1: ( rule__XGroup__Group_4__1__Impl rule__XGroup__Group_4__2 )
-            // InternalXMachine.g:3016:2: rule__XGroup__Group_4__1__Impl rule__XGroup__Group_4__2
+            // InternalXMachine.g:3043:1: ( rule__XGroup__Group_4__1__Impl rule__XGroup__Group_4__2 )
+            // InternalXMachine.g:3044:2: rule__XGroup__Group_4__1__Impl rule__XGroup__Group_4__2
             {
             pushFollow(FOLLOW_5);
             rule__XGroup__Group_4__1__Impl();
@@ -10678,23 +10774,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGroup__Group_4__1__Impl"
-    // InternalXMachine.g:3023:1: rule__XGroup__Group_4__1__Impl : ( ( rule__XGroup__EventsAssignment_4_1 ) ) ;
+    // InternalXMachine.g:3051:1: rule__XGroup__Group_4__1__Impl : ( ( rule__XGroup__EventsAssignment_4_1 ) ) ;
     public final void rule__XGroup__Group_4__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3027:1: ( ( ( rule__XGroup__EventsAssignment_4_1 ) ) )
-            // InternalXMachine.g:3028:1: ( ( rule__XGroup__EventsAssignment_4_1 ) )
+            // InternalXMachine.g:3055:1: ( ( ( rule__XGroup__EventsAssignment_4_1 ) ) )
+            // InternalXMachine.g:3056:1: ( ( rule__XGroup__EventsAssignment_4_1 ) )
             {
-            // InternalXMachine.g:3028:1: ( ( rule__XGroup__EventsAssignment_4_1 ) )
-            // InternalXMachine.g:3029:2: ( rule__XGroup__EventsAssignment_4_1 )
+            // InternalXMachine.g:3056:1: ( ( rule__XGroup__EventsAssignment_4_1 ) )
+            // InternalXMachine.g:3057:2: ( rule__XGroup__EventsAssignment_4_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXGroupAccess().getEventsAssignment_4_1()); 
             }
-            // InternalXMachine.g:3030:2: ( rule__XGroup__EventsAssignment_4_1 )
-            // InternalXMachine.g:3030:3: rule__XGroup__EventsAssignment_4_1
+            // InternalXMachine.g:3058:2: ( rule__XGroup__EventsAssignment_4_1 )
+            // InternalXMachine.g:3058:3: rule__XGroup__EventsAssignment_4_1
             {
             pushFollow(FOLLOW_2);
             rule__XGroup__EventsAssignment_4_1();
@@ -10729,14 +10825,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGroup__Group_4__2"
-    // InternalXMachine.g:3038:1: rule__XGroup__Group_4__2 : rule__XGroup__Group_4__2__Impl ;
+    // InternalXMachine.g:3066:1: rule__XGroup__Group_4__2 : rule__XGroup__Group_4__2__Impl ;
     public final void rule__XGroup__Group_4__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3042:1: ( rule__XGroup__Group_4__2__Impl )
-            // InternalXMachine.g:3043:2: rule__XGroup__Group_4__2__Impl
+            // InternalXMachine.g:3070:1: ( rule__XGroup__Group_4__2__Impl )
+            // InternalXMachine.g:3071:2: rule__XGroup__Group_4__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__XGroup__Group_4__2__Impl();
@@ -10762,35 +10858,35 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGroup__Group_4__2__Impl"
-    // InternalXMachine.g:3049:1: rule__XGroup__Group_4__2__Impl : ( ( rule__XGroup__EventsAssignment_4_2 )* ) ;
+    // InternalXMachine.g:3077:1: rule__XGroup__Group_4__2__Impl : ( ( rule__XGroup__EventsAssignment_4_2 )* ) ;
     public final void rule__XGroup__Group_4__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3053:1: ( ( ( rule__XGroup__EventsAssignment_4_2 )* ) )
-            // InternalXMachine.g:3054:1: ( ( rule__XGroup__EventsAssignment_4_2 )* )
+            // InternalXMachine.g:3081:1: ( ( ( rule__XGroup__EventsAssignment_4_2 )* ) )
+            // InternalXMachine.g:3082:1: ( ( rule__XGroup__EventsAssignment_4_2 )* )
             {
-            // InternalXMachine.g:3054:1: ( ( rule__XGroup__EventsAssignment_4_2 )* )
-            // InternalXMachine.g:3055:2: ( rule__XGroup__EventsAssignment_4_2 )*
+            // InternalXMachine.g:3082:1: ( ( rule__XGroup__EventsAssignment_4_2 )* )
+            // InternalXMachine.g:3083:2: ( rule__XGroup__EventsAssignment_4_2 )*
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXGroupAccess().getEventsAssignment_4_2()); 
             }
-            // InternalXMachine.g:3056:2: ( rule__XGroup__EventsAssignment_4_2 )*
-            loop27:
+            // InternalXMachine.g:3084:2: ( rule__XGroup__EventsAssignment_4_2 )*
+            loop28:
             do {
-                int alt27=2;
-                int LA27_0 = input.LA(1);
+                int alt28=2;
+                int LA28_0 = input.LA(1);
 
-                if ( (LA27_0==RULE_ID) ) {
-                    alt27=1;
+                if ( (LA28_0==RULE_ID) ) {
+                    alt28=1;
                 }
 
 
-                switch (alt27) {
+                switch (alt28) {
             	case 1 :
-            	    // InternalXMachine.g:3056:3: rule__XGroup__EventsAssignment_4_2
+            	    // InternalXMachine.g:3084:3: rule__XGroup__EventsAssignment_4_2
             	    {
             	    pushFollow(FOLLOW_9);
             	    rule__XGroup__EventsAssignment_4_2();
@@ -10802,7 +10898,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             	    break;
 
             	default :
-            	    break loop27;
+            	    break loop28;
                 }
             } while (true);
 
@@ -10831,16 +10927,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XFormalParameter__Group__0"
-    // InternalXMachine.g:3065:1: rule__XFormalParameter__Group__0 : rule__XFormalParameter__Group__0__Impl rule__XFormalParameter__Group__1 ;
+    // InternalXMachine.g:3093:1: rule__XFormalParameter__Group__0 : rule__XFormalParameter__Group__0__Impl rule__XFormalParameter__Group__1 ;
     public final void rule__XFormalParameter__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3069:1: ( rule__XFormalParameter__Group__0__Impl rule__XFormalParameter__Group__1 )
-            // InternalXMachine.g:3070:2: rule__XFormalParameter__Group__0__Impl rule__XFormalParameter__Group__1
+            // InternalXMachine.g:3097:1: ( rule__XFormalParameter__Group__0__Impl rule__XFormalParameter__Group__1 )
+            // InternalXMachine.g:3098:2: rule__XFormalParameter__Group__0__Impl rule__XFormalParameter__Group__1
             {
-            pushFollow(FOLLOW_20);
+            pushFollow(FOLLOW_21);
             rule__XFormalParameter__Group__0__Impl();
 
             state._fsp--;
@@ -10869,23 +10965,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XFormalParameter__Group__0__Impl"
-    // InternalXMachine.g:3077:1: rule__XFormalParameter__Group__0__Impl : ( () ) ;
+    // InternalXMachine.g:3105:1: rule__XFormalParameter__Group__0__Impl : ( () ) ;
     public final void rule__XFormalParameter__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3081:1: ( ( () ) )
-            // InternalXMachine.g:3082:1: ( () )
+            // InternalXMachine.g:3109:1: ( ( () ) )
+            // InternalXMachine.g:3110:1: ( () )
             {
-            // InternalXMachine.g:3082:1: ( () )
-            // InternalXMachine.g:3083:2: ()
+            // InternalXMachine.g:3110:1: ( () )
+            // InternalXMachine.g:3111:2: ()
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFormalParameterAccess().getFormalParameterAction_0()); 
             }
-            // InternalXMachine.g:3084:2: ()
-            // InternalXMachine.g:3084:3: 
+            // InternalXMachine.g:3112:2: ()
+            // InternalXMachine.g:3112:3: 
             {
             }
 
@@ -10910,14 +11006,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XFormalParameter__Group__1"
-    // InternalXMachine.g:3092:1: rule__XFormalParameter__Group__1 : rule__XFormalParameter__Group__1__Impl rule__XFormalParameter__Group__2 ;
+    // InternalXMachine.g:3120:1: rule__XFormalParameter__Group__1 : rule__XFormalParameter__Group__1__Impl rule__XFormalParameter__Group__2 ;
     public final void rule__XFormalParameter__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3096:1: ( rule__XFormalParameter__Group__1__Impl rule__XFormalParameter__Group__2 )
-            // InternalXMachine.g:3097:2: rule__XFormalParameter__Group__1__Impl rule__XFormalParameter__Group__2
+            // InternalXMachine.g:3124:1: ( rule__XFormalParameter__Group__1__Impl rule__XFormalParameter__Group__2 )
+            // InternalXMachine.g:3125:2: rule__XFormalParameter__Group__1__Impl rule__XFormalParameter__Group__2
             {
             pushFollow(FOLLOW_5);
             rule__XFormalParameter__Group__1__Impl();
@@ -10948,23 +11044,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XFormalParameter__Group__1__Impl"
-    // InternalXMachine.g:3104:1: rule__XFormalParameter__Group__1__Impl : ( ( rule__XFormalParameter__DirectionAssignment_1 ) ) ;
+    // InternalXMachine.g:3132:1: rule__XFormalParameter__Group__1__Impl : ( ( rule__XFormalParameter__DirectionAssignment_1 ) ) ;
     public final void rule__XFormalParameter__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3108:1: ( ( ( rule__XFormalParameter__DirectionAssignment_1 ) ) )
-            // InternalXMachine.g:3109:1: ( ( rule__XFormalParameter__DirectionAssignment_1 ) )
+            // InternalXMachine.g:3136:1: ( ( ( rule__XFormalParameter__DirectionAssignment_1 ) ) )
+            // InternalXMachine.g:3137:1: ( ( rule__XFormalParameter__DirectionAssignment_1 ) )
             {
-            // InternalXMachine.g:3109:1: ( ( rule__XFormalParameter__DirectionAssignment_1 ) )
-            // InternalXMachine.g:3110:2: ( rule__XFormalParameter__DirectionAssignment_1 )
+            // InternalXMachine.g:3137:1: ( ( rule__XFormalParameter__DirectionAssignment_1 ) )
+            // InternalXMachine.g:3138:2: ( rule__XFormalParameter__DirectionAssignment_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFormalParameterAccess().getDirectionAssignment_1()); 
             }
-            // InternalXMachine.g:3111:2: ( rule__XFormalParameter__DirectionAssignment_1 )
-            // InternalXMachine.g:3111:3: rule__XFormalParameter__DirectionAssignment_1
+            // InternalXMachine.g:3139:2: ( rule__XFormalParameter__DirectionAssignment_1 )
+            // InternalXMachine.g:3139:3: rule__XFormalParameter__DirectionAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__XFormalParameter__DirectionAssignment_1();
@@ -10999,14 +11095,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XFormalParameter__Group__2"
-    // InternalXMachine.g:3119:1: rule__XFormalParameter__Group__2 : rule__XFormalParameter__Group__2__Impl ;
+    // InternalXMachine.g:3147:1: rule__XFormalParameter__Group__2 : rule__XFormalParameter__Group__2__Impl ;
     public final void rule__XFormalParameter__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3123:1: ( rule__XFormalParameter__Group__2__Impl )
-            // InternalXMachine.g:3124:2: rule__XFormalParameter__Group__2__Impl
+            // InternalXMachine.g:3151:1: ( rule__XFormalParameter__Group__2__Impl )
+            // InternalXMachine.g:3152:2: rule__XFormalParameter__Group__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__XFormalParameter__Group__2__Impl();
@@ -11032,23 +11128,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XFormalParameter__Group__2__Impl"
-    // InternalXMachine.g:3130:1: rule__XFormalParameter__Group__2__Impl : ( ( rule__XFormalParameter__NameAssignment_2 ) ) ;
+    // InternalXMachine.g:3158:1: rule__XFormalParameter__Group__2__Impl : ( ( rule__XFormalParameter__NameAssignment_2 ) ) ;
     public final void rule__XFormalParameter__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3134:1: ( ( ( rule__XFormalParameter__NameAssignment_2 ) ) )
-            // InternalXMachine.g:3135:1: ( ( rule__XFormalParameter__NameAssignment_2 ) )
+            // InternalXMachine.g:3162:1: ( ( ( rule__XFormalParameter__NameAssignment_2 ) ) )
+            // InternalXMachine.g:3163:1: ( ( rule__XFormalParameter__NameAssignment_2 ) )
             {
-            // InternalXMachine.g:3135:1: ( ( rule__XFormalParameter__NameAssignment_2 ) )
-            // InternalXMachine.g:3136:2: ( rule__XFormalParameter__NameAssignment_2 )
+            // InternalXMachine.g:3163:1: ( ( rule__XFormalParameter__NameAssignment_2 ) )
+            // InternalXMachine.g:3164:2: ( rule__XFormalParameter__NameAssignment_2 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFormalParameterAccess().getNameAssignment_2()); 
             }
-            // InternalXMachine.g:3137:2: ( rule__XFormalParameter__NameAssignment_2 )
-            // InternalXMachine.g:3137:3: rule__XFormalParameter__NameAssignment_2
+            // InternalXMachine.g:3165:2: ( rule__XFormalParameter__NameAssignment_2 )
+            // InternalXMachine.g:3165:3: rule__XFormalParameter__NameAssignment_2
             {
             pushFollow(FOLLOW_2);
             rule__XFormalParameter__NameAssignment_2();
@@ -11083,16 +11179,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XEvent__Group__0"
-    // InternalXMachine.g:3146:1: rule__XEvent__Group__0 : rule__XEvent__Group__0__Impl rule__XEvent__Group__1 ;
+    // InternalXMachine.g:3174:1: rule__XEvent__Group__0 : rule__XEvent__Group__0__Impl rule__XEvent__Group__1 ;
     public final void rule__XEvent__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3150:1: ( rule__XEvent__Group__0__Impl rule__XEvent__Group__1 )
-            // InternalXMachine.g:3151:2: rule__XEvent__Group__0__Impl rule__XEvent__Group__1
+            // InternalXMachine.g:3178:1: ( rule__XEvent__Group__0__Impl rule__XEvent__Group__1 )
+            // InternalXMachine.g:3179:2: rule__XEvent__Group__0__Impl rule__XEvent__Group__1
             {
-            pushFollow(FOLLOW_13);
+            pushFollow(FOLLOW_14);
             rule__XEvent__Group__0__Impl();
 
             state._fsp--;
@@ -11121,23 +11217,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XEvent__Group__0__Impl"
-    // InternalXMachine.g:3158:1: rule__XEvent__Group__0__Impl : ( () ) ;
+    // InternalXMachine.g:3186:1: rule__XEvent__Group__0__Impl : ( () ) ;
     public final void rule__XEvent__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3162:1: ( ( () ) )
-            // InternalXMachine.g:3163:1: ( () )
+            // InternalXMachine.g:3190:1: ( ( () ) )
+            // InternalXMachine.g:3191:1: ( () )
             {
-            // InternalXMachine.g:3163:1: ( () )
-            // InternalXMachine.g:3164:2: ()
+            // InternalXMachine.g:3191:1: ( () )
+            // InternalXMachine.g:3192:2: ()
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXEventAccess().getEventAction_0()); 
             }
-            // InternalXMachine.g:3165:2: ()
-            // InternalXMachine.g:3165:3: 
+            // InternalXMachine.g:3193:2: ()
+            // InternalXMachine.g:3193:3: 
             {
             }
 
@@ -11162,16 +11258,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XEvent__Group__1"
-    // InternalXMachine.g:3173:1: rule__XEvent__Group__1 : rule__XEvent__Group__1__Impl rule__XEvent__Group__2 ;
+    // InternalXMachine.g:3201:1: rule__XEvent__Group__1 : rule__XEvent__Group__1__Impl rule__XEvent__Group__2 ;
     public final void rule__XEvent__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3177:1: ( rule__XEvent__Group__1__Impl rule__XEvent__Group__2 )
-            // InternalXMachine.g:3178:2: rule__XEvent__Group__1__Impl rule__XEvent__Group__2
+            // InternalXMachine.g:3205:1: ( rule__XEvent__Group__1__Impl rule__XEvent__Group__2 )
+            // InternalXMachine.g:3206:2: rule__XEvent__Group__1__Impl rule__XEvent__Group__2
             {
-            pushFollow(FOLLOW_5);
+            pushFollow(FOLLOW_14);
             rule__XEvent__Group__1__Impl();
 
             state._fsp--;
@@ -11200,24 +11296,45 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XEvent__Group__1__Impl"
-    // InternalXMachine.g:3185:1: rule__XEvent__Group__1__Impl : ( 'event' ) ;
+    // InternalXMachine.g:3213:1: rule__XEvent__Group__1__Impl : ( ( rule__XEvent__ConvergenceAssignment_1 )? ) ;
     public final void rule__XEvent__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3189:1: ( ( 'event' ) )
-            // InternalXMachine.g:3190:1: ( 'event' )
+            // InternalXMachine.g:3217:1: ( ( ( rule__XEvent__ConvergenceAssignment_1 )? ) )
+            // InternalXMachine.g:3218:1: ( ( rule__XEvent__ConvergenceAssignment_1 )? )
             {
-            // InternalXMachine.g:3190:1: ( 'event' )
-            // InternalXMachine.g:3191:2: 'event'
+            // InternalXMachine.g:3218:1: ( ( rule__XEvent__ConvergenceAssignment_1 )? )
+            // InternalXMachine.g:3219:2: ( rule__XEvent__ConvergenceAssignment_1 )?
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getEventKeyword_1()); 
+               before(grammarAccess.getXEventAccess().getConvergenceAssignment_1()); 
             }
-            match(input,128,FOLLOW_2); if (state.failed) return ;
+            // InternalXMachine.g:3220:2: ( rule__XEvent__ConvergenceAssignment_1 )?
+            int alt29=2;
+            int LA29_0 = input.LA(1);
+
+            if ( ((LA29_0>=112 && LA29_0<=114)) ) {
+                alt29=1;
+            }
+            switch (alt29) {
+                case 1 :
+                    // InternalXMachine.g:3220:3: rule__XEvent__ConvergenceAssignment_1
+                    {
+                    pushFollow(FOLLOW_2);
+                    rule__XEvent__ConvergenceAssignment_1();
+
+                    state._fsp--;
+                    if (state.failed) return ;
+
+                    }
+                    break;
+
+            }
+
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getEventKeyword_1()); 
+               after(grammarAccess.getXEventAccess().getConvergenceAssignment_1()); 
             }
 
             }
@@ -11241,16 +11358,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XEvent__Group__2"
-    // InternalXMachine.g:3200:1: rule__XEvent__Group__2 : rule__XEvent__Group__2__Impl rule__XEvent__Group__3 ;
+    // InternalXMachine.g:3228:1: rule__XEvent__Group__2 : rule__XEvent__Group__2__Impl rule__XEvent__Group__3 ;
     public final void rule__XEvent__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3204:1: ( rule__XEvent__Group__2__Impl rule__XEvent__Group__3 )
-            // InternalXMachine.g:3205:2: rule__XEvent__Group__2__Impl rule__XEvent__Group__3
+            // InternalXMachine.g:3232:1: ( rule__XEvent__Group__2__Impl rule__XEvent__Group__3 )
+            // InternalXMachine.g:3233:2: rule__XEvent__Group__2__Impl rule__XEvent__Group__3
             {
-            pushFollow(FOLLOW_23);
+            pushFollow(FOLLOW_5);
             rule__XEvent__Group__2__Impl();
 
             state._fsp--;
@@ -11279,34 +11396,24 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XEvent__Group__2__Impl"
-    // InternalXMachine.g:3212:1: rule__XEvent__Group__2__Impl : ( ( rule__XEvent__NameAssignment_2 ) ) ;
+    // InternalXMachine.g:3240:1: rule__XEvent__Group__2__Impl : ( 'event' ) ;
     public final void rule__XEvent__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3216:1: ( ( ( rule__XEvent__NameAssignment_2 ) ) )
-            // InternalXMachine.g:3217:1: ( ( rule__XEvent__NameAssignment_2 ) )
+            // InternalXMachine.g:3244:1: ( ( 'event' ) )
+            // InternalXMachine.g:3245:1: ( 'event' )
             {
-            // InternalXMachine.g:3217:1: ( ( rule__XEvent__NameAssignment_2 ) )
-            // InternalXMachine.g:3218:2: ( rule__XEvent__NameAssignment_2 )
+            // InternalXMachine.g:3245:1: ( 'event' )
+            // InternalXMachine.g:3246:2: 'event'
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getNameAssignment_2()); 
+               before(grammarAccess.getXEventAccess().getEventKeyword_2()); 
             }
-            // InternalXMachine.g:3219:2: ( rule__XEvent__NameAssignment_2 )
-            // InternalXMachine.g:3219:3: rule__XEvent__NameAssignment_2
-            {
-            pushFollow(FOLLOW_2);
-            rule__XEvent__NameAssignment_2();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
+            match(input,128,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getNameAssignment_2()); 
+               after(grammarAccess.getXEventAccess().getEventKeyword_2()); 
             }
 
             }
@@ -11330,14 +11437,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XEvent__Group__3"
-    // InternalXMachine.g:3227:1: rule__XEvent__Group__3 : rule__XEvent__Group__3__Impl rule__XEvent__Group__4 ;
+    // InternalXMachine.g:3255:1: rule__XEvent__Group__3 : rule__XEvent__Group__3__Impl rule__XEvent__Group__4 ;
     public final void rule__XEvent__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3231:1: ( rule__XEvent__Group__3__Impl rule__XEvent__Group__4 )
-            // InternalXMachine.g:3232:2: rule__XEvent__Group__3__Impl rule__XEvent__Group__4
+            // InternalXMachine.g:3259:1: ( rule__XEvent__Group__3__Impl rule__XEvent__Group__4 )
+            // InternalXMachine.g:3260:2: rule__XEvent__Group__3__Impl rule__XEvent__Group__4
             {
             pushFollow(FOLLOW_24);
             rule__XEvent__Group__3__Impl();
@@ -11368,26 +11475,26 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XEvent__Group__3__Impl"
-    // InternalXMachine.g:3239:1: rule__XEvent__Group__3__Impl : ( ( rule__XEvent__UnorderedGroup_3 ) ) ;
+    // InternalXMachine.g:3267:1: rule__XEvent__Group__3__Impl : ( ( rule__XEvent__NameAssignment_3 ) ) ;
     public final void rule__XEvent__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3243:1: ( ( ( rule__XEvent__UnorderedGroup_3 ) ) )
-            // InternalXMachine.g:3244:1: ( ( rule__XEvent__UnorderedGroup_3 ) )
+            // InternalXMachine.g:3271:1: ( ( ( rule__XEvent__NameAssignment_3 ) ) )
+            // InternalXMachine.g:3272:1: ( ( rule__XEvent__NameAssignment_3 ) )
             {
-            // InternalXMachine.g:3244:1: ( ( rule__XEvent__UnorderedGroup_3 ) )
-            // InternalXMachine.g:3245:2: ( rule__XEvent__UnorderedGroup_3 )
+            // InternalXMachine.g:3272:1: ( ( rule__XEvent__NameAssignment_3 ) )
+            // InternalXMachine.g:3273:2: ( rule__XEvent__NameAssignment_3 )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getUnorderedGroup_3()); 
+               before(grammarAccess.getXEventAccess().getNameAssignment_3()); 
             }
-            // InternalXMachine.g:3246:2: ( rule__XEvent__UnorderedGroup_3 )
-            // InternalXMachine.g:3246:3: rule__XEvent__UnorderedGroup_3
+            // InternalXMachine.g:3274:2: ( rule__XEvent__NameAssignment_3 )
+            // InternalXMachine.g:3274:3: rule__XEvent__NameAssignment_3
             {
             pushFollow(FOLLOW_2);
-            rule__XEvent__UnorderedGroup_3();
+            rule__XEvent__NameAssignment_3();
 
             state._fsp--;
             if (state.failed) return ;
@@ -11395,7 +11502,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             }
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getUnorderedGroup_3()); 
+               after(grammarAccess.getXEventAccess().getNameAssignment_3()); 
             }
 
             }
@@ -11419,14 +11526,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XEvent__Group__4"
-    // InternalXMachine.g:3254:1: rule__XEvent__Group__4 : rule__XEvent__Group__4__Impl rule__XEvent__Group__5 ;
+    // InternalXMachine.g:3282:1: rule__XEvent__Group__4 : rule__XEvent__Group__4__Impl rule__XEvent__Group__5 ;
     public final void rule__XEvent__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3258:1: ( rule__XEvent__Group__4__Impl rule__XEvent__Group__5 )
-            // InternalXMachine.g:3259:2: rule__XEvent__Group__4__Impl rule__XEvent__Group__5
+            // InternalXMachine.g:3286:1: ( rule__XEvent__Group__4__Impl rule__XEvent__Group__5 )
+            // InternalXMachine.g:3287:2: rule__XEvent__Group__4__Impl rule__XEvent__Group__5
             {
             pushFollow(FOLLOW_24);
             rule__XEvent__Group__4__Impl();
@@ -11457,52 +11564,45 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XEvent__Group__4__Impl"
-    // InternalXMachine.g:3266:1: rule__XEvent__Group__4__Impl : ( ( rule__XEvent__ExtensionsAssignment_4 )* ) ;
+    // InternalXMachine.g:3294:1: rule__XEvent__Group__4__Impl : ( ( rule__XEvent__Alternatives_4 )? ) ;
     public final void rule__XEvent__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3270:1: ( ( ( rule__XEvent__ExtensionsAssignment_4 )* ) )
-            // InternalXMachine.g:3271:1: ( ( rule__XEvent__ExtensionsAssignment_4 )* )
+            // InternalXMachine.g:3298:1: ( ( ( rule__XEvent__Alternatives_4 )? ) )
+            // InternalXMachine.g:3299:1: ( ( rule__XEvent__Alternatives_4 )? )
             {
-            // InternalXMachine.g:3271:1: ( ( rule__XEvent__ExtensionsAssignment_4 )* )
-            // InternalXMachine.g:3272:2: ( rule__XEvent__ExtensionsAssignment_4 )*
+            // InternalXMachine.g:3299:1: ( ( rule__XEvent__Alternatives_4 )? )
+            // InternalXMachine.g:3300:2: ( rule__XEvent__Alternatives_4 )?
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getExtensionsAssignment_4()); 
+               before(grammarAccess.getXEventAccess().getAlternatives_4()); 
             }
-            // InternalXMachine.g:3273:2: ( rule__XEvent__ExtensionsAssignment_4 )*
-            loop28:
-            do {
-                int alt28=2;
-                int LA28_0 = input.LA(1);
+            // InternalXMachine.g:3301:2: ( rule__XEvent__Alternatives_4 )?
+            int alt30=2;
+            int LA30_0 = input.LA(1);
 
-                if ( (LA28_0==134) ) {
-                    alt28=1;
-                }
+            if ( (LA30_0==117||LA30_0==137) ) {
+                alt30=1;
+            }
+            switch (alt30) {
+                case 1 :
+                    // InternalXMachine.g:3301:3: rule__XEvent__Alternatives_4
+                    {
+                    pushFollow(FOLLOW_2);
+                    rule__XEvent__Alternatives_4();
 
+                    state._fsp--;
+                    if (state.failed) return ;
 
-                switch (alt28) {
-            	case 1 :
-            	    // InternalXMachine.g:3273:3: rule__XEvent__ExtensionsAssignment_4
-            	    {
-            	    pushFollow(FOLLOW_25);
-            	    rule__XEvent__ExtensionsAssignment_4();
+                    }
+                    break;
 
-            	    state._fsp--;
-            	    if (state.failed) return ;
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop28;
-                }
-            } while (true);
+            }
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getExtensionsAssignment_4()); 
+               after(grammarAccess.getXEventAccess().getAlternatives_4()); 
             }
 
             }
@@ -11526,14 +11626,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XEvent__Group__5"
-    // InternalXMachine.g:3281:1: rule__XEvent__Group__5 : rule__XEvent__Group__5__Impl rule__XEvent__Group__6 ;
+    // InternalXMachine.g:3309:1: rule__XEvent__Group__5 : rule__XEvent__Group__5__Impl rule__XEvent__Group__6 ;
     public final void rule__XEvent__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3285:1: ( rule__XEvent__Group__5__Impl rule__XEvent__Group__6 )
-            // InternalXMachine.g:3286:2: rule__XEvent__Group__5__Impl rule__XEvent__Group__6
+            // InternalXMachine.g:3313:1: ( rule__XEvent__Group__5__Impl rule__XEvent__Group__6 )
+            // InternalXMachine.g:3314:2: rule__XEvent__Group__5__Impl rule__XEvent__Group__6
             {
             pushFollow(FOLLOW_24);
             rule__XEvent__Group__5__Impl();
@@ -11564,31 +11664,31 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XEvent__Group__5__Impl"
-    // InternalXMachine.g:3293:1: rule__XEvent__Group__5__Impl : ( ( rule__XEvent__Group_5__0 )? ) ;
+    // InternalXMachine.g:3321:1: rule__XEvent__Group__5__Impl : ( ( rule__XEvent__Group_5__0 )? ) ;
     public final void rule__XEvent__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3297:1: ( ( ( rule__XEvent__Group_5__0 )? ) )
-            // InternalXMachine.g:3298:1: ( ( rule__XEvent__Group_5__0 )? )
+            // InternalXMachine.g:3325:1: ( ( ( rule__XEvent__Group_5__0 )? ) )
+            // InternalXMachine.g:3326:1: ( ( rule__XEvent__Group_5__0 )? )
             {
-            // InternalXMachine.g:3298:1: ( ( rule__XEvent__Group_5__0 )? )
-            // InternalXMachine.g:3299:2: ( rule__XEvent__Group_5__0 )?
+            // InternalXMachine.g:3326:1: ( ( rule__XEvent__Group_5__0 )? )
+            // InternalXMachine.g:3327:2: ( rule__XEvent__Group_5__0 )?
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXEventAccess().getGroup_5()); 
             }
-            // InternalXMachine.g:3300:2: ( rule__XEvent__Group_5__0 )?
-            int alt29=2;
-            int LA29_0 = input.LA(1);
+            // InternalXMachine.g:3328:2: ( rule__XEvent__Group_5__0 )?
+            int alt31=2;
+            int LA31_0 = input.LA(1);
 
-            if ( (LA29_0==117) ) {
-                alt29=1;
+            if ( (LA31_0==129) ) {
+                alt31=1;
             }
-            switch (alt29) {
+            switch (alt31) {
                 case 1 :
-                    // InternalXMachine.g:3300:3: rule__XEvent__Group_5__0
+                    // InternalXMachine.g:3328:3: rule__XEvent__Group_5__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__XEvent__Group_5__0();
@@ -11626,14 +11726,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XEvent__Group__6"
-    // InternalXMachine.g:3308:1: rule__XEvent__Group__6 : rule__XEvent__Group__6__Impl rule__XEvent__Group__7 ;
+    // InternalXMachine.g:3336:1: rule__XEvent__Group__6 : rule__XEvent__Group__6__Impl rule__XEvent__Group__7 ;
     public final void rule__XEvent__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3312:1: ( rule__XEvent__Group__6__Impl rule__XEvent__Group__7 )
-            // InternalXMachine.g:3313:2: rule__XEvent__Group__6__Impl rule__XEvent__Group__7
+            // InternalXMachine.g:3340:1: ( rule__XEvent__Group__6__Impl rule__XEvent__Group__7 )
+            // InternalXMachine.g:3341:2: rule__XEvent__Group__6__Impl rule__XEvent__Group__7
             {
             pushFollow(FOLLOW_24);
             rule__XEvent__Group__6__Impl();
@@ -11664,45 +11764,52 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XEvent__Group__6__Impl"
-    // InternalXMachine.g:3320:1: rule__XEvent__Group__6__Impl : ( ( rule__XEvent__Alternatives_6 )? ) ;
+    // InternalXMachine.g:3348:1: rule__XEvent__Group__6__Impl : ( ( rule__XEvent__ExtensionsAssignment_6 )* ) ;
     public final void rule__XEvent__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3324:1: ( ( ( rule__XEvent__Alternatives_6 )? ) )
-            // InternalXMachine.g:3325:1: ( ( rule__XEvent__Alternatives_6 )? )
+            // InternalXMachine.g:3352:1: ( ( ( rule__XEvent__ExtensionsAssignment_6 )* ) )
+            // InternalXMachine.g:3353:1: ( ( rule__XEvent__ExtensionsAssignment_6 )* )
             {
-            // InternalXMachine.g:3325:1: ( ( rule__XEvent__Alternatives_6 )? )
-            // InternalXMachine.g:3326:2: ( rule__XEvent__Alternatives_6 )?
+            // InternalXMachine.g:3353:1: ( ( rule__XEvent__ExtensionsAssignment_6 )* )
+            // InternalXMachine.g:3354:2: ( rule__XEvent__ExtensionsAssignment_6 )*
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getAlternatives_6()); 
+               before(grammarAccess.getXEventAccess().getExtensionsAssignment_6()); 
             }
-            // InternalXMachine.g:3327:2: ( rule__XEvent__Alternatives_6 )?
-            int alt30=2;
-            int LA30_0 = input.LA(1);
+            // InternalXMachine.g:3355:2: ( rule__XEvent__ExtensionsAssignment_6 )*
+            loop32:
+            do {
+                int alt32=2;
+                int LA32_0 = input.LA(1);
 
-            if ( (LA30_0==127||(LA30_0>=129 && LA30_0<=130)||LA30_0==132) ) {
-                alt30=1;
-            }
-            switch (alt30) {
-                case 1 :
-                    // InternalXMachine.g:3327:3: rule__XEvent__Alternatives_6
-                    {
-                    pushFollow(FOLLOW_2);
-                    rule__XEvent__Alternatives_6();
+                if ( (LA32_0==133) ) {
+                    alt32=1;
+                }
 
-                    state._fsp--;
-                    if (state.failed) return ;
 
-                    }
-                    break;
+                switch (alt32) {
+            	case 1 :
+            	    // InternalXMachine.g:3355:3: rule__XEvent__ExtensionsAssignment_6
+            	    {
+            	    pushFollow(FOLLOW_25);
+            	    rule__XEvent__ExtensionsAssignment_6();
 
-            }
+            	    state._fsp--;
+            	    if (state.failed) return ;
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop32;
+                }
+            } while (true);
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getAlternatives_6()); 
+               after(grammarAccess.getXEventAccess().getExtensionsAssignment_6()); 
             }
 
             }
@@ -11726,17 +11833,22 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XEvent__Group__7"
-    // InternalXMachine.g:3335:1: rule__XEvent__Group__7 : rule__XEvent__Group__7__Impl ;
+    // InternalXMachine.g:3363:1: rule__XEvent__Group__7 : rule__XEvent__Group__7__Impl rule__XEvent__Group__8 ;
     public final void rule__XEvent__Group__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3339:1: ( rule__XEvent__Group__7__Impl )
-            // InternalXMachine.g:3340:2: rule__XEvent__Group__7__Impl
+            // InternalXMachine.g:3367:1: ( rule__XEvent__Group__7__Impl rule__XEvent__Group__8 )
+            // InternalXMachine.g:3368:2: rule__XEvent__Group__7__Impl rule__XEvent__Group__8
             {
-            pushFollow(FOLLOW_2);
+            pushFollow(FOLLOW_24);
             rule__XEvent__Group__7__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
+            pushFollow(FOLLOW_2);
+            rule__XEvent__Group__8();
 
             state._fsp--;
             if (state.failed) return ;
@@ -11759,24 +11871,45 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XEvent__Group__7__Impl"
-    // InternalXMachine.g:3346:1: rule__XEvent__Group__7__Impl : ( 'end' ) ;
+    // InternalXMachine.g:3375:1: rule__XEvent__Group__7__Impl : ( ( rule__XEvent__Group_7__0 )? ) ;
     public final void rule__XEvent__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3350:1: ( ( 'end' ) )
-            // InternalXMachine.g:3351:1: ( 'end' )
+            // InternalXMachine.g:3379:1: ( ( ( rule__XEvent__Group_7__0 )? ) )
+            // InternalXMachine.g:3380:1: ( ( rule__XEvent__Group_7__0 )? )
             {
-            // InternalXMachine.g:3351:1: ( 'end' )
-            // InternalXMachine.g:3352:2: 'end'
+            // InternalXMachine.g:3380:1: ( ( rule__XEvent__Group_7__0 )? )
+            // InternalXMachine.g:3381:2: ( rule__XEvent__Group_7__0 )?
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getEndKeyword_7()); 
+               before(grammarAccess.getXEventAccess().getGroup_7()); 
             }
-            match(input,116,FOLLOW_2); if (state.failed) return ;
+            // InternalXMachine.g:3382:2: ( rule__XEvent__Group_7__0 )?
+            int alt33=2;
+            int LA33_0 = input.LA(1);
+
+            if ( (LA33_0==130) ) {
+                alt33=1;
+            }
+            switch (alt33) {
+                case 1 :
+                    // InternalXMachine.g:3382:3: rule__XEvent__Group_7__0
+                    {
+                    pushFollow(FOLLOW_2);
+                    rule__XEvent__Group_7__0();
+
+                    state._fsp--;
+                    if (state.failed) return ;
+
+                    }
+                    break;
+
+            }
+
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getEndKeyword_7()); 
+               after(grammarAccess.getXEventAccess().getGroup_7()); 
             }
 
             }
@@ -11799,15 +11932,672 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
     // $ANTLR end "rule__XEvent__Group__7__Impl"
 
 
+    // $ANTLR start "rule__XEvent__Group__8"
+    // InternalXMachine.g:3390:1: rule__XEvent__Group__8 : rule__XEvent__Group__8__Impl rule__XEvent__Group__9 ;
+    public final void rule__XEvent__Group__8() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalXMachine.g:3394:1: ( rule__XEvent__Group__8__Impl rule__XEvent__Group__9 )
+            // InternalXMachine.g:3395:2: rule__XEvent__Group__8__Impl rule__XEvent__Group__9
+            {
+            pushFollow(FOLLOW_24);
+            rule__XEvent__Group__8__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
+            pushFollow(FOLLOW_2);
+            rule__XEvent__Group__9();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__XEvent__Group__8"
+
+
+    // $ANTLR start "rule__XEvent__Group__8__Impl"
+    // InternalXMachine.g:3402:1: rule__XEvent__Group__8__Impl : ( ( rule__XEvent__Group_8__0 )? ) ;
+    public final void rule__XEvent__Group__8__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalXMachine.g:3406:1: ( ( ( rule__XEvent__Group_8__0 )? ) )
+            // InternalXMachine.g:3407:1: ( ( rule__XEvent__Group_8__0 )? )
+            {
+            // InternalXMachine.g:3407:1: ( ( rule__XEvent__Group_8__0 )? )
+            // InternalXMachine.g:3408:2: ( rule__XEvent__Group_8__0 )?
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXEventAccess().getGroup_8()); 
+            }
+            // InternalXMachine.g:3409:2: ( rule__XEvent__Group_8__0 )?
+            int alt34=2;
+            int LA34_0 = input.LA(1);
+
+            if ( (LA34_0==131) ) {
+                alt34=1;
+            }
+            switch (alt34) {
+                case 1 :
+                    // InternalXMachine.g:3409:3: rule__XEvent__Group_8__0
+                    {
+                    pushFollow(FOLLOW_2);
+                    rule__XEvent__Group_8__0();
+
+                    state._fsp--;
+                    if (state.failed) return ;
+
+                    }
+                    break;
+
+            }
+
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getXEventAccess().getGroup_8()); 
+            }
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__XEvent__Group__8__Impl"
+
+
+    // $ANTLR start "rule__XEvent__Group__9"
+    // InternalXMachine.g:3417:1: rule__XEvent__Group__9 : rule__XEvent__Group__9__Impl rule__XEvent__Group__10 ;
+    public final void rule__XEvent__Group__9() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalXMachine.g:3421:1: ( rule__XEvent__Group__9__Impl rule__XEvent__Group__10 )
+            // InternalXMachine.g:3422:2: rule__XEvent__Group__9__Impl rule__XEvent__Group__10
+            {
+            pushFollow(FOLLOW_24);
+            rule__XEvent__Group__9__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
+            pushFollow(FOLLOW_2);
+            rule__XEvent__Group__10();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__XEvent__Group__9"
+
+
+    // $ANTLR start "rule__XEvent__Group__9__Impl"
+    // InternalXMachine.g:3429:1: rule__XEvent__Group__9__Impl : ( ( rule__XEvent__Group_9__0 )? ) ;
+    public final void rule__XEvent__Group__9__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalXMachine.g:3433:1: ( ( ( rule__XEvent__Group_9__0 )? ) )
+            // InternalXMachine.g:3434:1: ( ( rule__XEvent__Group_9__0 )? )
+            {
+            // InternalXMachine.g:3434:1: ( ( rule__XEvent__Group_9__0 )? )
+            // InternalXMachine.g:3435:2: ( rule__XEvent__Group_9__0 )?
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXEventAccess().getGroup_9()); 
+            }
+            // InternalXMachine.g:3436:2: ( rule__XEvent__Group_9__0 )?
+            int alt35=2;
+            int LA35_0 = input.LA(1);
+
+            if ( (LA35_0==132) ) {
+                alt35=1;
+            }
+            switch (alt35) {
+                case 1 :
+                    // InternalXMachine.g:3436:3: rule__XEvent__Group_9__0
+                    {
+                    pushFollow(FOLLOW_2);
+                    rule__XEvent__Group_9__0();
+
+                    state._fsp--;
+                    if (state.failed) return ;
+
+                    }
+                    break;
+
+            }
+
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getXEventAccess().getGroup_9()); 
+            }
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__XEvent__Group__9__Impl"
+
+
+    // $ANTLR start "rule__XEvent__Group__10"
+    // InternalXMachine.g:3444:1: rule__XEvent__Group__10 : rule__XEvent__Group__10__Impl ;
+    public final void rule__XEvent__Group__10() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalXMachine.g:3448:1: ( rule__XEvent__Group__10__Impl )
+            // InternalXMachine.g:3449:2: rule__XEvent__Group__10__Impl
+            {
+            pushFollow(FOLLOW_2);
+            rule__XEvent__Group__10__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__XEvent__Group__10"
+
+
+    // $ANTLR start "rule__XEvent__Group__10__Impl"
+    // InternalXMachine.g:3455:1: rule__XEvent__Group__10__Impl : ( 'end' ) ;
+    public final void rule__XEvent__Group__10__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalXMachine.g:3459:1: ( ( 'end' ) )
+            // InternalXMachine.g:3460:1: ( 'end' )
+            {
+            // InternalXMachine.g:3460:1: ( 'end' )
+            // InternalXMachine.g:3461:2: 'end'
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXEventAccess().getEndKeyword_10()); 
+            }
+            match(input,116,FOLLOW_2); if (state.failed) return ;
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getXEventAccess().getEndKeyword_10()); 
+            }
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__XEvent__Group__10__Impl"
+
+
+    // $ANTLR start "rule__XEvent__Group_4_0__0"
+    // InternalXMachine.g:3471:1: rule__XEvent__Group_4_0__0 : rule__XEvent__Group_4_0__0__Impl rule__XEvent__Group_4_0__1 ;
+    public final void rule__XEvent__Group_4_0__0() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalXMachine.g:3475:1: ( rule__XEvent__Group_4_0__0__Impl rule__XEvent__Group_4_0__1 )
+            // InternalXMachine.g:3476:2: rule__XEvent__Group_4_0__0__Impl rule__XEvent__Group_4_0__1
+            {
+            pushFollow(FOLLOW_5);
+            rule__XEvent__Group_4_0__0__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
+            pushFollow(FOLLOW_2);
+            rule__XEvent__Group_4_0__1();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__XEvent__Group_4_0__0"
+
+
+    // $ANTLR start "rule__XEvent__Group_4_0__0__Impl"
+    // InternalXMachine.g:3483:1: rule__XEvent__Group_4_0__0__Impl : ( 'refines' ) ;
+    public final void rule__XEvent__Group_4_0__0__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalXMachine.g:3487:1: ( ( 'refines' ) )
+            // InternalXMachine.g:3488:1: ( 'refines' )
+            {
+            // InternalXMachine.g:3488:1: ( 'refines' )
+            // InternalXMachine.g:3489:2: 'refines'
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXEventAccess().getRefinesKeyword_4_0_0()); 
+            }
+            match(input,117,FOLLOW_2); if (state.failed) return ;
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getXEventAccess().getRefinesKeyword_4_0_0()); 
+            }
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__XEvent__Group_4_0__0__Impl"
+
+
+    // $ANTLR start "rule__XEvent__Group_4_0__1"
+    // InternalXMachine.g:3498:1: rule__XEvent__Group_4_0__1 : rule__XEvent__Group_4_0__1__Impl ;
+    public final void rule__XEvent__Group_4_0__1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalXMachine.g:3502:1: ( rule__XEvent__Group_4_0__1__Impl )
+            // InternalXMachine.g:3503:2: rule__XEvent__Group_4_0__1__Impl
+            {
+            pushFollow(FOLLOW_2);
+            rule__XEvent__Group_4_0__1__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__XEvent__Group_4_0__1"
+
+
+    // $ANTLR start "rule__XEvent__Group_4_0__1__Impl"
+    // InternalXMachine.g:3509:1: rule__XEvent__Group_4_0__1__Impl : ( ( ( rule__XEvent__RefinesAssignment_4_0_1 ) ) ( ( rule__XEvent__RefinesAssignment_4_0_1 )* ) ) ;
+    public final void rule__XEvent__Group_4_0__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalXMachine.g:3513:1: ( ( ( ( rule__XEvent__RefinesAssignment_4_0_1 ) ) ( ( rule__XEvent__RefinesAssignment_4_0_1 )* ) ) )
+            // InternalXMachine.g:3514:1: ( ( ( rule__XEvent__RefinesAssignment_4_0_1 ) ) ( ( rule__XEvent__RefinesAssignment_4_0_1 )* ) )
+            {
+            // InternalXMachine.g:3514:1: ( ( ( rule__XEvent__RefinesAssignment_4_0_1 ) ) ( ( rule__XEvent__RefinesAssignment_4_0_1 )* ) )
+            // InternalXMachine.g:3515:2: ( ( rule__XEvent__RefinesAssignment_4_0_1 ) ) ( ( rule__XEvent__RefinesAssignment_4_0_1 )* )
+            {
+            // InternalXMachine.g:3515:2: ( ( rule__XEvent__RefinesAssignment_4_0_1 ) )
+            // InternalXMachine.g:3516:3: ( rule__XEvent__RefinesAssignment_4_0_1 )
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXEventAccess().getRefinesAssignment_4_0_1()); 
+            }
+            // InternalXMachine.g:3517:3: ( rule__XEvent__RefinesAssignment_4_0_1 )
+            // InternalXMachine.g:3517:4: rule__XEvent__RefinesAssignment_4_0_1
+            {
+            pushFollow(FOLLOW_9);
+            rule__XEvent__RefinesAssignment_4_0_1();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getXEventAccess().getRefinesAssignment_4_0_1()); 
+            }
+
+            }
+
+            // InternalXMachine.g:3520:2: ( ( rule__XEvent__RefinesAssignment_4_0_1 )* )
+            // InternalXMachine.g:3521:3: ( rule__XEvent__RefinesAssignment_4_0_1 )*
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXEventAccess().getRefinesAssignment_4_0_1()); 
+            }
+            // InternalXMachine.g:3522:3: ( rule__XEvent__RefinesAssignment_4_0_1 )*
+            loop36:
+            do {
+                int alt36=2;
+                int LA36_0 = input.LA(1);
+
+                if ( (LA36_0==RULE_ID) ) {
+                    alt36=1;
+                }
+
+
+                switch (alt36) {
+            	case 1 :
+            	    // InternalXMachine.g:3522:4: rule__XEvent__RefinesAssignment_4_0_1
+            	    {
+            	    pushFollow(FOLLOW_9);
+            	    rule__XEvent__RefinesAssignment_4_0_1();
+
+            	    state._fsp--;
+            	    if (state.failed) return ;
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop36;
+                }
+            } while (true);
+
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getXEventAccess().getRefinesAssignment_4_0_1()); 
+            }
+
+            }
+
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__XEvent__Group_4_0__1__Impl"
+
+
+    // $ANTLR start "rule__XEvent__Group_4_1__0"
+    // InternalXMachine.g:3532:1: rule__XEvent__Group_4_1__0 : rule__XEvent__Group_4_1__0__Impl rule__XEvent__Group_4_1__1 ;
+    public final void rule__XEvent__Group_4_1__0() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalXMachine.g:3536:1: ( rule__XEvent__Group_4_1__0__Impl rule__XEvent__Group_4_1__1 )
+            // InternalXMachine.g:3537:2: rule__XEvent__Group_4_1__0__Impl rule__XEvent__Group_4_1__1
+            {
+            pushFollow(FOLLOW_5);
+            rule__XEvent__Group_4_1__0__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
+            pushFollow(FOLLOW_2);
+            rule__XEvent__Group_4_1__1();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__XEvent__Group_4_1__0"
+
+
+    // $ANTLR start "rule__XEvent__Group_4_1__0__Impl"
+    // InternalXMachine.g:3544:1: rule__XEvent__Group_4_1__0__Impl : ( ( rule__XEvent__ExtendedAssignment_4_1_0 ) ) ;
+    public final void rule__XEvent__Group_4_1__0__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalXMachine.g:3548:1: ( ( ( rule__XEvent__ExtendedAssignment_4_1_0 ) ) )
+            // InternalXMachine.g:3549:1: ( ( rule__XEvent__ExtendedAssignment_4_1_0 ) )
+            {
+            // InternalXMachine.g:3549:1: ( ( rule__XEvent__ExtendedAssignment_4_1_0 ) )
+            // InternalXMachine.g:3550:2: ( rule__XEvent__ExtendedAssignment_4_1_0 )
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXEventAccess().getExtendedAssignment_4_1_0()); 
+            }
+            // InternalXMachine.g:3551:2: ( rule__XEvent__ExtendedAssignment_4_1_0 )
+            // InternalXMachine.g:3551:3: rule__XEvent__ExtendedAssignment_4_1_0
+            {
+            pushFollow(FOLLOW_2);
+            rule__XEvent__ExtendedAssignment_4_1_0();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getXEventAccess().getExtendedAssignment_4_1_0()); 
+            }
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__XEvent__Group_4_1__0__Impl"
+
+
+    // $ANTLR start "rule__XEvent__Group_4_1__1"
+    // InternalXMachine.g:3559:1: rule__XEvent__Group_4_1__1 : rule__XEvent__Group_4_1__1__Impl ;
+    public final void rule__XEvent__Group_4_1__1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalXMachine.g:3563:1: ( rule__XEvent__Group_4_1__1__Impl )
+            // InternalXMachine.g:3564:2: rule__XEvent__Group_4_1__1__Impl
+            {
+            pushFollow(FOLLOW_2);
+            rule__XEvent__Group_4_1__1__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__XEvent__Group_4_1__1"
+
+
+    // $ANTLR start "rule__XEvent__Group_4_1__1__Impl"
+    // InternalXMachine.g:3570:1: rule__XEvent__Group_4_1__1__Impl : ( ( rule__XEvent__RefinesAssignment_4_1_1 ) ) ;
+    public final void rule__XEvent__Group_4_1__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalXMachine.g:3574:1: ( ( ( rule__XEvent__RefinesAssignment_4_1_1 ) ) )
+            // InternalXMachine.g:3575:1: ( ( rule__XEvent__RefinesAssignment_4_1_1 ) )
+            {
+            // InternalXMachine.g:3575:1: ( ( rule__XEvent__RefinesAssignment_4_1_1 ) )
+            // InternalXMachine.g:3576:2: ( rule__XEvent__RefinesAssignment_4_1_1 )
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXEventAccess().getRefinesAssignment_4_1_1()); 
+            }
+            // InternalXMachine.g:3577:2: ( rule__XEvent__RefinesAssignment_4_1_1 )
+            // InternalXMachine.g:3577:3: rule__XEvent__RefinesAssignment_4_1_1
+            {
+            pushFollow(FOLLOW_2);
+            rule__XEvent__RefinesAssignment_4_1_1();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getXEventAccess().getRefinesAssignment_4_1_1()); 
+            }
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__XEvent__Group_4_1__1__Impl"
+
+
     // $ANTLR start "rule__XEvent__Group_5__0"
-    // InternalXMachine.g:3362:1: rule__XEvent__Group_5__0 : rule__XEvent__Group_5__0__Impl rule__XEvent__Group_5__1 ;
+    // InternalXMachine.g:3586:1: rule__XEvent__Group_5__0 : rule__XEvent__Group_5__0__Impl rule__XEvent__Group_5__1 ;
     public final void rule__XEvent__Group_5__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3366:1: ( rule__XEvent__Group_5__0__Impl rule__XEvent__Group_5__1 )
-            // InternalXMachine.g:3367:2: rule__XEvent__Group_5__0__Impl rule__XEvent__Group_5__1
+            // InternalXMachine.g:3590:1: ( rule__XEvent__Group_5__0__Impl rule__XEvent__Group_5__1 )
+            // InternalXMachine.g:3591:2: rule__XEvent__Group_5__0__Impl rule__XEvent__Group_5__1
             {
             pushFollow(FOLLOW_5);
             rule__XEvent__Group_5__0__Impl();
@@ -11838,24 +12628,24 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XEvent__Group_5__0__Impl"
-    // InternalXMachine.g:3374:1: rule__XEvent__Group_5__0__Impl : ( 'refines' ) ;
+    // InternalXMachine.g:3598:1: rule__XEvent__Group_5__0__Impl : ( 'any' ) ;
     public final void rule__XEvent__Group_5__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3378:1: ( ( 'refines' ) )
-            // InternalXMachine.g:3379:1: ( 'refines' )
+            // InternalXMachine.g:3602:1: ( ( 'any' ) )
+            // InternalXMachine.g:3603:1: ( 'any' )
             {
-            // InternalXMachine.g:3379:1: ( 'refines' )
-            // InternalXMachine.g:3380:2: 'refines'
+            // InternalXMachine.g:3603:1: ( 'any' )
+            // InternalXMachine.g:3604:2: 'any'
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getRefinesKeyword_5_0()); 
+               before(grammarAccess.getXEventAccess().getAnyKeyword_5_0()); 
             }
-            match(input,117,FOLLOW_2); if (state.failed) return ;
+            match(input,129,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getRefinesKeyword_5_0()); 
+               after(grammarAccess.getXEventAccess().getAnyKeyword_5_0()); 
             }
 
             }
@@ -11879,14 +12669,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XEvent__Group_5__1"
-    // InternalXMachine.g:3389:1: rule__XEvent__Group_5__1 : rule__XEvent__Group_5__1__Impl ;
+    // InternalXMachine.g:3613:1: rule__XEvent__Group_5__1 : rule__XEvent__Group_5__1__Impl ;
     public final void rule__XEvent__Group_5__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3393:1: ( rule__XEvent__Group_5__1__Impl )
-            // InternalXMachine.g:3394:2: rule__XEvent__Group_5__1__Impl
+            // InternalXMachine.g:3617:1: ( rule__XEvent__Group_5__1__Impl )
+            // InternalXMachine.g:3618:2: rule__XEvent__Group_5__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__XEvent__Group_5__1__Impl();
@@ -11912,29 +12702,29 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XEvent__Group_5__1__Impl"
-    // InternalXMachine.g:3400:1: rule__XEvent__Group_5__1__Impl : ( ( ( rule__XEvent__RefinesAssignment_5_1 ) ) ( ( rule__XEvent__RefinesAssignment_5_1 )* ) ) ;
+    // InternalXMachine.g:3624:1: rule__XEvent__Group_5__1__Impl : ( ( ( rule__XEvent__ParametersAssignment_5_1 ) ) ( ( rule__XEvent__ParametersAssignment_5_1 )* ) ) ;
     public final void rule__XEvent__Group_5__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3404:1: ( ( ( ( rule__XEvent__RefinesAssignment_5_1 ) ) ( ( rule__XEvent__RefinesAssignment_5_1 )* ) ) )
-            // InternalXMachine.g:3405:1: ( ( ( rule__XEvent__RefinesAssignment_5_1 ) ) ( ( rule__XEvent__RefinesAssignment_5_1 )* ) )
+            // InternalXMachine.g:3628:1: ( ( ( ( rule__XEvent__ParametersAssignment_5_1 ) ) ( ( rule__XEvent__ParametersAssignment_5_1 )* ) ) )
+            // InternalXMachine.g:3629:1: ( ( ( rule__XEvent__ParametersAssignment_5_1 ) ) ( ( rule__XEvent__ParametersAssignment_5_1 )* ) )
             {
-            // InternalXMachine.g:3405:1: ( ( ( rule__XEvent__RefinesAssignment_5_1 ) ) ( ( rule__XEvent__RefinesAssignment_5_1 )* ) )
-            // InternalXMachine.g:3406:2: ( ( rule__XEvent__RefinesAssignment_5_1 ) ) ( ( rule__XEvent__RefinesAssignment_5_1 )* )
+            // InternalXMachine.g:3629:1: ( ( ( rule__XEvent__ParametersAssignment_5_1 ) ) ( ( rule__XEvent__ParametersAssignment_5_1 )* ) )
+            // InternalXMachine.g:3630:2: ( ( rule__XEvent__ParametersAssignment_5_1 ) ) ( ( rule__XEvent__ParametersAssignment_5_1 )* )
             {
-            // InternalXMachine.g:3406:2: ( ( rule__XEvent__RefinesAssignment_5_1 ) )
-            // InternalXMachine.g:3407:3: ( rule__XEvent__RefinesAssignment_5_1 )
+            // InternalXMachine.g:3630:2: ( ( rule__XEvent__ParametersAssignment_5_1 ) )
+            // InternalXMachine.g:3631:3: ( rule__XEvent__ParametersAssignment_5_1 )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getRefinesAssignment_5_1()); 
+               before(grammarAccess.getXEventAccess().getParametersAssignment_5_1()); 
             }
-            // InternalXMachine.g:3408:3: ( rule__XEvent__RefinesAssignment_5_1 )
-            // InternalXMachine.g:3408:4: rule__XEvent__RefinesAssignment_5_1
+            // InternalXMachine.g:3632:3: ( rule__XEvent__ParametersAssignment_5_1 )
+            // InternalXMachine.g:3632:4: rule__XEvent__ParametersAssignment_5_1
             {
             pushFollow(FOLLOW_9);
-            rule__XEvent__RefinesAssignment_5_1();
+            rule__XEvent__ParametersAssignment_5_1();
 
             state._fsp--;
             if (state.failed) return ;
@@ -11942,34 +12732,34 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             }
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getRefinesAssignment_5_1()); 
+               after(grammarAccess.getXEventAccess().getParametersAssignment_5_1()); 
             }
 
             }
 
-            // InternalXMachine.g:3411:2: ( ( rule__XEvent__RefinesAssignment_5_1 )* )
-            // InternalXMachine.g:3412:3: ( rule__XEvent__RefinesAssignment_5_1 )*
+            // InternalXMachine.g:3635:2: ( ( rule__XEvent__ParametersAssignment_5_1 )* )
+            // InternalXMachine.g:3636:3: ( rule__XEvent__ParametersAssignment_5_1 )*
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getRefinesAssignment_5_1()); 
+               before(grammarAccess.getXEventAccess().getParametersAssignment_5_1()); 
             }
-            // InternalXMachine.g:3413:3: ( rule__XEvent__RefinesAssignment_5_1 )*
-            loop31:
+            // InternalXMachine.g:3637:3: ( rule__XEvent__ParametersAssignment_5_1 )*
+            loop37:
             do {
-                int alt31=2;
-                int LA31_0 = input.LA(1);
+                int alt37=2;
+                int LA37_0 = input.LA(1);
 
-                if ( (LA31_0==RULE_ID) ) {
-                    alt31=1;
+                if ( (LA37_0==RULE_ID) ) {
+                    alt37=1;
                 }
 
 
-                switch (alt31) {
+                switch (alt37) {
             	case 1 :
-            	    // InternalXMachine.g:3413:4: rule__XEvent__RefinesAssignment_5_1
+            	    // InternalXMachine.g:3637:4: rule__XEvent__ParametersAssignment_5_1
             	    {
             	    pushFollow(FOLLOW_9);
-            	    rule__XEvent__RefinesAssignment_5_1();
+            	    rule__XEvent__ParametersAssignment_5_1();
 
             	    state._fsp--;
             	    if (state.failed) return ;
@@ -11978,12 +12768,12 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             	    break;
 
             	default :
-            	    break loop31;
+            	    break loop37;
                 }
             } while (true);
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getRefinesAssignment_5_1()); 
+               after(grammarAccess.getXEventAccess().getParametersAssignment_5_1()); 
             }
 
             }
@@ -12009,123 +12799,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
     // $ANTLR end "rule__XEvent__Group_5__1__Impl"
 
 
-    // $ANTLR start "rule__XEvent__Group_6_0__0"
-    // InternalXMachine.g:3423:1: rule__XEvent__Group_6_0__0 : rule__XEvent__Group_6_0__0__Impl rule__XEvent__Group_6_0__1 ;
-    public final void rule__XEvent__Group_6_0__0() throws RecognitionException {
+    // $ANTLR start "rule__XEvent__Group_7__0"
+    // InternalXMachine.g:3647:1: rule__XEvent__Group_7__0 : rule__XEvent__Group_7__0__Impl rule__XEvent__Group_7__1 ;
+    public final void rule__XEvent__Group_7__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3427:1: ( rule__XEvent__Group_6_0__0__Impl rule__XEvent__Group_6_0__1 )
-            // InternalXMachine.g:3428:2: rule__XEvent__Group_6_0__0__Impl rule__XEvent__Group_6_0__1
-            {
-            pushFollow(FOLLOW_26);
-            rule__XEvent__Group_6_0__0__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-            pushFollow(FOLLOW_2);
-            rule__XEvent__Group_6_0__1();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__Group_6_0__0"
-
-
-    // $ANTLR start "rule__XEvent__Group_6_0__0__Impl"
-    // InternalXMachine.g:3435:1: rule__XEvent__Group_6_0__0__Impl : ( ( rule__XEvent__Group_6_0_0__0 )? ) ;
-    public final void rule__XEvent__Group_6_0__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:3439:1: ( ( ( rule__XEvent__Group_6_0_0__0 )? ) )
-            // InternalXMachine.g:3440:1: ( ( rule__XEvent__Group_6_0_0__0 )? )
-            {
-            // InternalXMachine.g:3440:1: ( ( rule__XEvent__Group_6_0_0__0 )? )
-            // InternalXMachine.g:3441:2: ( rule__XEvent__Group_6_0_0__0 )?
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getGroup_6_0_0()); 
-            }
-            // InternalXMachine.g:3442:2: ( rule__XEvent__Group_6_0_0__0 )?
-            int alt32=2;
-            int LA32_0 = input.LA(1);
-
-            if ( (LA32_0==129) ) {
-                alt32=1;
-            }
-            switch (alt32) {
-                case 1 :
-                    // InternalXMachine.g:3442:3: rule__XEvent__Group_6_0_0__0
-                    {
-                    pushFollow(FOLLOW_2);
-                    rule__XEvent__Group_6_0_0__0();
-
-                    state._fsp--;
-                    if (state.failed) return ;
-
-                    }
-                    break;
-
-            }
-
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getGroup_6_0_0()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__Group_6_0__0__Impl"
-
-
-    // $ANTLR start "rule__XEvent__Group_6_0__1"
-    // InternalXMachine.g:3450:1: rule__XEvent__Group_6_0__1 : rule__XEvent__Group_6_0__1__Impl rule__XEvent__Group_6_0__2 ;
-    public final void rule__XEvent__Group_6_0__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:3454:1: ( rule__XEvent__Group_6_0__1__Impl rule__XEvent__Group_6_0__2 )
-            // InternalXMachine.g:3455:2: rule__XEvent__Group_6_0__1__Impl rule__XEvent__Group_6_0__2
+            // InternalXMachine.g:3651:1: ( rule__XEvent__Group_7__0__Impl rule__XEvent__Group_7__1 )
+            // InternalXMachine.g:3652:2: rule__XEvent__Group_7__0__Impl rule__XEvent__Group_7__1
             {
             pushFollow(FOLLOW_10);
-            rule__XEvent__Group_6_0__1__Impl();
+            rule__XEvent__Group_7__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
             pushFollow(FOLLOW_2);
-            rule__XEvent__Group_6_0__2();
+            rule__XEvent__Group_7__1();
 
             state._fsp--;
             if (state.failed) return ;
@@ -12144,448 +12834,28 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__XEvent__Group_6_0__1"
+    // $ANTLR end "rule__XEvent__Group_7__0"
 
 
-    // $ANTLR start "rule__XEvent__Group_6_0__1__Impl"
-    // InternalXMachine.g:3462:1: rule__XEvent__Group_6_0__1__Impl : ( 'begin' ) ;
-    public final void rule__XEvent__Group_6_0__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:3466:1: ( ( 'begin' ) )
-            // InternalXMachine.g:3467:1: ( 'begin' )
-            {
-            // InternalXMachine.g:3467:1: ( 'begin' )
-            // InternalXMachine.g:3468:2: 'begin'
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getBeginKeyword_6_0_1()); 
-            }
-            match(input,127,FOLLOW_2); if (state.failed) return ;
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getBeginKeyword_6_0_1()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__Group_6_0__1__Impl"
-
-
-    // $ANTLR start "rule__XEvent__Group_6_0__2"
-    // InternalXMachine.g:3477:1: rule__XEvent__Group_6_0__2 : rule__XEvent__Group_6_0__2__Impl ;
-    public final void rule__XEvent__Group_6_0__2() throws RecognitionException {
+    // $ANTLR start "rule__XEvent__Group_7__0__Impl"
+    // InternalXMachine.g:3659:1: rule__XEvent__Group_7__0__Impl : ( 'where' ) ;
+    public final void rule__XEvent__Group_7__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3481:1: ( rule__XEvent__Group_6_0__2__Impl )
-            // InternalXMachine.g:3482:2: rule__XEvent__Group_6_0__2__Impl
+            // InternalXMachine.g:3663:1: ( ( 'where' ) )
+            // InternalXMachine.g:3664:1: ( 'where' )
             {
-            pushFollow(FOLLOW_2);
-            rule__XEvent__Group_6_0__2__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__Group_6_0__2"
-
-
-    // $ANTLR start "rule__XEvent__Group_6_0__2__Impl"
-    // InternalXMachine.g:3488:1: rule__XEvent__Group_6_0__2__Impl : ( ( ( rule__XEvent__ActionsAssignment_6_0_2 ) ) ( ( rule__XEvent__ActionsAssignment_6_0_2 )* ) ) ;
-    public final void rule__XEvent__Group_6_0__2__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:3492:1: ( ( ( ( rule__XEvent__ActionsAssignment_6_0_2 ) ) ( ( rule__XEvent__ActionsAssignment_6_0_2 )* ) ) )
-            // InternalXMachine.g:3493:1: ( ( ( rule__XEvent__ActionsAssignment_6_0_2 ) ) ( ( rule__XEvent__ActionsAssignment_6_0_2 )* ) )
-            {
-            // InternalXMachine.g:3493:1: ( ( ( rule__XEvent__ActionsAssignment_6_0_2 ) ) ( ( rule__XEvent__ActionsAssignment_6_0_2 )* ) )
-            // InternalXMachine.g:3494:2: ( ( rule__XEvent__ActionsAssignment_6_0_2 ) ) ( ( rule__XEvent__ActionsAssignment_6_0_2 )* )
-            {
-            // InternalXMachine.g:3494:2: ( ( rule__XEvent__ActionsAssignment_6_0_2 ) )
-            // InternalXMachine.g:3495:3: ( rule__XEvent__ActionsAssignment_6_0_2 )
+            // InternalXMachine.g:3664:1: ( 'where' )
+            // InternalXMachine.g:3665:2: 'where'
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getActionsAssignment_6_0_2()); 
-            }
-            // InternalXMachine.g:3496:3: ( rule__XEvent__ActionsAssignment_6_0_2 )
-            // InternalXMachine.g:3496:4: rule__XEvent__ActionsAssignment_6_0_2
-            {
-            pushFollow(FOLLOW_11);
-            rule__XEvent__ActionsAssignment_6_0_2();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getActionsAssignment_6_0_2()); 
-            }
-
-            }
-
-            // InternalXMachine.g:3499:2: ( ( rule__XEvent__ActionsAssignment_6_0_2 )* )
-            // InternalXMachine.g:3500:3: ( rule__XEvent__ActionsAssignment_6_0_2 )*
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getActionsAssignment_6_0_2()); 
-            }
-            // InternalXMachine.g:3501:3: ( rule__XEvent__ActionsAssignment_6_0_2 )*
-            loop33:
-            do {
-                int alt33=2;
-                int LA33_0 = input.LA(1);
-
-                if ( (LA33_0==RULE_XLABEL) ) {
-                    alt33=1;
-                }
-
-
-                switch (alt33) {
-            	case 1 :
-            	    // InternalXMachine.g:3501:4: rule__XEvent__ActionsAssignment_6_0_2
-            	    {
-            	    pushFollow(FOLLOW_11);
-            	    rule__XEvent__ActionsAssignment_6_0_2();
-
-            	    state._fsp--;
-            	    if (state.failed) return ;
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop33;
-                }
-            } while (true);
-
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getActionsAssignment_6_0_2()); 
-            }
-
-            }
-
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__Group_6_0__2__Impl"
-
-
-    // $ANTLR start "rule__XEvent__Group_6_0_0__0"
-    // InternalXMachine.g:3511:1: rule__XEvent__Group_6_0_0__0 : rule__XEvent__Group_6_0_0__0__Impl rule__XEvent__Group_6_0_0__1 ;
-    public final void rule__XEvent__Group_6_0_0__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:3515:1: ( rule__XEvent__Group_6_0_0__0__Impl rule__XEvent__Group_6_0_0__1 )
-            // InternalXMachine.g:3516:2: rule__XEvent__Group_6_0_0__0__Impl rule__XEvent__Group_6_0_0__1
-            {
-            pushFollow(FOLLOW_10);
-            rule__XEvent__Group_6_0_0__0__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-            pushFollow(FOLLOW_2);
-            rule__XEvent__Group_6_0_0__1();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__Group_6_0_0__0"
-
-
-    // $ANTLR start "rule__XEvent__Group_6_0_0__0__Impl"
-    // InternalXMachine.g:3523:1: rule__XEvent__Group_6_0_0__0__Impl : ( 'with' ) ;
-    public final void rule__XEvent__Group_6_0_0__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:3527:1: ( ( 'with' ) )
-            // InternalXMachine.g:3528:1: ( 'with' )
-            {
-            // InternalXMachine.g:3528:1: ( 'with' )
-            // InternalXMachine.g:3529:2: 'with'
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getWithKeyword_6_0_0_0()); 
-            }
-            match(input,129,FOLLOW_2); if (state.failed) return ;
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getWithKeyword_6_0_0_0()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__Group_6_0_0__0__Impl"
-
-
-    // $ANTLR start "rule__XEvent__Group_6_0_0__1"
-    // InternalXMachine.g:3538:1: rule__XEvent__Group_6_0_0__1 : rule__XEvent__Group_6_0_0__1__Impl ;
-    public final void rule__XEvent__Group_6_0_0__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:3542:1: ( rule__XEvent__Group_6_0_0__1__Impl )
-            // InternalXMachine.g:3543:2: rule__XEvent__Group_6_0_0__1__Impl
-            {
-            pushFollow(FOLLOW_2);
-            rule__XEvent__Group_6_0_0__1__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__Group_6_0_0__1"
-
-
-    // $ANTLR start "rule__XEvent__Group_6_0_0__1__Impl"
-    // InternalXMachine.g:3549:1: rule__XEvent__Group_6_0_0__1__Impl : ( ( ( rule__XEvent__WitnessesAssignment_6_0_0_1 ) ) ( ( rule__XEvent__WitnessesAssignment_6_0_0_1 )* ) ) ;
-    public final void rule__XEvent__Group_6_0_0__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:3553:1: ( ( ( ( rule__XEvent__WitnessesAssignment_6_0_0_1 ) ) ( ( rule__XEvent__WitnessesAssignment_6_0_0_1 )* ) ) )
-            // InternalXMachine.g:3554:1: ( ( ( rule__XEvent__WitnessesAssignment_6_0_0_1 ) ) ( ( rule__XEvent__WitnessesAssignment_6_0_0_1 )* ) )
-            {
-            // InternalXMachine.g:3554:1: ( ( ( rule__XEvent__WitnessesAssignment_6_0_0_1 ) ) ( ( rule__XEvent__WitnessesAssignment_6_0_0_1 )* ) )
-            // InternalXMachine.g:3555:2: ( ( rule__XEvent__WitnessesAssignment_6_0_0_1 ) ) ( ( rule__XEvent__WitnessesAssignment_6_0_0_1 )* )
-            {
-            // InternalXMachine.g:3555:2: ( ( rule__XEvent__WitnessesAssignment_6_0_0_1 ) )
-            // InternalXMachine.g:3556:3: ( rule__XEvent__WitnessesAssignment_6_0_0_1 )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getWitnessesAssignment_6_0_0_1()); 
-            }
-            // InternalXMachine.g:3557:3: ( rule__XEvent__WitnessesAssignment_6_0_0_1 )
-            // InternalXMachine.g:3557:4: rule__XEvent__WitnessesAssignment_6_0_0_1
-            {
-            pushFollow(FOLLOW_11);
-            rule__XEvent__WitnessesAssignment_6_0_0_1();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getWitnessesAssignment_6_0_0_1()); 
-            }
-
-            }
-
-            // InternalXMachine.g:3560:2: ( ( rule__XEvent__WitnessesAssignment_6_0_0_1 )* )
-            // InternalXMachine.g:3561:3: ( rule__XEvent__WitnessesAssignment_6_0_0_1 )*
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getWitnessesAssignment_6_0_0_1()); 
-            }
-            // InternalXMachine.g:3562:3: ( rule__XEvent__WitnessesAssignment_6_0_0_1 )*
-            loop34:
-            do {
-                int alt34=2;
-                int LA34_0 = input.LA(1);
-
-                if ( (LA34_0==RULE_XLABEL) ) {
-                    alt34=1;
-                }
-
-
-                switch (alt34) {
-            	case 1 :
-            	    // InternalXMachine.g:3562:4: rule__XEvent__WitnessesAssignment_6_0_0_1
-            	    {
-            	    pushFollow(FOLLOW_11);
-            	    rule__XEvent__WitnessesAssignment_6_0_0_1();
-
-            	    state._fsp--;
-            	    if (state.failed) return ;
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop34;
-                }
-            } while (true);
-
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getWitnessesAssignment_6_0_0_1()); 
-            }
-
-            }
-
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__Group_6_0_0__1__Impl"
-
-
-    // $ANTLR start "rule__XEvent__Group_6_1__0"
-    // InternalXMachine.g:3572:1: rule__XEvent__Group_6_1__0 : rule__XEvent__Group_6_1__0__Impl rule__XEvent__Group_6_1__1 ;
-    public final void rule__XEvent__Group_6_1__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:3576:1: ( rule__XEvent__Group_6_1__0__Impl rule__XEvent__Group_6_1__1 )
-            // InternalXMachine.g:3577:2: rule__XEvent__Group_6_1__0__Impl rule__XEvent__Group_6_1__1
-            {
-            pushFollow(FOLLOW_10);
-            rule__XEvent__Group_6_1__0__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-            pushFollow(FOLLOW_2);
-            rule__XEvent__Group_6_1__1();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__Group_6_1__0"
-
-
-    // $ANTLR start "rule__XEvent__Group_6_1__0__Impl"
-    // InternalXMachine.g:3584:1: rule__XEvent__Group_6_1__0__Impl : ( 'when' ) ;
-    public final void rule__XEvent__Group_6_1__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:3588:1: ( ( 'when' ) )
-            // InternalXMachine.g:3589:1: ( 'when' )
-            {
-            // InternalXMachine.g:3589:1: ( 'when' )
-            // InternalXMachine.g:3590:2: 'when'
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getWhenKeyword_6_1_0()); 
+               before(grammarAccess.getXEventAccess().getWhereKeyword_7_0()); 
             }
             match(input,130,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getWhenKeyword_6_1_0()); 
+               after(grammarAccess.getXEventAccess().getWhereKeyword_7_0()); 
             }
 
             }
@@ -12605,26 +12875,21 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__XEvent__Group_6_1__0__Impl"
+    // $ANTLR end "rule__XEvent__Group_7__0__Impl"
 
 
-    // $ANTLR start "rule__XEvent__Group_6_1__1"
-    // InternalXMachine.g:3599:1: rule__XEvent__Group_6_1__1 : rule__XEvent__Group_6_1__1__Impl rule__XEvent__Group_6_1__2 ;
-    public final void rule__XEvent__Group_6_1__1() throws RecognitionException {
+    // $ANTLR start "rule__XEvent__Group_7__1"
+    // InternalXMachine.g:3674:1: rule__XEvent__Group_7__1 : rule__XEvent__Group_7__1__Impl ;
+    public final void rule__XEvent__Group_7__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3603:1: ( rule__XEvent__Group_6_1__1__Impl rule__XEvent__Group_6_1__2 )
-            // InternalXMachine.g:3604:2: rule__XEvent__Group_6_1__1__Impl rule__XEvent__Group_6_1__2
+            // InternalXMachine.g:3678:1: ( rule__XEvent__Group_7__1__Impl )
+            // InternalXMachine.g:3679:2: rule__XEvent__Group_7__1__Impl
             {
-            pushFollow(FOLLOW_27);
-            rule__XEvent__Group_6_1__1__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
             pushFollow(FOLLOW_2);
-            rule__XEvent__Group_6_1__2();
+            rule__XEvent__Group_7__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
@@ -12643,33 +12908,33 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__XEvent__Group_6_1__1"
+    // $ANTLR end "rule__XEvent__Group_7__1"
 
 
-    // $ANTLR start "rule__XEvent__Group_6_1__1__Impl"
-    // InternalXMachine.g:3611:1: rule__XEvent__Group_6_1__1__Impl : ( ( ( rule__XEvent__GuardsAssignment_6_1_1 ) ) ( ( rule__XEvent__GuardsAssignment_6_1_1 )* ) ) ;
-    public final void rule__XEvent__Group_6_1__1__Impl() throws RecognitionException {
+    // $ANTLR start "rule__XEvent__Group_7__1__Impl"
+    // InternalXMachine.g:3685:1: rule__XEvent__Group_7__1__Impl : ( ( ( rule__XEvent__GuardsAssignment_7_1 ) ) ( ( rule__XEvent__GuardsAssignment_7_1 )* ) ) ;
+    public final void rule__XEvent__Group_7__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3615:1: ( ( ( ( rule__XEvent__GuardsAssignment_6_1_1 ) ) ( ( rule__XEvent__GuardsAssignment_6_1_1 )* ) ) )
-            // InternalXMachine.g:3616:1: ( ( ( rule__XEvent__GuardsAssignment_6_1_1 ) ) ( ( rule__XEvent__GuardsAssignment_6_1_1 )* ) )
+            // InternalXMachine.g:3689:1: ( ( ( ( rule__XEvent__GuardsAssignment_7_1 ) ) ( ( rule__XEvent__GuardsAssignment_7_1 )* ) ) )
+            // InternalXMachine.g:3690:1: ( ( ( rule__XEvent__GuardsAssignment_7_1 ) ) ( ( rule__XEvent__GuardsAssignment_7_1 )* ) )
             {
-            // InternalXMachine.g:3616:1: ( ( ( rule__XEvent__GuardsAssignment_6_1_1 ) ) ( ( rule__XEvent__GuardsAssignment_6_1_1 )* ) )
-            // InternalXMachine.g:3617:2: ( ( rule__XEvent__GuardsAssignment_6_1_1 ) ) ( ( rule__XEvent__GuardsAssignment_6_1_1 )* )
+            // InternalXMachine.g:3690:1: ( ( ( rule__XEvent__GuardsAssignment_7_1 ) ) ( ( rule__XEvent__GuardsAssignment_7_1 )* ) )
+            // InternalXMachine.g:3691:2: ( ( rule__XEvent__GuardsAssignment_7_1 ) ) ( ( rule__XEvent__GuardsAssignment_7_1 )* )
             {
-            // InternalXMachine.g:3617:2: ( ( rule__XEvent__GuardsAssignment_6_1_1 ) )
-            // InternalXMachine.g:3618:3: ( rule__XEvent__GuardsAssignment_6_1_1 )
+            // InternalXMachine.g:3691:2: ( ( rule__XEvent__GuardsAssignment_7_1 ) )
+            // InternalXMachine.g:3692:3: ( rule__XEvent__GuardsAssignment_7_1 )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getGuardsAssignment_6_1_1()); 
+               before(grammarAccess.getXEventAccess().getGuardsAssignment_7_1()); 
             }
-            // InternalXMachine.g:3619:3: ( rule__XEvent__GuardsAssignment_6_1_1 )
-            // InternalXMachine.g:3619:4: rule__XEvent__GuardsAssignment_6_1_1
+            // InternalXMachine.g:3693:3: ( rule__XEvent__GuardsAssignment_7_1 )
+            // InternalXMachine.g:3693:4: rule__XEvent__GuardsAssignment_7_1
             {
             pushFollow(FOLLOW_11);
-            rule__XEvent__GuardsAssignment_6_1_1();
+            rule__XEvent__GuardsAssignment_7_1();
 
             state._fsp--;
             if (state.failed) return ;
@@ -12677,439 +12942,34 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             }
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getGuardsAssignment_6_1_1()); 
+               after(grammarAccess.getXEventAccess().getGuardsAssignment_7_1()); 
             }
 
             }
 
-            // InternalXMachine.g:3622:2: ( ( rule__XEvent__GuardsAssignment_6_1_1 )* )
-            // InternalXMachine.g:3623:3: ( rule__XEvent__GuardsAssignment_6_1_1 )*
+            // InternalXMachine.g:3696:2: ( ( rule__XEvent__GuardsAssignment_7_1 )* )
+            // InternalXMachine.g:3697:3: ( rule__XEvent__GuardsAssignment_7_1 )*
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getGuardsAssignment_6_1_1()); 
+               before(grammarAccess.getXEventAccess().getGuardsAssignment_7_1()); 
             }
-            // InternalXMachine.g:3624:3: ( rule__XEvent__GuardsAssignment_6_1_1 )*
-            loop35:
-            do {
-                int alt35=2;
-                int LA35_0 = input.LA(1);
-
-                if ( (LA35_0==RULE_XLABEL) ) {
-                    alt35=1;
-                }
-
-
-                switch (alt35) {
-            	case 1 :
-            	    // InternalXMachine.g:3624:4: rule__XEvent__GuardsAssignment_6_1_1
-            	    {
-            	    pushFollow(FOLLOW_11);
-            	    rule__XEvent__GuardsAssignment_6_1_1();
-
-            	    state._fsp--;
-            	    if (state.failed) return ;
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop35;
-                }
-            } while (true);
-
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getGuardsAssignment_6_1_1()); 
-            }
-
-            }
-
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__Group_6_1__1__Impl"
-
-
-    // $ANTLR start "rule__XEvent__Group_6_1__2"
-    // InternalXMachine.g:3633:1: rule__XEvent__Group_6_1__2 : rule__XEvent__Group_6_1__2__Impl rule__XEvent__Group_6_1__3 ;
-    public final void rule__XEvent__Group_6_1__2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:3637:1: ( rule__XEvent__Group_6_1__2__Impl rule__XEvent__Group_6_1__3 )
-            // InternalXMachine.g:3638:2: rule__XEvent__Group_6_1__2__Impl rule__XEvent__Group_6_1__3
-            {
-            pushFollow(FOLLOW_27);
-            rule__XEvent__Group_6_1__2__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-            pushFollow(FOLLOW_2);
-            rule__XEvent__Group_6_1__3();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__Group_6_1__2"
-
-
-    // $ANTLR start "rule__XEvent__Group_6_1__2__Impl"
-    // InternalXMachine.g:3645:1: rule__XEvent__Group_6_1__2__Impl : ( ( rule__XEvent__Group_6_1_2__0 )? ) ;
-    public final void rule__XEvent__Group_6_1__2__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:3649:1: ( ( ( rule__XEvent__Group_6_1_2__0 )? ) )
-            // InternalXMachine.g:3650:1: ( ( rule__XEvent__Group_6_1_2__0 )? )
-            {
-            // InternalXMachine.g:3650:1: ( ( rule__XEvent__Group_6_1_2__0 )? )
-            // InternalXMachine.g:3651:2: ( rule__XEvent__Group_6_1_2__0 )?
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getGroup_6_1_2()); 
-            }
-            // InternalXMachine.g:3652:2: ( rule__XEvent__Group_6_1_2__0 )?
-            int alt36=2;
-            int LA36_0 = input.LA(1);
-
-            if ( (LA36_0==129) ) {
-                alt36=1;
-            }
-            switch (alt36) {
-                case 1 :
-                    // InternalXMachine.g:3652:3: rule__XEvent__Group_6_1_2__0
-                    {
-                    pushFollow(FOLLOW_2);
-                    rule__XEvent__Group_6_1_2__0();
-
-                    state._fsp--;
-                    if (state.failed) return ;
-
-                    }
-                    break;
-
-            }
-
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getGroup_6_1_2()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__Group_6_1__2__Impl"
-
-
-    // $ANTLR start "rule__XEvent__Group_6_1__3"
-    // InternalXMachine.g:3660:1: rule__XEvent__Group_6_1__3 : rule__XEvent__Group_6_1__3__Impl ;
-    public final void rule__XEvent__Group_6_1__3() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:3664:1: ( rule__XEvent__Group_6_1__3__Impl )
-            // InternalXMachine.g:3665:2: rule__XEvent__Group_6_1__3__Impl
-            {
-            pushFollow(FOLLOW_2);
-            rule__XEvent__Group_6_1__3__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__Group_6_1__3"
-
-
-    // $ANTLR start "rule__XEvent__Group_6_1__3__Impl"
-    // InternalXMachine.g:3671:1: rule__XEvent__Group_6_1__3__Impl : ( ( rule__XEvent__Group_6_1_3__0 )? ) ;
-    public final void rule__XEvent__Group_6_1__3__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:3675:1: ( ( ( rule__XEvent__Group_6_1_3__0 )? ) )
-            // InternalXMachine.g:3676:1: ( ( rule__XEvent__Group_6_1_3__0 )? )
-            {
-            // InternalXMachine.g:3676:1: ( ( rule__XEvent__Group_6_1_3__0 )? )
-            // InternalXMachine.g:3677:2: ( rule__XEvent__Group_6_1_3__0 )?
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getGroup_6_1_3()); 
-            }
-            // InternalXMachine.g:3678:2: ( rule__XEvent__Group_6_1_3__0 )?
-            int alt37=2;
-            int LA37_0 = input.LA(1);
-
-            if ( (LA37_0==131) ) {
-                alt37=1;
-            }
-            switch (alt37) {
-                case 1 :
-                    // InternalXMachine.g:3678:3: rule__XEvent__Group_6_1_3__0
-                    {
-                    pushFollow(FOLLOW_2);
-                    rule__XEvent__Group_6_1_3__0();
-
-                    state._fsp--;
-                    if (state.failed) return ;
-
-                    }
-                    break;
-
-            }
-
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getGroup_6_1_3()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__Group_6_1__3__Impl"
-
-
-    // $ANTLR start "rule__XEvent__Group_6_1_2__0"
-    // InternalXMachine.g:3687:1: rule__XEvent__Group_6_1_2__0 : rule__XEvent__Group_6_1_2__0__Impl rule__XEvent__Group_6_1_2__1 ;
-    public final void rule__XEvent__Group_6_1_2__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:3691:1: ( rule__XEvent__Group_6_1_2__0__Impl rule__XEvent__Group_6_1_2__1 )
-            // InternalXMachine.g:3692:2: rule__XEvent__Group_6_1_2__0__Impl rule__XEvent__Group_6_1_2__1
-            {
-            pushFollow(FOLLOW_10);
-            rule__XEvent__Group_6_1_2__0__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-            pushFollow(FOLLOW_2);
-            rule__XEvent__Group_6_1_2__1();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__Group_6_1_2__0"
-
-
-    // $ANTLR start "rule__XEvent__Group_6_1_2__0__Impl"
-    // InternalXMachine.g:3699:1: rule__XEvent__Group_6_1_2__0__Impl : ( 'with' ) ;
-    public final void rule__XEvent__Group_6_1_2__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:3703:1: ( ( 'with' ) )
-            // InternalXMachine.g:3704:1: ( 'with' )
-            {
-            // InternalXMachine.g:3704:1: ( 'with' )
-            // InternalXMachine.g:3705:2: 'with'
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getWithKeyword_6_1_2_0()); 
-            }
-            match(input,129,FOLLOW_2); if (state.failed) return ;
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getWithKeyword_6_1_2_0()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__Group_6_1_2__0__Impl"
-
-
-    // $ANTLR start "rule__XEvent__Group_6_1_2__1"
-    // InternalXMachine.g:3714:1: rule__XEvent__Group_6_1_2__1 : rule__XEvent__Group_6_1_2__1__Impl ;
-    public final void rule__XEvent__Group_6_1_2__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:3718:1: ( rule__XEvent__Group_6_1_2__1__Impl )
-            // InternalXMachine.g:3719:2: rule__XEvent__Group_6_1_2__1__Impl
-            {
-            pushFollow(FOLLOW_2);
-            rule__XEvent__Group_6_1_2__1__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__Group_6_1_2__1"
-
-
-    // $ANTLR start "rule__XEvent__Group_6_1_2__1__Impl"
-    // InternalXMachine.g:3725:1: rule__XEvent__Group_6_1_2__1__Impl : ( ( ( rule__XEvent__WitnessesAssignment_6_1_2_1 ) ) ( ( rule__XEvent__WitnessesAssignment_6_1_2_1 )* ) ) ;
-    public final void rule__XEvent__Group_6_1_2__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:3729:1: ( ( ( ( rule__XEvent__WitnessesAssignment_6_1_2_1 ) ) ( ( rule__XEvent__WitnessesAssignment_6_1_2_1 )* ) ) )
-            // InternalXMachine.g:3730:1: ( ( ( rule__XEvent__WitnessesAssignment_6_1_2_1 ) ) ( ( rule__XEvent__WitnessesAssignment_6_1_2_1 )* ) )
-            {
-            // InternalXMachine.g:3730:1: ( ( ( rule__XEvent__WitnessesAssignment_6_1_2_1 ) ) ( ( rule__XEvent__WitnessesAssignment_6_1_2_1 )* ) )
-            // InternalXMachine.g:3731:2: ( ( rule__XEvent__WitnessesAssignment_6_1_2_1 ) ) ( ( rule__XEvent__WitnessesAssignment_6_1_2_1 )* )
-            {
-            // InternalXMachine.g:3731:2: ( ( rule__XEvent__WitnessesAssignment_6_1_2_1 ) )
-            // InternalXMachine.g:3732:3: ( rule__XEvent__WitnessesAssignment_6_1_2_1 )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getWitnessesAssignment_6_1_2_1()); 
-            }
-            // InternalXMachine.g:3733:3: ( rule__XEvent__WitnessesAssignment_6_1_2_1 )
-            // InternalXMachine.g:3733:4: rule__XEvent__WitnessesAssignment_6_1_2_1
-            {
-            pushFollow(FOLLOW_11);
-            rule__XEvent__WitnessesAssignment_6_1_2_1();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getWitnessesAssignment_6_1_2_1()); 
-            }
-
-            }
-
-            // InternalXMachine.g:3736:2: ( ( rule__XEvent__WitnessesAssignment_6_1_2_1 )* )
-            // InternalXMachine.g:3737:3: ( rule__XEvent__WitnessesAssignment_6_1_2_1 )*
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getWitnessesAssignment_6_1_2_1()); 
-            }
-            // InternalXMachine.g:3738:3: ( rule__XEvent__WitnessesAssignment_6_1_2_1 )*
+            // InternalXMachine.g:3698:3: ( rule__XEvent__GuardsAssignment_7_1 )*
             loop38:
             do {
                 int alt38=2;
                 int LA38_0 = input.LA(1);
 
-                if ( (LA38_0==RULE_XLABEL) ) {
+                if ( (LA38_0==RULE_XLABEL||LA38_0==136) ) {
                     alt38=1;
                 }
 
 
                 switch (alt38) {
             	case 1 :
-            	    // InternalXMachine.g:3738:4: rule__XEvent__WitnessesAssignment_6_1_2_1
+            	    // InternalXMachine.g:3698:4: rule__XEvent__GuardsAssignment_7_1
             	    {
             	    pushFollow(FOLLOW_11);
-            	    rule__XEvent__WitnessesAssignment_6_1_2_1();
+            	    rule__XEvent__GuardsAssignment_7_1();
 
             	    state._fsp--;
             	    if (state.failed) return ;
@@ -13123,7 +12983,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             } while (true);
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getWitnessesAssignment_6_1_2_1()); 
+               after(grammarAccess.getXEventAccess().getGuardsAssignment_7_1()); 
             }
 
             }
@@ -13146,26 +13006,26 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__XEvent__Group_6_1_2__1__Impl"
+    // $ANTLR end "rule__XEvent__Group_7__1__Impl"
 
 
-    // $ANTLR start "rule__XEvent__Group_6_1_3__0"
-    // InternalXMachine.g:3748:1: rule__XEvent__Group_6_1_3__0 : rule__XEvent__Group_6_1_3__0__Impl rule__XEvent__Group_6_1_3__1 ;
-    public final void rule__XEvent__Group_6_1_3__0() throws RecognitionException {
+    // $ANTLR start "rule__XEvent__Group_8__0"
+    // InternalXMachine.g:3708:1: rule__XEvent__Group_8__0 : rule__XEvent__Group_8__0__Impl rule__XEvent__Group_8__1 ;
+    public final void rule__XEvent__Group_8__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3752:1: ( rule__XEvent__Group_6_1_3__0__Impl rule__XEvent__Group_6_1_3__1 )
-            // InternalXMachine.g:3753:2: rule__XEvent__Group_6_1_3__0__Impl rule__XEvent__Group_6_1_3__1
+            // InternalXMachine.g:3712:1: ( rule__XEvent__Group_8__0__Impl rule__XEvent__Group_8__1 )
+            // InternalXMachine.g:3713:2: rule__XEvent__Group_8__0__Impl rule__XEvent__Group_8__1
             {
-            pushFollow(FOLLOW_10);
-            rule__XEvent__Group_6_1_3__0__Impl();
+            pushFollow(FOLLOW_12);
+            rule__XEvent__Group_8__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
             pushFollow(FOLLOW_2);
-            rule__XEvent__Group_6_1_3__1();
+            rule__XEvent__Group_8__1();
 
             state._fsp--;
             if (state.failed) return ;
@@ -13184,28 +13044,28 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__XEvent__Group_6_1_3__0"
+    // $ANTLR end "rule__XEvent__Group_8__0"
 
 
-    // $ANTLR start "rule__XEvent__Group_6_1_3__0__Impl"
-    // InternalXMachine.g:3760:1: rule__XEvent__Group_6_1_3__0__Impl : ( 'then' ) ;
-    public final void rule__XEvent__Group_6_1_3__0__Impl() throws RecognitionException {
+    // $ANTLR start "rule__XEvent__Group_8__0__Impl"
+    // InternalXMachine.g:3720:1: rule__XEvent__Group_8__0__Impl : ( 'then' ) ;
+    public final void rule__XEvent__Group_8__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3764:1: ( ( 'then' ) )
-            // InternalXMachine.g:3765:1: ( 'then' )
+            // InternalXMachine.g:3724:1: ( ( 'then' ) )
+            // InternalXMachine.g:3725:1: ( 'then' )
             {
-            // InternalXMachine.g:3765:1: ( 'then' )
-            // InternalXMachine.g:3766:2: 'then'
+            // InternalXMachine.g:3725:1: ( 'then' )
+            // InternalXMachine.g:3726:2: 'then'
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getThenKeyword_6_1_3_0()); 
+               before(grammarAccess.getXEventAccess().getThenKeyword_8_0()); 
             }
             match(input,131,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getThenKeyword_6_1_3_0()); 
+               after(grammarAccess.getXEventAccess().getThenKeyword_8_0()); 
             }
 
             }
@@ -13225,21 +13085,21 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__XEvent__Group_6_1_3__0__Impl"
+    // $ANTLR end "rule__XEvent__Group_8__0__Impl"
 
 
-    // $ANTLR start "rule__XEvent__Group_6_1_3__1"
-    // InternalXMachine.g:3775:1: rule__XEvent__Group_6_1_3__1 : rule__XEvent__Group_6_1_3__1__Impl ;
-    public final void rule__XEvent__Group_6_1_3__1() throws RecognitionException {
+    // $ANTLR start "rule__XEvent__Group_8__1"
+    // InternalXMachine.g:3735:1: rule__XEvent__Group_8__1 : rule__XEvent__Group_8__1__Impl ;
+    public final void rule__XEvent__Group_8__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3779:1: ( rule__XEvent__Group_6_1_3__1__Impl )
-            // InternalXMachine.g:3780:2: rule__XEvent__Group_6_1_3__1__Impl
+            // InternalXMachine.g:3739:1: ( rule__XEvent__Group_8__1__Impl )
+            // InternalXMachine.g:3740:2: rule__XEvent__Group_8__1__Impl
             {
             pushFollow(FOLLOW_2);
-            rule__XEvent__Group_6_1_3__1__Impl();
+            rule__XEvent__Group_8__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
@@ -13258,33 +13118,33 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__XEvent__Group_6_1_3__1"
+    // $ANTLR end "rule__XEvent__Group_8__1"
 
 
-    // $ANTLR start "rule__XEvent__Group_6_1_3__1__Impl"
-    // InternalXMachine.g:3786:1: rule__XEvent__Group_6_1_3__1__Impl : ( ( ( rule__XEvent__ActionsAssignment_6_1_3_1 ) ) ( ( rule__XEvent__ActionsAssignment_6_1_3_1 )* ) ) ;
-    public final void rule__XEvent__Group_6_1_3__1__Impl() throws RecognitionException {
+    // $ANTLR start "rule__XEvent__Group_8__1__Impl"
+    // InternalXMachine.g:3746:1: rule__XEvent__Group_8__1__Impl : ( ( ( rule__XEvent__ActionsAssignment_8_1 ) ) ( ( rule__XEvent__ActionsAssignment_8_1 )* ) ) ;
+    public final void rule__XEvent__Group_8__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3790:1: ( ( ( ( rule__XEvent__ActionsAssignment_6_1_3_1 ) ) ( ( rule__XEvent__ActionsAssignment_6_1_3_1 )* ) ) )
-            // InternalXMachine.g:3791:1: ( ( ( rule__XEvent__ActionsAssignment_6_1_3_1 ) ) ( ( rule__XEvent__ActionsAssignment_6_1_3_1 )* ) )
+            // InternalXMachine.g:3750:1: ( ( ( ( rule__XEvent__ActionsAssignment_8_1 ) ) ( ( rule__XEvent__ActionsAssignment_8_1 )* ) ) )
+            // InternalXMachine.g:3751:1: ( ( ( rule__XEvent__ActionsAssignment_8_1 ) ) ( ( rule__XEvent__ActionsAssignment_8_1 )* ) )
             {
-            // InternalXMachine.g:3791:1: ( ( ( rule__XEvent__ActionsAssignment_6_1_3_1 ) ) ( ( rule__XEvent__ActionsAssignment_6_1_3_1 )* ) )
-            // InternalXMachine.g:3792:2: ( ( rule__XEvent__ActionsAssignment_6_1_3_1 ) ) ( ( rule__XEvent__ActionsAssignment_6_1_3_1 )* )
+            // InternalXMachine.g:3751:1: ( ( ( rule__XEvent__ActionsAssignment_8_1 ) ) ( ( rule__XEvent__ActionsAssignment_8_1 )* ) )
+            // InternalXMachine.g:3752:2: ( ( rule__XEvent__ActionsAssignment_8_1 ) ) ( ( rule__XEvent__ActionsAssignment_8_1 )* )
             {
-            // InternalXMachine.g:3792:2: ( ( rule__XEvent__ActionsAssignment_6_1_3_1 ) )
-            // InternalXMachine.g:3793:3: ( rule__XEvent__ActionsAssignment_6_1_3_1 )
+            // InternalXMachine.g:3752:2: ( ( rule__XEvent__ActionsAssignment_8_1 ) )
+            // InternalXMachine.g:3753:3: ( rule__XEvent__ActionsAssignment_8_1 )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getActionsAssignment_6_1_3_1()); 
+               before(grammarAccess.getXEventAccess().getActionsAssignment_8_1()); 
             }
-            // InternalXMachine.g:3794:3: ( rule__XEvent__ActionsAssignment_6_1_3_1 )
-            // InternalXMachine.g:3794:4: rule__XEvent__ActionsAssignment_6_1_3_1
+            // InternalXMachine.g:3754:3: ( rule__XEvent__ActionsAssignment_8_1 )
+            // InternalXMachine.g:3754:4: rule__XEvent__ActionsAssignment_8_1
             {
-            pushFollow(FOLLOW_11);
-            rule__XEvent__ActionsAssignment_6_1_3_1();
+            pushFollow(FOLLOW_13);
+            rule__XEvent__ActionsAssignment_8_1();
 
             state._fsp--;
             if (state.failed) return ;
@@ -13292,18 +13152,18 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             }
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getActionsAssignment_6_1_3_1()); 
+               after(grammarAccess.getXEventAccess().getActionsAssignment_8_1()); 
             }
 
             }
 
-            // InternalXMachine.g:3797:2: ( ( rule__XEvent__ActionsAssignment_6_1_3_1 )* )
-            // InternalXMachine.g:3798:3: ( rule__XEvent__ActionsAssignment_6_1_3_1 )*
+            // InternalXMachine.g:3757:2: ( ( rule__XEvent__ActionsAssignment_8_1 )* )
+            // InternalXMachine.g:3758:3: ( rule__XEvent__ActionsAssignment_8_1 )*
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getActionsAssignment_6_1_3_1()); 
+               before(grammarAccess.getXEventAccess().getActionsAssignment_8_1()); 
             }
-            // InternalXMachine.g:3799:3: ( rule__XEvent__ActionsAssignment_6_1_3_1 )*
+            // InternalXMachine.g:3759:3: ( rule__XEvent__ActionsAssignment_8_1 )*
             loop39:
             do {
                 int alt39=2;
@@ -13316,10 +13176,10 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
                 switch (alt39) {
             	case 1 :
-            	    // InternalXMachine.g:3799:4: rule__XEvent__ActionsAssignment_6_1_3_1
+            	    // InternalXMachine.g:3759:4: rule__XEvent__ActionsAssignment_8_1
             	    {
-            	    pushFollow(FOLLOW_11);
-            	    rule__XEvent__ActionsAssignment_6_1_3_1();
+            	    pushFollow(FOLLOW_13);
+            	    rule__XEvent__ActionsAssignment_8_1();
 
             	    state._fsp--;
             	    if (state.failed) return ;
@@ -13333,7 +13193,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             } while (true);
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getActionsAssignment_6_1_3_1()); 
+               after(grammarAccess.getXEventAccess().getActionsAssignment_8_1()); 
             }
 
             }
@@ -13356,26 +13216,26 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__XEvent__Group_6_1_3__1__Impl"
+    // $ANTLR end "rule__XEvent__Group_8__1__Impl"
 
 
-    // $ANTLR start "rule__XEvent__Group_6_2__0"
-    // InternalXMachine.g:3809:1: rule__XEvent__Group_6_2__0 : rule__XEvent__Group_6_2__0__Impl rule__XEvent__Group_6_2__1 ;
-    public final void rule__XEvent__Group_6_2__0() throws RecognitionException {
+    // $ANTLR start "rule__XEvent__Group_9__0"
+    // InternalXMachine.g:3769:1: rule__XEvent__Group_9__0 : rule__XEvent__Group_9__0__Impl rule__XEvent__Group_9__1 ;
+    public final void rule__XEvent__Group_9__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3813:1: ( rule__XEvent__Group_6_2__0__Impl rule__XEvent__Group_6_2__1 )
-            // InternalXMachine.g:3814:2: rule__XEvent__Group_6_2__0__Impl rule__XEvent__Group_6_2__1
+            // InternalXMachine.g:3773:1: ( rule__XEvent__Group_9__0__Impl rule__XEvent__Group_9__1 )
+            // InternalXMachine.g:3774:2: rule__XEvent__Group_9__0__Impl rule__XEvent__Group_9__1
             {
-            pushFollow(FOLLOW_5);
-            rule__XEvent__Group_6_2__0__Impl();
+            pushFollow(FOLLOW_12);
+            rule__XEvent__Group_9__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
             pushFollow(FOLLOW_2);
-            rule__XEvent__Group_6_2__1();
+            rule__XEvent__Group_9__1();
 
             state._fsp--;
             if (state.failed) return ;
@@ -13394,28 +13254,28 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__XEvent__Group_6_2__0"
+    // $ANTLR end "rule__XEvent__Group_9__0"
 
 
-    // $ANTLR start "rule__XEvent__Group_6_2__0__Impl"
-    // InternalXMachine.g:3821:1: rule__XEvent__Group_6_2__0__Impl : ( 'any' ) ;
-    public final void rule__XEvent__Group_6_2__0__Impl() throws RecognitionException {
+    // $ANTLR start "rule__XEvent__Group_9__0__Impl"
+    // InternalXMachine.g:3781:1: rule__XEvent__Group_9__0__Impl : ( 'with' ) ;
+    public final void rule__XEvent__Group_9__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3825:1: ( ( 'any' ) )
-            // InternalXMachine.g:3826:1: ( 'any' )
+            // InternalXMachine.g:3785:1: ( ( 'with' ) )
+            // InternalXMachine.g:3786:1: ( 'with' )
             {
-            // InternalXMachine.g:3826:1: ( 'any' )
-            // InternalXMachine.g:3827:2: 'any'
+            // InternalXMachine.g:3786:1: ( 'with' )
+            // InternalXMachine.g:3787:2: 'with'
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getAnyKeyword_6_2_0()); 
+               before(grammarAccess.getXEventAccess().getWithKeyword_9_0()); 
             }
             match(input,132,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getAnyKeyword_6_2_0()); 
+               after(grammarAccess.getXEventAccess().getWithKeyword_9_0()); 
             }
 
             }
@@ -13435,26 +13295,21 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__XEvent__Group_6_2__0__Impl"
+    // $ANTLR end "rule__XEvent__Group_9__0__Impl"
 
 
-    // $ANTLR start "rule__XEvent__Group_6_2__1"
-    // InternalXMachine.g:3836:1: rule__XEvent__Group_6_2__1 : rule__XEvent__Group_6_2__1__Impl rule__XEvent__Group_6_2__2 ;
-    public final void rule__XEvent__Group_6_2__1() throws RecognitionException {
+    // $ANTLR start "rule__XEvent__Group_9__1"
+    // InternalXMachine.g:3796:1: rule__XEvent__Group_9__1 : rule__XEvent__Group_9__1__Impl ;
+    public final void rule__XEvent__Group_9__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3840:1: ( rule__XEvent__Group_6_2__1__Impl rule__XEvent__Group_6_2__2 )
-            // InternalXMachine.g:3841:2: rule__XEvent__Group_6_2__1__Impl rule__XEvent__Group_6_2__2
+            // InternalXMachine.g:3800:1: ( rule__XEvent__Group_9__1__Impl )
+            // InternalXMachine.g:3801:2: rule__XEvent__Group_9__1__Impl
             {
-            pushFollow(FOLLOW_28);
-            rule__XEvent__Group_6_2__1__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
             pushFollow(FOLLOW_2);
-            rule__XEvent__Group_6_2__2();
+            rule__XEvent__Group_9__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
@@ -13473,33 +13328,33 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__XEvent__Group_6_2__1"
+    // $ANTLR end "rule__XEvent__Group_9__1"
 
 
-    // $ANTLR start "rule__XEvent__Group_6_2__1__Impl"
-    // InternalXMachine.g:3848:1: rule__XEvent__Group_6_2__1__Impl : ( ( ( rule__XEvent__ParametersAssignment_6_2_1 ) ) ( ( rule__XEvent__ParametersAssignment_6_2_1 )* ) ) ;
-    public final void rule__XEvent__Group_6_2__1__Impl() throws RecognitionException {
+    // $ANTLR start "rule__XEvent__Group_9__1__Impl"
+    // InternalXMachine.g:3807:1: rule__XEvent__Group_9__1__Impl : ( ( ( rule__XEvent__WitnessesAssignment_9_1 ) ) ( ( rule__XEvent__WitnessesAssignment_9_1 )* ) ) ;
+    public final void rule__XEvent__Group_9__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:3852:1: ( ( ( ( rule__XEvent__ParametersAssignment_6_2_1 ) ) ( ( rule__XEvent__ParametersAssignment_6_2_1 )* ) ) )
-            // InternalXMachine.g:3853:1: ( ( ( rule__XEvent__ParametersAssignment_6_2_1 ) ) ( ( rule__XEvent__ParametersAssignment_6_2_1 )* ) )
+            // InternalXMachine.g:3811:1: ( ( ( ( rule__XEvent__WitnessesAssignment_9_1 ) ) ( ( rule__XEvent__WitnessesAssignment_9_1 )* ) ) )
+            // InternalXMachine.g:3812:1: ( ( ( rule__XEvent__WitnessesAssignment_9_1 ) ) ( ( rule__XEvent__WitnessesAssignment_9_1 )* ) )
             {
-            // InternalXMachine.g:3853:1: ( ( ( rule__XEvent__ParametersAssignment_6_2_1 ) ) ( ( rule__XEvent__ParametersAssignment_6_2_1 )* ) )
-            // InternalXMachine.g:3854:2: ( ( rule__XEvent__ParametersAssignment_6_2_1 ) ) ( ( rule__XEvent__ParametersAssignment_6_2_1 )* )
+            // InternalXMachine.g:3812:1: ( ( ( rule__XEvent__WitnessesAssignment_9_1 ) ) ( ( rule__XEvent__WitnessesAssignment_9_1 )* ) )
+            // InternalXMachine.g:3813:2: ( ( rule__XEvent__WitnessesAssignment_9_1 ) ) ( ( rule__XEvent__WitnessesAssignment_9_1 )* )
             {
-            // InternalXMachine.g:3854:2: ( ( rule__XEvent__ParametersAssignment_6_2_1 ) )
-            // InternalXMachine.g:3855:3: ( rule__XEvent__ParametersAssignment_6_2_1 )
+            // InternalXMachine.g:3813:2: ( ( rule__XEvent__WitnessesAssignment_9_1 ) )
+            // InternalXMachine.g:3814:3: ( rule__XEvent__WitnessesAssignment_9_1 )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getParametersAssignment_6_2_1()); 
+               before(grammarAccess.getXEventAccess().getWitnessesAssignment_9_1()); 
             }
-            // InternalXMachine.g:3856:3: ( rule__XEvent__ParametersAssignment_6_2_1 )
-            // InternalXMachine.g:3856:4: rule__XEvent__ParametersAssignment_6_2_1
+            // InternalXMachine.g:3815:3: ( rule__XEvent__WitnessesAssignment_9_1 )
+            // InternalXMachine.g:3815:4: rule__XEvent__WitnessesAssignment_9_1
             {
-            pushFollow(FOLLOW_9);
-            rule__XEvent__ParametersAssignment_6_2_1();
+            pushFollow(FOLLOW_13);
+            rule__XEvent__WitnessesAssignment_9_1();
 
             state._fsp--;
             if (state.failed) return ;
@@ -13507,34 +13362,34 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             }
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getParametersAssignment_6_2_1()); 
+               after(grammarAccess.getXEventAccess().getWitnessesAssignment_9_1()); 
             }
 
             }
 
-            // InternalXMachine.g:3859:2: ( ( rule__XEvent__ParametersAssignment_6_2_1 )* )
-            // InternalXMachine.g:3860:3: ( rule__XEvent__ParametersAssignment_6_2_1 )*
+            // InternalXMachine.g:3818:2: ( ( rule__XEvent__WitnessesAssignment_9_1 )* )
+            // InternalXMachine.g:3819:3: ( rule__XEvent__WitnessesAssignment_9_1 )*
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getParametersAssignment_6_2_1()); 
+               before(grammarAccess.getXEventAccess().getWitnessesAssignment_9_1()); 
             }
-            // InternalXMachine.g:3861:3: ( rule__XEvent__ParametersAssignment_6_2_1 )*
+            // InternalXMachine.g:3820:3: ( rule__XEvent__WitnessesAssignment_9_1 )*
             loop40:
             do {
                 int alt40=2;
                 int LA40_0 = input.LA(1);
 
-                if ( (LA40_0==RULE_ID) ) {
+                if ( (LA40_0==RULE_XLABEL) ) {
                     alt40=1;
                 }
 
 
                 switch (alt40) {
             	case 1 :
-            	    // InternalXMachine.g:3861:4: rule__XEvent__ParametersAssignment_6_2_1
+            	    // InternalXMachine.g:3820:4: rule__XEvent__WitnessesAssignment_9_1
             	    {
-            	    pushFollow(FOLLOW_9);
-            	    rule__XEvent__ParametersAssignment_6_2_1();
+            	    pushFollow(FOLLOW_13);
+            	    rule__XEvent__WitnessesAssignment_9_1();
 
             	    state._fsp--;
             	    if (state.failed) return ;
@@ -13548,7 +13403,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             } while (true);
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getParametersAssignment_6_2_1()); 
+               after(grammarAccess.getXEventAccess().getWitnessesAssignment_9_1()); 
             }
 
             }
@@ -13571,850 +13426,20 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__XEvent__Group_6_2__1__Impl"
-
-
-    // $ANTLR start "rule__XEvent__Group_6_2__2"
-    // InternalXMachine.g:3870:1: rule__XEvent__Group_6_2__2 : rule__XEvent__Group_6_2__2__Impl rule__XEvent__Group_6_2__3 ;
-    public final void rule__XEvent__Group_6_2__2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:3874:1: ( rule__XEvent__Group_6_2__2__Impl rule__XEvent__Group_6_2__3 )
-            // InternalXMachine.g:3875:2: rule__XEvent__Group_6_2__2__Impl rule__XEvent__Group_6_2__3
-            {
-            pushFollow(FOLLOW_10);
-            rule__XEvent__Group_6_2__2__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-            pushFollow(FOLLOW_2);
-            rule__XEvent__Group_6_2__3();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__Group_6_2__2"
-
-
-    // $ANTLR start "rule__XEvent__Group_6_2__2__Impl"
-    // InternalXMachine.g:3882:1: rule__XEvent__Group_6_2__2__Impl : ( 'where' ) ;
-    public final void rule__XEvent__Group_6_2__2__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:3886:1: ( ( 'where' ) )
-            // InternalXMachine.g:3887:1: ( 'where' )
-            {
-            // InternalXMachine.g:3887:1: ( 'where' )
-            // InternalXMachine.g:3888:2: 'where'
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getWhereKeyword_6_2_2()); 
-            }
-            match(input,133,FOLLOW_2); if (state.failed) return ;
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getWhereKeyword_6_2_2()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__Group_6_2__2__Impl"
-
-
-    // $ANTLR start "rule__XEvent__Group_6_2__3"
-    // InternalXMachine.g:3897:1: rule__XEvent__Group_6_2__3 : rule__XEvent__Group_6_2__3__Impl rule__XEvent__Group_6_2__4 ;
-    public final void rule__XEvent__Group_6_2__3() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:3901:1: ( rule__XEvent__Group_6_2__3__Impl rule__XEvent__Group_6_2__4 )
-            // InternalXMachine.g:3902:2: rule__XEvent__Group_6_2__3__Impl rule__XEvent__Group_6_2__4
-            {
-            pushFollow(FOLLOW_27);
-            rule__XEvent__Group_6_2__3__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-            pushFollow(FOLLOW_2);
-            rule__XEvent__Group_6_2__4();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__Group_6_2__3"
-
-
-    // $ANTLR start "rule__XEvent__Group_6_2__3__Impl"
-    // InternalXMachine.g:3909:1: rule__XEvent__Group_6_2__3__Impl : ( ( ( rule__XEvent__GuardsAssignment_6_2_3 ) ) ( ( rule__XEvent__GuardsAssignment_6_2_3 )* ) ) ;
-    public final void rule__XEvent__Group_6_2__3__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:3913:1: ( ( ( ( rule__XEvent__GuardsAssignment_6_2_3 ) ) ( ( rule__XEvent__GuardsAssignment_6_2_3 )* ) ) )
-            // InternalXMachine.g:3914:1: ( ( ( rule__XEvent__GuardsAssignment_6_2_3 ) ) ( ( rule__XEvent__GuardsAssignment_6_2_3 )* ) )
-            {
-            // InternalXMachine.g:3914:1: ( ( ( rule__XEvent__GuardsAssignment_6_2_3 ) ) ( ( rule__XEvent__GuardsAssignment_6_2_3 )* ) )
-            // InternalXMachine.g:3915:2: ( ( rule__XEvent__GuardsAssignment_6_2_3 ) ) ( ( rule__XEvent__GuardsAssignment_6_2_3 )* )
-            {
-            // InternalXMachine.g:3915:2: ( ( rule__XEvent__GuardsAssignment_6_2_3 ) )
-            // InternalXMachine.g:3916:3: ( rule__XEvent__GuardsAssignment_6_2_3 )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getGuardsAssignment_6_2_3()); 
-            }
-            // InternalXMachine.g:3917:3: ( rule__XEvent__GuardsAssignment_6_2_3 )
-            // InternalXMachine.g:3917:4: rule__XEvent__GuardsAssignment_6_2_3
-            {
-            pushFollow(FOLLOW_11);
-            rule__XEvent__GuardsAssignment_6_2_3();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getGuardsAssignment_6_2_3()); 
-            }
-
-            }
-
-            // InternalXMachine.g:3920:2: ( ( rule__XEvent__GuardsAssignment_6_2_3 )* )
-            // InternalXMachine.g:3921:3: ( rule__XEvent__GuardsAssignment_6_2_3 )*
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getGuardsAssignment_6_2_3()); 
-            }
-            // InternalXMachine.g:3922:3: ( rule__XEvent__GuardsAssignment_6_2_3 )*
-            loop41:
-            do {
-                int alt41=2;
-                int LA41_0 = input.LA(1);
-
-                if ( (LA41_0==RULE_XLABEL) ) {
-                    alt41=1;
-                }
-
-
-                switch (alt41) {
-            	case 1 :
-            	    // InternalXMachine.g:3922:4: rule__XEvent__GuardsAssignment_6_2_3
-            	    {
-            	    pushFollow(FOLLOW_11);
-            	    rule__XEvent__GuardsAssignment_6_2_3();
-
-            	    state._fsp--;
-            	    if (state.failed) return ;
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop41;
-                }
-            } while (true);
-
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getGuardsAssignment_6_2_3()); 
-            }
-
-            }
-
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__Group_6_2__3__Impl"
-
-
-    // $ANTLR start "rule__XEvent__Group_6_2__4"
-    // InternalXMachine.g:3931:1: rule__XEvent__Group_6_2__4 : rule__XEvent__Group_6_2__4__Impl rule__XEvent__Group_6_2__5 ;
-    public final void rule__XEvent__Group_6_2__4() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:3935:1: ( rule__XEvent__Group_6_2__4__Impl rule__XEvent__Group_6_2__5 )
-            // InternalXMachine.g:3936:2: rule__XEvent__Group_6_2__4__Impl rule__XEvent__Group_6_2__5
-            {
-            pushFollow(FOLLOW_27);
-            rule__XEvent__Group_6_2__4__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-            pushFollow(FOLLOW_2);
-            rule__XEvent__Group_6_2__5();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__Group_6_2__4"
-
-
-    // $ANTLR start "rule__XEvent__Group_6_2__4__Impl"
-    // InternalXMachine.g:3943:1: rule__XEvent__Group_6_2__4__Impl : ( ( rule__XEvent__Group_6_2_4__0 )? ) ;
-    public final void rule__XEvent__Group_6_2__4__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:3947:1: ( ( ( rule__XEvent__Group_6_2_4__0 )? ) )
-            // InternalXMachine.g:3948:1: ( ( rule__XEvent__Group_6_2_4__0 )? )
-            {
-            // InternalXMachine.g:3948:1: ( ( rule__XEvent__Group_6_2_4__0 )? )
-            // InternalXMachine.g:3949:2: ( rule__XEvent__Group_6_2_4__0 )?
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getGroup_6_2_4()); 
-            }
-            // InternalXMachine.g:3950:2: ( rule__XEvent__Group_6_2_4__0 )?
-            int alt42=2;
-            int LA42_0 = input.LA(1);
-
-            if ( (LA42_0==129) ) {
-                alt42=1;
-            }
-            switch (alt42) {
-                case 1 :
-                    // InternalXMachine.g:3950:3: rule__XEvent__Group_6_2_4__0
-                    {
-                    pushFollow(FOLLOW_2);
-                    rule__XEvent__Group_6_2_4__0();
-
-                    state._fsp--;
-                    if (state.failed) return ;
-
-                    }
-                    break;
-
-            }
-
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getGroup_6_2_4()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__Group_6_2__4__Impl"
-
-
-    // $ANTLR start "rule__XEvent__Group_6_2__5"
-    // InternalXMachine.g:3958:1: rule__XEvent__Group_6_2__5 : rule__XEvent__Group_6_2__5__Impl ;
-    public final void rule__XEvent__Group_6_2__5() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:3962:1: ( rule__XEvent__Group_6_2__5__Impl )
-            // InternalXMachine.g:3963:2: rule__XEvent__Group_6_2__5__Impl
-            {
-            pushFollow(FOLLOW_2);
-            rule__XEvent__Group_6_2__5__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__Group_6_2__5"
-
-
-    // $ANTLR start "rule__XEvent__Group_6_2__5__Impl"
-    // InternalXMachine.g:3969:1: rule__XEvent__Group_6_2__5__Impl : ( ( rule__XEvent__Group_6_2_5__0 )? ) ;
-    public final void rule__XEvent__Group_6_2__5__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:3973:1: ( ( ( rule__XEvent__Group_6_2_5__0 )? ) )
-            // InternalXMachine.g:3974:1: ( ( rule__XEvent__Group_6_2_5__0 )? )
-            {
-            // InternalXMachine.g:3974:1: ( ( rule__XEvent__Group_6_2_5__0 )? )
-            // InternalXMachine.g:3975:2: ( rule__XEvent__Group_6_2_5__0 )?
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getGroup_6_2_5()); 
-            }
-            // InternalXMachine.g:3976:2: ( rule__XEvent__Group_6_2_5__0 )?
-            int alt43=2;
-            int LA43_0 = input.LA(1);
-
-            if ( (LA43_0==131) ) {
-                alt43=1;
-            }
-            switch (alt43) {
-                case 1 :
-                    // InternalXMachine.g:3976:3: rule__XEvent__Group_6_2_5__0
-                    {
-                    pushFollow(FOLLOW_2);
-                    rule__XEvent__Group_6_2_5__0();
-
-                    state._fsp--;
-                    if (state.failed) return ;
-
-                    }
-                    break;
-
-            }
-
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getGroup_6_2_5()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__Group_6_2__5__Impl"
-
-
-    // $ANTLR start "rule__XEvent__Group_6_2_4__0"
-    // InternalXMachine.g:3985:1: rule__XEvent__Group_6_2_4__0 : rule__XEvent__Group_6_2_4__0__Impl rule__XEvent__Group_6_2_4__1 ;
-    public final void rule__XEvent__Group_6_2_4__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:3989:1: ( rule__XEvent__Group_6_2_4__0__Impl rule__XEvent__Group_6_2_4__1 )
-            // InternalXMachine.g:3990:2: rule__XEvent__Group_6_2_4__0__Impl rule__XEvent__Group_6_2_4__1
-            {
-            pushFollow(FOLLOW_10);
-            rule__XEvent__Group_6_2_4__0__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-            pushFollow(FOLLOW_2);
-            rule__XEvent__Group_6_2_4__1();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__Group_6_2_4__0"
-
-
-    // $ANTLR start "rule__XEvent__Group_6_2_4__0__Impl"
-    // InternalXMachine.g:3997:1: rule__XEvent__Group_6_2_4__0__Impl : ( 'with' ) ;
-    public final void rule__XEvent__Group_6_2_4__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:4001:1: ( ( 'with' ) )
-            // InternalXMachine.g:4002:1: ( 'with' )
-            {
-            // InternalXMachine.g:4002:1: ( 'with' )
-            // InternalXMachine.g:4003:2: 'with'
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getWithKeyword_6_2_4_0()); 
-            }
-            match(input,129,FOLLOW_2); if (state.failed) return ;
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getWithKeyword_6_2_4_0()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__Group_6_2_4__0__Impl"
-
-
-    // $ANTLR start "rule__XEvent__Group_6_2_4__1"
-    // InternalXMachine.g:4012:1: rule__XEvent__Group_6_2_4__1 : rule__XEvent__Group_6_2_4__1__Impl ;
-    public final void rule__XEvent__Group_6_2_4__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:4016:1: ( rule__XEvent__Group_6_2_4__1__Impl )
-            // InternalXMachine.g:4017:2: rule__XEvent__Group_6_2_4__1__Impl
-            {
-            pushFollow(FOLLOW_2);
-            rule__XEvent__Group_6_2_4__1__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__Group_6_2_4__1"
-
-
-    // $ANTLR start "rule__XEvent__Group_6_2_4__1__Impl"
-    // InternalXMachine.g:4023:1: rule__XEvent__Group_6_2_4__1__Impl : ( ( ( rule__XEvent__WitnessesAssignment_6_2_4_1 ) ) ( ( rule__XEvent__WitnessesAssignment_6_2_4_1 )* ) ) ;
-    public final void rule__XEvent__Group_6_2_4__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:4027:1: ( ( ( ( rule__XEvent__WitnessesAssignment_6_2_4_1 ) ) ( ( rule__XEvent__WitnessesAssignment_6_2_4_1 )* ) ) )
-            // InternalXMachine.g:4028:1: ( ( ( rule__XEvent__WitnessesAssignment_6_2_4_1 ) ) ( ( rule__XEvent__WitnessesAssignment_6_2_4_1 )* ) )
-            {
-            // InternalXMachine.g:4028:1: ( ( ( rule__XEvent__WitnessesAssignment_6_2_4_1 ) ) ( ( rule__XEvent__WitnessesAssignment_6_2_4_1 )* ) )
-            // InternalXMachine.g:4029:2: ( ( rule__XEvent__WitnessesAssignment_6_2_4_1 ) ) ( ( rule__XEvent__WitnessesAssignment_6_2_4_1 )* )
-            {
-            // InternalXMachine.g:4029:2: ( ( rule__XEvent__WitnessesAssignment_6_2_4_1 ) )
-            // InternalXMachine.g:4030:3: ( rule__XEvent__WitnessesAssignment_6_2_4_1 )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getWitnessesAssignment_6_2_4_1()); 
-            }
-            // InternalXMachine.g:4031:3: ( rule__XEvent__WitnessesAssignment_6_2_4_1 )
-            // InternalXMachine.g:4031:4: rule__XEvent__WitnessesAssignment_6_2_4_1
-            {
-            pushFollow(FOLLOW_11);
-            rule__XEvent__WitnessesAssignment_6_2_4_1();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getWitnessesAssignment_6_2_4_1()); 
-            }
-
-            }
-
-            // InternalXMachine.g:4034:2: ( ( rule__XEvent__WitnessesAssignment_6_2_4_1 )* )
-            // InternalXMachine.g:4035:3: ( rule__XEvent__WitnessesAssignment_6_2_4_1 )*
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getWitnessesAssignment_6_2_4_1()); 
-            }
-            // InternalXMachine.g:4036:3: ( rule__XEvent__WitnessesAssignment_6_2_4_1 )*
-            loop44:
-            do {
-                int alt44=2;
-                int LA44_0 = input.LA(1);
-
-                if ( (LA44_0==RULE_XLABEL) ) {
-                    alt44=1;
-                }
-
-
-                switch (alt44) {
-            	case 1 :
-            	    // InternalXMachine.g:4036:4: rule__XEvent__WitnessesAssignment_6_2_4_1
-            	    {
-            	    pushFollow(FOLLOW_11);
-            	    rule__XEvent__WitnessesAssignment_6_2_4_1();
-
-            	    state._fsp--;
-            	    if (state.failed) return ;
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop44;
-                }
-            } while (true);
-
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getWitnessesAssignment_6_2_4_1()); 
-            }
-
-            }
-
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__Group_6_2_4__1__Impl"
-
-
-    // $ANTLR start "rule__XEvent__Group_6_2_5__0"
-    // InternalXMachine.g:4046:1: rule__XEvent__Group_6_2_5__0 : rule__XEvent__Group_6_2_5__0__Impl rule__XEvent__Group_6_2_5__1 ;
-    public final void rule__XEvent__Group_6_2_5__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:4050:1: ( rule__XEvent__Group_6_2_5__0__Impl rule__XEvent__Group_6_2_5__1 )
-            // InternalXMachine.g:4051:2: rule__XEvent__Group_6_2_5__0__Impl rule__XEvent__Group_6_2_5__1
-            {
-            pushFollow(FOLLOW_10);
-            rule__XEvent__Group_6_2_5__0__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-            pushFollow(FOLLOW_2);
-            rule__XEvent__Group_6_2_5__1();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__Group_6_2_5__0"
-
-
-    // $ANTLR start "rule__XEvent__Group_6_2_5__0__Impl"
-    // InternalXMachine.g:4058:1: rule__XEvent__Group_6_2_5__0__Impl : ( 'then' ) ;
-    public final void rule__XEvent__Group_6_2_5__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:4062:1: ( ( 'then' ) )
-            // InternalXMachine.g:4063:1: ( 'then' )
-            {
-            // InternalXMachine.g:4063:1: ( 'then' )
-            // InternalXMachine.g:4064:2: 'then'
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getThenKeyword_6_2_5_0()); 
-            }
-            match(input,131,FOLLOW_2); if (state.failed) return ;
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getThenKeyword_6_2_5_0()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__Group_6_2_5__0__Impl"
-
-
-    // $ANTLR start "rule__XEvent__Group_6_2_5__1"
-    // InternalXMachine.g:4073:1: rule__XEvent__Group_6_2_5__1 : rule__XEvent__Group_6_2_5__1__Impl ;
-    public final void rule__XEvent__Group_6_2_5__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:4077:1: ( rule__XEvent__Group_6_2_5__1__Impl )
-            // InternalXMachine.g:4078:2: rule__XEvent__Group_6_2_5__1__Impl
-            {
-            pushFollow(FOLLOW_2);
-            rule__XEvent__Group_6_2_5__1__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__Group_6_2_5__1"
-
-
-    // $ANTLR start "rule__XEvent__Group_6_2_5__1__Impl"
-    // InternalXMachine.g:4084:1: rule__XEvent__Group_6_2_5__1__Impl : ( ( ( rule__XEvent__ActionsAssignment_6_2_5_1 ) ) ( ( rule__XEvent__ActionsAssignment_6_2_5_1 )* ) ) ;
-    public final void rule__XEvent__Group_6_2_5__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:4088:1: ( ( ( ( rule__XEvent__ActionsAssignment_6_2_5_1 ) ) ( ( rule__XEvent__ActionsAssignment_6_2_5_1 )* ) ) )
-            // InternalXMachine.g:4089:1: ( ( ( rule__XEvent__ActionsAssignment_6_2_5_1 ) ) ( ( rule__XEvent__ActionsAssignment_6_2_5_1 )* ) )
-            {
-            // InternalXMachine.g:4089:1: ( ( ( rule__XEvent__ActionsAssignment_6_2_5_1 ) ) ( ( rule__XEvent__ActionsAssignment_6_2_5_1 )* ) )
-            // InternalXMachine.g:4090:2: ( ( rule__XEvent__ActionsAssignment_6_2_5_1 ) ) ( ( rule__XEvent__ActionsAssignment_6_2_5_1 )* )
-            {
-            // InternalXMachine.g:4090:2: ( ( rule__XEvent__ActionsAssignment_6_2_5_1 ) )
-            // InternalXMachine.g:4091:3: ( rule__XEvent__ActionsAssignment_6_2_5_1 )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getActionsAssignment_6_2_5_1()); 
-            }
-            // InternalXMachine.g:4092:3: ( rule__XEvent__ActionsAssignment_6_2_5_1 )
-            // InternalXMachine.g:4092:4: rule__XEvent__ActionsAssignment_6_2_5_1
-            {
-            pushFollow(FOLLOW_11);
-            rule__XEvent__ActionsAssignment_6_2_5_1();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getActionsAssignment_6_2_5_1()); 
-            }
-
-            }
-
-            // InternalXMachine.g:4095:2: ( ( rule__XEvent__ActionsAssignment_6_2_5_1 )* )
-            // InternalXMachine.g:4096:3: ( rule__XEvent__ActionsAssignment_6_2_5_1 )*
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getActionsAssignment_6_2_5_1()); 
-            }
-            // InternalXMachine.g:4097:3: ( rule__XEvent__ActionsAssignment_6_2_5_1 )*
-            loop45:
-            do {
-                int alt45=2;
-                int LA45_0 = input.LA(1);
-
-                if ( (LA45_0==RULE_XLABEL) ) {
-                    alt45=1;
-                }
-
-
-                switch (alt45) {
-            	case 1 :
-            	    // InternalXMachine.g:4097:4: rule__XEvent__ActionsAssignment_6_2_5_1
-            	    {
-            	    pushFollow(FOLLOW_11);
-            	    rule__XEvent__ActionsAssignment_6_2_5_1();
-
-            	    state._fsp--;
-            	    if (state.failed) return ;
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop45;
-                }
-            } while (true);
-
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getActionsAssignment_6_2_5_1()); 
-            }
-
-            }
-
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__Group_6_2_5__1__Impl"
+    // $ANTLR end "rule__XEvent__Group_9__1__Impl"
 
 
     // $ANTLR start "rule__EventSync__Group__0"
-    // InternalXMachine.g:4107:1: rule__EventSync__Group__0 : rule__EventSync__Group__0__Impl rule__EventSync__Group__1 ;
+    // InternalXMachine.g:3830:1: rule__EventSync__Group__0 : rule__EventSync__Group__0__Impl rule__EventSync__Group__1 ;
     public final void rule__EventSync__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4111:1: ( rule__EventSync__Group__0__Impl rule__EventSync__Group__1 )
-            // InternalXMachine.g:4112:2: rule__EventSync__Group__0__Impl rule__EventSync__Group__1
+            // InternalXMachine.g:3834:1: ( rule__EventSync__Group__0__Impl rule__EventSync__Group__1 )
+            // InternalXMachine.g:3835:2: rule__EventSync__Group__0__Impl rule__EventSync__Group__1
             {
-            pushFollow(FOLLOW_29);
+            pushFollow(FOLLOW_26);
             rule__EventSync__Group__0__Impl();
 
             state._fsp--;
@@ -14443,23 +13468,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__EventSync__Group__0__Impl"
-    // InternalXMachine.g:4119:1: rule__EventSync__Group__0__Impl : ( () ) ;
+    // InternalXMachine.g:3842:1: rule__EventSync__Group__0__Impl : ( () ) ;
     public final void rule__EventSync__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4123:1: ( ( () ) )
-            // InternalXMachine.g:4124:1: ( () )
+            // InternalXMachine.g:3846:1: ( ( () ) )
+            // InternalXMachine.g:3847:1: ( () )
             {
-            // InternalXMachine.g:4124:1: ( () )
-            // InternalXMachine.g:4125:2: ()
+            // InternalXMachine.g:3847:1: ( () )
+            // InternalXMachine.g:3848:2: ()
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEventSyncAccess().getEventSynchronisationAction_0()); 
             }
-            // InternalXMachine.g:4126:2: ()
-            // InternalXMachine.g:4126:3: 
+            // InternalXMachine.g:3849:2: ()
+            // InternalXMachine.g:3849:3: 
             {
             }
 
@@ -14484,16 +13509,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__EventSync__Group__1"
-    // InternalXMachine.g:4134:1: rule__EventSync__Group__1 : rule__EventSync__Group__1__Impl rule__EventSync__Group__2 ;
+    // InternalXMachine.g:3857:1: rule__EventSync__Group__1 : rule__EventSync__Group__1__Impl rule__EventSync__Group__2 ;
     public final void rule__EventSync__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4138:1: ( rule__EventSync__Group__1__Impl rule__EventSync__Group__2 )
-            // InternalXMachine.g:4139:2: rule__EventSync__Group__1__Impl rule__EventSync__Group__2
+            // InternalXMachine.g:3861:1: ( rule__EventSync__Group__1__Impl rule__EventSync__Group__2 )
+            // InternalXMachine.g:3862:2: rule__EventSync__Group__1__Impl rule__EventSync__Group__2
             {
-            pushFollow(FOLLOW_30);
+            pushFollow(FOLLOW_27);
             rule__EventSync__Group__1__Impl();
 
             state._fsp--;
@@ -14522,23 +13547,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__EventSync__Group__1__Impl"
-    // InternalXMachine.g:4146:1: rule__EventSync__Group__1__Impl : ( ( rule__EventSync__Group_1__0 ) ) ;
+    // InternalXMachine.g:3869:1: rule__EventSync__Group__1__Impl : ( ( rule__EventSync__Group_1__0 ) ) ;
     public final void rule__EventSync__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4150:1: ( ( ( rule__EventSync__Group_1__0 ) ) )
-            // InternalXMachine.g:4151:1: ( ( rule__EventSync__Group_1__0 ) )
+            // InternalXMachine.g:3873:1: ( ( ( rule__EventSync__Group_1__0 ) ) )
+            // InternalXMachine.g:3874:1: ( ( rule__EventSync__Group_1__0 ) )
             {
-            // InternalXMachine.g:4151:1: ( ( rule__EventSync__Group_1__0 ) )
-            // InternalXMachine.g:4152:2: ( rule__EventSync__Group_1__0 )
+            // InternalXMachine.g:3874:1: ( ( rule__EventSync__Group_1__0 ) )
+            // InternalXMachine.g:3875:2: ( rule__EventSync__Group_1__0 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEventSyncAccess().getGroup_1()); 
             }
-            // InternalXMachine.g:4153:2: ( rule__EventSync__Group_1__0 )
-            // InternalXMachine.g:4153:3: rule__EventSync__Group_1__0
+            // InternalXMachine.g:3876:2: ( rule__EventSync__Group_1__0 )
+            // InternalXMachine.g:3876:3: rule__EventSync__Group_1__0
             {
             pushFollow(FOLLOW_2);
             rule__EventSync__Group_1__0();
@@ -14573,14 +13598,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__EventSync__Group__2"
-    // InternalXMachine.g:4161:1: rule__EventSync__Group__2 : rule__EventSync__Group__2__Impl ;
+    // InternalXMachine.g:3884:1: rule__EventSync__Group__2 : rule__EventSync__Group__2__Impl ;
     public final void rule__EventSync__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4165:1: ( rule__EventSync__Group__2__Impl )
-            // InternalXMachine.g:4166:2: rule__EventSync__Group__2__Impl
+            // InternalXMachine.g:3888:1: ( rule__EventSync__Group__2__Impl )
+            // InternalXMachine.g:3889:2: rule__EventSync__Group__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__EventSync__Group__2__Impl();
@@ -14606,31 +13631,31 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__EventSync__Group__2__Impl"
-    // InternalXMachine.g:4172:1: rule__EventSync__Group__2__Impl : ( ( ruleXSyncParameters )? ) ;
+    // InternalXMachine.g:3895:1: rule__EventSync__Group__2__Impl : ( ( ruleXSyncParameters )? ) ;
     public final void rule__EventSync__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4176:1: ( ( ( ruleXSyncParameters )? ) )
-            // InternalXMachine.g:4177:1: ( ( ruleXSyncParameters )? )
+            // InternalXMachine.g:3899:1: ( ( ( ruleXSyncParameters )? ) )
+            // InternalXMachine.g:3900:1: ( ( ruleXSyncParameters )? )
             {
-            // InternalXMachine.g:4177:1: ( ( ruleXSyncParameters )? )
-            // InternalXMachine.g:4178:2: ( ruleXSyncParameters )?
+            // InternalXMachine.g:3900:1: ( ( ruleXSyncParameters )? )
+            // InternalXMachine.g:3901:2: ( ruleXSyncParameters )?
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEventSyncAccess().getXSyncParametersParserRuleCall_2()); 
             }
-            // InternalXMachine.g:4179:2: ( ruleXSyncParameters )?
-            int alt46=2;
-            int LA46_0 = input.LA(1);
+            // InternalXMachine.g:3902:2: ( ruleXSyncParameters )?
+            int alt41=2;
+            int LA41_0 = input.LA(1);
 
-            if ( (LA46_0==85) ) {
-                alt46=1;
+            if ( (LA41_0==85) ) {
+                alt41=1;
             }
-            switch (alt46) {
+            switch (alt41) {
                 case 1 :
-                    // InternalXMachine.g:4179:3: ruleXSyncParameters
+                    // InternalXMachine.g:3902:3: ruleXSyncParameters
                     {
                     pushFollow(FOLLOW_2);
                     ruleXSyncParameters();
@@ -14668,16 +13693,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__EventSync__Group_1__0"
-    // InternalXMachine.g:4188:1: rule__EventSync__Group_1__0 : rule__EventSync__Group_1__0__Impl rule__EventSync__Group_1__1 ;
+    // InternalXMachine.g:3911:1: rule__EventSync__Group_1__0 : rule__EventSync__Group_1__0__Impl rule__EventSync__Group_1__1 ;
     public final void rule__EventSync__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4192:1: ( rule__EventSync__Group_1__0__Impl rule__EventSync__Group_1__1 )
-            // InternalXMachine.g:4193:2: rule__EventSync__Group_1__0__Impl rule__EventSync__Group_1__1
+            // InternalXMachine.g:3915:1: ( rule__EventSync__Group_1__0__Impl rule__EventSync__Group_1__1 )
+            // InternalXMachine.g:3916:2: rule__EventSync__Group_1__0__Impl rule__EventSync__Group_1__1
             {
-            pushFollow(FOLLOW_5);
+            pushFollow(FOLLOW_28);
             rule__EventSync__Group_1__0__Impl();
 
             state._fsp--;
@@ -14706,22 +13731,22 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__EventSync__Group_1__0__Impl"
-    // InternalXMachine.g:4200:1: rule__EventSync__Group_1__0__Impl : ( 'synchronises' ) ;
+    // InternalXMachine.g:3923:1: rule__EventSync__Group_1__0__Impl : ( 'synchronises' ) ;
     public final void rule__EventSync__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4204:1: ( ( 'synchronises' ) )
-            // InternalXMachine.g:4205:1: ( 'synchronises' )
+            // InternalXMachine.g:3927:1: ( ( 'synchronises' ) )
+            // InternalXMachine.g:3928:1: ( 'synchronises' )
             {
-            // InternalXMachine.g:4205:1: ( 'synchronises' )
-            // InternalXMachine.g:4206:2: 'synchronises'
+            // InternalXMachine.g:3928:1: ( 'synchronises' )
+            // InternalXMachine.g:3929:2: 'synchronises'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEventSyncAccess().getSynchronisesKeyword_1_0()); 
             }
-            match(input,134,FOLLOW_2); if (state.failed) return ;
+            match(input,133,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getEventSyncAccess().getSynchronisesKeyword_1_0()); 
             }
@@ -14747,14 +13772,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__EventSync__Group_1__1"
-    // InternalXMachine.g:4215:1: rule__EventSync__Group_1__1 : rule__EventSync__Group_1__1__Impl rule__EventSync__Group_1__2 ;
+    // InternalXMachine.g:3938:1: rule__EventSync__Group_1__1 : rule__EventSync__Group_1__1__Impl rule__EventSync__Group_1__2 ;
     public final void rule__EventSync__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4219:1: ( rule__EventSync__Group_1__1__Impl rule__EventSync__Group_1__2 )
-            // InternalXMachine.g:4220:2: rule__EventSync__Group_1__1__Impl rule__EventSync__Group_1__2
+            // InternalXMachine.g:3942:1: ( rule__EventSync__Group_1__1__Impl rule__EventSync__Group_1__2 )
+            // InternalXMachine.g:3943:2: rule__EventSync__Group_1__1__Impl rule__EventSync__Group_1__2
             {
             pushFollow(FOLLOW_5);
             rule__EventSync__Group_1__1__Impl();
@@ -14785,49 +13810,24 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__EventSync__Group_1__1__Impl"
-    // InternalXMachine.g:4227:1: rule__EventSync__Group_1__1__Impl : ( ( rule__EventSync__Group_1_1__0 )? ) ;
+    // InternalXMachine.g:3950:1: rule__EventSync__Group_1__1__Impl : ( 'event' ) ;
     public final void rule__EventSync__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4231:1: ( ( ( rule__EventSync__Group_1_1__0 )? ) )
-            // InternalXMachine.g:4232:1: ( ( rule__EventSync__Group_1_1__0 )? )
+            // InternalXMachine.g:3954:1: ( ( 'event' ) )
+            // InternalXMachine.g:3955:1: ( 'event' )
             {
-            // InternalXMachine.g:4232:1: ( ( rule__EventSync__Group_1_1__0 )? )
-            // InternalXMachine.g:4233:2: ( rule__EventSync__Group_1_1__0 )?
+            // InternalXMachine.g:3955:1: ( 'event' )
+            // InternalXMachine.g:3956:2: 'event'
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getEventSyncAccess().getGroup_1_1()); 
+               before(grammarAccess.getEventSyncAccess().getEventKeyword_1_1()); 
             }
-            // InternalXMachine.g:4234:2: ( rule__EventSync__Group_1_1__0 )?
-            int alt47=2;
-            int LA47_0 = input.LA(1);
-
-            if ( (LA47_0==RULE_ID) ) {
-                int LA47_1 = input.LA(2);
-
-                if ( (LA47_1==51) ) {
-                    alt47=1;
-                }
-            }
-            switch (alt47) {
-                case 1 :
-                    // InternalXMachine.g:4234:3: rule__EventSync__Group_1_1__0
-                    {
-                    pushFollow(FOLLOW_2);
-                    rule__EventSync__Group_1_1__0();
-
-                    state._fsp--;
-                    if (state.failed) return ;
-
-                    }
-                    break;
-
-            }
-
+            match(input,128,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getEventSyncAccess().getGroup_1_1()); 
+               after(grammarAccess.getEventSyncAccess().getEventKeyword_1_1()); 
             }
 
             }
@@ -14851,17 +13851,22 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__EventSync__Group_1__2"
-    // InternalXMachine.g:4242:1: rule__EventSync__Group_1__2 : rule__EventSync__Group_1__2__Impl ;
+    // InternalXMachine.g:3965:1: rule__EventSync__Group_1__2 : rule__EventSync__Group_1__2__Impl rule__EventSync__Group_1__3 ;
     public final void rule__EventSync__Group_1__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4246:1: ( rule__EventSync__Group_1__2__Impl )
-            // InternalXMachine.g:4247:2: rule__EventSync__Group_1__2__Impl
+            // InternalXMachine.g:3969:1: ( rule__EventSync__Group_1__2__Impl rule__EventSync__Group_1__3 )
+            // InternalXMachine.g:3970:2: rule__EventSync__Group_1__2__Impl rule__EventSync__Group_1__3
             {
-            pushFollow(FOLLOW_2);
+            pushFollow(FOLLOW_5);
             rule__EventSync__Group_1__2__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
+            pushFollow(FOLLOW_2);
+            rule__EventSync__Group_1__3();
 
             state._fsp--;
             if (state.failed) return ;
@@ -14884,34 +13889,49 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__EventSync__Group_1__2__Impl"
-    // InternalXMachine.g:4253:1: rule__EventSync__Group_1__2__Impl : ( ( rule__EventSync__SynchronisedEventAssignment_1_2 ) ) ;
+    // InternalXMachine.g:3977:1: rule__EventSync__Group_1__2__Impl : ( ( rule__EventSync__Group_1_2__0 )? ) ;
     public final void rule__EventSync__Group_1__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4257:1: ( ( ( rule__EventSync__SynchronisedEventAssignment_1_2 ) ) )
-            // InternalXMachine.g:4258:1: ( ( rule__EventSync__SynchronisedEventAssignment_1_2 ) )
+            // InternalXMachine.g:3981:1: ( ( ( rule__EventSync__Group_1_2__0 )? ) )
+            // InternalXMachine.g:3982:1: ( ( rule__EventSync__Group_1_2__0 )? )
             {
-            // InternalXMachine.g:4258:1: ( ( rule__EventSync__SynchronisedEventAssignment_1_2 ) )
-            // InternalXMachine.g:4259:2: ( rule__EventSync__SynchronisedEventAssignment_1_2 )
+            // InternalXMachine.g:3982:1: ( ( rule__EventSync__Group_1_2__0 )? )
+            // InternalXMachine.g:3983:2: ( rule__EventSync__Group_1_2__0 )?
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getEventSyncAccess().getSynchronisedEventAssignment_1_2()); 
+               before(grammarAccess.getEventSyncAccess().getGroup_1_2()); 
             }
-            // InternalXMachine.g:4260:2: ( rule__EventSync__SynchronisedEventAssignment_1_2 )
-            // InternalXMachine.g:4260:3: rule__EventSync__SynchronisedEventAssignment_1_2
-            {
-            pushFollow(FOLLOW_2);
-            rule__EventSync__SynchronisedEventAssignment_1_2();
+            // InternalXMachine.g:3984:2: ( rule__EventSync__Group_1_2__0 )?
+            int alt42=2;
+            int LA42_0 = input.LA(1);
 
-            state._fsp--;
-            if (state.failed) return ;
+            if ( (LA42_0==RULE_ID) ) {
+                int LA42_1 = input.LA(2);
+
+                if ( (LA42_1==51) ) {
+                    alt42=1;
+                }
+            }
+            switch (alt42) {
+                case 1 :
+                    // InternalXMachine.g:3984:3: rule__EventSync__Group_1_2__0
+                    {
+                    pushFollow(FOLLOW_2);
+                    rule__EventSync__Group_1_2__0();
+
+                    state._fsp--;
+                    if (state.failed) return ;
+
+                    }
+                    break;
 
             }
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getEventSyncAccess().getSynchronisedEventAssignment_1_2()); 
+               after(grammarAccess.getEventSyncAccess().getGroup_1_2()); 
             }
 
             }
@@ -14934,23 +13954,18 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
     // $ANTLR end "rule__EventSync__Group_1__2__Impl"
 
 
-    // $ANTLR start "rule__EventSync__Group_1_1__0"
-    // InternalXMachine.g:4269:1: rule__EventSync__Group_1_1__0 : rule__EventSync__Group_1_1__0__Impl rule__EventSync__Group_1_1__1 ;
-    public final void rule__EventSync__Group_1_1__0() throws RecognitionException {
+    // $ANTLR start "rule__EventSync__Group_1__3"
+    // InternalXMachine.g:3992:1: rule__EventSync__Group_1__3 : rule__EventSync__Group_1__3__Impl ;
+    public final void rule__EventSync__Group_1__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4273:1: ( rule__EventSync__Group_1_1__0__Impl rule__EventSync__Group_1_1__1 )
-            // InternalXMachine.g:4274:2: rule__EventSync__Group_1_1__0__Impl rule__EventSync__Group_1_1__1
+            // InternalXMachine.g:3996:1: ( rule__EventSync__Group_1__3__Impl )
+            // InternalXMachine.g:3997:2: rule__EventSync__Group_1__3__Impl
             {
-            pushFollow(FOLLOW_16);
-            rule__EventSync__Group_1_1__0__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
             pushFollow(FOLLOW_2);
-            rule__EventSync__Group_1_1__1();
+            rule__EventSync__Group_1__3__Impl();
 
             state._fsp--;
             if (state.failed) return ;
@@ -14969,30 +13984,30 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__EventSync__Group_1_1__0"
+    // $ANTLR end "rule__EventSync__Group_1__3"
 
 
-    // $ANTLR start "rule__EventSync__Group_1_1__0__Impl"
-    // InternalXMachine.g:4281:1: rule__EventSync__Group_1_1__0__Impl : ( ( rule__EventSync__PrefixAssignment_1_1_0 ) ) ;
-    public final void rule__EventSync__Group_1_1__0__Impl() throws RecognitionException {
+    // $ANTLR start "rule__EventSync__Group_1__3__Impl"
+    // InternalXMachine.g:4003:1: rule__EventSync__Group_1__3__Impl : ( ( rule__EventSync__SynchronisedEventAssignment_1_3 ) ) ;
+    public final void rule__EventSync__Group_1__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4285:1: ( ( ( rule__EventSync__PrefixAssignment_1_1_0 ) ) )
-            // InternalXMachine.g:4286:1: ( ( rule__EventSync__PrefixAssignment_1_1_0 ) )
+            // InternalXMachine.g:4007:1: ( ( ( rule__EventSync__SynchronisedEventAssignment_1_3 ) ) )
+            // InternalXMachine.g:4008:1: ( ( rule__EventSync__SynchronisedEventAssignment_1_3 ) )
             {
-            // InternalXMachine.g:4286:1: ( ( rule__EventSync__PrefixAssignment_1_1_0 ) )
-            // InternalXMachine.g:4287:2: ( rule__EventSync__PrefixAssignment_1_1_0 )
+            // InternalXMachine.g:4008:1: ( ( rule__EventSync__SynchronisedEventAssignment_1_3 ) )
+            // InternalXMachine.g:4009:2: ( rule__EventSync__SynchronisedEventAssignment_1_3 )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getEventSyncAccess().getPrefixAssignment_1_1_0()); 
+               before(grammarAccess.getEventSyncAccess().getSynchronisedEventAssignment_1_3()); 
             }
-            // InternalXMachine.g:4288:2: ( rule__EventSync__PrefixAssignment_1_1_0 )
-            // InternalXMachine.g:4288:3: rule__EventSync__PrefixAssignment_1_1_0
+            // InternalXMachine.g:4010:2: ( rule__EventSync__SynchronisedEventAssignment_1_3 )
+            // InternalXMachine.g:4010:3: rule__EventSync__SynchronisedEventAssignment_1_3
             {
             pushFollow(FOLLOW_2);
-            rule__EventSync__PrefixAssignment_1_1_0();
+            rule__EventSync__SynchronisedEventAssignment_1_3();
 
             state._fsp--;
             if (state.failed) return ;
@@ -15000,7 +14015,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             }
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getEventSyncAccess().getPrefixAssignment_1_1_0()); 
+               after(grammarAccess.getEventSyncAccess().getSynchronisedEventAssignment_1_3()); 
             }
 
             }
@@ -15020,21 +14035,26 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__EventSync__Group_1_1__0__Impl"
+    // $ANTLR end "rule__EventSync__Group_1__3__Impl"
 
 
-    // $ANTLR start "rule__EventSync__Group_1_1__1"
-    // InternalXMachine.g:4296:1: rule__EventSync__Group_1_1__1 : rule__EventSync__Group_1_1__1__Impl ;
-    public final void rule__EventSync__Group_1_1__1() throws RecognitionException {
+    // $ANTLR start "rule__EventSync__Group_1_2__0"
+    // InternalXMachine.g:4019:1: rule__EventSync__Group_1_2__0 : rule__EventSync__Group_1_2__0__Impl rule__EventSync__Group_1_2__1 ;
+    public final void rule__EventSync__Group_1_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4300:1: ( rule__EventSync__Group_1_1__1__Impl )
-            // InternalXMachine.g:4301:2: rule__EventSync__Group_1_1__1__Impl
+            // InternalXMachine.g:4023:1: ( rule__EventSync__Group_1_2__0__Impl rule__EventSync__Group_1_2__1 )
+            // InternalXMachine.g:4024:2: rule__EventSync__Group_1_2__0__Impl rule__EventSync__Group_1_2__1
             {
+            pushFollow(FOLLOW_17);
+            rule__EventSync__Group_1_2__0__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
             pushFollow(FOLLOW_2);
-            rule__EventSync__Group_1_1__1__Impl();
+            rule__EventSync__Group_1_2__1();
 
             state._fsp--;
             if (state.failed) return ;
@@ -15053,28 +14073,112 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__EventSync__Group_1_1__1"
+    // $ANTLR end "rule__EventSync__Group_1_2__0"
 
 
-    // $ANTLR start "rule__EventSync__Group_1_1__1__Impl"
-    // InternalXMachine.g:4307:1: rule__EventSync__Group_1_1__1__Impl : ( '.' ) ;
-    public final void rule__EventSync__Group_1_1__1__Impl() throws RecognitionException {
+    // $ANTLR start "rule__EventSync__Group_1_2__0__Impl"
+    // InternalXMachine.g:4031:1: rule__EventSync__Group_1_2__0__Impl : ( ( rule__EventSync__PrefixAssignment_1_2_0 ) ) ;
+    public final void rule__EventSync__Group_1_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4311:1: ( ( '.' ) )
-            // InternalXMachine.g:4312:1: ( '.' )
+            // InternalXMachine.g:4035:1: ( ( ( rule__EventSync__PrefixAssignment_1_2_0 ) ) )
+            // InternalXMachine.g:4036:1: ( ( rule__EventSync__PrefixAssignment_1_2_0 ) )
             {
-            // InternalXMachine.g:4312:1: ( '.' )
-            // InternalXMachine.g:4313:2: '.'
+            // InternalXMachine.g:4036:1: ( ( rule__EventSync__PrefixAssignment_1_2_0 ) )
+            // InternalXMachine.g:4037:2: ( rule__EventSync__PrefixAssignment_1_2_0 )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getEventSyncAccess().getFullStopKeyword_1_1_1()); 
+               before(grammarAccess.getEventSyncAccess().getPrefixAssignment_1_2_0()); 
+            }
+            // InternalXMachine.g:4038:2: ( rule__EventSync__PrefixAssignment_1_2_0 )
+            // InternalXMachine.g:4038:3: rule__EventSync__PrefixAssignment_1_2_0
+            {
+            pushFollow(FOLLOW_2);
+            rule__EventSync__PrefixAssignment_1_2_0();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getEventSyncAccess().getPrefixAssignment_1_2_0()); 
+            }
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__EventSync__Group_1_2__0__Impl"
+
+
+    // $ANTLR start "rule__EventSync__Group_1_2__1"
+    // InternalXMachine.g:4046:1: rule__EventSync__Group_1_2__1 : rule__EventSync__Group_1_2__1__Impl ;
+    public final void rule__EventSync__Group_1_2__1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalXMachine.g:4050:1: ( rule__EventSync__Group_1_2__1__Impl )
+            // InternalXMachine.g:4051:2: rule__EventSync__Group_1_2__1__Impl
+            {
+            pushFollow(FOLLOW_2);
+            rule__EventSync__Group_1_2__1__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__EventSync__Group_1_2__1"
+
+
+    // $ANTLR start "rule__EventSync__Group_1_2__1__Impl"
+    // InternalXMachine.g:4057:1: rule__EventSync__Group_1_2__1__Impl : ( '.' ) ;
+    public final void rule__EventSync__Group_1_2__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalXMachine.g:4061:1: ( ( '.' ) )
+            // InternalXMachine.g:4062:1: ( '.' )
+            {
+            // InternalXMachine.g:4062:1: ( '.' )
+            // InternalXMachine.g:4063:2: '.'
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getEventSyncAccess().getFullStopKeyword_1_2_1()); 
             }
             match(input,51,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getEventSyncAccess().getFullStopKeyword_1_1_1()); 
+               after(grammarAccess.getEventSyncAccess().getFullStopKeyword_1_2_1()); 
             }
 
             }
@@ -15094,18 +14198,18 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__EventSync__Group_1_1__1__Impl"
+    // $ANTLR end "rule__EventSync__Group_1_2__1__Impl"
 
 
     // $ANTLR start "rule__XSyncParameters__Group__0"
-    // InternalXMachine.g:4323:1: rule__XSyncParameters__Group__0 : rule__XSyncParameters__Group__0__Impl rule__XSyncParameters__Group__1 ;
+    // InternalXMachine.g:4073:1: rule__XSyncParameters__Group__0 : rule__XSyncParameters__Group__0__Impl rule__XSyncParameters__Group__1 ;
     public final void rule__XSyncParameters__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4327:1: ( rule__XSyncParameters__Group__0__Impl rule__XSyncParameters__Group__1 )
-            // InternalXMachine.g:4328:2: rule__XSyncParameters__Group__0__Impl rule__XSyncParameters__Group__1
+            // InternalXMachine.g:4077:1: ( rule__XSyncParameters__Group__0__Impl rule__XSyncParameters__Group__1 )
+            // InternalXMachine.g:4078:2: rule__XSyncParameters__Group__0__Impl rule__XSyncParameters__Group__1
             {
             pushFollow(FOLLOW_5);
             rule__XSyncParameters__Group__0__Impl();
@@ -15136,17 +14240,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XSyncParameters__Group__0__Impl"
-    // InternalXMachine.g:4335:1: rule__XSyncParameters__Group__0__Impl : ( '[' ) ;
+    // InternalXMachine.g:4085:1: rule__XSyncParameters__Group__0__Impl : ( '[' ) ;
     public final void rule__XSyncParameters__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4339:1: ( ( '[' ) )
-            // InternalXMachine.g:4340:1: ( '[' )
+            // InternalXMachine.g:4089:1: ( ( '[' ) )
+            // InternalXMachine.g:4090:1: ( '[' )
             {
-            // InternalXMachine.g:4340:1: ( '[' )
-            // InternalXMachine.g:4341:2: '['
+            // InternalXMachine.g:4090:1: ( '[' )
+            // InternalXMachine.g:4091:2: '['
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXSyncParametersAccess().getLeftSquareBracketKeyword_0()); 
@@ -15177,16 +14281,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XSyncParameters__Group__1"
-    // InternalXMachine.g:4350:1: rule__XSyncParameters__Group__1 : rule__XSyncParameters__Group__1__Impl rule__XSyncParameters__Group__2 ;
+    // InternalXMachine.g:4100:1: rule__XSyncParameters__Group__1 : rule__XSyncParameters__Group__1__Impl rule__XSyncParameters__Group__2 ;
     public final void rule__XSyncParameters__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4354:1: ( rule__XSyncParameters__Group__1__Impl rule__XSyncParameters__Group__2 )
-            // InternalXMachine.g:4355:2: rule__XSyncParameters__Group__1__Impl rule__XSyncParameters__Group__2
+            // InternalXMachine.g:4104:1: ( rule__XSyncParameters__Group__1__Impl rule__XSyncParameters__Group__2 )
+            // InternalXMachine.g:4105:2: rule__XSyncParameters__Group__1__Impl rule__XSyncParameters__Group__2
             {
-            pushFollow(FOLLOW_31);
+            pushFollow(FOLLOW_29);
             rule__XSyncParameters__Group__1__Impl();
 
             state._fsp--;
@@ -15215,26 +14319,26 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XSyncParameters__Group__1__Impl"
-    // InternalXMachine.g:4362:1: rule__XSyncParameters__Group__1__Impl : ( ( ( RULE_ID ) ) ( ( RULE_ID )* ) ) ;
+    // InternalXMachine.g:4112:1: rule__XSyncParameters__Group__1__Impl : ( ( ( RULE_ID ) ) ( ( RULE_ID )* ) ) ;
     public final void rule__XSyncParameters__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4366:1: ( ( ( ( RULE_ID ) ) ( ( RULE_ID )* ) ) )
-            // InternalXMachine.g:4367:1: ( ( ( RULE_ID ) ) ( ( RULE_ID )* ) )
+            // InternalXMachine.g:4116:1: ( ( ( ( RULE_ID ) ) ( ( RULE_ID )* ) ) )
+            // InternalXMachine.g:4117:1: ( ( ( RULE_ID ) ) ( ( RULE_ID )* ) )
             {
-            // InternalXMachine.g:4367:1: ( ( ( RULE_ID ) ) ( ( RULE_ID )* ) )
-            // InternalXMachine.g:4368:2: ( ( RULE_ID ) ) ( ( RULE_ID )* )
+            // InternalXMachine.g:4117:1: ( ( ( RULE_ID ) ) ( ( RULE_ID )* ) )
+            // InternalXMachine.g:4118:2: ( ( RULE_ID ) ) ( ( RULE_ID )* )
             {
-            // InternalXMachine.g:4368:2: ( ( RULE_ID ) )
-            // InternalXMachine.g:4369:3: ( RULE_ID )
+            // InternalXMachine.g:4118:2: ( ( RULE_ID ) )
+            // InternalXMachine.g:4119:3: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXSyncParametersAccess().getIDTerminalRuleCall_1()); 
             }
-            // InternalXMachine.g:4370:3: ( RULE_ID )
-            // InternalXMachine.g:4370:4: RULE_ID
+            // InternalXMachine.g:4120:3: ( RULE_ID )
+            // InternalXMachine.g:4120:4: RULE_ID
             {
             match(input,RULE_ID,FOLLOW_9); if (state.failed) return ;
 
@@ -15246,26 +14350,26 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
             }
 
-            // InternalXMachine.g:4373:2: ( ( RULE_ID )* )
-            // InternalXMachine.g:4374:3: ( RULE_ID )*
+            // InternalXMachine.g:4123:2: ( ( RULE_ID )* )
+            // InternalXMachine.g:4124:3: ( RULE_ID )*
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXSyncParametersAccess().getIDTerminalRuleCall_1()); 
             }
-            // InternalXMachine.g:4375:3: ( RULE_ID )*
-            loop48:
+            // InternalXMachine.g:4125:3: ( RULE_ID )*
+            loop43:
             do {
-                int alt48=2;
-                int LA48_0 = input.LA(1);
+                int alt43=2;
+                int LA43_0 = input.LA(1);
 
-                if ( (LA48_0==RULE_ID) ) {
-                    alt48=1;
+                if ( (LA43_0==RULE_ID) ) {
+                    alt43=1;
                 }
 
 
-                switch (alt48) {
+                switch (alt43) {
             	case 1 :
-            	    // InternalXMachine.g:4375:4: RULE_ID
+            	    // InternalXMachine.g:4125:4: RULE_ID
             	    {
             	    match(input,RULE_ID,FOLLOW_9); if (state.failed) return ;
 
@@ -15273,7 +14377,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             	    break;
 
             	default :
-            	    break loop48;
+            	    break loop43;
                 }
             } while (true);
 
@@ -15305,14 +14409,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XSyncParameters__Group__2"
-    // InternalXMachine.g:4384:1: rule__XSyncParameters__Group__2 : rule__XSyncParameters__Group__2__Impl ;
+    // InternalXMachine.g:4134:1: rule__XSyncParameters__Group__2 : rule__XSyncParameters__Group__2__Impl ;
     public final void rule__XSyncParameters__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4388:1: ( rule__XSyncParameters__Group__2__Impl )
-            // InternalXMachine.g:4389:2: rule__XSyncParameters__Group__2__Impl
+            // InternalXMachine.g:4138:1: ( rule__XSyncParameters__Group__2__Impl )
+            // InternalXMachine.g:4139:2: rule__XSyncParameters__Group__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__XSyncParameters__Group__2__Impl();
@@ -15338,17 +14442,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XSyncParameters__Group__2__Impl"
-    // InternalXMachine.g:4395:1: rule__XSyncParameters__Group__2__Impl : ( ']' ) ;
+    // InternalXMachine.g:4145:1: rule__XSyncParameters__Group__2__Impl : ( ']' ) ;
     public final void rule__XSyncParameters__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4399:1: ( ( ']' ) )
-            // InternalXMachine.g:4400:1: ( ']' )
+            // InternalXMachine.g:4149:1: ( ( ']' ) )
+            // InternalXMachine.g:4150:1: ( ']' )
             {
-            // InternalXMachine.g:4400:1: ( ']' )
-            // InternalXMachine.g:4401:2: ']'
+            // InternalXMachine.g:4150:1: ( ']' )
+            // InternalXMachine.g:4151:2: ']'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXSyncParametersAccess().getRightSquareBracketKeyword_2()); 
@@ -15379,16 +14483,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__GroupSync__Group__0"
-    // InternalXMachine.g:4411:1: rule__GroupSync__Group__0 : rule__GroupSync__Group__0__Impl rule__GroupSync__Group__1 ;
+    // InternalXMachine.g:4161:1: rule__GroupSync__Group__0 : rule__GroupSync__Group__0__Impl rule__GroupSync__Group__1 ;
     public final void rule__GroupSync__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4415:1: ( rule__GroupSync__Group__0__Impl rule__GroupSync__Group__1 )
-            // InternalXMachine.g:4416:2: rule__GroupSync__Group__0__Impl rule__GroupSync__Group__1
+            // InternalXMachine.g:4165:1: ( rule__GroupSync__Group__0__Impl rule__GroupSync__Group__1 )
+            // InternalXMachine.g:4166:2: rule__GroupSync__Group__0__Impl rule__GroupSync__Group__1
             {
-            pushFollow(FOLLOW_29);
+            pushFollow(FOLLOW_26);
             rule__GroupSync__Group__0__Impl();
 
             state._fsp--;
@@ -15417,23 +14521,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__GroupSync__Group__0__Impl"
-    // InternalXMachine.g:4423:1: rule__GroupSync__Group__0__Impl : ( () ) ;
+    // InternalXMachine.g:4173:1: rule__GroupSync__Group__0__Impl : ( () ) ;
     public final void rule__GroupSync__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4427:1: ( ( () ) )
-            // InternalXMachine.g:4428:1: ( () )
+            // InternalXMachine.g:4177:1: ( ( () ) )
+            // InternalXMachine.g:4178:1: ( () )
             {
-            // InternalXMachine.g:4428:1: ( () )
-            // InternalXMachine.g:4429:2: ()
+            // InternalXMachine.g:4178:1: ( () )
+            // InternalXMachine.g:4179:2: ()
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getGroupSyncAccess().getEventSynchronisationAction_0()); 
             }
-            // InternalXMachine.g:4430:2: ()
-            // InternalXMachine.g:4430:3: 
+            // InternalXMachine.g:4180:2: ()
+            // InternalXMachine.g:4180:3: 
             {
             }
 
@@ -15458,16 +14562,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__GroupSync__Group__1"
-    // InternalXMachine.g:4438:1: rule__GroupSync__Group__1 : rule__GroupSync__Group__1__Impl rule__GroupSync__Group__2 ;
+    // InternalXMachine.g:4188:1: rule__GroupSync__Group__1 : rule__GroupSync__Group__1__Impl rule__GroupSync__Group__2 ;
     public final void rule__GroupSync__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4442:1: ( rule__GroupSync__Group__1__Impl rule__GroupSync__Group__2 )
-            // InternalXMachine.g:4443:2: rule__GroupSync__Group__1__Impl rule__GroupSync__Group__2
+            // InternalXMachine.g:4192:1: ( rule__GroupSync__Group__1__Impl rule__GroupSync__Group__2 )
+            // InternalXMachine.g:4193:2: rule__GroupSync__Group__1__Impl rule__GroupSync__Group__2
             {
-            pushFollow(FOLLOW_32);
+            pushFollow(FOLLOW_30);
             rule__GroupSync__Group__1__Impl();
 
             state._fsp--;
@@ -15496,23 +14600,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__GroupSync__Group__1__Impl"
-    // InternalXMachine.g:4450:1: rule__GroupSync__Group__1__Impl : ( ( rule__GroupSync__Group_1__0 ) ) ;
+    // InternalXMachine.g:4200:1: rule__GroupSync__Group__1__Impl : ( ( rule__GroupSync__Group_1__0 ) ) ;
     public final void rule__GroupSync__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4454:1: ( ( ( rule__GroupSync__Group_1__0 ) ) )
-            // InternalXMachine.g:4455:1: ( ( rule__GroupSync__Group_1__0 ) )
+            // InternalXMachine.g:4204:1: ( ( ( rule__GroupSync__Group_1__0 ) ) )
+            // InternalXMachine.g:4205:1: ( ( rule__GroupSync__Group_1__0 ) )
             {
-            // InternalXMachine.g:4455:1: ( ( rule__GroupSync__Group_1__0 ) )
-            // InternalXMachine.g:4456:2: ( rule__GroupSync__Group_1__0 )
+            // InternalXMachine.g:4205:1: ( ( rule__GroupSync__Group_1__0 ) )
+            // InternalXMachine.g:4206:2: ( rule__GroupSync__Group_1__0 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getGroupSyncAccess().getGroup_1()); 
             }
-            // InternalXMachine.g:4457:2: ( rule__GroupSync__Group_1__0 )
-            // InternalXMachine.g:4457:3: rule__GroupSync__Group_1__0
+            // InternalXMachine.g:4207:2: ( rule__GroupSync__Group_1__0 )
+            // InternalXMachine.g:4207:3: rule__GroupSync__Group_1__0
             {
             pushFollow(FOLLOW_2);
             rule__GroupSync__Group_1__0();
@@ -15547,14 +14651,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__GroupSync__Group__2"
-    // InternalXMachine.g:4465:1: rule__GroupSync__Group__2 : rule__GroupSync__Group__2__Impl ;
+    // InternalXMachine.g:4215:1: rule__GroupSync__Group__2 : rule__GroupSync__Group__2__Impl ;
     public final void rule__GroupSync__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4469:1: ( rule__GroupSync__Group__2__Impl )
-            // InternalXMachine.g:4470:2: rule__GroupSync__Group__2__Impl
+            // InternalXMachine.g:4219:1: ( rule__GroupSync__Group__2__Impl )
+            // InternalXMachine.g:4220:2: rule__GroupSync__Group__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__GroupSync__Group__2__Impl();
@@ -15580,31 +14684,31 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__GroupSync__Group__2__Impl"
-    // InternalXMachine.g:4476:1: rule__GroupSync__Group__2__Impl : ( ( rule__GroupSync__Group_2__0 )? ) ;
+    // InternalXMachine.g:4226:1: rule__GroupSync__Group__2__Impl : ( ( rule__GroupSync__Group_2__0 )? ) ;
     public final void rule__GroupSync__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4480:1: ( ( ( rule__GroupSync__Group_2__0 )? ) )
-            // InternalXMachine.g:4481:1: ( ( rule__GroupSync__Group_2__0 )? )
+            // InternalXMachine.g:4230:1: ( ( ( rule__GroupSync__Group_2__0 )? ) )
+            // InternalXMachine.g:4231:1: ( ( rule__GroupSync__Group_2__0 )? )
             {
-            // InternalXMachine.g:4481:1: ( ( rule__GroupSync__Group_2__0 )? )
-            // InternalXMachine.g:4482:2: ( rule__GroupSync__Group_2__0 )?
+            // InternalXMachine.g:4231:1: ( ( rule__GroupSync__Group_2__0 )? )
+            // InternalXMachine.g:4232:2: ( rule__GroupSync__Group_2__0 )?
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getGroupSyncAccess().getGroup_2()); 
             }
-            // InternalXMachine.g:4483:2: ( rule__GroupSync__Group_2__0 )?
-            int alt49=2;
-            int LA49_0 = input.LA(1);
+            // InternalXMachine.g:4233:2: ( rule__GroupSync__Group_2__0 )?
+            int alt44=2;
+            int LA44_0 = input.LA(1);
 
-            if ( (LA49_0==35) ) {
-                alt49=1;
+            if ( (LA44_0==35) ) {
+                alt44=1;
             }
-            switch (alt49) {
+            switch (alt44) {
                 case 1 :
-                    // InternalXMachine.g:4483:3: rule__GroupSync__Group_2__0
+                    // InternalXMachine.g:4233:3: rule__GroupSync__Group_2__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__GroupSync__Group_2__0();
@@ -15642,16 +14746,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__GroupSync__Group_1__0"
-    // InternalXMachine.g:4492:1: rule__GroupSync__Group_1__0 : rule__GroupSync__Group_1__0__Impl rule__GroupSync__Group_1__1 ;
+    // InternalXMachine.g:4242:1: rule__GroupSync__Group_1__0 : rule__GroupSync__Group_1__0__Impl rule__GroupSync__Group_1__1 ;
     public final void rule__GroupSync__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4496:1: ( rule__GroupSync__Group_1__0__Impl rule__GroupSync__Group_1__1 )
-            // InternalXMachine.g:4497:2: rule__GroupSync__Group_1__0__Impl rule__GroupSync__Group_1__1
+            // InternalXMachine.g:4246:1: ( rule__GroupSync__Group_1__0__Impl rule__GroupSync__Group_1__1 )
+            // InternalXMachine.g:4247:2: rule__GroupSync__Group_1__0__Impl rule__GroupSync__Group_1__1
             {
-            pushFollow(FOLLOW_18);
+            pushFollow(FOLLOW_5);
             rule__GroupSync__Group_1__0__Impl();
 
             state._fsp--;
@@ -15680,22 +14784,22 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__GroupSync__Group_1__0__Impl"
-    // InternalXMachine.g:4504:1: rule__GroupSync__Group_1__0__Impl : ( 'synchronises' ) ;
+    // InternalXMachine.g:4254:1: rule__GroupSync__Group_1__0__Impl : ( 'synchronises' ) ;
     public final void rule__GroupSync__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4508:1: ( ( 'synchronises' ) )
-            // InternalXMachine.g:4509:1: ( 'synchronises' )
+            // InternalXMachine.g:4258:1: ( ( 'synchronises' ) )
+            // InternalXMachine.g:4259:1: ( 'synchronises' )
             {
-            // InternalXMachine.g:4509:1: ( 'synchronises' )
-            // InternalXMachine.g:4510:2: 'synchronises'
+            // InternalXMachine.g:4259:1: ( 'synchronises' )
+            // InternalXMachine.g:4260:2: 'synchronises'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getGroupSyncAccess().getSynchronisesKeyword_1_0()); 
             }
-            match(input,134,FOLLOW_2); if (state.failed) return ;
+            match(input,133,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getGroupSyncAccess().getSynchronisesKeyword_1_0()); 
             }
@@ -15721,14 +14825,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__GroupSync__Group_1__1"
-    // InternalXMachine.g:4519:1: rule__GroupSync__Group_1__1 : rule__GroupSync__Group_1__1__Impl rule__GroupSync__Group_1__2 ;
+    // InternalXMachine.g:4269:1: rule__GroupSync__Group_1__1 : rule__GroupSync__Group_1__1__Impl rule__GroupSync__Group_1__2 ;
     public final void rule__GroupSync__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4523:1: ( rule__GroupSync__Group_1__1__Impl rule__GroupSync__Group_1__2 )
-            // InternalXMachine.g:4524:2: rule__GroupSync__Group_1__1__Impl rule__GroupSync__Group_1__2
+            // InternalXMachine.g:4273:1: ( rule__GroupSync__Group_1__1__Impl rule__GroupSync__Group_1__2 )
+            // InternalXMachine.g:4274:2: rule__GroupSync__Group_1__1__Impl rule__GroupSync__Group_1__2
             {
             pushFollow(FOLLOW_5);
             rule__GroupSync__Group_1__1__Impl();
@@ -15759,24 +14863,49 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__GroupSync__Group_1__1__Impl"
-    // InternalXMachine.g:4531:1: rule__GroupSync__Group_1__1__Impl : ( 'group' ) ;
+    // InternalXMachine.g:4281:1: rule__GroupSync__Group_1__1__Impl : ( ( rule__GroupSync__Group_1_1__0 )? ) ;
     public final void rule__GroupSync__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4535:1: ( ( 'group' ) )
-            // InternalXMachine.g:4536:1: ( 'group' )
+            // InternalXMachine.g:4285:1: ( ( ( rule__GroupSync__Group_1_1__0 )? ) )
+            // InternalXMachine.g:4286:1: ( ( rule__GroupSync__Group_1_1__0 )? )
             {
-            // InternalXMachine.g:4536:1: ( 'group' )
-            // InternalXMachine.g:4537:2: 'group'
+            // InternalXMachine.g:4286:1: ( ( rule__GroupSync__Group_1_1__0 )? )
+            // InternalXMachine.g:4287:2: ( rule__GroupSync__Group_1_1__0 )?
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getGroupSyncAccess().getGroupKeyword_1_1()); 
+               before(grammarAccess.getGroupSyncAccess().getGroup_1_1()); 
             }
-            match(input,126,FOLLOW_2); if (state.failed) return ;
+            // InternalXMachine.g:4288:2: ( rule__GroupSync__Group_1_1__0 )?
+            int alt45=2;
+            int LA45_0 = input.LA(1);
+
+            if ( (LA45_0==RULE_ID) ) {
+                int LA45_1 = input.LA(2);
+
+                if ( (LA45_1==51) ) {
+                    alt45=1;
+                }
+            }
+            switch (alt45) {
+                case 1 :
+                    // InternalXMachine.g:4288:3: rule__GroupSync__Group_1_1__0
+                    {
+                    pushFollow(FOLLOW_2);
+                    rule__GroupSync__Group_1_1__0();
+
+                    state._fsp--;
+                    if (state.failed) return ;
+
+                    }
+                    break;
+
+            }
+
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getGroupSyncAccess().getGroupKeyword_1_1()); 
+               after(grammarAccess.getGroupSyncAccess().getGroup_1_1()); 
             }
 
             }
@@ -15800,22 +14929,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__GroupSync__Group_1__2"
-    // InternalXMachine.g:4546:1: rule__GroupSync__Group_1__2 : rule__GroupSync__Group_1__2__Impl rule__GroupSync__Group_1__3 ;
+    // InternalXMachine.g:4296:1: rule__GroupSync__Group_1__2 : rule__GroupSync__Group_1__2__Impl ;
     public final void rule__GroupSync__Group_1__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4550:1: ( rule__GroupSync__Group_1__2__Impl rule__GroupSync__Group_1__3 )
-            // InternalXMachine.g:4551:2: rule__GroupSync__Group_1__2__Impl rule__GroupSync__Group_1__3
+            // InternalXMachine.g:4300:1: ( rule__GroupSync__Group_1__2__Impl )
+            // InternalXMachine.g:4301:2: rule__GroupSync__Group_1__2__Impl
             {
-            pushFollow(FOLLOW_5);
-            rule__GroupSync__Group_1__2__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
             pushFollow(FOLLOW_2);
-            rule__GroupSync__Group_1__3();
+            rule__GroupSync__Group_1__2__Impl();
 
             state._fsp--;
             if (state.failed) return ;
@@ -15838,49 +14962,34 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__GroupSync__Group_1__2__Impl"
-    // InternalXMachine.g:4558:1: rule__GroupSync__Group_1__2__Impl : ( ( rule__GroupSync__Group_1_2__0 )? ) ;
+    // InternalXMachine.g:4307:1: rule__GroupSync__Group_1__2__Impl : ( ( rule__GroupSync__SynchronisedCasesAssignment_1_2 ) ) ;
     public final void rule__GroupSync__Group_1__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4562:1: ( ( ( rule__GroupSync__Group_1_2__0 )? ) )
-            // InternalXMachine.g:4563:1: ( ( rule__GroupSync__Group_1_2__0 )? )
+            // InternalXMachine.g:4311:1: ( ( ( rule__GroupSync__SynchronisedCasesAssignment_1_2 ) ) )
+            // InternalXMachine.g:4312:1: ( ( rule__GroupSync__SynchronisedCasesAssignment_1_2 ) )
             {
-            // InternalXMachine.g:4563:1: ( ( rule__GroupSync__Group_1_2__0 )? )
-            // InternalXMachine.g:4564:2: ( rule__GroupSync__Group_1_2__0 )?
+            // InternalXMachine.g:4312:1: ( ( rule__GroupSync__SynchronisedCasesAssignment_1_2 ) )
+            // InternalXMachine.g:4313:2: ( rule__GroupSync__SynchronisedCasesAssignment_1_2 )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getGroupSyncAccess().getGroup_1_2()); 
+               before(grammarAccess.getGroupSyncAccess().getSynchronisedCasesAssignment_1_2()); 
             }
-            // InternalXMachine.g:4565:2: ( rule__GroupSync__Group_1_2__0 )?
-            int alt50=2;
-            int LA50_0 = input.LA(1);
+            // InternalXMachine.g:4314:2: ( rule__GroupSync__SynchronisedCasesAssignment_1_2 )
+            // InternalXMachine.g:4314:3: rule__GroupSync__SynchronisedCasesAssignment_1_2
+            {
+            pushFollow(FOLLOW_2);
+            rule__GroupSync__SynchronisedCasesAssignment_1_2();
 
-            if ( (LA50_0==RULE_ID) ) {
-                int LA50_1 = input.LA(2);
-
-                if ( (LA50_1==51) ) {
-                    alt50=1;
-                }
-            }
-            switch (alt50) {
-                case 1 :
-                    // InternalXMachine.g:4565:3: rule__GroupSync__Group_1_2__0
-                    {
-                    pushFollow(FOLLOW_2);
-                    rule__GroupSync__Group_1_2__0();
-
-                    state._fsp--;
-                    if (state.failed) return ;
-
-                    }
-                    break;
+            state._fsp--;
+            if (state.failed) return ;
 
             }
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getGroupSyncAccess().getGroup_1_2()); 
+               after(grammarAccess.getGroupSyncAccess().getSynchronisedCasesAssignment_1_2()); 
             }
 
             }
@@ -15903,18 +15012,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
     // $ANTLR end "rule__GroupSync__Group_1__2__Impl"
 
 
-    // $ANTLR start "rule__GroupSync__Group_1__3"
-    // InternalXMachine.g:4573:1: rule__GroupSync__Group_1__3 : rule__GroupSync__Group_1__3__Impl ;
-    public final void rule__GroupSync__Group_1__3() throws RecognitionException {
+    // $ANTLR start "rule__GroupSync__Group_1_1__0"
+    // InternalXMachine.g:4323:1: rule__GroupSync__Group_1_1__0 : rule__GroupSync__Group_1_1__0__Impl rule__GroupSync__Group_1_1__1 ;
+    public final void rule__GroupSync__Group_1_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4577:1: ( rule__GroupSync__Group_1__3__Impl )
-            // InternalXMachine.g:4578:2: rule__GroupSync__Group_1__3__Impl
+            // InternalXMachine.g:4327:1: ( rule__GroupSync__Group_1_1__0__Impl rule__GroupSync__Group_1_1__1 )
+            // InternalXMachine.g:4328:2: rule__GroupSync__Group_1_1__0__Impl rule__GroupSync__Group_1_1__1
             {
+            pushFollow(FOLLOW_17);
+            rule__GroupSync__Group_1_1__0__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
             pushFollow(FOLLOW_2);
-            rule__GroupSync__Group_1__3__Impl();
+            rule__GroupSync__Group_1_1__1();
 
             state._fsp--;
             if (state.failed) return ;
@@ -15933,119 +15047,30 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__GroupSync__Group_1__3"
+    // $ANTLR end "rule__GroupSync__Group_1_1__0"
 
 
-    // $ANTLR start "rule__GroupSync__Group_1__3__Impl"
-    // InternalXMachine.g:4584:1: rule__GroupSync__Group_1__3__Impl : ( ( rule__GroupSync__SynchronisedCasesAssignment_1_3 ) ) ;
-    public final void rule__GroupSync__Group_1__3__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:4588:1: ( ( ( rule__GroupSync__SynchronisedCasesAssignment_1_3 ) ) )
-            // InternalXMachine.g:4589:1: ( ( rule__GroupSync__SynchronisedCasesAssignment_1_3 ) )
-            {
-            // InternalXMachine.g:4589:1: ( ( rule__GroupSync__SynchronisedCasesAssignment_1_3 ) )
-            // InternalXMachine.g:4590:2: ( rule__GroupSync__SynchronisedCasesAssignment_1_3 )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getGroupSyncAccess().getSynchronisedCasesAssignment_1_3()); 
-            }
-            // InternalXMachine.g:4591:2: ( rule__GroupSync__SynchronisedCasesAssignment_1_3 )
-            // InternalXMachine.g:4591:3: rule__GroupSync__SynchronisedCasesAssignment_1_3
-            {
-            pushFollow(FOLLOW_2);
-            rule__GroupSync__SynchronisedCasesAssignment_1_3();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getGroupSyncAccess().getSynchronisedCasesAssignment_1_3()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__GroupSync__Group_1__3__Impl"
-
-
-    // $ANTLR start "rule__GroupSync__Group_1_2__0"
-    // InternalXMachine.g:4600:1: rule__GroupSync__Group_1_2__0 : rule__GroupSync__Group_1_2__0__Impl rule__GroupSync__Group_1_2__1 ;
-    public final void rule__GroupSync__Group_1_2__0() throws RecognitionException {
+    // $ANTLR start "rule__GroupSync__Group_1_1__0__Impl"
+    // InternalXMachine.g:4335:1: rule__GroupSync__Group_1_1__0__Impl : ( ( rule__GroupSync__PrefixAssignment_1_1_0 ) ) ;
+    public final void rule__GroupSync__Group_1_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4604:1: ( rule__GroupSync__Group_1_2__0__Impl rule__GroupSync__Group_1_2__1 )
-            // InternalXMachine.g:4605:2: rule__GroupSync__Group_1_2__0__Impl rule__GroupSync__Group_1_2__1
+            // InternalXMachine.g:4339:1: ( ( ( rule__GroupSync__PrefixAssignment_1_1_0 ) ) )
+            // InternalXMachine.g:4340:1: ( ( rule__GroupSync__PrefixAssignment_1_1_0 ) )
             {
-            pushFollow(FOLLOW_16);
-            rule__GroupSync__Group_1_2__0__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-            pushFollow(FOLLOW_2);
-            rule__GroupSync__Group_1_2__1();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__GroupSync__Group_1_2__0"
-
-
-    // $ANTLR start "rule__GroupSync__Group_1_2__0__Impl"
-    // InternalXMachine.g:4612:1: rule__GroupSync__Group_1_2__0__Impl : ( ( rule__GroupSync__PrefixAssignment_1_2_0 ) ) ;
-    public final void rule__GroupSync__Group_1_2__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:4616:1: ( ( ( rule__GroupSync__PrefixAssignment_1_2_0 ) ) )
-            // InternalXMachine.g:4617:1: ( ( rule__GroupSync__PrefixAssignment_1_2_0 ) )
-            {
-            // InternalXMachine.g:4617:1: ( ( rule__GroupSync__PrefixAssignment_1_2_0 ) )
-            // InternalXMachine.g:4618:2: ( rule__GroupSync__PrefixAssignment_1_2_0 )
+            // InternalXMachine.g:4340:1: ( ( rule__GroupSync__PrefixAssignment_1_1_0 ) )
+            // InternalXMachine.g:4341:2: ( rule__GroupSync__PrefixAssignment_1_1_0 )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getGroupSyncAccess().getPrefixAssignment_1_2_0()); 
+               before(grammarAccess.getGroupSyncAccess().getPrefixAssignment_1_1_0()); 
             }
-            // InternalXMachine.g:4619:2: ( rule__GroupSync__PrefixAssignment_1_2_0 )
-            // InternalXMachine.g:4619:3: rule__GroupSync__PrefixAssignment_1_2_0
+            // InternalXMachine.g:4342:2: ( rule__GroupSync__PrefixAssignment_1_1_0 )
+            // InternalXMachine.g:4342:3: rule__GroupSync__PrefixAssignment_1_1_0
             {
             pushFollow(FOLLOW_2);
-            rule__GroupSync__PrefixAssignment_1_2_0();
+            rule__GroupSync__PrefixAssignment_1_1_0();
 
             state._fsp--;
             if (state.failed) return ;
@@ -16053,7 +15078,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             }
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getGroupSyncAccess().getPrefixAssignment_1_2_0()); 
+               after(grammarAccess.getGroupSyncAccess().getPrefixAssignment_1_1_0()); 
             }
 
             }
@@ -16073,21 +15098,21 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__GroupSync__Group_1_2__0__Impl"
+    // $ANTLR end "rule__GroupSync__Group_1_1__0__Impl"
 
 
-    // $ANTLR start "rule__GroupSync__Group_1_2__1"
-    // InternalXMachine.g:4627:1: rule__GroupSync__Group_1_2__1 : rule__GroupSync__Group_1_2__1__Impl ;
-    public final void rule__GroupSync__Group_1_2__1() throws RecognitionException {
+    // $ANTLR start "rule__GroupSync__Group_1_1__1"
+    // InternalXMachine.g:4350:1: rule__GroupSync__Group_1_1__1 : rule__GroupSync__Group_1_1__1__Impl ;
+    public final void rule__GroupSync__Group_1_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4631:1: ( rule__GroupSync__Group_1_2__1__Impl )
-            // InternalXMachine.g:4632:2: rule__GroupSync__Group_1_2__1__Impl
+            // InternalXMachine.g:4354:1: ( rule__GroupSync__Group_1_1__1__Impl )
+            // InternalXMachine.g:4355:2: rule__GroupSync__Group_1_1__1__Impl
             {
             pushFollow(FOLLOW_2);
-            rule__GroupSync__Group_1_2__1__Impl();
+            rule__GroupSync__Group_1_1__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
@@ -16106,28 +15131,28 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__GroupSync__Group_1_2__1"
+    // $ANTLR end "rule__GroupSync__Group_1_1__1"
 
 
-    // $ANTLR start "rule__GroupSync__Group_1_2__1__Impl"
-    // InternalXMachine.g:4638:1: rule__GroupSync__Group_1_2__1__Impl : ( '.' ) ;
-    public final void rule__GroupSync__Group_1_2__1__Impl() throws RecognitionException {
+    // $ANTLR start "rule__GroupSync__Group_1_1__1__Impl"
+    // InternalXMachine.g:4361:1: rule__GroupSync__Group_1_1__1__Impl : ( '.' ) ;
+    public final void rule__GroupSync__Group_1_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4642:1: ( ( '.' ) )
-            // InternalXMachine.g:4643:1: ( '.' )
+            // InternalXMachine.g:4365:1: ( ( '.' ) )
+            // InternalXMachine.g:4366:1: ( '.' )
             {
-            // InternalXMachine.g:4643:1: ( '.' )
-            // InternalXMachine.g:4644:2: '.'
+            // InternalXMachine.g:4366:1: ( '.' )
+            // InternalXMachine.g:4367:2: '.'
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getGroupSyncAccess().getFullStopKeyword_1_2_1()); 
+               before(grammarAccess.getGroupSyncAccess().getFullStopKeyword_1_1_1()); 
             }
             match(input,51,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getGroupSyncAccess().getFullStopKeyword_1_2_1()); 
+               after(grammarAccess.getGroupSyncAccess().getFullStopKeyword_1_1_1()); 
             }
 
             }
@@ -16147,20 +15172,20 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__GroupSync__Group_1_2__1__Impl"
+    // $ANTLR end "rule__GroupSync__Group_1_1__1__Impl"
 
 
     // $ANTLR start "rule__GroupSync__Group_2__0"
-    // InternalXMachine.g:4654:1: rule__GroupSync__Group_2__0 : rule__GroupSync__Group_2__0__Impl rule__GroupSync__Group_2__1 ;
+    // InternalXMachine.g:4377:1: rule__GroupSync__Group_2__0 : rule__GroupSync__Group_2__0__Impl rule__GroupSync__Group_2__1 ;
     public final void rule__GroupSync__Group_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4658:1: ( rule__GroupSync__Group_2__0__Impl rule__GroupSync__Group_2__1 )
-            // InternalXMachine.g:4659:2: rule__GroupSync__Group_2__0__Impl rule__GroupSync__Group_2__1
+            // InternalXMachine.g:4381:1: ( rule__GroupSync__Group_2__0__Impl rule__GroupSync__Group_2__1 )
+            // InternalXMachine.g:4382:2: rule__GroupSync__Group_2__0__Impl rule__GroupSync__Group_2__1
             {
-            pushFollow(FOLLOW_33);
+            pushFollow(FOLLOW_31);
             rule__GroupSync__Group_2__0__Impl();
 
             state._fsp--;
@@ -16189,17 +15214,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__GroupSync__Group_2__0__Impl"
-    // InternalXMachine.g:4666:1: rule__GroupSync__Group_2__0__Impl : ( '(' ) ;
+    // InternalXMachine.g:4389:1: rule__GroupSync__Group_2__0__Impl : ( '(' ) ;
     public final void rule__GroupSync__Group_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4670:1: ( ( '(' ) )
-            // InternalXMachine.g:4671:1: ( '(' )
+            // InternalXMachine.g:4393:1: ( ( '(' ) )
+            // InternalXMachine.g:4394:1: ( '(' )
             {
-            // InternalXMachine.g:4671:1: ( '(' )
-            // InternalXMachine.g:4672:2: '('
+            // InternalXMachine.g:4394:1: ( '(' )
+            // InternalXMachine.g:4395:2: '('
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getGroupSyncAccess().getLeftParenthesisKeyword_2_0()); 
@@ -16230,16 +15255,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__GroupSync__Group_2__1"
-    // InternalXMachine.g:4681:1: rule__GroupSync__Group_2__1 : rule__GroupSync__Group_2__1__Impl rule__GroupSync__Group_2__2 ;
+    // InternalXMachine.g:4404:1: rule__GroupSync__Group_2__1 : rule__GroupSync__Group_2__1__Impl rule__GroupSync__Group_2__2 ;
     public final void rule__GroupSync__Group_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4685:1: ( rule__GroupSync__Group_2__1__Impl rule__GroupSync__Group_2__2 )
-            // InternalXMachine.g:4686:2: rule__GroupSync__Group_2__1__Impl rule__GroupSync__Group_2__2
+            // InternalXMachine.g:4408:1: ( rule__GroupSync__Group_2__1__Impl rule__GroupSync__Group_2__2 )
+            // InternalXMachine.g:4409:2: rule__GroupSync__Group_2__1__Impl rule__GroupSync__Group_2__2
             {
-            pushFollow(FOLLOW_21);
+            pushFollow(FOLLOW_22);
             rule__GroupSync__Group_2__1__Impl();
 
             state._fsp--;
@@ -16268,23 +15293,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__GroupSync__Group_2__1__Impl"
-    // InternalXMachine.g:4693:1: rule__GroupSync__Group_2__1__Impl : ( ( rule__GroupSync__ActualParametersAssignment_2_1 ) ) ;
+    // InternalXMachine.g:4416:1: rule__GroupSync__Group_2__1__Impl : ( ( rule__GroupSync__ActualParametersAssignment_2_1 ) ) ;
     public final void rule__GroupSync__Group_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4697:1: ( ( ( rule__GroupSync__ActualParametersAssignment_2_1 ) ) )
-            // InternalXMachine.g:4698:1: ( ( rule__GroupSync__ActualParametersAssignment_2_1 ) )
+            // InternalXMachine.g:4420:1: ( ( ( rule__GroupSync__ActualParametersAssignment_2_1 ) ) )
+            // InternalXMachine.g:4421:1: ( ( rule__GroupSync__ActualParametersAssignment_2_1 ) )
             {
-            // InternalXMachine.g:4698:1: ( ( rule__GroupSync__ActualParametersAssignment_2_1 ) )
-            // InternalXMachine.g:4699:2: ( rule__GroupSync__ActualParametersAssignment_2_1 )
+            // InternalXMachine.g:4421:1: ( ( rule__GroupSync__ActualParametersAssignment_2_1 ) )
+            // InternalXMachine.g:4422:2: ( rule__GroupSync__ActualParametersAssignment_2_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getGroupSyncAccess().getActualParametersAssignment_2_1()); 
             }
-            // InternalXMachine.g:4700:2: ( rule__GroupSync__ActualParametersAssignment_2_1 )
-            // InternalXMachine.g:4700:3: rule__GroupSync__ActualParametersAssignment_2_1
+            // InternalXMachine.g:4423:2: ( rule__GroupSync__ActualParametersAssignment_2_1 )
+            // InternalXMachine.g:4423:3: rule__GroupSync__ActualParametersAssignment_2_1
             {
             pushFollow(FOLLOW_2);
             rule__GroupSync__ActualParametersAssignment_2_1();
@@ -16319,16 +15344,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__GroupSync__Group_2__2"
-    // InternalXMachine.g:4708:1: rule__GroupSync__Group_2__2 : rule__GroupSync__Group_2__2__Impl rule__GroupSync__Group_2__3 ;
+    // InternalXMachine.g:4431:1: rule__GroupSync__Group_2__2 : rule__GroupSync__Group_2__2__Impl rule__GroupSync__Group_2__3 ;
     public final void rule__GroupSync__Group_2__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4712:1: ( rule__GroupSync__Group_2__2__Impl rule__GroupSync__Group_2__3 )
-            // InternalXMachine.g:4713:2: rule__GroupSync__Group_2__2__Impl rule__GroupSync__Group_2__3
+            // InternalXMachine.g:4435:1: ( rule__GroupSync__Group_2__2__Impl rule__GroupSync__Group_2__3 )
+            // InternalXMachine.g:4436:2: rule__GroupSync__Group_2__2__Impl rule__GroupSync__Group_2__3
             {
-            pushFollow(FOLLOW_21);
+            pushFollow(FOLLOW_22);
             rule__GroupSync__Group_2__2__Impl();
 
             state._fsp--;
@@ -16357,37 +15382,37 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__GroupSync__Group_2__2__Impl"
-    // InternalXMachine.g:4720:1: rule__GroupSync__Group_2__2__Impl : ( ( rule__GroupSync__Group_2_2__0 )* ) ;
+    // InternalXMachine.g:4443:1: rule__GroupSync__Group_2__2__Impl : ( ( rule__GroupSync__Group_2_2__0 )* ) ;
     public final void rule__GroupSync__Group_2__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4724:1: ( ( ( rule__GroupSync__Group_2_2__0 )* ) )
-            // InternalXMachine.g:4725:1: ( ( rule__GroupSync__Group_2_2__0 )* )
+            // InternalXMachine.g:4447:1: ( ( ( rule__GroupSync__Group_2_2__0 )* ) )
+            // InternalXMachine.g:4448:1: ( ( rule__GroupSync__Group_2_2__0 )* )
             {
-            // InternalXMachine.g:4725:1: ( ( rule__GroupSync__Group_2_2__0 )* )
-            // InternalXMachine.g:4726:2: ( rule__GroupSync__Group_2_2__0 )*
+            // InternalXMachine.g:4448:1: ( ( rule__GroupSync__Group_2_2__0 )* )
+            // InternalXMachine.g:4449:2: ( rule__GroupSync__Group_2_2__0 )*
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getGroupSyncAccess().getGroup_2_2()); 
             }
-            // InternalXMachine.g:4727:2: ( rule__GroupSync__Group_2_2__0 )*
-            loop51:
+            // InternalXMachine.g:4450:2: ( rule__GroupSync__Group_2_2__0 )*
+            loop46:
             do {
-                int alt51=2;
-                int LA51_0 = input.LA(1);
+                int alt46=2;
+                int LA46_0 = input.LA(1);
 
-                if ( (LA51_0==49) ) {
-                    alt51=1;
+                if ( (LA46_0==49) ) {
+                    alt46=1;
                 }
 
 
-                switch (alt51) {
+                switch (alt46) {
             	case 1 :
-            	    // InternalXMachine.g:4727:3: rule__GroupSync__Group_2_2__0
+            	    // InternalXMachine.g:4450:3: rule__GroupSync__Group_2_2__0
             	    {
-            	    pushFollow(FOLLOW_22);
+            	    pushFollow(FOLLOW_23);
             	    rule__GroupSync__Group_2_2__0();
 
             	    state._fsp--;
@@ -16397,7 +15422,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             	    break;
 
             	default :
-            	    break loop51;
+            	    break loop46;
                 }
             } while (true);
 
@@ -16426,14 +15451,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__GroupSync__Group_2__3"
-    // InternalXMachine.g:4735:1: rule__GroupSync__Group_2__3 : rule__GroupSync__Group_2__3__Impl ;
+    // InternalXMachine.g:4458:1: rule__GroupSync__Group_2__3 : rule__GroupSync__Group_2__3__Impl ;
     public final void rule__GroupSync__Group_2__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4739:1: ( rule__GroupSync__Group_2__3__Impl )
-            // InternalXMachine.g:4740:2: rule__GroupSync__Group_2__3__Impl
+            // InternalXMachine.g:4462:1: ( rule__GroupSync__Group_2__3__Impl )
+            // InternalXMachine.g:4463:2: rule__GroupSync__Group_2__3__Impl
             {
             pushFollow(FOLLOW_2);
             rule__GroupSync__Group_2__3__Impl();
@@ -16459,17 +15484,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__GroupSync__Group_2__3__Impl"
-    // InternalXMachine.g:4746:1: rule__GroupSync__Group_2__3__Impl : ( ')' ) ;
+    // InternalXMachine.g:4469:1: rule__GroupSync__Group_2__3__Impl : ( ')' ) ;
     public final void rule__GroupSync__Group_2__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4750:1: ( ( ')' ) )
-            // InternalXMachine.g:4751:1: ( ')' )
+            // InternalXMachine.g:4473:1: ( ( ')' ) )
+            // InternalXMachine.g:4474:1: ( ')' )
             {
-            // InternalXMachine.g:4751:1: ( ')' )
-            // InternalXMachine.g:4752:2: ')'
+            // InternalXMachine.g:4474:1: ( ')' )
+            // InternalXMachine.g:4475:2: ')'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getGroupSyncAccess().getRightParenthesisKeyword_2_3()); 
@@ -16500,16 +15525,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__GroupSync__Group_2_2__0"
-    // InternalXMachine.g:4762:1: rule__GroupSync__Group_2_2__0 : rule__GroupSync__Group_2_2__0__Impl rule__GroupSync__Group_2_2__1 ;
+    // InternalXMachine.g:4485:1: rule__GroupSync__Group_2_2__0 : rule__GroupSync__Group_2_2__0__Impl rule__GroupSync__Group_2_2__1 ;
     public final void rule__GroupSync__Group_2_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4766:1: ( rule__GroupSync__Group_2_2__0__Impl rule__GroupSync__Group_2_2__1 )
-            // InternalXMachine.g:4767:2: rule__GroupSync__Group_2_2__0__Impl rule__GroupSync__Group_2_2__1
+            // InternalXMachine.g:4489:1: ( rule__GroupSync__Group_2_2__0__Impl rule__GroupSync__Group_2_2__1 )
+            // InternalXMachine.g:4490:2: rule__GroupSync__Group_2_2__0__Impl rule__GroupSync__Group_2_2__1
             {
-            pushFollow(FOLLOW_33);
+            pushFollow(FOLLOW_31);
             rule__GroupSync__Group_2_2__0__Impl();
 
             state._fsp--;
@@ -16538,17 +15563,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__GroupSync__Group_2_2__0__Impl"
-    // InternalXMachine.g:4774:1: rule__GroupSync__Group_2_2__0__Impl : ( ',' ) ;
+    // InternalXMachine.g:4497:1: rule__GroupSync__Group_2_2__0__Impl : ( ',' ) ;
     public final void rule__GroupSync__Group_2_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4778:1: ( ( ',' ) )
-            // InternalXMachine.g:4779:1: ( ',' )
+            // InternalXMachine.g:4501:1: ( ( ',' ) )
+            // InternalXMachine.g:4502:1: ( ',' )
             {
-            // InternalXMachine.g:4779:1: ( ',' )
-            // InternalXMachine.g:4780:2: ','
+            // InternalXMachine.g:4502:1: ( ',' )
+            // InternalXMachine.g:4503:2: ','
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getGroupSyncAccess().getCommaKeyword_2_2_0()); 
@@ -16579,14 +15604,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__GroupSync__Group_2_2__1"
-    // InternalXMachine.g:4789:1: rule__GroupSync__Group_2_2__1 : rule__GroupSync__Group_2_2__1__Impl ;
+    // InternalXMachine.g:4512:1: rule__GroupSync__Group_2_2__1 : rule__GroupSync__Group_2_2__1__Impl ;
     public final void rule__GroupSync__Group_2_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4793:1: ( rule__GroupSync__Group_2_2__1__Impl )
-            // InternalXMachine.g:4794:2: rule__GroupSync__Group_2_2__1__Impl
+            // InternalXMachine.g:4516:1: ( rule__GroupSync__Group_2_2__1__Impl )
+            // InternalXMachine.g:4517:2: rule__GroupSync__Group_2_2__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__GroupSync__Group_2_2__1__Impl();
@@ -16612,23 +15637,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__GroupSync__Group_2_2__1__Impl"
-    // InternalXMachine.g:4800:1: rule__GroupSync__Group_2_2__1__Impl : ( ( rule__GroupSync__ActualParametersAssignment_2_2_1 ) ) ;
+    // InternalXMachine.g:4523:1: rule__GroupSync__Group_2_2__1__Impl : ( ( rule__GroupSync__ActualParametersAssignment_2_2_1 ) ) ;
     public final void rule__GroupSync__Group_2_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4804:1: ( ( ( rule__GroupSync__ActualParametersAssignment_2_2_1 ) ) )
-            // InternalXMachine.g:4805:1: ( ( rule__GroupSync__ActualParametersAssignment_2_2_1 ) )
+            // InternalXMachine.g:4527:1: ( ( ( rule__GroupSync__ActualParametersAssignment_2_2_1 ) ) )
+            // InternalXMachine.g:4528:1: ( ( rule__GroupSync__ActualParametersAssignment_2_2_1 ) )
             {
-            // InternalXMachine.g:4805:1: ( ( rule__GroupSync__ActualParametersAssignment_2_2_1 ) )
-            // InternalXMachine.g:4806:2: ( rule__GroupSync__ActualParametersAssignment_2_2_1 )
+            // InternalXMachine.g:4528:1: ( ( rule__GroupSync__ActualParametersAssignment_2_2_1 ) )
+            // InternalXMachine.g:4529:2: ( rule__GroupSync__ActualParametersAssignment_2_2_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getGroupSyncAccess().getActualParametersAssignment_2_2_1()); 
             }
-            // InternalXMachine.g:4807:2: ( rule__GroupSync__ActualParametersAssignment_2_2_1 )
-            // InternalXMachine.g:4807:3: rule__GroupSync__ActualParametersAssignment_2_2_1
+            // InternalXMachine.g:4530:2: ( rule__GroupSync__ActualParametersAssignment_2_2_1 )
+            // InternalXMachine.g:4530:3: rule__GroupSync__ActualParametersAssignment_2_2_1
             {
             pushFollow(FOLLOW_2);
             rule__GroupSync__ActualParametersAssignment_2_2_1();
@@ -16663,14 +15688,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XParameter__Group__0"
-    // InternalXMachine.g:4816:1: rule__XParameter__Group__0 : rule__XParameter__Group__0__Impl rule__XParameter__Group__1 ;
+    // InternalXMachine.g:4539:1: rule__XParameter__Group__0 : rule__XParameter__Group__0__Impl rule__XParameter__Group__1 ;
     public final void rule__XParameter__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4820:1: ( rule__XParameter__Group__0__Impl rule__XParameter__Group__1 )
-            // InternalXMachine.g:4821:2: rule__XParameter__Group__0__Impl rule__XParameter__Group__1
+            // InternalXMachine.g:4543:1: ( rule__XParameter__Group__0__Impl rule__XParameter__Group__1 )
+            // InternalXMachine.g:4544:2: rule__XParameter__Group__0__Impl rule__XParameter__Group__1
             {
             pushFollow(FOLLOW_5);
             rule__XParameter__Group__0__Impl();
@@ -16701,23 +15726,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XParameter__Group__0__Impl"
-    // InternalXMachine.g:4828:1: rule__XParameter__Group__0__Impl : ( () ) ;
+    // InternalXMachine.g:4551:1: rule__XParameter__Group__0__Impl : ( () ) ;
     public final void rule__XParameter__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4832:1: ( ( () ) )
-            // InternalXMachine.g:4833:1: ( () )
+            // InternalXMachine.g:4555:1: ( ( () ) )
+            // InternalXMachine.g:4556:1: ( () )
             {
-            // InternalXMachine.g:4833:1: ( () )
-            // InternalXMachine.g:4834:2: ()
+            // InternalXMachine.g:4556:1: ( () )
+            // InternalXMachine.g:4557:2: ()
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXParameterAccess().getParameterAction_0()); 
             }
-            // InternalXMachine.g:4835:2: ()
-            // InternalXMachine.g:4835:3: 
+            // InternalXMachine.g:4558:2: ()
+            // InternalXMachine.g:4558:3: 
             {
             }
 
@@ -16742,14 +15767,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XParameter__Group__1"
-    // InternalXMachine.g:4843:1: rule__XParameter__Group__1 : rule__XParameter__Group__1__Impl ;
+    // InternalXMachine.g:4566:1: rule__XParameter__Group__1 : rule__XParameter__Group__1__Impl ;
     public final void rule__XParameter__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4847:1: ( rule__XParameter__Group__1__Impl )
-            // InternalXMachine.g:4848:2: rule__XParameter__Group__1__Impl
+            // InternalXMachine.g:4570:1: ( rule__XParameter__Group__1__Impl )
+            // InternalXMachine.g:4571:2: rule__XParameter__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__XParameter__Group__1__Impl();
@@ -16775,23 +15800,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XParameter__Group__1__Impl"
-    // InternalXMachine.g:4854:1: rule__XParameter__Group__1__Impl : ( ( rule__XParameter__NameAssignment_1 ) ) ;
+    // InternalXMachine.g:4577:1: rule__XParameter__Group__1__Impl : ( ( rule__XParameter__NameAssignment_1 ) ) ;
     public final void rule__XParameter__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4858:1: ( ( ( rule__XParameter__NameAssignment_1 ) ) )
-            // InternalXMachine.g:4859:1: ( ( rule__XParameter__NameAssignment_1 ) )
+            // InternalXMachine.g:4581:1: ( ( ( rule__XParameter__NameAssignment_1 ) ) )
+            // InternalXMachine.g:4582:1: ( ( rule__XParameter__NameAssignment_1 ) )
             {
-            // InternalXMachine.g:4859:1: ( ( rule__XParameter__NameAssignment_1 ) )
-            // InternalXMachine.g:4860:2: ( rule__XParameter__NameAssignment_1 )
+            // InternalXMachine.g:4582:1: ( ( rule__XParameter__NameAssignment_1 ) )
+            // InternalXMachine.g:4583:2: ( rule__XParameter__NameAssignment_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXParameterAccess().getNameAssignment_1()); 
             }
-            // InternalXMachine.g:4861:2: ( rule__XParameter__NameAssignment_1 )
-            // InternalXMachine.g:4861:3: rule__XParameter__NameAssignment_1
+            // InternalXMachine.g:4584:2: ( rule__XParameter__NameAssignment_1 )
+            // InternalXMachine.g:4584:3: rule__XParameter__NameAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__XParameter__NameAssignment_1();
@@ -16826,14 +15851,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGuard__Group__0"
-    // InternalXMachine.g:4870:1: rule__XGuard__Group__0 : rule__XGuard__Group__0__Impl rule__XGuard__Group__1 ;
+    // InternalXMachine.g:4593:1: rule__XGuard__Group__0 : rule__XGuard__Group__0__Impl rule__XGuard__Group__1 ;
     public final void rule__XGuard__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4874:1: ( rule__XGuard__Group__0__Impl rule__XGuard__Group__1 )
-            // InternalXMachine.g:4875:2: rule__XGuard__Group__0__Impl rule__XGuard__Group__1
+            // InternalXMachine.g:4597:1: ( rule__XGuard__Group__0__Impl rule__XGuard__Group__1 )
+            // InternalXMachine.g:4598:2: rule__XGuard__Group__0__Impl rule__XGuard__Group__1
             {
             pushFollow(FOLLOW_10);
             rule__XGuard__Group__0__Impl();
@@ -16864,23 +15889,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGuard__Group__0__Impl"
-    // InternalXMachine.g:4882:1: rule__XGuard__Group__0__Impl : ( () ) ;
+    // InternalXMachine.g:4605:1: rule__XGuard__Group__0__Impl : ( () ) ;
     public final void rule__XGuard__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4886:1: ( ( () ) )
-            // InternalXMachine.g:4887:1: ( () )
+            // InternalXMachine.g:4609:1: ( ( () ) )
+            // InternalXMachine.g:4610:1: ( () )
             {
-            // InternalXMachine.g:4887:1: ( () )
-            // InternalXMachine.g:4888:2: ()
+            // InternalXMachine.g:4610:1: ( () )
+            // InternalXMachine.g:4611:2: ()
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXGuardAccess().getGuardAction_0()); 
             }
-            // InternalXMachine.g:4889:2: ()
-            // InternalXMachine.g:4889:3: 
+            // InternalXMachine.g:4612:2: ()
+            // InternalXMachine.g:4612:3: 
             {
             }
 
@@ -16905,16 +15930,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGuard__Group__1"
-    // InternalXMachine.g:4897:1: rule__XGuard__Group__1 : rule__XGuard__Group__1__Impl rule__XGuard__Group__2 ;
+    // InternalXMachine.g:4620:1: rule__XGuard__Group__1 : rule__XGuard__Group__1__Impl rule__XGuard__Group__2 ;
     public final void rule__XGuard__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4901:1: ( rule__XGuard__Group__1__Impl rule__XGuard__Group__2 )
-            // InternalXMachine.g:4902:2: rule__XGuard__Group__1__Impl rule__XGuard__Group__2
+            // InternalXMachine.g:4624:1: ( rule__XGuard__Group__1__Impl rule__XGuard__Group__2 )
+            // InternalXMachine.g:4625:2: rule__XGuard__Group__1__Impl rule__XGuard__Group__2
             {
-            pushFollow(FOLLOW_12);
+            pushFollow(FOLLOW_10);
             rule__XGuard__Group__1__Impl();
 
             state._fsp--;
@@ -16943,34 +15968,45 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGuard__Group__1__Impl"
-    // InternalXMachine.g:4909:1: rule__XGuard__Group__1__Impl : ( ( rule__XGuard__NameAssignment_1 ) ) ;
+    // InternalXMachine.g:4632:1: rule__XGuard__Group__1__Impl : ( ( rule__XGuard__TheoremAssignment_1 )? ) ;
     public final void rule__XGuard__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4913:1: ( ( ( rule__XGuard__NameAssignment_1 ) ) )
-            // InternalXMachine.g:4914:1: ( ( rule__XGuard__NameAssignment_1 ) )
+            // InternalXMachine.g:4636:1: ( ( ( rule__XGuard__TheoremAssignment_1 )? ) )
+            // InternalXMachine.g:4637:1: ( ( rule__XGuard__TheoremAssignment_1 )? )
             {
-            // InternalXMachine.g:4914:1: ( ( rule__XGuard__NameAssignment_1 ) )
-            // InternalXMachine.g:4915:2: ( rule__XGuard__NameAssignment_1 )
+            // InternalXMachine.g:4637:1: ( ( rule__XGuard__TheoremAssignment_1 )? )
+            // InternalXMachine.g:4638:2: ( rule__XGuard__TheoremAssignment_1 )?
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXGuardAccess().getNameAssignment_1()); 
+               before(grammarAccess.getXGuardAccess().getTheoremAssignment_1()); 
             }
-            // InternalXMachine.g:4916:2: ( rule__XGuard__NameAssignment_1 )
-            // InternalXMachine.g:4916:3: rule__XGuard__NameAssignment_1
-            {
-            pushFollow(FOLLOW_2);
-            rule__XGuard__NameAssignment_1();
+            // InternalXMachine.g:4639:2: ( rule__XGuard__TheoremAssignment_1 )?
+            int alt47=2;
+            int LA47_0 = input.LA(1);
 
-            state._fsp--;
-            if (state.failed) return ;
+            if ( (LA47_0==136) ) {
+                alt47=1;
+            }
+            switch (alt47) {
+                case 1 :
+                    // InternalXMachine.g:4639:3: rule__XGuard__TheoremAssignment_1
+                    {
+                    pushFollow(FOLLOW_2);
+                    rule__XGuard__TheoremAssignment_1();
+
+                    state._fsp--;
+                    if (state.failed) return ;
+
+                    }
+                    break;
 
             }
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXGuardAccess().getNameAssignment_1()); 
+               after(grammarAccess.getXGuardAccess().getTheoremAssignment_1()); 
             }
 
             }
@@ -16994,16 +16030,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGuard__Group__2"
-    // InternalXMachine.g:4924:1: rule__XGuard__Group__2 : rule__XGuard__Group__2__Impl rule__XGuard__Group__3 ;
+    // InternalXMachine.g:4647:1: rule__XGuard__Group__2 : rule__XGuard__Group__2__Impl rule__XGuard__Group__3 ;
     public final void rule__XGuard__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4928:1: ( rule__XGuard__Group__2__Impl rule__XGuard__Group__3 )
-            // InternalXMachine.g:4929:2: rule__XGuard__Group__2__Impl rule__XGuard__Group__3
+            // InternalXMachine.g:4651:1: ( rule__XGuard__Group__2__Impl rule__XGuard__Group__3 )
+            // InternalXMachine.g:4652:2: rule__XGuard__Group__2__Impl rule__XGuard__Group__3
             {
-            pushFollow(FOLLOW_17);
+            pushFollow(FOLLOW_18);
             rule__XGuard__Group__2__Impl();
 
             state._fsp--;
@@ -17032,26 +16068,26 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGuard__Group__2__Impl"
-    // InternalXMachine.g:4936:1: rule__XGuard__Group__2__Impl : ( ( rule__XGuard__PredicateAssignment_2 ) ) ;
+    // InternalXMachine.g:4659:1: rule__XGuard__Group__2__Impl : ( ( rule__XGuard__NameAssignment_2 ) ) ;
     public final void rule__XGuard__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4940:1: ( ( ( rule__XGuard__PredicateAssignment_2 ) ) )
-            // InternalXMachine.g:4941:1: ( ( rule__XGuard__PredicateAssignment_2 ) )
+            // InternalXMachine.g:4663:1: ( ( ( rule__XGuard__NameAssignment_2 ) ) )
+            // InternalXMachine.g:4664:1: ( ( rule__XGuard__NameAssignment_2 ) )
             {
-            // InternalXMachine.g:4941:1: ( ( rule__XGuard__PredicateAssignment_2 ) )
-            // InternalXMachine.g:4942:2: ( rule__XGuard__PredicateAssignment_2 )
+            // InternalXMachine.g:4664:1: ( ( rule__XGuard__NameAssignment_2 ) )
+            // InternalXMachine.g:4665:2: ( rule__XGuard__NameAssignment_2 )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXGuardAccess().getPredicateAssignment_2()); 
+               before(grammarAccess.getXGuardAccess().getNameAssignment_2()); 
             }
-            // InternalXMachine.g:4943:2: ( rule__XGuard__PredicateAssignment_2 )
-            // InternalXMachine.g:4943:3: rule__XGuard__PredicateAssignment_2
+            // InternalXMachine.g:4666:2: ( rule__XGuard__NameAssignment_2 )
+            // InternalXMachine.g:4666:3: rule__XGuard__NameAssignment_2
             {
             pushFollow(FOLLOW_2);
-            rule__XGuard__PredicateAssignment_2();
+            rule__XGuard__NameAssignment_2();
 
             state._fsp--;
             if (state.failed) return ;
@@ -17059,7 +16095,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             }
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXGuardAccess().getPredicateAssignment_2()); 
+               after(grammarAccess.getXGuardAccess().getNameAssignment_2()); 
             }
 
             }
@@ -17083,14 +16119,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGuard__Group__3"
-    // InternalXMachine.g:4951:1: rule__XGuard__Group__3 : rule__XGuard__Group__3__Impl ;
+    // InternalXMachine.g:4674:1: rule__XGuard__Group__3 : rule__XGuard__Group__3__Impl ;
     public final void rule__XGuard__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4955:1: ( rule__XGuard__Group__3__Impl )
-            // InternalXMachine.g:4956:2: rule__XGuard__Group__3__Impl
+            // InternalXMachine.g:4678:1: ( rule__XGuard__Group__3__Impl )
+            // InternalXMachine.g:4679:2: rule__XGuard__Group__3__Impl
             {
             pushFollow(FOLLOW_2);
             rule__XGuard__Group__3__Impl();
@@ -17116,45 +16152,34 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGuard__Group__3__Impl"
-    // InternalXMachine.g:4962:1: rule__XGuard__Group__3__Impl : ( ( rule__XGuard__TheoremAssignment_3 )? ) ;
+    // InternalXMachine.g:4685:1: rule__XGuard__Group__3__Impl : ( ( rule__XGuard__PredicateAssignment_3 ) ) ;
     public final void rule__XGuard__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4966:1: ( ( ( rule__XGuard__TheoremAssignment_3 )? ) )
-            // InternalXMachine.g:4967:1: ( ( rule__XGuard__TheoremAssignment_3 )? )
+            // InternalXMachine.g:4689:1: ( ( ( rule__XGuard__PredicateAssignment_3 ) ) )
+            // InternalXMachine.g:4690:1: ( ( rule__XGuard__PredicateAssignment_3 ) )
             {
-            // InternalXMachine.g:4967:1: ( ( rule__XGuard__TheoremAssignment_3 )? )
-            // InternalXMachine.g:4968:2: ( rule__XGuard__TheoremAssignment_3 )?
+            // InternalXMachine.g:4690:1: ( ( rule__XGuard__PredicateAssignment_3 ) )
+            // InternalXMachine.g:4691:2: ( rule__XGuard__PredicateAssignment_3 )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXGuardAccess().getTheoremAssignment_3()); 
+               before(grammarAccess.getXGuardAccess().getPredicateAssignment_3()); 
             }
-            // InternalXMachine.g:4969:2: ( rule__XGuard__TheoremAssignment_3 )?
-            int alt52=2;
-            int LA52_0 = input.LA(1);
+            // InternalXMachine.g:4692:2: ( rule__XGuard__PredicateAssignment_3 )
+            // InternalXMachine.g:4692:3: rule__XGuard__PredicateAssignment_3
+            {
+            pushFollow(FOLLOW_2);
+            rule__XGuard__PredicateAssignment_3();
 
-            if ( (LA52_0==137) ) {
-                alt52=1;
-            }
-            switch (alt52) {
-                case 1 :
-                    // InternalXMachine.g:4969:3: rule__XGuard__TheoremAssignment_3
-                    {
-                    pushFollow(FOLLOW_2);
-                    rule__XGuard__TheoremAssignment_3();
-
-                    state._fsp--;
-                    if (state.failed) return ;
-
-                    }
-                    break;
+            state._fsp--;
+            if (state.failed) return ;
 
             }
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXGuardAccess().getTheoremAssignment_3()); 
+               after(grammarAccess.getXGuardAccess().getPredicateAssignment_3()); 
             }
 
             }
@@ -17178,16 +16203,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XWitness__Group__0"
-    // InternalXMachine.g:4978:1: rule__XWitness__Group__0 : rule__XWitness__Group__0__Impl rule__XWitness__Group__1 ;
+    // InternalXMachine.g:4701:1: rule__XWitness__Group__0 : rule__XWitness__Group__0__Impl rule__XWitness__Group__1 ;
     public final void rule__XWitness__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4982:1: ( rule__XWitness__Group__0__Impl rule__XWitness__Group__1 )
-            // InternalXMachine.g:4983:2: rule__XWitness__Group__0__Impl rule__XWitness__Group__1
+            // InternalXMachine.g:4705:1: ( rule__XWitness__Group__0__Impl rule__XWitness__Group__1 )
+            // InternalXMachine.g:4706:2: rule__XWitness__Group__0__Impl rule__XWitness__Group__1
             {
-            pushFollow(FOLLOW_10);
+            pushFollow(FOLLOW_12);
             rule__XWitness__Group__0__Impl();
 
             state._fsp--;
@@ -17216,23 +16241,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XWitness__Group__0__Impl"
-    // InternalXMachine.g:4990:1: rule__XWitness__Group__0__Impl : ( () ) ;
+    // InternalXMachine.g:4713:1: rule__XWitness__Group__0__Impl : ( () ) ;
     public final void rule__XWitness__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:4994:1: ( ( () ) )
-            // InternalXMachine.g:4995:1: ( () )
+            // InternalXMachine.g:4717:1: ( ( () ) )
+            // InternalXMachine.g:4718:1: ( () )
             {
-            // InternalXMachine.g:4995:1: ( () )
-            // InternalXMachine.g:4996:2: ()
+            // InternalXMachine.g:4718:1: ( () )
+            // InternalXMachine.g:4719:2: ()
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXWitnessAccess().getWitnessAction_0()); 
             }
-            // InternalXMachine.g:4997:2: ()
-            // InternalXMachine.g:4997:3: 
+            // InternalXMachine.g:4720:2: ()
+            // InternalXMachine.g:4720:3: 
             {
             }
 
@@ -17257,16 +16282,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XWitness__Group__1"
-    // InternalXMachine.g:5005:1: rule__XWitness__Group__1 : rule__XWitness__Group__1__Impl rule__XWitness__Group__2 ;
+    // InternalXMachine.g:4728:1: rule__XWitness__Group__1 : rule__XWitness__Group__1__Impl rule__XWitness__Group__2 ;
     public final void rule__XWitness__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5009:1: ( rule__XWitness__Group__1__Impl rule__XWitness__Group__2 )
-            // InternalXMachine.g:5010:2: rule__XWitness__Group__1__Impl rule__XWitness__Group__2
+            // InternalXMachine.g:4732:1: ( rule__XWitness__Group__1__Impl rule__XWitness__Group__2 )
+            // InternalXMachine.g:4733:2: rule__XWitness__Group__1__Impl rule__XWitness__Group__2
             {
-            pushFollow(FOLLOW_12);
+            pushFollow(FOLLOW_18);
             rule__XWitness__Group__1__Impl();
 
             state._fsp--;
@@ -17295,23 +16320,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XWitness__Group__1__Impl"
-    // InternalXMachine.g:5017:1: rule__XWitness__Group__1__Impl : ( ( rule__XWitness__NameAssignment_1 ) ) ;
+    // InternalXMachine.g:4740:1: rule__XWitness__Group__1__Impl : ( ( rule__XWitness__NameAssignment_1 ) ) ;
     public final void rule__XWitness__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5021:1: ( ( ( rule__XWitness__NameAssignment_1 ) ) )
-            // InternalXMachine.g:5022:1: ( ( rule__XWitness__NameAssignment_1 ) )
+            // InternalXMachine.g:4744:1: ( ( ( rule__XWitness__NameAssignment_1 ) ) )
+            // InternalXMachine.g:4745:1: ( ( rule__XWitness__NameAssignment_1 ) )
             {
-            // InternalXMachine.g:5022:1: ( ( rule__XWitness__NameAssignment_1 ) )
-            // InternalXMachine.g:5023:2: ( rule__XWitness__NameAssignment_1 )
+            // InternalXMachine.g:4745:1: ( ( rule__XWitness__NameAssignment_1 ) )
+            // InternalXMachine.g:4746:2: ( rule__XWitness__NameAssignment_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXWitnessAccess().getNameAssignment_1()); 
             }
-            // InternalXMachine.g:5024:2: ( rule__XWitness__NameAssignment_1 )
-            // InternalXMachine.g:5024:3: rule__XWitness__NameAssignment_1
+            // InternalXMachine.g:4747:2: ( rule__XWitness__NameAssignment_1 )
+            // InternalXMachine.g:4747:3: rule__XWitness__NameAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__XWitness__NameAssignment_1();
@@ -17346,14 +16371,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XWitness__Group__2"
-    // InternalXMachine.g:5032:1: rule__XWitness__Group__2 : rule__XWitness__Group__2__Impl ;
+    // InternalXMachine.g:4755:1: rule__XWitness__Group__2 : rule__XWitness__Group__2__Impl ;
     public final void rule__XWitness__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5036:1: ( rule__XWitness__Group__2__Impl )
-            // InternalXMachine.g:5037:2: rule__XWitness__Group__2__Impl
+            // InternalXMachine.g:4759:1: ( rule__XWitness__Group__2__Impl )
+            // InternalXMachine.g:4760:2: rule__XWitness__Group__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__XWitness__Group__2__Impl();
@@ -17379,23 +16404,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XWitness__Group__2__Impl"
-    // InternalXMachine.g:5043:1: rule__XWitness__Group__2__Impl : ( ( rule__XWitness__PredicateAssignment_2 ) ) ;
+    // InternalXMachine.g:4766:1: rule__XWitness__Group__2__Impl : ( ( rule__XWitness__PredicateAssignment_2 ) ) ;
     public final void rule__XWitness__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5047:1: ( ( ( rule__XWitness__PredicateAssignment_2 ) ) )
-            // InternalXMachine.g:5048:1: ( ( rule__XWitness__PredicateAssignment_2 ) )
+            // InternalXMachine.g:4770:1: ( ( ( rule__XWitness__PredicateAssignment_2 ) ) )
+            // InternalXMachine.g:4771:1: ( ( rule__XWitness__PredicateAssignment_2 ) )
             {
-            // InternalXMachine.g:5048:1: ( ( rule__XWitness__PredicateAssignment_2 ) )
-            // InternalXMachine.g:5049:2: ( rule__XWitness__PredicateAssignment_2 )
+            // InternalXMachine.g:4771:1: ( ( rule__XWitness__PredicateAssignment_2 ) )
+            // InternalXMachine.g:4772:2: ( rule__XWitness__PredicateAssignment_2 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXWitnessAccess().getPredicateAssignment_2()); 
             }
-            // InternalXMachine.g:5050:2: ( rule__XWitness__PredicateAssignment_2 )
-            // InternalXMachine.g:5050:3: rule__XWitness__PredicateAssignment_2
+            // InternalXMachine.g:4773:2: ( rule__XWitness__PredicateAssignment_2 )
+            // InternalXMachine.g:4773:3: rule__XWitness__PredicateAssignment_2
             {
             pushFollow(FOLLOW_2);
             rule__XWitness__PredicateAssignment_2();
@@ -17430,16 +16455,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XAction__Group__0"
-    // InternalXMachine.g:5059:1: rule__XAction__Group__0 : rule__XAction__Group__0__Impl rule__XAction__Group__1 ;
+    // InternalXMachine.g:4782:1: rule__XAction__Group__0 : rule__XAction__Group__0__Impl rule__XAction__Group__1 ;
     public final void rule__XAction__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5063:1: ( rule__XAction__Group__0__Impl rule__XAction__Group__1 )
-            // InternalXMachine.g:5064:2: rule__XAction__Group__0__Impl rule__XAction__Group__1
+            // InternalXMachine.g:4786:1: ( rule__XAction__Group__0__Impl rule__XAction__Group__1 )
+            // InternalXMachine.g:4787:2: rule__XAction__Group__0__Impl rule__XAction__Group__1
             {
-            pushFollow(FOLLOW_10);
+            pushFollow(FOLLOW_12);
             rule__XAction__Group__0__Impl();
 
             state._fsp--;
@@ -17468,23 +16493,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XAction__Group__0__Impl"
-    // InternalXMachine.g:5071:1: rule__XAction__Group__0__Impl : ( () ) ;
+    // InternalXMachine.g:4794:1: rule__XAction__Group__0__Impl : ( () ) ;
     public final void rule__XAction__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5075:1: ( ( () ) )
-            // InternalXMachine.g:5076:1: ( () )
+            // InternalXMachine.g:4798:1: ( ( () ) )
+            // InternalXMachine.g:4799:1: ( () )
             {
-            // InternalXMachine.g:5076:1: ( () )
-            // InternalXMachine.g:5077:2: ()
+            // InternalXMachine.g:4799:1: ( () )
+            // InternalXMachine.g:4800:2: ()
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXActionAccess().getActionAction_0()); 
             }
-            // InternalXMachine.g:5078:2: ()
-            // InternalXMachine.g:5078:3: 
+            // InternalXMachine.g:4801:2: ()
+            // InternalXMachine.g:4801:3: 
             {
             }
 
@@ -17509,16 +16534,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XAction__Group__1"
-    // InternalXMachine.g:5086:1: rule__XAction__Group__1 : rule__XAction__Group__1__Impl rule__XAction__Group__2 ;
+    // InternalXMachine.g:4809:1: rule__XAction__Group__1 : rule__XAction__Group__1__Impl rule__XAction__Group__2 ;
     public final void rule__XAction__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5090:1: ( rule__XAction__Group__1__Impl rule__XAction__Group__2 )
-            // InternalXMachine.g:5091:2: rule__XAction__Group__1__Impl rule__XAction__Group__2
+            // InternalXMachine.g:4813:1: ( rule__XAction__Group__1__Impl rule__XAction__Group__2 )
+            // InternalXMachine.g:4814:2: rule__XAction__Group__1__Impl rule__XAction__Group__2
             {
-            pushFollow(FOLLOW_12);
+            pushFollow(FOLLOW_18);
             rule__XAction__Group__1__Impl();
 
             state._fsp--;
@@ -17547,23 +16572,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XAction__Group__1__Impl"
-    // InternalXMachine.g:5098:1: rule__XAction__Group__1__Impl : ( ( rule__XAction__NameAssignment_1 ) ) ;
+    // InternalXMachine.g:4821:1: rule__XAction__Group__1__Impl : ( ( rule__XAction__NameAssignment_1 ) ) ;
     public final void rule__XAction__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5102:1: ( ( ( rule__XAction__NameAssignment_1 ) ) )
-            // InternalXMachine.g:5103:1: ( ( rule__XAction__NameAssignment_1 ) )
+            // InternalXMachine.g:4825:1: ( ( ( rule__XAction__NameAssignment_1 ) ) )
+            // InternalXMachine.g:4826:1: ( ( rule__XAction__NameAssignment_1 ) )
             {
-            // InternalXMachine.g:5103:1: ( ( rule__XAction__NameAssignment_1 ) )
-            // InternalXMachine.g:5104:2: ( rule__XAction__NameAssignment_1 )
+            // InternalXMachine.g:4826:1: ( ( rule__XAction__NameAssignment_1 ) )
+            // InternalXMachine.g:4827:2: ( rule__XAction__NameAssignment_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXActionAccess().getNameAssignment_1()); 
             }
-            // InternalXMachine.g:5105:2: ( rule__XAction__NameAssignment_1 )
-            // InternalXMachine.g:5105:3: rule__XAction__NameAssignment_1
+            // InternalXMachine.g:4828:2: ( rule__XAction__NameAssignment_1 )
+            // InternalXMachine.g:4828:3: rule__XAction__NameAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__XAction__NameAssignment_1();
@@ -17598,14 +16623,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XAction__Group__2"
-    // InternalXMachine.g:5113:1: rule__XAction__Group__2 : rule__XAction__Group__2__Impl ;
+    // InternalXMachine.g:4836:1: rule__XAction__Group__2 : rule__XAction__Group__2__Impl ;
     public final void rule__XAction__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5117:1: ( rule__XAction__Group__2__Impl )
-            // InternalXMachine.g:5118:2: rule__XAction__Group__2__Impl
+            // InternalXMachine.g:4840:1: ( rule__XAction__Group__2__Impl )
+            // InternalXMachine.g:4841:2: rule__XAction__Group__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__XAction__Group__2__Impl();
@@ -17631,23 +16656,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XAction__Group__2__Impl"
-    // InternalXMachine.g:5124:1: rule__XAction__Group__2__Impl : ( ( rule__XAction__ActionAssignment_2 ) ) ;
+    // InternalXMachine.g:4847:1: rule__XAction__Group__2__Impl : ( ( rule__XAction__ActionAssignment_2 ) ) ;
     public final void rule__XAction__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5128:1: ( ( ( rule__XAction__ActionAssignment_2 ) ) )
-            // InternalXMachine.g:5129:1: ( ( rule__XAction__ActionAssignment_2 ) )
+            // InternalXMachine.g:4851:1: ( ( ( rule__XAction__ActionAssignment_2 ) ) )
+            // InternalXMachine.g:4852:1: ( ( rule__XAction__ActionAssignment_2 ) )
             {
-            // InternalXMachine.g:5129:1: ( ( rule__XAction__ActionAssignment_2 ) )
-            // InternalXMachine.g:5130:2: ( rule__XAction__ActionAssignment_2 )
+            // InternalXMachine.g:4852:1: ( ( rule__XAction__ActionAssignment_2 ) )
+            // InternalXMachine.g:4853:2: ( rule__XAction__ActionAssignment_2 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXActionAccess().getActionAssignment_2()); 
             }
-            // InternalXMachine.g:5131:2: ( rule__XAction__ActionAssignment_2 )
-            // InternalXMachine.g:5131:3: rule__XAction__ActionAssignment_2
+            // InternalXMachine.g:4854:2: ( rule__XAction__ActionAssignment_2 )
+            // InternalXMachine.g:4854:3: rule__XAction__ActionAssignment_2
             {
             pushFollow(FOLLOW_2);
             rule__XAction__ActionAssignment_2();
@@ -17682,16 +16707,16 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0"
-    // InternalXMachine.g:5140:1: rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0 : rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0__Impl rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1 ;
+    // InternalXMachine.g:4863:1: rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0 : rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0__Impl rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1 ;
     public final void rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5144:1: ( rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0__Impl rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1 )
-            // InternalXMachine.g:5145:2: rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0__Impl rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1
+            // InternalXMachine.g:4867:1: ( rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0__Impl rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1 )
+            // InternalXMachine.g:4868:2: rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0__Impl rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1
             {
-            pushFollow(FOLLOW_34);
+            pushFollow(FOLLOW_32);
             rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0__Impl();
 
             state._fsp--;
@@ -17720,22 +16745,22 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0__Impl"
-    // InternalXMachine.g:5152:1: rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0__Impl : ( '%' ) ;
+    // InternalXMachine.g:4875:1: rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0__Impl : ( '%' ) ;
     public final void rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5156:1: ( ( '%' ) )
-            // InternalXMachine.g:5157:1: ( '%' )
+            // InternalXMachine.g:4879:1: ( ( '%' ) )
+            // InternalXMachine.g:4880:1: ( '%' )
             {
-            // InternalXMachine.g:5157:1: ( '%' )
-            // InternalXMachine.g:5158:2: '%'
+            // InternalXMachine.g:4880:1: ( '%' )
+            // InternalXMachine.g:4881:2: '%'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getPercentSignKeyword_32_0()); 
             }
-            match(input,135,FOLLOW_2); if (state.failed) return ;
+            match(input,134,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getPercentSignKeyword_32_0()); 
             }
@@ -17761,14 +16786,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1"
-    // InternalXMachine.g:5167:1: rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1 : rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1__Impl ;
+    // InternalXMachine.g:4890:1: rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1 : rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1__Impl ;
     public final void rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5171:1: ( rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1__Impl )
-            // InternalXMachine.g:5172:2: rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1__Impl
+            // InternalXMachine.g:4894:1: ( rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1__Impl )
+            // InternalXMachine.g:4895:2: rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1__Impl();
@@ -17794,22 +16819,22 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1__Impl"
-    // InternalXMachine.g:5178:1: rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1__Impl : ( '\\u22C2' ) ;
+    // InternalXMachine.g:4901:1: rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1__Impl : ( '\\u22C2' ) ;
     public final void rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5182:1: ( ( '\\u22C2' ) )
-            // InternalXMachine.g:5183:1: ( '\\u22C2' )
+            // InternalXMachine.g:4905:1: ( ( '\\u22C2' ) )
+            // InternalXMachine.g:4906:1: ( '\\u22C2' )
             {
-            // InternalXMachine.g:5183:1: ( '\\u22C2' )
-            // InternalXMachine.g:5184:2: '\\u22C2'
+            // InternalXMachine.g:4906:1: ( '\\u22C2' )
+            // InternalXMachine.g:4907:2: '\\u22C2'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getNAryIntersectionKeyword_32_1()); 
             }
-            match(input,136,FOLLOW_2); if (state.failed) return ;
+            match(input,135,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getNAryIntersectionKeyword_32_1()); 
             }
@@ -17835,32 +16860,32 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__UnorderedGroup_3"
-    // InternalXMachine.g:5194:1: rule__Machine__UnorderedGroup_3 : ( rule__Machine__UnorderedGroup_3__0 )? ;
+    // InternalXMachine.g:4917:1: rule__Machine__UnorderedGroup_3 : ( rule__Machine__UnorderedGroup_3__0 )? ;
     public final void rule__Machine__UnorderedGroup_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         		getUnorderedGroupHelper().enter(grammarAccess.getMachineAccess().getUnorderedGroup_3());
         	
         try {
-            // InternalXMachine.g:5199:1: ( ( rule__Machine__UnorderedGroup_3__0 )? )
-            // InternalXMachine.g:5200:2: ( rule__Machine__UnorderedGroup_3__0 )?
+            // InternalXMachine.g:4922:1: ( ( rule__Machine__UnorderedGroup_3__0 )? )
+            // InternalXMachine.g:4923:2: ( rule__Machine__UnorderedGroup_3__0 )?
             {
-            // InternalXMachine.g:5200:2: ( rule__Machine__UnorderedGroup_3__0 )?
-            int alt53=2;
-            int LA53_0 = input.LA(1);
+            // InternalXMachine.g:4923:2: ( rule__Machine__UnorderedGroup_3__0 )?
+            int alt48=2;
+            int LA48_0 = input.LA(1);
 
-            if ( LA53_0 == 117 && getUnorderedGroupHelper().canSelect(grammarAccess.getMachineAccess().getUnorderedGroup_3(), 0) ) {
-                alt53=1;
+            if ( LA48_0 == 117 && getUnorderedGroupHelper().canSelect(grammarAccess.getMachineAccess().getUnorderedGroup_3(), 0) ) {
+                alt48=1;
             }
-            else if ( LA53_0 == 118 && getUnorderedGroupHelper().canSelect(grammarAccess.getMachineAccess().getUnorderedGroup_3(), 1) ) {
-                alt53=1;
+            else if ( LA48_0 == 118 && getUnorderedGroupHelper().canSelect(grammarAccess.getMachineAccess().getUnorderedGroup_3(), 1) ) {
+                alt48=1;
             }
-            else if ( LA53_0 == 123 && getUnorderedGroupHelper().canSelect(grammarAccess.getMachineAccess().getUnorderedGroup_3(), 2) ) {
-                alt53=1;
+            else if ( LA48_0 == 123 && getUnorderedGroupHelper().canSelect(grammarAccess.getMachineAccess().getUnorderedGroup_3(), 2) ) {
+                alt48=1;
             }
-            switch (alt53) {
+            switch (alt48) {
                 case 1 :
-                    // InternalXMachine.g:5200:2: rule__Machine__UnorderedGroup_3__0
+                    // InternalXMachine.g:4923:2: rule__Machine__UnorderedGroup_3__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Machine__UnorderedGroup_3__0();
@@ -17893,60 +16918,60 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__UnorderedGroup_3__Impl"
-    // InternalXMachine.g:5208:1: rule__Machine__UnorderedGroup_3__Impl : ( ({...}? => ( ( ( rule__Machine__Group_3_0__0 ) ) ) ) | ({...}? => ( ( ( rule__Machine__Group_3_1__0 ) ) ) ) | ({...}? => ( ( ( ( rule__Machine__ExtensionsAssignment_3_2 ) ) ( ( ( rule__Machine__ExtensionsAssignment_3_2 )=> rule__Machine__ExtensionsAssignment_3_2 )* ) ) ) ) ) ;
+    // InternalXMachine.g:4931:1: rule__Machine__UnorderedGroup_3__Impl : ( ({...}? => ( ( ( rule__Machine__Group_3_0__0 ) ) ) ) | ({...}? => ( ( ( rule__Machine__Group_3_1__0 ) ) ) ) | ({...}? => ( ( ( ( rule__Machine__ExtensionsAssignment_3_2 ) ) ( ( ( rule__Machine__ExtensionsAssignment_3_2 )=> rule__Machine__ExtensionsAssignment_3_2 )* ) ) ) ) ) ;
     public final void rule__Machine__UnorderedGroup_3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         		boolean selected = false;
         	
         try {
-            // InternalXMachine.g:5213:1: ( ( ({...}? => ( ( ( rule__Machine__Group_3_0__0 ) ) ) ) | ({...}? => ( ( ( rule__Machine__Group_3_1__0 ) ) ) ) | ({...}? => ( ( ( ( rule__Machine__ExtensionsAssignment_3_2 ) ) ( ( ( rule__Machine__ExtensionsAssignment_3_2 )=> rule__Machine__ExtensionsAssignment_3_2 )* ) ) ) ) ) )
-            // InternalXMachine.g:5214:3: ( ({...}? => ( ( ( rule__Machine__Group_3_0__0 ) ) ) ) | ({...}? => ( ( ( rule__Machine__Group_3_1__0 ) ) ) ) | ({...}? => ( ( ( ( rule__Machine__ExtensionsAssignment_3_2 ) ) ( ( ( rule__Machine__ExtensionsAssignment_3_2 )=> rule__Machine__ExtensionsAssignment_3_2 )* ) ) ) ) )
+            // InternalXMachine.g:4936:1: ( ( ({...}? => ( ( ( rule__Machine__Group_3_0__0 ) ) ) ) | ({...}? => ( ( ( rule__Machine__Group_3_1__0 ) ) ) ) | ({...}? => ( ( ( ( rule__Machine__ExtensionsAssignment_3_2 ) ) ( ( ( rule__Machine__ExtensionsAssignment_3_2 )=> rule__Machine__ExtensionsAssignment_3_2 )* ) ) ) ) ) )
+            // InternalXMachine.g:4937:3: ( ({...}? => ( ( ( rule__Machine__Group_3_0__0 ) ) ) ) | ({...}? => ( ( ( rule__Machine__Group_3_1__0 ) ) ) ) | ({...}? => ( ( ( ( rule__Machine__ExtensionsAssignment_3_2 ) ) ( ( ( rule__Machine__ExtensionsAssignment_3_2 )=> rule__Machine__ExtensionsAssignment_3_2 )* ) ) ) ) )
             {
-            // InternalXMachine.g:5214:3: ( ({...}? => ( ( ( rule__Machine__Group_3_0__0 ) ) ) ) | ({...}? => ( ( ( rule__Machine__Group_3_1__0 ) ) ) ) | ({...}? => ( ( ( ( rule__Machine__ExtensionsAssignment_3_2 ) ) ( ( ( rule__Machine__ExtensionsAssignment_3_2 )=> rule__Machine__ExtensionsAssignment_3_2 )* ) ) ) ) )
-            int alt55=3;
-            int LA55_0 = input.LA(1);
+            // InternalXMachine.g:4937:3: ( ({...}? => ( ( ( rule__Machine__Group_3_0__0 ) ) ) ) | ({...}? => ( ( ( rule__Machine__Group_3_1__0 ) ) ) ) | ({...}? => ( ( ( ( rule__Machine__ExtensionsAssignment_3_2 ) ) ( ( ( rule__Machine__ExtensionsAssignment_3_2 )=> rule__Machine__ExtensionsAssignment_3_2 )* ) ) ) ) )
+            int alt50=3;
+            int LA50_0 = input.LA(1);
 
-            if ( LA55_0 == 117 && getUnorderedGroupHelper().canSelect(grammarAccess.getMachineAccess().getUnorderedGroup_3(), 0) ) {
-                alt55=1;
+            if ( LA50_0 == 117 && getUnorderedGroupHelper().canSelect(grammarAccess.getMachineAccess().getUnorderedGroup_3(), 0) ) {
+                alt50=1;
             }
-            else if ( LA55_0 == 118 && getUnorderedGroupHelper().canSelect(grammarAccess.getMachineAccess().getUnorderedGroup_3(), 1) ) {
-                alt55=2;
+            else if ( LA50_0 == 118 && getUnorderedGroupHelper().canSelect(grammarAccess.getMachineAccess().getUnorderedGroup_3(), 1) ) {
+                alt50=2;
             }
-            else if ( LA55_0 == 123 && getUnorderedGroupHelper().canSelect(grammarAccess.getMachineAccess().getUnorderedGroup_3(), 2) ) {
-                alt55=3;
+            else if ( LA50_0 == 123 && getUnorderedGroupHelper().canSelect(grammarAccess.getMachineAccess().getUnorderedGroup_3(), 2) ) {
+                alt50=3;
             }
             else {
                 if (state.backtracking>0) {state.failed=true; return ;}
                 NoViableAltException nvae =
-                    new NoViableAltException("", 55, 0, input);
+                    new NoViableAltException("", 50, 0, input);
 
                 throw nvae;
             }
-            switch (alt55) {
+            switch (alt50) {
                 case 1 :
-                    // InternalXMachine.g:5215:3: ({...}? => ( ( ( rule__Machine__Group_3_0__0 ) ) ) )
+                    // InternalXMachine.g:4938:3: ({...}? => ( ( ( rule__Machine__Group_3_0__0 ) ) ) )
                     {
-                    // InternalXMachine.g:5215:3: ({...}? => ( ( ( rule__Machine__Group_3_0__0 ) ) ) )
-                    // InternalXMachine.g:5216:4: {...}? => ( ( ( rule__Machine__Group_3_0__0 ) ) )
+                    // InternalXMachine.g:4938:3: ({...}? => ( ( ( rule__Machine__Group_3_0__0 ) ) ) )
+                    // InternalXMachine.g:4939:4: {...}? => ( ( ( rule__Machine__Group_3_0__0 ) ) )
                     {
                     if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getMachineAccess().getUnorderedGroup_3(), 0) ) {
                         if (state.backtracking>0) {state.failed=true; return ;}
                         throw new FailedPredicateException(input, "rule__Machine__UnorderedGroup_3__Impl", "getUnorderedGroupHelper().canSelect(grammarAccess.getMachineAccess().getUnorderedGroup_3(), 0)");
                     }
-                    // InternalXMachine.g:5216:103: ( ( ( rule__Machine__Group_3_0__0 ) ) )
-                    // InternalXMachine.g:5217:5: ( ( rule__Machine__Group_3_0__0 ) )
+                    // InternalXMachine.g:4939:103: ( ( ( rule__Machine__Group_3_0__0 ) ) )
+                    // InternalXMachine.g:4940:5: ( ( rule__Machine__Group_3_0__0 ) )
                     {
                     getUnorderedGroupHelper().select(grammarAccess.getMachineAccess().getUnorderedGroup_3(), 0);
                     selected = true;
-                    // InternalXMachine.g:5223:5: ( ( rule__Machine__Group_3_0__0 ) )
-                    // InternalXMachine.g:5224:6: ( rule__Machine__Group_3_0__0 )
+                    // InternalXMachine.g:4946:5: ( ( rule__Machine__Group_3_0__0 ) )
+                    // InternalXMachine.g:4947:6: ( rule__Machine__Group_3_0__0 )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getMachineAccess().getGroup_3_0()); 
                     }
-                    // InternalXMachine.g:5225:6: ( rule__Machine__Group_3_0__0 )
-                    // InternalXMachine.g:5225:7: rule__Machine__Group_3_0__0
+                    // InternalXMachine.g:4948:6: ( rule__Machine__Group_3_0__0 )
+                    // InternalXMachine.g:4948:7: rule__Machine__Group_3_0__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Machine__Group_3_0__0();
@@ -17972,28 +16997,28 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 2 :
-                    // InternalXMachine.g:5230:3: ({...}? => ( ( ( rule__Machine__Group_3_1__0 ) ) ) )
+                    // InternalXMachine.g:4953:3: ({...}? => ( ( ( rule__Machine__Group_3_1__0 ) ) ) )
                     {
-                    // InternalXMachine.g:5230:3: ({...}? => ( ( ( rule__Machine__Group_3_1__0 ) ) ) )
-                    // InternalXMachine.g:5231:4: {...}? => ( ( ( rule__Machine__Group_3_1__0 ) ) )
+                    // InternalXMachine.g:4953:3: ({...}? => ( ( ( rule__Machine__Group_3_1__0 ) ) ) )
+                    // InternalXMachine.g:4954:4: {...}? => ( ( ( rule__Machine__Group_3_1__0 ) ) )
                     {
                     if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getMachineAccess().getUnorderedGroup_3(), 1) ) {
                         if (state.backtracking>0) {state.failed=true; return ;}
                         throw new FailedPredicateException(input, "rule__Machine__UnorderedGroup_3__Impl", "getUnorderedGroupHelper().canSelect(grammarAccess.getMachineAccess().getUnorderedGroup_3(), 1)");
                     }
-                    // InternalXMachine.g:5231:103: ( ( ( rule__Machine__Group_3_1__0 ) ) )
-                    // InternalXMachine.g:5232:5: ( ( rule__Machine__Group_3_1__0 ) )
+                    // InternalXMachine.g:4954:103: ( ( ( rule__Machine__Group_3_1__0 ) ) )
+                    // InternalXMachine.g:4955:5: ( ( rule__Machine__Group_3_1__0 ) )
                     {
                     getUnorderedGroupHelper().select(grammarAccess.getMachineAccess().getUnorderedGroup_3(), 1);
                     selected = true;
-                    // InternalXMachine.g:5238:5: ( ( rule__Machine__Group_3_1__0 ) )
-                    // InternalXMachine.g:5239:6: ( rule__Machine__Group_3_1__0 )
+                    // InternalXMachine.g:4961:5: ( ( rule__Machine__Group_3_1__0 ) )
+                    // InternalXMachine.g:4962:6: ( rule__Machine__Group_3_1__0 )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getMachineAccess().getGroup_3_1()); 
                     }
-                    // InternalXMachine.g:5240:6: ( rule__Machine__Group_3_1__0 )
-                    // InternalXMachine.g:5240:7: rule__Machine__Group_3_1__0
+                    // InternalXMachine.g:4963:6: ( rule__Machine__Group_3_1__0 )
+                    // InternalXMachine.g:4963:7: rule__Machine__Group_3_1__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Machine__Group_3_1__0();
@@ -18019,33 +17044,33 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 3 :
-                    // InternalXMachine.g:5245:3: ({...}? => ( ( ( ( rule__Machine__ExtensionsAssignment_3_2 ) ) ( ( ( rule__Machine__ExtensionsAssignment_3_2 )=> rule__Machine__ExtensionsAssignment_3_2 )* ) ) ) )
+                    // InternalXMachine.g:4968:3: ({...}? => ( ( ( ( rule__Machine__ExtensionsAssignment_3_2 ) ) ( ( ( rule__Machine__ExtensionsAssignment_3_2 )=> rule__Machine__ExtensionsAssignment_3_2 )* ) ) ) )
                     {
-                    // InternalXMachine.g:5245:3: ({...}? => ( ( ( ( rule__Machine__ExtensionsAssignment_3_2 ) ) ( ( ( rule__Machine__ExtensionsAssignment_3_2 )=> rule__Machine__ExtensionsAssignment_3_2 )* ) ) ) )
-                    // InternalXMachine.g:5246:4: {...}? => ( ( ( ( rule__Machine__ExtensionsAssignment_3_2 ) ) ( ( ( rule__Machine__ExtensionsAssignment_3_2 )=> rule__Machine__ExtensionsAssignment_3_2 )* ) ) )
+                    // InternalXMachine.g:4968:3: ({...}? => ( ( ( ( rule__Machine__ExtensionsAssignment_3_2 ) ) ( ( ( rule__Machine__ExtensionsAssignment_3_2 )=> rule__Machine__ExtensionsAssignment_3_2 )* ) ) ) )
+                    // InternalXMachine.g:4969:4: {...}? => ( ( ( ( rule__Machine__ExtensionsAssignment_3_2 ) ) ( ( ( rule__Machine__ExtensionsAssignment_3_2 )=> rule__Machine__ExtensionsAssignment_3_2 )* ) ) )
                     {
                     if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getMachineAccess().getUnorderedGroup_3(), 2) ) {
                         if (state.backtracking>0) {state.failed=true; return ;}
                         throw new FailedPredicateException(input, "rule__Machine__UnorderedGroup_3__Impl", "getUnorderedGroupHelper().canSelect(grammarAccess.getMachineAccess().getUnorderedGroup_3(), 2)");
                     }
-                    // InternalXMachine.g:5246:103: ( ( ( ( rule__Machine__ExtensionsAssignment_3_2 ) ) ( ( ( rule__Machine__ExtensionsAssignment_3_2 )=> rule__Machine__ExtensionsAssignment_3_2 )* ) ) )
-                    // InternalXMachine.g:5247:5: ( ( ( rule__Machine__ExtensionsAssignment_3_2 ) ) ( ( ( rule__Machine__ExtensionsAssignment_3_2 )=> rule__Machine__ExtensionsAssignment_3_2 )* ) )
+                    // InternalXMachine.g:4969:103: ( ( ( ( rule__Machine__ExtensionsAssignment_3_2 ) ) ( ( ( rule__Machine__ExtensionsAssignment_3_2 )=> rule__Machine__ExtensionsAssignment_3_2 )* ) ) )
+                    // InternalXMachine.g:4970:5: ( ( ( rule__Machine__ExtensionsAssignment_3_2 ) ) ( ( ( rule__Machine__ExtensionsAssignment_3_2 )=> rule__Machine__ExtensionsAssignment_3_2 )* ) )
                     {
                     getUnorderedGroupHelper().select(grammarAccess.getMachineAccess().getUnorderedGroup_3(), 2);
                     selected = true;
-                    // InternalXMachine.g:5253:5: ( ( ( rule__Machine__ExtensionsAssignment_3_2 ) ) ( ( ( rule__Machine__ExtensionsAssignment_3_2 )=> rule__Machine__ExtensionsAssignment_3_2 )* ) )
-                    // InternalXMachine.g:5254:6: ( ( rule__Machine__ExtensionsAssignment_3_2 ) ) ( ( ( rule__Machine__ExtensionsAssignment_3_2 )=> rule__Machine__ExtensionsAssignment_3_2 )* )
+                    // InternalXMachine.g:4976:5: ( ( ( rule__Machine__ExtensionsAssignment_3_2 ) ) ( ( ( rule__Machine__ExtensionsAssignment_3_2 )=> rule__Machine__ExtensionsAssignment_3_2 )* ) )
+                    // InternalXMachine.g:4977:6: ( ( rule__Machine__ExtensionsAssignment_3_2 ) ) ( ( ( rule__Machine__ExtensionsAssignment_3_2 )=> rule__Machine__ExtensionsAssignment_3_2 )* )
                     {
-                    // InternalXMachine.g:5254:6: ( ( rule__Machine__ExtensionsAssignment_3_2 ) )
-                    // InternalXMachine.g:5255:7: ( rule__Machine__ExtensionsAssignment_3_2 )
+                    // InternalXMachine.g:4977:6: ( ( rule__Machine__ExtensionsAssignment_3_2 ) )
+                    // InternalXMachine.g:4978:7: ( rule__Machine__ExtensionsAssignment_3_2 )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getMachineAccess().getExtensionsAssignment_3_2()); 
                     }
-                    // InternalXMachine.g:5256:7: ( rule__Machine__ExtensionsAssignment_3_2 )
-                    // InternalXMachine.g:5256:8: rule__Machine__ExtensionsAssignment_3_2
+                    // InternalXMachine.g:4979:7: ( rule__Machine__ExtensionsAssignment_3_2 )
+                    // InternalXMachine.g:4979:8: rule__Machine__ExtensionsAssignment_3_2
                     {
-                    pushFollow(FOLLOW_35);
+                    pushFollow(FOLLOW_33);
                     rule__Machine__ExtensionsAssignment_3_2();
 
                     state._fsp--;
@@ -18059,26 +17084,26 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
                     }
 
-                    // InternalXMachine.g:5259:6: ( ( ( rule__Machine__ExtensionsAssignment_3_2 )=> rule__Machine__ExtensionsAssignment_3_2 )* )
-                    // InternalXMachine.g:5260:7: ( ( rule__Machine__ExtensionsAssignment_3_2 )=> rule__Machine__ExtensionsAssignment_3_2 )*
+                    // InternalXMachine.g:4982:6: ( ( ( rule__Machine__ExtensionsAssignment_3_2 )=> rule__Machine__ExtensionsAssignment_3_2 )* )
+                    // InternalXMachine.g:4983:7: ( ( rule__Machine__ExtensionsAssignment_3_2 )=> rule__Machine__ExtensionsAssignment_3_2 )*
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getMachineAccess().getExtensionsAssignment_3_2()); 
                     }
-                    // InternalXMachine.g:5261:7: ( ( rule__Machine__ExtensionsAssignment_3_2 )=> rule__Machine__ExtensionsAssignment_3_2 )*
-                    loop54:
+                    // InternalXMachine.g:4984:7: ( ( rule__Machine__ExtensionsAssignment_3_2 )=> rule__Machine__ExtensionsAssignment_3_2 )*
+                    loop49:
                     do {
-                        int alt54=2;
-                        int LA54_0 = input.LA(1);
+                        int alt49=2;
+                        int LA49_0 = input.LA(1);
 
-                        if ( (LA54_0==123) ) {
-                            int LA54_2 = input.LA(2);
+                        if ( (LA49_0==123) ) {
+                            int LA49_2 = input.LA(2);
 
-                            if ( (LA54_2==RULE_ID) ) {
-                                int LA54_3 = input.LA(3);
+                            if ( (LA49_2==RULE_ID) ) {
+                                int LA49_3 = input.LA(3);
 
                                 if ( (synpred1_InternalXMachine()) ) {
-                                    alt54=1;
+                                    alt49=1;
                                 }
 
 
@@ -18088,11 +17113,11 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                         }
 
 
-                        switch (alt54) {
+                        switch (alt49) {
                     	case 1 :
-                    	    // InternalXMachine.g:5261:8: ( rule__Machine__ExtensionsAssignment_3_2 )=> rule__Machine__ExtensionsAssignment_3_2
+                    	    // InternalXMachine.g:4984:8: ( rule__Machine__ExtensionsAssignment_3_2 )=> rule__Machine__ExtensionsAssignment_3_2
                     	    {
-                    	    pushFollow(FOLLOW_35);
+                    	    pushFollow(FOLLOW_33);
                     	    rule__Machine__ExtensionsAssignment_3_2();
 
                     	    state._fsp--;
@@ -18102,7 +17127,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
                     	    break;
 
                     	default :
-                    	    break loop54;
+                    	    break loop49;
                         }
                     } while (true);
 
@@ -18148,36 +17173,36 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__UnorderedGroup_3__0"
-    // InternalXMachine.g:5275:1: rule__Machine__UnorderedGroup_3__0 : rule__Machine__UnorderedGroup_3__Impl ( rule__Machine__UnorderedGroup_3__1 )? ;
+    // InternalXMachine.g:4998:1: rule__Machine__UnorderedGroup_3__0 : rule__Machine__UnorderedGroup_3__Impl ( rule__Machine__UnorderedGroup_3__1 )? ;
     public final void rule__Machine__UnorderedGroup_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5279:1: ( rule__Machine__UnorderedGroup_3__Impl ( rule__Machine__UnorderedGroup_3__1 )? )
-            // InternalXMachine.g:5280:2: rule__Machine__UnorderedGroup_3__Impl ( rule__Machine__UnorderedGroup_3__1 )?
+            // InternalXMachine.g:5002:1: ( rule__Machine__UnorderedGroup_3__Impl ( rule__Machine__UnorderedGroup_3__1 )? )
+            // InternalXMachine.g:5003:2: rule__Machine__UnorderedGroup_3__Impl ( rule__Machine__UnorderedGroup_3__1 )?
             {
-            pushFollow(FOLLOW_35);
+            pushFollow(FOLLOW_33);
             rule__Machine__UnorderedGroup_3__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            // InternalXMachine.g:5281:2: ( rule__Machine__UnorderedGroup_3__1 )?
-            int alt56=2;
-            int LA56_0 = input.LA(1);
+            // InternalXMachine.g:5004:2: ( rule__Machine__UnorderedGroup_3__1 )?
+            int alt51=2;
+            int LA51_0 = input.LA(1);
 
-            if ( LA56_0 == 117 && getUnorderedGroupHelper().canSelect(grammarAccess.getMachineAccess().getUnorderedGroup_3(), 0) ) {
-                alt56=1;
+            if ( LA51_0 == 117 && getUnorderedGroupHelper().canSelect(grammarAccess.getMachineAccess().getUnorderedGroup_3(), 0) ) {
+                alt51=1;
             }
-            else if ( LA56_0 == 118 && getUnorderedGroupHelper().canSelect(grammarAccess.getMachineAccess().getUnorderedGroup_3(), 1) ) {
-                alt56=1;
+            else if ( LA51_0 == 118 && getUnorderedGroupHelper().canSelect(grammarAccess.getMachineAccess().getUnorderedGroup_3(), 1) ) {
+                alt51=1;
             }
-            else if ( LA56_0 == 123 && getUnorderedGroupHelper().canSelect(grammarAccess.getMachineAccess().getUnorderedGroup_3(), 2) ) {
-                alt56=1;
+            else if ( LA51_0 == 123 && getUnorderedGroupHelper().canSelect(grammarAccess.getMachineAccess().getUnorderedGroup_3(), 2) ) {
+                alt51=1;
             }
-            switch (alt56) {
+            switch (alt51) {
                 case 1 :
-                    // InternalXMachine.g:5281:2: rule__Machine__UnorderedGroup_3__1
+                    // InternalXMachine.g:5004:2: rule__Machine__UnorderedGroup_3__1
                     {
                     pushFollow(FOLLOW_2);
                     rule__Machine__UnorderedGroup_3__1();
@@ -18209,36 +17234,36 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__UnorderedGroup_3__1"
-    // InternalXMachine.g:5287:1: rule__Machine__UnorderedGroup_3__1 : rule__Machine__UnorderedGroup_3__Impl ( rule__Machine__UnorderedGroup_3__2 )? ;
+    // InternalXMachine.g:5010:1: rule__Machine__UnorderedGroup_3__1 : rule__Machine__UnorderedGroup_3__Impl ( rule__Machine__UnorderedGroup_3__2 )? ;
     public final void rule__Machine__UnorderedGroup_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5291:1: ( rule__Machine__UnorderedGroup_3__Impl ( rule__Machine__UnorderedGroup_3__2 )? )
-            // InternalXMachine.g:5292:2: rule__Machine__UnorderedGroup_3__Impl ( rule__Machine__UnorderedGroup_3__2 )?
+            // InternalXMachine.g:5014:1: ( rule__Machine__UnorderedGroup_3__Impl ( rule__Machine__UnorderedGroup_3__2 )? )
+            // InternalXMachine.g:5015:2: rule__Machine__UnorderedGroup_3__Impl ( rule__Machine__UnorderedGroup_3__2 )?
             {
-            pushFollow(FOLLOW_35);
+            pushFollow(FOLLOW_33);
             rule__Machine__UnorderedGroup_3__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            // InternalXMachine.g:5293:2: ( rule__Machine__UnorderedGroup_3__2 )?
-            int alt57=2;
-            int LA57_0 = input.LA(1);
+            // InternalXMachine.g:5016:2: ( rule__Machine__UnorderedGroup_3__2 )?
+            int alt52=2;
+            int LA52_0 = input.LA(1);
 
-            if ( LA57_0 == 117 && getUnorderedGroupHelper().canSelect(grammarAccess.getMachineAccess().getUnorderedGroup_3(), 0) ) {
-                alt57=1;
+            if ( LA52_0 == 117 && getUnorderedGroupHelper().canSelect(grammarAccess.getMachineAccess().getUnorderedGroup_3(), 0) ) {
+                alt52=1;
             }
-            else if ( LA57_0 == 118 && getUnorderedGroupHelper().canSelect(grammarAccess.getMachineAccess().getUnorderedGroup_3(), 1) ) {
-                alt57=1;
+            else if ( LA52_0 == 118 && getUnorderedGroupHelper().canSelect(grammarAccess.getMachineAccess().getUnorderedGroup_3(), 1) ) {
+                alt52=1;
             }
-            else if ( LA57_0 == 123 && getUnorderedGroupHelper().canSelect(grammarAccess.getMachineAccess().getUnorderedGroup_3(), 2) ) {
-                alt57=1;
+            else if ( LA52_0 == 123 && getUnorderedGroupHelper().canSelect(grammarAccess.getMachineAccess().getUnorderedGroup_3(), 2) ) {
+                alt52=1;
             }
-            switch (alt57) {
+            switch (alt52) {
                 case 1 :
-                    // InternalXMachine.g:5293:2: rule__Machine__UnorderedGroup_3__2
+                    // InternalXMachine.g:5016:2: rule__Machine__UnorderedGroup_3__2
                     {
                     pushFollow(FOLLOW_2);
                     rule__Machine__UnorderedGroup_3__2();
@@ -18270,14 +17295,14 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__UnorderedGroup_3__2"
-    // InternalXMachine.g:5299:1: rule__Machine__UnorderedGroup_3__2 : rule__Machine__UnorderedGroup_3__Impl ;
+    // InternalXMachine.g:5022:1: rule__Machine__UnorderedGroup_3__2 : rule__Machine__UnorderedGroup_3__Impl ;
     public final void rule__Machine__UnorderedGroup_3__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5303:1: ( rule__Machine__UnorderedGroup_3__Impl )
-            // InternalXMachine.g:5304:2: rule__Machine__UnorderedGroup_3__Impl
+            // InternalXMachine.g:5026:1: ( rule__Machine__UnorderedGroup_3__Impl )
+            // InternalXMachine.g:5027:2: rule__Machine__UnorderedGroup_3__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Machine__UnorderedGroup_3__Impl();
@@ -18302,310 +17327,18 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
     // $ANTLR end "rule__Machine__UnorderedGroup_3__2"
 
 
-    // $ANTLR start "rule__XEvent__UnorderedGroup_3"
-    // InternalXMachine.g:5311:1: rule__XEvent__UnorderedGroup_3 : ( rule__XEvent__UnorderedGroup_3__0 )? ;
-    public final void rule__XEvent__UnorderedGroup_3() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        		getUnorderedGroupHelper().enter(grammarAccess.getXEventAccess().getUnorderedGroup_3());
-        	
-        try {
-            // InternalXMachine.g:5316:1: ( ( rule__XEvent__UnorderedGroup_3__0 )? )
-            // InternalXMachine.g:5317:2: ( rule__XEvent__UnorderedGroup_3__0 )?
-            {
-            // InternalXMachine.g:5317:2: ( rule__XEvent__UnorderedGroup_3__0 )?
-            int alt58=2;
-            int LA58_0 = input.LA(1);
-
-            if ( LA58_0 == 138 && getUnorderedGroupHelper().canSelect(grammarAccess.getXEventAccess().getUnorderedGroup_3(), 0) ) {
-                alt58=1;
-            }
-            else if ( LA58_0 >= 112 && LA58_0 <= 114 && getUnorderedGroupHelper().canSelect(grammarAccess.getXEventAccess().getUnorderedGroup_3(), 1) ) {
-                alt58=1;
-            }
-            switch (alt58) {
-                case 1 :
-                    // InternalXMachine.g:5317:2: rule__XEvent__UnorderedGroup_3__0
-                    {
-                    pushFollow(FOLLOW_2);
-                    rule__XEvent__UnorderedGroup_3__0();
-
-                    state._fsp--;
-                    if (state.failed) return ;
-
-                    }
-                    break;
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	getUnorderedGroupHelper().leave(grammarAccess.getXEventAccess().getUnorderedGroup_3());
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__UnorderedGroup_3"
-
-
-    // $ANTLR start "rule__XEvent__UnorderedGroup_3__Impl"
-    // InternalXMachine.g:5325:1: rule__XEvent__UnorderedGroup_3__Impl : ( ({...}? => ( ( ( rule__XEvent__ExtendedAssignment_3_0 ) ) ) ) | ({...}? => ( ( ( rule__XEvent__ConvergenceAssignment_3_1 ) ) ) ) ) ;
-    public final void rule__XEvent__UnorderedGroup_3__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        		boolean selected = false;
-        	
-        try {
-            // InternalXMachine.g:5330:1: ( ( ({...}? => ( ( ( rule__XEvent__ExtendedAssignment_3_0 ) ) ) ) | ({...}? => ( ( ( rule__XEvent__ConvergenceAssignment_3_1 ) ) ) ) ) )
-            // InternalXMachine.g:5331:3: ( ({...}? => ( ( ( rule__XEvent__ExtendedAssignment_3_0 ) ) ) ) | ({...}? => ( ( ( rule__XEvent__ConvergenceAssignment_3_1 ) ) ) ) )
-            {
-            // InternalXMachine.g:5331:3: ( ({...}? => ( ( ( rule__XEvent__ExtendedAssignment_3_0 ) ) ) ) | ({...}? => ( ( ( rule__XEvent__ConvergenceAssignment_3_1 ) ) ) ) )
-            int alt59=2;
-            int LA59_0 = input.LA(1);
-
-            if ( LA59_0 == 138 && getUnorderedGroupHelper().canSelect(grammarAccess.getXEventAccess().getUnorderedGroup_3(), 0) ) {
-                alt59=1;
-            }
-            else if ( LA59_0 >= 112 && LA59_0 <= 114 && getUnorderedGroupHelper().canSelect(grammarAccess.getXEventAccess().getUnorderedGroup_3(), 1) ) {
-                alt59=2;
-            }
-            else {
-                if (state.backtracking>0) {state.failed=true; return ;}
-                NoViableAltException nvae =
-                    new NoViableAltException("", 59, 0, input);
-
-                throw nvae;
-            }
-            switch (alt59) {
-                case 1 :
-                    // InternalXMachine.g:5332:3: ({...}? => ( ( ( rule__XEvent__ExtendedAssignment_3_0 ) ) ) )
-                    {
-                    // InternalXMachine.g:5332:3: ({...}? => ( ( ( rule__XEvent__ExtendedAssignment_3_0 ) ) ) )
-                    // InternalXMachine.g:5333:4: {...}? => ( ( ( rule__XEvent__ExtendedAssignment_3_0 ) ) )
-                    {
-                    if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getXEventAccess().getUnorderedGroup_3(), 0) ) {
-                        if (state.backtracking>0) {state.failed=true; return ;}
-                        throw new FailedPredicateException(input, "rule__XEvent__UnorderedGroup_3__Impl", "getUnorderedGroupHelper().canSelect(grammarAccess.getXEventAccess().getUnorderedGroup_3(), 0)");
-                    }
-                    // InternalXMachine.g:5333:102: ( ( ( rule__XEvent__ExtendedAssignment_3_0 ) ) )
-                    // InternalXMachine.g:5334:5: ( ( rule__XEvent__ExtendedAssignment_3_0 ) )
-                    {
-                    getUnorderedGroupHelper().select(grammarAccess.getXEventAccess().getUnorderedGroup_3(), 0);
-                    selected = true;
-                    // InternalXMachine.g:5340:5: ( ( rule__XEvent__ExtendedAssignment_3_0 ) )
-                    // InternalXMachine.g:5341:6: ( rule__XEvent__ExtendedAssignment_3_0 )
-                    {
-                    if ( state.backtracking==0 ) {
-                       before(grammarAccess.getXEventAccess().getExtendedAssignment_3_0()); 
-                    }
-                    // InternalXMachine.g:5342:6: ( rule__XEvent__ExtendedAssignment_3_0 )
-                    // InternalXMachine.g:5342:7: rule__XEvent__ExtendedAssignment_3_0
-                    {
-                    pushFollow(FOLLOW_2);
-                    rule__XEvent__ExtendedAssignment_3_0();
-
-                    state._fsp--;
-                    if (state.failed) return ;
-
-                    }
-
-                    if ( state.backtracking==0 ) {
-                       after(grammarAccess.getXEventAccess().getExtendedAssignment_3_0()); 
-                    }
-
-                    }
-
-
-                    }
-
-
-                    }
-
-
-                    }
-                    break;
-                case 2 :
-                    // InternalXMachine.g:5347:3: ({...}? => ( ( ( rule__XEvent__ConvergenceAssignment_3_1 ) ) ) )
-                    {
-                    // InternalXMachine.g:5347:3: ({...}? => ( ( ( rule__XEvent__ConvergenceAssignment_3_1 ) ) ) )
-                    // InternalXMachine.g:5348:4: {...}? => ( ( ( rule__XEvent__ConvergenceAssignment_3_1 ) ) )
-                    {
-                    if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getXEventAccess().getUnorderedGroup_3(), 1) ) {
-                        if (state.backtracking>0) {state.failed=true; return ;}
-                        throw new FailedPredicateException(input, "rule__XEvent__UnorderedGroup_3__Impl", "getUnorderedGroupHelper().canSelect(grammarAccess.getXEventAccess().getUnorderedGroup_3(), 1)");
-                    }
-                    // InternalXMachine.g:5348:102: ( ( ( rule__XEvent__ConvergenceAssignment_3_1 ) ) )
-                    // InternalXMachine.g:5349:5: ( ( rule__XEvent__ConvergenceAssignment_3_1 ) )
-                    {
-                    getUnorderedGroupHelper().select(grammarAccess.getXEventAccess().getUnorderedGroup_3(), 1);
-                    selected = true;
-                    // InternalXMachine.g:5355:5: ( ( rule__XEvent__ConvergenceAssignment_3_1 ) )
-                    // InternalXMachine.g:5356:6: ( rule__XEvent__ConvergenceAssignment_3_1 )
-                    {
-                    if ( state.backtracking==0 ) {
-                       before(grammarAccess.getXEventAccess().getConvergenceAssignment_3_1()); 
-                    }
-                    // InternalXMachine.g:5357:6: ( rule__XEvent__ConvergenceAssignment_3_1 )
-                    // InternalXMachine.g:5357:7: rule__XEvent__ConvergenceAssignment_3_1
-                    {
-                    pushFollow(FOLLOW_2);
-                    rule__XEvent__ConvergenceAssignment_3_1();
-
-                    state._fsp--;
-                    if (state.failed) return ;
-
-                    }
-
-                    if ( state.backtracking==0 ) {
-                       after(grammarAccess.getXEventAccess().getConvergenceAssignment_3_1()); 
-                    }
-
-                    }
-
-
-                    }
-
-
-                    }
-
-
-                    }
-                    break;
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	if (selected)
-            		getUnorderedGroupHelper().returnFromSelection(grammarAccess.getXEventAccess().getUnorderedGroup_3());
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__UnorderedGroup_3__Impl"
-
-
-    // $ANTLR start "rule__XEvent__UnorderedGroup_3__0"
-    // InternalXMachine.g:5370:1: rule__XEvent__UnorderedGroup_3__0 : rule__XEvent__UnorderedGroup_3__Impl ( rule__XEvent__UnorderedGroup_3__1 )? ;
-    public final void rule__XEvent__UnorderedGroup_3__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:5374:1: ( rule__XEvent__UnorderedGroup_3__Impl ( rule__XEvent__UnorderedGroup_3__1 )? )
-            // InternalXMachine.g:5375:2: rule__XEvent__UnorderedGroup_3__Impl ( rule__XEvent__UnorderedGroup_3__1 )?
-            {
-            pushFollow(FOLLOW_36);
-            rule__XEvent__UnorderedGroup_3__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-            // InternalXMachine.g:5376:2: ( rule__XEvent__UnorderedGroup_3__1 )?
-            int alt60=2;
-            int LA60_0 = input.LA(1);
-
-            if ( LA60_0 == 138 && getUnorderedGroupHelper().canSelect(grammarAccess.getXEventAccess().getUnorderedGroup_3(), 0) ) {
-                alt60=1;
-            }
-            else if ( LA60_0 >= 112 && LA60_0 <= 114 && getUnorderedGroupHelper().canSelect(grammarAccess.getXEventAccess().getUnorderedGroup_3(), 1) ) {
-                alt60=1;
-            }
-            switch (alt60) {
-                case 1 :
-                    // InternalXMachine.g:5376:2: rule__XEvent__UnorderedGroup_3__1
-                    {
-                    pushFollow(FOLLOW_2);
-                    rule__XEvent__UnorderedGroup_3__1();
-
-                    state._fsp--;
-                    if (state.failed) return ;
-
-                    }
-                    break;
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__UnorderedGroup_3__0"
-
-
-    // $ANTLR start "rule__XEvent__UnorderedGroup_3__1"
-    // InternalXMachine.g:5382:1: rule__XEvent__UnorderedGroup_3__1 : rule__XEvent__UnorderedGroup_3__Impl ;
-    public final void rule__XEvent__UnorderedGroup_3__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:5386:1: ( rule__XEvent__UnorderedGroup_3__Impl )
-            // InternalXMachine.g:5387:2: rule__XEvent__UnorderedGroup_3__Impl
-            {
-            pushFollow(FOLLOW_2);
-            rule__XEvent__UnorderedGroup_3__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__UnorderedGroup_3__1"
-
-
     // $ANTLR start "rule__Machine__NameAssignment_2"
-    // InternalXMachine.g:5394:1: rule__Machine__NameAssignment_2 : ( RULE_ID ) ;
+    // InternalXMachine.g:5034:1: rule__Machine__NameAssignment_2 : ( RULE_ID ) ;
     public final void rule__Machine__NameAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5398:1: ( ( RULE_ID ) )
-            // InternalXMachine.g:5399:2: ( RULE_ID )
+            // InternalXMachine.g:5038:1: ( ( RULE_ID ) )
+            // InternalXMachine.g:5039:2: ( RULE_ID )
             {
-            // InternalXMachine.g:5399:2: ( RULE_ID )
-            // InternalXMachine.g:5400:3: RULE_ID
+            // InternalXMachine.g:5039:2: ( RULE_ID )
+            // InternalXMachine.g:5040:3: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getNameIDTerminalRuleCall_2_0()); 
@@ -18636,23 +17369,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__RefinesAssignment_3_0_1"
-    // InternalXMachine.g:5409:1: rule__Machine__RefinesAssignment_3_0_1 : ( ( RULE_ID ) ) ;
+    // InternalXMachine.g:5049:1: rule__Machine__RefinesAssignment_3_0_1 : ( ( RULE_ID ) ) ;
     public final void rule__Machine__RefinesAssignment_3_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5413:1: ( ( ( RULE_ID ) ) )
-            // InternalXMachine.g:5414:2: ( ( RULE_ID ) )
+            // InternalXMachine.g:5053:1: ( ( ( RULE_ID ) ) )
+            // InternalXMachine.g:5054:2: ( ( RULE_ID ) )
             {
-            // InternalXMachine.g:5414:2: ( ( RULE_ID ) )
-            // InternalXMachine.g:5415:3: ( RULE_ID )
+            // InternalXMachine.g:5054:2: ( ( RULE_ID ) )
+            // InternalXMachine.g:5055:3: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getRefinesMachineCrossReference_3_0_1_0()); 
             }
-            // InternalXMachine.g:5416:3: ( RULE_ID )
-            // InternalXMachine.g:5417:4: RULE_ID
+            // InternalXMachine.g:5056:3: ( RULE_ID )
+            // InternalXMachine.g:5057:4: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getRefinesMachineIDTerminalRuleCall_3_0_1_0_1()); 
@@ -18689,23 +17422,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__SeesAssignment_3_1_1"
-    // InternalXMachine.g:5428:1: rule__Machine__SeesAssignment_3_1_1 : ( ( RULE_ID ) ) ;
+    // InternalXMachine.g:5068:1: rule__Machine__SeesAssignment_3_1_1 : ( ( RULE_ID ) ) ;
     public final void rule__Machine__SeesAssignment_3_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5432:1: ( ( ( RULE_ID ) ) )
-            // InternalXMachine.g:5433:2: ( ( RULE_ID ) )
+            // InternalXMachine.g:5072:1: ( ( ( RULE_ID ) ) )
+            // InternalXMachine.g:5073:2: ( ( RULE_ID ) )
             {
-            // InternalXMachine.g:5433:2: ( ( RULE_ID ) )
-            // InternalXMachine.g:5434:3: ( RULE_ID )
+            // InternalXMachine.g:5073:2: ( ( RULE_ID ) )
+            // InternalXMachine.g:5074:3: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getSeesContextCrossReference_3_1_1_0()); 
             }
-            // InternalXMachine.g:5435:3: ( RULE_ID )
-            // InternalXMachine.g:5436:4: RULE_ID
+            // InternalXMachine.g:5075:3: ( RULE_ID )
+            // InternalXMachine.g:5076:4: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getSeesContextIDTerminalRuleCall_3_1_1_0_1()); 
@@ -18742,17 +17475,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__ExtensionsAssignment_3_2"
-    // InternalXMachine.g:5447:1: rule__Machine__ExtensionsAssignment_3_2 : ( ruleMIncludes ) ;
+    // InternalXMachine.g:5087:1: rule__Machine__ExtensionsAssignment_3_2 : ( ruleMIncludes ) ;
     public final void rule__Machine__ExtensionsAssignment_3_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5451:1: ( ( ruleMIncludes ) )
-            // InternalXMachine.g:5452:2: ( ruleMIncludes )
+            // InternalXMachine.g:5091:1: ( ( ruleMIncludes ) )
+            // InternalXMachine.g:5092:2: ( ruleMIncludes )
             {
-            // InternalXMachine.g:5452:2: ( ruleMIncludes )
-            // InternalXMachine.g:5453:3: ruleMIncludes
+            // InternalXMachine.g:5092:2: ( ruleMIncludes )
+            // InternalXMachine.g:5093:3: ruleMIncludes
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getExtensionsMIncludesParserRuleCall_3_2_0()); 
@@ -18787,17 +17520,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__VariablesAssignment_4_1"
-    // InternalXMachine.g:5462:1: rule__Machine__VariablesAssignment_4_1 : ( ruleXVariable ) ;
+    // InternalXMachine.g:5102:1: rule__Machine__VariablesAssignment_4_1 : ( ruleXVariable ) ;
     public final void rule__Machine__VariablesAssignment_4_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5466:1: ( ( ruleXVariable ) )
-            // InternalXMachine.g:5467:2: ( ruleXVariable )
+            // InternalXMachine.g:5106:1: ( ( ruleXVariable ) )
+            // InternalXMachine.g:5107:2: ( ruleXVariable )
             {
-            // InternalXMachine.g:5467:2: ( ruleXVariable )
-            // InternalXMachine.g:5468:3: ruleXVariable
+            // InternalXMachine.g:5107:2: ( ruleXVariable )
+            // InternalXMachine.g:5108:3: ruleXVariable
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getVariablesXVariableParserRuleCall_4_1_0()); 
@@ -18832,17 +17565,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__InvariantsAssignment_5_1"
-    // InternalXMachine.g:5477:1: rule__Machine__InvariantsAssignment_5_1 : ( ruleXInvariant ) ;
+    // InternalXMachine.g:5117:1: rule__Machine__InvariantsAssignment_5_1 : ( ruleXInvariant ) ;
     public final void rule__Machine__InvariantsAssignment_5_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5481:1: ( ( ruleXInvariant ) )
-            // InternalXMachine.g:5482:2: ( ruleXInvariant )
+            // InternalXMachine.g:5121:1: ( ( ruleXInvariant ) )
+            // InternalXMachine.g:5122:2: ( ruleXInvariant )
             {
-            // InternalXMachine.g:5482:2: ( ruleXInvariant )
-            // InternalXMachine.g:5483:3: ruleXInvariant
+            // InternalXMachine.g:5122:2: ( ruleXInvariant )
+            // InternalXMachine.g:5123:3: ruleXInvariant
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getInvariantsXInvariantParserRuleCall_5_1_0()); 
@@ -18876,21 +17609,21 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
     // $ANTLR end "rule__Machine__InvariantsAssignment_5_1"
 
 
-    // $ANTLR start "rule__Machine__VariantAssignment_6_1"
-    // InternalXMachine.g:5492:1: rule__Machine__VariantAssignment_6_1 : ( ruleXVariant ) ;
-    public final void rule__Machine__VariantAssignment_6_1() throws RecognitionException {
+    // $ANTLR start "rule__Machine__VariantsAssignment_6_1"
+    // InternalXMachine.g:5132:1: rule__Machine__VariantsAssignment_6_1 : ( ruleXVariant ) ;
+    public final void rule__Machine__VariantsAssignment_6_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5496:1: ( ( ruleXVariant ) )
-            // InternalXMachine.g:5497:2: ( ruleXVariant )
+            // InternalXMachine.g:5136:1: ( ( ruleXVariant ) )
+            // InternalXMachine.g:5137:2: ( ruleXVariant )
             {
-            // InternalXMachine.g:5497:2: ( ruleXVariant )
-            // InternalXMachine.g:5498:3: ruleXVariant
+            // InternalXMachine.g:5137:2: ( ruleXVariant )
+            // InternalXMachine.g:5138:3: ruleXVariant
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getMachineAccess().getVariantXVariantParserRuleCall_6_1_0()); 
+               before(grammarAccess.getMachineAccess().getVariantsXVariantParserRuleCall_6_1_0()); 
             }
             pushFollow(FOLLOW_2);
             ruleXVariant();
@@ -18898,7 +17631,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
             if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getMachineAccess().getVariantXVariantParserRuleCall_6_1_0()); 
+               after(grammarAccess.getMachineAccess().getVariantsXVariantParserRuleCall_6_1_0()); 
             }
 
             }
@@ -18918,21 +17651,21 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__Machine__VariantAssignment_6_1"
+    // $ANTLR end "rule__Machine__VariantsAssignment_6_1"
 
 
     // $ANTLR start "rule__Machine__EventsAssignment_7_1"
-    // InternalXMachine.g:5507:1: rule__Machine__EventsAssignment_7_1 : ( ruleXEvent ) ;
+    // InternalXMachine.g:5147:1: rule__Machine__EventsAssignment_7_1 : ( ruleXEvent ) ;
     public final void rule__Machine__EventsAssignment_7_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5511:1: ( ( ruleXEvent ) )
-            // InternalXMachine.g:5512:2: ( ruleXEvent )
+            // InternalXMachine.g:5151:1: ( ( ruleXEvent ) )
+            // InternalXMachine.g:5152:2: ( ruleXEvent )
             {
-            // InternalXMachine.g:5512:2: ( ruleXEvent )
-            // InternalXMachine.g:5513:3: ruleXEvent
+            // InternalXMachine.g:5152:2: ( ruleXEvent )
+            // InternalXMachine.g:5153:3: ruleXEvent
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getEventsXEventParserRuleCall_7_1_0()); 
@@ -18967,17 +17700,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__EventsAssignment_7_2"
-    // InternalXMachine.g:5522:1: rule__Machine__EventsAssignment_7_2 : ( ruleXEvent ) ;
+    // InternalXMachine.g:5162:1: rule__Machine__EventsAssignment_7_2 : ( ruleXEvent ) ;
     public final void rule__Machine__EventsAssignment_7_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5526:1: ( ( ruleXEvent ) )
-            // InternalXMachine.g:5527:2: ( ruleXEvent )
+            // InternalXMachine.g:5166:1: ( ( ruleXEvent ) )
+            // InternalXMachine.g:5167:2: ( ruleXEvent )
             {
-            // InternalXMachine.g:5527:2: ( ruleXEvent )
-            // InternalXMachine.g:5528:3: ruleXEvent
+            // InternalXMachine.g:5167:2: ( ruleXEvent )
+            // InternalXMachine.g:5168:3: ruleXEvent
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getEventsXEventParserRuleCall_7_2_0()); 
@@ -19012,17 +17745,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Machine__ExtensionsAssignment_8"
-    // InternalXMachine.g:5537:1: rule__Machine__ExtensionsAssignment_8 : ( ruleXGroup ) ;
+    // InternalXMachine.g:5177:1: rule__Machine__ExtensionsAssignment_8 : ( ruleXGroup ) ;
     public final void rule__Machine__ExtensionsAssignment_8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5541:1: ( ( ruleXGroup ) )
-            // InternalXMachine.g:5542:2: ( ruleXGroup )
+            // InternalXMachine.g:5181:1: ( ( ruleXGroup ) )
+            // InternalXMachine.g:5182:2: ( ruleXGroup )
             {
-            // InternalXMachine.g:5542:2: ( ruleXGroup )
-            // InternalXMachine.g:5543:3: ruleXGroup
+            // InternalXMachine.g:5182:2: ( ruleXGroup )
+            // InternalXMachine.g:5183:3: ruleXGroup
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMachineAccess().getExtensionsXGroupParserRuleCall_8_0()); 
@@ -19057,23 +17790,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__MIncludes__AbstractMachineAssignment_1_1"
-    // InternalXMachine.g:5552:1: rule__MIncludes__AbstractMachineAssignment_1_1 : ( ( ruleQualifiedName ) ) ;
+    // InternalXMachine.g:5192:1: rule__MIncludes__AbstractMachineAssignment_1_1 : ( ( ruleQualifiedName ) ) ;
     public final void rule__MIncludes__AbstractMachineAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5556:1: ( ( ( ruleQualifiedName ) ) )
-            // InternalXMachine.g:5557:2: ( ( ruleQualifiedName ) )
+            // InternalXMachine.g:5196:1: ( ( ( ruleQualifiedName ) ) )
+            // InternalXMachine.g:5197:2: ( ( ruleQualifiedName ) )
             {
-            // InternalXMachine.g:5557:2: ( ( ruleQualifiedName ) )
-            // InternalXMachine.g:5558:3: ( ruleQualifiedName )
+            // InternalXMachine.g:5197:2: ( ( ruleQualifiedName ) )
+            // InternalXMachine.g:5198:3: ( ruleQualifiedName )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMIncludesAccess().getAbstractMachineMachineCrossReference_1_1_0()); 
             }
-            // InternalXMachine.g:5559:3: ( ruleQualifiedName )
-            // InternalXMachine.g:5560:4: ruleQualifiedName
+            // InternalXMachine.g:5199:3: ( ruleQualifiedName )
+            // InternalXMachine.g:5200:4: ruleQualifiedName
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMIncludesAccess().getAbstractMachineMachineQualifiedNameParserRuleCall_1_1_0_1()); 
@@ -19114,23 +17847,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__MIncludes__ConcreteMachineAssignment_2_1"
-    // InternalXMachine.g:5571:1: rule__MIncludes__ConcreteMachineAssignment_2_1 : ( ( RULE_ID ) ) ;
+    // InternalXMachine.g:5211:1: rule__MIncludes__ConcreteMachineAssignment_2_1 : ( ( RULE_ID ) ) ;
     public final void rule__MIncludes__ConcreteMachineAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5575:1: ( ( ( RULE_ID ) ) )
-            // InternalXMachine.g:5576:2: ( ( RULE_ID ) )
+            // InternalXMachine.g:5215:1: ( ( ( RULE_ID ) ) )
+            // InternalXMachine.g:5216:2: ( ( RULE_ID ) )
             {
-            // InternalXMachine.g:5576:2: ( ( RULE_ID ) )
-            // InternalXMachine.g:5577:3: ( RULE_ID )
+            // InternalXMachine.g:5216:2: ( ( RULE_ID ) )
+            // InternalXMachine.g:5217:3: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMIncludesAccess().getConcreteMachineMachineCrossReference_2_1_0()); 
             }
-            // InternalXMachine.g:5578:3: ( RULE_ID )
-            // InternalXMachine.g:5579:4: RULE_ID
+            // InternalXMachine.g:5218:3: ( RULE_ID )
+            // InternalXMachine.g:5219:4: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMIncludesAccess().getConcreteMachineMachineIDTerminalRuleCall_2_1_0_1()); 
@@ -19167,17 +17900,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__MIncludes__PrefixesAssignment_3_1"
-    // InternalXMachine.g:5590:1: rule__MIncludes__PrefixesAssignment_3_1 : ( RULE_ID ) ;
+    // InternalXMachine.g:5230:1: rule__MIncludes__PrefixesAssignment_3_1 : ( RULE_ID ) ;
     public final void rule__MIncludes__PrefixesAssignment_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5594:1: ( ( RULE_ID ) )
-            // InternalXMachine.g:5595:2: ( RULE_ID )
+            // InternalXMachine.g:5234:1: ( ( RULE_ID ) )
+            // InternalXMachine.g:5235:2: ( RULE_ID )
             {
-            // InternalXMachine.g:5595:2: ( RULE_ID )
-            // InternalXMachine.g:5596:3: RULE_ID
+            // InternalXMachine.g:5235:2: ( RULE_ID )
+            // InternalXMachine.g:5236:3: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMIncludesAccess().getPrefixesIDTerminalRuleCall_3_1_0()); 
@@ -19208,17 +17941,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__MIncludes__PrefixesAssignment_3_2"
-    // InternalXMachine.g:5605:1: rule__MIncludes__PrefixesAssignment_3_2 : ( RULE_ID ) ;
+    // InternalXMachine.g:5245:1: rule__MIncludes__PrefixesAssignment_3_2 : ( RULE_ID ) ;
     public final void rule__MIncludes__PrefixesAssignment_3_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5609:1: ( ( RULE_ID ) )
-            // InternalXMachine.g:5610:2: ( RULE_ID )
+            // InternalXMachine.g:5249:1: ( ( RULE_ID ) )
+            // InternalXMachine.g:5250:2: ( RULE_ID )
             {
-            // InternalXMachine.g:5610:2: ( RULE_ID )
-            // InternalXMachine.g:5611:3: RULE_ID
+            // InternalXMachine.g:5250:2: ( RULE_ID )
+            // InternalXMachine.g:5251:3: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMIncludesAccess().getPrefixesIDTerminalRuleCall_3_2_0()); 
@@ -19249,17 +17982,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XVariable__NameAssignment_1"
-    // InternalXMachine.g:5620:1: rule__XVariable__NameAssignment_1 : ( RULE_ID ) ;
+    // InternalXMachine.g:5260:1: rule__XVariable__NameAssignment_1 : ( RULE_ID ) ;
     public final void rule__XVariable__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5624:1: ( ( RULE_ID ) )
-            // InternalXMachine.g:5625:2: ( RULE_ID )
+            // InternalXMachine.g:5264:1: ( ( RULE_ID ) )
+            // InternalXMachine.g:5265:2: ( RULE_ID )
             {
-            // InternalXMachine.g:5625:2: ( RULE_ID )
-            // InternalXMachine.g:5626:3: RULE_ID
+            // InternalXMachine.g:5265:2: ( RULE_ID )
+            // InternalXMachine.g:5266:3: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXVariableAccess().getNameIDTerminalRuleCall_1_0()); 
@@ -19289,25 +18022,78 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
     // $ANTLR end "rule__XVariable__NameAssignment_1"
 
 
-    // $ANTLR start "rule__XInvariant__NameAssignment_1"
-    // InternalXMachine.g:5635:1: rule__XInvariant__NameAssignment_1 : ( RULE_XLABEL ) ;
-    public final void rule__XInvariant__NameAssignment_1() throws RecognitionException {
+    // $ANTLR start "rule__XInvariant__TheoremAssignment_1"
+    // InternalXMachine.g:5275:1: rule__XInvariant__TheoremAssignment_1 : ( ( 'theorem' ) ) ;
+    public final void rule__XInvariant__TheoremAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5639:1: ( ( RULE_XLABEL ) )
-            // InternalXMachine.g:5640:2: ( RULE_XLABEL )
+            // InternalXMachine.g:5279:1: ( ( ( 'theorem' ) ) )
+            // InternalXMachine.g:5280:2: ( ( 'theorem' ) )
             {
-            // InternalXMachine.g:5640:2: ( RULE_XLABEL )
-            // InternalXMachine.g:5641:3: RULE_XLABEL
+            // InternalXMachine.g:5280:2: ( ( 'theorem' ) )
+            // InternalXMachine.g:5281:3: ( 'theorem' )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXInvariantAccess().getNameXLABELTerminalRuleCall_1_0()); 
+               before(grammarAccess.getXInvariantAccess().getTheoremTheoremKeyword_1_0()); 
+            }
+            // InternalXMachine.g:5282:3: ( 'theorem' )
+            // InternalXMachine.g:5283:4: 'theorem'
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXInvariantAccess().getTheoremTheoremKeyword_1_0()); 
+            }
+            match(input,136,FOLLOW_2); if (state.failed) return ;
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getXInvariantAccess().getTheoremTheoremKeyword_1_0()); 
+            }
+
+            }
+
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getXInvariantAccess().getTheoremTheoremKeyword_1_0()); 
+            }
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__XInvariant__TheoremAssignment_1"
+
+
+    // $ANTLR start "rule__XInvariant__NameAssignment_2"
+    // InternalXMachine.g:5294:1: rule__XInvariant__NameAssignment_2 : ( RULE_XLABEL ) ;
+    public final void rule__XInvariant__NameAssignment_2() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalXMachine.g:5298:1: ( ( RULE_XLABEL ) )
+            // InternalXMachine.g:5299:2: ( RULE_XLABEL )
+            {
+            // InternalXMachine.g:5299:2: ( RULE_XLABEL )
+            // InternalXMachine.g:5300:3: RULE_XLABEL
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXInvariantAccess().getNameXLABELTerminalRuleCall_2_0()); 
             }
             match(input,RULE_XLABEL,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXInvariantAccess().getNameXLABELTerminalRuleCall_1_0()); 
+               after(grammarAccess.getXInvariantAccess().getNameXLABELTerminalRuleCall_2_0()); 
             }
 
             }
@@ -19327,32 +18113,32 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__XInvariant__NameAssignment_1"
+    // $ANTLR end "rule__XInvariant__NameAssignment_2"
 
 
-    // $ANTLR start "rule__XInvariant__PredicateAssignment_2"
-    // InternalXMachine.g:5650:1: rule__XInvariant__PredicateAssignment_2 : ( ruleXPredicate ) ;
-    public final void rule__XInvariant__PredicateAssignment_2() throws RecognitionException {
+    // $ANTLR start "rule__XInvariant__PredicateAssignment_3"
+    // InternalXMachine.g:5309:1: rule__XInvariant__PredicateAssignment_3 : ( ruleXFormula ) ;
+    public final void rule__XInvariant__PredicateAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5654:1: ( ( ruleXPredicate ) )
-            // InternalXMachine.g:5655:2: ( ruleXPredicate )
+            // InternalXMachine.g:5313:1: ( ( ruleXFormula ) )
+            // InternalXMachine.g:5314:2: ( ruleXFormula )
             {
-            // InternalXMachine.g:5655:2: ( ruleXPredicate )
-            // InternalXMachine.g:5656:3: ruleXPredicate
+            // InternalXMachine.g:5314:2: ( ruleXFormula )
+            // InternalXMachine.g:5315:3: ruleXFormula
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXInvariantAccess().getPredicateXPredicateParserRuleCall_2_0()); 
+               before(grammarAccess.getXInvariantAccess().getPredicateXFormulaParserRuleCall_3_0()); 
             }
             pushFollow(FOLLOW_2);
-            ruleXPredicate();
+            ruleXFormula();
 
             state._fsp--;
             if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXInvariantAccess().getPredicateXPredicateParserRuleCall_2_0()); 
+               after(grammarAccess.getXInvariantAccess().getPredicateXFormulaParserRuleCall_3_0()); 
             }
 
             }
@@ -19372,40 +18158,28 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__XInvariant__PredicateAssignment_2"
+    // $ANTLR end "rule__XInvariant__PredicateAssignment_3"
 
 
-    // $ANTLR start "rule__XInvariant__TheoremAssignment_3"
-    // InternalXMachine.g:5665:1: rule__XInvariant__TheoremAssignment_3 : ( ( 'theorem' ) ) ;
-    public final void rule__XInvariant__TheoremAssignment_3() throws RecognitionException {
+    // $ANTLR start "rule__XVariant__NameAssignment_1"
+    // InternalXMachine.g:5324:1: rule__XVariant__NameAssignment_1 : ( RULE_XLABEL ) ;
+    public final void rule__XVariant__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5669:1: ( ( ( 'theorem' ) ) )
-            // InternalXMachine.g:5670:2: ( ( 'theorem' ) )
+            // InternalXMachine.g:5328:1: ( ( RULE_XLABEL ) )
+            // InternalXMachine.g:5329:2: ( RULE_XLABEL )
             {
-            // InternalXMachine.g:5670:2: ( ( 'theorem' ) )
-            // InternalXMachine.g:5671:3: ( 'theorem' )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXInvariantAccess().getTheoremTheoremKeyword_3_0()); 
-            }
-            // InternalXMachine.g:5672:3: ( 'theorem' )
-            // InternalXMachine.g:5673:4: 'theorem'
+            // InternalXMachine.g:5329:2: ( RULE_XLABEL )
+            // InternalXMachine.g:5330:3: RULE_XLABEL
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXInvariantAccess().getTheoremTheoremKeyword_3_0()); 
+               before(grammarAccess.getXVariantAccess().getNameXLABELTerminalRuleCall_1_0()); 
             }
-            match(input,137,FOLLOW_2); if (state.failed) return ;
+            match(input,RULE_XLABEL,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXInvariantAccess().getTheoremTheoremKeyword_3_0()); 
-            }
-
-            }
-
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXInvariantAccess().getTheoremTheoremKeyword_3_0()); 
+               after(grammarAccess.getXVariantAccess().getNameXLABELTerminalRuleCall_1_0()); 
             }
 
             }
@@ -19425,32 +18199,32 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__XInvariant__TheoremAssignment_3"
+    // $ANTLR end "rule__XVariant__NameAssignment_1"
 
 
-    // $ANTLR start "rule__XVariant__ExpressionAssignment_1"
-    // InternalXMachine.g:5684:1: rule__XVariant__ExpressionAssignment_1 : ( ruleXPredicate ) ;
-    public final void rule__XVariant__ExpressionAssignment_1() throws RecognitionException {
+    // $ANTLR start "rule__XVariant__ExpressionAssignment_2"
+    // InternalXMachine.g:5339:1: rule__XVariant__ExpressionAssignment_2 : ( ruleXFormula ) ;
+    public final void rule__XVariant__ExpressionAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5688:1: ( ( ruleXPredicate ) )
-            // InternalXMachine.g:5689:2: ( ruleXPredicate )
+            // InternalXMachine.g:5343:1: ( ( ruleXFormula ) )
+            // InternalXMachine.g:5344:2: ( ruleXFormula )
             {
-            // InternalXMachine.g:5689:2: ( ruleXPredicate )
-            // InternalXMachine.g:5690:3: ruleXPredicate
+            // InternalXMachine.g:5344:2: ( ruleXFormula )
+            // InternalXMachine.g:5345:3: ruleXFormula
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXVariantAccess().getExpressionXPredicateParserRuleCall_1_0()); 
+               before(grammarAccess.getXVariantAccess().getExpressionXFormulaParserRuleCall_2_0()); 
             }
             pushFollow(FOLLOW_2);
-            ruleXPredicate();
+            ruleXFormula();
 
             state._fsp--;
             if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXVariantAccess().getExpressionXPredicateParserRuleCall_1_0()); 
+               after(grammarAccess.getXVariantAccess().getExpressionXFormulaParserRuleCall_2_0()); 
             }
 
             }
@@ -19470,21 +18244,21 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__XVariant__ExpressionAssignment_1"
+    // $ANTLR end "rule__XVariant__ExpressionAssignment_2"
 
 
     // $ANTLR start "rule__XGroup__NameAssignment_2"
-    // InternalXMachine.g:5699:1: rule__XGroup__NameAssignment_2 : ( RULE_ID ) ;
+    // InternalXMachine.g:5354:1: rule__XGroup__NameAssignment_2 : ( RULE_ID ) ;
     public final void rule__XGroup__NameAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5703:1: ( ( RULE_ID ) )
-            // InternalXMachine.g:5704:2: ( RULE_ID )
+            // InternalXMachine.g:5358:1: ( ( RULE_ID ) )
+            // InternalXMachine.g:5359:2: ( RULE_ID )
             {
-            // InternalXMachine.g:5704:2: ( RULE_ID )
-            // InternalXMachine.g:5705:3: RULE_ID
+            // InternalXMachine.g:5359:2: ( RULE_ID )
+            // InternalXMachine.g:5360:3: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXGroupAccess().getNameIDTerminalRuleCall_2_0()); 
@@ -19515,17 +18289,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGroup__FormalParametersAssignment_3_1"
-    // InternalXMachine.g:5714:1: rule__XGroup__FormalParametersAssignment_3_1 : ( ruleXFormalParameter ) ;
+    // InternalXMachine.g:5369:1: rule__XGroup__FormalParametersAssignment_3_1 : ( ruleXFormalParameter ) ;
     public final void rule__XGroup__FormalParametersAssignment_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5718:1: ( ( ruleXFormalParameter ) )
-            // InternalXMachine.g:5719:2: ( ruleXFormalParameter )
+            // InternalXMachine.g:5373:1: ( ( ruleXFormalParameter ) )
+            // InternalXMachine.g:5374:2: ( ruleXFormalParameter )
             {
-            // InternalXMachine.g:5719:2: ( ruleXFormalParameter )
-            // InternalXMachine.g:5720:3: ruleXFormalParameter
+            // InternalXMachine.g:5374:2: ( ruleXFormalParameter )
+            // InternalXMachine.g:5375:3: ruleXFormalParameter
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXGroupAccess().getFormalParametersXFormalParameterParserRuleCall_3_1_0()); 
@@ -19560,17 +18334,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGroup__FormalParametersAssignment_3_2_1"
-    // InternalXMachine.g:5729:1: rule__XGroup__FormalParametersAssignment_3_2_1 : ( ruleXFormalParameter ) ;
+    // InternalXMachine.g:5384:1: rule__XGroup__FormalParametersAssignment_3_2_1 : ( ruleXFormalParameter ) ;
     public final void rule__XGroup__FormalParametersAssignment_3_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5733:1: ( ( ruleXFormalParameter ) )
-            // InternalXMachine.g:5734:2: ( ruleXFormalParameter )
+            // InternalXMachine.g:5388:1: ( ( ruleXFormalParameter ) )
+            // InternalXMachine.g:5389:2: ( ruleXFormalParameter )
             {
-            // InternalXMachine.g:5734:2: ( ruleXFormalParameter )
-            // InternalXMachine.g:5735:3: ruleXFormalParameter
+            // InternalXMachine.g:5389:2: ( ruleXFormalParameter )
+            // InternalXMachine.g:5390:3: ruleXFormalParameter
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXGroupAccess().getFormalParametersXFormalParameterParserRuleCall_3_2_1_0()); 
@@ -19605,23 +18379,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGroup__EventsAssignment_4_1"
-    // InternalXMachine.g:5744:1: rule__XGroup__EventsAssignment_4_1 : ( ( RULE_ID ) ) ;
+    // InternalXMachine.g:5399:1: rule__XGroup__EventsAssignment_4_1 : ( ( RULE_ID ) ) ;
     public final void rule__XGroup__EventsAssignment_4_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5748:1: ( ( ( RULE_ID ) ) )
-            // InternalXMachine.g:5749:2: ( ( RULE_ID ) )
+            // InternalXMachine.g:5403:1: ( ( ( RULE_ID ) ) )
+            // InternalXMachine.g:5404:2: ( ( RULE_ID ) )
             {
-            // InternalXMachine.g:5749:2: ( ( RULE_ID ) )
-            // InternalXMachine.g:5750:3: ( RULE_ID )
+            // InternalXMachine.g:5404:2: ( ( RULE_ID ) )
+            // InternalXMachine.g:5405:3: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXGroupAccess().getEventsEventCrossReference_4_1_0()); 
             }
-            // InternalXMachine.g:5751:3: ( RULE_ID )
-            // InternalXMachine.g:5752:4: RULE_ID
+            // InternalXMachine.g:5406:3: ( RULE_ID )
+            // InternalXMachine.g:5407:4: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXGroupAccess().getEventsEventIDTerminalRuleCall_4_1_0_1()); 
@@ -19658,23 +18432,23 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XGroup__EventsAssignment_4_2"
-    // InternalXMachine.g:5763:1: rule__XGroup__EventsAssignment_4_2 : ( ( RULE_ID ) ) ;
+    // InternalXMachine.g:5418:1: rule__XGroup__EventsAssignment_4_2 : ( ( RULE_ID ) ) ;
     public final void rule__XGroup__EventsAssignment_4_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5767:1: ( ( ( RULE_ID ) ) )
-            // InternalXMachine.g:5768:2: ( ( RULE_ID ) )
+            // InternalXMachine.g:5422:1: ( ( ( RULE_ID ) ) )
+            // InternalXMachine.g:5423:2: ( ( RULE_ID ) )
             {
-            // InternalXMachine.g:5768:2: ( ( RULE_ID ) )
-            // InternalXMachine.g:5769:3: ( RULE_ID )
+            // InternalXMachine.g:5423:2: ( ( RULE_ID ) )
+            // InternalXMachine.g:5424:3: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXGroupAccess().getEventsEventCrossReference_4_2_0()); 
             }
-            // InternalXMachine.g:5770:3: ( RULE_ID )
-            // InternalXMachine.g:5771:4: RULE_ID
+            // InternalXMachine.g:5425:3: ( RULE_ID )
+            // InternalXMachine.g:5426:4: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXGroupAccess().getEventsEventIDTerminalRuleCall_4_2_0_1()); 
@@ -19711,17 +18485,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XFormalParameter__DirectionAssignment_1"
-    // InternalXMachine.g:5782:1: rule__XFormalParameter__DirectionAssignment_1 : ( ruleXDirection ) ;
+    // InternalXMachine.g:5437:1: rule__XFormalParameter__DirectionAssignment_1 : ( ruleXDirection ) ;
     public final void rule__XFormalParameter__DirectionAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5786:1: ( ( ruleXDirection ) )
-            // InternalXMachine.g:5787:2: ( ruleXDirection )
+            // InternalXMachine.g:5441:1: ( ( ruleXDirection ) )
+            // InternalXMachine.g:5442:2: ( ruleXDirection )
             {
-            // InternalXMachine.g:5787:2: ( ruleXDirection )
-            // InternalXMachine.g:5788:3: ruleXDirection
+            // InternalXMachine.g:5442:2: ( ruleXDirection )
+            // InternalXMachine.g:5443:3: ruleXDirection
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFormalParameterAccess().getDirectionXDirectionEnumRuleCall_1_0()); 
@@ -19756,17 +18530,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XFormalParameter__NameAssignment_2"
-    // InternalXMachine.g:5797:1: rule__XFormalParameter__NameAssignment_2 : ( RULE_ID ) ;
+    // InternalXMachine.g:5452:1: rule__XFormalParameter__NameAssignment_2 : ( RULE_ID ) ;
     public final void rule__XFormalParameter__NameAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5801:1: ( ( RULE_ID ) )
-            // InternalXMachine.g:5802:2: ( RULE_ID )
+            // InternalXMachine.g:5456:1: ( ( RULE_ID ) )
+            // InternalXMachine.g:5457:2: ( RULE_ID )
             {
-            // InternalXMachine.g:5802:2: ( RULE_ID )
-            // InternalXMachine.g:5803:3: RULE_ID
+            // InternalXMachine.g:5457:2: ( RULE_ID )
+            // InternalXMachine.g:5458:3: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFormalParameterAccess().getNameIDTerminalRuleCall_2_0()); 
@@ -19796,115 +18570,21 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
     // $ANTLR end "rule__XFormalParameter__NameAssignment_2"
 
 
-    // $ANTLR start "rule__XEvent__NameAssignment_2"
-    // InternalXMachine.g:5812:1: rule__XEvent__NameAssignment_2 : ( RULE_ID ) ;
-    public final void rule__XEvent__NameAssignment_2() throws RecognitionException {
+    // $ANTLR start "rule__XEvent__ConvergenceAssignment_1"
+    // InternalXMachine.g:5467:1: rule__XEvent__ConvergenceAssignment_1 : ( ruleXConvergence ) ;
+    public final void rule__XEvent__ConvergenceAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5816:1: ( ( RULE_ID ) )
-            // InternalXMachine.g:5817:2: ( RULE_ID )
+            // InternalXMachine.g:5471:1: ( ( ruleXConvergence ) )
+            // InternalXMachine.g:5472:2: ( ruleXConvergence )
             {
-            // InternalXMachine.g:5817:2: ( RULE_ID )
-            // InternalXMachine.g:5818:3: RULE_ID
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getNameIDTerminalRuleCall_2_0()); 
-            }
-            match(input,RULE_ID,FOLLOW_2); if (state.failed) return ;
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getNameIDTerminalRuleCall_2_0()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__NameAssignment_2"
-
-
-    // $ANTLR start "rule__XEvent__ExtendedAssignment_3_0"
-    // InternalXMachine.g:5827:1: rule__XEvent__ExtendedAssignment_3_0 : ( ( 'extended' ) ) ;
-    public final void rule__XEvent__ExtendedAssignment_3_0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:5831:1: ( ( ( 'extended' ) ) )
-            // InternalXMachine.g:5832:2: ( ( 'extended' ) )
-            {
-            // InternalXMachine.g:5832:2: ( ( 'extended' ) )
-            // InternalXMachine.g:5833:3: ( 'extended' )
+            // InternalXMachine.g:5472:2: ( ruleXConvergence )
+            // InternalXMachine.g:5473:3: ruleXConvergence
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getExtendedExtendedKeyword_3_0_0()); 
-            }
-            // InternalXMachine.g:5834:3: ( 'extended' )
-            // InternalXMachine.g:5835:4: 'extended'
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getExtendedExtendedKeyword_3_0_0()); 
-            }
-            match(input,138,FOLLOW_2); if (state.failed) return ;
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getExtendedExtendedKeyword_3_0_0()); 
-            }
-
-            }
-
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getExtendedExtendedKeyword_3_0_0()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__ExtendedAssignment_3_0"
-
-
-    // $ANTLR start "rule__XEvent__ConvergenceAssignment_3_1"
-    // InternalXMachine.g:5846:1: rule__XEvent__ConvergenceAssignment_3_1 : ( ruleXConvergence ) ;
-    public final void rule__XEvent__ConvergenceAssignment_3_1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:5850:1: ( ( ruleXConvergence ) )
-            // InternalXMachine.g:5851:2: ( ruleXConvergence )
-            {
-            // InternalXMachine.g:5851:2: ( ruleXConvergence )
-            // InternalXMachine.g:5852:3: ruleXConvergence
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getConvergenceXConvergenceEnumRuleCall_3_1_0()); 
+               before(grammarAccess.getXEventAccess().getConvergenceXConvergenceEnumRuleCall_1_0()); 
             }
             pushFollow(FOLLOW_2);
             ruleXConvergence();
@@ -19912,7 +18592,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
             if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getConvergenceXConvergenceEnumRuleCall_3_1_0()); 
+               after(grammarAccess.getXEventAccess().getConvergenceXConvergenceEnumRuleCall_1_0()); 
             }
 
             }
@@ -19932,85 +18612,28 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__XEvent__ConvergenceAssignment_3_1"
+    // $ANTLR end "rule__XEvent__ConvergenceAssignment_1"
 
 
-    // $ANTLR start "rule__XEvent__ExtensionsAssignment_4"
-    // InternalXMachine.g:5861:1: rule__XEvent__ExtensionsAssignment_4 : ( ruleXGroupOrEvent ) ;
-    public final void rule__XEvent__ExtensionsAssignment_4() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:5865:1: ( ( ruleXGroupOrEvent ) )
-            // InternalXMachine.g:5866:2: ( ruleXGroupOrEvent )
-            {
-            // InternalXMachine.g:5866:2: ( ruleXGroupOrEvent )
-            // InternalXMachine.g:5867:3: ruleXGroupOrEvent
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getExtensionsXGroupOrEventParserRuleCall_4_0()); 
-            }
-            pushFollow(FOLLOW_2);
-            ruleXGroupOrEvent();
-
-            state._fsp--;
-            if (state.failed) return ;
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getExtensionsXGroupOrEventParserRuleCall_4_0()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__ExtensionsAssignment_4"
-
-
-    // $ANTLR start "rule__XEvent__RefinesAssignment_5_1"
-    // InternalXMachine.g:5876:1: rule__XEvent__RefinesAssignment_5_1 : ( ( RULE_ID ) ) ;
-    public final void rule__XEvent__RefinesAssignment_5_1() throws RecognitionException {
+    // $ANTLR start "rule__XEvent__NameAssignment_3"
+    // InternalXMachine.g:5482:1: rule__XEvent__NameAssignment_3 : ( RULE_ID ) ;
+    public final void rule__XEvent__NameAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5880:1: ( ( ( RULE_ID ) ) )
-            // InternalXMachine.g:5881:2: ( ( RULE_ID ) )
+            // InternalXMachine.g:5486:1: ( ( RULE_ID ) )
+            // InternalXMachine.g:5487:2: ( RULE_ID )
             {
-            // InternalXMachine.g:5881:2: ( ( RULE_ID ) )
-            // InternalXMachine.g:5882:3: ( RULE_ID )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getRefinesEventCrossReference_5_1_0()); 
-            }
-            // InternalXMachine.g:5883:3: ( RULE_ID )
-            // InternalXMachine.g:5884:4: RULE_ID
+            // InternalXMachine.g:5487:2: ( RULE_ID )
+            // InternalXMachine.g:5488:3: RULE_ID
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getRefinesEventIDTerminalRuleCall_5_1_0_1()); 
+               before(grammarAccess.getXEventAccess().getNameIDTerminalRuleCall_3_0()); 
             }
             match(input,RULE_ID,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getRefinesEventIDTerminalRuleCall_5_1_0_1()); 
-            }
-
-            }
-
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getRefinesEventCrossReference_5_1_0()); 
+               after(grammarAccess.getXEventAccess().getNameIDTerminalRuleCall_3_0()); 
             }
 
             }
@@ -20030,32 +18653,40 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__XEvent__RefinesAssignment_5_1"
+    // $ANTLR end "rule__XEvent__NameAssignment_3"
 
 
-    // $ANTLR start "rule__XEvent__WitnessesAssignment_6_0_0_1"
-    // InternalXMachine.g:5895:1: rule__XEvent__WitnessesAssignment_6_0_0_1 : ( ruleXWitness ) ;
-    public final void rule__XEvent__WitnessesAssignment_6_0_0_1() throws RecognitionException {
+    // $ANTLR start "rule__XEvent__RefinesAssignment_4_0_1"
+    // InternalXMachine.g:5497:1: rule__XEvent__RefinesAssignment_4_0_1 : ( ( RULE_ID ) ) ;
+    public final void rule__XEvent__RefinesAssignment_4_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5899:1: ( ( ruleXWitness ) )
-            // InternalXMachine.g:5900:2: ( ruleXWitness )
+            // InternalXMachine.g:5501:1: ( ( ( RULE_ID ) ) )
+            // InternalXMachine.g:5502:2: ( ( RULE_ID ) )
             {
-            // InternalXMachine.g:5900:2: ( ruleXWitness )
-            // InternalXMachine.g:5901:3: ruleXWitness
+            // InternalXMachine.g:5502:2: ( ( RULE_ID ) )
+            // InternalXMachine.g:5503:3: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getWitnessesXWitnessParserRuleCall_6_0_0_1_0()); 
+               before(grammarAccess.getXEventAccess().getRefinesEventCrossReference_4_0_1_0()); 
             }
-            pushFollow(FOLLOW_2);
-            ruleXWitness();
-
-            state._fsp--;
-            if (state.failed) return ;
+            // InternalXMachine.g:5504:3: ( RULE_ID )
+            // InternalXMachine.g:5505:4: RULE_ID
+            {
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getWitnessesXWitnessParserRuleCall_6_0_0_1_0()); 
+               before(grammarAccess.getXEventAccess().getRefinesEventIDTerminalRuleCall_4_0_1_0_1()); 
+            }
+            match(input,RULE_ID,FOLLOW_2); if (state.failed) return ;
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getXEventAccess().getRefinesEventIDTerminalRuleCall_4_0_1_0_1()); 
+            }
+
+            }
+
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getXEventAccess().getRefinesEventCrossReference_4_0_1_0()); 
             }
 
             }
@@ -20075,32 +18706,40 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__XEvent__WitnessesAssignment_6_0_0_1"
+    // $ANTLR end "rule__XEvent__RefinesAssignment_4_0_1"
 
 
-    // $ANTLR start "rule__XEvent__ActionsAssignment_6_0_2"
-    // InternalXMachine.g:5910:1: rule__XEvent__ActionsAssignment_6_0_2 : ( ruleXAction ) ;
-    public final void rule__XEvent__ActionsAssignment_6_0_2() throws RecognitionException {
+    // $ANTLR start "rule__XEvent__ExtendedAssignment_4_1_0"
+    // InternalXMachine.g:5516:1: rule__XEvent__ExtendedAssignment_4_1_0 : ( ( 'extends' ) ) ;
+    public final void rule__XEvent__ExtendedAssignment_4_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5914:1: ( ( ruleXAction ) )
-            // InternalXMachine.g:5915:2: ( ruleXAction )
+            // InternalXMachine.g:5520:1: ( ( ( 'extends' ) ) )
+            // InternalXMachine.g:5521:2: ( ( 'extends' ) )
             {
-            // InternalXMachine.g:5915:2: ( ruleXAction )
-            // InternalXMachine.g:5916:3: ruleXAction
+            // InternalXMachine.g:5521:2: ( ( 'extends' ) )
+            // InternalXMachine.g:5522:3: ( 'extends' )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getActionsXActionParserRuleCall_6_0_2_0()); 
+               before(grammarAccess.getXEventAccess().getExtendedExtendsKeyword_4_1_0_0()); 
             }
-            pushFollow(FOLLOW_2);
-            ruleXAction();
-
-            state._fsp--;
-            if (state.failed) return ;
+            // InternalXMachine.g:5523:3: ( 'extends' )
+            // InternalXMachine.g:5524:4: 'extends'
+            {
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getActionsXActionParserRuleCall_6_0_2_0()); 
+               before(grammarAccess.getXEventAccess().getExtendedExtendsKeyword_4_1_0_0()); 
+            }
+            match(input,137,FOLLOW_2); if (state.failed) return ;
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getXEventAccess().getExtendedExtendsKeyword_4_1_0_0()); 
+            }
+
+            }
+
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getXEventAccess().getExtendedExtendsKeyword_4_1_0_0()); 
             }
 
             }
@@ -20120,32 +18759,40 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__XEvent__ActionsAssignment_6_0_2"
+    // $ANTLR end "rule__XEvent__ExtendedAssignment_4_1_0"
 
 
-    // $ANTLR start "rule__XEvent__GuardsAssignment_6_1_1"
-    // InternalXMachine.g:5925:1: rule__XEvent__GuardsAssignment_6_1_1 : ( ruleXGuard ) ;
-    public final void rule__XEvent__GuardsAssignment_6_1_1() throws RecognitionException {
+    // $ANTLR start "rule__XEvent__RefinesAssignment_4_1_1"
+    // InternalXMachine.g:5535:1: rule__XEvent__RefinesAssignment_4_1_1 : ( ( RULE_ID ) ) ;
+    public final void rule__XEvent__RefinesAssignment_4_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5929:1: ( ( ruleXGuard ) )
-            // InternalXMachine.g:5930:2: ( ruleXGuard )
+            // InternalXMachine.g:5539:1: ( ( ( RULE_ID ) ) )
+            // InternalXMachine.g:5540:2: ( ( RULE_ID ) )
             {
-            // InternalXMachine.g:5930:2: ( ruleXGuard )
-            // InternalXMachine.g:5931:3: ruleXGuard
+            // InternalXMachine.g:5540:2: ( ( RULE_ID ) )
+            // InternalXMachine.g:5541:3: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getGuardsXGuardParserRuleCall_6_1_1_0()); 
+               before(grammarAccess.getXEventAccess().getRefinesEventCrossReference_4_1_1_0()); 
             }
-            pushFollow(FOLLOW_2);
-            ruleXGuard();
-
-            state._fsp--;
-            if (state.failed) return ;
+            // InternalXMachine.g:5542:3: ( RULE_ID )
+            // InternalXMachine.g:5543:4: RULE_ID
+            {
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getGuardsXGuardParserRuleCall_6_1_1_0()); 
+               before(grammarAccess.getXEventAccess().getRefinesEventIDTerminalRuleCall_4_1_1_0_1()); 
+            }
+            match(input,RULE_ID,FOLLOW_2); if (state.failed) return ;
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getXEventAccess().getRefinesEventIDTerminalRuleCall_4_1_1_0_1()); 
+            }
+
+            }
+
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getXEventAccess().getRefinesEventCrossReference_4_1_1_0()); 
             }
 
             }
@@ -20165,114 +18812,24 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__XEvent__GuardsAssignment_6_1_1"
+    // $ANTLR end "rule__XEvent__RefinesAssignment_4_1_1"
 
 
-    // $ANTLR start "rule__XEvent__WitnessesAssignment_6_1_2_1"
-    // InternalXMachine.g:5940:1: rule__XEvent__WitnessesAssignment_6_1_2_1 : ( ruleXWitness ) ;
-    public final void rule__XEvent__WitnessesAssignment_6_1_2_1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:5944:1: ( ( ruleXWitness ) )
-            // InternalXMachine.g:5945:2: ( ruleXWitness )
-            {
-            // InternalXMachine.g:5945:2: ( ruleXWitness )
-            // InternalXMachine.g:5946:3: ruleXWitness
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getWitnessesXWitnessParserRuleCall_6_1_2_1_0()); 
-            }
-            pushFollow(FOLLOW_2);
-            ruleXWitness();
-
-            state._fsp--;
-            if (state.failed) return ;
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getWitnessesXWitnessParserRuleCall_6_1_2_1_0()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__WitnessesAssignment_6_1_2_1"
-
-
-    // $ANTLR start "rule__XEvent__ActionsAssignment_6_1_3_1"
-    // InternalXMachine.g:5955:1: rule__XEvent__ActionsAssignment_6_1_3_1 : ( ruleXAction ) ;
-    public final void rule__XEvent__ActionsAssignment_6_1_3_1() throws RecognitionException {
+    // $ANTLR start "rule__XEvent__ParametersAssignment_5_1"
+    // InternalXMachine.g:5554:1: rule__XEvent__ParametersAssignment_5_1 : ( ruleXParameter ) ;
+    public final void rule__XEvent__ParametersAssignment_5_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5959:1: ( ( ruleXAction ) )
-            // InternalXMachine.g:5960:2: ( ruleXAction )
+            // InternalXMachine.g:5558:1: ( ( ruleXParameter ) )
+            // InternalXMachine.g:5559:2: ( ruleXParameter )
             {
-            // InternalXMachine.g:5960:2: ( ruleXAction )
-            // InternalXMachine.g:5961:3: ruleXAction
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getActionsXActionParserRuleCall_6_1_3_1_0()); 
-            }
-            pushFollow(FOLLOW_2);
-            ruleXAction();
-
-            state._fsp--;
-            if (state.failed) return ;
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getActionsXActionParserRuleCall_6_1_3_1_0()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__ActionsAssignment_6_1_3_1"
-
-
-    // $ANTLR start "rule__XEvent__ParametersAssignment_6_2_1"
-    // InternalXMachine.g:5970:1: rule__XEvent__ParametersAssignment_6_2_1 : ( ruleXParameter ) ;
-    public final void rule__XEvent__ParametersAssignment_6_2_1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:5974:1: ( ( ruleXParameter ) )
-            // InternalXMachine.g:5975:2: ( ruleXParameter )
-            {
-            // InternalXMachine.g:5975:2: ( ruleXParameter )
-            // InternalXMachine.g:5976:3: ruleXParameter
+            // InternalXMachine.g:5559:2: ( ruleXParameter )
+            // InternalXMachine.g:5560:3: ruleXParameter
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getParametersXParameterParserRuleCall_6_2_1_0()); 
+               before(grammarAccess.getXEventAccess().getParametersXParameterParserRuleCall_5_1_0()); 
             }
             pushFollow(FOLLOW_2);
             ruleXParameter();
@@ -20280,7 +18837,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
             if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getParametersXParameterParserRuleCall_6_2_1_0()); 
+               after(grammarAccess.getXEventAccess().getParametersXParameterParserRuleCall_5_1_0()); 
             }
 
             }
@@ -20300,24 +18857,69 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__XEvent__ParametersAssignment_6_2_1"
+    // $ANTLR end "rule__XEvent__ParametersAssignment_5_1"
 
 
-    // $ANTLR start "rule__XEvent__GuardsAssignment_6_2_3"
-    // InternalXMachine.g:5985:1: rule__XEvent__GuardsAssignment_6_2_3 : ( ruleXGuard ) ;
-    public final void rule__XEvent__GuardsAssignment_6_2_3() throws RecognitionException {
+    // $ANTLR start "rule__XEvent__ExtensionsAssignment_6"
+    // InternalXMachine.g:5569:1: rule__XEvent__ExtensionsAssignment_6 : ( ruleXGroupOrEvent ) ;
+    public final void rule__XEvent__ExtensionsAssignment_6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:5989:1: ( ( ruleXGuard ) )
-            // InternalXMachine.g:5990:2: ( ruleXGuard )
+            // InternalXMachine.g:5573:1: ( ( ruleXGroupOrEvent ) )
+            // InternalXMachine.g:5574:2: ( ruleXGroupOrEvent )
             {
-            // InternalXMachine.g:5990:2: ( ruleXGuard )
-            // InternalXMachine.g:5991:3: ruleXGuard
+            // InternalXMachine.g:5574:2: ( ruleXGroupOrEvent )
+            // InternalXMachine.g:5575:3: ruleXGroupOrEvent
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getGuardsXGuardParserRuleCall_6_2_3_0()); 
+               before(grammarAccess.getXEventAccess().getExtensionsXGroupOrEventParserRuleCall_6_0()); 
+            }
+            pushFollow(FOLLOW_2);
+            ruleXGroupOrEvent();
+
+            state._fsp--;
+            if (state.failed) return ;
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getXEventAccess().getExtensionsXGroupOrEventParserRuleCall_6_0()); 
+            }
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__XEvent__ExtensionsAssignment_6"
+
+
+    // $ANTLR start "rule__XEvent__GuardsAssignment_7_1"
+    // InternalXMachine.g:5584:1: rule__XEvent__GuardsAssignment_7_1 : ( ruleXGuard ) ;
+    public final void rule__XEvent__GuardsAssignment_7_1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalXMachine.g:5588:1: ( ( ruleXGuard ) )
+            // InternalXMachine.g:5589:2: ( ruleXGuard )
+            {
+            // InternalXMachine.g:5589:2: ( ruleXGuard )
+            // InternalXMachine.g:5590:3: ruleXGuard
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXEventAccess().getGuardsXGuardParserRuleCall_7_1_0()); 
             }
             pushFollow(FOLLOW_2);
             ruleXGuard();
@@ -20325,7 +18927,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
             if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getGuardsXGuardParserRuleCall_6_2_3_0()); 
+               after(grammarAccess.getXEventAccess().getGuardsXGuardParserRuleCall_7_1_0()); 
             }
 
             }
@@ -20345,69 +18947,24 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__XEvent__GuardsAssignment_6_2_3"
+    // $ANTLR end "rule__XEvent__GuardsAssignment_7_1"
 
 
-    // $ANTLR start "rule__XEvent__WitnessesAssignment_6_2_4_1"
-    // InternalXMachine.g:6000:1: rule__XEvent__WitnessesAssignment_6_2_4_1 : ( ruleXWitness ) ;
-    public final void rule__XEvent__WitnessesAssignment_6_2_4_1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:6004:1: ( ( ruleXWitness ) )
-            // InternalXMachine.g:6005:2: ( ruleXWitness )
-            {
-            // InternalXMachine.g:6005:2: ( ruleXWitness )
-            // InternalXMachine.g:6006:3: ruleXWitness
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getWitnessesXWitnessParserRuleCall_6_2_4_1_0()); 
-            }
-            pushFollow(FOLLOW_2);
-            ruleXWitness();
-
-            state._fsp--;
-            if (state.failed) return ;
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getWitnessesXWitnessParserRuleCall_6_2_4_1_0()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XEvent__WitnessesAssignment_6_2_4_1"
-
-
-    // $ANTLR start "rule__XEvent__ActionsAssignment_6_2_5_1"
-    // InternalXMachine.g:6015:1: rule__XEvent__ActionsAssignment_6_2_5_1 : ( ruleXAction ) ;
-    public final void rule__XEvent__ActionsAssignment_6_2_5_1() throws RecognitionException {
+    // $ANTLR start "rule__XEvent__ActionsAssignment_8_1"
+    // InternalXMachine.g:5599:1: rule__XEvent__ActionsAssignment_8_1 : ( ruleXAction ) ;
+    public final void rule__XEvent__ActionsAssignment_8_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:6019:1: ( ( ruleXAction ) )
-            // InternalXMachine.g:6020:2: ( ruleXAction )
+            // InternalXMachine.g:5603:1: ( ( ruleXAction ) )
+            // InternalXMachine.g:5604:2: ( ruleXAction )
             {
-            // InternalXMachine.g:6020:2: ( ruleXAction )
-            // InternalXMachine.g:6021:3: ruleXAction
+            // InternalXMachine.g:5604:2: ( ruleXAction )
+            // InternalXMachine.g:5605:3: ruleXAction
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXEventAccess().getActionsXActionParserRuleCall_6_2_5_1_0()); 
+               before(grammarAccess.getXEventAccess().getActionsXActionParserRuleCall_8_1_0()); 
             }
             pushFollow(FOLLOW_2);
             ruleXAction();
@@ -20415,7 +18972,7 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
             if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXEventAccess().getActionsXActionParserRuleCall_6_2_5_1_0()); 
+               after(grammarAccess.getXEventAccess().getActionsXActionParserRuleCall_8_1_0()); 
             }
 
             }
@@ -20435,28 +18992,32 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__XEvent__ActionsAssignment_6_2_5_1"
+    // $ANTLR end "rule__XEvent__ActionsAssignment_8_1"
 
 
-    // $ANTLR start "rule__EventSync__PrefixAssignment_1_1_0"
-    // InternalXMachine.g:6030:1: rule__EventSync__PrefixAssignment_1_1_0 : ( RULE_ID ) ;
-    public final void rule__EventSync__PrefixAssignment_1_1_0() throws RecognitionException {
+    // $ANTLR start "rule__XEvent__WitnessesAssignment_9_1"
+    // InternalXMachine.g:5614:1: rule__XEvent__WitnessesAssignment_9_1 : ( ruleXWitness ) ;
+    public final void rule__XEvent__WitnessesAssignment_9_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:6034:1: ( ( RULE_ID ) )
-            // InternalXMachine.g:6035:2: ( RULE_ID )
+            // InternalXMachine.g:5618:1: ( ( ruleXWitness ) )
+            // InternalXMachine.g:5619:2: ( ruleXWitness )
             {
-            // InternalXMachine.g:6035:2: ( RULE_ID )
-            // InternalXMachine.g:6036:3: RULE_ID
+            // InternalXMachine.g:5619:2: ( ruleXWitness )
+            // InternalXMachine.g:5620:3: ruleXWitness
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getEventSyncAccess().getPrefixIDTerminalRuleCall_1_1_0_0()); 
+               before(grammarAccess.getXEventAccess().getWitnessesXWitnessParserRuleCall_9_1_0()); 
             }
-            match(input,RULE_ID,FOLLOW_2); if (state.failed) return ;
+            pushFollow(FOLLOW_2);
+            ruleXWitness();
+
+            state._fsp--;
+            if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getEventSyncAccess().getPrefixIDTerminalRuleCall_1_1_0_0()); 
+               after(grammarAccess.getXEventAccess().getWitnessesXWitnessParserRuleCall_9_1_0()); 
             }
 
             }
@@ -20476,40 +19037,28 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__EventSync__PrefixAssignment_1_1_0"
+    // $ANTLR end "rule__XEvent__WitnessesAssignment_9_1"
 
 
-    // $ANTLR start "rule__EventSync__SynchronisedEventAssignment_1_2"
-    // InternalXMachine.g:6045:1: rule__EventSync__SynchronisedEventAssignment_1_2 : ( ( RULE_ID ) ) ;
-    public final void rule__EventSync__SynchronisedEventAssignment_1_2() throws RecognitionException {
+    // $ANTLR start "rule__EventSync__PrefixAssignment_1_2_0"
+    // InternalXMachine.g:5629:1: rule__EventSync__PrefixAssignment_1_2_0 : ( RULE_ID ) ;
+    public final void rule__EventSync__PrefixAssignment_1_2_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:6049:1: ( ( ( RULE_ID ) ) )
-            // InternalXMachine.g:6050:2: ( ( RULE_ID ) )
+            // InternalXMachine.g:5633:1: ( ( RULE_ID ) )
+            // InternalXMachine.g:5634:2: ( RULE_ID )
             {
-            // InternalXMachine.g:6050:2: ( ( RULE_ID ) )
-            // InternalXMachine.g:6051:3: ( RULE_ID )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getEventSyncAccess().getSynchronisedEventEventCrossReference_1_2_0()); 
-            }
-            // InternalXMachine.g:6052:3: ( RULE_ID )
-            // InternalXMachine.g:6053:4: RULE_ID
+            // InternalXMachine.g:5634:2: ( RULE_ID )
+            // InternalXMachine.g:5635:3: RULE_ID
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getEventSyncAccess().getSynchronisedEventEventIDTerminalRuleCall_1_2_0_1()); 
+               before(grammarAccess.getEventSyncAccess().getPrefixIDTerminalRuleCall_1_2_0_0()); 
             }
             match(input,RULE_ID,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getEventSyncAccess().getSynchronisedEventEventIDTerminalRuleCall_1_2_0_1()); 
-            }
-
-            }
-
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getEventSyncAccess().getSynchronisedEventEventCrossReference_1_2_0()); 
+               after(grammarAccess.getEventSyncAccess().getPrefixIDTerminalRuleCall_1_2_0_0()); 
             }
 
             }
@@ -20529,28 +19078,40 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__EventSync__SynchronisedEventAssignment_1_2"
+    // $ANTLR end "rule__EventSync__PrefixAssignment_1_2_0"
 
 
-    // $ANTLR start "rule__GroupSync__PrefixAssignment_1_2_0"
-    // InternalXMachine.g:6064:1: rule__GroupSync__PrefixAssignment_1_2_0 : ( RULE_ID ) ;
-    public final void rule__GroupSync__PrefixAssignment_1_2_0() throws RecognitionException {
+    // $ANTLR start "rule__EventSync__SynchronisedEventAssignment_1_3"
+    // InternalXMachine.g:5644:1: rule__EventSync__SynchronisedEventAssignment_1_3 : ( ( RULE_ID ) ) ;
+    public final void rule__EventSync__SynchronisedEventAssignment_1_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:6068:1: ( ( RULE_ID ) )
-            // InternalXMachine.g:6069:2: ( RULE_ID )
+            // InternalXMachine.g:5648:1: ( ( ( RULE_ID ) ) )
+            // InternalXMachine.g:5649:2: ( ( RULE_ID ) )
             {
-            // InternalXMachine.g:6069:2: ( RULE_ID )
-            // InternalXMachine.g:6070:3: RULE_ID
+            // InternalXMachine.g:5649:2: ( ( RULE_ID ) )
+            // InternalXMachine.g:5650:3: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getGroupSyncAccess().getPrefixIDTerminalRuleCall_1_2_0_0()); 
+               before(grammarAccess.getEventSyncAccess().getSynchronisedEventEventCrossReference_1_3_0()); 
+            }
+            // InternalXMachine.g:5651:3: ( RULE_ID )
+            // InternalXMachine.g:5652:4: RULE_ID
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getEventSyncAccess().getSynchronisedEventEventIDTerminalRuleCall_1_3_0_1()); 
             }
             match(input,RULE_ID,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getGroupSyncAccess().getPrefixIDTerminalRuleCall_1_2_0_0()); 
+               after(grammarAccess.getEventSyncAccess().getSynchronisedEventEventIDTerminalRuleCall_1_3_0_1()); 
+            }
+
+            }
+
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getEventSyncAccess().getSynchronisedEventEventCrossReference_1_3_0()); 
             }
 
             }
@@ -20570,40 +19131,28 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__GroupSync__PrefixAssignment_1_2_0"
+    // $ANTLR end "rule__EventSync__SynchronisedEventAssignment_1_3"
 
 
-    // $ANTLR start "rule__GroupSync__SynchronisedCasesAssignment_1_3"
-    // InternalXMachine.g:6079:1: rule__GroupSync__SynchronisedCasesAssignment_1_3 : ( ( RULE_ID ) ) ;
-    public final void rule__GroupSync__SynchronisedCasesAssignment_1_3() throws RecognitionException {
+    // $ANTLR start "rule__GroupSync__PrefixAssignment_1_1_0"
+    // InternalXMachine.g:5663:1: rule__GroupSync__PrefixAssignment_1_1_0 : ( RULE_ID ) ;
+    public final void rule__GroupSync__PrefixAssignment_1_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:6083:1: ( ( ( RULE_ID ) ) )
-            // InternalXMachine.g:6084:2: ( ( RULE_ID ) )
+            // InternalXMachine.g:5667:1: ( ( RULE_ID ) )
+            // InternalXMachine.g:5668:2: ( RULE_ID )
             {
-            // InternalXMachine.g:6084:2: ( ( RULE_ID ) )
-            // InternalXMachine.g:6085:3: ( RULE_ID )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getGroupSyncAccess().getSynchronisedCasesEventCasesCrossReference_1_3_0()); 
-            }
-            // InternalXMachine.g:6086:3: ( RULE_ID )
-            // InternalXMachine.g:6087:4: RULE_ID
+            // InternalXMachine.g:5668:2: ( RULE_ID )
+            // InternalXMachine.g:5669:3: RULE_ID
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getGroupSyncAccess().getSynchronisedCasesEventCasesIDTerminalRuleCall_1_3_0_1()); 
+               before(grammarAccess.getGroupSyncAccess().getPrefixIDTerminalRuleCall_1_1_0_0()); 
             }
             match(input,RULE_ID,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getGroupSyncAccess().getSynchronisedCasesEventCasesIDTerminalRuleCall_1_3_0_1()); 
-            }
-
-            }
-
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getGroupSyncAccess().getSynchronisedCasesEventCasesCrossReference_1_3_0()); 
+               after(grammarAccess.getGroupSyncAccess().getPrefixIDTerminalRuleCall_1_1_0_0()); 
             }
 
             }
@@ -20623,21 +19172,74 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__GroupSync__SynchronisedCasesAssignment_1_3"
+    // $ANTLR end "rule__GroupSync__PrefixAssignment_1_1_0"
+
+
+    // $ANTLR start "rule__GroupSync__SynchronisedCasesAssignment_1_2"
+    // InternalXMachine.g:5678:1: rule__GroupSync__SynchronisedCasesAssignment_1_2 : ( ( RULE_ID ) ) ;
+    public final void rule__GroupSync__SynchronisedCasesAssignment_1_2() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalXMachine.g:5682:1: ( ( ( RULE_ID ) ) )
+            // InternalXMachine.g:5683:2: ( ( RULE_ID ) )
+            {
+            // InternalXMachine.g:5683:2: ( ( RULE_ID ) )
+            // InternalXMachine.g:5684:3: ( RULE_ID )
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getGroupSyncAccess().getSynchronisedCasesEventCasesCrossReference_1_2_0()); 
+            }
+            // InternalXMachine.g:5685:3: ( RULE_ID )
+            // InternalXMachine.g:5686:4: RULE_ID
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getGroupSyncAccess().getSynchronisedCasesEventCasesIDTerminalRuleCall_1_2_0_1()); 
+            }
+            match(input,RULE_ID,FOLLOW_2); if (state.failed) return ;
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getGroupSyncAccess().getSynchronisedCasesEventCasesIDTerminalRuleCall_1_2_0_1()); 
+            }
+
+            }
+
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getGroupSyncAccess().getSynchronisedCasesEventCasesCrossReference_1_2_0()); 
+            }
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__GroupSync__SynchronisedCasesAssignment_1_2"
 
 
     // $ANTLR start "rule__GroupSync__ActualParametersAssignment_2_1"
-    // InternalXMachine.g:6098:1: rule__GroupSync__ActualParametersAssignment_2_1 : ( ruleXPar ) ;
+    // InternalXMachine.g:5697:1: rule__GroupSync__ActualParametersAssignment_2_1 : ( ruleXPar ) ;
     public final void rule__GroupSync__ActualParametersAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:6102:1: ( ( ruleXPar ) )
-            // InternalXMachine.g:6103:2: ( ruleXPar )
+            // InternalXMachine.g:5701:1: ( ( ruleXPar ) )
+            // InternalXMachine.g:5702:2: ( ruleXPar )
             {
-            // InternalXMachine.g:6103:2: ( ruleXPar )
-            // InternalXMachine.g:6104:3: ruleXPar
+            // InternalXMachine.g:5702:2: ( ruleXPar )
+            // InternalXMachine.g:5703:3: ruleXPar
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getGroupSyncAccess().getActualParametersXParParserRuleCall_2_1_0()); 
@@ -20672,17 +19274,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__GroupSync__ActualParametersAssignment_2_2_1"
-    // InternalXMachine.g:6113:1: rule__GroupSync__ActualParametersAssignment_2_2_1 : ( ruleXPar ) ;
+    // InternalXMachine.g:5712:1: rule__GroupSync__ActualParametersAssignment_2_2_1 : ( ruleXPar ) ;
     public final void rule__GroupSync__ActualParametersAssignment_2_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:6117:1: ( ( ruleXPar ) )
-            // InternalXMachine.g:6118:2: ( ruleXPar )
+            // InternalXMachine.g:5716:1: ( ( ruleXPar ) )
+            // InternalXMachine.g:5717:2: ( ruleXPar )
             {
-            // InternalXMachine.g:6118:2: ( ruleXPar )
-            // InternalXMachine.g:6119:3: ruleXPar
+            // InternalXMachine.g:5717:2: ( ruleXPar )
+            // InternalXMachine.g:5718:3: ruleXPar
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getGroupSyncAccess().getActualParametersXParParserRuleCall_2_2_1_0()); 
@@ -20717,17 +19319,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XParameter__NameAssignment_1"
-    // InternalXMachine.g:6128:1: rule__XParameter__NameAssignment_1 : ( RULE_ID ) ;
+    // InternalXMachine.g:5727:1: rule__XParameter__NameAssignment_1 : ( RULE_ID ) ;
     public final void rule__XParameter__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:6132:1: ( ( RULE_ID ) )
-            // InternalXMachine.g:6133:2: ( RULE_ID )
+            // InternalXMachine.g:5731:1: ( ( RULE_ID ) )
+            // InternalXMachine.g:5732:2: ( RULE_ID )
             {
-            // InternalXMachine.g:6133:2: ( RULE_ID )
-            // InternalXMachine.g:6134:3: RULE_ID
+            // InternalXMachine.g:5732:2: ( RULE_ID )
+            // InternalXMachine.g:5733:3: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXParameterAccess().getNameIDTerminalRuleCall_1_0()); 
@@ -20757,25 +19359,37 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
     // $ANTLR end "rule__XParameter__NameAssignment_1"
 
 
-    // $ANTLR start "rule__XGuard__NameAssignment_1"
-    // InternalXMachine.g:6143:1: rule__XGuard__NameAssignment_1 : ( RULE_XLABEL ) ;
-    public final void rule__XGuard__NameAssignment_1() throws RecognitionException {
+    // $ANTLR start "rule__XGuard__TheoremAssignment_1"
+    // InternalXMachine.g:5742:1: rule__XGuard__TheoremAssignment_1 : ( ( 'theorem' ) ) ;
+    public final void rule__XGuard__TheoremAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:6147:1: ( ( RULE_XLABEL ) )
-            // InternalXMachine.g:6148:2: ( RULE_XLABEL )
+            // InternalXMachine.g:5746:1: ( ( ( 'theorem' ) ) )
+            // InternalXMachine.g:5747:2: ( ( 'theorem' ) )
             {
-            // InternalXMachine.g:6148:2: ( RULE_XLABEL )
-            // InternalXMachine.g:6149:3: RULE_XLABEL
+            // InternalXMachine.g:5747:2: ( ( 'theorem' ) )
+            // InternalXMachine.g:5748:3: ( 'theorem' )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXGuardAccess().getNameXLABELTerminalRuleCall_1_0()); 
+               before(grammarAccess.getXGuardAccess().getTheoremTheoremKeyword_1_0()); 
             }
-            match(input,RULE_XLABEL,FOLLOW_2); if (state.failed) return ;
+            // InternalXMachine.g:5749:3: ( 'theorem' )
+            // InternalXMachine.g:5750:4: 'theorem'
+            {
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXGuardAccess().getNameXLABELTerminalRuleCall_1_0()); 
+               before(grammarAccess.getXGuardAccess().getTheoremTheoremKeyword_1_0()); 
+            }
+            match(input,136,FOLLOW_2); if (state.failed) return ;
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getXGuardAccess().getTheoremTheoremKeyword_1_0()); 
+            }
+
+            }
+
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getXGuardAccess().getTheoremTheoremKeyword_1_0()); 
             }
 
             }
@@ -20795,32 +19409,73 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__XGuard__NameAssignment_1"
+    // $ANTLR end "rule__XGuard__TheoremAssignment_1"
 
 
-    // $ANTLR start "rule__XGuard__PredicateAssignment_2"
-    // InternalXMachine.g:6158:1: rule__XGuard__PredicateAssignment_2 : ( ruleXPredicate ) ;
-    public final void rule__XGuard__PredicateAssignment_2() throws RecognitionException {
+    // $ANTLR start "rule__XGuard__NameAssignment_2"
+    // InternalXMachine.g:5761:1: rule__XGuard__NameAssignment_2 : ( RULE_XLABEL ) ;
+    public final void rule__XGuard__NameAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:6162:1: ( ( ruleXPredicate ) )
-            // InternalXMachine.g:6163:2: ( ruleXPredicate )
+            // InternalXMachine.g:5765:1: ( ( RULE_XLABEL ) )
+            // InternalXMachine.g:5766:2: ( RULE_XLABEL )
             {
-            // InternalXMachine.g:6163:2: ( ruleXPredicate )
-            // InternalXMachine.g:6164:3: ruleXPredicate
+            // InternalXMachine.g:5766:2: ( RULE_XLABEL )
+            // InternalXMachine.g:5767:3: RULE_XLABEL
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXGuardAccess().getPredicateXPredicateParserRuleCall_2_0()); 
+               before(grammarAccess.getXGuardAccess().getNameXLABELTerminalRuleCall_2_0()); 
+            }
+            match(input,RULE_XLABEL,FOLLOW_2); if (state.failed) return ;
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getXGuardAccess().getNameXLABELTerminalRuleCall_2_0()); 
+            }
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__XGuard__NameAssignment_2"
+
+
+    // $ANTLR start "rule__XGuard__PredicateAssignment_3"
+    // InternalXMachine.g:5776:1: rule__XGuard__PredicateAssignment_3 : ( ruleXFormula ) ;
+    public final void rule__XGuard__PredicateAssignment_3() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalXMachine.g:5780:1: ( ( ruleXFormula ) )
+            // InternalXMachine.g:5781:2: ( ruleXFormula )
+            {
+            // InternalXMachine.g:5781:2: ( ruleXFormula )
+            // InternalXMachine.g:5782:3: ruleXFormula
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXGuardAccess().getPredicateXFormulaParserRuleCall_3_0()); 
             }
             pushFollow(FOLLOW_2);
-            ruleXPredicate();
+            ruleXFormula();
 
             state._fsp--;
             if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXGuardAccess().getPredicateXPredicateParserRuleCall_2_0()); 
+               after(grammarAccess.getXGuardAccess().getPredicateXFormulaParserRuleCall_3_0()); 
             }
 
             }
@@ -20840,74 +19495,21 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__XGuard__PredicateAssignment_2"
-
-
-    // $ANTLR start "rule__XGuard__TheoremAssignment_3"
-    // InternalXMachine.g:6173:1: rule__XGuard__TheoremAssignment_3 : ( ( 'theorem' ) ) ;
-    public final void rule__XGuard__TheoremAssignment_3() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalXMachine.g:6177:1: ( ( ( 'theorem' ) ) )
-            // InternalXMachine.g:6178:2: ( ( 'theorem' ) )
-            {
-            // InternalXMachine.g:6178:2: ( ( 'theorem' ) )
-            // InternalXMachine.g:6179:3: ( 'theorem' )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXGuardAccess().getTheoremTheoremKeyword_3_0()); 
-            }
-            // InternalXMachine.g:6180:3: ( 'theorem' )
-            // InternalXMachine.g:6181:4: 'theorem'
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXGuardAccess().getTheoremTheoremKeyword_3_0()); 
-            }
-            match(input,137,FOLLOW_2); if (state.failed) return ;
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXGuardAccess().getTheoremTheoremKeyword_3_0()); 
-            }
-
-            }
-
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXGuardAccess().getTheoremTheoremKeyword_3_0()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XGuard__TheoremAssignment_3"
+    // $ANTLR end "rule__XGuard__PredicateAssignment_3"
 
 
     // $ANTLR start "rule__XWitness__NameAssignment_1"
-    // InternalXMachine.g:6192:1: rule__XWitness__NameAssignment_1 : ( RULE_XLABEL ) ;
+    // InternalXMachine.g:5791:1: rule__XWitness__NameAssignment_1 : ( RULE_XLABEL ) ;
     public final void rule__XWitness__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:6196:1: ( ( RULE_XLABEL ) )
-            // InternalXMachine.g:6197:2: ( RULE_XLABEL )
+            // InternalXMachine.g:5795:1: ( ( RULE_XLABEL ) )
+            // InternalXMachine.g:5796:2: ( RULE_XLABEL )
             {
-            // InternalXMachine.g:6197:2: ( RULE_XLABEL )
-            // InternalXMachine.g:6198:3: RULE_XLABEL
+            // InternalXMachine.g:5796:2: ( RULE_XLABEL )
+            // InternalXMachine.g:5797:3: RULE_XLABEL
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXWitnessAccess().getNameXLABELTerminalRuleCall_1_0()); 
@@ -20938,28 +19540,28 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XWitness__PredicateAssignment_2"
-    // InternalXMachine.g:6207:1: rule__XWitness__PredicateAssignment_2 : ( ruleXPredicate ) ;
+    // InternalXMachine.g:5806:1: rule__XWitness__PredicateAssignment_2 : ( ruleXFormula ) ;
     public final void rule__XWitness__PredicateAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:6211:1: ( ( ruleXPredicate ) )
-            // InternalXMachine.g:6212:2: ( ruleXPredicate )
+            // InternalXMachine.g:5810:1: ( ( ruleXFormula ) )
+            // InternalXMachine.g:5811:2: ( ruleXFormula )
             {
-            // InternalXMachine.g:6212:2: ( ruleXPredicate )
-            // InternalXMachine.g:6213:3: ruleXPredicate
+            // InternalXMachine.g:5811:2: ( ruleXFormula )
+            // InternalXMachine.g:5812:3: ruleXFormula
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXWitnessAccess().getPredicateXPredicateParserRuleCall_2_0()); 
+               before(grammarAccess.getXWitnessAccess().getPredicateXFormulaParserRuleCall_2_0()); 
             }
             pushFollow(FOLLOW_2);
-            ruleXPredicate();
+            ruleXFormula();
 
             state._fsp--;
             if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXWitnessAccess().getPredicateXPredicateParserRuleCall_2_0()); 
+               after(grammarAccess.getXWitnessAccess().getPredicateXFormulaParserRuleCall_2_0()); 
             }
 
             }
@@ -20983,17 +19585,17 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XAction__NameAssignment_1"
-    // InternalXMachine.g:6222:1: rule__XAction__NameAssignment_1 : ( RULE_XLABEL ) ;
+    // InternalXMachine.g:5821:1: rule__XAction__NameAssignment_1 : ( RULE_XLABEL ) ;
     public final void rule__XAction__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:6226:1: ( ( RULE_XLABEL ) )
-            // InternalXMachine.g:6227:2: ( RULE_XLABEL )
+            // InternalXMachine.g:5825:1: ( ( RULE_XLABEL ) )
+            // InternalXMachine.g:5826:2: ( RULE_XLABEL )
             {
-            // InternalXMachine.g:6227:2: ( RULE_XLABEL )
-            // InternalXMachine.g:6228:3: RULE_XLABEL
+            // InternalXMachine.g:5826:2: ( RULE_XLABEL )
+            // InternalXMachine.g:5827:3: RULE_XLABEL
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXActionAccess().getNameXLABELTerminalRuleCall_1_0()); 
@@ -21024,28 +19626,28 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__XAction__ActionAssignment_2"
-    // InternalXMachine.g:6237:1: rule__XAction__ActionAssignment_2 : ( ruleXPredicate ) ;
+    // InternalXMachine.g:5836:1: rule__XAction__ActionAssignment_2 : ( ruleXFormula ) ;
     public final void rule__XAction__ActionAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalXMachine.g:6241:1: ( ( ruleXPredicate ) )
-            // InternalXMachine.g:6242:2: ( ruleXPredicate )
+            // InternalXMachine.g:5840:1: ( ( ruleXFormula ) )
+            // InternalXMachine.g:5841:2: ( ruleXFormula )
             {
-            // InternalXMachine.g:6242:2: ( ruleXPredicate )
-            // InternalXMachine.g:6243:3: ruleXPredicate
+            // InternalXMachine.g:5841:2: ( ruleXFormula )
+            // InternalXMachine.g:5842:3: ruleXFormula
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXActionAccess().getActionXPredicateParserRuleCall_2_0()); 
+               before(grammarAccess.getXActionAccess().getActionXFormulaParserRuleCall_2_0()); 
             }
             pushFollow(FOLLOW_2);
-            ruleXPredicate();
+            ruleXFormula();
 
             state._fsp--;
             if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXActionAccess().getActionXPredicateParserRuleCall_2_0()); 
+               after(grammarAccess.getXActionAccess().getActionXFormulaParserRuleCall_2_0()); 
             }
 
             }
@@ -21069,8 +19671,8 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
     // $ANTLR start synpred1_InternalXMachine
     public final void synpred1_InternalXMachine_fragment() throws RecognitionException {   
-        // InternalXMachine.g:5261:8: ( rule__Machine__ExtensionsAssignment_3_2 )
-        // InternalXMachine.g:5261:9: rule__Machine__ExtensionsAssignment_3_2
+        // InternalXMachine.g:4984:8: ( rule__Machine__ExtensionsAssignment_3_2 )
+        // InternalXMachine.g:4984:9: rule__Machine__ExtensionsAssignment_3_2
         {
         pushFollow(FOLLOW_2);
         rule__Machine__ExtensionsAssignment_3_2();
@@ -21104,39 +19706,36 @@ public class InternalXMachineParser extends AbstractInternalContentAssistParser 
 
     public static final BitSet FOLLOW_1 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_2 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_3 = new BitSet(new long[]{0xFFFFFFFFFFFFF062L,0x00003FFFFFFFFFFFL,0x0000000000000080L});
+    public static final BitSet FOLLOW_3 = new BitSet(new long[]{0xFFFFFFFFFFFFF062L,0x00003FFFFFFFFFFFL,0x0000000000000040L});
     public static final BitSet FOLLOW_4 = new BitSet(new long[]{0x0000000000000000L,0x0008000000000000L});
     public static final BitSet FOLLOW_5 = new BitSet(new long[]{0x0000000000000020L});
     public static final BitSet FOLLOW_6 = new BitSet(new long[]{0x0000000000000000L,0x0860000000000000L});
     public static final BitSet FOLLOW_7 = new BitSet(new long[]{0x0000000000000000L,0x4790000000000000L});
     public static final BitSet FOLLOW_8 = new BitSet(new long[]{0x0000000000000002L,0x4000000000000000L});
     public static final BitSet FOLLOW_9 = new BitSet(new long[]{0x0000000000000022L});
-    public static final BitSet FOLLOW_10 = new BitSet(new long[]{0x0000000000000080L});
-    public static final BitSet FOLLOW_11 = new BitSet(new long[]{0x0000000000000082L});
-    public static final BitSet FOLLOW_12 = new BitSet(new long[]{0xFFFFFFFFFFFFF060L,0x00003FFFFFFFFFFFL,0x0000000000000080L});
-    public static final BitSet FOLLOW_13 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
-    public static final BitSet FOLLOW_14 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000000L,0x0000000000000001L});
-    public static final BitSet FOLLOW_15 = new BitSet(new long[]{0x0000000000000000L,0x3000000000000000L});
-    public static final BitSet FOLLOW_16 = new BitSet(new long[]{0x0008000000000000L});
-    public static final BitSet FOLLOW_17 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000200L});
-    public static final BitSet FOLLOW_18 = new BitSet(new long[]{0x0000000000000000L,0x4000000000000000L});
-    public static final BitSet FOLLOW_19 = new BitSet(new long[]{0x0000000800000000L,0x8010000000000000L});
-    public static final BitSet FOLLOW_20 = new BitSet(new long[]{0x0000000000000000L,0x0000C00000000000L});
-    public static final BitSet FOLLOW_21 = new BitSet(new long[]{0x0002001000000000L});
-    public static final BitSet FOLLOW_22 = new BitSet(new long[]{0x0002000000000002L});
-    public static final BitSet FOLLOW_23 = new BitSet(new long[]{0x0000000000000000L,0x0007000000000000L,0x0000000000000400L});
-    public static final BitSet FOLLOW_24 = new BitSet(new long[]{0x0000000000000000L,0x8030000000000000L,0x0000000000000056L});
-    public static final BitSet FOLLOW_25 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000000L,0x0000000000000040L});
-    public static final BitSet FOLLOW_26 = new BitSet(new long[]{0x0000000000000000L,0x8000000000000000L,0x0000000000000002L});
-    public static final BitSet FOLLOW_27 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x000000000000000AL});
-    public static final BitSet FOLLOW_28 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000020L});
-    public static final BitSet FOLLOW_29 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000040L});
-    public static final BitSet FOLLOW_30 = new BitSet(new long[]{0x0000000000000000L,0x0000000000200000L});
-    public static final BitSet FOLLOW_31 = new BitSet(new long[]{0x0000000000000000L,0x0000000000400000L});
-    public static final BitSet FOLLOW_32 = new BitSet(new long[]{0x0000000800000000L});
-    public static final BitSet FOLLOW_33 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_34 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000100L});
-    public static final BitSet FOLLOW_35 = new BitSet(new long[]{0x0000000000000002L,0x0860000000000000L});
-    public static final BitSet FOLLOW_36 = new BitSet(new long[]{0x0000000000000002L,0x0007000000000000L,0x0000000000000400L});
+    public static final BitSet FOLLOW_10 = new BitSet(new long[]{0x0000000000000080L,0x0000000000000000L,0x0000000000000100L});
+    public static final BitSet FOLLOW_11 = new BitSet(new long[]{0x0000000000000082L,0x0000000000000000L,0x0000000000000100L});
+    public static final BitSet FOLLOW_12 = new BitSet(new long[]{0x0000000000000080L});
+    public static final BitSet FOLLOW_13 = new BitSet(new long[]{0x0000000000000082L});
+    public static final BitSet FOLLOW_14 = new BitSet(new long[]{0x0000000000000000L,0x0007000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_15 = new BitSet(new long[]{0x0000000000000002L,0x0007000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_16 = new BitSet(new long[]{0x0000000000000000L,0x3000000000000000L});
+    public static final BitSet FOLLOW_17 = new BitSet(new long[]{0x0008000000000000L});
+    public static final BitSet FOLLOW_18 = new BitSet(new long[]{0xFFFFFFFFFFFFF060L,0x00003FFFFFFFFFFFL,0x0000000000000040L});
+    public static final BitSet FOLLOW_19 = new BitSet(new long[]{0x0000000000000000L,0x4000000000000000L});
+    public static final BitSet FOLLOW_20 = new BitSet(new long[]{0x0000000800000000L,0x8010000000000000L});
+    public static final BitSet FOLLOW_21 = new BitSet(new long[]{0x0000000000000000L,0x0000C00000000000L});
+    public static final BitSet FOLLOW_22 = new BitSet(new long[]{0x0002001000000000L});
+    public static final BitSet FOLLOW_23 = new BitSet(new long[]{0x0002000000000002L});
+    public static final BitSet FOLLOW_24 = new BitSet(new long[]{0x0000000000000000L,0x0030000000000000L,0x000000000000023EL});
+    public static final BitSet FOLLOW_25 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000000L,0x0000000000000020L});
+    public static final BitSet FOLLOW_26 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000020L});
+    public static final BitSet FOLLOW_27 = new BitSet(new long[]{0x0000000000000000L,0x0000000000200000L});
+    public static final BitSet FOLLOW_28 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_29 = new BitSet(new long[]{0x0000000000000000L,0x0000000000400000L});
+    public static final BitSet FOLLOW_30 = new BitSet(new long[]{0x0000000800000000L});
+    public static final BitSet FOLLOW_31 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_32 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000080L});
+    public static final BitSet FOLLOW_33 = new BitSet(new long[]{0x0000000000000002L,0x0860000000000000L});
 
 }

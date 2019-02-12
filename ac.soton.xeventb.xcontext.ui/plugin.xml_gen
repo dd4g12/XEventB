@@ -397,12 +397,18 @@
 			class="ac.soton.xeventb.xcontext.ui.XContextExecutableExtensionFactory:org.eclipse.xtext.ui.compare.InjectableViewerCreator"
 			extensions="bucx">
 		</viewer>
+		<contentTypeBinding
+			contentTypeId="ac.soton.xeventb.xcontext.XContext.contenttype"
+			contentViewerId="ac.soton.xeventb.xcontext.XContext.compare.contentViewers" />
 	</extension>
 	<extension point="org.eclipse.compare.contentMergeViewers">
 		<viewer id="ac.soton.xeventb.xcontext.XContext.compare.contentMergeViewers"
 			class="ac.soton.xeventb.xcontext.ui.XContextExecutableExtensionFactory:org.eclipse.xtext.ui.compare.InjectableViewerCreator"
 			extensions="bucx" label="XContext Compare">
 		</viewer>
+		<contentTypeBinding
+			contentTypeId="ac.soton.xeventb.xcontext.XContext.contenttype"
+			contentMergeViewerId="ac.soton.xeventb.xcontext.XContext.compare.contentMergeViewers" />
 	</extension>
 	<extension point="org.eclipse.ui.editors.documentProviders">
 		<provider id="ac.soton.xeventb.xcontext.XContext.editors.documentProviders"

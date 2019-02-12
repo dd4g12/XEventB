@@ -34,7 +34,7 @@ Machine returns emachine::Machine:
 //	( extensions+= MIncludes*)
     ('variables' variables+=XVariable+)?
 	('invariants' invariants+=XInvariant+)?
-	('variant' variant=XVariant)?
+	('variants' variants +=XVariant+)?
 	('events' events+=XEvent (events+=XEvent)*)? 
 	(extensions+= XGroup*)
 	('end')
@@ -58,7 +58,7 @@ XVariable returns emachine::Variable:
 
 XInvariant returns emachine::Invariant:
 	{emachine::Invariant}
-	name=XLABEL predicate=XPredicate(theorem?='theorem')?	
+	(theorem?='theorem')? name=XLABEL predicate=XFormula	
 ;
 
 terminal XLABEL returns ecore::EString:
@@ -67,7 +67,7 @@ terminal XLABEL returns ecore::EString:
 
 XVariant returns emachine::Variant:
 	{emachine::Variant}
-	expression= XPredicate
+	name=XLABEL expression= XFormula
 ;
 
 XGroup returns eventbcoreextension::EventCases:
@@ -89,40 +89,23 @@ enum XDirection returns eventbcoreextension::INOUT:
 
 XEvent returns emachine::Event:
 	{emachine::Event}
+	(convergence=XConvergence)?
 	'event' name=ID
 	(
-		(extended?='extended')? &
-		(convergence=XConvergence)?
-	)
-//	( extensions+= EventSync*)
-    ( extensions+= XGroupOrEvent*)//new
-	('refines' refines+=[emachine::Event]+)?
-	
-	(   
-		('with' witnesses+=XWitness+)?
-		'begin'
-			actions+=XAction+
-		|	
-		'when'
-			guards+=XGuard+
-		('with' witnesses+=XWitness+)?
-		('then'
-			actions+=XAction+)?
-		|
-		'any'
-			parameters+=XParameter+
-		'where'
-			guards+=XGuard+
-		('with' witnesses+=XWitness+)?
-		('then'
-			actions+=XAction+)?
-	)?	
+		('refines' refines+=[emachine::Event]+) |
+		(extended?='extends' refines+=[emachine::Event])
+	)?
+	('any' parameters+=XParameter+)?
+	( extensions+= XGroupOrEvent*)//new
+	('where' guards+=XGuard+)?
+	('then' actions+=XAction+)?
+	('with' witnesses+=XWitness+)?
 	'end'
 ;
 
 EventSync returns einclusion::EventSynchronisation:
 	{einclusion::EventSynchronisation}
-	('synchronises' (prefix=ID'.')?(synchronisedEvent = [emachine::Event]))(XSyncParameters)?
+	('synchronises' 'event' (prefix=ID'.')?(synchronisedEvent = [emachine::Event]))(XSyncParameters)?
 //	( (prefix=ID'.')?(synchronisedEvent = [emachine::Event]))
 ;
 
@@ -132,14 +115,14 @@ XSyncParameters returns ecore::EString:
 GroupSync returns einclusion::EventSynchronisation:
 	{einclusion::EventSynchronisation}
   //  ( (prefix=ID'.')?(synchronisedCases = [eventbcoreextension::EventCases]))('(' actualParameters += ID (',' actualParameters += ID)* ')')? 
-	('synchronises' 'group' (prefix=ID'.')?(synchronisedCases = [eventbcoreextension::EventCases]))('(' actualParameters += XPar (',' actualParameters += XPar)* ')')? 
+	('synchronises'  (prefix=ID'.')?(synchronisedCases = [eventbcoreextension::EventCases]))('(' actualParameters += XPar (',' actualParameters += XPar)* ')')? 
 ;
 XGroupOrEvent returns einclusion::EventSynchronisation:
  GroupSync | EventSync
 //'synchronises' GroupSync | EventSync
 ;
 enum XConvergence returns emachine::Convergence:
-				ordinary = 'ordinary' | convergent = 'convergent' | anticipated = 'anticipated'
+	ordinary = 'ordinary' | convergent = 'convergent' | anticipated = 'anticipated'
 ;
 
 XParameter returns emachine::Parameter:
@@ -149,23 +132,23 @@ XParameter returns emachine::Parameter:
 
 XGuard returns emachine::Guard:
 	{emachine::Guard}
-	name=XLABEL predicate= XPredicate (theorem?='theorem')?
+	(theorem?='theorem')? name=XLABEL predicate= XFormula
 ;
 
 XWitness returns emachine::Witness:
 	{emachine::Witness}
-	name=XLABEL predicate= XPredicate
+	name=XLABEL predicate= XFormula
 ;
 
 XAction returns emachine::Action:
 	{emachine::Action}
-	name=XLABEL action= XPredicate
+	name=XLABEL action= XFormula
 ;
 
 XPar returns ecore::EString:
 	STRING
 ;
-XPredicate returns ecore::EString:
+XFormula returns ecore::EString:
 	(
 		EVENTB_IDENTIFIER_KEYWORD |
 		EVENTB_PREDICATE_SYMBOLS |
@@ -276,5 +259,7 @@ EVENTB_EXPRESSION_SYMBOLS returns ecore::EString:
 ;
 
 @Override 
-terminal ID: '^'?('a'..'z'|'A'..'Z'|'_'| 'i'..'ￜ') ('a'..'z'|'A'..'Z'|'_'| 'i'..'ￜ'|'0'..'9')*;
+terminal ID: '^'?('a'..'z'|'A'..'Z'|'_'| 'i'..'ￜ') ('a'..'z'|'A'..'Z'|'_'| 'i'..'ￜ'|'0'..'9' | "'")*;
 
+@Override 
+terminal STRING: '"' ( '\\' . /* 'b'|'t'|'n'|'f'|'r'|'u'|'"'|"'"|'\\' */ | !('\\'|'"') )* '"';
